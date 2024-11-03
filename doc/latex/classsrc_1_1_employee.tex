@@ -1,0 +1,125 @@
+\doxysection{src.\+Employee Class Reference}
+\hypertarget{classsrc_1_1_employee}{}\label{classsrc_1_1_employee}\index{src.Employee@{src.Employee}}
+
+
+Purpose\+: Class {\ttfamily \doxylink{classsrc_1_1_employee}{Employee}} allows to create an employee object with basic information such as their Id, name, role, and hourly role.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsrc_1_1_employee_a58183f31d47d226d3cb104170b896a16}{Employee}} ()
+\begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsrc_1_1_employee_a45e6435ffe420e6b050f12258693ed12}{Employee}} (string name, string role, double hourlyrate)
+\begin{DoxyCompactList}\small\item\em Simple constructor for employees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsrc_1_1_employee_a1dbe88263f137dbf1cc997a57d4ab6d9}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classsrc_1_1_employee}{Employee} unique id. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classsrc_1_1_employee_a3f19286ca9e829e07594ade86aaee05e}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classsrc_1_1_employee}{Employee} name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classsrc_1_1_employee_a69ea6a3bbe2aab088fabdd31d2dc63e8}{Role}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classsrc_1_1_employee}{Employee} Role. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classsrc_1_1_employee_ae7c10df22f17c2e0e8b760ea413e2a72}{Hourly\+Rate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classsrc_1_1_employee}{Employee} Hourly Rate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Purpose\+: Class {\ttfamily \doxylink{classsrc_1_1_employee}{Employee}} allows to create an employee object with basic information such as their Id, name, role, and hourly role. 
+
+This class allows to create an employee and provide methedos to access and modify the employee\textquotesingle{}s attributes. 
+
+Example of use 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classsrc_1_1_employee_a58183f31d47d226d3cb104170b896a16}{Employee}}\ emp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classsrc_1_1_employee_a58183f31d47d226d3cb104170b896a16}{Employee}}();}
+\DoxyCodeLine{emp.Id\ =\ 1;}
+\DoxyCodeLine{emp.Name\ =\ \textcolor{stringliteral}{"{}Hugo"{}};}
+\DoxyCodeLine{emp.Role=\ \textcolor{stringliteral}{"{}Engineering"{}};}
+\DoxyCodeLine{emp.HourlyRate\ =\ \textcolor{stringliteral}{"{}12.3"{}};}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsrc_1_1_employee_a58183f31d47d226d3cb104170b896a16}\index{src.Employee@{src.Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!src.Employee@{src.Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classsrc_1_1_employee_a58183f31d47d226d3cb104170b896a16} 
+src.\+Employee.\+Employee (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The default Constructor. 
+
+Public Access  \Hypertarget{classsrc_1_1_employee_a45e6435ffe420e6b050f12258693ed12}\index{src.Employee@{src.Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!src.Employee@{src.Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classsrc_1_1_employee_a45e6435ffe420e6b050f12258693ed12} 
+src.\+Employee.\+Employee (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{role}{, }\item[{double}]{hourlyrate}{}\end{DoxyParamCaption})}
+
+
+
+Simple constructor for employees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \doxylink{classsrc_1_1_employee}{Employee} Name\\
+\hline
+{\em role} & \doxylink{classsrc_1_1_employee}{Employee} Role\\
+\hline
+{\em hourlyrate} & \doxylink{classsrc_1_1_employee}{Employee} Hourly Rate\\
+\hline
+\end{DoxyParams}
+
+
+Initializes an object \textquotesingle{}\doxylink{classsrc_1_1_employee}{Employee}\textquotesingle{} with the specified values for name, role, and hourly rate. The ID is assigned automatically using the static counter. 
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classsrc_1_1_employee_ae7c10df22f17c2e0e8b760ea413e2a72}\index{src.Employee@{src.Employee}!HourlyRate@{HourlyRate}}
+\index{HourlyRate@{HourlyRate}!src.Employee@{src.Employee}}
+\doxysubsubsection{\texorpdfstring{HourlyRate}{HourlyRate}}
+{\footnotesize\ttfamily \label{classsrc_1_1_employee_ae7c10df22f17c2e0e8b760ea413e2a72} 
+double src.\+Employee.\+Hourly\+Rate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\doxylink{classsrc_1_1_employee}{Employee} Hourly Rate. 
+
+Public Access  \Hypertarget{classsrc_1_1_employee_a1dbe88263f137dbf1cc997a57d4ab6d9}\index{src.Employee@{src.Employee}!Id@{Id}}
+\index{Id@{Id}!src.Employee@{src.Employee}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily \label{classsrc_1_1_employee_a1dbe88263f137dbf1cc997a57d4ab6d9} 
+int src.\+Employee.\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\doxylink{classsrc_1_1_employee}{Employee} unique id. 
+
+Auto incremente
+
+Public Access  \Hypertarget{classsrc_1_1_employee_a3f19286ca9e829e07594ade86aaee05e}\index{src.Employee@{src.Employee}!Name@{Name}}
+\index{Name@{Name}!src.Employee@{src.Employee}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{classsrc_1_1_employee_a3f19286ca9e829e07594ade86aaee05e} 
+string src.\+Employee.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\doxylink{classsrc_1_1_employee}{Employee} name. 
+
+Public Access  \Hypertarget{classsrc_1_1_employee_a69ea6a3bbe2aab088fabdd31d2dc63e8}\index{src.Employee@{src.Employee}!Role@{Role}}
+\index{Role@{Role}!src.Employee@{src.Employee}}
+\doxysubsubsection{\texorpdfstring{Role}{Role}}
+{\footnotesize\ttfamily \label{classsrc_1_1_employee_a69ea6a3bbe2aab088fabdd31d2dc63e8} 
+string src.\+Employee.\+Role\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\doxylink{classsrc_1_1_employee}{Employee} Role. 
+
+Public Access  
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase1/src/\mbox{\hyperlink{_employee_8cs}{Employee.\+cs}}\end{DoxyCompactItemize}
