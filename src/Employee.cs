@@ -27,43 +27,17 @@ namespace src
     /// emp.HourlyRate = "12.3";
     /// </code>
     /// </example>
-    public class Employee
+    public class Employee : Person
     {
         #region Attributes
-        int id;
-        string name;
         string role;
         double hourlyRate;
-        static int employeeIdCounter = 1;
+        static int employeeIdCounter = 200;
         #endregion
 
         #region Methods
 
         #region Properties
-        /// <summary>
-        /// Employee unique id.
-        /// </summary>
-        /// <value>Auto incremente</value>
-        /// <permission>
-        /// Public Access
-        /// </permission>
-        public int Id 
-        {
-            set { id = value; }
-            get { return id; }
-        }
-
-        /// <summary>
-        /// Employee name.
-        /// </summary>
-        /// <permission>
-        /// Public Access
-        /// </permission>
-        public string Name 
-        {
-            set {  name = value; }
-            get { return name; }
-        }
 
         /// <summary>
         /// Employee Role.
@@ -71,10 +45,10 @@ namespace src
         /// <permission>
         /// Public Access
         /// </permission>
-        public string Role 
+        public string Role
         {
-            set{ role = value; }
-            get{ return role; }
+            set { role = value; }
+            get { return role; }
         }
 
         /// <summary>
@@ -117,11 +91,11 @@ namespace src
         /// for name, role, and hourly rate. The ID is assigned automatically
         /// using the static counter.
         /// </remarks>
-        public Employee(string name, string role, double hourlyrate) 
+        public Employee(string name, string role, double hourlyrate)
         {
-            Id= employeeIdCounter++;    
+            Id = employeeIdCounter++;
             Name = name;
-            Role = role; 
+            Role = role;
             HourlyRate = hourlyrate;
         }
 
