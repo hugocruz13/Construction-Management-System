@@ -21,8 +21,9 @@ namespace src
     {
         #region Attributes
         int id;
-        string description;
+        string name;
         double unitPrice;
+        int quantity;
         static int meterialIdCounter = 900;
         #endregion
 
@@ -35,16 +36,22 @@ namespace src
             get { return id; }
         }
 
-        public string Description 
+        public string Name 
         {
-            set { description = value; }
-            get { return description; }
+            set { name = value; }
+            get { return name; }
         }
 
         public double UnitPrice 
         {
             set { unitPrice = value; }
             get { return unitPrice; }
+        }
+
+        public int Quantity 
+        {
+            set { quantity = value; }
+            get { return quantity; }
         }
 
         #endregion
@@ -57,13 +64,18 @@ namespace src
         public Material()
         {
             Id = meterialIdCounter++;
+            Name = string.Empty;
+            UnitPrice = 0;
+            Quantity = 0;
+            
         }
 
-        public Material(string description, double unitPrice, int quantity)
+        public Material(string name, double unitPrice, int quantity)
         {
             Id = meterialIdCounter++;
-            Description = description;
+            Name = name;
             UnitPrice = unitPrice;
+            Quantity = quantity;
         }
 
         #endregion

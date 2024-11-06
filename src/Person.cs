@@ -17,7 +17,7 @@ namespace src
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-     class Person
+    class Person
     {
         #region Attributes
         int id;
