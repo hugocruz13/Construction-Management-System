@@ -17,11 +17,8 @@ namespace src
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-<<<<<<< HEAD
+
     class Client : Person
-=======
-    public class Client : Person
->>>>>>> 969c9cbb8d752322acd590eca6e0194657d8a968
     {
         #region Attributes
         string contactInfo;

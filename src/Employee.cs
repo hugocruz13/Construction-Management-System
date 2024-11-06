@@ -25,11 +25,7 @@ namespace src
     /// emp.HourlyRate = "12.3";
     /// </code>
     /// </example>
-<<<<<<< HEAD
     class Employee : Person
-=======
-    public class Employee : Person
->>>>>>> 969c9cbb8d752322acd590eca6e0194657d8a968
     {
         #region Attributes
         string role;

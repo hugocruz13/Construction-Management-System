@@ -7,11 +7,6 @@
 *	<description></description>
 **/
 using System;
-<<<<<<< HEAD
-
-=======
-using System.Xml.Linq;
->>>>>>> 969c9cbb8d752322acd590eca6e0194657d8a968
 
 namespace src
 {
@@ -22,11 +17,7 @@ namespace src
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-<<<<<<< HEAD
      class Person
-=======
-    public class Person
->>>>>>> 969c9cbb8d752322acd590eca6e0194657d8a968
     {
         #region Attributes
         int id;
