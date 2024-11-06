@@ -17,7 +17,11 @@ namespace src
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
+<<<<<<< HEAD
     class Client : Person
+=======
+    public class Client : Person
+>>>>>>> 969c9cbb8d752322acd590eca6e0194657d8a968
     {
         #region Attributes
         string contactInfo;
@@ -27,9 +31,15 @@ namespace src
         #region Methods
 
         #region Properties
+<<<<<<< HEAD
         public string ContactInfo
         {
             set { contactInfo = value; }
+=======
+        public string ContactInfo 
+        {
+            set { contactInfo = value; }    
+>>>>>>> 969c9cbb8d752322acd590eca6e0194657d8a968
             get { return contactInfo; }
         }
         #endregion
