@@ -14,11 +14,25 @@
       <FileName>Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="src.Material">
-    <Position X="8" Y="3" Width="1.5" />
+  <Class Name="src.Inventory">
+    <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAACAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAICAAAgA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACAABAAAgAAAA=</HashCode>
+      <FileName>Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.Material">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIACAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAACAAAgA=</HashCode>
       <FileName>Material.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.MaterialQuantity">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgABAAAA=</HashCode>
+      <FileName>MaterialQuantity.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="src.Person" Collapsed="true">
@@ -29,21 +43,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="src.Program" Collapsed="true">
-    <Position X="4.75" Y="1.75" Width="1.5" />
+    <Position X="11.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="src.Project" Collapsed="true">
-    <Position X="7" Y="1.5" Width="1.5" />
+    <Position X="13.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAQAAAAAAAAAAAACAAAAAAAAAgA=</HashCode>
       <FileName>Project.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="src.Status">
-    <Position X="10.75" Y="0.5" Width="1.5" />
+  <Enum Name="src.Status" Collapsed="true">
+    <Position X="11.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAIAEAAAAAAAAAAAAAABAAAAABAAAAA=</HashCode>
       <FileName>Project.cs</FileName>

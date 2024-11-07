@@ -11,7 +11,6 @@ namespace src
         static void Main(string[] args)
         {
             Inventory.AddMaterial(new Material("Cimento", 0.5), 20);
-  
         }
     }
 }
