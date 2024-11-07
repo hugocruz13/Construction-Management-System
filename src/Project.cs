@@ -29,48 +29,17 @@ namespace src
     class Project
     {
         #region Attributes
-        int id;
-        string localization;
-        double durationInHours;
-        Status status;
-        Client client;
-        Employee[] team;
-        Material[] materials;
-        static int projectIdCounter = 300;
-        static int total;
+        static int id;
+        static Inventory inventory;
         #endregion
 
         #region Methods
 
         #region Properties
-        public int Id
+        public static int Id
         {
             set { id = value; }
             get { return id; }
-        }
-
-        public string Localization
-        {
-            set { localization = value; }
-            get { return localization; }
-        }
-
-        public double DurationInHours
-        {
-            set { durationInHours = value; }
-            get { return durationInHours; }
-        }
-
-        public Status Status
-        {
-            set { status = value; }
-            get { return status; }
-        }
-
-        public Client Client
-        {
-            set { client = value; }
-            get { return client; }
         }
 
         #endregion
@@ -80,20 +49,10 @@ namespace src
         /// <summary>
         /// The default Constructor.
         /// </summary>
-        public Project()
+        static Project()
         {
-        }
-
-        public Project(string localization, double duration, Status status, Client client, int numEmployee)
-        {
-            Id = projectIdCounter++;
-            Localization = localization;
-            DurationInHours = duration;
-            Status = status;
-            Client = client;
-            team = new Employee[numEmployee];
-            materials = new Material[50];
-
+            Id = 600;
+            
         }
 
         #endregion
@@ -102,9 +61,9 @@ namespace src
         #endregion
 
         #region OtherMethods
-        public void ADD(Employee ep) 
-        {
-            team[total++] = ep;
+        public static bool InserirMaterial() 
+        {          
+            return true;
         }
         #endregion
 

@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="src.cs" company="IPCA">
+*	<copyright file="Person.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>hugoc</author>
@@ -46,6 +46,14 @@ namespace src
             Id = clientIdCounter++;
             Name = string.Empty;
             ContactInfo = string.Empty;
+
+        }
+
+        public Client(string name, string contact)
+        {
+            Id = clientIdCounter++;
+            Name = name;
+            ContactInfo = contact;
 
         }
 

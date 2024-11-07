@@ -15,9 +15,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="src.Material">
-    <Position X="7" Y="0.5" Width="1.5" />
+    <Position X="8" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAACAAAAAAAgAAAAIAAAAAAAAAAAAACAAAAAICAAAgA=</HashCode>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAICAAAgA=</HashCode>
       <FileName>Material.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -28,15 +28,22 @@
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="src.Project">
-    <Position X="5" Y="0.5" Width="1.5" />
+  <Class Name="src.Program" Collapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAQCCAQEACgAAAAgABAAAAAAAAAQAAAAAAAABABAAgQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.Project" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Project.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="src.Status">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="10.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAIAEAAAAAAAAAAAAAABAAAAABAAAAA=</HashCode>
       <FileName>Project.cs</FileName>
