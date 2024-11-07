@@ -3,7 +3,7 @@
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>hugoc</author>
-*   <date>11/6/2024 11:09:34 AM</date>
+*   <date>11/7/2024 6:16:35 PM</date>
 *	<description></description>
 **/
 using System;
@@ -13,7 +13,7 @@ namespace src
     /// <summary>
     /// Purpose:
     /// Created by: hugoc
-    /// Created on: 11/6/2024 11:09:34 AM
+    /// Created on: 11/7/2024 6:16:35 PM
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
@@ -23,59 +23,49 @@ namespace src
         int id;
         string name;
         double unitPrice;
-        int quantity;
-        static int meterialIdCounter = 900;
+        static int materialIdCounter = 900;
         #endregion
 
         #region Methods
 
         #region Properties
-        public int Id 
+        public int Id
         {
             set { id = value; }
             get { return id; }
         }
 
-        public string Name 
+        public string Name
         {
             set { name = value; }
             get { return name; }
         }
 
-        public double UnitPrice 
+        public double UnitPrice
         {
-            set { unitPrice = value; }
+            set
+            {
+                if (value > 0)
+                {
+                    unitPrice = value;
+                }
+            }
             get { return unitPrice; }
         }
-
-        public int Quantity 
-        {
-            set { quantity = value; }
-            get { return quantity; }
-        }
-
         #endregion
 
         #region Constructors
 
         /// <summary>
-        /// The default Constructor.
+        /// 
         /// </summary>
-        public Material()
+        /// <param name="name"></param>
+        /// <param name="price"></param>
+        public Material(string name, double price)
         {
-            Id = meterialIdCounter++;
-            Name = string.Empty;
-            UnitPrice = 0;
-            Quantity = 0;
-            
-        }
-
-        public Material(string name, double unitPrice, int quantity)
-        {
-            Id = meterialIdCounter++;
+            Id = materialIdCounter++;
             Name = name;
-            UnitPrice = unitPrice;
-            Quantity = quantity;
+            UnitPrice = price;
         }
 
         #endregion
