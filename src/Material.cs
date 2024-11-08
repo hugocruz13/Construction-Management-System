@@ -31,7 +31,6 @@ namespace src
         #region Properties
         public int Id
         {
-            set { id = value; }
             get { return id; }
         }
 
@@ -63,7 +62,7 @@ namespace src
         /// <param name="price"></param>
         public Material(string name, double price)
         {
-            Id = materialIdCounter++;
+            id = materialIdCounter++;
             Name = name;
             UnitPrice = price;
         }
@@ -71,6 +70,17 @@ namespace src
         #endregion
 
         #region Overrides
+        public override bool Equals(object obj)
+        {
+            Material m = (Material)obj;
+
+            if (name == m.name)
+            {
+                return true;
+            }
+
+            return false; 
+        }
         #endregion
 
         #region OtherMethods
