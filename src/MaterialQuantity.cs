@@ -22,6 +22,7 @@ namespace src
         #region Attributes
         Material material;
         int quantity;
+        DateTime date;
         #endregion
 
         #region Methods
@@ -44,6 +45,11 @@ namespace src
             }
             get { return quantity; }
         }
+
+        public DateTime Date
+        {
+            get { return date; }
+        }
         #endregion
 
         #region Constructors
@@ -55,6 +61,7 @@ namespace src
         {
             Material = material;
             Quantity = quantity;
+            date = DateTime.Now;
         }
 
         #endregion
