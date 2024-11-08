@@ -30,7 +30,10 @@ namespace src
     {
         #region Attributes
         static int id;
-        static Inventory inventory;
+        static Status status;
+        static Client client;
+        static Team team;
+        static UsedMaterials usedMaterials;
         #endregion
 
         #region Methods
@@ -42,6 +45,17 @@ namespace src
             get { return id; }
         }
 
+        public static Status Status 
+        {
+            set { status = value; }
+            get { return status; }
+        }
+
+        public static Client Client 
+        {
+            set { client = value; }
+            get { return client; }
+        }
         #endregion
 
         #region Constructors
@@ -51,8 +65,7 @@ namespace src
         /// </summary>
         static Project()
         {
-            Id = 600;
-            
+
         }
 
         #endregion
@@ -61,8 +74,14 @@ namespace src
         #endregion
 
         #region OtherMethods
-        public static bool InserirMaterial() 
-        {          
+        public static bool AddMaterial(Material m , int quantity) 
+        {
+            UsedMaterials.AddMaterial(m, quantity);
+            return true;
+        }
+        public static bool AddEmployee(string name, string role, double hourlyrate)
+        {
+            Team.AddEmployee(name, role, hourlyrate);
             return true;
         }
         #endregion
