@@ -7,6 +7,7 @@
 *	<description>This file is focused on creating client objects (Client).</description>
 */
 using System;
+using System.Xml.Linq;
 
 namespace src
 {
@@ -67,12 +68,9 @@ namespace src
         /// <permission>
         /// Public Access.
         /// </permission>
-        public Client()
+        public Client() : base(clientIdCounter++, string.Empty)
         {
-            Id = clientIdCounter++;
-            Name = string.Empty;
             ContactInfo = string.Empty;
-
         }
 
         /// <summary>
@@ -87,12 +85,9 @@ namespace src
         /// <permission>
         /// Public Access.
         /// </permission>
-        public Client(string name, string contact)
+        public Client(string name, string contact) : base(clientIdCounter++, name)
         {
-            Id = clientIdCounter++;
-            Name = name;
             ContactInfo = contact;
-
         }
 
         #endregion
