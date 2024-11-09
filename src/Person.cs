@@ -70,7 +70,11 @@ namespace src
         #endregion
 
         #region Constructors
-
+        public Person(int id, string name) 
+        {
+            Id = id;
+            Name = name;
+        }
         #endregion
 
         #region Overrides
