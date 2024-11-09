@@ -13,8 +13,8 @@ namespace src
             Project.Id = 600;
             Project.Status = Status.NotStart;
             Project.Client = new Client("Antonio", "964563928");
-            Project.AddEmployee("Dj8", "Eletricista", 4.5);
-            Project.AddEmployee("Guita Pimpolho", "Pedreiro", 4.8);
+            Project.AddEmployee("Nuno Jose", "Eletricista", 4.5);
+            Project.AddEmployee("Ricardo Pereira", "Pedreiro", 4.8);
             Project.AddMaterial(new Material("Cimento", 4.80), 5);
             Project.AddMaterial(new Material("Cola", 6), 2);
             Project.AddMaterial(new Material("Tijolos", 0.37), 200);

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="src.Client">
+    <Position X="5" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAACAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.Employee">
+    <Position X="0.5" Y="4" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAACAAAEAAAABAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.Material">
+    <Position X="9" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IIACAAAAAAAAAAAAgAAAAAQAAAAEAAAAAAAAACAAAgA=</HashCode>
+      <FileName>Material.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.MaterialQuantity">
+    <Position X="12.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAACBAAAAgQBAAAA=</HashCode>
+      <FileName>MaterialQuantity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.Person">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.Project">
+    <Position X="10.25" Y="5.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAQCAEAEAAAAACAAAAAAAAAAAAAQAAAAAAAABAgAAgQ=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.Team">
+    <Position X="0.5" Y="7.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAQQAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="src.UsedMaterials">
+    <Position X="16" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAQAAAAEAAAAgAAAA=</HashCode>
+      <FileName>UsedMaterials.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="src.Status">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAEAAAAAAAAAAAAAABAAAAABAAAAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
