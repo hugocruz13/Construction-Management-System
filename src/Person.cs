@@ -11,16 +11,29 @@ using System;
 namespace src
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: hugoc
-    /// Created on: 11/3/2024 7:20:40 PM
+    /// Represents a person with basic attributes like Id and Name.
+    /// This class provides access and modification to a person’s attributes.
     /// </summary>
-    /// <remarks></remarks>
-    /// <example></example>
-    class Person
+    /// <remarks>
+    /// The <c>Person</c> class is used to store a person’s identifying information.
+    /// </remarks>
+    /// <example>
+    /// Example of use
+    /// <code>
+    /// Id = IdCounter++;  
+    /// Name = name;
+    /// </code>
+    /// </example>
+    public class Person
     {
         #region Attributes
+        /// <summary>
+        /// Unique identifier of the person.
+        /// </summary>
         int id;
+        /// <summary>
+        /// Name of the person
+        /// </summary>
         string name;
         #endregion
 
@@ -28,20 +41,24 @@ namespace src
 
         #region Properties
         /// <summary>
-        /// Employee unique id.
+        /// Gets or sets the unique identifier of the person.
         /// </summary>
+        /// <value>The unique id of the person.</value>
+        /// <remarks>This value is used to uniquely identify the person.</remarks>
         /// <permission>
         /// Public Access
         /// </permission>
         public int Id
         {
-            set { id = value; }
+            protected set { id = value; }
             get { return id; }
         }
 
         /// <summary>
-        /// Employee name.
+        /// Gets or sets the name of the person..
         /// </summary>
+        /// <value>The name of the person.</value>
+        /// <remarks>This value contains the full name of the person.</remarks>
         /// <permission>
         /// Public Access
         /// </permission>
@@ -54,13 +71,6 @@ namespace src
 
         #region Constructors
 
-        /// <summary>
-        /// The default Constructor.
-        /// </summary>
-        public Person()
-        {
-        }
-
         #endregion
 
         #region Overrides
@@ -71,7 +81,7 @@ namespace src
 
         #region Destructor
         /// <summary>
-        /// The destructor.
+        /// Destroyer of the Person class.
         /// </summary>
         ~Person()
         {
