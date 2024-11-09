@@ -1,3 +1,1 @@
-<center>
-    ![Imagem do Projeto](doc/uml/diagramclass.jpg)
-</center>
+![Texto alternativo](doc/uml/diagramclass.jpg)
