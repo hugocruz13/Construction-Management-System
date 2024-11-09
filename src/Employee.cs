@@ -90,10 +90,8 @@ namespace src
         /// <permission>
         /// Public Access
         /// </permission>
-        public Employee()
+        public Employee() : base(employeeIdCounter++, string.Empty)
         {
-            Id = employeeIdCounter++;
-            Name = string.Empty;
             Role = string.Empty;
             HourlyRate = 0;
         }
@@ -108,9 +106,8 @@ namespace src
         /// Initializes the employee with a given name, job title and hourly rate.
         /// The ID is assigned automatically using the static counter.
         /// </remarks>
-        public Employee(string name, string role, double hourlyrate)
+        public Employee(string name, string role, double hourlyrate) : base(employeeIdCounter++, name)
         {
-            Id = employeeIdCounter++;
             Name = name;
             Role = role;
             HourlyRate = hourlyrate;
