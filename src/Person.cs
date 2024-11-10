@@ -50,7 +50,6 @@ namespace src
         /// </permission>
         public int Id
         {
-            protected set { id = value; }
             get { return id; }
         }
 
@@ -64,16 +63,20 @@ namespace src
         /// </permission>
         public string Name
         {
-            set { name = value; }
             get { return name; }
         }
         #endregion
 
         #region Constructors
-        public Person(int id, string name) 
+        /// <summary>
+        /// Protect para não se criar instancias de pessoa ////////////////////////////
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        protected Person(int id, string name) 
         {
-            Id = id;
-            Name = name;
+            this.id = id;
+            this.name = name;
         }
         #endregion
 
