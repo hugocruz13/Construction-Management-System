@@ -17,8 +17,7 @@ namespace src
             Project.AddEmployee("Ricardo Pereira", "Pedreiro", 4.8);
             Project.AddMaterial(new Material("Cimento", 4.80), 5);
             Project.AddMaterial(new Material("Cola", 6), 2);
-            Project.AddMaterial(new Material("Tijolos", 0.37), 200);
-
+            Project.AddMaterial(new Material("Tijolos", 0.37), 200);    
         }
     }
 }
