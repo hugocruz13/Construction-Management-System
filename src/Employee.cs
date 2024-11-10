@@ -106,9 +106,8 @@ namespace src
         /// Initializes the employee with a given name, job title and hourly rate.
         /// The ID is assigned automatically using the static counter.
         /// </remarks>
-        public Employee(string name, string role, double hourlyrate) : base(employeeIdCounter++, name)
+        public Employee(string name, string role, double hourlyrate) : base(employeeIdCounter++, name) // Send for constructor Person
         {
-            Name = name;
             Role = role;
             HourlyRate = hourlyrate;
         }
