@@ -58,22 +58,6 @@ namespace src
         #region Constructors
 
         /// <summary>
-        /// Default builder for the client.
-        /// Automatically assigns an ID and initializes the other attributes with default values.
-        /// </summary>
-        /// <remarks>
-        /// The ID is automatically generated with the static counter.
-        /// The name and contact information are initialized as empty.
-        /// </remarks>
-        /// <permission>
-        /// Public Access.
-        /// </permission>
-        public Client() : base(clientIdCounter++, string.Empty)
-        {
-            ContactInfo = string.Empty;
-        }
-
-        /// <summary>
         /// Simple constructor to initialize or client with specific values.
         /// </summary>
         /// <param name="name">Name of customer.</param>

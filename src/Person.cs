@@ -63,6 +63,7 @@ namespace src
         /// </permission>
         public string Name
         {
+            set { name = value; }
             get { return name; }
         }
         #endregion
@@ -76,11 +77,12 @@ namespace src
         protected Person(int id, string name) 
         {
             this.id = id;
-            this.name = name;
+            Name = name;
         }
         #endregion
 
         #region Overrides
+
         #endregion
 
         #region OtherMethods

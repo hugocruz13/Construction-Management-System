@@ -80,23 +80,6 @@ namespace src
         #region Constructors
 
         /// <summary>
-        /// Default constructor for the employee. Automatically assigns an ID 
-        /// and initializes the other attributes with default values.
-        /// </summary>
-        /// <remarks>
-        /// The ID is automatically generated with the static counter.
-        /// The name, position and hourly rate are initialized as string empty or zero.
-        /// </remarks>
-        /// <permission>
-        /// Public Access
-        /// </permission>
-        public Employee() : base(employeeIdCounter++, string.Empty)
-        {
-            Role = string.Empty;
-            HourlyRate = 0;
-        }
-
-        /// <summary>
         /// Simple constructor to initialize the employee with specific values.
         /// </summary>
         /// <param name="name">Employee Name</param>

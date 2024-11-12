@@ -103,9 +103,9 @@ namespace src
         /// <permission>
         /// Public Access (read only).
         /// </permission>
-        public MaterialQuantity(Material material, int quantity)
+        public MaterialQuantity(string name, double price, int quantity)
         {
-            Material = material;
+            Material = new Material(name, price);
             Quantity = quantity;
             date = DateTime.Now;
         }

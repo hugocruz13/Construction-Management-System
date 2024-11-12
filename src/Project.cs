@@ -48,23 +48,25 @@ namespace src
         /// <summary>
         /// Unique project ID.
         /// </summary>
-        static int id;
+        int id;
         /// <summary>
         /// Current status of the project.
         /// </summary>
-        static Status status;
+        Status status;
         /// <summary>
         /// Client associated with the project.
         /// </summary>
-        static Client client;
+        Client client;
         /// <summary>
         ///  Team associated with the project.
         /// </summary>
-        static Team team;
+        Team team;
         /// <summary>
         /// Materials used in the project.
         /// </summary>
-        static UsedMaterials usedMaterials;
+        static MaterialInventory usedMaterials;
+
+        static int projectIdCounter = 300;
         #endregion
 
         #region Methods
@@ -73,7 +75,7 @@ namespace src
         /// <summary>
         /// Property to access or modify the project ID.
         /// </summary>
-        public static int Id
+        public int Id
         {
             set { id = value; }
             get { return id; }
@@ -82,7 +84,7 @@ namespace src
         /// <summary>
         /// Property to access or modify the project status.
         /// </summary>
-        public static Status Status 
+        public Status Status 
         {
             set { status = value; }
             get { return status; }
@@ -91,7 +93,7 @@ namespace src
         /// <summary>
         /// Property to access or modify the client associated with the project.
         /// </summary>
-        public static Client Client 
+        public Client Client 
         {
             set { client = value; }
             get { return client; }
@@ -103,9 +105,12 @@ namespace src
         /// <summary>
         /// The default Constructor.
         /// </summary>
-        static Project()
+        public Project()
         {
-
+            Id = projectIdCounter++;
+            Status = Status.NotStart;
+            Client = null;
+            team = new Team();
         }
 
         #endregion
@@ -114,20 +119,10 @@ namespace src
         #endregion
 
         #region OtherMethods
-        public static bool AddMaterial(Material m , int quantity) 
+        public bool AddEmployee(Employee employee)
         {
-            UsedMaterials.AddMaterial(m, quantity);
+            team.AddEmployee(employee);
             return true;
-        }
-        public static bool AddEmployee(string name, string role, double hourlyrate)
-        {
-            Team.AddEmployee(name, role, hourlyrate);
-            return true;
-        }
-
-        public static void ShowEmployee() 
-        {
-            Team.ShowEmployee();
         }
         #endregion
 

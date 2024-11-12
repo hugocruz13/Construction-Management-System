@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace src
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Project.Id = 600;
-            Project.Status = Status.NotStart;
-            Project.Client = new Client("Antonio", "964563928");
-            Project.AddEmployee("Nuno Jose", "Eletricista", 4.5);
-            Project.AddEmployee("Ricardo Pereira", "Pedreiro", 4.8);
-            Project.AddMaterial(new Material("Cimento", 4.80), 5);
-            Project.AddMaterial(new Material("Cola", 6), 2);
-            Project.AddMaterial(new Material("Tijolos", 0.37), 200);    
+            Projects.AddProject(new Project());
+            Projects.AddProject(new Project());
+            Projects.AddEmployee(300, new Employee("hugo", "teste", 7.5));
+            Projects.AddEmployee(300, new Employee("anti", "teste", 7.5));
+            Projects.AddEmployee(301, new Employee("sd", "teste", 7.5));
+            Projects.AddClient(300,new Client("Hugo", "73246"));
+            Projects.AddClient(301,new Client("df", "7dfdsf6"));
+            Projects.ChangeStatus(301, Status.Completed);
+
+
         }
     }
 }

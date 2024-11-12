@@ -3,7 +3,7 @@
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>hugoc</author>
-*   <date>11/12/2024 6:50:44 PM</date>
+*   <date>11/12/2024 3:46:54 PM</date>
 *	<description></description>
 **/
 using System;
@@ -13,15 +13,15 @@ namespace src
     /// <summary>
     /// Purpose:
     /// Created by: hugoc
-    /// Created on: 11/12/2024 6:50:44 PM
+    /// Created on: 11/12/2024 3:46:54 PM
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Team
+    public class MaterialInventory
     {
         #region Attributes
-        const int sizeArrays = 3;
-        Employee[] team; 
+        const int sizeArrays = 20;
+        static MaterialQuantity[] inventory;
         static int total = 0;
         #endregion
 
@@ -35,9 +35,9 @@ namespace src
         /// <summary>
         /// The default Constructor.
         /// </summary>
-        public Team()
+        static MaterialInventory()
         {
-            team = new Employee[sizeArrays];
+            inventory = new MaterialQuantity[sizeArrays];
         }
 
         #endregion
@@ -46,20 +46,13 @@ namespace src
         #endregion
 
         #region OtherMethods
-        public bool AddEmployee(Employee employee)
-        {
-            if (total > 3)
-                total = 0;
-            team[total++] = employee;
-            return true;
-        }
         #endregion
 
         #region Destructor
         /// <summary>
         /// The destructor.
         /// </summary>
-        ~Team()
+        ~MaterialInventory()
         {
         }
         #endregion

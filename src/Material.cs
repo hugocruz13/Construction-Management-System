@@ -119,22 +119,6 @@ namespace src
         #endregion
 
         #region Overrides
-        /// <summary>
-        /// Overwriting the Equals method to compare two materials based on name.
-        /// </summary>
-        /// <param name="obj">Object to be compared.</param>
-        /// <returns>Returns true if the materials have the same name, false otherwise.</returns>
-        public override bool Equals(object obj)
-        {
-            Material m = (Material)obj;
-
-            if (name == m.name)
-            {
-                return true;
-            }
-
-            return false;
-        }
         #endregion
 
         #region OtherMethods
