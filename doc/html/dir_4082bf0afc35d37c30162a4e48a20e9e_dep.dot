@@ -6,7 +6,7 @@ digraph "C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trab
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   compound=true
   subgraph clusterdir_3bc03cc55d4aa6566f37b02a8017003e {
-    graph [ bgcolor="#edf0f7", pencolor="grey50", label="obj", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_3bc03cc55d4aa6566f37b02a8017003e.html",tooltip=""]
-  dir_4082bf0afc35d37c30162a4e48a20e9e [label="Debug", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_4082bf0afc35d37c30162a4e48a20e9e.html",tooltip=""];
+    graph [ bgcolor="#dadada", pencolor="grey50", label="obj", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_3bc03cc55d4aa6566f37b02a8017003e.html",tooltip=""]
+  dir_4082bf0afc35d37c30162a4e48a20e9e [label="Debug", fillcolor="#dadada", color="grey25", style="filled,bold", URL="dir_4082bf0afc35d37c30162a4e48a20e9e.html",tooltip=""];
   }
 }

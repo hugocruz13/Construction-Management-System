@@ -1,0 +1,5 @@
+<map id="src.Client" name="src.Client">
+<area shape="rect" id="Node000001" title="The Client class allows you to create a client object with basic information such as ID,..." alt="" coords="5,80,83,107"/>
+<area shape="rect" id="Node000002" href="$classsrc_1_1_person.html" title="Represents a person with basic attributes like Id and Name. This class provides access and modificati..." alt="" coords="13,5,75,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,48,47,80,41,80,41,48"/>
+</map>
