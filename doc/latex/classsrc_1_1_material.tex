@@ -1,0 +1,101 @@
+\doxysection{src.\+Material Class Reference}
+\label{classsrc_1_1_material}\index{src.Material@{src.Material}}
+
+
+The class {\ttfamily \doxyref{Material}{p.}{classsrc_1_1_material}} represents a material used in processes, with attributes such as ID, name and unit price. The ID is automatically generated, and the unit price is validated to ensure it is positive.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Material} (string name, double price)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes a material with the name and unit price. The ID is assigned automatically with the static counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Id}\hspace{0.3cm}{\ttfamily  [get]}
+\begin{DoxyCompactList}\small\item\em Returns the ID of the \doxyref{Material}{p.}{classsrc_1_1_material}. \end{DoxyCompactList}\item 
+string \textbf{ Name}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Gets or set the name of the material. \end{DoxyCompactList}\item 
+double \textbf{ Unit\+Price}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Get or set the unit price of the material. The price must be greater than zero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class {\ttfamily \doxyref{Material}{p.}{classsrc_1_1_material}} represents a material used in processes, with attributes such as ID, name and unit price. The ID is automatically generated, and the unit price is validated to ensure it is positive. 
+
+The class provides properties to access and modify the attributes of a material, as well as a method to check the equality of two materials based on the name. 
+
+Example of use 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Material\ mat\ =\ \textcolor{keyword}{new}\ Material(\textcolor{stringliteral}{"{}Cimento"{}},\ 4.80)}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{src.Material@{src.Material}!Material@{Material}}
+\index{Material@{Material}!src.Material@{src.Material}}
+\doxysubsubsection{Material()}
+{\footnotesize\ttfamily \label{classsrc_1_1_material_a7e4a3e8dddd95434b8f9f30ca9bd1d5a} 
+src.\+Material.\+Material (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{double}]{price}{}\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes a material with the name and unit price. The ID is assigned automatically with the static counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the material.\\
+\hline
+{\em price} & Unit price of the material.\\
+\hline
+\end{DoxyParams}
+
+
+The ID is assigned automatically and generated based on the static counter {\ttfamily material\+Id\+Counter} 
+
+Public Access  
+
+\doxysubsection{Property Documentation}
+\index{src.Material@{src.Material}!Id@{Id}}
+\index{Id@{Id}!src.Material@{src.Material}}
+\doxysubsubsection{Id}
+{\footnotesize\ttfamily \label{classsrc_1_1_material_ad6974d22f6e60dd9a5249902a3dc94de} 
+int src.\+Material.\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the ID of the \doxyref{Material}{p.}{classsrc_1_1_material}. 
+
+The material ID.
+
+Public Access (read only).  \index{src.Material@{src.Material}!Name@{Name}}
+\index{Name@{Name}!src.Material@{src.Material}}
+\doxysubsubsection{Name}
+{\footnotesize\ttfamily \label{classsrc_1_1_material_a3c0d81bc8943ee3fc467aa3e8a90c015} 
+string src.\+Material.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or set the name of the material. 
+
+\doxyref{Material}{p.}{classsrc_1_1_material} name.
+
+Public Access  \index{src.Material@{src.Material}!UnitPrice@{UnitPrice}}
+\index{UnitPrice@{UnitPrice}!src.Material@{src.Material}}
+\doxysubsubsection{UnitPrice}
+{\footnotesize\ttfamily \label{classsrc_1_1_material_afe6082088a28f76762cacc25f4ee3931} 
+double src.\+Material.\+Unit\+Price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Get or set the unit price of the material. The price must be greater than zero. 
+
+Unit price of the material.
+
+Public Access  
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase1/src/Material.\+cs\end{DoxyCompactItemize}
