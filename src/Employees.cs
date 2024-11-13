@@ -11,16 +11,30 @@ using System;
 namespace src
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: hugoc
-    /// Created on: 11/12/2024 3:42:09 PM
+    /// Represents a collection of employee with a fixed maximum capacity.
     /// </summary>
-    /// <remarks></remarks>
-    /// <example></example>
+    /// <remarks>
+    /// This class is designed to store instances of the <c>Employee</c> class in a fixed-size array, defined by the constant <c>sizeArrays</c>.
+    /// The array is statically initialized upon first access to the <c>Employees</c> class.
+    /// </remarks>
+    /// <example>
+    /// Example of use
+    /// <code>
+    /// Employees employees 
+    /// Employees.AddEmployee(new Employee employee("Antonio Pereira","Eletricista", 6.3))
+    /// </code>
+    /// </example>
     public class Employees
     {
         #region Attributes
+        /// <summary>
+        /// The fixed size of the <c>employees</c> array.
+        /// </summary>
         const int sizeArrays = 15;
+
+        /// <summary>
+        /// Array that stores instances of <c>Employee</c> objects.
+        /// </summary>
         static Employee[] employees;
         #endregion
 
@@ -31,9 +45,17 @@ namespace src
 
         #region Constructors
 
+
         /// <summary>
-        /// The default Constructor.
+        /// Initializes the <c>Employees</c> class by setting up the client array.
         /// </summary>
+        /// <remarks>
+        /// This static constructor is called only once, when the <c>Employees</c> class is accessed for the first time. 
+        /// It initializes the <c>employees</c> array with a predefined size.
+        /// </remarks>
+        /// <example>
+        /// Accessing any member of the <c>Employees</c> class will trigger this constructor if it hasn't been initialized.
+        /// </example>
         static Employees()
         {
             employees = new Employee[sizeArrays];

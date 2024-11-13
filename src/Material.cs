@@ -32,14 +32,17 @@ namespace src
         /// Unique material identifier.
         /// </summary>
         int id;
+
         /// <summary>
         /// Name of the material.
         /// </summary>
         string name;
+
         /// <summary>
         /// Unit price of the material.
         /// </summary>
         double unitPrice;
+
         /// <summary>
         /// Static counter to assign unique IDs to materials.
         /// </summary>

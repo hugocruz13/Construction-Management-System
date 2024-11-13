@@ -15,16 +15,11 @@ namespace src
     /// information such as their Id, name, role, and hourly role.
     /// </summary>
     /// <remarks>
-    /// This class allows to create an employee and provide methedos to access and modify the employee's attributes.
+    /// This class inherits from <see cref="Person"/> and provides methods to access and modify 
+    /// the employee attributes, and assign an Id automatically using a static counter.
     /// </remarks>
     /// <example>
     /// Example of use
-    /// <code>
-    /// Employee emp = new Employee();
-    /// emp.Name = "Hugo Cruz";
-    /// emp.Role = "Engineering";
-    /// emp.HourlyRate = 12.3;
-    /// </code>
     /// <code> 
     /// Employee emp = new Employee("Hugo Cruz", "Engineering", 12.3);
     /// </code>
@@ -36,10 +31,12 @@ namespace src
         /// The position of employee.
         /// </summary>
         string role;
+
         /// <summary>
         /// The hourly rate of the employee.
         /// </summary>
         double hourlyRate;
+
         /// <summary>
         /// Static counter to assign unique IDs to employees.
         /// </summary>
@@ -72,7 +69,13 @@ namespace src
         /// </permission>
         public double HourlyRate
         {
-            set { hourlyRate = value; }
+            set
+            {
+                if (value > 4.66)
+                {
+                    hourlyRate = value;
+                }
+            }
             get { return hourlyRate; }
         }
         #endregion
@@ -80,7 +83,7 @@ namespace src
         #region Constructors
 
         /// <summary>
-        /// Simple constructor to initialize the employee with specific values.
+        /// Constructor to initialize the employee with specific values.
         /// </summary>
         /// <param name="name">Employee Name</param>
         /// <param name="role">Employee Role</param>

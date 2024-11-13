@@ -20,7 +20,15 @@ namespace src
     public class Projects
     {
         #region Attributes
+
+        /// <summary>
+        ///  The fixed size of the <c>projects</c> array.
+        /// </summary>
         const int sizeArrays = 5;
+
+        /// <summary>
+        /// Array that stores instances of <c>Project</c> objects.
+        /// </summary>
         static Project[] projects;
         #endregion
 
@@ -32,8 +40,15 @@ namespace src
         #region Constructors
 
         /// <summary>
-        /// The default Constructor.
+        /// Initializes the <c>Projects</c> class by setting up the project array.
         /// </summary>
+        /// <remarks>
+        /// This static constructor is called only once, when the <c>Projects</c> class is accessed for the first time. 
+        /// It initializes the <c>projects</c> array with a predefined size.
+        /// </remarks>
+        /// <example>
+        /// Accessing any member of the <c>Projects</c> class will trigger this constructor if it hasn't been initialized.
+        /// </example>
         static Projects()
         {
             projects = new Project[sizeArrays];

@@ -49,23 +49,30 @@ namespace src
         /// Unique project ID.
         /// </summary>
         int id;
+
         /// <summary>
         /// Current status of the project.
         /// </summary>
         Status status;
+
         /// <summary>
         /// Client associated with the project.
         /// </summary>
         Client client;
+
         /// <summary>
         ///  Team associated with the project.
         /// </summary>
         Team team;
+
         /// <summary>
         /// Materials used in the project.
         /// </summary>
         static MaterialInventory usedMaterials;
 
+        /// <summary>
+        /// Static counter to assign unique IDs to project.
+        /// </summary>
         static int projectIdCounter = 300;
         #endregion
 
@@ -105,11 +112,11 @@ namespace src
         /// <summary>
         /// The default Constructor.
         /// </summary>
-        public Project()
+        public Project(Status status, Client client)
         {
             Id = projectIdCounter++;
-            Status = Status.NotStart;
-            Client = null;
+            Status = status;
+            Client = client;
             team = new Team();
         }
 

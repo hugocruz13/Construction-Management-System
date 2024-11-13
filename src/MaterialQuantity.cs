@@ -31,14 +31,17 @@ namespace src
         /// Material associated with quantity.
         /// </summary>
         Material material;
+
         /// <summary>
         /// Quantity of material.
         /// </summary>
         int quantity;
+
         /// <summary>
         /// Date of registration of the quantity of material.
         /// </summary>
         DateTime date;
+
         #endregion
 
         #region Methods

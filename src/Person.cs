@@ -20,7 +20,6 @@ namespace src
     /// <example>
     /// Example of use
     /// <code>
-    /// Id = IdCounter++;  
     /// Name = name;
     /// </code>
     /// </example>
@@ -70,10 +69,14 @@ namespace src
 
         #region Constructors
         /// <summary>
-        /// Protect para não se criar instancias de pessoa ////////////////////////////
+        /// Initializes a new instance of the <c>Person</c> class with the specified ID and name.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="name"></param>
+        /// <remarks>
+        /// This constructor is <c>protected</c> to prevent direct instantiation of the <c>Person</c> class,
+        /// enforcing that it can only be instantiated through derived classes.
+        /// </remarks>
+        /// <param name="id">The unique identifier for the person.</param>
+        /// <param name="name">The name of the person.</param>
         protected Person(int id, string name) 
         {
             this.id = id;

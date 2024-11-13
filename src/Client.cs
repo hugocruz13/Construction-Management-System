@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>hugoc</author>
 *   <date>11/3/2024 7:20:50 PM</date>
-*	<description>This file is focused on creating client objects (Client).</description>
+*	<description>This file is focused on creating client objects.</description>
 */
 using System;
 using System.Xml.Linq;
@@ -13,11 +13,11 @@ namespace src
 {
     /// <summary>
     /// The <c>Client</c> class allows you to create a client object
-    /// with basic information such as ID, name and contact information.
+    /// with basic information such as id, name and contact information.
     /// </summary>
     /// <remarks>
     /// This class inherits from <see cref="Person"/> and provides methods to access and modify 
-    /// the client attributes, and assign an ID automatically using a static counter.
+    /// the client attributes, and assign an Id automatically using a static counter.
     /// </remarks>
     /// <example>
     /// Example of use
@@ -32,10 +32,12 @@ namespace src
         /// Customer contact information.
         /// </summary>
         string contactInfo;
+
         /// <summary>
         /// Static counter to assign unique IDs to clients.
         /// </summary>
         static int clientIdCounter = 500;
+
         #endregion
 
         #region Methods
@@ -50,7 +52,13 @@ namespace src
         /// </permission>
         public string ContactInfo
         {
-            set  { contactInfo = value; }
+            set 
+            {
+                if (value.Length <= 9)
+                {
+                    contactInfo = value;
+                }
+            }
             get { return contactInfo; }
         }
         #endregion
@@ -60,7 +68,7 @@ namespace src
         /// <summary>
         /// Simple constructor to initialize or client with specific values.
         /// </summary>
-        /// <param name="name">Name of customer.</param>
+        /// <param name="name">Name of client.</param>
         /// <param name="contact">Customer contact information.</param>
         /// <remarks>
         /// Initializes the client with a given name and contact information.
@@ -69,9 +77,9 @@ namespace src
         /// <permission>
         /// Public Access.
         /// </permission>
-        public Client(string name, string contact) : base(clientIdCounter++, name)
+        public Client(string name, string contact) : base(clientIdCounter++, name) //Send to the construct person.
         {
-            ContactInfo = contact;
+            ContactInfo = contact; 
         }
 
         #endregion

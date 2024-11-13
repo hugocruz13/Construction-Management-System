@@ -11,16 +11,30 @@ using System;
 namespace src
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: hugoc
-    /// Created on: 11/12/2024 3:46:54 PM
+    /// Represents a inventory with a fixed maximum capacity.
     /// </summary>
-    /// <remarks></remarks>
-    /// <example></example>
+    /// <remarks>
+    /// This class is designed to store instances of the <c>MaterialQuantity</c> class in a fixed-size array, defined by the constant <c>sizeArrays</c>.
+    /// The array is statically initialized upon first access to the <c>MaterialInventory</c> class.
+    /// </remarks>
+    /// <example>
+    /// Example of use
+    /// <code>
+    /// MaterialInventory inventory 
+    /// MaterialInventory.AddMaterial(new MaterialQuantity("Cimento", 4.80, 5))
+    /// </code>
+    /// </example>
     public class MaterialInventory
     {
         #region Attributes
+        /// <summary>
+        /// The fixed size of the <c>inventory</c> array.
+        /// </summary>
         const int sizeArrays = 20;
+
+        /// <summary>
+        /// Array that stores instances of <c>MaterialQuantity</c> objects.
+        /// </summary>
         static MaterialQuantity[] inventory;
         #endregion
 
@@ -32,8 +46,15 @@ namespace src
         #region Constructors
 
         /// <summary>
-        /// The default Constructor.
+        /// Initializes the <c>MaterialInventory</c> class by setting up the meterial array.
         /// </summary>
+        /// <remarks>
+        /// This static constructor is called only once, when the <c>MaterialInventory</c> class is accessed for the first time. 
+        /// It initializes the <c>inventory</c> array with a predefined size.
+        /// </remarks>
+        /// <example>
+        /// Accessing any member of the <c>MaterialInventory</c> class will trigger this constructor if it hasn't been initialized.
+        /// </example>
         static MaterialInventory()
         {
             inventory = new MaterialQuantity[sizeArrays];
@@ -49,7 +70,7 @@ namespace src
 
         #region Destructor
         /// <summary>
-        /// The destructor.
+        ///  The destroyer of the MaterialInventory class.
         /// </summary>
         ~MaterialInventory()
         {
