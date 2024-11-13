@@ -22,7 +22,6 @@ namespace src
         #region Attributes
         const int sizeArrays = 3;
         Employee[] team; 
-        static int total = 0;
         #endregion
 
         #region Methods
@@ -46,13 +45,6 @@ namespace src
         #endregion
 
         #region OtherMethods
-        public bool AddEmployee(Employee employee)
-        {
-            if (total > 3)
-                total = 0;
-            team[total++] = employee;
-            return true;
-        }
         #endregion
 
         #region Destructor

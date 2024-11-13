@@ -22,7 +22,6 @@ namespace src
         #region Attributes
         const int sizeArrays = 15;
         static Employee[] employees;
-        static int total = 0;
         #endregion
 
         #region Methods

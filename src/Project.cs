@@ -119,11 +119,7 @@ namespace src
         #endregion
 
         #region OtherMethods
-        public bool AddEmployee(Employee employee)
-        {
-            team.AddEmployee(employee);
-            return true;
-        }
+
         #endregion
 
         #region Destructor
