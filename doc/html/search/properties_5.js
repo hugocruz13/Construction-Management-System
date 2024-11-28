@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_0',['Name',['../classsrc_1_1_material.html#a3c0d81bc8943ee3fc467aa3e8a90c015',1,'src.Material.Name'],['../classsrc_1_1_person.html#abbd15999fa08da9ca6b5e54b9f89190a',1,'src.Person.Name']]]
+  ['material_0',['Material',['../classsrc_1_1_material_quantity.html#acd8db9e9fec5fcf708764aedf41ab1f9',1,'src::MaterialQuantity']]]
 ];

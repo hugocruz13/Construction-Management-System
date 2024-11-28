@@ -1,0 +1,595 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsrc_1_1_company" kind="class" language="C#" prot="public">
+    <compoundname>src::Company</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classsrc_1_1_company_1a0ff25e2726b31c384d64295181789dce" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsrc_1_1_clients" kindref="compound">Clients</ref></type>
+        <definition>Clients src.Company.clients</definition>
+        <argsstring></argsstring>
+        <name>clients</name>
+        <qualifiedname>src.Company.clients</qualifiedname>
+        <briefdescription>
+<para>Static instance of the <computeroutput><ref refid="classsrc_1_1_clients" kindref="compound">Clients</ref></computeroutput> class, managing the company&apos;s clients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="33" column="24" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1_company_1a0d05c5107a003a25393af8e2ea47f523" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsrc_1_1_material_inventory" kindref="compound">MaterialInventory</ref></type>
+        <definition>MaterialInventory src.Company.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <qualifiedname>src.Company.inventory</qualifiedname>
+        <briefdescription>
+<para>Static instance of the <computeroutput><ref refid="classsrc_1_1_material_inventory" kindref="compound">MaterialInventory</ref></computeroutput> class, managing the company&apos;s inventory of materials. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="38" column="34" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1_company_1a9f3078f4203f606f8bb5c2217b9dff01" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsrc_1_1_employees" kindref="compound">Employees</ref></type>
+        <definition>Employees src.Company.employees</definition>
+        <argsstring></argsstring>
+        <name>employees</name>
+        <qualifiedname>src.Company.employees</qualifiedname>
+        <briefdescription>
+<para>Static instance of the <computeroutput><ref refid="classsrc_1_1_employees" kindref="compound">Employees</ref></computeroutput> class, managing the company&apos;s employees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="43" column="26" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1_company_1a28a7337d02dbce36583a99e1e095266a" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsrc_1_1_projects" kindref="compound">Projects</ref></type>
+        <definition>Projects src.Company.projects</definition>
+        <argsstring></argsstring>
+        <name>projects</name>
+        <qualifiedname>src.Company.projects</qualifiedname>
+        <briefdescription>
+<para>Static instance of the <computeroutput><ref refid="classsrc_1_1_projects" kindref="compound">Projects</ref></computeroutput> class, managing the company&apos;s projects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="48" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsrc_1_1_company_1abea879f6df73d7861b61e15198541c08" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.Company.ClientRegister</definition>
+        <argsstring>(Client client)</argsstring>
+        <name>ClientRegister</name>
+        <qualifiedname>src.Company.ClientRegister</qualifiedname>
+        <param>
+          <type><ref refid="classsrc_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new client in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classsrc_1_1_client" kindref="compound">Client</ref></computeroutput> object to be registered.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer representing the unique ID of the registered client. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="69" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1ad6648d1050cdab888f3eb71da715ae6f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Company.ClientExist</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>ClientExist</name>
+        <qualifiedname>src.Company.ClientExist</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a client exists in the system based on their unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the client to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the client exists; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="82" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a6df05e2e4cfdc5ef1769109e1fc214b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.Company.MaterialRegister</definition>
+        <argsstring>(MaterialQuantity materialQuantity)</argsstring>
+        <name>MaterialRegister</name>
+        <qualifiedname>src.Company.MaterialRegister</qualifiedname>
+        <param>
+          <type><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>materialQuantity</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>materialQuantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> object containing material details and quantity.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer representing the unique ID of the registered material. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="98" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a9e99844f70381ddbb7199da42d8fd5be" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Company.MaterialExist</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>MaterialExist</name>
+        <qualifiedname>src.Company.MaterialExist</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a material exists in the inventory based on its unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the material exists; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="111" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a33c60a0616a5f4e9a203a5bd36723244" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Company.UpdateMaterialStock</definition>
+        <argsstring>(int idMaterial, int quantityUpdate)</argsstring>
+        <name>UpdateMaterialStock</name>
+        <qualifiedname>src.Company.UpdateMaterialStock</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantityUpdate</declname>
+        </param>
+        <briefdescription>
+<para>Updates the stock of a specific material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantityUpdate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity to add or subtract from the material stock.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the stock was updated successfully; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="125" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="125" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1adcaea13b36b4a93d8d6c72cf09f852d2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.Company.MaterialGetQuantity</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>MaterialGetQuantity</name>
+        <qualifiedname>src.Company.MaterialGetQuantity</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the current quantity of a specific material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to query.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer representing the quantity of the material. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="138" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1ac2ea8f57fabc45e8b4719122352ff3d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.Company.ProjectCreate</definition>
+        <argsstring>(Status status, int idClient, DateTime dateStart)</argsstring>
+        <name>ProjectCreate</name>
+        <qualifiedname>src.Company.ProjectCreate</qualifiedname>
+        <param>
+          <type><ref refid="namespacesrc_1af7f0a9d891a5c63215e50974323f4095" kindref="member">Status</ref></type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>dateStart</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new project and associates it with a client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial status of the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the client associated with the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dateStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start date of the project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer representing the unique ID of the created project, or -10 if the client does not exist. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="156" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="156" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a91ff036baa08b8c8a277fcd9c9a98abd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Company.ProjectAddEmployee</definition>
+        <argsstring>(int idProject, int idEmployee)</argsstring>
+        <name>ProjectAddEmployee</name>
+        <qualifiedname>src.Company.ProjectAddEmployee</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Adds an employee to an existing project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the employee to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the employee was added successfully; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="175" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="175" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a98cd5a59d8870628b798f51f1cb293bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Company.ProjectUseMaterial</definition>
+        <argsstring>(int idProject, int idMaterial, int quantity)</argsstring>
+        <name>ProjectUseMaterial</name>
+        <qualifiedname>src.Company.ProjectUseMaterial</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Assigns a material to a project and subtract it from the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.&lt;/pdeduzaram&gt; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to assign.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of material to assign to the project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the material was assigned successfully; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="195" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="195" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a298c0078b1e4a3867df2c059ac37e0eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Company.ProjectExist</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>ProjectExist</name>
+        <qualifiedname>src.Company.ProjectExist</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a project exists in the system based on its unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the project exists; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="208" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="208" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a6d65596356689d106f22c45751e5efbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Company.ProjectClose</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>ProjectClose</name>
+        <qualifiedname>src.Company.ProjectClose</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Closes an existing project by updating its status and setting the end date. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project to close.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the project was closed successfully; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="221" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="221" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a7defa2a848a242abf175c03eb6bea366" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.Company.EmployeeRegister</definition>
+        <argsstring>(Employee employee)</argsstring>
+        <name>EmployeeRegister</name>
+        <qualifiedname>src.Company.EmployeeRegister</qualifiedname>
+        <param>
+          <type><ref refid="classsrc_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new employee in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classsrc_1_1_employee" kindref="compound">Employee</ref></computeroutput> object to be registered.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer representing the unique ID of the registered employee. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="236" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="236" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_company_1a6fcf75abe8417bb2f9313d45bda897bf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Company.EmployeeExist</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>EmployeeExist</name>
+        <qualifiedname>src.Company.EmployeeExist</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Checks if an employee exists in the system based on their unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the employee to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the employee exists; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="249" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="249" bodyend="253"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsrc_1_1_company_1a348bb8c9aff4afec43410b0badd92e7f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>src.Company.~Company</definition>
+        <argsstring>()</argsstring>
+        <name>~Company</name>
+        <qualifiedname>src.Company.~Company</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="classsrc_1_1_company" kindref="compound">Company</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="262" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="262" bodyend="264"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a company with static attributes for managing clients, material inventory, employees, and projects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <computeroutput><ref refid="classsrc_1_1_company" kindref="compound">Company</ref></computeroutput> class provides a centralized, static structure for managing the core entities of a business. As all members are static, no instances are required. </para>
+<para>Example of use <programlisting filename=".cs"><codeline><highlight class="normal">Company.ProjectCreate;<sp/></highlight></codeline>
+<codeline><highlight class="normal">Company.EmployeeRegister;</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" line="27" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Company.cs" bodystart="28" bodyend="269"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1_company_1ad6648d1050cdab888f3eb71da715ae6f" prot="public" virt="non-virtual"><scope>src::Company</scope><name>ClientExist</name></member>
+      <member refid="classsrc_1_1_company_1abea879f6df73d7861b61e15198541c08" prot="public" virt="non-virtual"><scope>src::Company</scope><name>ClientRegister</name></member>
+      <member refid="classsrc_1_1_company_1a0ff25e2726b31c384d64295181789dce" prot="private" virt="non-virtual"><scope>src::Company</scope><name>clients</name></member>
+      <member refid="classsrc_1_1_company_1a6fcf75abe8417bb2f9313d45bda897bf" prot="public" virt="non-virtual"><scope>src::Company</scope><name>EmployeeExist</name></member>
+      <member refid="classsrc_1_1_company_1a7defa2a848a242abf175c03eb6bea366" prot="public" virt="non-virtual"><scope>src::Company</scope><name>EmployeeRegister</name></member>
+      <member refid="classsrc_1_1_company_1a9f3078f4203f606f8bb5c2217b9dff01" prot="private" virt="non-virtual"><scope>src::Company</scope><name>employees</name></member>
+      <member refid="classsrc_1_1_company_1a0d05c5107a003a25393af8e2ea47f523" prot="private" virt="non-virtual"><scope>src::Company</scope><name>inventory</name></member>
+      <member refid="classsrc_1_1_company_1a9e99844f70381ddbb7199da42d8fd5be" prot="public" virt="non-virtual"><scope>src::Company</scope><name>MaterialExist</name></member>
+      <member refid="classsrc_1_1_company_1adcaea13b36b4a93d8d6c72cf09f852d2" prot="public" virt="non-virtual"><scope>src::Company</scope><name>MaterialGetQuantity</name></member>
+      <member refid="classsrc_1_1_company_1a6df05e2e4cfdc5ef1769109e1fc214b1" prot="public" virt="non-virtual"><scope>src::Company</scope><name>MaterialRegister</name></member>
+      <member refid="classsrc_1_1_company_1a91ff036baa08b8c8a277fcd9c9a98abd" prot="public" virt="non-virtual"><scope>src::Company</scope><name>ProjectAddEmployee</name></member>
+      <member refid="classsrc_1_1_company_1a6d65596356689d106f22c45751e5efbb" prot="public" virt="non-virtual"><scope>src::Company</scope><name>ProjectClose</name></member>
+      <member refid="classsrc_1_1_company_1ac2ea8f57fabc45e8b4719122352ff3d9" prot="public" virt="non-virtual"><scope>src::Company</scope><name>ProjectCreate</name></member>
+      <member refid="classsrc_1_1_company_1a298c0078b1e4a3867df2c059ac37e0eb" prot="public" virt="non-virtual"><scope>src::Company</scope><name>ProjectExist</name></member>
+      <member refid="classsrc_1_1_company_1a28a7337d02dbce36583a99e1e095266a" prot="private" virt="non-virtual"><scope>src::Company</scope><name>projects</name></member>
+      <member refid="classsrc_1_1_company_1a98cd5a59d8870628b798f51f1cb293bb" prot="public" virt="non-virtual"><scope>src::Company</scope><name>ProjectUseMaterial</name></member>
+      <member refid="classsrc_1_1_company_1a33c60a0616a5f4e9a203a5bd36723244" prot="public" virt="non-virtual"><scope>src::Company</scope><name>UpdateMaterialStock</name></member>
+      <member refid="classsrc_1_1_company_1a348bb8c9aff4afec43410b0badd92e7f" prot="private" virt="non-virtual"><scope>src::Company</scope><name>~Company</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

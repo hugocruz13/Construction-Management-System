@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_ca96b112edf0a196872e1ec0b84dd303" kind="dir">
+    <compoundname>html</compoundname>
+    <innerfile refid="classsrc__1__1__client____coll____graph_8png">classsrc_1_1_client__coll__graph.png</innerfile>
+    <innerfile refid="classsrc__1__1__client____inherit____graph_8png">classsrc_1_1_client__inherit__graph.png</innerfile>
+    <innerfile refid="classsrc__1__1__employee____coll____graph_8png">classsrc_1_1_employee__coll__graph.png</innerfile>
+    <innerfile refid="classsrc__1__1__employee____inherit____graph_8png">classsrc_1_1_employee__inherit__graph.png</innerfile>
+    <innerfile refid="classsrc__1__1__person____inherit____graph_8png">classsrc_1_1_person__inherit__graph.png</innerfile>
+    <innerfile refid="dir__3bc03cc55d4aa6566f37b02a8017003e__dep_8png">dir_3bc03cc55d4aa6566f37b02a8017003e_dep.png</innerfile>
+    <innerfile refid="dir__4082bf0afc35d37c30162a4e48a20e9e__dep_8png">dir_4082bf0afc35d37c30162a4e48a20e9e_dep.png</innerfile>
+    <innerfile refid="dir__a6283325e2b58ba58d4c0c1ad7b1bf70__dep_8png">dir_a6283325e2b58ba58d4c0c1ad7b1bf70_dep.png</innerfile>
+    <innerfile refid="dir__fde2e7bac110681567e7dc6808f601de__dep_8png">dir_fde2e7bac110681567e7dc6808f601de_dep.png</innerfile>
+    <innerfile refid="graph__legend_8png">graph_legend.png</innerfile>
+    <innerfile refid="inherit__graph__0_8png">inherit_graph_0.png</innerfile>
+    <innerfile refid="inherit__graph__1_8png">inherit_graph_1.png</innerfile>
+    <innerfile refid="inherit__graph__2_8png">inherit_graph_2.png</innerfile>
+    <innerfile refid="inherit__graph__3_8png">inherit_graph_3.png</innerfile>
+    <innerfile refid="inherit__graph__4_8png">inherit_graph_4.png</innerfile>
+    <innerfile refid="inherit__graph__5_8png">inherit_graph_5.png</innerfile>
+    <innerfile refid="inherit__graph__6_8png">inherit_graph_6.png</innerfile>
+    <innerfile refid="inherit__graph__7_8png">inherit_graph_7.png</innerfile>
+    <innerfile refid="inherit__graph__8_8png">inherit_graph_8.png</innerfile>
+    <innerfile refid="inherit__graph__9_8png">inherit_graph_9.png</innerfile>
+    <innerfile refid="nav__g_8png">nav_g.png</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="html/"/>
+  </compounddef>
+</doxygen>

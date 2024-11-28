@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unitprice_0',['UnitPrice',['../classsrc_1_1_material.html#afe6082088a28f76762cacc25f4ee3931',1,'src::Material']]]
+  ['role_0',['Role',['../classsrc_1_1_employee.html#a69ea6a3bbe2aab088fabdd31d2dc63e8',1,'src::Employee']]]
 ];

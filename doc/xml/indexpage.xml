@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Manage constructions</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md__c_1_2_users_2hugoc_2_desktop_22024__2025_2_programa_xC3_xA7_xC3_xA3o_01_orientada_01a_01_objetos_2trabalho_p_o_o__23010___fase1_2_r_e_a_d_m_e"/> <center> <image type="html" name="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/doc/uml/diagramclass.jpg" alt="Imagem do Projeto" inline="yes"></image>
+ </center> </para>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/README.md"/>
+  </compounddef>
+</doxygen>

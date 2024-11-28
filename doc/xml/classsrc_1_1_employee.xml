@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsrc_1_1_employee" kind="class" language="C#" prot="public">
+    <compoundname>src::Employee</compoundname>
+    <basecompoundref refid="classsrc_1_1_person" prot="public" virt="non-virtual">src.Person</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsrc_1_1_employee_1aa78483d47f6f3e93b77748792919d6d1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string src.Employee.role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <qualifiedname>src.Employee.role</qualifiedname>
+        <briefdescription>
+<para>The position of employee. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="33" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1_employee_1a33bab873d14f983ea97a269fdcf0dfa0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double src.Employee.hourlyRate</definition>
+        <argsstring></argsstring>
+        <name>hourlyRate</name>
+        <qualifiedname>src.Employee.hourlyRate</qualifiedname>
+        <briefdescription>
+<para>The hourly rate of the employee. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="38" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classsrc_1_1_employee_1ac739e2092e89126443dcc7e2f69ec95e" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int src.Employee.employeeIdCounter</definition>
+        <argsstring></argsstring>
+        <name>employeeIdCounter</name>
+        <qualifiedname>src.Employee.employeeIdCounter</qualifiedname>
+        <initializer>= 200</initializer>
+        <briefdescription>
+<para>Static counter to assign unique IDs to employees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="43" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classsrc_1_1_employee_1a69ea6a3bbe2aab088fabdd31d2dc63e8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string src.Employee.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>src.Employee.Role</qualifiedname>
+        <briefdescription>
+<para>Obtain or define the position of the employee. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The position of employee.</para>
+<para>Public Access  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="57" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="property" id="classsrc_1_1_employee_1ae7c10df22f17c2e0e8b760ea413e2a72" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double src.Employee.HourlyRate</definition>
+        <argsstring></argsstring>
+        <name>HourlyRate</name>
+        <qualifiedname>src.Employee.HourlyRate</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the employee’s hourly rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The hourly rate of the employee.</para>
+<para>Public Access  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="70" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="71" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1_employee_1a45e6435ffe420e6b050f12258693ed12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>src.Employee.Employee</definition>
+        <argsstring>(string name, string role, double hourlyrate)</argsstring>
+        <name>Employee</name>
+        <qualifiedname>src.Employee.Employee</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hourlyrate</declname>
+        </param>
+        <briefdescription>
+<para>Constructor to initialize the employee with specific values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classsrc_1_1_employee" kindref="compound">Employee</ref> Name</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classsrc_1_1_employee" kindref="compound">Employee</ref> Role</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hourlyrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classsrc_1_1_employee" kindref="compound">Employee</ref> Hourly Rate</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Initializes the employee with a given name, job title and hourly rate. The ID is assigned automatically using the static counter. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="95" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_employee_1a6e8f23c20dc2c991b979d7c66d6716a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool src.Employee.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>src.Employee.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether the specified object is equal to the current employee. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare with the current employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the specified object is equal to the current employee; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="110" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="110" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsrc_1_1_employee_1a7ef27327f30dd8e9cec52defcdbefe53" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>src.Employee.~Employee</definition>
+        <argsstring>()</argsstring>
+        <name>~Employee</name>
+        <qualifiedname>src.Employee.~Employee</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="classsrc_1_1_employee" kindref="compound">Employee</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="135" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="135" bodyend="137"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class <computeroutput><ref refid="classsrc_1_1_employee" kindref="compound">Employee</ref></computeroutput> allows to create an employee object with basic information such as their Id, name, role, and hourly role. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class inherits from <ref refid="classsrc_1_1_person" kindref="compound">Person</ref> and provides methods to access and modify the employee attributes, and assign an Id automatically using a static counter. </para>
+<para>Example of use <programlisting filename=".cs"><codeline><highlight class="normal"><ref refid="classsrc_1_1_employee_1a45e6435ffe420e6b050f12258693ed12" kindref="member">Employee</ref><sp/>emp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsrc_1_1_employee_1a45e6435ffe420e6b050f12258693ed12" kindref="member">Employee</ref>(</highlight><highlight class="stringliteral">&quot;Hugo<sp/>Cruz&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Engineering&quot;</highlight><highlight class="normal">,<sp/>12.3);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Person</label>
+        <link refid="classsrc_1_1_person"/>
+      </node>
+      <node id="1">
+        <label>src.Employee</label>
+        <link refid="classsrc_1_1_employee"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Person</label>
+        <link refid="classsrc_1_1_person"/>
+      </node>
+      <node id="1">
+        <label>src.Employee</label>
+        <link refid="classsrc_1_1_employee"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" line="27" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Employee.cs" bodystart="28" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1_employee_1a45e6435ffe420e6b050f12258693ed12" prot="public" virt="non-virtual"><scope>src::Employee</scope><name>Employee</name></member>
+      <member refid="classsrc_1_1_employee_1ac739e2092e89126443dcc7e2f69ec95e" prot="private" virt="non-virtual"><scope>src::Employee</scope><name>employeeIdCounter</name></member>
+      <member refid="classsrc_1_1_employee_1a6e8f23c20dc2c991b979d7c66d6716a1" prot="public" virt="non-virtual"><scope>src::Employee</scope><name>Equals</name></member>
+      <member refid="classsrc_1_1_employee_1ae7c10df22f17c2e0e8b760ea413e2a72" prot="public" virt="non-virtual"><scope>src::Employee</scope><name>HourlyRate</name></member>
+      <member refid="classsrc_1_1_employee_1a33bab873d14f983ea97a269fdcf0dfa0" prot="private" virt="non-virtual"><scope>src::Employee</scope><name>hourlyRate</name></member>
+      <member refid="classsrc_1_1_person_1a0154a36b0f417f6c30bcda0558d3f699" prot="public" virt="non-virtual"><scope>src::Employee</scope><name>Id</name></member>
+      <member refid="classsrc_1_1_person_1abbd15999fa08da9ca6b5e54b9f89190a" prot="public" virt="non-virtual"><scope>src::Employee</scope><name>Name</name></member>
+      <member refid="classsrc_1_1_person_1a2ce3ae2819d51edbfe805e86db2b00ec" prot="protected" virt="non-virtual"><scope>src::Employee</scope><name>Person</name></member>
+      <member refid="classsrc_1_1_employee_1a69ea6a3bbe2aab088fabdd31d2dc63e8" prot="public" virt="non-virtual"><scope>src::Employee</scope><name>Role</name></member>
+      <member refid="classsrc_1_1_employee_1aa78483d47f6f3e93b77748792919d6d1" prot="private" virt="non-virtual"><scope>src::Employee</scope><name>role</name></member>
+      <member refid="classsrc_1_1_employee_1a7ef27327f30dd8e9cec52defcdbefe53" prot="private" virt="non-virtual"><scope>src::Employee</scope><name>~Employee</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

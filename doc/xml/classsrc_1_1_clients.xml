@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsrc_1_1_clients" kind="class" language="C#" prot="public">
+    <compoundname>src::Clients</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classsrc_1_1_clients_1a488f41d7d470cf9ee36cf60dc4ac9ebf" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int src.Clients.sizeArrays</definition>
+        <argsstring></argsstring>
+        <name>sizeArrays</name>
+        <qualifiedname>src.Clients.sizeArrays</qualifiedname>
+        <initializer>= 20</initializer>
+        <briefdescription>
+<para>The fixed size of the <computeroutput>clients</computeroutput> array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" line="31" column="19" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1_clients_1a1e5bb22460def1d62b33f632e837fdf2" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsrc_1_1_client" kindref="compound">Client</ref>[]</type>
+        <definition>Client [] src.Clients.clients</definition>
+        <argsstring></argsstring>
+        <name>clients</name>
+        <qualifiedname>src.Clients.clients</qualifiedname>
+        <briefdescription>
+<para>Array that stores instances of <computeroutput><ref refid="classsrc_1_1_client" kindref="compound">Client</ref></computeroutput> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" line="36" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classsrc_1_1_clients_1aaeef78fa2c7be6e99c158fb781eb6cd2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>static</type>
+        <definition>static src.Clients.Clients</definition>
+        <argsstring>()</argsstring>
+        <name>Clients</name>
+        <qualifiedname>src.Clients.Clients</qualifiedname>
+        <briefdescription>
+<para>Initializes the <computeroutput><ref refid="classsrc_1_1_clients" kindref="compound">Clients</ref></computeroutput> class by setting up the client array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This static constructor is called only once, when the <computeroutput><ref refid="classsrc_1_1_clients" kindref="compound">Clients</ref></computeroutput> class is accessed for the first time. It initializes the <computeroutput>clients</computeroutput> array with a predefined size. </para>
+<para>Accessing any member of the <computeroutput><ref refid="classsrc_1_1_clients" kindref="compound">Clients</ref></computeroutput> class will trigger this constructor if it hasn&apos;t been initialized. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" line="56" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_clients_1a8f4a1fc16dc4836c735706ae186f18ed" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Clients.VerifyClientExistence</definition>
+        <argsstring>(Client client)</argsstring>
+        <name>VerifyClientExistence</name>
+        <qualifiedname>src.Clients.VerifyClientExistence</qualifiedname>
+        <param>
+          <type><ref refid="classsrc_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a client already exists in the collection based on contact information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classsrc_1_1_client" kindref="compound">Client</ref></computeroutput> instance to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the client exists; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" line="101" column="29" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" bodystart="101" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsrc_1_1_clients_1a3c3947827f7a6f5dc82df5fa2462502e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.Clients.AddClient</definition>
+        <argsstring>(Client client)</argsstring>
+        <name>AddClient</name>
+        <qualifiedname>src.Clients.AddClient</qualifiedname>
+        <param>
+          <type><ref refid="classsrc_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+<para>Adds a client to the collection if they do not already exist (based on contact information). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classsrc_1_1_client" kindref="compound">Client</ref></computeroutput> instance to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>This method checks if a client with the same contact information already exists before adding a new one. </para>
+<para><simplesect kind="return"><para>The ID of the client if added successfully; otherwise, returns -10 if the client already exists or if there is no space. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" line="78" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" bodystart="78" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_clients_1acfcdaff24581a106bf10e5f266b653bc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.Clients.VerifyClientExistence</definition>
+        <argsstring>(int id)</argsstring>
+        <name>VerifyClientExistence</name>
+        <qualifiedname>src.Clients.VerifyClientExistence</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a client with a specific ID exists in the collection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if a client with the given ID exists; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" line="119" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" bodystart="119" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsrc_1_1_clients_1abdd9f5c32995dd028228e1fa1b07365b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>src.Clients.~Clients</definition>
+        <argsstring>()</argsstring>
+        <name>~Clients</name>
+        <qualifiedname>src.Clients.~Clients</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="classsrc_1_1_clients" kindref="compound">Clients</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" line="142" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" bodystart="142" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a collection of client with a fixed maximum capacity. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is designed to store instances of the <computeroutput><ref refid="classsrc_1_1_client" kindref="compound">Client</ref></computeroutput> class in a fixed-size array, defined by the constant <computeroutput>sizeArrays</computeroutput>. The array is statically initialized upon first access to the <computeroutput><ref refid="classsrc_1_1_clients" kindref="compound">Clients</ref></computeroutput> class. </para>
+<para>Example of use <programlisting filename=".cs"><codeline><highlight class="normal">Clients<sp/>clients<sp/></highlight></codeline>
+<codeline><highlight class="normal">Clients.AddClient(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Client<sp/>client(</highlight><highlight class="stringliteral">&quot;Ricardo<sp/>Alves&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;96.......&quot;</highlight><highlight class="normal">))</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" line="25" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Clients.cs" bodystart="26" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1_clients_1a3c3947827f7a6f5dc82df5fa2462502e" prot="public" virt="non-virtual"><scope>src::Clients</scope><name>AddClient</name></member>
+      <member refid="classsrc_1_1_clients_1aaeef78fa2c7be6e99c158fb781eb6cd2" prot="private" virt="non-virtual"><scope>src::Clients</scope><name>Clients</name></member>
+      <member refid="classsrc_1_1_clients_1a1e5bb22460def1d62b33f632e837fdf2" prot="private" virt="non-virtual"><scope>src::Clients</scope><name>clients</name></member>
+      <member refid="classsrc_1_1_clients_1a488f41d7d470cf9ee36cf60dc4ac9ebf" prot="private" virt="non-virtual"><scope>src::Clients</scope><name>sizeArrays</name></member>
+      <member refid="classsrc_1_1_clients_1a8f4a1fc16dc4836c735706ae186f18ed" prot="private" virt="non-virtual"><scope>src::Clients</scope><name>VerifyClientExistence</name></member>
+      <member refid="classsrc_1_1_clients_1acfcdaff24581a106bf10e5f266b653bc" prot="public" virt="non-virtual"><scope>src::Clients</scope><name>VerifyClientExistence</name></member>
+      <member refid="classsrc_1_1_clients_1abdd9f5c32995dd028228e1fa1b07365b" prot="private" virt="non-virtual"><scope>src::Clients</scope><name>~Clients</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

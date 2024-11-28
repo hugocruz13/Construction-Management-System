@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['role_0',['Role',['../classsrc_1_1_employee.html#a69ea6a3bbe2aab088fabdd31d2dc63e8',1,'src::Employee']]]
+  ['quantity_0',['Quantity',['../classsrc_1_1_material_quantity.html#ad68ecce1bee90af18400dbba860f05d0',1,'src::MaterialQuantity']]]
 ];

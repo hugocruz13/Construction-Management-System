@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['programming_0',['Object Oriented Programming',['../index.html',1,'']]]
+  ['manage_20constructions_0',['Manage constructions',['../index.html',1,'']]]
 ];

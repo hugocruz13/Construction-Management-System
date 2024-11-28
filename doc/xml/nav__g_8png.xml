@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="nav__g_8png" kind="file" language="C++">
+    <compoundname>nav_g.png</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">‰PNG</highlight></codeline>
+<codeline><highlight class="normal"><sp value="26"/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">IHDR<sp/><sp/><sp/><sp value="1"/><sp/><sp/><sp/><sp value="6"/><sp value="8"/><sp value="6"/><sp/><sp/><sp/><sp value="2"/><sp value="16"/>ô1  <sp/>&amp;IDATx<sp value="1"/>íÝ1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp value="8"/><sp value="3"/>ÁOH<sp value="23"/>f„á_</highlight></codeline>
+<codeline><highlight class="normal">-&gt;~¸åM iËMèÀƒ<sp value="7"/><sp value="7"/><sp value="15"/>S<sp/>½ü‚<  <sp/><sp/>IEND®B`‚</highlight></codeline>
+    </programlisting>
+    <location file="html/nav_g.png"/>
+  </compounddef>
+</doxygen>

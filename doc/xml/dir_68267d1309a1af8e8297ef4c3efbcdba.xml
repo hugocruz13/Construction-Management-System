@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src</compoundname>
+    <innerdir refid="dir_3bc03cc55d4aa6566f37b02a8017003e">C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/obj</innerdir>
+    <innerdir refid="dir_a6283325e2b58ba58d4c0c1ad7b1bf70">C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Properties</innerdir>
+    <innerfile refid="_client_8cs">Client.cs</innerfile>
+    <innerfile refid="_clients_8cs">Clients.cs</innerfile>
+    <innerfile refid="_company_8cs">Company.cs</innerfile>
+    <innerfile refid="_employee_8cs">Employee.cs</innerfile>
+    <innerfile refid="_employees_8cs">Employees.cs</innerfile>
+    <innerfile refid="_funcionario_8cs">Funcionario.cs</innerfile>
+    <innerfile refid="_material_8cs">Material.cs</innerfile>
+    <innerfile refid="_material_inventory_8cs">MaterialInventory.cs</innerfile>
+    <innerfile refid="_material_quantity_8cs">MaterialQuantity.cs</innerfile>
+    <innerfile refid="_obras_8cs">Obras.cs</innerfile>
+    <innerfile refid="_person_8cs">Person.cs</innerfile>
+    <innerfile refid="_pessoa_8cs">Pessoa.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_project_8cs">Project.cs</innerfile>
+    <innerfile refid="_projects_8cs">Projects.cs</innerfile>
+    <innerfile refid="_team_8cs">Team.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/"/>
+  </compounddef>
+</doxygen>

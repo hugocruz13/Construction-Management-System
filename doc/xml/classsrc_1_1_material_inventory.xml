@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsrc_1_1_material_inventory" kind="class" language="C#" prot="public">
+    <compoundname>src::MaterialInventory</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classsrc_1_1_material_inventory_1afe56ebd7228fed643a6df40acbfec5a3" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int src.MaterialInventory.sizeArrays</definition>
+        <argsstring></argsstring>
+        <name>sizeArrays</name>
+        <qualifiedname>src.MaterialInventory.sizeArrays</qualifiedname>
+        <initializer>= 20</initializer>
+        <briefdescription>
+<para>The fixed size of the <computeroutput>inventory</computeroutput> array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="33" column="19" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1_material_inventory_1aa7efb547537a78c2b190dbc40b167d88" prot="private" static="yes" mutable="no">
+        <type><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref>[]</type>
+        <definition>MaterialQuantity [] src.MaterialInventory.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <qualifiedname>src.MaterialInventory.inventory</qualifiedname>
+        <briefdescription>
+<para>Array that stores instances of <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="38" column="33" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1afe4e1eb0640f30b5829df4a8cc220f0a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>static</type>
+        <definition>static src.MaterialInventory.MaterialInventory</definition>
+        <argsstring>()</argsstring>
+        <name>MaterialInventory</name>
+        <qualifiedname>src.MaterialInventory.MaterialInventory</qualifiedname>
+        <briefdescription>
+<para>Initializes the <computeroutput><ref refid="classsrc_1_1_material_inventory" kindref="compound">MaterialInventory</ref></computeroutput> class by setting up the meterial array. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This static constructor is called only once, when the <computeroutput><ref refid="classsrc_1_1_material_inventory" kindref="compound">MaterialInventory</ref></computeroutput> class is accessed for the first time. It initializes the <computeroutput>inventory</computeroutput> array with a predefined size. </para>
+<para>Accessing any member of the <computeroutput><ref refid="classsrc_1_1_material_inventory" kindref="compound">MaterialInventory</ref></computeroutput> class will trigger this constructor if it hasn&apos;t been initialized. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="58" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1a23d92ecfb124c325c56c64eb11a53a58" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.MaterialInventory.VerifyMaterialExistence</definition>
+        <argsstring>(MaterialQuantity inventoryQuantity)</argsstring>
+        <name>VerifyMaterialExistence</name>
+        <qualifiedname>src.MaterialInventory.VerifyMaterialExistence</qualifiedname>
+        <param>
+          <type><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>inventoryQuantity</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a material already exists in the inventory based on a <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inventoryQuantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> instance to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the material exists; otherwise, <computeroutput>false</computeroutput>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="94" column="29" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="94" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1ab31d5499cd944b6656ea8a25128c1611" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.MaterialInventory.FindMaterial</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>FindMaterial</name>
+        <qualifiedname>src.MaterialInventory.FindMaterial</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Finds the position of a material in the inventory by its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to find.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The position of the material in the inventory if found; otherwise, returns -10.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="168" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="168" bodyend="179"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1a695f5a8af7bc8b7920484cc9c6d7a0d4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.MaterialInventory.AddMaterial</definition>
+        <argsstring>(MaterialQuantity inventoryQuantity)</argsstring>
+        <name>AddMaterial</name>
+        <qualifiedname>src.MaterialInventory.AddMaterial</qualifiedname>
+        <param>
+          <type><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>inventoryQuantity</declname>
+        </param>
+        <briefdescription>
+<para>Adds a material to the inventory if it does not already exist. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inventoryQuantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> instance to add to the inventory.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the material if added successfully; otherwise, returns -10 if the material already exists or if there is no available space.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="74" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="74" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1a47db21e59536039d6578b56ad60b5fba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.MaterialInventory.VerifyMaterialExistence</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>VerifyMaterialExistence</name>
+        <qualifiedname>src.MaterialInventory.VerifyMaterialExistence</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a material with a specific ID exists in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the material exists; otherwise, <computeroutput>false</computeroutput>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="111" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="111" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1a918cc0668cd4abb59bda6c15bf61c295" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int src.MaterialInventory.GetQuantity</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>GetQuantity</name>
+        <qualifiedname>src.MaterialInventory.GetQuantity</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Gets the quantity of a material in the inventory based on its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The quantity of the material if it exists; otherwise, returns -10 if the material is not found.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="134" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="134" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1acb37d810e8a4da3650033acb6d2c56da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.MaterialInventory.UpdateStock</definition>
+        <argsstring>(int idMaterial, int quantityUpdate)</argsstring>
+        <name>UpdateStock</name>
+        <qualifiedname>src.MaterialInventory.UpdateStock</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantityUpdate</declname>
+        </param>
+        <briefdescription>
+<para>Updates the stock quantity of a material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantityUpdate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new quantity to set.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the update is successful; otherwise, <computeroutput>false</computeroutput> if the material is not found.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="150" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="150" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1a33d65ee329c7c0a8481464f842246575" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool src.MaterialInventory.UseMaterial</definition>
+        <argsstring>(int idMaterial, int quantity)</argsstring>
+        <name>UseMaterial</name>
+        <qualifiedname>src.MaterialInventory.UseMaterial</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Decreases the quantity of a material in the inventory by a specified amount if there is sufficient stock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity to reduce from the stock.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the material was used successfully; otherwise, <computeroutput>false</computeroutput> if the material does not exist or there is insufficient stock.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="187" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="187" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsrc_1_1_material_inventory_1ad6cf6264239a0d6791dde7ffaa24e303" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>src.MaterialInventory.~MaterialInventory</definition>
+        <argsstring>()</argsstring>
+        <name>~MaterialInventory</name>
+        <qualifiedname>src.MaterialInventory.~MaterialInventory</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="classsrc_1_1_material_inventory" kindref="compound">MaterialInventory</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="210" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="210" bodyend="212"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a inventory with a fixed maximum capacity. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is designed to store instances of the <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> class in a fixed-size array, defined by the constant <computeroutput>sizeArrays</computeroutput>. The array is statically initialized upon first access to the <computeroutput><ref refid="classsrc_1_1_material_inventory" kindref="compound">MaterialInventory</ref></computeroutput> class. </para>
+<para>Example of use <programlisting filename=".cs"><codeline><highlight class="normal">MaterialInventory<sp/>inventory<sp/></highlight></codeline>
+<codeline><highlight class="normal">MaterialInventory.AddMaterial(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MaterialQuantity(</highlight><highlight class="stringliteral">&quot;Cimento&quot;</highlight><highlight class="normal">,<sp/>4.80,<sp/>5))</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" line="27" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialInventory.cs" bodystart="28" bodyend="217"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1_material_inventory_1a695f5a8af7bc8b7920484cc9c6d7a0d4" prot="public" virt="non-virtual"><scope>src::MaterialInventory</scope><name>AddMaterial</name></member>
+      <member refid="classsrc_1_1_material_inventory_1ab31d5499cd944b6656ea8a25128c1611" prot="private" virt="non-virtual"><scope>src::MaterialInventory</scope><name>FindMaterial</name></member>
+      <member refid="classsrc_1_1_material_inventory_1a918cc0668cd4abb59bda6c15bf61c295" prot="public" virt="non-virtual"><scope>src::MaterialInventory</scope><name>GetQuantity</name></member>
+      <member refid="classsrc_1_1_material_inventory_1aa7efb547537a78c2b190dbc40b167d88" prot="private" virt="non-virtual"><scope>src::MaterialInventory</scope><name>inventory</name></member>
+      <member refid="classsrc_1_1_material_inventory_1afe4e1eb0640f30b5829df4a8cc220f0a" prot="private" virt="non-virtual"><scope>src::MaterialInventory</scope><name>MaterialInventory</name></member>
+      <member refid="classsrc_1_1_material_inventory_1afe56ebd7228fed643a6df40acbfec5a3" prot="private" virt="non-virtual"><scope>src::MaterialInventory</scope><name>sizeArrays</name></member>
+      <member refid="classsrc_1_1_material_inventory_1acb37d810e8a4da3650033acb6d2c56da" prot="public" virt="non-virtual"><scope>src::MaterialInventory</scope><name>UpdateStock</name></member>
+      <member refid="classsrc_1_1_material_inventory_1a33d65ee329c7c0a8481464f842246575" prot="public" virt="non-virtual"><scope>src::MaterialInventory</scope><name>UseMaterial</name></member>
+      <member refid="classsrc_1_1_material_inventory_1a23d92ecfb124c325c56c64eb11a53a58" prot="private" virt="non-virtual"><scope>src::MaterialInventory</scope><name>VerifyMaterialExistence</name></member>
+      <member refid="classsrc_1_1_material_inventory_1a47db21e59536039d6578b56ad60b5fba" prot="public" virt="non-virtual"><scope>src::MaterialInventory</scope><name>VerifyMaterialExistence</name></member>
+      <member refid="classsrc_1_1_material_inventory_1ad6cf6264239a0d6791dde7ffaa24e303" prot="private" virt="non-virtual"><scope>src::MaterialInventory</scope><name>~MaterialInventory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

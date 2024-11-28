@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_ff69035fa1ccc83ff74410a99a8c1b81" kind="dir">
+    <compoundname>uml</compoundname>
+    <innerfile refid="diagramclass_8jpg">diagramclass.jpg</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="uml/"/>
+  </compounddef>
+</doxygen>

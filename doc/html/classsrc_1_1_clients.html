@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Object Oriented Programming: src.Clients Class Reference</title>
+<title>Manage constructions: src.Clients Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Object Oriented Programming
+   <div id="projectname">Manage constructions
    </div>
   </td>
  </tr>
@@ -89,16 +89,134 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classsrc_1_1_clients-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">src.Clients Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Purpose: Created by: hugoc Created on: 11/12/2024 3:44:27 PM.  
+<p>Represents a collection of client with a fixed maximum capacity.  
  <a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a3c3947827f7a6f5dc82df5fa2462502e" id="r_a3c3947827f7a6f5dc82df5fa2462502e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c3947827f7a6f5dc82df5fa2462502e">AddClient</a> (<a class="el" href="classsrc_1_1_client.html">Client</a> client)</td></tr>
+<tr class="memdesc:a3c3947827f7a6f5dc82df5fa2462502e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a client to the collection if they do not already exist (based on contact information).  <br /></td></tr>
+<tr class="separator:a3c3947827f7a6f5dc82df5fa2462502e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcdaff24581a106bf10e5f266b653bc" id="r_acfcdaff24581a106bf10e5f266b653bc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfcdaff24581a106bf10e5f266b653bc">VerifyClientExistence</a> (int id)</td></tr>
+<tr class="memdesc:acfcdaff24581a106bf10e5f266b653bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a client with a specific ID exists in the collection.  <br /></td></tr>
+<tr class="separator:acfcdaff24581a106bf10e5f266b653bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Purpose: Created by: hugoc Created on: 11/12/2024 3:44:27 PM. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Represents a collection of client with a fixed maximum capacity. </p>
+<p>This class is designed to store instances of the <code><a class="el" href="classsrc_1_1_client.html" title="The Client class allows you to create a client object with basic information such as id,...">Client</a></code> class in a fixed-size array, defined by the constant <code>sizeArrays</code>. The array is statically initialized upon first access to the <code><a class="el" href="classsrc_1_1_clients.html" title="Represents a collection of client with a fixed maximum capacity.">Clients</a></code> class. </p>
+<p>Example of use </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsrc_1_1_clients.html">Clients</a> clients </div>
+<div class="line"><a class="code hl_class" href="classsrc_1_1_clients.html">Clients</a>.<a class="code hl_function" href="#a3c3947827f7a6f5dc82df5fa2462502e">AddClient</a>(<span class="keyword">new</span> <a class="code hl_class" href="classsrc_1_1_client.html">Client</a> client(<span class="stringliteral">&quot;Ricardo Alves&quot;</span>,<span class="stringliteral">&quot;96.......&quot;</span>))</div>
+<div class="ttc" id="aclasssrc_1_1_client_html"><div class="ttname"><a href="classsrc_1_1_client.html">src.Client</a></div><div class="ttdoc">The Client class allows you to create a client object with basic information such as id,...</div><div class="ttdef"><b>Definition</b> Client.cs:29</div></div>
+<div class="ttc" id="aclasssrc_1_1_clients_html"><div class="ttname"><a href="classsrc_1_1_clients.html">src.Clients</a></div><div class="ttdoc">Represents a collection of client with a fixed maximum capacity.</div><div class="ttdef"><b>Definition</b> Clients.cs:26</div></div>
+<div class="ttc" id="aclasssrc_1_1_clients_html_a3c3947827f7a6f5dc82df5fa2462502e"><div class="ttname"><a href="#a3c3947827f7a6f5dc82df5fa2462502e">src.Clients.AddClient</a></div><div class="ttdeci">static int AddClient(Client client)</div><div class="ttdoc">Adds a client to the collection if they do not already exist (based on contact information).</div><div class="ttdef"><b>Definition</b> Clients.cs:78</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3c3947827f7a6f5dc82df5fa2462502e" name="a3c3947827f7a6f5dc82df5fa2462502e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3947827f7a6f5dc82df5fa2462502e">&#9670;&#160;</a></span>AddClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int src.Clients.AddClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsrc_1_1_client.html">Client</a></td>          <td class="paramname"><span class="paramname"><em>client</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a client to the collection if they do not already exist (based on contact information). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>The <code><a class="el" href="classsrc_1_1_client.html" title="The Client class allows you to create a client object with basic information such as id,...">Client</a></code> instance to add.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This method checks if a client with the same contact information already exists before adding a new one. </p>
+<dl class="section return"><dt>Returns</dt><dd>The ID of the client if added successfully; otherwise, returns -10 if the client already exists or if there is no space. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>        {</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">if</span> (!VerifyClientExistence(client))</div>
+<div class="line"><span class="lineno">   81</span>            {</div>
+<div class="line"><span class="lineno">   82</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; clients.Length; i++)</div>
+<div class="line"><span class="lineno">   83</span>                {</div>
+<div class="line"><span class="lineno">   84</span>                    <span class="keywordflow">while</span> (clients[i] == <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   85</span>                    {</div>
+<div class="line"><span class="lineno">   86</span>                        clients[i] = client;</div>
+<div class="line"><span class="lineno">   87</span>                        <span class="keywordflow">return</span> clients[i].<a class="code hl_property" href="classsrc_1_1_person.html#a0154a36b0f417f6c30bcda0558d3f699">Id</a>;</div>
+<div class="line"><span class="lineno">   88</span>                    }</div>
+<div class="line"><span class="lineno">   89</span>                }</div>
+<div class="line"><span class="lineno">   90</span>            }</div>
+<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">return</span> -10;</div>
+<div class="line"><span class="lineno">   92</span>        }</div>
+<div class="ttc" id="aclasssrc_1_1_person_html_a0154a36b0f417f6c30bcda0558d3f699"><div class="ttname"><a href="classsrc_1_1_person.html#a0154a36b0f417f6c30bcda0558d3f699">src.Person.Id</a></div><div class="ttdeci">int Id</div><div class="ttdoc">Gets or sets the unique identifier of the person.</div><div class="ttdef"><b>Definition</b> Person.cs:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acfcdaff24581a106bf10e5f266b653bc" name="acfcdaff24581a106bf10e5f266b653bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfcdaff24581a106bf10e5f266b653bc">&#9670;&#160;</a></span>VerifyClientExistence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Clients.VerifyClientExistence </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a client with a specific ID exists in the collection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the client to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if a client with the given ID exists; otherwise, <code>false</code>. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>        {</div>
+<div class="line"><span class="lineno">  121</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; clients.Length; i++)</div>
+<div class="line"><span class="lineno">  122</span>            {</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>                <span class="keywordflow">if</span> (clients[i] == <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  125</span>                {</div>
+<div class="line"><span class="lineno">  126</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  127</span>                }</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>                <span class="keywordflow">if</span> (clients[i].Id == <span class="keywordtype">id</span>)</div>
+<div class="line"><span class="lineno">  130</span>                {</div>
+<div class="line"><span class="lineno">  131</span>                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  132</span>                }</div>
+<div class="line"><span class="lineno">  133</span>            }</div>
+<div class="line"><span class="lineno">  134</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  135</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/<b>Clients.cs</b></li>
 </ul>
 </div><!-- contents -->

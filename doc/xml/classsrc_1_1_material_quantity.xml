@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classsrc_1_1_material_quantity" kind="class" language="C#" prot="public">
+    <compoundname>src::MaterialQuantity</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsrc_1_1_material_quantity_1a7ae0399c36280267a196d54c40c25a1c" prot="private" static="no" mutable="no">
+        <type><ref refid="classsrc_1_1_material" kindref="compound">Material</ref></type>
+        <definition>Material src.MaterialQuantity.material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <qualifiedname>src.MaterialQuantity.material</qualifiedname>
+        <briefdescription>
+<para><ref refid="classsrc_1_1_material" kindref="compound">Material</ref> associated with quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="33" column="19" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1_material_quantity_1ae47ae794fd6ffec426f58121e34bf81d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int src.MaterialQuantity.quantity</definition>
+        <argsstring></argsstring>
+        <name>quantity</name>
+        <qualifiedname>src.MaterialQuantity.quantity</qualifiedname>
+        <briefdescription>
+<para>Quantity of material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="38" column="13" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1_material_quantity_1a09d67c3506e7e74a233c32cd2fda3963" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime src.MaterialQuantity.date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <qualifiedname>src.MaterialQuantity.date</qualifiedname>
+        <briefdescription>
+<para>Date of registration of the quantity of material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="43" column="18" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="classsrc_1_1_material_quantity_1acd8db9e9fec5fcf708764aedf41ab1f9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="classsrc_1_1_material" kindref="compound">Material</ref></type>
+        <definition>Material src.MaterialQuantity.Material</definition>
+        <argsstring></argsstring>
+        <name>Material</name>
+        <qualifiedname>src.MaterialQuantity.Material</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the material associated with the quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Associated material.</para>
+<para>Public Access  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="57" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="property" id="classsrc_1_1_material_quantity_1ad68ecce1bee90af18400dbba860f05d0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int src.MaterialQuantity.Quantity</definition>
+        <argsstring></argsstring>
+        <name>Quantity</name>
+        <qualifiedname>src.MaterialQuantity.Quantity</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the quantity of material. The quantity must be greater than zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Quantity of material.</para>
+<para>Public Access  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="70" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="71" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="property" id="classsrc_1_1_material_quantity_1aa415dfd30a57616b1554ea0793f0af11" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime src.MaterialQuantity.Date</definition>
+        <argsstring></argsstring>
+        <name>Date</name>
+        <qualifiedname>src.MaterialQuantity.Date</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the date of registration of the quantity of material. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Date of registration.</para>
+<para>Public Access  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="89" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="90" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1_material_quantity_1a708aeaaf1df399677f244de8d2db9e95" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>src.MaterialQuantity.MaterialQuantity</definition>
+        <argsstring>(string name, double price, int quantity)</argsstring>
+        <name>MaterialQuantity</name>
+        <qualifiedname>src.MaterialQuantity.MaterialQuantity</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Standard constructor of the class <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput>. This constructor initializes the quantity of material and the date of registration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classsrc_1_1_material" kindref="compound">Material</ref> associated with quantity.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quantity of material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>The date is automatically set to the current date and time at the time of object creation. </para>
+<para>Public Access (read only).  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="110" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classsrc_1_1_material_quantity_1a0c09940f843585d32bd620e29c3dcb1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool src.MaterialQuantity.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>src.MaterialQuantity.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether the specified object is equal to the current <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare with the current <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the specified object is equal to the current instance; otherwise, <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="127" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="127" bodyend="142"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsrc_1_1_material_quantity_1a5a0e391e88b02746f40fae6e3be10dc0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>src.MaterialQuantity.~MaterialQuantity</definition>
+        <argsstring>()</argsstring>
+        <name>~MaterialQuantity</name>
+        <qualifiedname>src.MaterialQuantity.~MaterialQuantity</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="152" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="152" bodyend="154"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The class <computeroutput><ref refid="classsrc_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></computeroutput> represents the quantity of a given material, together with the date of its addition to the system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class allows you to associate a material with an amount and record the date of the transaction. </para>
+<para>Example of use <programlisting filename=".cs"><codeline><highlight class="normal"><ref refid="classsrc_1_1_material_quantity_1acd8db9e9fec5fcf708764aedf41ab1f9" kindref="member">Material</ref><sp/>material<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsrc_1_1_material_quantity_1acd8db9e9fec5fcf708764aedf41ab1f9" kindref="member">Material</ref>(</highlight><highlight class="stringliteral">&quot;Cimento&quot;</highlight><highlight class="normal">,<sp/>4.8);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classsrc_1_1_material_quantity_1a708aeaaf1df399677f244de8d2db9e95" kindref="member">MaterialQuantity</ref><sp/>materialQuantity<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsrc_1_1_material_quantity_1a708aeaaf1df399677f244de8d2db9e95" kindref="member">MaterialQuantity</ref>(material,<sp/>50);</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" line="27" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/MaterialQuantity.cs" bodystart="28" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1_material_quantity_1aa415dfd30a57616b1554ea0793f0af11" prot="public" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>Date</name></member>
+      <member refid="classsrc_1_1_material_quantity_1a09d67c3506e7e74a233c32cd2fda3963" prot="private" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>date</name></member>
+      <member refid="classsrc_1_1_material_quantity_1a0c09940f843585d32bd620e29c3dcb1c" prot="public" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>Equals</name></member>
+      <member refid="classsrc_1_1_material_quantity_1acd8db9e9fec5fcf708764aedf41ab1f9" prot="public" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>Material</name></member>
+      <member refid="classsrc_1_1_material_quantity_1a7ae0399c36280267a196d54c40c25a1c" prot="private" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>material</name></member>
+      <member refid="classsrc_1_1_material_quantity_1a708aeaaf1df399677f244de8d2db9e95" prot="public" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>MaterialQuantity</name></member>
+      <member refid="classsrc_1_1_material_quantity_1ad68ecce1bee90af18400dbba860f05d0" prot="public" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>Quantity</name></member>
+      <member refid="classsrc_1_1_material_quantity_1ae47ae794fd6ffec426f58121e34bf81d" prot="private" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>quantity</name></member>
+      <member refid="classsrc_1_1_material_quantity_1a5a0e391e88b02746f40fae6e3be10dc0" prot="private" virt="non-virtual"><scope>src::MaterialQuantity</scope><name>~MaterialQuantity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

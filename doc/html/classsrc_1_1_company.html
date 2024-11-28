@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Object Oriented Programming: src.Company Class Reference</title>
+<title>Manage constructions: src.Company Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Object Oriented Programming
+   <div id="projectname">Manage constructions
    </div>
   </td>
  </tr>
@@ -89,16 +89,608 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classsrc_1_1_company-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">src.Company Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Purpose: Created by: hugoc Created on: 11/12/2024 3:49:53 PM.  
+<p>Represents a company with static attributes for managing clients, material inventory, employees, and projects.  
  <a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abea879f6df73d7861b61e15198541c08" id="r_abea879f6df73d7861b61e15198541c08"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abea879f6df73d7861b61e15198541c08">ClientRegister</a> (<a class="el" href="classsrc_1_1_client.html">Client</a> client)</td></tr>
+<tr class="memdesc:abea879f6df73d7861b61e15198541c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new client in the system.  <br /></td></tr>
+<tr class="separator:abea879f6df73d7861b61e15198541c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6648d1050cdab888f3eb71da715ae6f" id="r_ad6648d1050cdab888f3eb71da715ae6f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6648d1050cdab888f3eb71da715ae6f">ClientExist</a> (int idClient)</td></tr>
+<tr class="memdesc:ad6648d1050cdab888f3eb71da715ae6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a client exists in the system based on their unique ID.  <br /></td></tr>
+<tr class="separator:ad6648d1050cdab888f3eb71da715ae6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df05e2e4cfdc5ef1769109e1fc214b1" id="r_a6df05e2e4cfdc5ef1769109e1fc214b1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6df05e2e4cfdc5ef1769109e1fc214b1">MaterialRegister</a> (<a class="el" href="classsrc_1_1_material_quantity.html">MaterialQuantity</a> materialQuantity)</td></tr>
+<tr class="memdesc:a6df05e2e4cfdc5ef1769109e1fc214b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new material in the inventory.  <br /></td></tr>
+<tr class="separator:a6df05e2e4cfdc5ef1769109e1fc214b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e99844f70381ddbb7199da42d8fd5be" id="r_a9e99844f70381ddbb7199da42d8fd5be"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e99844f70381ddbb7199da42d8fd5be">MaterialExist</a> (int idMaterial)</td></tr>
+<tr class="memdesc:a9e99844f70381ddbb7199da42d8fd5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a material exists in the inventory based on its unique ID.  <br /></td></tr>
+<tr class="separator:a9e99844f70381ddbb7199da42d8fd5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c60a0616a5f4e9a203a5bd36723244" id="r_a33c60a0616a5f4e9a203a5bd36723244"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33c60a0616a5f4e9a203a5bd36723244">UpdateMaterialStock</a> (int idMaterial, int quantityUpdate)</td></tr>
+<tr class="memdesc:a33c60a0616a5f4e9a203a5bd36723244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the stock of a specific material in the inventory.  <br /></td></tr>
+<tr class="separator:a33c60a0616a5f4e9a203a5bd36723244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcaea13b36b4a93d8d6c72cf09f852d2" id="r_adcaea13b36b4a93d8d6c72cf09f852d2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcaea13b36b4a93d8d6c72cf09f852d2">MaterialGetQuantity</a> (int idMaterial)</td></tr>
+<tr class="memdesc:adcaea13b36b4a93d8d6c72cf09f852d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current quantity of a specific material in the inventory.  <br /></td></tr>
+<tr class="separator:adcaea13b36b4a93d8d6c72cf09f852d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ea8f57fabc45e8b4719122352ff3d9" id="r_ac2ea8f57fabc45e8b4719122352ff3d9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2ea8f57fabc45e8b4719122352ff3d9">ProjectCreate</a> (<a class="el" href="namespacesrc.html#af7f0a9d891a5c63215e50974323f4095">Status</a> status, int idClient, DateTime dateStart)</td></tr>
+<tr class="memdesc:ac2ea8f57fabc45e8b4719122352ff3d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new project and associates it with a client.  <br /></td></tr>
+<tr class="separator:ac2ea8f57fabc45e8b4719122352ff3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ff036baa08b8c8a277fcd9c9a98abd" id="r_a91ff036baa08b8c8a277fcd9c9a98abd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91ff036baa08b8c8a277fcd9c9a98abd">ProjectAddEmployee</a> (int idProject, int idEmployee)</td></tr>
+<tr class="memdesc:a91ff036baa08b8c8a277fcd9c9a98abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an employee to an existing project.  <br /></td></tr>
+<tr class="separator:a91ff036baa08b8c8a277fcd9c9a98abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cd5a59d8870628b798f51f1cb293bb" id="r_a98cd5a59d8870628b798f51f1cb293bb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98cd5a59d8870628b798f51f1cb293bb">ProjectUseMaterial</a> (int idProject, int idMaterial, int quantity)</td></tr>
+<tr class="memdesc:a98cd5a59d8870628b798f51f1cb293bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a material to a project and subtract it from the inventory.  <br /></td></tr>
+<tr class="separator:a98cd5a59d8870628b798f51f1cb293bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298c0078b1e4a3867df2c059ac37e0eb" id="r_a298c0078b1e4a3867df2c059ac37e0eb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a298c0078b1e4a3867df2c059ac37e0eb">ProjectExist</a> (int idProject)</td></tr>
+<tr class="memdesc:a298c0078b1e4a3867df2c059ac37e0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a project exists in the system based on its unique ID.  <br /></td></tr>
+<tr class="separator:a298c0078b1e4a3867df2c059ac37e0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d65596356689d106f22c45751e5efbb" id="r_a6d65596356689d106f22c45751e5efbb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d65596356689d106f22c45751e5efbb">ProjectClose</a> (int idProject)</td></tr>
+<tr class="memdesc:a6d65596356689d106f22c45751e5efbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes an existing project by updating its status and setting the end date.  <br /></td></tr>
+<tr class="separator:a6d65596356689d106f22c45751e5efbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7defa2a848a242abf175c03eb6bea366" id="r_a7defa2a848a242abf175c03eb6bea366"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7defa2a848a242abf175c03eb6bea366">EmployeeRegister</a> (<a class="el" href="classsrc_1_1_employee.html">Employee</a> employee)</td></tr>
+<tr class="memdesc:a7defa2a848a242abf175c03eb6bea366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new employee in the system.  <br /></td></tr>
+<tr class="separator:a7defa2a848a242abf175c03eb6bea366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fcf75abe8417bb2f9313d45bda897bf" id="r_a6fcf75abe8417bb2f9313d45bda897bf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fcf75abe8417bb2f9313d45bda897bf">EmployeeExist</a> (int idEmployee)</td></tr>
+<tr class="memdesc:a6fcf75abe8417bb2f9313d45bda897bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an employee exists in the system based on their unique ID.  <br /></td></tr>
+<tr class="separator:a6fcf75abe8417bb2f9313d45bda897bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Purpose: Created by: hugoc Created on: 11/12/2024 3:49:53 PM. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Represents a company with static attributes for managing clients, material inventory, employees, and projects. </p>
+<p>The <code><a class="el" href="classsrc_1_1_company.html" title="Represents a company with static attributes for managing clients, material inventory,...">Company</a></code> class provides a centralized, static structure for managing the core entities of a business. As all members are static, no instances are required. </p>
+<p>Example of use </p><div class="fragment"><div class="line"><a class="code hl_class" href="classsrc_1_1_company.html">Company</a>.<a class="code hl_function" href="#ac2ea8f57fabc45e8b4719122352ff3d9">ProjectCreate</a>; </div>
+<div class="line"><a class="code hl_class" href="classsrc_1_1_company.html">Company</a>.<a class="code hl_function" href="#a7defa2a848a242abf175c03eb6bea366">EmployeeRegister</a>;</div>
+<div class="ttc" id="aclasssrc_1_1_company_html"><div class="ttname"><a href="classsrc_1_1_company.html">src.Company</a></div><div class="ttdoc">Represents a company with static attributes for managing clients, material inventory,...</div><div class="ttdef"><b>Definition</b> Company.cs:28</div></div>
+<div class="ttc" id="aclasssrc_1_1_company_html_a7defa2a848a242abf175c03eb6bea366"><div class="ttname"><a href="#a7defa2a848a242abf175c03eb6bea366">src.Company.EmployeeRegister</a></div><div class="ttdeci">static int EmployeeRegister(Employee employee)</div><div class="ttdoc">Registers a new employee in the system.</div><div class="ttdef"><b>Definition</b> Company.cs:236</div></div>
+<div class="ttc" id="aclasssrc_1_1_company_html_ac2ea8f57fabc45e8b4719122352ff3d9"><div class="ttname"><a href="#ac2ea8f57fabc45e8b4719122352ff3d9">src.Company.ProjectCreate</a></div><div class="ttdeci">static int ProjectCreate(Status status, int idClient, DateTime dateStart)</div><div class="ttdoc">Creates a new project and associates it with a client.</div><div class="ttdef"><b>Definition</b> Company.cs:156</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad6648d1050cdab888f3eb71da715ae6f" name="ad6648d1050cdab888f3eb71da715ae6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6648d1050cdab888f3eb71da715ae6f">&#9670;&#160;</a></span>ClientExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Company.ClientExist </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idClient</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a client exists in the system based on their unique ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idClient</td><td>The unique ID of the client to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the client exists; otherwise, <code>false</code>. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>        {</div>
+<div class="line"><span class="lineno">   84</span>            <span class="keywordtype">bool</span> tester = Clients.VerifyClientExistence(idClient);</div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordflow">return</span> tester;</div>
+<div class="line"><span class="lineno">   86</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abea879f6df73d7861b61e15198541c08" name="abea879f6df73d7861b61e15198541c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea879f6df73d7861b61e15198541c08">&#9670;&#160;</a></span>ClientRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int src.Company.ClientRegister </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsrc_1_1_client.html">Client</a></td>          <td class="paramname"><span class="paramname"><em>client</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a new client in the system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>The <code><a class="el" href="classsrc_1_1_client.html" title="The Client class allows you to create a client object with basic information such as id,...">Client</a></code> object to be registered.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer representing the unique ID of the registered client. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>        {</div>
+<div class="line"><span class="lineno">   71</span>            <span class="keywordtype">int</span> <span class="keywordtype">id</span> = Clients.AddClient(client);</div>
+<div class="line"><span class="lineno">   72</span>            <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">   73</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6fcf75abe8417bb2f9313d45bda897bf" name="a6fcf75abe8417bb2f9313d45bda897bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fcf75abe8417bb2f9313d45bda897bf">&#9670;&#160;</a></span>EmployeeExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Company.EmployeeExist </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idEmployee</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if an employee exists in the system based on their unique ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idEmployee</td><td>The unique ID of the employee to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the employee exists; otherwise, <code>false</code>. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  250</span>        {</div>
+<div class="line"><span class="lineno">  251</span>            <span class="keywordtype">bool</span> tester = Employees.VerifyEmployeeExistence(idEmployee);</div>
+<div class="line"><span class="lineno">  252</span>            <span class="keywordflow">return</span> tester;</div>
+<div class="line"><span class="lineno">  253</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7defa2a848a242abf175c03eb6bea366" name="a7defa2a848a242abf175c03eb6bea366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7defa2a848a242abf175c03eb6bea366">&#9670;&#160;</a></span>EmployeeRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int src.Company.EmployeeRegister </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsrc_1_1_employee.html">Employee</a></td>          <td class="paramname"><span class="paramname"><em>employee</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a new employee in the system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">employee</td><td>The <code><a class="el" href="classsrc_1_1_employee.html" title="Class Employee allows to create an employee object with basic information such as their Id,...">Employee</a></code> object to be registered.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer representing the unique ID of the registered employee. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  237</span>        {</div>
+<div class="line"><span class="lineno">  238</span>            <span class="keywordtype">int</span> <span class="keywordtype">id</span> = Employees.AddEmployee(employee);</div>
+<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  240</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9e99844f70381ddbb7199da42d8fd5be" name="a9e99844f70381ddbb7199da42d8fd5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e99844f70381ddbb7199da42d8fd5be">&#9670;&#160;</a></span>MaterialExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Company.MaterialExist </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idMaterial</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a material exists in the inventory based on its unique ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idMaterial</td><td>The unique ID of the material to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the material exists; otherwise, <code>false</code>. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>        {</div>
+<div class="line"><span class="lineno">  113</span>            <span class="keywordtype">bool</span> tester = MaterialInventory.VerifyMaterialExistence(idMaterial);</div>
+<div class="line"><span class="lineno">  114</span>            <span class="keywordflow">return</span> tester;</div>
+<div class="line"><span class="lineno">  115</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adcaea13b36b4a93d8d6c72cf09f852d2" name="adcaea13b36b4a93d8d6c72cf09f852d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcaea13b36b4a93d8d6c72cf09f852d2">&#9670;&#160;</a></span>MaterialGetQuantity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int src.Company.MaterialGetQuantity </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idMaterial</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the current quantity of a specific material in the inventory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idMaterial</td><td>The unique ID of the material to query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer representing the quantity of the material. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>        {</div>
+<div class="line"><span class="lineno">  140</span>            <span class="keywordtype">int</span> quantity = MaterialInventory.GetQuantity(idMaterial);</div>
+<div class="line"><span class="lineno">  141</span>            <span class="keywordflow">return</span> quantity;</div>
+<div class="line"><span class="lineno">  142</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6df05e2e4cfdc5ef1769109e1fc214b1" name="a6df05e2e4cfdc5ef1769109e1fc214b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df05e2e4cfdc5ef1769109e1fc214b1">&#9670;&#160;</a></span>MaterialRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int src.Company.MaterialRegister </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classsrc_1_1_material_quantity.html">MaterialQuantity</a></td>          <td class="paramname"><span class="paramname"><em>materialQuantity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a new material in the inventory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">materialQuantity</td><td>The <code><a class="el" href="classsrc_1_1_material_quantity.html" title="The class MaterialQuantity represents the quantity of a given material, together with the date of its...">MaterialQuantity</a></code> object containing material details and quantity.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer representing the unique ID of the registered material. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>        {</div>
+<div class="line"><span class="lineno">  100</span>            <span class="keywordtype">int</span> idMaterial = MaterialInventory.AddMaterial(materialQuantity);</div>
+<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">return</span> idMaterial;</div>
+<div class="line"><span class="lineno">  102</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a91ff036baa08b8c8a277fcd9c9a98abd" name="a91ff036baa08b8c8a277fcd9c9a98abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ff036baa08b8c8a277fcd9c9a98abd">&#9670;&#160;</a></span>ProjectAddEmployee()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Company.ProjectAddEmployee </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idProject</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idEmployee</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds an employee to an existing project. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idProject</td><td>The unique ID of the project.</td></tr>
+    <tr><td class="paramname">idEmployee</td><td>The unique ID of the employee to add.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the employee was added successfully; otherwise, <code>false</code>. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  176</span>        {</div>
+<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">if</span> (Employees.VerifyEmployeeExistence(idEmployee))</div>
+<div class="line"><span class="lineno">  178</span>            {</div>
+<div class="line"><span class="lineno">  179</span>                <span class="keywordtype">bool</span> tester = Projects.AddEmployee(idProject, idEmployee);</div>
+<div class="line"><span class="lineno">  180</span>                <span class="keywordflow">return</span> tester;</div>
+<div class="line"><span class="lineno">  181</span>            }</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  184</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6d65596356689d106f22c45751e5efbb" name="a6d65596356689d106f22c45751e5efbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d65596356689d106f22c45751e5efbb">&#9670;&#160;</a></span>ProjectClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Company.ProjectClose </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idProject</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes an existing project by updating its status and setting the end date. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idProject</td><td>The unique ID of the project to close.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the project was closed successfully; otherwise, <code>false</code>. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  222</span>        {</div>
+<div class="line"><span class="lineno">  223</span>            <span class="keywordtype">bool</span> tester = Projects.CloseProject(idProject);</div>
+<div class="line"><span class="lineno">  224</span>            <span class="keywordflow">return</span> tester;</div>
+<div class="line"><span class="lineno">  225</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac2ea8f57fabc45e8b4719122352ff3d9" name="ac2ea8f57fabc45e8b4719122352ff3d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ea8f57fabc45e8b4719122352ff3d9">&#9670;&#160;</a></span>ProjectCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int src.Company.ProjectCreate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacesrc.html#af7f0a9d891a5c63215e50974323f4095">Status</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idClient</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTime</td>          <td class="paramname"><span class="paramname"><em>dateStart</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new project and associates it with a client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>The initial status of the project.</td></tr>
+    <tr><td class="paramname">idClient</td><td>The unique ID of the client associated with the project.</td></tr>
+    <tr><td class="paramname">dateStart</td><td>The start date of the project.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer representing the unique ID of the created project, or -10 if the client does not exist. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>        {</div>
+<div class="line"><span class="lineno">  158</span>            <span class="keywordflow">if</span> (Clients.VerifyClientExistence(idClient)) </div>
+<div class="line"><span class="lineno">  159</span>            {</div>
+<div class="line"><span class="lineno">  160</span>                <span class="keywordtype">int</span> <span class="keywordtype">id</span> = Projects.AddProject(<span class="keyword">new</span> Project(status, idClient, dateStart));</div>
+<div class="line"><span class="lineno">  161</span>                <span class="keywordflow">return</span> id;</div>
+<div class="line"><span class="lineno">  162</span>            }</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">return</span> -10;</div>
+<div class="line"><span class="lineno">  165</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a298c0078b1e4a3867df2c059ac37e0eb" name="a298c0078b1e4a3867df2c059ac37e0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298c0078b1e4a3867df2c059ac37e0eb">&#9670;&#160;</a></span>ProjectExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Company.ProjectExist </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idProject</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a project exists in the system based on its unique ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idProject</td><td>The unique ID of the project to verify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the project exists; otherwise, <code>false</code>. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  209</span>        {</div>
+<div class="line"><span class="lineno">  210</span>            <span class="keywordtype">bool</span> tester = Projects.VerifyProjectExistence(idProject);</div>
+<div class="line"><span class="lineno">  211</span>            <span class="keywordflow">return</span> tester;</div>
+<div class="line"><span class="lineno">  212</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98cd5a59d8870628b798f51f1cb293bb" name="a98cd5a59d8870628b798f51f1cb293bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98cd5a59d8870628b798f51f1cb293bb">&#9670;&#160;</a></span>ProjectUseMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Company.ProjectUseMaterial </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idProject</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idMaterial</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>quantity</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a material to a project and subtract it from the inventory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idProject</td><td>The unique ID of the project.&lt;/pdeduzaram&gt; <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idMaterial</td><td>The unique ID of the material to assign.</td></tr>
+    <tr><td class="paramname">quantity</td><td>The quantity of material to assign to the project.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the material was assigned successfully; otherwise, <code>false</code>. </dd></dl>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  196</span>        {</div>
+<div class="line"><span class="lineno">  197</span>            <span class="keywordtype">bool</span> tester = Projects.UseMaterial(idProject, idMaterial, quantity);</div>
+<div class="line"><span class="lineno">  198</span>            <span class="keywordflow">return</span> tester;</div>
+<div class="line"><span class="lineno">  199</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a33c60a0616a5f4e9a203a5bd36723244" name="a33c60a0616a5f4e9a203a5bd36723244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c60a0616a5f4e9a203a5bd36723244">&#9670;&#160;</a></span>UpdateMaterialStock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool src.Company.UpdateMaterialStock </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idMaterial</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>quantityUpdate</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the stock of a specific material in the inventory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idMaterial</td><td>The unique ID of the material to update.</td></tr>
+    <tr><td class="paramname">quantityUpdate</td><td>The quantity to add or subtract from the material stock.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the stock was updated successfully; otherwise, <code>false</code>. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>        {</div>
+<div class="line"><span class="lineno">  127</span>            <span class="keywordtype">bool</span> tester = MaterialInventory.UpdateStock(idMaterial, quantityUpdate);</div>
+<div class="line"><span class="lineno">  128</span>            <span class="keywordflow">return</span> tester;</div>
+<div class="line"><span class="lineno">  129</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/<b>Company.cs</b></li>
 </ul>
 </div><!-- contents -->

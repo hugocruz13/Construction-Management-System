@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespacesrc" kind="namespace" language="C#">
+    <compoundname>src</compoundname>
+    <innerclass refid="classsrc_1_1_client" prot="public">src::Client</innerclass>
+    <innerclass refid="classsrc_1_1_clients" prot="public">src::Clients</innerclass>
+    <innerclass refid="classsrc_1_1_company" prot="public">src::Company</innerclass>
+    <innerclass refid="classsrc_1_1_employee" prot="public">src::Employee</innerclass>
+    <innerclass refid="classsrc_1_1_employees" prot="public">src::Employees</innerclass>
+    <innerclass refid="classsrc_1_1_funcionario" prot="public">src::Funcionario</innerclass>
+    <innerclass refid="classsrc_1_1_material" prot="public">src::Material</innerclass>
+    <innerclass refid="classsrc_1_1_material_inventory" prot="public">src::MaterialInventory</innerclass>
+    <innerclass refid="classsrc_1_1_material_quantity" prot="public">src::MaterialQuantity</innerclass>
+    <innerclass refid="classsrc_1_1_obras" prot="public">src::Obras</innerclass>
+    <innerclass refid="classsrc_1_1_person" prot="public">src::Person</innerclass>
+    <innerclass refid="classsrc_1_1_pessoa" prot="public">src::Pessoa</innerclass>
+    <innerclass refid="classsrc_1_1_program" prot="package">src::Program</innerclass>
+    <innerclass refid="classsrc_1_1_project" prot="public">src::Project</innerclass>
+    <innerclass refid="classsrc_1_1_projects" prot="public">src::Projects</innerclass>
+    <innerclass refid="classsrc_1_1_team" prot="public">src::Team</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacesrc_1af7f0a9d891a5c63215e50974323f4095" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Status</name>
+        <qualifiedname>src.Status</qualifiedname>
+        <enumvalue id="namespacesrc_1af7f0a9d891a5c63215e50974323f4095a724c608fc97cda23198d8e7419133da6" prot="public">
+          <name>NotStart</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacesrc_1af7f0a9d891a5c63215e50974323f4095a12d868c18cb29bf58f02b504be9033fd" prot="public">
+          <name>InProgress</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacesrc_1af7f0a9d891a5c63215e50974323f4095ab0c20989fc4692ffdcb556dde07c855d" prot="public">
+          <name>OnHold</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacesrc_1af7f0a9d891a5c63215e50974323f4095a07ca5050e697392c9ed47e6453f1453f" prot="public">
+          <name>Completed</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum that defines the possible status of a project. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Project.cs" line="17" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Project.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Client.cs" line="12" column="1"/>
+  </compounddef>
+</doxygen>
