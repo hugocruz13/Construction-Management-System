@@ -7,6 +7,7 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
 
 namespace trabalhoPOO_23010
 {
@@ -15,7 +16,7 @@ namespace trabalhoPOO_23010
     {
         #region Attributes
 
-        int[] client;
+        List<int> client;
 
         #endregion
 
@@ -23,19 +24,14 @@ namespace trabalhoPOO_23010
 
         #region Properties
 
-        public int[] Client
-        {
-            get { return (int[])client.Clone(); }
-
-        }
 
         #endregion
 
         #region Constructors
 
-        public ClientsProject(int x)
+        public ClientsProject()
         {
-            client = new int[x];
+            client = new List<int>(5);
         }
 
         #endregion
@@ -44,6 +40,19 @@ namespace trabalhoPOO_23010
         #endregion
 
         #region OtherMethods
+        public bool AddClient(int id) 
+        {
+            client.Add(id);
+            return true;
+        }
+
+        public void ShowClient()
+        {
+            foreach (int id in client)
+            {
+                Console.WriteLine(id.ToString());
+            }
+        }
         #endregion
 
         #region Destructor

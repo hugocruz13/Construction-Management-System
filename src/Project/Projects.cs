@@ -7,6 +7,7 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
 
 
 namespace trabalhoPOO_23010
@@ -22,15 +23,8 @@ namespace trabalhoPOO_23010
     {
         #region Attributes
 
-        /// <summary>
-        ///  The fixed size of the <c>projects</c> array.
-        /// </summary>
-        const int sizeArrays = 5;
+        static Dictionary<int, List<Project>> projects;
 
-        /// <summary>
-        /// Array that stores instances of <c>Project</c> objects.
-        /// </summary>
-        static Project[] projects;
         #endregion
 
         #region Methods
@@ -40,29 +34,127 @@ namespace trabalhoPOO_23010
 
         #region Constructors
 
-        /// <summary>
-        /// Initializes the <c>Projects</c> class by setting up the project array.
-        /// </summary>
-        /// <remarks>
-        /// This static constructor is called only once, when the <c>Projects</c> class is accessed for the first time. 
-        /// It initializes the <c>projects</c> array with a predefined size.
-        /// </remarks>
-        /// <example>
-        /// Accessing any member of the <c>Projects</c> class will trigger this constructor if it hasn't been initialized.
-        /// </example>
         static Projects()
         {
-            projects = new Project[sizeArrays];
+            projects = new Dictionary<int, List<Project>>(11);
         }
 
         #endregion
+        internal static int GenerateKey(short idProject)
+        {
+            return idProject % 11;
+        }
 
-        #region Overrides
+        public static short AddProject(Project project)
+        {
+            if (!ProjectExists(project))
+            {
+                int key = GenerateKey(project.Id);
 
-        #endregion
+                if (!projects.ContainsKey(key))
+                {
+                    projects[key] = new List<Project>(5);
+                }
+
+                projects[key].Add(project);
+                return project.Id;
+            }
+
+            return -17;
+
+        }
+
+        internal static bool ProjectExists(Project project)
+        {
+            foreach (List<Project> projectList in projects.Values)
+            {
+                foreach (Project existingProject in projectList)
+                {
+                    if (existingProject - project)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        public static bool ProjectExists(short idProject)
+        {
+            int key = idProject % 11;
+
+            if (projects.ContainsKey(key))
+            {
+                foreach (Project project in projects[key])
+                {
+                    if (project.Id == idProject)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        public static bool AddClientProject(short idProject, short idClient)
+        {
+            int key = idProject % 11;
+
+            if (projects.ContainsKey(key))
+            {
+                foreach (Project project in projects[key])
+                {
+                    if (project.Id == idProject)
+                    {
+                        bool r = project.AddClient(idClient);
+                        return r;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        public static bool AddEmployeeProject(short idProject, short idEmployee)
+        {
+            int key = idProject % 11;
+
+            if (projects.ContainsKey(key))
+            {
+                foreach (Project project in projects[key])
+                {
+                    if (project.Id == idProject)
+                    {
+                        bool r = project.AddEmployee(idEmployee);
+                        return r;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        public static bool AddMaterialProject(short idProject, short idMaterial, int quantity)
+        {
+            int key = idProject % 11;
+
+            if (projects.ContainsKey(key))
+            {
+                foreach (Project project in projects[key])
+                {
+                    if (project.Id == idProject)
+                    {
+                        bool r = project.AddMaterial(idMaterial, quantity);
+                        return r;
+                    }
+                }
+            }
+
+            return false;
+        }
 
         #region OtherMethods
-
 
         #endregion
 

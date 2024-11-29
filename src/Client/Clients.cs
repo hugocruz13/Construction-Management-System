@@ -1,6 +1,6 @@
 ﻿/*
 *	<copyright file="Clients.cs" company="IPCA">
-*		Copyright (c) 2024 All Rights Reserved
+*		Copyright (clientInstance) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>hugoc</author>
 *   <date>11/12/2024 3:44:27 PM</date>
@@ -8,7 +8,8 @@
 **/
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace trabalhoPOO_23010
 {
@@ -36,7 +37,7 @@ namespace trabalhoPOO_23010
         #endregion
 
         #region OtherMethods
-        internal static int generateKey(short idClient)
+        internal static int GenerateKey(short idClient)
         {
             return idClient % 11;
         }
@@ -45,7 +46,7 @@ namespace trabalhoPOO_23010
         {
             if (!ClientExists(client))
             {
-                int key = generateKey(client.Id);
+                int key = GenerateKey(client.Id);
 
                 if (!clients.ContainsKey(key))
                 {
@@ -78,13 +79,13 @@ namespace trabalhoPOO_23010
 
         public static bool ClientExists(short idCliente)
         {
-            int key = generateKey(idCliente);
+            int key = GenerateKey(idCliente);
 
             if (clients.ContainsKey(key))
             {
-                foreach (Client c in clients[key])
+                foreach (Client clientInstance in clients[key])
                 {
-                    if (c.Id == idCliente)
+                    if (clientInstance.Id == idCliente)
                     {
                         return true;
                     }
@@ -97,7 +98,7 @@ namespace trabalhoPOO_23010
 
         public static bool UpdateContact(short idClient, string contacto)
         {
-            int key = generateKey(idClient);
+            int key = GenerateKey(idClient);
 
             if (clients.ContainsKey(key))
             {

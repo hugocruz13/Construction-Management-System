@@ -7,6 +7,7 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
 
 namespace trabalhoPOO_23010
 {
@@ -28,7 +29,7 @@ namespace trabalhoPOO_23010
         /// <summary>
         /// Array that stores instances of <c>Employee</c> objects.
         /// </summary>
-        int[] team;
+        List<int> team;
         #endregion
 
         #region Methods
@@ -44,9 +45,9 @@ namespace trabalhoPOO_23010
         /// <remarks>
         /// This constructor initializes the <c>team</c> array with a predefined size.
         /// </remarks>
-        public EmployeesProject(int numEmployee)
+        public EmployeesProject()
         {
-            team = new int[numEmployee];
+            team = new List<int>(5);
         }
 
         #endregion
@@ -55,30 +56,11 @@ namespace trabalhoPOO_23010
         #endregion
 
         #region OtherMethods
-        /// <summary>
-        /// Adds an employee to the project team if there is an available slot.
-        /// </summary>
-        /// <param name="id">The unique ID of the employee to be added.</param>
-        /// <remarks>
-        /// The method iterates through the <c>team</c> array to find an empty slot. 
-        /// Once an empty slot is found, the employee ID is assigned to that slot, and the method returns <c>true</c>. 
-        /// If no slots are available, the method returns <c>false</c>.
-        /// </remarks>
-        /// <returns>
-        /// <c>true</c> if the employee was successfully added to the team; otherwise, <c>false</c>.
-        /// </returns>
+
         public bool AddEmployee(int id)
         {
-            for (int i = 0; i < team.Length; i++)
-            {
-                while (team[i] == 0)
-                {
-                    team[i] = id;
-                    return true;
-                }
-            }
-
-            return false;
+            team.Add(id);
+            return true;
         }
         #endregion
 

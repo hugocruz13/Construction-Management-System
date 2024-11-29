@@ -7,6 +7,7 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
 
 namespace trabalhoPOO_23010
 {
@@ -20,7 +21,7 @@ namespace trabalhoPOO_23010
     public class MaterialProject
     {
         #region Attributes
-        MaterialQuantity[] use; 
+        List<MaterialQuantity> use;
         #endregion
 
         #region Methods
@@ -35,7 +36,7 @@ namespace trabalhoPOO_23010
         /// </summary>
         public MaterialProject()
         {
-            use = new MaterialQuantity[10];
+            use = new List<MaterialQuantity>(5);
         }
 
         #endregion
@@ -44,6 +45,11 @@ namespace trabalhoPOO_23010
         #endregion
 
         #region OtherMethods
+        public bool AddMaterial(short id, int quantity) 
+        {
+            use.Add(new MaterialQuantity(id, quantity));
+            return true;
+        }
         #endregion
 
         #region Destructor

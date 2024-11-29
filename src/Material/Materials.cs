@@ -7,6 +7,8 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
+using System.Data;
 
 namespace trabalhoPOO_23010
 {
@@ -20,140 +22,111 @@ namespace trabalhoPOO_23010
     public class Materials
     {
         #region Attributes
-        const int sizeArrays = 20;
-        static Material[] materials;
+        static Dictionary<int, List<Material>> materials;
         #endregion
 
         #region Methods
 
         #region Properties
-        public static Material[] Material
-        {
-            get { return (Material[])materials.Clone(); }
-        }
         #endregion
 
         #region Constructors
 
         static Materials()
         {
-            materials = new Material[sizeArrays];
+            materials = new Dictionary<int, List<Material>>(11);
         }
 
         #endregion
 
         #region OtherMethods
+        internal static int GenerateKey(short idMaterial)
+        {
+            return idMaterial % 11;
+        }
+
         public static short AddMaterial(Material material)
         {
             if (!MaterialExist(material))
             {
-                for (int i = 0; i < materials.Length; i++)
+                int key = GenerateKey(material.Id);
+
+                if (!materials.ContainsKey(key))
                 {
-                    if (materials[i] == null)
-                    {
-                        materials[i] = material;
-                        return materials[i].Id;
-                    }
+                    materials[key] = new List<Material>(5);
                 }
+
+                materials[key].Add(material);
+                return material.Id;
             }
             return -11;
         }
 
         internal static bool MaterialExist(Material material)
         {
-            if (material == null)
+            foreach (List<Material> materialList in materials.Values)
             {
-                return false;
-            }
-
-            foreach (Material m in materials)
-            {
-                if (m == null)
+                foreach (Material existingMaterial in materialList)
                 {
-                    return false;
-                }
-
-                if (material - m)
-                {
-                    return true;
+                    if (existingMaterial - material)
+                    {
+                        return true;
+                    }
                 }
             }
-
             return false;
         }
 
         public static bool MaterialExist(short idMaterial)
         {
-            for (int i = 0; i < materials.Length; i++)
+            int key = GenerateKey(idMaterial);
+
+            if (materials.ContainsKey(key))
             {
-                if (materials[i] == null)
+                foreach (Material materialInstance in materials[key])
                 {
-                    break;
-                }
-                if (materials[i].Id == idMaterial)
-                {
-                    return true;
+                    if (materialInstance.Id == idMaterial)
+                    {
+                        return true;
+                    }
                 }
             }
+
             return false;
+
         }
 
         public static bool UpdatePrice(short idMaterial, double price)
         {
-            int position = FindMaterial(idMaterial);
-            if (position != -11)
+            int key = GenerateKey(idMaterial);
+
+            if (materials.ContainsKey(key))
             {
-                materials[position].UnitPrice= price;
-                return true;
+                foreach (Material materialInstance in materials[key])
+                {
+                    if (materialInstance.Id == idMaterial)
+                    {
+                        materialInstance.UnitPrice = price;
+                        return true;
+                    }
+                }
             }
 
             return false;
         }
 
-        internal static int FindMaterial(short idMaterial)
-        {
-            if (MaterialExist(idMaterial))
-            {
-                for (int i = 0; i < materials.Length; i++)
-                {
-                    if (materials[i].Id == idMaterial)
-                    {
-                        return i;
-                    }
-                }
-            }
-
-            return -11;
-        }
 
         public static void ShowMaterials()
         {
-            for (int i = 0; i < materials.Length; i++)
+            foreach (List<Material> materialList in materials.Values)
             {
-                if (materials[i] == null)
-                    break;
-                Console.WriteLine(materials[i].ToString());
-            }
-        }
-
-        public static void ShowMaterials(short idMaterial)
-        {
-            if (MaterialExist(idMaterial))
-            {
-                for (int i = 0; i < materials.Length; i++)
+                foreach (Material existingMaterial in materialList)
                 {
-                    if (materials[i] == null)
-                    {
-                        break;
-                    }
-                    if (materials[i].Id == idMaterial)
-                    {
-                        Console.WriteLine(materials[i].ToString());
-                        break;
-                    }
+                    Console.WriteLine(existingMaterial.ToString());
                 }
             }
         }
+
         #endregion
 
         #region Destructor

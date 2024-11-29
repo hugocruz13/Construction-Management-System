@@ -8,6 +8,8 @@
 **/
 
 using System;
+using System.Diagnostics;
+using System.Xml.Linq;
 
 namespace trabalhoPOO_23010
 {
@@ -27,47 +29,13 @@ namespace trabalhoPOO_23010
     /// </example>
     public class Company
     {
-        #region Attributes
-        /// <summary>
-        /// Static instance of the <c>Clients</c> class, managing the company's clients.
-        /// </summary>
-        static Clients clients;
-
-        /// <summary>
-        /// Static instance of the <c>MaterialInventory</c> class, managing the company's inventory of materials.
-        /// </summary>
-        static MaterialInventory inventory;
-
-        /// <summary>
-        /// Static instance of the <c>Employees</c> class, managing the company's employees.
-        /// </summary>
-        static Employees employees;
-
-        /// <summary>
-        /// Static instance of the <c>Projects</c> class, managing the company's projects.
-        /// </summary> 
-        static Projects projects;
-        
-        /// <summary>
-        /// 
-        /// </summary>
-        static Materials materials;
-
-        #endregion
 
         #region Methods
 
-        #region Properties
-        #endregion
-
-        #region Overrides
-        #endregion
-
         #region OtherMethods
 
-
         #region Clients
-        public static short RegistClient(Client client) 
+        public static short RegistClient(Client client)
         {
             short idClient = Clients.AddClient(client);
             return idClient;
@@ -91,7 +59,7 @@ namespace trabalhoPOO_23010
         }
         #endregion
 
-        #region Employee
+        #region Employees
         public static short RegistEmployee(Employee employee)
         {
             short idEmployee = Employees.AddEmployee(employee);
@@ -109,11 +77,6 @@ namespace trabalhoPOO_23010
             Employees.ShowEmployees();
         }
 
-        public static void ShowEmployees(short idEmployee)
-        {
-            Employees.ShowEmployees(idEmployee);
-        }
-
         public static bool UpdateRole(short idEmployee, string role, double priceHourly)
         {
             bool update = Employees.UpdateRole(idEmployee, role, priceHourly);
@@ -121,8 +84,43 @@ namespace trabalhoPOO_23010
         }
         #endregion
 
-        #region Employees
+        #region Materials
+        public static short RegistMaterial(string name, double price, int quantity)
+        {
+            short id = Materials.AddMaterial(new Material(name, price));
+            id = MaterialInventory.AddMaterial(new MaterialQuantity(id, quantity));
+            return id;
+        }
 
+        public static bool ExistMaterial(short idMaterial)
+        {
+            bool exist = Materials.MaterialExist(idMaterial);
+            exist = MaterialInventory.VerifyMaterialExistence(idMaterial);
+            return exist;
+        }
+
+        public static bool UpdateStock(short idMaterial, int quantity)
+        {
+            bool update = MaterialInventory.UpdateQuantity(idMaterial, quantity);
+            return update;
+        }
+
+        public static bool UseMaterial(short proje,short idMaterial, int quantity)
+        {
+            bool update = MaterialInventory.UseMaterial(idMaterial, quantity);
+            Projects.AddMaterialProject(proje, idMaterial, quantity);
+            return update;
+        }
+
+        public static void ShowInventoryQuantity()
+        {
+            MaterialInventory.ShowInventory();
+        }
+
+        public static void ShowMaterial()
+        {
+            Materials.ShowMaterials();
+        }
         #endregion
 
         #endregion

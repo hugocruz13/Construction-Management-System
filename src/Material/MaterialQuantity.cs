@@ -7,6 +7,7 @@
 *	<description>Class MaterialQuantity represents the quantity of a material and the date of its addition.</description>
 **/
 using System;
+using System.Xml.Linq;
 
 namespace trabalhoPOO_23010
 {
@@ -28,8 +29,7 @@ namespace trabalhoPOO_23010
     {
         #region Attributes
 
-        int  idMaterial;
-
+        short  idMaterial;
         /// <summary>
         /// Quantity of material.
         /// </summary>
@@ -52,7 +52,7 @@ namespace trabalhoPOO_23010
         /// <permission>
         /// Public Access
         /// </permission>
-        public int IdMaterial
+        public short IdMaterial
         {
             get { return idMaterial; }
         }
@@ -104,10 +104,9 @@ namespace trabalhoPOO_23010
         /// <permission>
         /// Public Access (read only).
         /// </permission>
-        public MaterialQuantity(string name, double price, int quantity)
+        public MaterialQuantity(short id, int quantity)
         {
-
-            
+            this.idMaterial = id;
             Quantity = quantity;
             date = DateTime.Now;
         }
@@ -115,10 +114,47 @@ namespace trabalhoPOO_23010
         #endregion
 
         #region Overrides
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
 
+            if (obj is MaterialQuantity)
+            {
+                MaterialQuantity othermaterial = obj as MaterialQuantity;
+
+                if (idMaterial == othermaterial.idMaterial)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public override string ToString()
+        {
+            return idMaterial + " " + Date + " " + Quantity; 
+        }
         #endregion
 
         #region OtherMethods
+        public static bool operator -(MaterialQuantity material1, MaterialQuantity material2)
+        {
+            if (material1.Equals(material2))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public static bool operator +(MaterialQuantity material1, MaterialQuantity material2)
+        {
+            return !(material1 - material2);
+        }
         #endregion
 
         #region Destructor

@@ -7,6 +7,7 @@
 *	<description>Class representing a Project with its status, client, team and materials used</description>
 **/
 using System;
+using System.Xml.Linq;
 
 namespace trabalhoPOO_23010
 {
@@ -48,7 +49,7 @@ namespace trabalhoPOO_23010
         /// <summary>
         /// Unique project ID.
         /// </summary>
-        int id;
+        short idProject;
 
         /// <summary>
         /// Current status of the project.
@@ -83,7 +84,7 @@ namespace trabalhoPOO_23010
         /// <summary>
         /// Static counter to assign unique IDs to project.
         /// </summary>
-        static int projectIdCounter = 300;
+        static short projectIdCounter = 300;
         #endregion
 
         #region Methods
@@ -92,10 +93,10 @@ namespace trabalhoPOO_23010
         /// <summary>
         /// Property to access or modify the project ID.
         /// </summary>
-        public int Id
+        public short Id
         {
-            set { id = value; }
-            get { return id; }
+            set { idProject = value; }
+            get { return idProject; }
         }
 
         /// <summary>
@@ -140,23 +141,79 @@ namespace trabalhoPOO_23010
         /// The constructor automatically assigns a unique project ID using a static counter. 
         /// It also initializes the project's team as an empty <c>Team</c> object and sets the end date to the default value.
         /// </remarks>
-        public Project(Status status, DateTime start, int numClients,int numEmployee)
+        public Project(Status status)
         {
             Id = projectIdCounter++;
             Status = status;
-            startDate = start;
+            startDate = DateTime.Now;
             EndDate = new DateTime();
-            clients = new ClientsProject(numClients);
-            team = new EmployeesProject(numEmployee);
+            clients = new ClientsProject();
+            team = new EmployeesProject();
+            used = new MaterialProject();
         }
 
         #endregion
 
         #region Overrides
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+
+            if (obj is Project)
+            {
+                Project otherproject = obj as Project;
+
+                if (StartDate == otherproject.StartDate)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public override string ToString()
+        {
+            return Id + " " + Status + " " +StartDate + " " + EndDate;
+        }
         #endregion
 
         #region OtherMethods
-       
+        public bool AddMaterial(short idMaterial, int quantity)
+        {
+            used.AddMaterial(idMaterial, quantity);
+            return true;
+        }
+
+        public bool AddClient(short idClient)
+        {
+            clients.AddClient(idClient);
+            return true;
+        }
+
+        public bool AddEmployee(short idEmployee)
+        {
+            team.AddEmployee(idEmployee);
+            return true;
+        }
+
+        public static bool operator -(Project project1, Project project2)
+        {
+            if (project1.Equals(project2))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public static bool operator +(Project project1, Project project2)
+        {
+            return !(project1 - project2);
+        }
         #endregion
 
         #region Destructor

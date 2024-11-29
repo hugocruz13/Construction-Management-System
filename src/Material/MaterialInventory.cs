@@ -7,6 +7,8 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace trabalhoPOO_23010
 {
@@ -27,15 +29,11 @@ namespace trabalhoPOO_23010
     public class MaterialInventory
     {
         #region Attributes
-        /// <summary>
-        /// The fixed size of the <c>inventory</c> array.
-        /// </summary>
-        const int sizeArrays = 20;
 
         /// <summary>
         /// Array that stores instances of <c>MaterialQuantity</c> objects.
         /// </summary>
-        static MaterialQuantity[] inventory;
+        static Dictionary<int, List<MaterialQuantity>> inventory;
         #endregion
 
         #region Methods
@@ -57,12 +55,9 @@ namespace trabalhoPOO_23010
         /// </example>
         static MaterialInventory()
         {
-            inventory = new MaterialQuantity[sizeArrays];
+            inventory = new Dictionary<int, List<MaterialQuantity>>(11);
         }
 
-        #endregion
-
-        #region Overrides
         #endregion
 
         #region OtherMethods
@@ -71,60 +66,62 @@ namespace trabalhoPOO_23010
         /// </summary>
         /// <param name="inventoryQuantity">The <c>MaterialQuantity</c> instance to add to the inventory.</param>
         /// <returns>The ID of the material if added successfully; otherwise, returns -10 if the material already exists or if there is no available space.</returns>
-        public static int AddMaterial(MaterialQuantity inventoryQuantity)
+        internal static int GenerateKey(short idMaterial)
         {
-            if (!VerifyMaterialExistence(inventoryQuantity.IdMaterial))
+            return idMaterial % 11;
+        }
+
+        public static short AddMaterial(MaterialQuantity inventoryQuantity)
+        {
+            if (!VerifyMaterialExistence(inventoryQuantity) && inventoryQuantity.IdMaterial != -11)
             {
-                for (int i = 0; i < inventory.Length; i++)
+                int key = GenerateKey(inventoryQuantity.IdMaterial);
+
+                if (!inventory.ContainsKey(key))
                 {
-                    while (inventory[i] == null)
-                    {
-                        inventory[i] = inventoryQuantity;
-                        return inventory[i].IdMaterial;
-                    }
+                    inventory[key] = new List<MaterialQuantity>(5);
                 }
+
+                inventory[key].Add(inventoryQuantity);
+                return inventoryQuantity.IdMaterial;
             }
             return -10;
         }
 
 
-        /// <summary>
-        /// Checks if a material with a specific ID exists in the inventory.
-        /// </summary>
-        /// <param name="idMaterial">The ID of the material to verify.</param>
-        /// <returns><c>true</c> if the material exists; otherwise, <c>false</c>.</returns>
-        public static bool VerifyMaterialExistence(int idMaterial)
+        internal static bool VerifyMaterialExistence(MaterialQuantity inventoryQuantity)
         {
-            for (int i = 0; i < inventory.Length; i++)
+            foreach (List<MaterialQuantity> inventoryList in inventory.Values)
             {
-
-                if (inventory[i] == null)
+                foreach (MaterialQuantity existingMaterial in inventoryList)
                 {
-                    break;
-                }
-
-                if (inventory[i].IdMaterial == idMaterial)
-                {
-                    return true;
+                    if (existingMaterial - inventoryQuantity)
+                    {
+                        return true;
+                    }
                 }
             }
             return false;
         }
 
-        /// <summary>
-        /// Gets the quantity of a material in the inventory based on its ID.
-        /// </summary>
-        /// <param name="idMaterial">The ID of the material.</param>
-        /// <returns>The quantity of the material if it exists; otherwise, returns -10 if the material is not found.</returns>
-        public static int GetQuantity(int idMaterial)
+        public static bool VerifyMaterialExistence(short idMaterial)
         {
-            if (!VerifyMaterialExistence(idMaterial))
+            int key = GenerateKey(idMaterial);
+
+            if (inventory.ContainsKey(key))
             {
-                return -10;
+                foreach (MaterialQuantity materialInstance in inventory[key])
+                {
+                    if (materialInstance.IdMaterial == idMaterial)
+                    {
+                        return true;
+                    }
+                }
             }
-            int position = FindMaterial(idMaterial);
-            return inventory[position].Quantity;
+
+            return false;
         }
+
 
         /// <summary>
         /// Updates the stock quantity of a material in the inventory.
@@ -132,70 +129,59 @@ namespace trabalhoPOO_23010
         /// <param name="idMaterial">The ID of the material to update.</param>
         /// <param name="quantityUpdate">The new quantity to set.</param>
         /// <returns><c>true</c> if the update is successful; otherwise, <c>false</c> if the material is not found.</returns>
-        public static bool UpdateStock(int idMaterial, int quantityUpdate)
+        public static bool UpdateQuantity(short idMaterial, int quantityUpdate)
         {
-            if (VerifyMaterialExistence(idMaterial))
+            int key = GenerateKey(idMaterial);
+
+            if (inventory.ContainsKey(key))
             {
-                int position = FindMaterial(idMaterial);
-                inventory[position].Quantity = quantityUpdate;
-
-                return true;
-            }
-
-            return false;
-        }
-
-        /// <summary>
-        /// Finds the position of a material in the inventory by its ID.
-        /// </summary>
-        /// <param name="idMaterial">The ID of the material to find.</param>
-        /// <returns>The position of the material in the inventory if found; otherwise, returns -10.</returns>
-        private static int FindMaterial(int idMaterial)
-        {
-            for (int i = 0; i < inventory.Length; i++)
-            {
-                if (inventory[i].IdMaterial == idMaterial)
+                foreach (MaterialQuantity materialInstance in inventory[key])
                 {
-                    return i;
-                }
-            }
-
-            return -10;
-        }
-
-        /// <summary>
-        /// Decreases the quantity of a material in the inventory by a specified amount if there is sufficient stock.
-        /// </summary>
-        /// <param name="idMaterial">The ID of the material to use.</param>
-        /// <param name="quantity">The quantity to reduce from the stock.</param>
-        /// <returns><c>true</c> if the material was used successfully; otherwise, <c>false</c> if the material does not exist or there is insufficient stock.</returns>
-        public static bool UseMaterial(int idMaterial, int quantity)
-        {
-            if (VerifyMaterialExistence(idMaterial))
-            {
-                int position = FindMaterial(idMaterial);
-
-                if (inventory[position].Quantity >= quantity)
-                {
-                    inventory[position].Date = DateTime.Now;
-                    inventory[position].Quantity -= quantity;
-                    return true;
+                    if (materialInstance.IdMaterial == idMaterial)
+                    {
+                        materialInstance.Quantity = quantityUpdate;
+                        return true;
+                    }
                 }
             }
 
             return false;
         }
 
-        public static void ShowInventory() 
-        {
-            for (int i = 0; i < inventory.Length; i++)
-            {
-                if (inventory[i] == null)
-                {
-                    break;
-                }
 
-                Console.WriteLine("{0} {1} {2}", inventory[i].IdMaterial, inventory[i].Quantity, inventory[i].Date);
+        ///// <summary>
+        ///// Decreases the quantity of a material in the inventory by a specified amount if there is sufficient stock.
+        ///// </summary>
+        ///// <param name="idMaterial">The ID of the material to use.</param>
+        ///// <param name="quantity">The quantity to reduce from the stock.</param>
+        ///// <returns><c>true</c> if the material was used successfully; otherwise, <c>false</c> if the material does not exist or there is insufficient stock.</returns>
+        public static bool UseMaterial(short idMaterial, int quantity)
+        {
+            int key = GenerateKey(idMaterial);
+
+            if (inventory.ContainsKey(key))
+            {
+                foreach (MaterialQuantity materialInstance in inventory[key])
+                {
+                    if (materialInstance.IdMaterial == idMaterial)
+                    {
+                        materialInstance.Quantity -= quantity;
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        public static void ShowInventory()
+        {
+            foreach (List<MaterialQuantity> inventoryList in inventory.Values)
+            {
+                foreach (MaterialQuantity existingMaterial in inventoryList)
+                {
+                    Console.WriteLine(existingMaterial.ToString());
+                }
             }
         }
 

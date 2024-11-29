@@ -7,6 +7,7 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
 using System.Net.Sockets;
 
 namespace trabalhoPOO_23010
@@ -29,10 +30,7 @@ namespace trabalhoPOO_23010
     {
         #region Attributes
 
-        /// <summary>
-        /// Array that stores instances of <c>Employee</c> objects.
-        /// </summary>
-        static Employee[] employees;
+        static Dictionary<int, List<Employee>> employees;
         #endregion
 
         #region Methods
@@ -41,61 +39,48 @@ namespace trabalhoPOO_23010
         #endregion
 
         #region Constructors
-
-
-        /// <summary>
-        /// Initializes the <c>Employees</c> class by setting up the client array.
-        /// </summary>
-        /// <remarks>
-        /// This static constructor is called only once, when the <c>Employees</c> class is accessed for the first time. 
-        /// It initializes the <c>employees</c> array with a predefined size.
-        /// </remarks>
-        /// <example>
-        /// Accessing any member of the <c>Employees</c> class will trigger this constructor if it hasn't been initialized.
-        /// </example>
         static Employees()
         {
-            employees = new Employee[sizeArrays];
+            employees= new Dictionary<int, List<Employee>>(11);
         }
 
         #endregion
 
-        #region Overrides
-        #endregion
 
         #region OtherMethods
+        internal static int GenerateKey(short idEmployee)
+        {
+            return idEmployee % 11;
+        }
+
         public static short AddEmployee(Employee employee)
         {
             if (!EmployeeExist(employee))
             {
-                for (int i = 0; i < employees.Length; i++)
+                int key = GenerateKey(employee.Id);
+
+                if (!employees.ContainsKey(key))
                 {
-                    if (employees[i] == null)
-                    {
-                        employees[i] = employee;
-                        return employees[i].Id;
-                    }
+                    employees[key] = new List<Employee>(5);
                 }
+
+                employees[key].Add(employee);
+                return employee.Id;
             }
-            return -11;
+
+            return -11; /// QUESTIONAR PROF MANUAL DE ERROS?
         }
 
         internal static bool EmployeeExist(Employee employee)
         {
-            if (employee == null)
+            foreach (List<Employee> employeeList in employees.Values)
             {
-                return false;
-            }
-
-            foreach (Employee e in employees)
-            {
-                if (e == null)
+                foreach (Employee existingEmployee in employeeList)
                 {
-                    return false;
-                }
-                if (employee - e)
-                {
-                    return true;
+                    if (existingEmployee - employee)
+                    {
+                        return true;
+                    }
                 }
             }
             return false;
@@ -103,80 +88,53 @@ namespace trabalhoPOO_23010
 
         public static bool EmployeeExist(short idEmployee)
         {
-            for (int i = 0; i < employees.Length; i++)
+            int key = GenerateKey(idEmployee);
+
+            if (employees.ContainsKey(key))
             {
-                if (employees[i] == null)
+                foreach (Employee employeeInstance in employees[key])
                 {
-                    break;
-                }
-                if (employees[i].Id == idEmployee)
-                {
-                    return true;
+                    if (employeeInstance.Id == idEmployee)
+                    {
+                        return true;
+                    }
                 }
             }
+
             return false;
         }
+
         public static bool UpdateRole(short idEmployee, string role, double hourly)
         {
-            int p = FindEmployee(idEmployee);
-            if (p != -11)
-            {
-                employees[p].Role = role;
-                employees[p].HourlyRate = hourly;
-                return true;
-            }
+            int key = GenerateKey(idEmployee);
 
-            return false;
-        }
-
-        public static int FindEmployee(short idEmployee)
-        {
-            if (EmployeeExist(idEmployee))
+            if (employees.ContainsKey(key))
             {
-                for (int i = 0; i < employees.Length; i++)
+                foreach (Employee employeeInstance in employees[key])
                 {
-
-                    if (employees[i].Id == idEmployee)
+                    if (employeeInstance.Id == idEmployee)
                     {
-                        return i;
+                        employeeInstance.Role = role;
+                        employeeInstance.HourlyRate = hourly;
+                        return true;
                     }
-
                 }
             }
 
-            return -11;
+            return false;
         }
 
         public static void ShowEmployees()
         {
-            for (int i = 0; i < employees.Length; i++)
+            foreach (List<Employee> employeeList in employees.Values)
             {
-                if (employees[i] == null)
+                foreach (Employee employeeInstance in employeeList)
                 {
-                    break;
+                    Console.WriteLine(employeeInstance.ToString());
                 }
-                Console.WriteLine(employees[i].ToString());
             }
         }
 
-        public static void ShowEmployees(short idEmployee)
-        {
-            if (EmployeeExist(idEmployee))
-            {
-                for (int i = 0; i < employees.Length; i++)
-                {
-                    if (employees[i] == null)
-                    { 
-                        break;
-                    }
-                    if (employees[i].Id == idEmployee)
-                    {
-                        Console.WriteLine(employees[i].ToString());
-                        break;
-                    }
-                }
-            }
-        }
         #endregion
 
         #region Destructor
