@@ -8,27 +8,37 @@ using System.Xml.Linq;
 
 using Object_Layer;
 using Business_Logic_Layer;
+using CustomExceptions;
 
 namespace trabalhoPOO_23010
 {
     internal class Program
     {
-        /// FORMATAR A STRING 
-        /// APENAS NO REGISTO PRINCIPAL É que recebo o id depois trabalhar com o ID. <summary>
-        /// ADICIONAR STATUS ATIVO OU INATIVO AOS FUNCIONAS 
-
+        //Documentos binario  /Documento text para defenir o caminho 
         static void Main(string[] args)
         {
-            //bool x;
 
-            short idC1 = Company.RegistClient(new Client(" Hugo Cruz  ", "967333980"));
-            short idC3 = Company.RegistClient(new Client(" Hugo Cruz  ", "967333980"));
-            short idC2 = Company.RegistClient(new Client("  hip crUZ  ", "966003884"));
-            //Clients.ClientExists(502);
-            //Clients.ClientExists(501);
-            //Clients.ShowClients();
-            //Clients.UpdateContact(507, "967333890");
-            //Clients.UpdateContact(501, "966003885");
+            try
+            {
+                short idC1 = Company.RegistClient(new Client(" Hugo Cruz  ", "967333980"));
+                short idC3 = Company.RegistClient(new Client(" Hugo Cruz  ", "967333980"));
+                short idC2 = Company.RegistClient(new Client("  hip crUZ  ", "966003884"));
+                short idC4 = Company.RegistClient(null);
+            }
+
+            catch (Execeptions ex)
+            {
+                Console.WriteLine($"Business Logic Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Unexpected Error: {ex.Message}");
+            }
+
+
+            bool x = Company.ExistClient(500);
+            x = Company.ExistClient(506);
+
 
             short idE1 = Company.RegistEmployee(new Employee("  Antonio Mendes", " Pedreiro   ", 5.6));
             short idE2 = Company.RegistEmployee(new Employee("Augusto Mendes", "Madereiro", 6.2));
@@ -74,10 +84,10 @@ namespace trabalhoPOO_23010
             //CLOSE PROJECT REVER Object_Layer
 
             short idP1 = Company.RegistProject(new Project(Status.InProgress));
-            Company.AddClientToProject(300, idC1);
-            Company.AddEmployeeToProject(307,idE1);
-            Company.AddEmployeeToProject(300,idE1);
-            Company.AddEmployeeToProject(300,idE2);
+            //Company.AddClientToProject(300, idC1);
+            Company.AddEmployeeToProject(307, idE1);
+            Company.AddEmployeeToProject(300, idE1);
+            Company.AddEmployeeToProject(300, idE2);
             Company.UseMaterial(300, idM2, 5);
             Company.UseMaterial(300, idM3, 17);
             Company.UseMaterial(305, idM4, 20);
@@ -89,8 +99,8 @@ namespace trabalhoPOO_23010
             Company.AddEmployeeToProject(301, idE3);
             Company.AddEmployeeToProject(301, idE4);
             Company.AddEmployeeToProject(301, idE2);
-            Company.AddClientToProject(300, idC2);
-            Company.ShowEmployees();
+            //Company.AddClientToProject(300, idC2);
+            //Company.ShowEmployees();
         }
     }
 }

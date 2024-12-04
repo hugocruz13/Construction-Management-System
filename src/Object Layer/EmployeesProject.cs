@@ -63,20 +63,11 @@ namespace Object_Layer
             if (!ExistEmployee(idEmployee))
             {
                 team.Add(idEmployee);
-                //Employees.ChangeStatus((short)idEmployee);
                 return true;
             }
 
             return false;
         }
-
-        //public void ChangeStatus()  /// TERMINAR 
-        //{
-        //    for (int i = 0; i < team.Count; i++)
-        //    {
-        //        Employees.ChangeStatus((short)team[i]);
-        //    }
-        //}
 
         private bool ExistEmployee(int idEmployee) 
         {

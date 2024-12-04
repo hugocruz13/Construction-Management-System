@@ -13,6 +13,7 @@ using System.Xml.Linq;
 
 using Object_Layer;
 using Data_Layer;
+using CustomExceptions;
 
 namespace Business_Logic_Layer
 {
@@ -33,18 +34,45 @@ namespace Business_Logic_Layer
     public class Company
     {
 
-
         #region Clients
         public static short RegistClient(Client client)
         {
-            short idClient = Clients.AddClient(client);
-            return idClient;
+            if (client == null)
+            {
+                throw new Execeptions("Client cannot be null");
+            }
+
+            if (Clients.ClientExists(client))
+            {
+                throw new Execeptions("Customer already exists");
+            }
+
+            try
+            {
+                short idClient = Clients.AddClient(client);
+                return idClient;
+            }
+
+            catch(Exception ex)
+            {
+                throw new Execeptions("Error occurred while adding the client", ex);
+            }
+
+
         }
 
         public static bool ExistClient(short idClient)
         {
-            bool exist = Clients.ClientExists(idClient);
-            return exist;
+            try
+            {
+                bool exist = Clients.ClientExists(idClient);
+                return exist;
+            }
+
+            catch(Exception ex)
+            {
+                 throw new Execeptions("Error occurred while adding the client", ex);
+            }
         }
 
         public static void ShowClients()
@@ -136,7 +164,7 @@ namespace Business_Logic_Layer
 
         public static bool AddEmployeeToProject(short idProject, short idEmployee)
         {
-            if (Employees.EmployeeExist(idEmployee)  &&  Employees.AvailableEmployees(idEmployee))
+            if (Employees.EmployeeExist(idEmployee))
             {
                 bool r = Projects.AddEmployeeProject(idProject, idEmployee);
                 return r;

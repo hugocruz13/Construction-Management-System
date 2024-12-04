@@ -70,7 +70,7 @@ namespace Data_Layer
                 return employee.Id;
             }
 
-            return -11; /// QUESTIONAR PROF MANUAL DE ERROS?
+            return -11; 
         }
 
         internal static bool EmployeeExist(Employee employee)
@@ -106,50 +106,6 @@ namespace Data_Layer
             return false;
         }
 
-        public static bool AvailableEmployees(short idEmployee)
-        {
-            int key = GenerateKey(idEmployee);
-
-            if (employees.ContainsKey(key))
-            {
-                foreach (Employee employeeInstance in employees[key])
-                {
-                    if (employeeInstance.Id == idEmployee)
-                    {
-                        if (employeeInstance.StatusEmployee == StatusEmployee.Enable)
-                        {
-                            return true;
-                        }
-                    }
-                }
-            }
-
-            return false;
-        }
-
-        public static bool ChangeStatus(short idEmployee)
-        {
-            int key = GenerateKey(idEmployee);
-
-            if (employees.ContainsKey(key))
-            {
-                foreach (Employee employeeInstance in employees[key])
-                {
-                    if (employeeInstance.StatusEmployee == StatusEmployee.Enable)
-                    {
-                        employeeInstance.StatusEmployee = StatusEmployee.Disable;
-                        return true;
-                    }
-                    else
-                    {
-                        employeeInstance.StatusEmployee = StatusEmployee.Enable;
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
 
         public static bool UpdateRole(short idEmployee, string role, double hourly)
         {

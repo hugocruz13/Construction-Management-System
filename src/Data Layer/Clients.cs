@@ -12,6 +12,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 using Object_Layer;
+using CustomExceptions;
 
 namespace Data_Layer
 {
@@ -46,25 +47,20 @@ namespace Data_Layer
 
         public static short AddClient(Client client)
         {
-            if (!ClientExists(client))
+            int key = GenerateKey(client.Id);
+
+            if (!clients.ContainsKey(key))
             {
-                int key = GenerateKey(client.Id);
-
-                if (!clients.ContainsKey(key))
-                {
-                    clients[key] = new List<Client>(5);
-                }
-
-                clients[key].Add(client);
-                return client.Id;
+                clients[key] = new List<Client>(5);
             }
 
-            return -17;
+            clients[key].Add(client);
 
+            return client.Id;
         }
 
-        //Com base no equals 
-        internal static bool ClientExists(Client client)
+
+        public static bool ClientExists(Client client)
         {
             foreach (List<Client> clientList in clients.Values)
             {

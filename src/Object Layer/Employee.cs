@@ -10,11 +10,7 @@ using System;
 
 namespace Object_Layer
 {
-    public enum StatusEmployee 
-    {
-        Enable = 1,
-        Disable = 2
-    }
+
     /// <summary>
     /// Class <c>Employee</c> allows to create an employee object with basic 
     /// information such as their Id, name, role, and hourly role.
@@ -45,9 +41,6 @@ namespace Object_Layer
         /// <summary>
         /// Static counter to assign unique IDs to employees.
         /// </summary>
-
-        StatusEmployee status;
-
         static short employeeIdCounter = 200;
         #endregion
 
@@ -93,11 +86,6 @@ namespace Object_Layer
             get { return hourlyRate; }
         }
 
-        public StatusEmployee StatusEmployee
-        {
-            set {status= value;}
-            get { return status;}
-        }
         #endregion
 
         #region Constructors
@@ -114,7 +102,6 @@ namespace Object_Layer
         /// </remarks>
         public Employee(string name, string role, double hourlyrate) : base(employeeIdCounter++, name) // Send for constructor Person
         {
-            StatusEmployee = StatusEmployee.Enable;
             Role = role.ToUpper().Trim();
             HourlyRate = hourlyrate;
         }
@@ -150,7 +137,7 @@ namespace Object_Layer
 
         public override string ToString()
         {
-            return Id + " " + Name + " " + Role + " " + HourlyRate+ " " + StatusEmployee;
+            return Id + " " + Name + " " + Role + " " + HourlyRate;
         }
         #endregion
 
