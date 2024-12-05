@@ -8,7 +8,7 @@
 **/
 using System;
 
-namespace Object_Layer
+namespace Object_Tier
 {
 
     /// <summary>

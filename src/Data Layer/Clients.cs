@@ -11,10 +11,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-using Object_Layer;
+using Object_Tier;
 using CustomExceptions;
 
-namespace Data_Layer
+namespace Data_Tier
 {
 
     public class Clients
@@ -60,7 +60,7 @@ namespace Data_Layer
         }
 
 
-        public static bool ClientExists(Client client)
+        public static bool ExistClient(Client client)
         {
             foreach (List<Client> clientList in clients.Values)
             {
@@ -75,7 +75,7 @@ namespace Data_Layer
             return false;
         }
 
-        public static bool ClientExists(short idCliente)
+        public static bool ExistClient(short idCliente)
         {
             int key = GenerateKey(idCliente);
 

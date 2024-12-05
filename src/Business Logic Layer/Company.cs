@@ -7,42 +7,26 @@
 *	<description></description>
 **/
 
-using System;
-using System.Diagnostics;
-using System.Xml.Linq;
-
-using Object_Layer;
-using Data_Layer;
 using CustomExceptions;
+using Data_Tier;
+using Object_Tier;
+using System;
 
-namespace Business_Logic_Layer
+namespace Business_Tier
 {
-    /// <summary>
-    /// Represents a company with static attributes for managing clients, material inventory, employees, and projects.
-    /// </summary>
-    /// <remarks>
-    /// The <c>Company</c> class provides a centralized, static structure for managing the core entities of a business.
-    /// As all members are static, no instances are required.
-    /// </remarks>
-    /// <example>
-    /// Example of use
-    /// <code>
-    /// Company.ProjectCreate; 
-    /// Company.EmployeeRegister;
-    /// </code>
-    /// </example>
+
     public class Company
     {
 
         #region Clients
-        public static short RegistClient(Client client)
+        public static short RegisterClient(Client client)
         {
             if (client == null)
             {
                 throw new Execeptions("Client cannot be null");
             }
 
-            if (Clients.ClientExists(client))
+            if (Clients.ExistClient(client))
             {
                 throw new Execeptions("Customer already exists");
             }
@@ -53,7 +37,7 @@ namespace Business_Logic_Layer
                 return idClient;
             }
 
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Execeptions("Error occurred while adding the client", ex);
             }
@@ -61,33 +45,43 @@ namespace Business_Logic_Layer
 
         }
 
-        public static bool ExistClient(short idClient)
+        public static bool UpdateClientContact(short idClient, string contact)
         {
-            try
+            if (contact == string.Empty)
             {
-                bool exist = Clients.ClientExists(idClient);
-                return exist;
+                throw new Execeptions("Contact information cannot be an empty sequence");
             }
 
-            catch(Exception ex)
+            if (contact.Length < 9)
             {
-                 throw new Execeptions("Error occurred while adding the client", ex);
+                throw new Execeptions("The contact information must be at least 9 characters long");
+            }
+
+            try
+            {
+                bool update = Clients.UpdateContact(idClient, contact);
+                return update;
+            }
+            catch (Exception ex)
+            {
+                throw new Execeptions("Error occurred while adding the client", ex);
             }
         }
 
-        public static void ShowClients()
+        public static bool IsClientRegistered(short idClient)
+        {
+            bool exist = Clients.ExistClient(idClient);
+            return exist;
+        }
+
+        public static void DisplayAllClients()
         {
             Clients.ShowClients();
         }
 
-        public static bool UpdateContact(short idClient, string contact)
-        {
-            bool update = Clients.UpdateContact(idClient, contact);
-            return update;
-        }
         #endregion
 
-        #region Employees
+        #region Employees EM FALTA ERROS
         public static short RegistEmployee(Employee employee)
         {
             short idEmployee = Employees.AddEmployee(employee);
@@ -105,27 +99,71 @@ namespace Business_Logic_Layer
             Employees.ShowEmployees();
         }
 
-        public static bool UpdateRole(short idEmployee, string role, double priceHourly)
+        public static bool UpdateEmployeeRole(short idEmployee, string role, double priceHourly)
         {
             bool update = Employees.UpdateRole(idEmployee, role, priceHourly);
             return update;
         }
-        #endregion
+        #endregion 
 
         #region Materials
-        public static short RegistMaterial(string name, double price, int quantity)
+        public static short RegisterMaterial(Material material, int quantity)
         {
-            short id = Materials.AddMaterial(new Material(name, price));
-            id = MaterialInventory.AddMaterial(new MaterialQuantity(id, quantity));
-            return id;
+            short idM = AddMaterialToCatalog(material);
+            short idMI = AddMaterialToInventory(idM, quantity);
+            return idMI;
         }
 
-        public static bool ExistMaterial(short idMaterial)
+        internal static short AddMaterialToCatalog(Material material)
+        {
+            if (material == null)
+            {
+                throw new Execeptions("The material cannot be null.");
+            }
+
+            if (Materials.MaterialExist(material))
+            {
+                throw new Execeptions("The material is already registered in the system.");
+            }
+
+            try
+            {
+                short idM = Materials.AddMaterial(material);
+                return idM;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while adding the material to the inventory.", ex);
+            }
+        }
+
+        internal static short AddMaterialToInventory(short idMaterial, int quantity)
+        {
+            if (MaterialInventory.VerifyMaterialExistence(idMaterial))
+            {
+                throw new Execeptions("The material already exists in the inventory.");
+            }
+
+            try
+            {
+                short idMI = MaterialInventory.AddMaterial(new MaterialQuantity(idMaterial, quantity));
+                return idMI;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while adding the material to the inventory.", ex);
+            }
+        }
+
+
+        public static bool ExistMaterial(short idMaterial) // continuar
         {
             bool exist = Materials.MaterialExist(idMaterial);
             exist = MaterialInventory.VerifyMaterialExistence(idMaterial);
             return exist;
         }
+
+        
 
         public static bool UpdateStock(short idMaterial, int quantity)
         {
@@ -153,42 +191,26 @@ namespace Business_Logic_Layer
 
         public static bool AddClientToProject(short idProject, short idClient)
         {
-            if (Clients.ClientExists(idClient))
+            if (Clients.ExistClient(idClient))
             {
-                bool r = Projects.AddClientProject(idProject, idClient);
+                bool r = ClientsService.AddClient(idProject, idClient);
                 return r;
             }
 
             return false;
         }
 
-        public static bool AddEmployeeToProject(short idProject, short idEmployee)
+        public static bool Existe(short idProject, short idClient)
         {
-            if (Employees.EmployeeExist(idEmployee))
+            if (Clients.ExistClient(idClient))
             {
-                bool r = Projects.AddEmployeeProject(idProject, idEmployee);
+                bool r = ClientsService.ExistClient(idProject, idClient);
                 return r;
             }
-
             return false;
         }
 
-        public static bool UseMaterial(short idProject, short idMaterial, int quantity)
-        {
-            if (MaterialInventory.UseMaterial(idMaterial, quantity))
-            {
-                bool r = Projects.AddMaterialProject(idProject, idMaterial, quantity);
-                return r;
-            }
 
-            return false;
-        }
-
-        public static bool CloseProject(short idProject) 
-        {
-            Projects.Close(idProject);
-            return true;
-        }
         #endregion
 
         #region Destructor

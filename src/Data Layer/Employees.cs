@@ -10,9 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Net.Sockets;
 
-using Object_Layer;
+using Object_Tier;
 
-namespace Data_Layer
+namespace Data_Tier
 {
     /// <summary>
     /// Represents a collection of employee with a fixed maximum capacity.
@@ -37,9 +37,6 @@ namespace Data_Layer
 
         #region Methods
 
-        #region Properties
-        #endregion
-
         #region Constructors
         static Employees()
         {
@@ -47,7 +44,6 @@ namespace Data_Layer
         }
 
         #endregion
-
 
         #region OtherMethods
         internal static int GenerateKey(short idEmployee)

@@ -8,7 +8,7 @@
 **/
 using System;
 
-namespace Object_Layer
+namespace Object_Tier
 {
     /// <summary>
     /// Represents a person with basic attributes like Id and Name.
@@ -82,13 +82,6 @@ namespace Object_Layer
             this.id = id;
             Name = name.ToUpper().Trim();
         }
-        #endregion
-
-        #region Overrides
-
-        #endregion
-
-        #region OtherMethods
         #endregion
 
         #region Destructor

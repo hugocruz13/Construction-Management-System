@@ -23,7 +23,7 @@ namespace CustomExceptions
         
         }
 
-        public Execeptions(string error, Exception exception) : base(error + exception)
+        public Execeptions(string error, Exception exception) : base(error , exception)
         {
 
         }

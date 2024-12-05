@@ -8,7 +8,7 @@
 */
 using System;
 
-namespace Object_Layer
+namespace Object_Tier
 {
     /// <summary>
     /// The <c>Client</c> class allows you to create a client object

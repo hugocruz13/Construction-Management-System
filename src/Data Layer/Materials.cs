@@ -10,9 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 
-using Object_Layer;
+using Object_Tier;
 
-namespace Data_Layer
+namespace Data_Tier
 {
     /// <summary>
     /// Purpose:
@@ -28,9 +28,6 @@ namespace Data_Layer
         #endregion
 
         #region Methods
-
-        #region Properties
-        #endregion
 
         #region Constructors
 
@@ -49,22 +46,18 @@ namespace Data_Layer
 
         public static short AddMaterial(Material material)
         {
-            if (!MaterialExist(material))
+            int key = GenerateKey(material.Id);
+
+            if (!materials.ContainsKey(key))
             {
-                int key = GenerateKey(material.Id);
-
-                if (!materials.ContainsKey(key))
-                {
-                    materials[key] = new List<Material>(5);
-                }
-
-                materials[key].Add(material);
-                return material.Id;
+                materials[key] = new List<Material>(5);
             }
-            return -11;
+
+            materials[key].Add(material);
+            return material.Id;
         }
 
-        internal static bool MaterialExist(Material material)
+        public static bool MaterialExist(Material material)
         {
             foreach (List<Material> materialList in materials.Values)
             {

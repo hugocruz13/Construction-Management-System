@@ -9,7 +9,7 @@
 using System;
 using System.Xml.Linq;
 
-namespace Object_Layer
+namespace Object_Tier
 {
     /// <summary>
     /// The class <c>MaterialQuantity</c> represents the quantity of a 

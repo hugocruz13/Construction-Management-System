@@ -10,9 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-using Object_Layer;
+using Object_Tier;
 
-namespace Data_Layer
+namespace Data_Tier
 {
     /// <summary>
     /// Represents a inventory with a fixed maximum capacity.
@@ -39,9 +39,6 @@ namespace Data_Layer
         #endregion
 
         #region Methods
-
-        #region Properties
-        #endregion
 
         #region Constructors
 
@@ -75,35 +72,16 @@ namespace Data_Layer
 
         public static short AddMaterial(MaterialQuantity inventoryQuantity)
         {
-            if (!VerifyMaterialExistence(inventoryQuantity) && inventoryQuantity.IdMaterial != -11)
+            int key = GenerateKey(inventoryQuantity.IdMaterial);
+
+            if (!inventory.ContainsKey(key))
             {
-                int key = GenerateKey(inventoryQuantity.IdMaterial);
-
-                if (!inventory.ContainsKey(key))
-                {
-                    inventory[key] = new List<MaterialQuantity>(5);
-                }
-
-                inventory[key].Add(inventoryQuantity);
-                return inventoryQuantity.IdMaterial;
+                inventory[key] = new List<MaterialQuantity>(5);
             }
-            return -10;
-        }
 
+            inventory[key].Add(inventoryQuantity);
+            return inventoryQuantity.IdMaterial;
 
-        internal static bool VerifyMaterialExistence(MaterialQuantity inventoryQuantity)
-        {
-            foreach (List<MaterialQuantity> inventoryList in inventory.Values)
-            {
-                foreach (MaterialQuantity existingMaterial in inventoryList)
-                {
-                    if (existingMaterial - inventoryQuantity)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
         }
 
         public static bool VerifyMaterialExistence(short idMaterial)

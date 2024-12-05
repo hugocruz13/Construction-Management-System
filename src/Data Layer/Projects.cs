@@ -9,9 +9,9 @@
 using System;
 using System.Collections.Generic;
 
-using Object_Layer;
+using Object_Tier;
 
-namespace Data_Layer
+namespace Data_Tier
 {
     /// <summary>
     /// The <c>Projects</c> class manages a collection of <c>Project</c> objects within a fixed-size array.
@@ -30,9 +30,6 @@ namespace Data_Layer
 
         #region Methods
 
-        #region Properties
-        #endregion
-
         #region Constructors
 
         static Projects()
@@ -41,6 +38,8 @@ namespace Data_Layer
         }
 
         #endregion
+
+        #region OtherMethods
         internal static int GenerateKey(short idProject)
         {
             return idProject % 11;
@@ -97,86 +96,6 @@ namespace Data_Layer
 
             return false;
         }
-
-        public static bool AddClientProject(short idProject, short idClient)
-        {
-            int key = idProject % 11;
-
-            if (projects.ContainsKey(key))
-            {
-                foreach (Project project in projects[key])
-                {
-                    if (project.Id == idProject)
-                    {
-                        bool r = project.AddClient(idClient);
-                        return r;
-                    }
-                }
-            }
-
-            return false;
-        }
-
-        public static bool AddEmployeeProject(short idProject, short idEmployee)
-        {
-            int key = idProject % 11;
-
-            if (projects.ContainsKey(key))
-            {
-                foreach (Project project in projects[key])
-                {
-                    if (project.Id == idProject)
-                    {
-                        bool r = project.AddEmployee(idEmployee);
-                        return r;
-                    }
-                }
-            }
-
-            return false;
-        }
-
-        public static bool AddMaterialProject(short idProject, short idMaterial, int quantity)
-        {
-            int key = idProject % 11;
-
-            if (projects.ContainsKey(key))
-            {
-                foreach (Project project in projects[key])
-                {
-                    if (project.Id == idProject)
-                    {
-                        bool r = project.AddMaterial(idMaterial, quantity);
-                        return r;
-                    }
-                }
-            }
-
-            return false;
-        }
-
-        public static bool Close(short idProject) 
-        {
-            int key = idProject % 11;
-
-            if (projects.ContainsKey(key))
-            {
-                foreach (Project project in projects[key])
-                {
-                    if (project.Id == idProject)
-                    {
-                        //project.CloseProject();
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
-
-
-        #region OtherMethods
-
         #endregion
 
         #region Destructor

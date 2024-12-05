@@ -8,7 +8,7 @@
 **/
 using System;
 
-namespace Object_Layer
+namespace Object_Tier
 {
     /// <summary>
     /// The class <c>Material</c> represents a material used in processes, 
@@ -43,6 +43,7 @@ namespace Object_Layer
         /// </summary>
         double unitPrice;
 
+        DateTime lastRegiste;
         /// <summary>
         /// Static counter to assign unique IDs to materials.
         /// </summary>
@@ -96,6 +97,12 @@ namespace Object_Layer
             }
             get { return unitPrice; }
         }
+
+        public DateTime LastRegiste 
+        {
+            set { lastRegiste = value; }
+            get { return lastRegiste; }
+        }
         #endregion
 
         #region Constructors
@@ -117,6 +124,7 @@ namespace Object_Layer
             id = materialIdCounter++;
             Name = name.ToUpper().Trim();
             UnitPrice = price;
+            LastRegiste = DateTime.Now;
         }
 
         #endregion
