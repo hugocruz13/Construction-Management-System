@@ -24,104 +24,76 @@ namespace Data_Tier
     public class Materials
     {
         #region Attributes
-        static Dictionary<int, List<Material>> materials;
+        static Materials instance;
+        List<Material> materials;
         #endregion
 
         #region Methods
 
         #region Constructors
 
-        static Materials()
+        protected Materials()
         {
-            materials = new Dictionary<int, List<Material>>(11);
+            materials = new List<Material>(5);
         }
 
         #endregion
 
         #region OtherMethods
-        internal static int GenerateKey(short idMaterial)
+        public static Materials Instance() 
         {
-            return idMaterial % 11;
+            if (instance == null)
+            {
+                instance = new Materials();
+            }
+            return instance;
         }
 
-        public static short AddMaterial(Material material)
+        public short AddMaterial(Material material)
         {
-            int key = GenerateKey(material.Id);
-
-            if (!materials.ContainsKey(key))
-            {
-                materials[key] = new List<Material>(5);
-            }
-
-            materials[key].Add(material);
+            materials.Add(material);
             return material.Id;
         }
 
-        public static bool MaterialExist(Material material)
+        public bool MaterialExist(Material material)
         {
-            foreach (List<Material> materialList in materials.Values)
+
+            foreach (Material existingMaterial in materials)
             {
-                foreach (Material existingMaterial in materialList)
+                if (existingMaterial - material)
                 {
-                    if (existingMaterial - material)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
             return false;
         }
 
-        public static bool MaterialExist(short idMaterial)
+        public bool MaterialExist(short idMaterial)
         {
-            int key = GenerateKey(idMaterial);
 
-            if (materials.ContainsKey(key))
+            foreach (Material materialInstance in materials)
             {
-                foreach (Material materialInstance in materials[key])
+                if (materialInstance.Id == idMaterial)
                 {
-                    if (materialInstance.Id == idMaterial)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
-
-            return false;
-
-        }
-
-        public static bool UpdatePrice(short idMaterial, double price)
-        {
-            int key = GenerateKey(idMaterial);
-
-            if (materials.ContainsKey(key))
-            {
-                foreach (Material materialInstance in materials[key])
-                {
-                    if (materialInstance.Id == idMaterial)
-                    {
-                        materialInstance.UnitPrice = price;
-                        return true;
-                    }
-                }
-            }
-
             return false;
         }
 
-
-        public static void ShowMaterials()
+        public bool UpdatePrice(short idMaterial, double price)
         {
-            foreach (List<Material> materialList in materials.Values)
+
+            foreach (Material materialInstance in materials)
             {
-                foreach (Material existingMaterial in materialList)
+                if (materialInstance.Id == idMaterial)
                 {
-                    Console.WriteLine(existingMaterial.ToString());
+                    materialInstance.UnitPrice = price;
+                    return true;
                 }
             }
+            return false;
         }
-
         #endregion
 
         #region Destructor

@@ -13,116 +13,105 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 using Object_Tier;
 using CustomExceptions;
+using Data_Layer;
 
 namespace Data_Tier
 {
 
-    public class Clients
+    public class Clients : IClients
     {
         #region Attributes
-
-        static Dictionary<int, List<Client>> clients;
-
+        static Clients instance;
+        List<Client> clients;
         #endregion
 
         #region Methods
-
-        #region Properties
-        #endregion
-
         #region Constructors
 
-        static Clients()
+        protected Clients()
         {
-            clients = new Dictionary<int, List<Client>>(11);
+            clients = new List<Client>(5);
         }
 
         #endregion
 
+
         #region OtherMethods
-        internal static int GenerateKey(short idClient)
+        public static Clients Instance()
         {
-            return idClient % 11;
-        }
-
-        public static short AddClient(Client client)
-        {
-            int key = GenerateKey(client.Id);
-
-            if (!clients.ContainsKey(key))
+            if (instance == null)
             {
-                clients[key] = new List<Client>(5);
+                instance = new Clients();
             }
 
-            clients[key].Add(client);
+            return instance;
 
+        }
+
+        public short AddClient(Client client)
+        {
+            clients.Add(client);
+            clients.Sort();
             return client.Id;
         }
 
-
-        public static bool ExistClient(Client client)
+        public bool ExistClient(Client client)
         {
-            foreach (List<Client> clientList in clients.Values)
-            {
-                foreach (Client existingClient in clientList)
-                {
-                    if (existingClient - client)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
 
-        public static bool ExistClient(short idCliente)
-        {
-            int key = GenerateKey(idCliente);
-
-            if (clients.ContainsKey(key))
+            foreach (Client existingClient in clients)
             {
-                foreach (Client clientInstance in clients[key])
+                if (existingClient - client)
                 {
-                    if (clientInstance.Id == idCliente)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
 
             return false;
         }
 
-
-        public static bool UpdateContact(short idClient, string contacto)
+        public bool ExistClient(short idCliente)
         {
-            int key = GenerateKey(idClient);
-
-            if (clients.ContainsKey(key))
+            foreach (Client clientInstance in clients)
             {
-                foreach (Client client in clients[key])
+                if (clientInstance.Id == idCliente)
                 {
-                    if (client.Id == idClient)
-                    {
-                        client.ContactInfo = contacto;
-                        return true;
-                    }
+                    return true;
                 }
             }
 
             return false;
         }
 
-        public static void ShowClients()
+        public bool UpdateContact(short idClient, int contacto)
         {
-            foreach (List<Client> clientList in clients.Values)
+            foreach (Client client in clients)
             {
-                foreach (Client client in clientList)
+                if (client.Id == idClient)
                 {
-                    Console.WriteLine(client.ToString());
+                    client.ContactInfo = contacto;
+                    return true;
                 }
             }
+
+            return false;
         }
+
+        //public bool Save(string path)
+        //{
+        //    Stream fs = new FileStream(path, FileMode.Create);
+        //    BinaryFormatter binaryFormatter = new BinaryFormatter();
+        //    binaryFormatter.Serialize(fs, clients);
+        //    clients.Clear();
+        //    return true;
+        //}
+
+        //public static bool Load(string path)
+        //{
+        //    Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
+        //    BinaryFormatter b = new BinaryFormatter();
+        //    clients = b.Deserialize(s) as List<Client>;
+        //    return true;
+        //}
 
         #endregion
 

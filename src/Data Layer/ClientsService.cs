@@ -19,18 +19,18 @@ namespace Data_Tier
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class ClientsService
+    class ClientsService
     {
         #region Attributes
-        static Dictionary<int, List<int>> clients;
+        static ClientsService instance;
+        Dictionary<int, List<int>> clients;
         #endregion
 
         #region Methods
 
-
         #region Constructors
 
-        static ClientsService()
+        protected ClientsService()
         {
             clients = new Dictionary<int, List<int>>(17);
         }
@@ -38,14 +38,29 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public static bool AddClient(int projectId, int clientId)
+        public static ClientsService Instance()
+        {
+            if (instance == null)
+            {
+                instance = new ClientsService();
+            }
+            return instance;
+        }
+
+
+        public bool ExistClient(int projectId, int clientId)
+        {
+            return clients[projectId].Contains(clientId);
+        }
+
+        public bool AddClient(int projectId, int clientId)
         {
             if (!clients.ContainsKey(projectId))
             {
                 clients[projectId] = new List<int>(5);
             }
 
-            if (!ExistClient(projectId,clientId))
+            if (!ExistClient(projectId, clientId))
             {
                 clients[projectId].Add(clientId);
                 return true;
@@ -54,15 +69,20 @@ namespace Data_Tier
             return false;
         }
 
-        public static bool ExistClient(int projectId, int clientId) 
+        public bool RemoveClient(int projectId, int clientId)
         {
-            if (!clients.ContainsKey(projectId))
+            if (clients.ContainsKey(projectId))
             {
-                throw new Execeptions("Project não existe");
+                if (ExistClient(projectId, clientId))
+                {
+                    clients[projectId].Remove(clientId);
+                    return true;
+                }
             }
 
-            return clients[projectId].Contains(clientId);
+            return false;
         }
+
         #endregion
 
         #region Destructor

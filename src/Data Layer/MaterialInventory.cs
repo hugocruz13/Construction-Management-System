@@ -35,7 +35,8 @@ namespace Data_Tier
         /// <summary>
         /// Array that stores instances of <c>MaterialQuantity</c> objects.
         /// </summary>
-        static Dictionary<int, List<MaterialQuantity>> inventory;
+        static MaterialInventory instance;
+        List<MaterialQuantity> inventory;
         #endregion
 
         #region Methods
@@ -52,50 +53,38 @@ namespace Data_Tier
         /// <example>
         /// Accessing any member of the <c>MaterialInventory</c> class will trigger this constructor if it hasn't been initialized.
         /// </example>
-        static MaterialInventory()
+        protected MaterialInventory()
         {
-            inventory = new Dictionary<int, List<MaterialQuantity>>(11);
+            inventory = new List<MaterialQuantity>(5);
         }
 
         #endregion
 
         #region OtherMethods
-        /// <summary>
-        /// Adds a material to the inventory if it does not already exist.
-        /// </summary>
-        /// <param name="inventoryQuantity">The <c>MaterialQuantity</c> instance to add to the inventory.</param>
-        /// <returns>The ID of the material if added successfully; otherwise, returns -10 if the material already exists or if there is no available space.</returns>
-        internal static int GenerateKey(short idMaterial)
+        public static MaterialInventory Instance() 
         {
-            return idMaterial % 11;
+            if (instance == null)
+            {
+                instance = new MaterialInventory();
+            }
+            return instance;
         }
 
-        public static short AddMaterial(MaterialQuantity inventoryQuantity)
+        public short AddMaterial(MaterialQuantity inventoryQuantity)
         {
-            int key = GenerateKey(inventoryQuantity.IdMaterial);
-
-            if (!inventory.ContainsKey(key))
-            {
-                inventory[key] = new List<MaterialQuantity>(5);
-            }
-
-            inventory[key].Add(inventoryQuantity);
+            inventory.Add(inventoryQuantity);
             return inventoryQuantity.IdMaterial;
 
         }
 
-        public static bool VerifyMaterialExistence(short idMaterial)
+        public bool VerifyMaterialExistence(short idMaterial)
         {
-            int key = GenerateKey(idMaterial);
 
-            if (inventory.ContainsKey(key))
+            foreach (MaterialQuantity materialInstance in inventory)
             {
-                foreach (MaterialQuantity materialInstance in inventory[key])
+                if (materialInstance.IdMaterial == idMaterial)
                 {
-                    if (materialInstance.IdMaterial == idMaterial)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
 
@@ -109,25 +98,20 @@ namespace Data_Tier
         /// <param name="idMaterial">The ID of the material to update.</param>
         /// <param name="quantityUpdate">The new quantity to set.</param>
         /// <returns><c>true</c> if the update is successful; otherwise, <c>false</c> if the material is not found.</returns>
-        public static bool UpdateQuantity(short idMaterial, int quantityUpdate)
+        public bool UpdateQuantity(short idMaterial, int quantityUpdate)
         {
-            int key = GenerateKey(idMaterial);
 
-            if (inventory.ContainsKey(key))
+            foreach (MaterialQuantity materialInstance in inventory)
             {
-                foreach (MaterialQuantity materialInstance in inventory[key])
+                if (materialInstance.IdMaterial == idMaterial)
                 {
-                    if (materialInstance.IdMaterial == idMaterial)
-                    {
-                        materialInstance.Quantity = quantityUpdate;
-                        return true;
-                    }
+                    materialInstance.Quantity = quantityUpdate;
+                    return true;
                 }
             }
 
             return false;
         }
-
 
         ///// <summary>
         ///// Decreases the quantity of a material in the inventory by a specified amount if there is sufficient stock.
@@ -135,36 +119,21 @@ namespace Data_Tier
         ///// <param name="idMaterial">The ID of the material to use.</param>
         ///// <param name="quantity">The quantity to reduce from the stock.</param>
         ///// <returns><c>true</c> if the material was used successfully; otherwise, <c>false</c> if the material does not exist or there is insufficient stock.</returns>
-        public static bool UseMaterial(short idMaterial, int quantity)
+        public bool UseMaterial(short idMaterial, int quantity)
         {
-            int key = GenerateKey(idMaterial);
 
-            if (inventory.ContainsKey(key))
+            foreach (MaterialQuantity materialInstance in inventory)
             {
-                foreach (MaterialQuantity materialInstance in inventory[key])
+                if (materialInstance.IdMaterial == idMaterial && materialInstance.Quantity >= quantity)
                 {
-                    if (materialInstance.IdMaterial == idMaterial && materialInstance.Quantity >= quantity)
-                    {
-                        materialInstance.Quantity -= quantity;
-                        return true;
-                    }
+                    materialInstance.Quantity -= quantity;
+                    return true;
                 }
             }
+
 
             return false;
         }
-
-        public static void ShowInventory()
-        {
-            foreach (List<MaterialQuantity> inventoryList in inventory.Values)
-            {
-                foreach (MaterialQuantity existingMaterial in inventoryList)
-                {
-                    Console.WriteLine(existingMaterial.ToString());
-                }
-            }
-        }
-
         #endregion
 
         #region Destructor

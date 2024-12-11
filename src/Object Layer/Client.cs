@@ -6,6 +6,7 @@
 *   <date>11/3/2024 7:20:50 PM</date>
 *	<description>This file is focused on creating client objects.</description>
 */
+using Object_Layer;
 using System;
 
 namespace Object_Tier
@@ -24,16 +25,12 @@ namespace Object_Tier
     /// Client c = new Client("Maria Rodrigues", "9323423553")
     /// </code>
     /// </example>
-
-    public class Client : Person
+    [Serializable]
+    public class Client : Person, IComparable<Client>, IClient
     {
         #region Attributes
-
-        string contactInfo;
-
-
+        int contactInfo;
         static short clientIdCounter = 500;
-
         #endregion
 
         #region Methods
@@ -46,11 +43,11 @@ namespace Object_Tier
         /// <permission>
         /// Public Access.
         /// </permission>
-        public string ContactInfo
+        public int ContactInfo
         {
             set
             {
-                if (value.Length >= 9)
+                if (value >= 9)
                 {
                     contactInfo = value;
                 }
@@ -60,9 +57,9 @@ namespace Object_Tier
         #endregion
 
         #region Constructors
-        public Client(string name, string contact) : base(clientIdCounter++, name) //Send to the construct person.
+        public Client(string name, int contact) : base(clientIdCounter++, name) //Send to the construct person.
         {
-            ContactInfo = contact.Trim();
+            ContactInfo = contact;
         }
 
         #endregion
@@ -109,6 +106,11 @@ namespace Object_Tier
         public static bool operator +(Client client1, Client client2)
         {
             return !(client1 - client2);
+        }
+
+        public int CompareTo(Client client)
+        {
+            return Name.CompareTo(client.Name);
         }
         #endregion
 

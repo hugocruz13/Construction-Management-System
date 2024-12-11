@@ -10,20 +10,20 @@ using System;
 
 namespace CustomExceptions
 {
-    public class Execeptions : ApplicationException
+    public class ConfigurationErrorException  : ApplicationException
     {
 
-        public Execeptions() : base("An error occurred in the application.")
+        public ConfigurationErrorException () : base("An error occurred in the application.")
         {
 
         }
 
-        public Execeptions(string error) : base(error) 
+        public ConfigurationErrorException (string error) : base(error) 
         {
         
         }
 
-        public Execeptions(string error, Exception exception) : base(error , exception)
+        public ConfigurationErrorException (string error, Exception exception) : base(error , exception)
         {
 
         }

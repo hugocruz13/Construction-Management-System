@@ -6,6 +6,7 @@
 *   <date>11/3/2024 7:20:40 PM</date>
 *	<description></description>
 **/
+using Object_Layer;
 using System;
 
 namespace Object_Tier
@@ -23,7 +24,8 @@ namespace Object_Tier
     /// Name = name;
     /// </code>
     /// </example>
-    public class Person
+    [Serializable]
+    public class Person : IPerson
     {
         #region Attributes
         /// <summary>
@@ -47,8 +49,8 @@ namespace Object_Tier
         /// <permission>
         /// Public Access
         /// </permission>
-        public short Id
-        {           
+        public short Id 
+        {
             get { return id; }
         }
 

@@ -25,7 +25,7 @@ namespace Object_Tier
     /// Material mat = new Material("Cimento", 4.80)
     /// </code>
     /// </example>
-    public class Material
+    public class Material : IComparable<Material>
     {
         #region Attributes
         /// <summary>
@@ -177,6 +177,11 @@ namespace Object_Tier
         public static bool operator +(Material material1, Material material2)
         {
             return !(material1 - material2);
+        }
+
+        public int CompareTo(Material material)
+        {
+            return Name.CompareTo(material.Name);
         }
         #endregion
 

@@ -25,7 +25,7 @@ namespace Object_Tier
     /// MaterialQuantity materialQuantity = new MaterialQuantity(material, 50);
     /// </code>
     /// </example>
-    public class MaterialQuantity
+    public class MaterialQuantity : IComparable<MaterialQuantity>
     {
         #region Attributes
 
@@ -137,6 +137,11 @@ namespace Object_Tier
         public override string ToString()
         {
             return idMaterial + " " + Date + " " + Quantity; 
+        }
+
+        public int CompareTo(MaterialQuantity material)
+        {
+            return IdMaterial.CompareTo(material.IdMaterial);
         }
         #endregion
 

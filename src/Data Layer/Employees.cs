@@ -6,9 +6,8 @@
 *   <date>11/12/2024 3:42:09 PM</date>
 *	<description></description>
 **/
-using System;
 using System.Collections.Generic;
-using System.Net.Sockets;
+
 
 using Object_Tier;
 
@@ -31,109 +30,79 @@ namespace Data_Tier
     public class Employees
     {
         #region Attributes
-
-        static Dictionary<int, List<Employee>> employees;
+        static Employees instance;
+        List<Employee> employees;
         #endregion
 
         #region Methods
 
         #region Constructors
-        static Employees()
+        protected Employees()
         {
-            employees= new Dictionary<int, List<Employee>>(11);
+            employees = new List<Employee>(5);
         }
 
         #endregion
 
         #region OtherMethods
-        internal static int GenerateKey(short idEmployee)
+        public static Employees Instance() 
         {
-            return idEmployee % 11;
-        }
-
-        public static short AddEmployee(Employee employee)
-        {
-            if (!EmployeeExist(employee))
+            if (instance == null)
             {
-                int key = GenerateKey(employee.Id);
-
-                if (!employees.ContainsKey(key))
-                {
-                    employees[key] = new List<Employee>(5);
-                }
-
-                employees[key].Add(employee);
-                return employee.Id;
+                instance = new Employees();
             }
-
-            return -11; 
+            return instance;
         }
 
-        internal static bool EmployeeExist(Employee employee)
+        public short AddEmployee(Employee employee)
         {
-            foreach (List<Employee> employeeList in employees.Values)
-            {
-                foreach (Employee existingEmployee in employeeList)
-                {
-                    if (existingEmployee - employee)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
+            employees.Add(employee);
+            employees.Sort();
+            return employee.Id;
+
         }
 
-        public static bool EmployeeExist(short idEmployee)
+        public bool EmployeeExist(Employee employee)
         {
-            int key = GenerateKey(idEmployee);
-
-            if (employees.ContainsKey(key))
+            foreach (Employee existingEmployee in employees)
             {
-                foreach (Employee employeeInstance in employees[key])
+                if (existingEmployee - employee)
                 {
-                    if (employeeInstance.Id == idEmployee)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
 
             return false;
         }
 
-
-        public static bool UpdateRole(short idEmployee, string role, double hourly)
+        public bool EmployeeExist(short idEmployee)
         {
-            int key = GenerateKey(idEmployee);
-
-            if (employees.ContainsKey(key))
+            foreach (Employee employeeInstance in employees)
             {
-                foreach (Employee employeeInstance in employees[key])
+                if (employeeInstance.Id == idEmployee)
                 {
-                    if (employeeInstance.Id == idEmployee)
-                    {
-                        employeeInstance.Role = role;
-                        employeeInstance.HourlyRate = hourly;
-                        return true;
-                    }
+                    return true;
                 }
             }
 
             return false;
         }
 
-        public static void ShowEmployees()
+        public bool UpdateRole(short idEmployee, string role, double hourly)
         {
-            foreach (List<Employee> employeeList in employees.Values)
+
+            foreach (Employee employeeInstance in employees)
             {
-                foreach (Employee employeeInstance in employeeList)
+                if (employeeInstance.Id == idEmployee)
                 {
-                    Console.WriteLine(employeeInstance.ToString());
+                    employeeInstance.Role = role;
+                    employeeInstance.HourlyRate = hourly;
+                    return true;
                 }
             }
-        }
 
+            return false;
+        }
         #endregion
 
         #region Destructor

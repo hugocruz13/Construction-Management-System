@@ -25,7 +25,7 @@ namespace Object_Tier
     /// Employee emp = new Employee("Hugo Cruz", "Engineering", 12.3);
     /// </code>
     /// </example>
-    public class Employee : Person
+    public class Employee : Person, IComparable<Employee>
     {
         #region Attributes
         /// <summary>
@@ -155,6 +155,11 @@ namespace Object_Tier
         public static bool operator +(Employee employee1, Employee employee2)
         {
             return !(employee1 - employee2);
+        }
+
+        public int CompareTo(Employee employee)
+        {
+            return Name.CompareTo(employee.Name);
         }
         #endregion
 

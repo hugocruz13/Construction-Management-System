@@ -23,40 +23,37 @@ namespace Data_Tier
     public class Projects
     {
         #region Attributes
-
-        static Dictionary<int, List<Project>> projects;
-
+        static Projects instance;
+        List<Project> projects;
         #endregion
 
         #region Methods
 
         #region Constructors
 
-        static Projects()
+        protected Projects()
         {
-            projects = new Dictionary<int, List<Project>>(11);
+            projects = new List<Project>(5);
         }
 
         #endregion
 
         #region OtherMethods
-        internal static int GenerateKey(short idProject)
+        public static Projects Instance() 
         {
-            return idProject % 11;
+            if(instance == null)
+            {
+                instance = new Projects();
+            }
+            return instance;
         }
 
-        public static short AddProject(Project project)
+        public short AddProject(Project project)
         {
             if (!ProjectExists(project))
             {
-                int key = GenerateKey(project.Id);
-
-                if (!projects.ContainsKey(key))
-                {
-                    projects[key] = new List<Project>(5);
-                }
-
-                projects[key].Add(project);
+                projects.Add(project);
+                projects.Sort();
                 return project.Id;
             }
 
@@ -64,38 +61,49 @@ namespace Data_Tier
 
         }
 
-        internal static bool ProjectExists(Project project)
+        public bool ProjectExists(Project project)
         {
-            foreach (List<Project> projectList in projects.Values)
-            {
-                foreach (Project existingProject in projectList)
-                {
-                    if (existingProject - project)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
 
-        public static bool ProjectExists(short idProject)
-        {
-            int key = idProject % 11;
-
-            if (projects.ContainsKey(key))
+            foreach (Project existingProject in projects)
             {
-                foreach (Project project in projects[key])
+                if (existingProject - project)
                 {
-                    if (project.Id == idProject)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
 
             return false;
         }
+
+        public bool ProjectExists(short idProject)
+        {
+
+            foreach (Project project in projects)
+            {
+                if (project.Id == idProject)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        #region Clients
+        public bool AddClient(short idProject, short idClient)
+        {
+            bool r = ClientsService.Instance().AddClient(idProject, idClient);
+            return r;
+        }
+
+        public bool RemoveClient(short idProject, short idClient) 
+        {
+            bool r = ClientsService.Instance().RemoveClient(idProject, idClient);
+            return r;
+        }
+        #endregion
+
+
         #endregion
 
         #region Destructor

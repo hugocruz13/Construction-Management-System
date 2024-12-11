@@ -7,6 +7,7 @@
 *	<description></description>
 **/
 using CustomExceptions;
+using Object_Tier;
 using System.Collections.Generic;
 
 namespace Data_Tier
@@ -18,17 +19,17 @@ namespace Data_Tier
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class EmployeesService
+    class EmployeesService
     {
         #region Attributes
-        static Dictionary<int, List<int>> employees;
+        static EmployeesService instance;
+        Dictionary<int, List<int>> employees;
         #endregion
 
         #region Methods
 
         #region Constructors
-
-        static EmployeesService()
+        protected EmployeesService()
         {
             employees = new Dictionary<int, List<int>>(17);
         }
@@ -36,30 +37,48 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public static bool AddEmployee(int projectId, int clientId)
+        public static EmployeesService Instance() 
+        {
+            if (instance == null)
+            {
+                instance = new EmployeesService();
+            }
+            return instance;
+        }
+
+        public bool ExistExistEmployee(int projectId, int employeeId)
+        {
+            return employees[projectId].Contains(employeeId);
+        }
+
+        public bool AddEmployee(int projectId, int employeeId)
         {
             if (!employees.ContainsKey(projectId))
             {
                 employees[projectId] = new List<int>(5);
             }
 
-            if (!ExistEmployee(projectId, clientId))
+            if (!ExistExistEmployee(projectId, employeeId))
             {
-                employees[projectId].Add(clientId);
+                employees[projectId].Add(employeeId);
                 return true;
             }
 
             return false;
         }
 
-        public static bool ExistEmployee(int projectId, int employeeId)
+        public bool RemoveEmployee(int projectId, int employeeId)
         {
-            if (!employees.ContainsKey(projectId))
+            if (employees.ContainsKey(projectId))
             {
-                throw new Execeptions("Project não existe");
+                if (ExistExistEmployee(projectId, employeeId))
+                {
+                    employees[projectId].Remove(employeeId);
+                    return true;
+                }
             }
 
-            return employees[projectId].Contains(employeeId);
+            return false;
         }
         #endregion
 

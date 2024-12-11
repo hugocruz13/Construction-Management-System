@@ -25,7 +25,7 @@ namespace Object_Tier
     }
 
 
-    public class Project
+    public class Project : IComparable<Project>
     {
         #region Attributes
         /// <summary>
@@ -47,6 +47,8 @@ namespace Object_Tier
         /// Project end date.
         /// </summary>
         DateTime endDate;
+
+
 
         /// <summary>
         /// 
@@ -149,6 +151,11 @@ namespace Object_Tier
         public static bool operator +(Project project1, Project project2)
         {
             return !(project1 - project2);
+        }
+
+        public int CompareTo(Project project)
+        {
+            return Id.CompareTo(project.Id);
         }
         #endregion
 
