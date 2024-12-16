@@ -9,7 +9,9 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using CustomExceptions;
 using Object_Tier;
 
 namespace Data_Tier
@@ -25,9 +27,10 @@ namespace Data_Tier
     /// Example of use
     /// <code>
     /// MaterialInventory inventory 
-    /// MaterialInventory.AddMaterial(new MaterialQuantity("Cimento", 4.80, 5))
+    /// MaterialInventory.AddMaterial(new MaterialQuantity("Cimento", 4.80, 5))  0O
     /// </code>
     /// </example>
+    [Serializable]
     public class MaterialInventory
     {
         #region Attributes
@@ -36,10 +39,25 @@ namespace Data_Tier
         /// Array that stores instances of <c>MaterialQuantity</c> objects.
         /// </summary>
         static MaterialInventory instance;
-        List<MaterialQuantity> inventory;
+        static List<MaterialQuantity> inventory;
         #endregion
 
         #region Methods
+
+        #region Properties
+        public static MaterialInventory Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new MaterialInventory();
+                }
+
+                return instance;
+            }
+        }
+        #endregion
 
         #region Constructors
 
@@ -61,15 +79,6 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public static MaterialInventory Instance() 
-        {
-            if (instance == null)
-            {
-                instance = new MaterialInventory();
-            }
-            return instance;
-        }
-
         public short AddMaterial(MaterialQuantity inventoryQuantity)
         {
             inventory.Add(inventoryQuantity);
@@ -133,6 +142,51 @@ namespace Data_Tier
 
 
             return false;
+        }
+
+        public bool Save(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ConfigurationErrorException("Caminho invalido");
+            }
+
+            try
+            {
+                Stream fs = new FileStream(path, FileMode.Create);
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                binaryFormatter.Serialize(fs, inventory);
+                fs.Close();
+                inventory.Clear();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Algo aconteceu ");
+            }
+
+        }
+
+
+        public bool Load(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ConfigurationErrorException("Caminho invalido");
+            }
+            try
+            {
+                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
+                BinaryFormatter b = new BinaryFormatter();
+                inventory = (List<MaterialQuantity>)b.Deserialize(s);
+                s.Close();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Algo aconteceu ");
+            }
+
         }
         #endregion
 

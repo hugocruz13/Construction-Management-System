@@ -13,41 +13,42 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 using Object_Tier;
 using CustomExceptions;
-using Data_Layer;
 
 namespace Data_Tier
 {
-
-    public class Clients : IClients
+    [Serializable]
+    public class Clients
     {
         #region Attributes
         static Clients instance;
-        List<Client> clients;
+        static List<Client> clients;
         #endregion
 
         #region Methods
-        #region Constructors
 
+        #region Properties
+        public static Clients Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Clients();
+                }
+
+                return instance;
+            }
+        }
+        #endregion
+
+        #region Constructors
         protected Clients()
         {
             clients = new List<Client>(5);
         }
-
         #endregion
 
-
         #region OtherMethods
-        public static Clients Instance()
-        {
-            if (instance == null)
-            {
-                instance = new Clients();
-            }
-
-            return instance;
-
-        }
-
         public short AddClient(Client client)
         {
             clients.Add(client);
@@ -96,22 +97,50 @@ namespace Data_Tier
             return false;
         }
 
-        //public bool Save(string path)
-        //{
-        //    Stream fs = new FileStream(path, FileMode.Create);
-        //    BinaryFormatter binaryFormatter = new BinaryFormatter();
-        //    binaryFormatter.Serialize(fs, clients);
-        //    clients.Clear();
-        //    return true;
-        //}
+        public bool Save(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ConfigurationErrorException("Caminho invalido");
+            }
 
-        //public static bool Load(string path)
-        //{
-        //    Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
-        //    BinaryFormatter b = new BinaryFormatter();
-        //    clients = b.Deserialize(s) as List<Client>;
-        //    return true;
-        //}
+            try
+            {
+                Stream fs = new FileStream(path, FileMode.Create);
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                binaryFormatter.Serialize(fs, clients);
+                fs.Close();
+                clients.Clear();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Algo aconteceu ");
+            }
+
+        }
+
+
+        public bool Load(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ConfigurationErrorException("Caminho invalido");
+            }
+            try
+            {
+                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
+                BinaryFormatter b = new BinaryFormatter();
+                clients = (List<Client>)b.Deserialize(s);
+                s.Close();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Algo aconteceu ");
+            }
+
+        }
 
         #endregion
 

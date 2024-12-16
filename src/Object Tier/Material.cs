@@ -25,6 +25,7 @@ namespace Object_Tier
     /// Material mat = new Material("Cimento", 4.80)
     /// </code>
     /// </example>
+    [Serializable]
     public class Material : IComparable<Material>
     {
         #region Attributes
@@ -146,9 +147,9 @@ namespace Object_Tier
 
             if (obj is Material)
             {
-                Material otherClient = obj as Material;
+                Material otherMaterial = obj as Material;
 
-                if (name == otherClient.Name && unitPrice == otherClient.UnitPrice)
+                if (name == otherMaterial.Name && unitPrice == otherMaterial.UnitPrice)
                 {
                     return true;
                 }

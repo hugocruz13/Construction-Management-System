@@ -6,7 +6,6 @@
 *   <date>11/3/2024 7:20:40 PM</date>
 *	<description></description>
 **/
-using Object_Layer;
 using System;
 
 namespace Object_Tier
@@ -25,7 +24,7 @@ namespace Object_Tier
     /// </code>
     /// </example>
     [Serializable]
-    public class Person : IPerson
+    public class Person
     {
         #region Attributes
         /// <summary>
@@ -82,7 +81,14 @@ namespace Object_Tier
         protected Person(short id, string name) 
         {
             this.id = id;
-            Name = name.ToUpper().Trim();
+            Name = stringFormatada(name);
+        }
+        #endregion
+
+        #region OtherMethods
+        private string stringFormatada(string name)
+        {
+            return name.ToUpper().Trim();
         }
         #endregion
 

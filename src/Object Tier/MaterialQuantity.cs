@@ -25,6 +25,7 @@ namespace Object_Tier
     /// MaterialQuantity materialQuantity = new MaterialQuantity(material, 50);
     /// </code>
     /// </example>
+    [Serializable]
     public class MaterialQuantity : IComparable<MaterialQuantity>
     {
         #region Attributes

@@ -9,7 +9,9 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using CustomExceptions;
 using Object_Tier;
 
 namespace Data_Tier
@@ -21,14 +23,30 @@ namespace Data_Tier
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
+    [Serializable]
     public class Materials
     {
         #region Attributes
         static Materials instance;
-        List<Material> materials;
+        static List<Material> materials;
         #endregion
 
         #region Methods
+
+        #region Properties
+        public static Materials Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Materials();
+                }
+
+                return instance;
+            }
+        }
+        #endregion
 
         #region Constructors
 
@@ -40,15 +58,6 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public static Materials Instance() 
-        {
-            if (instance == null)
-            {
-                instance = new Materials();
-            }
-            return instance;
-        }
-
         public short AddMaterial(Material material)
         {
             materials.Add(material);
@@ -93,6 +102,51 @@ namespace Data_Tier
                 }
             }
             return false;
+        }
+
+        public bool Save(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ConfigurationErrorException("Caminho invalido");
+            }
+
+            try
+            {
+                Stream fs = new FileStream(path, FileMode.Create);
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                binaryFormatter.Serialize(fs, materials);
+                fs.Close();
+                materials.Clear();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Algo aconteceu ");
+            }
+
+        }
+
+
+        public bool Load(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ConfigurationErrorException("Caminho invalido");
+            }
+            try
+            {
+                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
+                BinaryFormatter b = new BinaryFormatter();
+                materials = (List<Material>)b.Deserialize(s);
+                s.Close();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Algo aconteceu ");
+            }
+
         }
         #endregion
 

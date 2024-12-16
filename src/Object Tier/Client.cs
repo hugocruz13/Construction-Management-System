@@ -6,7 +6,6 @@
 *   <date>11/3/2024 7:20:50 PM</date>
 *	<description>This file is focused on creating client objects.</description>
 */
-using Object_Layer;
 using System;
 
 namespace Object_Tier
@@ -26,7 +25,7 @@ namespace Object_Tier
     /// </code>
     /// </example>
     [Serializable]
-    public class Client : Person, IComparable<Client>, IClient
+    public class Client : Person, IComparable<Client>
     {
         #region Attributes
         int contactInfo;
@@ -76,7 +75,7 @@ namespace Object_Tier
             {
                 Client otherClient = obj as Client;
 
-                if (contactInfo == otherClient.contactInfo && Name == otherClient.Name)
+                if (contactInfo == otherClient.contactInfo)
                 {
                     return true;
                 }
@@ -92,6 +91,10 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
+        public static Client CreateClient(string name, int contact) 
+        {
+            return new Client(name,contact);
+        }
 
         public static bool operator -(Client client1, Client client2)
         {

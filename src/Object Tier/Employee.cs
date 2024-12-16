@@ -25,6 +25,7 @@ namespace Object_Tier
     /// Employee emp = new Employee("Hugo Cruz", "Engineering", 12.3);
     /// </code>
     /// </example>
+    [Serializable]
     public class Employee : Person, IComparable<Employee>
     {
         #region Attributes
@@ -37,6 +38,8 @@ namespace Object_Tier
         /// The hourly rate of the employee.
         /// </summary>
         double hourlyRate;
+
+        double salary; 
 
         /// <summary>
         /// Static counter to assign unique IDs to employees.
@@ -86,6 +89,11 @@ namespace Object_Tier
             get { return hourlyRate; }
         }
 
+        public double Salary 
+        {
+            get { return salary; }
+        }
+
         #endregion
 
         #region Constructors
@@ -104,6 +112,7 @@ namespace Object_Tier
         {
             Role = role.ToUpper().Trim();
             HourlyRate = hourlyrate;
+            this.salary = Math.Round(CalculaSalario(),2);
         }
         #endregion
 
@@ -160,6 +169,13 @@ namespace Object_Tier
         public int CompareTo(Employee employee)
         {
             return Name.CompareTo(employee.Name);
+        }
+
+
+        private double CalculaSalario() 
+        {
+            double salary = HourlyRate * 8 * 22;
+            return salary;
         }
         #endregion
 

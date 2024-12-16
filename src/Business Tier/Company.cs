@@ -6,18 +6,42 @@
 *   <date>11/12/2024 3:49:53 PM</date>
 *	<description></description>
 **/
-
-using CustomExceptions;
-using Data_Tier;
-using Object_Tier;
 using System;
-using System.Collections.Generic;
+using CustomExceptions;
+using Object_Tier;
+using Data_Tier;
 
 namespace Business_Tier
 {
 
     public class Company
     {
+        #region Files
+        public static bool SaveAllData()
+        {
+            Clients.Instance.Save(@"C:\data\Clients.dat");
+            Employees.Instance.Save(@"C:\data\Employees.dat");
+            Materials.Instance.Save(@"C:\data\Materials.dat");
+            MaterialInventory.Instance.Save(@"C:\data\Inventory.dat");
+            Projects.Instance.Save(@"C:\data\Projects.dat");
+            Projects.Instance.SaveDataProjects();
+
+
+            return true;
+        }
+
+        public static bool LoadAllData()
+        {
+            Clients.Instance.Load(@"C:\data\Clients.dat");
+            Employees.Instance.Load(@"C:\data\Employees.dat");
+            Materials.Instance.Load(@"C:\data\Materials.dat");
+            MaterialInventory.Instance.Load(@"C:\data\Inventory.dat");
+            Projects.Instance.Load(@"C:\data\Projects.dat");
+            Projects.Instance.LoadDataProjects();
+
+            return true;
+        }
+        #endregion
 
         #region Clients
         public static short RegisterClient(Client client)
@@ -27,14 +51,14 @@ namespace Business_Tier
                 throw new ConfigurationErrorException("Client cannot be null");
             }
 
-            if (Clients.Instance().ExistClient(client))
+            if (Clients.Instance.ExistClient(client))
             {
                 throw new ConfigurationErrorException("Customer already exists");
             }
 
             try
             {
-                short idClient = Clients.Instance().AddClient(client);
+                short idClient = Clients.Instance.AddClient(client);            
                 return idClient;
             }
 
@@ -46,7 +70,7 @@ namespace Business_Tier
 
         public static bool IsClientRegistered(short idClient)
         {
-            bool exist = Clients.Instance().ExistClient(idClient);
+            bool exist = Clients.Instance.ExistClient(idClient);
             return exist;
         }
 
@@ -59,7 +83,7 @@ namespace Business_Tier
 
             try
             {
-                bool update = Clients.Instance().UpdateContact(idClient, contact);
+                bool update = Clients.Instance.UpdateContact(idClient, contact);
                 return update;
             }
             catch (Exception ex)
@@ -77,14 +101,14 @@ namespace Business_Tier
                 throw new ConfigurationErrorException("Employee cannot be null");
             }
 
-            if (Employees.Instance().EmployeeExist(employee))
+            if (Employees.Instance.EmployeeExist(employee))
             {
                 throw new ConfigurationErrorException("Employee already exists");
             }
 
             try
             {
-                short idEmployee = Employees.Instance().AddEmployee(employee);
+                short idEmployee = Employees.Instance.AddEmployee(employee);
                 return idEmployee;
             }
             catch (Exception ex)
@@ -95,13 +119,13 @@ namespace Business_Tier
 
         public static bool IsEmployeeRegistered(short idEmployee)
         {
-            bool exist = Employees.Instance().EmployeeExist(idEmployee);
+            bool exist = Employees.Instance.EmployeeExist(idEmployee);
             return exist;
         }
 
         public static bool UpdateEmployeeRole(short idEmployee, string role, double priceHourly)
         {
-            if (!Employees.Instance().EmployeeExist(idEmployee))
+            if (!Employees.Instance.EmployeeExist(idEmployee))
             {
                 throw new ConfigurationErrorException("The employee does not exist in the system.");
             }
@@ -113,7 +137,7 @@ namespace Business_Tier
 
             try
             {
-                bool update = Employees.Instance().UpdateRole(idEmployee, role, priceHourly);
+                bool update = Employees.Instance.UpdateRole(idEmployee, role, priceHourly);
                 return update;
             }
 
@@ -140,15 +164,15 @@ namespace Business_Tier
                 throw new ConfigurationErrorException("The material cannot be null.");
             }
 
-            if (Materials.Instance().MaterialExist(material))
+            if (Materials.Instance.MaterialExist(material))
             {
                 throw new ConfigurationErrorException("The material is already registered in the system.");
             }
 
             try
             {
-                short idM = Materials.Instance().AddMaterial(material);
-                
+                short idM = Materials.Instance.AddMaterial(material);
+
                 return idM;
             }
             catch (Exception ex)
@@ -159,15 +183,15 @@ namespace Business_Tier
 
         internal static short AddMaterialToInventory(short idMaterial, int quantity)
         {
-            if (MaterialInventory.Instance().VerifyMaterialExistence(idMaterial))
+            if (MaterialInventory.Instance.VerifyMaterialExistence(idMaterial))
             {
                 throw new ConfigurationErrorException("The material already exists in the inventory.");
             }
 
             try
             {
-               
-                short idMI = MaterialInventory.Instance().AddMaterial(new MaterialQuantity(idMaterial, quantity));
+
+                short idMI = MaterialInventory.Instance.AddMaterial(new MaterialQuantity(idMaterial, quantity));
                 return idMI;
             }
             catch (Exception ex)
@@ -176,14 +200,13 @@ namespace Business_Tier
             }
         }
 
-
         public static bool IsMaterialRegistered(short idMaterial)
         {
-            bool exist = Materials.Instance().MaterialExist(idMaterial);
+            bool exist = Materials.Instance.MaterialExist(idMaterial);
 
             if (exist)
             {
-                exist = MaterialInventory.Instance().VerifyMaterialExistence(idMaterial);
+                exist = MaterialInventory.Instance.VerifyMaterialExistence(idMaterial);
                 return exist;
             }
 
@@ -197,14 +220,14 @@ namespace Business_Tier
                 throw new ConfigurationErrorException("The quantity cannot be negative.");
             }
 
-            if (!MaterialInventory.Instance().VerifyMaterialExistence(idMaterial))
+            if (!MaterialInventory.Instance.VerifyMaterialExistence(idMaterial))
             {
                 throw new ConfigurationErrorException("The material already exists in the inventory.");
             }
 
             try
             {
-                bool update = MaterialInventory.Instance().UpdateQuantity(idMaterial, quantity);
+                bool update = MaterialInventory.Instance.UpdateQuantity(idMaterial, quantity);
                 return update;
             }
             catch (Exception ex)
@@ -221,14 +244,14 @@ namespace Business_Tier
                 throw new ConfigurationErrorException("The price cannot be negative.");
             }
 
-            if (!Materials.Instance().MaterialExist(idMaterial))
+            if (!Materials.Instance.MaterialExist(idMaterial))
             {
                 throw new ConfigurationErrorException("The material already exists.");
             }
 
             try
             {
-                bool update = Materials.Instance().UpdatePrice(idMaterial, price);
+                bool update = Materials.Instance.UpdatePrice(idMaterial, price);
                 return update;
             }
 
@@ -241,6 +264,9 @@ namespace Business_Tier
         #endregion
 
         #region Projects
+        ////Close project 
+        ////Calcular custos do project 
+
         public static short RegistProject(Project project)
         {
             if (project == null)
@@ -248,15 +274,15 @@ namespace Business_Tier
                 throw new ConfigurationErrorException("The project object cannot be null.");
             }
 
-            if (Projects.Instance().ProjectExists(project))
+            if (Projects.Instance.ProjectExists(project))
             {
                 throw new ConfigurationErrorException("A project with the same details already exists.");
             }
 
             try
             {
-                System.Threading.Thread.Sleep(500); 
-                short idProject = Projects.Instance().AddProject(project);
+                System.Threading.Thread.Sleep(500);
+                short idProject = Projects.Instance.AddProject(project);
                 return idProject;
             }
             catch (Exception ex)
@@ -267,26 +293,26 @@ namespace Business_Tier
 
         public static bool IsProjectRegistered(short idProject)
         {
-            bool r = Projects.Instance().ProjectExists(idProject);
+            bool r = Projects.Instance.ProjectExists(idProject);
             return r;
         }
 
         #region Clients
         public static bool AddClientToProject(short idProject, short idClient)
         {
-            if (!Projects.Instance().ProjectExists(idProject))
+            if (!Projects.Instance.ProjectExists(idProject))
             {
                 throw new ConfigurationErrorException("The specified project does not exist.");
             }
 
-            //if (!Clients.ExistClient(idClient))
-            //{
-            //    throw new ConfigurationErrorException("The specified client does not exist.");
-            //}
+            if (!Clients.Instance.ExistClient(idClient))
+            {
+                throw new ConfigurationErrorException("The specified client does not exist.");
+            }
 
             try
             {
-                bool result = Projects.Instance().AddClient(idProject, idClient);
+                bool result = Projects.Instance.AddClient(idProject, idClient);
                 return result;
 
             }
@@ -299,46 +325,29 @@ namespace Business_Tier
 
         public static bool RemoveClientToProject(short idProject, short idClient)
         {
-            if (!Projects.Instance().ProjectExists(idProject))
+            if (!Projects.Instance.ProjectExists(idProject))
             {
                 throw new ConfigurationErrorException("");
             }
 
-            //if (!Clients.ExistClient(idClient))
-            //{
-            //    throw new ConfigurationErrorException("");
-            //}
+            if (!Clients.Instance.ExistClient(idClient))
+            {
+                throw new ConfigurationErrorException("");
+            }
 
             try
             {
-                bool r = Projects.Instance().RemoveClient(idProject, idClient);
+                bool r = Projects.Instance.RemoveClient(idProject, idClient);
                 return r;
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 throw new Exception("", ex);
             }
         }
         #endregion
 
-
-        //Close project 
-        //Calcular custos do project 
-        #endregion
-
-        #region Files
-        //public static bool SaveClients() 
-        //{
-        //    bool t = Clients.Save(@"C:\s\s.dat");
-        //    return t;
-        //}
-
-        //public static bool LoadClients()
-        //{
-        //    bool t = Clients.Load(@"C:\s\s.dat");
-        //    return t;
-        //}
-        #endregion
+        #endregion       
 
         #region Destructor
         /// <summary>

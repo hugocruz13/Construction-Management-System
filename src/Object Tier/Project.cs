@@ -7,6 +7,7 @@
 *	<description>Class representing a Project with its status, client, team and materials used</description>
 **/
 using System;
+using System.Collections.Generic;
 using System.Xml.Linq;
 
 
@@ -24,7 +25,7 @@ namespace Object_Tier
         Completed = 4  //Complet
     }
 
-
+    [Serializable]
     public class Project : IComparable<Project>
     {
         #region Attributes
@@ -48,8 +49,7 @@ namespace Object_Tier
         /// </summary>
         DateTime endDate;
 
-
-
+        List<int> clients;
         /// <summary>
         /// 
         /// </summary>

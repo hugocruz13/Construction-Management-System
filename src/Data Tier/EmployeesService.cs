@@ -8,7 +8,10 @@
 **/
 using CustomExceptions;
 using Object_Tier;
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Data_Tier
 {
@@ -19,14 +22,30 @@ namespace Data_Tier
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
+    [Serializable]
     class EmployeesService
     {
         #region Attributes
         static EmployeesService instance;
-        Dictionary<int, List<int>> employees;
+        static Dictionary<int, List<int>> employees;
         #endregion
 
         #region Methods
+
+        #region Properties
+        public static EmployeesService Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new EmployeesService();
+                }
+
+                return instance;
+            }
+        }
+        #endregion
 
         #region Constructors
         protected EmployeesService()
@@ -37,15 +56,6 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public static EmployeesService Instance() 
-        {
-            if (instance == null)
-            {
-                instance = new EmployeesService();
-            }
-            return instance;
-        }
-
         public bool ExistExistEmployee(int projectId, int employeeId)
         {
             return employees[projectId].Contains(employeeId);
@@ -79,6 +89,51 @@ namespace Data_Tier
             }
 
             return false;
+        }
+
+        public bool Save(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ConfigurationErrorException("Caminho invalido");
+            }
+
+            try
+            {
+                Stream fs = new FileStream(path, FileMode.Create);
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                binaryFormatter.Serialize(fs, employees);
+                fs.Close();
+                employees.Clear();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Algo aconteceu ");
+            }
+
+        }
+
+
+        public bool Load(string path)
+        {
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ConfigurationErrorException("Caminho invalido");
+            }
+            try
+            {
+                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
+                BinaryFormatter b = new BinaryFormatter();
+                employees = (Dictionary<int, List<int>>)b.Deserialize(s);
+                s.Close();
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("Algo aconteceu ");
+            }
+
         }
         #endregion
 
