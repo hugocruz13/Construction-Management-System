@@ -45,6 +45,11 @@ namespace Data_Tier
                 return instance;
             }
         }
+
+        internal Dictionary<int, List<int>> EmployeesDS
+        {
+            set { employees = value; }
+        }
         #endregion
 
         #region Constructors
@@ -134,6 +139,11 @@ namespace Data_Tier
                 throw new Exception("Algo aconteceu ");
             }
 
+        }
+
+        internal Dictionary<int, List<int>> GetDataToSave()
+        {
+            return employees;
         }
         #endregion
 

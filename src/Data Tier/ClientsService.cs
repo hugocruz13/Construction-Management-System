@@ -23,7 +23,7 @@ namespace Data_Tier
     /// <remarks></remarks>
     /// <example></example>
     [Serializable]
-    class ClientsService
+    internal class ClientsService
     {
         #region Attributes
         static ClientsService instance;
@@ -44,6 +44,11 @@ namespace Data_Tier
 
                 return instance;
             }
+        }
+
+        internal Dictionary<int, List<int>> ClientsDS
+        {
+            set { clients = value; }
         }
         #endregion
 
@@ -135,8 +140,14 @@ namespace Data_Tier
             {
                 throw new Exception("Algo aconteceu ");
             }
-
         }
+
+        internal Dictionary<int, List<int>> GetDataToSave()
+        {
+            return clients;
+        }
+
+
         #endregion
 
         #region Destructor

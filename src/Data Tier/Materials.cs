@@ -46,6 +46,11 @@ namespace Data_Tier
                 return instance;
             }
         }
+
+        internal List<Material> MaterialD
+        {
+            set { materials = value; }
+        }
         #endregion
 
         #region Constructors
@@ -58,7 +63,7 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public short AddMaterial(Material material)
+        public int AddMaterial(Material material)
         {
             materials.Add(material);
             return material.Id;
@@ -77,7 +82,7 @@ namespace Data_Tier
             return false;
         }
 
-        public bool MaterialExist(short idMaterial)
+        public bool MaterialExist(int idMaterial)
         {
 
             foreach (Material materialInstance in materials)
@@ -90,7 +95,7 @@ namespace Data_Tier
             return false;
         }
 
-        public bool UpdatePrice(short idMaterial, double price)
+        public bool UpdatePrice(int idMaterial, double price)
         {
 
             foreach (Material materialInstance in materials)
@@ -104,49 +109,54 @@ namespace Data_Tier
             return false;
         }
 
-        public bool Save(string path)
+        //public bool Save(string path)
+        //{
+        //    if (string.IsNullOrEmpty(path))
+        //    {
+        //        throw new ConfigurationErrorException("Caminho invalido");
+        //    }
+
+        //    try
+        //    {
+        //        Stream fs = new FileStream(path, FileMode.Create);
+        //        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        //        binaryFormatter.Serialize(fs, materials);
+        //        fs.Close();
+        //        materials.Clear();
+        //        return true;
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw new Exception("Algo aconteceu ");
+        //    }
+
+        //}
+
+
+        //public bool Load(string path)
+        //{
+        //    if (string.IsNullOrEmpty(path))
+        //    {
+        //        throw new ConfigurationErrorException("Caminho invalido");
+        //    }
+        //    try
+        //    {
+        //        Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
+        //        BinaryFormatter b = new BinaryFormatter();
+        //        materials = (List<Material>)b.Deserialize(s);
+        //        s.Close();
+        //        return true;
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw new Exception("Algo aconteceu ");
+        //    }
+
+        //}
+
+        internal List<Material> GetDataToSave()
         {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-
-            try
-            {
-                Stream fs = new FileStream(path, FileMode.Create);
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                binaryFormatter.Serialize(fs, materials);
-                fs.Close();
-                materials.Clear();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
-        }
-
-
-        public bool Load(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-            try
-            {
-                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
-                BinaryFormatter b = new BinaryFormatter();
-                materials = (List<Material>)b.Deserialize(s);
-                s.Close();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
+            return materials;
         }
         #endregion
 

@@ -13,11 +13,15 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 using Object_Tier;
 using CustomExceptions;
+using Interface_Tier;
+using System.Diagnostics.Contracts;
+using System.Net.Sockets;
+using System.Linq;
 
 namespace Data_Tier
 {
     [Serializable]
-    public class Clients
+    public class Clients : IClients
     {
         #region Attributes
         static Clients instance;
@@ -39,6 +43,11 @@ namespace Data_Tier
                 return instance;
             }
         }
+
+        internal List<Client> ClientsD
+        {
+            set { clients = value; }
+        }
         #endregion
 
         #region Constructors
@@ -49,11 +58,26 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public short AddClient(Client client)
+        public int AddClient(Client client)
         {
             clients.Add(client);
             clients.Sort();
             return client.Id;
+        }
+
+        public bool RemoveClient(int idClient)
+        {
+            Client client = clients.FirstOrDefault(c => idClient == c.Id);
+
+            if (client != null)
+            {
+                clients.Remove(client);
+                clients.Sort();
+                return true;
+            }
+
+
+            return false;
         }
 
         public bool ExistClient(Client client)
@@ -70,76 +94,32 @@ namespace Data_Tier
             return false;
         }
 
-        public bool ExistClient(short idCliente)
+        public bool ExistClient(int idClient)
         {
-            foreach (Client clientInstance in clients)
+            return clients.Any(client => client.Id == idClient);
+        }
+
+        public bool UpdateContact(int idClient, int contacto)
+        {
+            Client client = clients.FirstOrDefault(c => c.Id == idClient);
+
+            if (client != null)
             {
-                if (clientInstance.Id == idCliente)
-                {
-                    return true;
-                }
+                client.ContactInfo = contacto;
+                return true;
             }
 
             return false;
         }
 
-        public bool UpdateContact(short idClient, int contacto)
+        public Client GetClient(int idClient)
         {
-            foreach (Client client in clients)
-            {
-                if (client.Id == idClient)
-                {
-                    client.ContactInfo = contacto;
-                    return true;
-                }
-            }
-
-            return false;
+            return clients.FirstOrDefault(c => c.Id == idClient);
         }
 
-        public bool Save(string path)
+        internal List<Client> GetListToSave() 
         {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-
-            try
-            {
-                Stream fs = new FileStream(path, FileMode.Create);
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                binaryFormatter.Serialize(fs, clients);
-                fs.Close();
-                clients.Clear();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
-        }
-
-
-        public bool Load(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-            try
-            {
-                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
-                BinaryFormatter b = new BinaryFormatter();
-                clients = (List<Client>)b.Deserialize(s);
-                s.Close();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
+            return clients;
         }
 
         #endregion

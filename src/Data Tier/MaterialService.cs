@@ -47,6 +47,11 @@ namespace Data_Layer
                 return instance;
             }
         }
+
+        internal Dictionary<int, List<MaterialQuantity>> MaterialDS
+        {
+            set { use = value; }
+        }
         #endregion
 
         #region Constructors
@@ -63,7 +68,7 @@ namespace Data_Layer
 
         #region OtherMethods
 
-        public bool AddMaterial(short idProject, MaterialQuantity material)
+        public bool AddMaterial(int idProject, MaterialQuantity material)
         {
             if (!use.ContainsKey(idProject))
             {
@@ -117,6 +122,11 @@ namespace Data_Layer
                 throw new Exception("Algo aconteceu ");
             }
 
+        }
+
+        internal Dictionary<int, List<MaterialQuantity>> GetDataToSave()
+        {
+            return use;
         }
         #endregion
 

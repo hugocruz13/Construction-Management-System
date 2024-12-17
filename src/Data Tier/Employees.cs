@@ -12,6 +12,10 @@ using Object_Tier;
 using CustomExceptions;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
+
+using Interface_Tier;
+using System.Linq;
 
 namespace Data_Tier
 {
@@ -30,7 +34,7 @@ namespace Data_Tier
     /// </code>
     /// </example>
     [Serializable]
-    public class Employees
+    public class Employees : IEmployees
     {
         #region Attributes
         static Employees instance;
@@ -52,6 +56,11 @@ namespace Data_Tier
                 return instance;
             }
         }
+
+        internal List<Employee> EmployeesD
+        {
+            set { employees = value; }
+        }
         #endregion
 
         #region Constructors
@@ -63,12 +72,26 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public short AddEmployee(Employee employee)
+
+        public int AddEmployee(Employee employee)
         {
             employees.Add(employee);
             employees.Sort();
             return employee.Id;
+        }
 
+        public bool RemoveEmployee(int idEmployee)
+        {
+            Employee employee = employees.FirstOrDefault(e => e.Id == idEmployee);
+
+            if (employee != null)
+            {
+                employees.Remove(employee);
+                employees.Sort();
+                return true;
+            }
+
+            return false;
         }
 
         public bool EmployeeExist(Employee employee)
@@ -84,33 +107,28 @@ namespace Data_Tier
             return false;
         }
 
-        public bool EmployeeExist(short idEmployee)
+        public bool EmployeeExist(int idEmployee)
         {
-            foreach (Employee employeeInstance in employees)
+            return employees.Any(e => e.Id == idEmployee);
+        }
+
+        public bool UpdateRole(int idEmployee, string role, double hourly)
+        {
+            Employee employee = employees.FirstOrDefault(e => e.Id == idEmployee);
+
+            if (employee != null)
             {
-                if (employeeInstance.Id == idEmployee)
-                {
-                    return true;
-                }
+                employee.Role = role;
+                employee.HourlyRate = hourly;
+                return true;
             }
 
             return false;
         }
 
-        public bool UpdateRole(short idEmployee, string role, double hourly)
+        public Employee GetEmployee(int idEmployee)
         {
-
-            foreach (Employee employeeInstance in employees)
-            {
-                if (employeeInstance.Id == idEmployee)
-                {
-                    employeeInstance.Role = role;
-                    employeeInstance.HourlyRate = hourly;
-                    return true;
-                }
-            }
-
-            return false;
+            return employees.FirstOrDefault(e => e.Id == idEmployee);
         }
 
         public bool Save(string path)
@@ -122,20 +140,19 @@ namespace Data_Tier
 
             try
             {
-                Stream fs = new FileStream(path, FileMode.Create);
+                Stream fs = new FileStream(path, FileMode.Append, FileAccess.Write);
                 BinaryFormatter binaryFormatter = new BinaryFormatter();
                 binaryFormatter.Serialize(fs, employees);
                 fs.Close();
                 employees.Clear();
                 return true;
             }
-            catch (Exception)
+            catch (IOException ex)
             {
-                throw new Exception("Algo aconteceu ");
+                throw new ConfigurationErrorException("Erro ao salvar os dados no arquivo", ex);
             }
 
         }
-
 
         public bool Load(string path)
         {
@@ -143,6 +160,7 @@ namespace Data_Tier
             {
                 throw new ConfigurationErrorException("Caminho invalido");
             }
+
             try
             {
                 Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
@@ -151,11 +169,15 @@ namespace Data_Tier
                 s.Close();
                 return true;
             }
-            catch (Exception)
+            catch (IOException ex)
             {
-                throw new Exception("Algo aconteceu ");
+                throw new ConfigurationErrorException("Erro ao carregar os dados no arquivo", ex);
             }
+        }
 
+        internal List<Employee> GetDataToSave() 
+        {
+            return employees;
         }
         #endregion
 

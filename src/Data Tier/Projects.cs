@@ -1,4 +1,4 @@
-﻿/*
+﻿ /*
 *	<copyright file="Projects.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
@@ -47,6 +47,10 @@ namespace Data_Tier
             }
         }
 
+        internal List<Project> ProjectsD
+        {
+            set { projects = value; }
+        }
         #endregion
 
         #region Constructors
@@ -59,7 +63,7 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public short AddProject(Project project)
+        public int AddProject(Project project)
         {
             if (!ProjectExists(project))
             {
@@ -86,7 +90,7 @@ namespace Data_Tier
             return false;
         }
 
-        public bool ProjectExists(short idProject)
+        public bool ProjectExists(int idProject)
         {
 
             foreach (Project project in projects)
@@ -162,18 +166,23 @@ namespace Data_Tier
         }
 
         #region Clients
-        public bool AddClient(short idProject, short idClient)
+        public bool AddClient(int idProject, int idClient)
         {
             bool r = ClientsService.Instance.AddClient(idProject, idClient);
             return r;
         }
 
-        public bool RemoveClient(short idProject, short idClient) 
+        public bool RemoveClient(int idProject, int idClient) 
         {
             bool r = ClientsService.Instance.RemoveClient(idProject, idClient);
             return r;
         }
 
+
+        internal List<Project> GetDataToSave()
+        {
+            return projects;
+        }
         #endregion
 
         #region Employees

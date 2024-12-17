@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Business_Tier;
 using CustomExceptions;
 using Object_Tier;
@@ -10,38 +11,141 @@ namespace Presentation_Tier
     {
         static void Main(string[] args)
         {
-            Company.RegisterClient(Client.CreateClient("Hugo Cruz", 967333980));
-            Company.RegisterClient(Client.CreateClient("Ana Silva", 914567890));
-            Company.RegisterClient(Client.CreateClient("Carlos Martins", 912345678));
+            //bool tester;
 
-            // Funcionários
-            Company.RegistEmployee(new Employee("Antonio Mendes", "Pedreiro", 8.1));
-            Company.RegistEmployee(new Employee("Joana Almeida", "Carpinteira", 9.5));
-            Company.RegistEmployee(new Employee("Rui Costa", "Eletricista", 7.8));
+            ////try
+            ////{
+            //int c1 = Company.RegisterClient(Client.CreateClient("Ana Silva", 912345678));//500
+            //int c2 = Company.RegisterClient(Client.CreateClient("Pedro Almeida", 963258741));//501
+            //int c3 = Company.RegisterClient(Client.CreateClient("Maria Costa", 987654321));//502
+            //int c4 = Company.RegisterClient(Client.CreateClient("João Pereira", 934567890));//503
+            //int c5 = Company.RegisterClient(Client.CreateClient("Carlos Souza", 915678234));//504
+            ////                                                                                //    //int c6 = Company.RegisterClient(Client.CreateClient("Carlos Souza", 915678234));//Erro
+            ////                                                                                //    // int c7 = Company.RegisterClient(null);//Erro
 
-            // Materiais
-            Company.RegisterMaterial(new Material("Cimento", 4.8), 8);
-            Company.RegisterMaterial(new Material("Tijolo", 0.5), 500);
-            Company.RegisterMaterial(new Material("Madeira", 12.0), 20);
+            //////}
+            //////catch (ConfigurationErrorException ex)
+            //////{
+            //////    string businessError = ex.Message;
+            //////}
+            //////catch (Exception ex)
+            //////{
+            //////    string error = ex.Message;
+            //////}
 
-            // Projetos
-            Company.RegistProject(new Project(Status.NotStart));
-            Company.RegistProject(new Project(Status.InProgress));
-            Company.RegistProject(new Project(Status.Completed));
+            //////////tester = Company.DeleteClient(500);
+            //////////tester = Company.DeleteClient(520);
 
-            Company.AddClientToProject(300,500);
-            Company.AddClientToProject(300,501);
-            Company.AddClientToProject(300,502);
-            //Company
+            //////////tester = Company.IsClientRegistered(502);
+            //////////tester = Company.IsClientRegistered(515);
 
-            Company.AddClientToProject(301, 500);
-            Company.AddClientToProject(302, 501);
+            ////////try
+            ////////{
+            ////////    Client c = Company.GetClientById(503);
+            ////////    //Client c1 = Company.GetClientById(503); //Erro
+            ////////}
+            ////////catch (ConfigurationErrorException ex)
+            ////////{
+            ////////    string businessError = ex.Message;
+            ////////}
+            ////////catch (Exception ex)
+            ////////{
+            ////////    string error = ex.Message;
+            ////////}
 
 
 
-            Company.SaveAllData();
+            //////try
+            //////{
+            //////    tester = Company.UpdateClientContact(502, 968555830);
+            //////    //tester = Company.UpdateClientContact(512,968555830); //Erro
+
+            //////}
+            //////catch (ConfigurationErrorException ex)
+            //////{
+            //////    string businessError = ex.Message;
+            //////}
+            //////catch (Exception ex)
+            //////{
+            //////    string error = ex.Message;
+            //////}
+
+
+            //////try
+            //////{
+            //int e1 = Company.RegistEmployee(Employee.CreateEmployee("Ana Silva", "Manager", 30.0));
+            //int e2 = Company.RegistEmployee(Employee.CreateEmployee("Pedro Almeida", "Developer", 25.0));
+            //int e3 = Company.RegistEmployee(Employee.CreateEmployee("Maria Costa", "Designer", 22.5));
+            //int e4 = Company.RegistEmployee(Employee.CreateEmployee("João Pereira", "Tester", 20.0));
+            //int e5 = Company.RegistEmployee(Employee.CreateEmployee("Carlos Souza", "Developer", 28.0));
+            //////    // int e6 = Company.RegisterEmployee(Employee.CreateEmployee("Carlos Souza", "Developer", 28.0)); // Error (Duplicate)
+            //////    // int e7 = Company.RegisterEmployee(null); // Error (Null)
+            //////}
+            //////catch (ConfigurationErrorException ex)
+            //////{
+            //////    string businessError = ex.Message;
+            //////}
+            //////catch (Exception ex)
+            //////{
+            //////    string error = ex.Message;
+            //////}
+
+            //////tester = Company.DeleteEmployee(201);
+            //////tester = Company.DeleteEmployee(220);
+
+            //////tester = Company.IsEmployeeRegistered(203);
+            //////tester = Company.IsEmployeeRegistered(271);
+
+            //////try
+            //////{
+            //////    Employee e = Company.GetEmployeeById(200);
+            //////    //Employee e1 = Company.GetEmployeeById(201);  // Error
+            //////}
+            //////catch (ConfigurationErrorException ex)
+            //////{
+            //////    string businessError = ex.Message;
+            //////}
+            //////catch (Exception ex)
+            //////{
+            //////    string error = ex.Message;
+            //////}
+
+            //////try
+            //////{
+            //////    tester = Company.UpdateEmployeeRole(204, "Senior Developer", 35.0);
+            //////    tester = Company.UpdateEmployeeRole(246, "Lead Developer", 40.0); // Error (Employee doesn't exist)
+            //////}
+            //////catch (ConfigurationErrorException ex)
+            //////{
+            //////    string businessError = ex.Message;
+            //////}
+            //////catch (Exception ex)
+            //////{
+            //////    string error = ex.Message;
+            //////}
+
+
+            ////Company.RegisterMaterial(Material.CreateMaterial("Cimento", 4.8), 25);
+            ////Company.UpdateStock(900, 30);
+
+            //Company.RegisterMaterial(Material.CreateMaterial("Cimento", 4.8), 8);
+            //Company.RegisterMaterial(Material.CreateMaterial("Arroz", 4.8), 8);
+            //Company.RegisterMaterial(Material.CreateMaterial("Cola", 4.8), 8);
+
+
+            //Company.RegistProject(new Project(Status.Completed));
+            //Company.RegistProject(new Project(Status.InProgress));
+
+
+            ////Company.AddClientToProject(300,500);
+
+            //Company.SaveAllData();
             Company.LoadAllData();
 
+            Company.RegisterClient(Client.CreateClient("h", 222));
+            Company.RegistEmployee(Employee.CreateEmployee("VSKI","PEDRE",27.1));
+            Company.RegisterMaterial(Material.CreateMaterial("csasad", 21.2), 12);
+            Company.RegistProject(Project.CreateProject(Status.OnHold));
         }
     }
 }

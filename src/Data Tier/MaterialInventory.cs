@@ -10,8 +10,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using CustomExceptions;
+using Interface_Tier;
 using Object_Tier;
 
 namespace Data_Tier
@@ -57,6 +59,11 @@ namespace Data_Tier
                 return instance;
             }
         }
+
+        internal List<MaterialQuantity> InventoryD
+        {
+            set { inventory = value; }
+        }
         #endregion
 
         #region Constructors
@@ -79,25 +86,16 @@ namespace Data_Tier
         #endregion
 
         #region OtherMethods
-        public short AddMaterial(MaterialQuantity inventoryQuantity)
+        public int AddMaterial(MaterialQuantity inventoryQuantity)
         {
             inventory.Add(inventoryQuantity);
             return inventoryQuantity.IdMaterial;
 
         }
 
-        public bool VerifyMaterialExistence(short idMaterial)
+        public bool VerifyMaterialExistence(int idMaterial)
         {
-
-            foreach (MaterialQuantity materialInstance in inventory)
-            {
-                if (materialInstance.IdMaterial == idMaterial)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return inventory.Any(m => m.IdMaterial == idMaterial);
         }
 
 
@@ -107,16 +105,14 @@ namespace Data_Tier
         /// <param name="idMaterial">The ID of the material to update.</param>
         /// <param name="quantityUpdate">The new quantity to set.</param>
         /// <returns><c>true</c> if the update is successful; otherwise, <c>false</c> if the material is not found.</returns>
-        public bool UpdateQuantity(short idMaterial, int quantityUpdate)
+        public bool UpdateQuantity(int idMaterial, int quantityUpdate)
         {
+            MaterialQuantity material = inventory.FirstOrDefault(m => m.IdMaterial == idMaterial);
 
-            foreach (MaterialQuantity materialInstance in inventory)
+            if (material != null)
             {
-                if (materialInstance.IdMaterial == idMaterial)
-                {
-                    materialInstance.Quantity = quantityUpdate;
-                    return true;
-                }
+                material.Quantity = quantityUpdate;
+                return true;
             }
 
             return false;
@@ -128,18 +124,15 @@ namespace Data_Tier
         ///// <param name="idMaterial">The ID of the material to use.</param>
         ///// <param name="quantity">The quantity to reduce from the stock.</param>
         ///// <returns><c>true</c> if the material was used successfully; otherwise, <c>false</c> if the material does not exist or there is insufficient stock.</returns>
-        public bool UseMaterial(short idMaterial, int quantity)
+        public bool UseMaterial(int idMaterial, int quantity)
         {
+            MaterialQuantity material = inventory.FirstOrDefault(m => m.IdMaterial == idMaterial);
 
-            foreach (MaterialQuantity materialInstance in inventory)
+            if (material != null)
             {
-                if (materialInstance.IdMaterial == idMaterial && materialInstance.Quantity >= quantity)
-                {
-                    materialInstance.Quantity -= quantity;
-                    return true;
-                }
+                material.Quantity -= quantity;
+                return true;
             }
-
 
             return false;
         }
@@ -187,6 +180,11 @@ namespace Data_Tier
                 throw new Exception("Algo aconteceu ");
             }
 
+        }
+
+        internal List<MaterialQuantity> GetDataToSave()
+        {
+            return inventory;
         }
         #endregion
 

@@ -7,6 +7,7 @@
 *	<description>This file is focused on creating client objects.</description>
 */
 using System;
+using System.Runtime.Serialization;
 
 namespace Object_Tier
 {
@@ -29,7 +30,8 @@ namespace Object_Tier
     {
         #region Attributes
         int contactInfo;
-        static short clientIdCounter = 500;
+        [NonSerialized]
+        static int clientIdCounter = 500;
         #endregion
 
         #region Methods
@@ -60,7 +62,6 @@ namespace Object_Tier
         {
             ContactInfo = contact;
         }
-
         #endregion
 
         #region Overrides
@@ -91,9 +92,9 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
-        public static Client CreateClient(string name, int contact) 
+        public static Client CreateClient(string name, int contact)
         {
-            return new Client(name,contact);
+            return new Client(name, contact);
         }
 
         public static bool operator -(Client client1, Client client2)
@@ -113,7 +114,17 @@ namespace Object_Tier
 
         public int CompareTo(Client client)
         {
-            return Name.CompareTo(client.Name);
+            return Id.CompareTo(client.Id);
+        }
+
+        [OnDeserialized]
+        public void Colocaigual(StreamingContext context)
+        {
+            if (Id >= clientIdCounter)
+            {
+                clientIdCounter = Id + 1;
+
+            }
         }
         #endregion
 

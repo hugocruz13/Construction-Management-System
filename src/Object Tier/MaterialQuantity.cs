@@ -7,6 +7,7 @@
 *	<description>Class MaterialQuantity represents the quantity of a material and the date of its addition.</description>
 **/
 using System;
+using System.Runtime.Serialization;
 using System.Xml.Linq;
 
 namespace Object_Tier
@@ -30,7 +31,7 @@ namespace Object_Tier
     {
         #region Attributes
 
-        short  idMaterial;
+        int  idMaterial;
         /// <summary>
         /// Quantity of material.
         /// </summary>
@@ -53,7 +54,7 @@ namespace Object_Tier
         /// <permission>
         /// Public Access
         /// </permission>
-        public short IdMaterial
+        public int IdMaterial
         {
             get { return idMaterial; }
         }
@@ -105,7 +106,7 @@ namespace Object_Tier
         /// <permission>
         /// Public Access (read only).
         /// </permission>
-        public MaterialQuantity(short id, int quantity)
+        public MaterialQuantity(int id, int quantity)
         {
             this.idMaterial = id;
             Quantity = quantity;
@@ -147,6 +148,11 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
+        public static MaterialQuantity CreateMaterialQuantity(int id, int quantity)
+        {
+            return new MaterialQuantity(id, quantity);
+        }
+
         public static bool operator -(MaterialQuantity material1, MaterialQuantity material2)
         {
             if (material1.Equals(material2))

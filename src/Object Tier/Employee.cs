@@ -7,6 +7,7 @@
 *	<description>This file is focused on employees.</description>
 **/
 using System;
+using System.Runtime.Serialization;
 
 namespace Object_Tier
 {
@@ -39,12 +40,14 @@ namespace Object_Tier
         /// </summary>
         double hourlyRate;
 
-        double salary; 
+
+        double salary;
 
         /// <summary>
         /// Static counter to assign unique IDs to employees.
         /// </summary>
-        static short employeeIdCounter = 200;
+        [ NonSerialized]
+        static int employeeIdCounter = 200;
         #endregion
 
         #region Methods
@@ -151,6 +154,11 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
+        public static Employee CreateEmployee(string name, string role, double hourlyRate)
+        {
+            return new Employee(name, role,hourlyRate);
+        }
+
         public static bool operator -(Employee employee1, Employee employee2)
         {
             if (employee1.Equals(employee2))
@@ -171,11 +179,19 @@ namespace Object_Tier
             return Name.CompareTo(employee.Name);
         }
 
-
         private double CalculaSalario() 
         {
-            double salary = HourlyRate * 8 * 22;
-            return salary;
+            return HourlyRate * 8 * 22;
+        }
+
+        [OnDeserialized]
+        public void Colocaigual(StreamingContext context)
+        {
+            if (Id >= employeeIdCounter)
+            {
+                employeeIdCounter = Id + 1;
+
+            }
         }
         #endregion
 

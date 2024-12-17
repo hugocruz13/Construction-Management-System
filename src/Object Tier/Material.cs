@@ -7,6 +7,7 @@
 *	<description>Material class represents a material with information such as name and unit price.</description>
 **/
 using System;
+using System.Runtime.Serialization;
 
 namespace Object_Tier
 {
@@ -32,7 +33,7 @@ namespace Object_Tier
         /// <summary>
         /// Unique material identifier.
         /// </summary>
-        short id;
+        int id;
 
         /// <summary>
         /// Name of the material.
@@ -48,7 +49,8 @@ namespace Object_Tier
         /// <summary>
         /// Static counter to assign unique IDs to materials.
         /// </summary>
-        static short materialIdCounter = 900;
+        [NonSerialized]
+        static int materialIdCounter = 900;
         #endregion
 
         #region Methods
@@ -61,7 +63,7 @@ namespace Object_Tier
         /// <permission>
         /// Public Access (read only).
         /// </permission>
-        public short Id
+        public int Id
         {
             get { return id; }
         }
@@ -165,6 +167,11 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
+        public static Material CreateMaterial(string name, double price)
+        {
+            return new Material(name, price);
+        }
+
         public static bool operator -(Material material1, Material material2)
         {
             if (material1.Equals(material2))
@@ -183,6 +190,16 @@ namespace Object_Tier
         public int CompareTo(Material material)
         {
             return Name.CompareTo(material.Name);
+        }
+
+        [OnDeserialized]
+        public void Colocaigual(StreamingContext context)
+        {
+            if (Id >= materialIdCounter)
+            {
+                materialIdCounter = Id + 1;
+
+            }
         }
         #endregion
 

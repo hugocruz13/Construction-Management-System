@@ -8,6 +8,7 @@
 **/
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Xml.Linq;
 
 
@@ -32,7 +33,7 @@ namespace Object_Tier
         /// <summary>
         /// Unique project ID.
         /// </summary>
-        short idProject;
+        int idProject;
 
         /// <summary>
         /// Current status of the project.
@@ -49,11 +50,11 @@ namespace Object_Tier
         /// </summary>
         DateTime endDate;
 
-        List<int> clients;
         /// <summary>
         /// 
         /// </summary>
-        static short projectIdCounter = 300;
+        [NonSerialized]
+        static int projectIdCounter = 300;
         #endregion
 
         #region Methods
@@ -62,7 +63,7 @@ namespace Object_Tier
         /// <summary>
         /// Property to access or modify the project ID.
         /// </summary>
-        public short Id
+        public int Id
         {
             set { idProject = value; }
             get { return idProject; }
@@ -97,8 +98,6 @@ namespace Object_Tier
         #endregion
 
         #region Constructors
-
-
         public Project(Status status)
         {
             Id = projectIdCounter++;
@@ -137,6 +136,11 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
+        public static Project CreateProject(Status st)
+        {
+            return new Project(st);
+        }
+
 
         public static bool operator -(Project project1, Project project2)
         {
@@ -156,6 +160,16 @@ namespace Object_Tier
         public int CompareTo(Project project)
         {
             return Id.CompareTo(project.Id);
+        }
+
+        [OnDeserialized]
+        public void Colocaigual(StreamingContext context)
+        {
+            if (Id >= projectIdCounter)
+            {
+                projectIdCounter = Id + 1;
+
+            }
         }
         #endregion
 

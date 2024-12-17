@@ -30,7 +30,7 @@ namespace Object_Tier
         /// <summary>
         /// Unique identifier of the person.
         /// </summary>
-        short id;
+        int id;
         /// <summary>
         /// Name of the person
         /// </summary>
@@ -48,7 +48,7 @@ namespace Object_Tier
         /// <permission>
         /// Public Access
         /// </permission>
-        public short Id 
+        public int Id 
         {
             get { return id; }
         }
@@ -78,7 +78,7 @@ namespace Object_Tier
         /// </remarks>
         /// <param name="id">The unique identifier for the person.</param>
         /// <param name="name">The name of the person.</param>
-        protected Person(short id, string name) 
+        protected Person(int id, string name) 
         {
             this.id = id;
             Name = stringFormatada(name);

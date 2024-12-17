@@ -10,6 +10,10 @@ using System;
 using CustomExceptions;
 using Object_Tier;
 using Data_Tier;
+using System.Security.Cryptography;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Collections.Generic;
 
 namespace Business_Tier
 {
@@ -17,34 +21,41 @@ namespace Business_Tier
     public class Company
     {
         #region Files
-        public static bool SaveAllData()
+        public static bool SaveAllData(string path)
         {
-            Clients.Instance.Save(@"C:\data\Clients.dat");
-            Employees.Instance.Save(@"C:\data\Employees.dat");
-            Materials.Instance.Save(@"C:\data\Materials.dat");
-            MaterialInventory.Instance.Save(@"C:\data\Inventory.dat");
-            Projects.Instance.Save(@"C:\data\Projects.dat");
-            Projects.Instance.SaveDataProjects();
+            Data data = new Data();
+            data.CollectData();
 
+            if (data == null)
+            {
+                throw new ConfigurationErrorException("550");
+            }
 
+            Stream fs = new FileStream(path, FileMode.Create);
+            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            binaryFormatter.Serialize(fs, data);
+            fs.Close();
             return true;
         }
 
         public static bool LoadAllData()
         {
-            Clients.Instance.Load(@"C:\data\Clients.dat");
-            Employees.Instance.Load(@"C:\data\Employees.dat");
-            Materials.Instance.Load(@"C:\data\Materials.dat");
-            MaterialInventory.Instance.Load(@"C:\data\Inventory.dat");
-            Projects.Instance.Load(@"C:\data\Projects.dat");
-            Projects.Instance.LoadDataProjects();
+            Data data = new Data();
+            string x = @"C:\data\data.dat";
+
+            Stream s = File.Open(x, FileMode.Open, FileAccess.Read);
+            BinaryFormatter b = new BinaryFormatter();
+            data = (Data)b.Deserialize(s);
+            s.Close();
+
+            data.PutData();
 
             return true;
         }
         #endregion
 
         #region Clients
-        public static short RegisterClient(Client client)
+        public static int RegisterClient(Client client)
         {
             if (client == null)
             {
@@ -53,13 +64,12 @@ namespace Business_Tier
 
             if (Clients.Instance.ExistClient(client))
             {
-                throw new ConfigurationErrorException("Customer already exists");
+                throw new ConfigurationErrorException("Client already exists.");
             }
 
             try
             {
-                short idClient = Clients.Instance.AddClient(client);            
-                return idClient;
+                return Clients.Instance.AddClient(client);
             }
 
             catch (Exception ex)
@@ -68,23 +78,48 @@ namespace Business_Tier
             }
         }
 
-        public static bool IsClientRegistered(short idClient)
+        public static bool DeleteClient(int idClient)
         {
-            bool exist = Clients.Instance.ExistClient(idClient);
-            return exist;
+            return Clients.Instance.RemoveClient(idClient);
         }
 
-        public static bool UpdateClientContact(short idClient, int contact)
+        public static bool IsClientRegistered(int idClient)
+        {
+            return Clients.Instance.ExistClient(idClient);
+        }
+
+        public static bool UpdateClientContact(int idClient, int contact)
         {
             if (contact < 9)
             {
                 throw new ConfigurationErrorException("The contact information must be at least 9 characters long");
             }
 
+            if (!Clients.Instance.ExistClient(idClient))
+            {
+                throw new ConfigurationErrorException("Client not found.");
+            }
+
             try
             {
-                bool update = Clients.Instance.UpdateContact(idClient, contact);
-                return update;
+                return Clients.Instance.UpdateContact(idClient, contact);
+            }
+            catch (Exception ex)
+            {
+                throw new ConfigurationErrorException("Error occurred while adding the client", ex);
+            }
+        }
+
+        public static Client GetClientById(int idClient)
+        {
+            if (!Clients.Instance.ExistClient(idClient))
+            {
+                throw new ConfigurationErrorException("Client not found.");
+            }
+
+            try
+            {
+                return Clients.Instance.GetClient(idClient);
             }
             catch (Exception ex)
             {
@@ -94,7 +129,7 @@ namespace Business_Tier
         #endregion
 
         #region Employees
-        public static short RegistEmployee(Employee employee)
+        public static int RegistEmployee(Employee employee)
         {
             if (employee == null)
             {
@@ -108,8 +143,7 @@ namespace Business_Tier
 
             try
             {
-                short idEmployee = Employees.Instance.AddEmployee(employee);
-                return idEmployee;
+                return Employees.Instance.AddEmployee(employee);
             }
             catch (Exception ex)
             {
@@ -117,28 +151,35 @@ namespace Business_Tier
             }
         }
 
-        public static bool IsEmployeeRegistered(short idEmployee)
+        public static bool DeleteEmployee(int idEmployee)
         {
-            bool exist = Employees.Instance.EmployeeExist(idEmployee);
-            return exist;
+            return Employees.Instance.RemoveEmployee(idEmployee);
+        }
+        public static bool IsEmployeeRegistered(int idEmployee)
+        {
+            return Employees.Instance.EmployeeExist(idEmployee);
         }
 
-        public static bool UpdateEmployeeRole(short idEmployee, string role, double priceHourly)
+        public static bool UpdateEmployeeRole(int idEmployee, string role, double priceHourly)
         {
             if (!Employees.Instance.EmployeeExist(idEmployee))
             {
                 throw new ConfigurationErrorException("The employee does not exist in the system.");
             }
 
-            if (role == string.Empty || priceHourly <= 0)
+            if (role == string.Empty)
             {
-                throw new ConfigurationErrorException("The role cannot be empty, and the hourly price must be greater than zero.");
+                throw new ConfigurationErrorException("The role cannot be empty");
+            }
+
+            if (priceHourly <= 0)
+            {
+                throw new ConfigurationErrorException("Hourly price must be greater than zero.");
             }
 
             try
             {
-                bool update = Employees.Instance.UpdateRole(idEmployee, role, priceHourly);
-                return update;
+                return Employees.Instance.UpdateRole(idEmployee, role, priceHourly);
             }
 
             catch (Exception ex)
@@ -147,17 +188,33 @@ namespace Business_Tier
             }
         }
 
-        #endregion 
+        public static Employee GetEmployeeById(int idEmployee)
+        {
+            if (!Employees.Instance.EmployeeExist(idEmployee))
+            {
+                throw new ConfigurationErrorException("The employee does not exist in the system.");
+            }
+
+            try
+            {
+                return Employees.Instance.GetEmployee(idEmployee);
+            }
+            catch (Exception ex)
+            {
+                throw new ConfigurationErrorException("Error occurred while adding the employee", ex);
+            }
+        }
+        #endregion
 
         #region Materials
-        public static short RegisterMaterial(Material material, int quantity)
+        public static int RegisterMaterial(Material material, int quantity)
         {
-            short idM = AddMaterialToCatalog(material);
-            short idMI = AddMaterialToInventory(idM, quantity);
+            int idM = AddMaterialToCatalog(material);
+            int idMI = AddMaterialToInventory(idM, quantity);
             return idMI;
         }
 
-        internal static short AddMaterialToCatalog(Material material)
+        internal static int AddMaterialToCatalog(Material material)
         {
             if (material == null)
             {
@@ -171,7 +228,7 @@ namespace Business_Tier
 
             try
             {
-                short idM = Materials.Instance.AddMaterial(material);
+                int idM = Materials.Instance.AddMaterial(material);
 
                 return idM;
             }
@@ -181,7 +238,7 @@ namespace Business_Tier
             }
         }
 
-        internal static short AddMaterialToInventory(short idMaterial, int quantity)
+        internal static int AddMaterialToInventory(int idMaterial, int quantity)
         {
             if (MaterialInventory.Instance.VerifyMaterialExistence(idMaterial))
             {
@@ -191,7 +248,7 @@ namespace Business_Tier
             try
             {
 
-                short idMI = MaterialInventory.Instance.AddMaterial(new MaterialQuantity(idMaterial, quantity));
+                int idMI = MaterialInventory.Instance.AddMaterial(MaterialQuantity.CreateMaterialQuantity(idMaterial, quantity));
                 return idMI;
             }
             catch (Exception ex)
@@ -200,7 +257,7 @@ namespace Business_Tier
             }
         }
 
-        public static bool IsMaterialRegistered(short idMaterial)
+        public static bool IsMaterialRegistered(int idMaterial)
         {
             bool exist = Materials.Instance.MaterialExist(idMaterial);
 
@@ -213,7 +270,7 @@ namespace Business_Tier
             return exist;
         }
 
-        public static bool UpdateStock(short idMaterial, int quantity)
+        public static bool UpdateStock(int idMaterial, int quantity)
         {
             if (quantity < 0)
             {
@@ -237,7 +294,7 @@ namespace Business_Tier
 
         }
 
-        public static bool UpdatePrice(short idMaterial, double price)
+        public static bool UpdatePrice(int idMaterial, double price)
         {
             if (price < 0)
             {
@@ -267,7 +324,7 @@ namespace Business_Tier
         ////Close project 
         ////Calcular custos do project 
 
-        public static short RegistProject(Project project)
+        public static int RegistProject(Project project)
         {
             if (project == null)
             {
@@ -282,7 +339,7 @@ namespace Business_Tier
             try
             {
                 System.Threading.Thread.Sleep(500);
-                short idProject = Projects.Instance.AddProject(project);
+                int idProject = Projects.Instance.AddProject(project);
                 return idProject;
             }
             catch (Exception ex)
@@ -291,14 +348,14 @@ namespace Business_Tier
             }
         }
 
-        public static bool IsProjectRegistered(short idProject)
+        public static bool IsProjectRegistered(int idProject)
         {
             bool r = Projects.Instance.ProjectExists(idProject);
             return r;
         }
 
         #region Clients
-        public static bool AddClientToProject(short idProject, short idClient)
+        public static bool AddClientToProject(int idProject, int idClient)
         {
             if (!Projects.Instance.ProjectExists(idProject))
             {
@@ -307,7 +364,7 @@ namespace Business_Tier
 
             if (!Clients.Instance.ExistClient(idClient))
             {
-                throw new ConfigurationErrorException("The specified client does not exist.");
+                throw new ConfigurationErrorException("Client does not exist.");
             }
 
             try
@@ -323,7 +380,7 @@ namespace Business_Tier
 
         }
 
-        public static bool RemoveClientToProject(short idProject, short idClient)
+        public static bool RemoveClientToProject(int idProject, int idClient)
         {
             if (!Projects.Instance.ProjectExists(idProject))
             {
@@ -332,7 +389,7 @@ namespace Business_Tier
 
             if (!Clients.Instance.ExistClient(idClient))
             {
-                throw new ConfigurationErrorException("");
+                throw new ConfigurationErrorException("Client does not exist.");
             }
 
             try
