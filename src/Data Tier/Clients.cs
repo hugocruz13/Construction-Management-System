@@ -46,6 +46,7 @@ namespace Data_Tier
 
         internal List<Client> ClientsD
         {
+            get { return clients; }
             set { clients = value; }
         }
         #endregion
@@ -115,11 +116,6 @@ namespace Data_Tier
         public Client GetClient(int idClient)
         {
             return clients.FirstOrDefault(c => c.Id == idClient);
-        }
-
-        internal List<Client> GetListToSave() 
-        {
-            return clients;
         }
 
         #endregion

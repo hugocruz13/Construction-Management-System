@@ -48,6 +48,7 @@ namespace Data_Tier
 
         internal Dictionary<int, List<int>> EmployeesDS
         {
+            get { return employees; }
             set { employees = value; }
         }
         #endregion
@@ -139,11 +140,6 @@ namespace Data_Tier
                 throw new Exception("Algo aconteceu ");
             }
 
-        }
-
-        internal Dictionary<int, List<int>> GetDataToSave()
-        {
-            return employees;
         }
         #endregion
 

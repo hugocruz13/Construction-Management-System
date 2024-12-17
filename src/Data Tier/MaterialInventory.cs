@@ -62,6 +62,7 @@ namespace Data_Tier
 
         internal List<MaterialQuantity> InventoryD
         {
+            get { return inventory; }
             set { inventory = value; }
         }
         #endregion
@@ -182,10 +183,6 @@ namespace Data_Tier
 
         }
 
-        internal List<MaterialQuantity> GetDataToSave()
-        {
-            return inventory;
-        }
         #endregion
 
         #region Destructor

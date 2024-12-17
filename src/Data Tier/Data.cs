@@ -31,14 +31,14 @@ namespace Data_Tier
 
         public bool CollectData()
         {
-            clients = Clients.Instance.GetListToSave();
-            clientsService = ClientsService.Instance.GetDataToSave();
-            employees = Employees.Instance.GetDataToSave();
-            employeesService = EmployeesService.Instance.GetDataToSave();
-            materials = Materials.Instance.GetDataToSave();
-            inventory = MaterialInventory.Instance.GetDataToSave();
-            materialService = MaterialService.Instance.GetDataToSave();
-            projects = Projects.Instance.GetDataToSave();
+            clients = Clients.Instance.ClientsD;
+            clientsService = ClientsService.Instance.ClientsDS;
+            employees = Employees.Instance.EmployeesD;
+            employeesService = EmployeesService.Instance.EmployeesDS;
+            materials = Materials.Instance.MaterialD;
+            inventory = MaterialInventory.Instance.InventoryD;
+            materialService = MaterialService.Instance.MaterialDS;
+            projects = Projects.Instance.ProjectsD;
             return true;
         }
 

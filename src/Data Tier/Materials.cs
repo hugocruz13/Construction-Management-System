@@ -50,6 +50,7 @@ namespace Data_Tier
         internal List<Material> MaterialD
         {
             set { materials = value; }
+            get { return materials; }
         }
         #endregion
 
@@ -109,55 +110,6 @@ namespace Data_Tier
             return false;
         }
 
-        //public bool Save(string path)
-        //{
-        //    if (string.IsNullOrEmpty(path))
-        //    {
-        //        throw new ConfigurationErrorException("Caminho invalido");
-        //    }
-
-        //    try
-        //    {
-        //        Stream fs = new FileStream(path, FileMode.Create);
-        //        BinaryFormatter binaryFormatter = new BinaryFormatter();
-        //        binaryFormatter.Serialize(fs, materials);
-        //        fs.Close();
-        //        materials.Clear();
-        //        return true;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        throw new Exception("Algo aconteceu ");
-        //    }
-
-        //}
-
-
-        //public bool Load(string path)
-        //{
-        //    if (string.IsNullOrEmpty(path))
-        //    {
-        //        throw new ConfigurationErrorException("Caminho invalido");
-        //    }
-        //    try
-        //    {
-        //        Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
-        //        BinaryFormatter b = new BinaryFormatter();
-        //        materials = (List<Material>)b.Deserialize(s);
-        //        s.Close();
-        //        return true;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        throw new Exception("Algo aconteceu ");
-        //    }
-
-        //}
-
-        internal List<Material> GetDataToSave()
-        {
-            return materials;
-        }
         #endregion
 
         #region Destructor

@@ -59,6 +59,7 @@ namespace Data_Tier
 
         internal List<Employee> EmployeesD
         {
+            get { return employees; }
             set { employees = value; }
         }
         #endregion
@@ -173,11 +174,6 @@ namespace Data_Tier
             {
                 throw new ConfigurationErrorException("Erro ao carregar os dados no arquivo", ex);
             }
-        }
-
-        internal List<Employee> GetDataToSave() 
-        {
-            return employees;
         }
         #endregion
 

@@ -48,6 +48,7 @@ namespace Data_Tier
 
         internal Dictionary<int, List<int>> ClientsDS
         {
+            get { return clients; }
             set { clients = value; }
         }
         #endregion
@@ -141,13 +142,6 @@ namespace Data_Tier
                 throw new Exception("Algo aconteceu ");
             }
         }
-
-        internal Dictionary<int, List<int>> GetDataToSave()
-        {
-            return clients;
-        }
-
-
         #endregion
 
         #region Destructor

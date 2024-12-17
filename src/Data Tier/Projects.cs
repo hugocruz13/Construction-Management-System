@@ -1,4 +1,4 @@
-﻿ /*
+﻿/*
 *	<copyright file="Projects.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
@@ -50,6 +50,7 @@ namespace Data_Tier
         internal List<Project> ProjectsD
         {
             set { projects = value; }
+            get { return projects; }
         }
         #endregion
 
@@ -104,66 +105,7 @@ namespace Data_Tier
             return false;
         }
 
-        public bool Save(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
 
-            try
-            {
-                Stream fs = new FileStream(path, FileMode.Create);
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                binaryFormatter.Serialize(fs, projects);
-                fs.Close();
-                projects.Clear();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
-        }
-
-
-        public bool Load(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-            try
-            {
-                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
-                BinaryFormatter b = new BinaryFormatter();
-                projects = (List<Project>)b.Deserialize(s);
-                s.Close();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
-        }
-
-        public bool SaveDataProjects()
-        {
-            ClientsService.Instance.Save(@"C:\data\ClientsService.dat");
-            EmployeesService.Instance.Save(@"C:\data\EmployeesService.dat");
-            MaterialService.Instance.Save(@"C:\data\MaterialService.dat");
-            return true;
-        }
-
-        public bool LoadDataProjects() 
-        {
-            ClientsService.Instance.Load(@"C:\data\ClientsService.dat");
-            EmployeesService.Instance.Load(@"C:\data\EmployeesService.dat");
-            MaterialService.Instance.Load(@"C:\data\MaterialService.dat");
-            return true;
-        }
 
         #region Clients
         public bool AddClient(int idProject, int idClient)
@@ -172,7 +114,7 @@ namespace Data_Tier
             return r;
         }
 
-        public bool RemoveClient(int idProject, int idClient) 
+        public bool RemoveClient(int idProject, int idClient)
         {
             bool r = ClientsService.Instance.RemoveClient(idProject, idClient);
             return r;
