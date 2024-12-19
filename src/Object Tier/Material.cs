@@ -7,47 +7,39 @@
 *	<description>Material class represents a material with information such as name and unit price.</description>
 **/
 using System;
-using System.Runtime.Serialization;
 
 namespace Object_Tier
 {
     /// <summary>
-    /// The class <c>Material</c> represents a material used in processes, 
-    /// with attributes such as ID, name and unit price. The ID is automatically 
-    /// generated, and the unit price is validated to ensure it is positive.
+    /// Represents a material with ID, name, unit price, and registration date.
     /// </summary>
-    /// <remarks>
-    /// The class provides properties to access and modify the attributes of a material,
-    /// as well as a method to check the equality of two materials based on the name.
-    /// </remarks>
-    /// <example>
-    /// Example of use
-    /// <code>
-    /// Material mat = new Material("Cimento", 4.80)
-    /// </code>
-    /// </example>
     [Serializable]
     public class Material : IComparable<Material>
     {
         #region Attributes
+
         /// <summary>
-        /// Unique material identifier.
+        /// Stores the ID of the material.
         /// </summary>
         int id;
 
         /// <summary>
-        /// Name of the material.
+        /// Stores the name of the material.
         /// </summary>
         string name;
 
         /// <summary>
-        /// Unit price of the material.
+        /// Stores the unit price of the material.
         /// </summary>
         double unitPrice;
 
-        DateTime lastRegiste;
         /// <summary>
-        /// Static counter to assign unique IDs to materials.
+        ///  Stores the last registration date of the material.
+        /// </summary>
+        DateTime lastRegiste;
+
+        /// <summary>
+        /// Static counter to generate unique material IDs. Starts at 900.
         /// </summary>
         [NonSerialized]
         static int materialIdCounter = 900;
@@ -57,24 +49,16 @@ namespace Object_Tier
 
         #region Properties
         /// <summary>
-        /// Returns the ID of the Material
+        /// Gets the ID of the material. Read-only.
         /// </summary>
-        /// <value>The material ID.</value>
-        /// <permission>
-        /// Public Access (read only).
-        /// </permission>
         public int Id
         {
             get { return id; }
         }
 
         /// <summary>
-        /// Gets or set the name of the material.
+        /// Gets or sets the name of the material.
         /// </summary>
-        /// <value>Material name.</value>
-        /// <permission>
-        /// Public Access
-        /// </permission>
         public string Name
         {
             set { name = value; }
@@ -82,13 +66,9 @@ namespace Object_Tier
         }
 
         /// <summary>
-        /// Get or set the unit price of the material. 
-        /// The price must be greater than zero.
+        /// Gets or sets the unit price of the material.
+        /// The value must be greater than zero.
         /// </summary>
-        /// <value>Unit price of the material.</value>
-        /// <permission>
-        /// Public Access
-        /// </permission>
         public double UnitPrice
         {
             set
@@ -101,7 +81,10 @@ namespace Object_Tier
             get { return unitPrice; }
         }
 
-        public DateTime LastRegiste 
+        /// <summary>
+        /// Gets or sets the last registration date of the material.
+        /// </summary>
+        public DateTime LastRegiste
         {
             set { lastRegiste = value; }
             get { return lastRegiste; }
@@ -111,17 +94,11 @@ namespace Object_Tier
         #region Constructors
 
         /// <summary>
-        /// Constructor that initializes a material with the name and unit price.
-        /// The ID is assigned automatically with the static counter.
+        /// Initializes a new instance of the Material class with a name and unit price.
+        /// Automatically assigns a unique ID.
         /// </summary>
-        /// <param name="name">Name of the material.</param>
-        /// <param name="price">Unit price of the material.</param>
-        /// <remarks>
-        ///  The ID is assigned automatically and generated based on the static counter <c>materialIdCounter</c>
-        /// </remarks>
-        /// <permission>
-        /// Public Access
-        /// </permission>
+        /// <param name="name">The name of the material.</param>
+        /// <param name="price">The unit price of the material.</param>
         public Material(string name, double price)
         {
             id = materialIdCounter++;
@@ -133,16 +110,16 @@ namespace Object_Tier
         #endregion
 
         #region Overrides
+
         /// <summary>
         /// Determines whether the specified object is equal to the current material.
+        /// Materials are equal if their name and unit price match.
         /// </summary>
         /// <param name="obj">The object to compare with the current material.</param>
-        /// <returns>
-        /// <c>true</c> if the specified object is equal to the current material; otherwise, <c>false</c>.
-        /// </returns>
+        /// <returns>True if the objects are equal; otherwise, false.</returns>
         public override bool Equals(object obj)
         {
-            if (obj ==null)
+            if (obj == null)
             {
                 return false;
             }
@@ -160,6 +137,10 @@ namespace Object_Tier
             return false;
         }
 
+        /// <summary>
+        /// Returns a string representation of the material, including ID, name, and unit price.
+        /// </summary>
+        /// <returns>A string representation of the material.</returns>
         public override string ToString()
         {
             return Id + " " + Name + " " + UnitPrice;
@@ -167,11 +148,24 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
+
+        /// <summary>
+        /// Creates a new Material instance.
+        /// </summary>
+        /// <param name="name">The name of the material.</param>
+        /// <param name="price">The unit price of the material.</param>
+        /// <returns>A new Material object.</returns>
         public static Material CreateMaterial(string name, double price)
         {
             return new Material(name, price);
         }
 
+        /// <summary>
+        /// Checks if two materials are equal using the "-" operator.
+        /// </summary>
+        /// <param name="material1">The first material.</param>
+        /// <param name="material2">The second material.</param>
+        /// <returns>True if the materials are equal; otherwise, false.</returns>
         public static bool operator -(Material material1, Material material2)
         {
             if (material1.Equals(material2))
@@ -182,24 +176,35 @@ namespace Object_Tier
             return false;
         }
 
+        /// <summary>
+        /// Checks if two materials are not equal using the "+" operator.
+        /// </summary>
+        /// <param name="material1">The first material.</param>
+        /// <param name="material2">The second material.</param>
+        /// <returns>True if the materials are not equal; otherwise, false.</returns>
         public static bool operator +(Material material1, Material material2)
         {
             return !(material1 - material2);
         }
 
+        /// <summary>
+        /// Compares the current material to another material based on their name.
+        /// </summary>
+        /// <param name="material">The material to compare to.</param>
+        /// <returns>A value indicating the relative order of the materials.</returns>
         public int CompareTo(Material material)
         {
             return Name.CompareTo(material.Name);
         }
 
-        [OnDeserialized]
-        public void Colocaigual(StreamingContext context)
+        /// <summary>
+        /// Increments the static material ID counter.
+        /// </summary>
+        /// <returns>True after incrementing the counter.</returns>
+        public static bool getNextMaterialId()
         {
-            if (Id >= materialIdCounter)
-            {
-                materialIdCounter = Id + 1;
-
-            }
+            materialIdCounter++;
+            return true;
         }
         #endregion
 

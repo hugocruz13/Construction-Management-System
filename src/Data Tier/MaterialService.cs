@@ -7,77 +7,97 @@
 *	<description></description>
 **/
 using CustomExceptions;
-using Data_Tier;
 using Object_Tier;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Data_Layer
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: hugoc
-    /// Created on: 12/10/2024 4:23:55 PM
+    /// Class for managing materials used in a project.
     /// </summary>
-    /// <remarks></remarks>
-    /// <example></example>
     [Serializable]
     class MaterialService
     {
         #region Attributes
-        static MaterialService instance;
-        static Dictionary<int, List<MaterialQuantity>> use;
+
+        /// <summary>
+        /// List of materials used in the project.
+        /// </summary>
+        List<MaterialQuantity> use;
         #endregion
 
         #region Methods
 
-        #region Properties
-        public static MaterialService Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new MaterialService();
-                }
-
-                return instance;
-            }
-        }
-
-        internal Dictionary<int, List<MaterialQuantity>> MaterialDS
-        {
-            set { use = value; }
-            get { return use; }
-        }
-        #endregion
-
         #region Constructors
 
         /// <summary>
-        /// The default Constructor.
+        /// Initializes a new instance of the MaterialService class.
         /// </summary>
-        protected MaterialService()
+        public MaterialService()
         {
-            use = new Dictionary<int, List<MaterialQuantity>>(11);
+            use = new List<MaterialQuantity>(5);
         }
 
         #endregion
 
         #region OtherMethods
 
-        public bool AddMaterial(int idProject, MaterialQuantity material)
+        /// <summary>
+        /// Finds the material in the list of used materials.
+        /// </summary>
+        /// <param name="material">The material to find.</param>
+        /// <returns>The material if found, otherwise null.</returns>
+        MaterialQuantity FindMaterial(MaterialQuantity material)
         {
-            if (!use.ContainsKey(idProject))
+            foreach (MaterialQuantity materialQ in use)
             {
-                use[idProject] = new List<MaterialQuantity>(5);
+                if (ExistExistEmployee(material))
+                {
+                    return materialQ;
+                }
             }
 
-            use[idProject].Add(material);
-            return true;
+            return null;
+        }
+
+        /// <summary>
+        /// Checks if the specified material exists in the list of used materials.
+        /// </summary>
+        /// <param name="material">The material to check for existence.</param>
+        /// <returns>True if the material exists in the list, otherwise false.</returns>
+        public bool ExistExistEmployee(MaterialQuantity material)
+        {
+            return use.Contains(material);
+        }
+
+        /// <summary>
+        /// Adds a material to the list of used materials. If the material already exists, its quantity is updated.
+        /// </summary>
+        /// <param name="material">The material to add or update.</param>
+        /// <returns>True if the material was added or updated successfully; otherwise, false.</returns>
+        /// <exception cref="ConfigurationErrorException">Thrown if an error occurs during material addition.</exception>
+        public bool AddMaterial(MaterialQuantity material)
+        {
+            try
+            {
+                if (!ExistExistEmployee(material))
+                {
+                    use.Add(material);
+                    return true;
+                }
+                else
+                {
+                    MaterialQuantity materialQuantity = FindMaterial(material);
+                    materialQuantity.Quantity += material.Quantity;
+                    materialQuantity.Date = DateTime.Now;
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ConfigurationErrorException("814", ex);
+            }
         }
         #endregion
 

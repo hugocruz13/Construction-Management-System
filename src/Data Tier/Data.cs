@@ -6,56 +6,108 @@
 *   <date>12/17/2024 5:09:50 PM</date>
 *	<description></description>
 **/
-using Data_Layer;
 using System;
 using System.Collections.Generic;
 
 using Object_Tier;
+using CustomExceptions;
 
 namespace Data_Tier
 {
-
+    /// <summary>
+    /// The `Data` class serves as a centralized data manager for the application. 
+    /// It collects data from various parts of the system, organizes it into lists, 
+    /// and provides methods for saving to and loading from a binary file.
+    /// </summary>
     [Serializable]
     public class Data
     {
+        /// <summary>
+        /// List of clients in the system.
+        /// </summary>
+        List<Client> clients = null;
 
-        List<Client> clients;
-        Dictionary<int, List<int>> clientsService;
-        List<Employee> employees;
-        Dictionary<int, List<int>> employeesService;
-        List<Material> materials;
-        List<MaterialQuantity> inventory;
-        Dictionary<int, List<MaterialQuantity>> materialService;
-        List<Project> projects;
+        /// <summary>
+        /// List of employees in the system.
+        /// </summary>
+        List<Employee> employees = null;
+
+        /// <summary>
+        ///List of materials available in the system.
+        /// </summary>
+        List<Material> materials = null;
+
+        /// <summary>
+        /// List of current material inventory, including quantities and dates.
+        /// </summary>
+        List<MaterialQuantity> inventory = null;
 
 
+        /// <summary>
+        /// List of projects managed in the system.
+        /// </summary>
+        List<ProjectData> projects;
+
+        /// <summary>
+        /// Collects data from various system modules and stores it in the class
+        /// </summary>
+        /// <returns>Returns `true` if the data is collected successfully.</returns>
+        /// <exception cref="ConfigurationErrorException">Thrown if data collection fails.</exception>
         public bool CollectData()
         {
-            clients = Clients.Instance.ClientsD;
-            clientsService = ClientsService.Instance.ClientsDS;
-            employees = Employees.Instance.EmployeesD;
-            employeesService = EmployeesService.Instance.EmployeesDS;
-            materials = Materials.Instance.MaterialD;
-            inventory = MaterialInventory.Instance.InventoryD;
-            materialService = MaterialService.Instance.MaterialDS;
-            projects = Projects.Instance.ProjectsD;
-            return true;
+            try
+            {
+                clients = Clients.Instance.ClientsD;
+                employees = Employees.Instance.EmployeesD;
+                materials = Materials.Instance.MaterialD;
+                inventory = MaterialInventory.Instance.InventoryD;
+                projects = Projects.Instance.ProjectsD;
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new ConfigurationErrorException("700");
+            }
         }
 
+        /// <summary>
+        /// Updates the system modules with the data stored in the class's lists.
+        /// </summary>
+        /// <returns>Returns `true` if the data is successfully updated.</returns>
+        /// <exception cref="Exception">Thrown if updating data fails.</exception>
         public bool PutData()
         {
-            Clients.Instance.ClientsD = clients;
-            ClientsService.Instance.ClientsDS = clientsService;
-            Employees.Instance.EmployeesD = employees;
-            EmployeesService.Instance.EmployeesDS = employeesService;
-            MaterialInventory.Instance.InventoryD = inventory;
-            Materials.Instance.MaterialD = materials;
-            MaterialService.Instance.MaterialDS = materialService;
-            Projects.Instance.ProjectsD = projects;
+            try
+            {
+                Clients.Instance.ClientsD = clients;
+                Employees.Instance.EmployeesD = employees;
+                MaterialInventory.Instance.InventoryD = inventory;
+                Materials.Instance.MaterialD = materials;
+                Projects.Instance.ProjectsD = projects;
+                SetCounterEqual();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                throw new Exception("701");
+            }
+
+        }
+
+        /// <summary>
+        /// Synchronizes ID counters across all modules to maintain consistency.
+        /// </summary>
+        /// <returns>Returns `true` after synchronization.</returns>
+        bool SetCounterEqual()
+        {
+            Clients.Instance.SetCounterEqualClient();
+            Employees.Instance.SetCounterEqualEmployee();
+            Materials.Instance.SetCounterEqualMaterial();
+            Projects.Instance.SetCounterEqualProjects();
 
             return true;
         }
-
 
         #region Destructor
         /// <summary>
@@ -65,10 +117,5 @@ namespace Data_Tier
         {
         }
         #endregion
-
-
-
     }
-
-
 }

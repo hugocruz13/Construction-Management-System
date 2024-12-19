@@ -11,28 +11,19 @@ using System;
 namespace Object_Tier
 {
     /// <summary>
-    /// Represents a person with basic attributes like Id and Name.
-    /// This class provides access and modification to a person’s attributes.
+    /// Represents a person with an ID and a name.
     /// </summary>
-    /// <remarks>
-    /// The <c>Person</c> class is used to store a person’s identifying information.
-    /// </remarks>
-    /// <example>
-    /// Example of use
-    /// <code>
-    /// Name = name;
-    /// </code>
-    /// </example>
     [Serializable]
     public class Person
     {
         #region Attributes
         /// <summary>
-        /// Unique identifier of the person.
+        /// The ID of the person.
         /// </summary>
         int id;
+
         /// <summary>
-        /// Name of the person
+        /// The ID of the person.
         /// </summary>
         string name;
         #endregion
@@ -40,52 +31,47 @@ namespace Object_Tier
         #region Methods
 
         #region Properties
+
         /// <summary>
-        /// Gets or sets the unique identifier of the person.
+        /// Gets the ID of the person.
         /// </summary>
-        /// <value>The unique id of the person.</value>
-        /// <remarks>This value is used to uniquely identify the person.</remarks>
-        /// <permission>
-        /// Public Access
-        /// </permission>
-        public int Id 
+        public int Id
         {
             get { return id; }
         }
 
         /// <summary>
-        /// Gets or sets the name of the person..
+        /// Gets or sets the name of the person.
         /// </summary>
-        /// <value>The name of the person.</value>
-        /// <remarks>This value contains the full name of the person.</remarks>
-        /// <permission>
-        /// Public Access
-        /// </permission>
         public string Name
         {
-            set { name = value; }
+            set { name = stringFormatada(value); }
             get { return name; }
         }
         #endregion
 
         #region Constructors
+
         /// <summary>
-        /// Initializes a new instance of the <c>Person</c> class with the specified ID and name.
+        /// Initializes a new instance of the Person class with an ID and a name.
+        /// The name is automatically formatted.
         /// </summary>
-        /// <remarks>
-        /// This constructor is <c>protected</c> to prevent direct instantiation of the <c>Person</c> class,
-        /// enforcing that it can only be instantiated through derived classes.
-        /// </remarks>
-        /// <param name="id">The unique identifier for the person.</param>
+        /// <param name="id">The ID of the person.</param>
         /// <param name="name">The name of the person.</param>
-        protected Person(int id, string name) 
+        protected Person(int id, string name)
         {
             this.id = id;
-            Name = stringFormatada(name);
+            Name = name;
         }
         #endregion
 
         #region OtherMethods
+
+        /// <summary>
+        /// Formats a string to be uppercase and trimmed.
+        /// </summary>
+        /// <param name="name">The string to format</param>
+        /// <returns>The formatted string.</returns>
         private string stringFormatada(string name)
         {
             return name.ToUpper().Trim();

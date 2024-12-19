@@ -8,139 +8,97 @@
 **/
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 using CustomExceptions;
-using Object_Tier;
 
 namespace Data_Tier
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: hugoc
-    /// Created on: 12/5/2024 4:38:45 PM
+    /// Service class that manages clients associated with a project.
     /// </summary>
-    /// <remarks></remarks>
-    /// <example></example>
     [Serializable]
     internal class ClientsService
     {
         #region Attributes
-        static ClientsService instance;
-        static Dictionary<int, List<int>> clients;
+
+        /// <summary>
+        /// List of client IDs associated with a project.
+        /// </summary>
+        List<int> clients;
         #endregion
 
         #region Methods
 
-        #region Properties
-        public static ClientsService Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new ClientsService();
-                }
-
-                return instance;
-            }
-        }
-
-        internal Dictionary<int, List<int>> ClientsDS
-        {
-            get { return clients; }
-            set { clients = value; }
-        }
-        #endregion
-
         #region Constructors
 
-        protected ClientsService()
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ClientsService"/> class.
+        /// </summary>
+        public ClientsService()
         {
-            clients = new Dictionary<int, List<int>>(17);
+            clients = new List<int>(5);
         }
 
         #endregion
 
         #region OtherMethods
 
-        public bool ExistClient(int projectId, int clientId)
+        /// <summary>
+        /// Checks if a client is already associated with the project.
+        /// </summary>
+        /// <param name="clientId">The ID of the client to check.</param>
+        /// <returns>True if the client is already associated; otherwise, false.</returns>
+        bool ExistClient(int clientId)
         {
-            return clients[projectId].Contains(clientId);
+            return clients.Contains(clientId);
         }
 
-        public bool AddClient(int projectId, int clientId)
+        /// <summary>
+        /// Adds a client to the list of clients for the project.
+        /// </summary>
+        /// <param name="clientId">The ID of the client to add.</param>
+        /// <returns>True if the client was added successfully; otherwise, false.</returns>
+        /// <exception cref="ConfigurationErrorException">Thrown if an error occurs during the addition of the client.</exception>
+        public bool AddClient(int clientId)
         {
-            if (!clients.ContainsKey(projectId))
+            try
             {
-                clients[projectId] = new List<int>(5);
+                if (!ExistClient(clientId))
+                {
+                    clients.Add(clientId);
+                    return true;
+                }
             }
-
-            if (!ExistClient(projectId, clientId))
+            catch (Exception ex)
             {
-                clients[projectId].Add(clientId);
-                return true;
+                throw new ConfigurationErrorException("806", ex);
             }
 
             return false;
         }
 
-        public bool RemoveClient(int projectId, int clientId)
+        /// <summary>
+        /// Removes a client from the list of clients for the project.
+        /// </summary>
+        /// <param name="clientId">The ID of the client to remove.</param>
+        /// <returns>True if the client was removed successfully; otherwise, false.</returns>
+        /// <exception cref="ConfigurationErrorException">Thrown if an error occurs during the removal of the client.</exception>
+        public bool RemoveClient(int clientId)
         {
-            if (clients.ContainsKey(projectId))
+            try
             {
-                if (ExistClient(projectId, clientId))
+                if (ExistClient(clientId))
                 {
-                    clients[projectId].Remove(clientId);
+                    clients.Remove(clientId);
                     return true;
                 }
             }
 
+            catch (Exception ex)
+            {
+                throw new ConfigurationErrorException("807", ex);
+            }
+
             return false;
-        }
-
-        public bool Save(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-
-            try
-            {
-                Stream fs = new FileStream(path, FileMode.Create);
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                binaryFormatter.Serialize(fs, clients);
-                fs.Close();
-                clients.Clear();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
-        }
-
-
-        public bool Load(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-            try
-            {
-                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
-                BinaryFormatter b = new BinaryFormatter();
-                clients = (Dictionary<int, List<int>>)b.Deserialize(s);
-                s.Close();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
         }
         #endregion
 

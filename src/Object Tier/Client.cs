@@ -7,29 +7,25 @@
 *	<description>This file is focused on creating client objects.</description>
 */
 using System;
-using System.Runtime.Serialization;
 
 namespace Object_Tier
 {
     /// <summary>
-    /// The <c>Client</c> class allows you to create a client object
-    /// with basic information such as id, name and contact information.
+    /// Represents a client in the system, inheriting from the Person class.
     /// </summary>
-    /// <remarks>
-    /// This class inherits from <see cref="Person"/> and provides methods to access and modify 
-    /// the client attributes, and assign an Id automatically using a static counter.
-    /// </remarks>
-    /// <example>
-    /// Example of use
-    /// <code>
-    /// Client c = new Client("Maria Rodrigues", "9323423553")
-    /// </code>
-    /// </example>
     [Serializable]
-    public class Client : Person, IComparable<Client>
+    public class Client : Person
     {
         #region Attributes
+
+        /// <summary>
+        /// Stores the contact information of the client.
+        /// </summary>
         int contactInfo;
+
+        /// <summary>
+        /// Static counter to generate unique client IDs. Starts at 500.
+        /// </summary>
         [NonSerialized]
         static int clientIdCounter = 500;
         #endregion
@@ -38,12 +34,9 @@ namespace Object_Tier
 
         #region Properties
         /// <summary>
-        /// Gets or sets the customer’s contact information.
+        /// Gets or sets the client’s contact information.
+        /// One contact can only have 9 numbers
         /// </summary>
-        /// <value>The customer’s contact information</value>
-        /// <permission>
-        /// Public Access.
-        /// </permission>
         public int ContactInfo
         {
             set
@@ -58,6 +51,13 @@ namespace Object_Tier
         #endregion
 
         #region Constructors
+
+        /// <summary>
+        ///  Initializes a new instance of the Client class with the specified name and contact.
+        ///  Automatically assigns a unique ID.
+        /// </summary>
+        /// <param name="name">The name of the client.</param>
+        /// <param name="contact">The contact information of the client.</param>
         public Client(string name, int contact) : base(clientIdCounter++, name) //Send to the construct person.
         {
             ContactInfo = contact;
@@ -65,6 +65,13 @@ namespace Object_Tier
         #endregion
 
         #region Overrides
+
+        /// <summary>
+        ///  Determines whether the specified object is equal to the current client.
+        ///  Clients are considered equal if their contact information matches.
+        /// </summary>
+        /// <param name="obj">The object to compare with the current client.</param>
+        /// <returns>True if the objects are equal; otherwise, false.</returns>
         public override bool Equals(object obj)
         {
             if (obj == null)
@@ -85,6 +92,10 @@ namespace Object_Tier
             return false;
         }
 
+        /// <summary>
+        /// Returns a string representation of the client, including ID, name, and contact.
+        /// </summary>
+        /// <returns>A string representation of the client.</returns>
         public override string ToString()
         {
             return Id + " " + Name + " " + ContactInfo;
@@ -92,11 +103,24 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
+
+        /// <summary>
+        /// Creates a new Client instance.
+        /// </summary>
+        /// <param name="name">The name of the client.</param>
+        /// <param name="contact">The contact information of the client.</param>
+        /// <returns>A new Client instance.</returns>
         public static Client CreateClient(string name, int contact)
         {
             return new Client(name, contact);
         }
 
+        /// <summary>
+        /// Checks if two clients are equal using the "-" operator.
+        /// </summary>
+        /// <param name="client1">The first client.</param>
+        /// <param name="client2">The second client.</param>
+        /// <returns>True if the clients are equal; otherwise, false.</returns>
         public static bool operator -(Client client1, Client client2)
         {
             if (client1.Equals(client2))
@@ -107,24 +131,24 @@ namespace Object_Tier
             return false;
         }
 
+        /// <summary>
+        /// Checks if two clients are not equal using the "+" operator.
+        /// </summary>
+        /// <param name="client1">The first client.</param>
+        /// <param name="client2">The second client.</param>
+        /// <returns>True if the clients are not equal; otherwise, false.</returns>
         public static bool operator +(Client client1, Client client2)
         {
             return !(client1 - client2);
         }
 
-        public int CompareTo(Client client)
+        /// <summary>
+        /// Increments the static client ID counter.
+        /// </summary>
+        public static bool getNextClientId()
         {
-            return Id.CompareTo(client.Id);
-        }
-
-        [OnDeserialized]
-        public void Colocaigual(StreamingContext context)
-        {
-            if (Id >= clientIdCounter)
-            {
-                clientIdCounter = Id + 1;
-
-            }
+            clientIdCounter++;
+            return true;
         }
         #endregion
 

@@ -7,139 +7,96 @@
 *	<description></description>
 **/
 using CustomExceptions;
-using Object_Tier;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Data_Tier
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: hugoc
-    /// Created on: 12/5/2024 5:26:04 PM
+    /// Class that manages employees associated with projects.
     /// </summary>
-    /// <remarks></remarks>
-    /// <example></example>
     [Serializable]
     class EmployeesService
     {
         #region Attributes
-        static EmployeesService instance;
-        static Dictionary<int, List<int>> employees;
+
+        /// <summary>
+        /// List of employee IDs associated with a project.
+        /// </summary>
+        List<int> employees;
         #endregion
 
         #region Methods
 
-        #region Properties
-        public static EmployeesService Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new EmployeesService();
-                }
-
-                return instance;
-            }
-        }
-
-        internal Dictionary<int, List<int>> EmployeesDS
-        {
-            get { return employees; }
-            set { employees = value; }
-        }
-        #endregion
-
         #region Constructors
-        protected EmployeesService()
+        /// <summary>
+        /// Initializes a new instance of the EmployeesService class.
+        /// </summary>
+        public EmployeesService()
         {
-            employees = new Dictionary<int, List<int>>(17);
+            employees = new List<int>(5);
         }
 
         #endregion
 
         #region OtherMethods
-        public bool ExistExistEmployee(int projectId, int employeeId)
+
+        /// <summary>
+        /// Checks if an employee exists in the list of employees for the project.
+        /// </summary>
+        /// <param name="employeeId">The ID of the employee to check.</param>
+        /// <returns>True if the employee exists in the list; otherwise, false.</returns>
+        public bool ExistExistEmployee(int employeeId)
         {
-            return employees[projectId].Contains(employeeId);
+            return employees.Contains(employeeId);
         }
 
-        public bool AddEmployee(int projectId, int employeeId)
+        /// <summary>
+        /// Adds an employee to the list of employees for the project.
+        /// </summary>
+        /// <param name="employeeId">The ID of the employee to add.</param>
+        /// <returns>True if the employee was added successfully; otherwise, false.</returns>
+        /// <exception cref="ConfigurationErrorException">Thrown if an error occurs during the addition of the employee.</exception>
+        public bool AddEmployee(int employeeId)
         {
-            if (!employees.ContainsKey(projectId))
+            try
             {
-                employees[projectId] = new List<int>(5);
-            }
+                if (!ExistExistEmployee(employeeId))
+                {
+                    employees.Add(employeeId);
+                    return true;
+                }
 
-            if (!ExistExistEmployee(projectId, employeeId))
+            }
+            catch (Exception ex)
             {
-                employees[projectId].Add(employeeId);
-                return true;
+                throw new ConfigurationErrorException("810", ex);
             }
-
             return false;
         }
 
-        public bool RemoveEmployee(int projectId, int employeeId)
+        /// <summary>
+        /// Removes an employee from the list of employees for the project.
+        /// </summary>
+        /// <param name="employeeId">The ID of the employee to remove.</param>
+        /// <returns>True if the employee was removed successfully; otherwise, false.</returns>
+        /// <exception cref="ConfigurationErrorException">Thrown if an error occurs during the removal of the employee.</exception>
+        public bool RemoveEmployee(int employeeId)
         {
-            if (employees.ContainsKey(projectId))
+            try
             {
-                if (ExistExistEmployee(projectId, employeeId))
+                if (ExistExistEmployee(employeeId))
                 {
-                    employees[projectId].Remove(employeeId);
+                    employees.Remove(employeeId);
                     return true;
                 }
             }
+            catch (Exception ex)
+            {
+                throw new ConfigurationErrorException("811", ex);
+            }
 
             return false;
-        }
-
-        public bool Save(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-
-            try
-            {
-                Stream fs = new FileStream(path, FileMode.Create);
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                binaryFormatter.Serialize(fs, employees);
-                fs.Close();
-                employees.Clear();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
-        }
-
-
-        public bool Load(string path)
-        {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ConfigurationErrorException("Caminho invalido");
-            }
-            try
-            {
-                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
-                BinaryFormatter b = new BinaryFormatter();
-                employees = (Dictionary<int, List<int>>)b.Deserialize(s);
-                s.Close();
-                return true;
-            }
-            catch (Exception)
-            {
-                throw new Exception("Algo aconteceu ");
-            }
-
         }
         #endregion
 

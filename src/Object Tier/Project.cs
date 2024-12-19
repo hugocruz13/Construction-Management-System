@@ -26,12 +26,16 @@ namespace Object_Tier
         Completed = 4  //Complet
     }
 
+    /// <summary>
+    /// Represents a project with information about its status, start date, end date, and ID management.    
+    /// </summary>
     [Serializable]
-    public class Project : IComparable<Project>
+    public class Project 
     {
         #region Attributes
+
         /// <summary>
-        /// Unique project ID.
+        /// Project ID.
         /// </summary>
         int idProject;
 
@@ -41,17 +45,17 @@ namespace Object_Tier
         Status status;
 
         /// <summary>
-        /// Project start date.
+        /// Start date of the project.
         /// </summary>
         DateTime startDate;
 
         /// <summary>
-        /// Project end date.
+        /// End date of the project.
         /// </summary>
         DateTime endDate;
 
         /// <summary>
-        /// 
+        /// Static counter for generating unique project IDs.
         /// </summary>
         [NonSerialized]
         static int projectIdCounter = 300;
@@ -60,8 +64,9 @@ namespace Object_Tier
         #region Methods
 
         #region Properties
+
         /// <summary>
-        /// Property to access or modify the project ID.
+        /// Gets or sets the project ID.
         /// </summary>
         public int Id
         {
@@ -70,7 +75,7 @@ namespace Object_Tier
         }
 
         /// <summary>
-        /// Property to access or modify the project status.
+        /// Gets or sets the project status.
         /// </summary>
         public Status Status
         {
@@ -79,7 +84,7 @@ namespace Object_Tier
         }
 
         /// <summary>
-        /// Gets the start date of the period or event.
+        /// Gets the start date of the project.
         /// </summary>
         public DateTime StartDate
         {
@@ -87,7 +92,7 @@ namespace Object_Tier
         }
 
         /// <summary>
-        /// Gets or sets the end date of the period or event.
+        /// Gets or sets the end date of the project.
         /// </summary>
         public DateTime EndDate
         {
@@ -98,6 +103,12 @@ namespace Object_Tier
         #endregion
 
         #region Constructors
+
+        /// <summary>
+        /// Initializes a new instance of the Project class with a specified status.
+        /// The start date is set to the current date, and the end date is initialized to the default value.
+        /// </summary>
+        /// <param name="status">The initial status of the project.</param>
         public Project(Status status)
         {
             Id = projectIdCounter++;
@@ -109,6 +120,12 @@ namespace Object_Tier
         #endregion
 
         #region Overrides
+
+        /// <summary>
+        /// Determines whether the specified object is equal to the current project.
+        /// </summary>
+        /// <param name="obj">The object to compare with the current project.</param>
+        /// <returns>True if the objects are equal; otherwise, false.</returns>
         public override bool Equals(object obj)
         {
             if (obj == null)
@@ -129,6 +146,10 @@ namespace Object_Tier
             return false;
         }
 
+        /// <summary>
+        /// Returns a string representation of the project.
+        /// </summary>
+        /// <returns>A string containing the project ID, status, start date, and end date.</returns>
         public override string ToString()
         {
             return Id + " " + Status + " " +StartDate + " " + EndDate;
@@ -136,12 +157,24 @@ namespace Object_Tier
         #endregion
 
         #region OtherMethods
-        public static Project CreateProject(Status st)
+
+        /// <summary>
+        /// Creates a new project with the specified status.
+        /// </summary>
+        /// <param name="status">The status of the new project.</param>
+        /// <returns>A new Project instance.</returns>
+        public static Project CreateProject(Status status)
         {
-            return new Project(st);
+            return new Project(status);
         }
 
 
+        /// <summary>
+        /// Compares two projects for equality based on their properties.
+        /// </summary>
+        /// <param name="project1">The first project.</param>
+        /// <param name="project2">The second project.</param>
+        /// <returns>True if the projects are equal; otherwise, false.</returns>
         public static bool operator -(Project project1, Project project2)
         {
             if (project1.Equals(project2))
@@ -152,25 +185,27 @@ namespace Object_Tier
             return false;
         }
 
+        /// <summary>
+        /// Determines whether two projects are not equal.
+        /// </summary>
+        /// <param name="project1">The first project.</param>
+        /// <param name="project2">The second project.</param>
+        /// <returns>True if the projects are not equal; otherwise, false.</returns>
         public static bool operator +(Project project1, Project project2)
         {
             return !(project1 - project2);
         }
 
-        public int CompareTo(Project project)
+        /// <summary>
+        /// Increments the static project ID counter.
+        /// </summary>
+        /// <returns>True after incrementing the counter.</returns>
+        public static bool getNextProjectId()
         {
-            return Id.CompareTo(project.Id);
+            projectIdCounter++;
+            return true;
         }
 
-        [OnDeserialized]
-        public void Colocaigual(StreamingContext context)
-        {
-            if (Id >= projectIdCounter)
-            {
-                projectIdCounter = Id + 1;
-
-            }
-        }
         #endregion
 
         #region Destructor
