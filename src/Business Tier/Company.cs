@@ -52,6 +52,8 @@ namespace Business_Tier
                 BinaryFormatter binaryFormatter = new BinaryFormatter();
                 binaryFormatter.Serialize(fs, data);
                 fs.Close();
+
+
                 return true;
             }
             catch (Exception ex)
@@ -111,6 +113,11 @@ namespace Business_Tier
         /// </exception>
         public static int RegisterClient(Client client)
         {
+            if (client.Name == string.Empty)
+            {
+                throw new ConfigurationErrorException("116");
+            }
+
             if (client == null)
             {
                 throw new ConfigurationErrorException("106");
@@ -174,7 +181,7 @@ namespace Business_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("109" + ex);
+                 throw new ConfigurationErrorException("110" + ex);
             }
         }
 
@@ -518,7 +525,7 @@ namespace Business_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("614" + ex);
+                throw new ConfigurationErrorException("618" + ex);
             }
 
         }
@@ -554,7 +561,7 @@ namespace Business_Tier
 
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("616." + ex);
+                throw new ConfigurationErrorException("614." + ex);
             }
 
         }
@@ -622,7 +629,7 @@ namespace Business_Tier
 
             if (Projects.Instance.ProjectExists(project))
             {
-                throw new ConfigurationErrorException("820");
+                throw new ConfigurationErrorException("816");
             }
 
             try

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_i_material_inventory_8cs" kind="file" language="C#">
+    <compoundname>IMaterialInventory.cs</compoundname>
+    <innerclass refid="interface_interface___tier_1_1_i_material_inventory" prot="public">Interface_Tier::IMaterialInventory</innerclass>
+    <innernamespace refid="namespace_interface___tier">Interface_Tier</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_object___tier" kindref="compound">Object_Tier</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_interface___tier" kindref="compound">Interface_Tier</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="interface_interface___tier_1_1_i_material_inventory" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_interface___tier_1_1_i_material_inventory" kindref="compound">IMaterialInventory</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_material_inventory_1a80ab8984d2712428917a593dbcc445a4" kindref="member">AddMaterial</ref>(<ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref><sp/>inventoryQuantity);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_material_inventory_1ace16841dc7fa2387b44bb0d9b7aae463" kindref="member">VerifyMaterialExistence</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idMaterial);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_material_inventory_1ad85731825e0eb3d19fa2d90124efd5ce" kindref="member">VerifyMaterialQuantity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idMaterial,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_material_inventory_1a25c62d5832de047d3918ed12a106c94b" kindref="member">UpdateQuantity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idMaterial,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantityUpdate);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_material_inventory_1a1c16fcc291a090c865e33d9948630887" kindref="member">UseMaterial</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idMaterial,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterialInventory.cs"/>
+  </compounddef>
+</doxygen>

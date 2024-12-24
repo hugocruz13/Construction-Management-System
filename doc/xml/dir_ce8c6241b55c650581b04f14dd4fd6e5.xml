@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_ce8c6241b55c650581b04f14dd4fd6e5" kind="dir">
+    <compoundname>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier</compoundname>
+    <innerdir refid="dir_2349affdaf244cb775286dacac81ee00">C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/obj</innerdir>
+    <innerdir refid="dir_49a800a066b57831e3db9b787196b657">C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/Properties</innerdir>
+    <innerfile refid="_i_clients_8cs">IClients.cs</innerfile>
+    <innerfile refid="_i_employees_8cs">IEmployees.cs</innerfile>
+    <innerfile refid="_i_material_inventory_8cs">IMaterialInventory.cs</innerfile>
+    <innerfile refid="_i_materials_8cs">IMaterials.cs</innerfile>
+    <innerfile refid="_i_projects_8cs">IProjects.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/"/>
+  </compounddef>
+</doxygen>

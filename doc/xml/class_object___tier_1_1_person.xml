@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_object___tier_1_1_person" kind="class" language="C#" prot="public">
+    <compoundname>Object_Tier::Person</compoundname>
+    <derivedcompoundref refid="class_object___tier_1_1_client" prot="public" virt="non-virtual">Object_Tier.Client</derivedcompoundref>
+    <derivedcompoundref refid="class_object___tier_1_1_employee" prot="public" virt="non-virtual">Object_Tier.Employee</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_person_1a500c7dc354663816f9bb79b9d75386db" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Person.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Object_Tier.Person.id</qualifiedname>
+        <briefdescription>
+<para>The ID of the person. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" line="23" column="13" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_person_1a7a36530b7926e89794df2f7850c181a2" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Object_Tier.Person.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Object_Tier.Person.name</qualifiedname>
+        <briefdescription>
+<para>The ID of the person. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" line="28" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_object___tier_1_1_person_1ab0fb4e62e86c8c93d8e24ef1cf14185a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Person.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Object_Tier.Person.Id</qualifiedname>
+        <briefdescription>
+<para>Gets the ID of the person. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" line="38" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_person_1aa130ca80fe53c450b6f780664a591707" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Object_Tier.Person.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Object_Tier.Person.Name</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the name of the person. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" line="46" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_object___tier_1_1_person_1abbc0ba08992f323e498a214ffdd2b636" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Person.Person</definition>
+        <argsstring>(int id, string name)</argsstring>
+        <name>Person</name>
+        <qualifiedname>Object_Tier.Person.Person</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_object___tier_1_1_person" kindref="compound">Person</ref> class with an ID and a name. The name is automatically formatted. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the person.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the person.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" line="61" column="19" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" bodystart="61" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_object___tier_1_1_person_1acf1ae83dc8160d5df38c9c6d4a1ea99f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Object_Tier.Person.stringFormatada</definition>
+        <argsstring>(string name)</argsstring>
+        <name>stringFormatada</name>
+        <qualifiedname>Object_Tier.Person.stringFormatada</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Formats a string to be uppercase and trimmed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to format</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The formatted string.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" line="75" column="24" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_person_1afde4038e71436906831136366dee6a0d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Person.~Person</definition>
+        <argsstring>()</argsstring>
+        <name>~Person</name>
+        <qualifiedname>Object_Tier.Person.~Person</qualifiedname>
+        <briefdescription>
+<para>Destroyer of the <ref refid="class_object___tier_1_1_person" kindref="compound">Person</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" line="85" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" bodystart="85" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a person with an ID and a name. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Object_Tier.Person</label>
+        <link refid="class_object___tier_1_1_person"/>
+      </node>
+      <node id="2">
+        <label>Object_Tier.Client</label>
+        <link refid="class_object___tier_1_1_client"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Object_Tier.Employee</label>
+        <link refid="class_object___tier_1_1_employee"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" line="17" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Person.cs" bodystart="18" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_object___tier_1_1_person_1ab0fb4e62e86c8c93d8e24ef1cf14185a" prot="public" virt="non-virtual"><scope>Object_Tier::Person</scope><name>Id</name></member>
+      <member refid="class_object___tier_1_1_person_1a500c7dc354663816f9bb79b9d75386db" prot="private" virt="non-virtual"><scope>Object_Tier::Person</scope><name>id</name></member>
+      <member refid="class_object___tier_1_1_person_1aa130ca80fe53c450b6f780664a591707" prot="public" virt="non-virtual"><scope>Object_Tier::Person</scope><name>Name</name></member>
+      <member refid="class_object___tier_1_1_person_1a7a36530b7926e89794df2f7850c181a2" prot="private" virt="non-virtual"><scope>Object_Tier::Person</scope><name>name</name></member>
+      <member refid="class_object___tier_1_1_person_1abbc0ba08992f323e498a214ffdd2b636" prot="protected" virt="non-virtual"><scope>Object_Tier::Person</scope><name>Person</name></member>
+      <member refid="class_object___tier_1_1_person_1acf1ae83dc8160d5df38c9c6d4a1ea99f" prot="private" virt="non-virtual"><scope>Object_Tier::Person</scope><name>stringFormatada</name></member>
+      <member refid="class_object___tier_1_1_person_1afde4038e71436906831136366dee6a0d" prot="private" virt="non-virtual"><scope>Object_Tier::Person</scope><name>~Person</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

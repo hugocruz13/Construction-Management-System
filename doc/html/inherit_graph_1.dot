@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="src.Company",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_company.html",tooltip="Represents a company with static attributes for managing clients, material inventory,..."];
+  Node0 [id="Node000000",label="Business_Tier.Company",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_business___tier_1_1_company.html",tooltip="The Enterprise class manages operations related to customers employees, materials and projects...."];
 }

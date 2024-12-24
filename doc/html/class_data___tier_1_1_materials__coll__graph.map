@@ -1,0 +1,5 @@
+<map id="Data_Tier.Materials" name="Data_Tier.Materials">
+<area shape="rect" id="Node000001" title="Singleton class that manages the materials in the system. Allows adding, checking,..." alt="" coords="5,83,165,113"/>
+<area shape="rect" id="Node000002" href="$interface_interface___tier_1_1_i_materials.html" title="Methods to implement in the materials class." alt="" coords="40,5,130,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,51,88,82,82,82,82,51"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Interface_Tier.IEmployees" name="Interface_Tier.IEmployees">
+<area shape="rect" id="Node000001" title="Methods to implement in the employees class." alt="" coords="5,5,211,35"/>
+<area shape="rect" id="Node000002" href="$class_data___tier_1_1_employees.html" title="Singleton class that manages a list of employees. Allows adding, removing, updating and retrieving em..." alt="" coords="21,83,195,113"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,51,111,82,105,82,105,51"/>
+</map>

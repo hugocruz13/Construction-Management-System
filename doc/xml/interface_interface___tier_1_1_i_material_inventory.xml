@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="interface_interface___tier_1_1_i_material_inventory" kind="interface" language="C#" prot="public">
+    <compoundname>Interface_Tier::IMaterialInventory</compoundname>
+    <derivedcompoundref refid="class_data___tier_1_1_material_inventory" prot="public" virt="non-virtual">Data_Tier.MaterialInventory</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_material_inventory_1a80ab8984d2712428917a593dbcc445a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Interface_Tier.IMaterialInventory.AddMaterial</definition>
+        <argsstring>(MaterialQuantity inventoryQuantity)</argsstring>
+        <name>AddMaterial</name>
+        <qualifiedname>Interface_Tier.IMaterialInventory.AddMaterial</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_material_inventory_1aa1e2a8c410200411cfb9c36c77c7106b">AddMaterial</reimplementedby>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>inventoryQuantity</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new material to the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inventoryQuantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material quantity to add to the inventory.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the added material.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the material is null or if any error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterialInventory.cs" line="18" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_material_inventory_1ace16841dc7fa2387b44bb0d9b7aae463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IMaterialInventory.VerifyMaterialExistence</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>VerifyMaterialExistence</name>
+        <qualifiedname>Interface_Tier.IMaterialInventory.VerifyMaterialExistence</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_material_inventory_1aa07d2628caebc320b65db94ec768ac1e">VerifyMaterialExistence</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Verifies if a material exists in the inventory based on the material ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the material exists, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the verification process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterialInventory.cs" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_material_inventory_1ad85731825e0eb3d19fa2d90124efd5ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IMaterialInventory.VerifyMaterialQuantity</definition>
+        <argsstring>(int idMaterial, int quantity)</argsstring>
+        <name>VerifyMaterialQuantity</name>
+        <qualifiedname>Interface_Tier.IMaterialInventory.VerifyMaterialQuantity</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_material_inventory_1a36deed3d8216bf013a48f70a41ffcad7">VerifyMaterialQuantity</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Verifies if there is enough quantity of a material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to check.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of material to check for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if there is enough quantity, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterialInventory.cs" line="37" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_material_inventory_1a25c62d5832de047d3918ed12a106c94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IMaterialInventory.UpdateQuantity</definition>
+        <argsstring>(int idMaterial, int quantityUpdate)</argsstring>
+        <name>UpdateQuantity</name>
+        <qualifiedname>Interface_Tier.IMaterialInventory.UpdateQuantity</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_material_inventory_1a3d349ce4896a0d3a9b46de1000b82cc6">UpdateQuantity</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantityUpdate</declname>
+        </param>
+        <briefdescription>
+<para>Updates the quantity of a material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantityUpdate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new quantity of the material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the quantity was updated successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the update process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterialInventory.cs" line="48" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_material_inventory_1a1c16fcc291a090c865e33d9948630887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IMaterialInventory.UseMaterial</definition>
+        <argsstring>(int idMaterial, int quantity)</argsstring>
+        <name>UseMaterial</name>
+        <qualifiedname>Interface_Tier.IMaterialInventory.UseMaterial</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_material_inventory_1af9ff7521af7288f477b6946558dd610b">UseMaterial</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Decreases the quantity of a material in the inventory when it is used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of material to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the material quantity was successfully decreased, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the use process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterialInventory.cs" line="59" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Methods to implement in the inventory class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Data_Tier.MaterialInventory</label>
+        <link refid="class_data___tier_1_1_material_inventory"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Interface_Tier.IMaterialInventory</label>
+        <link refid="interface_interface___tier_1_1_i_material_inventory"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterialInventory.cs" line="8" column="22" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterialInventory.cs" bodystart="9" bodyend="60"/>
+    <listofallmembers>
+      <member refid="interface_interface___tier_1_1_i_material_inventory_1a80ab8984d2712428917a593dbcc445a4" prot="public" virt="non-virtual"><scope>Interface_Tier::IMaterialInventory</scope><name>AddMaterial</name></member>
+      <member refid="interface_interface___tier_1_1_i_material_inventory_1a25c62d5832de047d3918ed12a106c94b" prot="public" virt="non-virtual"><scope>Interface_Tier::IMaterialInventory</scope><name>UpdateQuantity</name></member>
+      <member refid="interface_interface___tier_1_1_i_material_inventory_1a1c16fcc291a090c865e33d9948630887" prot="public" virt="non-virtual"><scope>Interface_Tier::IMaterialInventory</scope><name>UseMaterial</name></member>
+      <member refid="interface_interface___tier_1_1_i_material_inventory_1ace16841dc7fa2387b44bb0d9b7aae463" prot="public" virt="non-virtual"><scope>Interface_Tier::IMaterialInventory</scope><name>VerifyMaterialExistence</name></member>
+      <member refid="interface_interface___tier_1_1_i_material_inventory_1ad85731825e0eb3d19fa2d90124efd5ce" prot="public" virt="non-virtual"><scope>Interface_Tier::IMaterialInventory</scope><name>VerifyMaterialQuantity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

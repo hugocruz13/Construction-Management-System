@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_object___tier_1_1_client" kind="class" language="C#" prot="public">
+    <compoundname>Object_Tier::Client</compoundname>
+    <basecompoundref refid="class_object___tier_1_1_person" prot="public" virt="non-virtual">Object_Tier.Person</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IComparable&lt; Client &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_client_1a8259650dd78be32b0d1b4d274af61bae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Client.contactInfo</definition>
+        <argsstring></argsstring>
+        <name>contactInfo</name>
+        <qualifiedname>Object_Tier.Client.contactInfo</qualifiedname>
+        <briefdescription>
+<para>Stores the contact information of the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="24" column="13" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_client_1aa4f57f206fe50303be9a2c889d12c5e8" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Client.clientIdCounter</definition>
+        <argsstring></argsstring>
+        <name>clientIdCounter</name>
+        <qualifiedname>Object_Tier.Client.clientIdCounter</qualifiedname>
+        <initializer>= 500</initializer>
+        <briefdescription>
+<para>Static counter to generate unique client IDs. Starts at 500. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="30" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_object___tier_1_1_client_1ad6f8749b04a80fdbd60946c5914737aa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Client.ContactInfo</definition>
+        <argsstring></argsstring>
+        <name>ContactInfo</name>
+        <qualifiedname>Object_Tier.Client.ContactInfo</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the client’s contact information. One contact can only have 9 numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="40" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="41" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_object___tier_1_1_client_1ad7a8dfa7e089c67470145ed246a6563b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Client.Client</definition>
+        <argsstring>(string name, int contact)</argsstring>
+        <name>Client</name>
+        <qualifiedname>Object_Tier.Client.Client</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>contact</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref> class with the specified name and contact. Automatically assigns a unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the client.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The contact information of the client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="61" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_client_1a8a1f043753481dead8935d7c056d2765" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool Object_Tier.Client.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>Object_Tier.Client.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether the specified object is equal to the current client. Clients are considered equal if their contact information matches. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare with the current client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the objects are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="75" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="75" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_client_1a8ba29577094dc868bef1f43e63c0e31e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Object_Tier.Client.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Object_Tier.Client.ToString</qualifiedname>
+        <briefdescription>
+<para>Returns a string representation of the client, including ID, name, and contact. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A string representation of the client.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="99" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_client_1ac4bb529adbbac2aba6bc4177206138da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Object_Tier.Client.CompareTo</definition>
+        <argsstring>(Client client)</argsstring>
+        <name>CompareTo</name>
+        <qualifiedname>Object_Tier.Client.CompareTo</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+<para>Compares the current client to another client based on their name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client to compare to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value indicating the relative order of the clients.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="150" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="150" bodyend="153"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_object___tier_1_1_client_1a68e5bed84ec1c472abce5a7ad590bc46" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+        <definition>static Client Object_Tier.Client.CreateClient</definition>
+        <argsstring>(string name, int contact)</argsstring>
+        <name>CreateClient</name>
+        <qualifiedname>Object_Tier.Client.CreateClient</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>contact</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the client.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The contact information of the client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref> instance.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="113" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_client_1a89dfd534d7ff331264b7edf4b5486572" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Client.operator-</definition>
+        <argsstring>(Client client1, Client client2)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>Object_Tier.Client.operator-</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if two clients are equal using the &quot;-&quot; operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first client.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>client2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the clients are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="124" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="124" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_client_1a79a0beefc8d0193cba236597b3a01c95" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Client.operator+</definition>
+        <argsstring>(Client client1, Client client2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Object_Tier.Client.operator+</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if two clients are not equal using the &quot;+&quot; operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first client.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>client2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the clients are not equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="140" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_client_1a0b8bca6189881e8d4667aa116fa8d265" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Client.getNextClientId</definition>
+        <argsstring>()</argsstring>
+        <name>getNextClientId</name>
+        <qualifiedname>Object_Tier.Client.getNextClientId</qualifiedname>
+        <briefdescription>
+<para>Increments the static client ID counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="158" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="158" bodyend="162"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_object___tier_1_1_client_1a0e6f7352adf89e5687ed301babfcceed" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Client.~Client</definition>
+        <argsstring>()</argsstring>
+        <name>~Client</name>
+        <qualifiedname>Object_Tier.Client.~Client</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="169" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="169" bodyend="171"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a client in the system, inheriting from the <ref refid="class_object___tier_1_1_person" kindref="compound">Person</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IComparable&lt; Client &gt;</label>
+      </node>
+      <node id="1">
+        <label>Object_Tier.Client</label>
+        <link refid="class_object___tier_1_1_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Person</label>
+        <link refid="class_object___tier_1_1_person"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IComparable&lt; Client &gt;</label>
+      </node>
+      <node id="1">
+        <label>Object_Tier.Client</label>
+        <link refid="class_object___tier_1_1_client"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Person</label>
+        <link refid="class_object___tier_1_1_person"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="17" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" bodystart="18" bodyend="176"/>
+    <listofallmembers>
+      <member refid="class_object___tier_1_1_client_1ad7a8dfa7e089c67470145ed246a6563b" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>Client</name></member>
+      <member refid="class_object___tier_1_1_client_1aa4f57f206fe50303be9a2c889d12c5e8" prot="private" virt="non-virtual"><scope>Object_Tier::Client</scope><name>clientIdCounter</name></member>
+      <member refid="class_object___tier_1_1_client_1ac4bb529adbbac2aba6bc4177206138da" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>CompareTo</name></member>
+      <member refid="class_object___tier_1_1_client_1ad6f8749b04a80fdbd60946c5914737aa" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>ContactInfo</name></member>
+      <member refid="class_object___tier_1_1_client_1a8259650dd78be32b0d1b4d274af61bae" prot="private" virt="non-virtual"><scope>Object_Tier::Client</scope><name>contactInfo</name></member>
+      <member refid="class_object___tier_1_1_client_1a68e5bed84ec1c472abce5a7ad590bc46" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>CreateClient</name></member>
+      <member refid="class_object___tier_1_1_client_1a8a1f043753481dead8935d7c056d2765" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>Equals</name></member>
+      <member refid="class_object___tier_1_1_client_1a0b8bca6189881e8d4667aa116fa8d265" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>getNextClientId</name></member>
+      <member refid="class_object___tier_1_1_person_1ab0fb4e62e86c8c93d8e24ef1cf14185a" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>Id</name></member>
+      <member refid="class_object___tier_1_1_person_1aa130ca80fe53c450b6f780664a591707" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>Name</name></member>
+      <member refid="class_object___tier_1_1_client_1a79a0beefc8d0193cba236597b3a01c95" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>operator+</name></member>
+      <member refid="class_object___tier_1_1_client_1a89dfd534d7ff331264b7edf4b5486572" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>operator-</name></member>
+      <member refid="class_object___tier_1_1_person_1abbc0ba08992f323e498a214ffdd2b636" prot="protected" virt="non-virtual"><scope>Object_Tier::Client</scope><name>Person</name></member>
+      <member refid="class_object___tier_1_1_client_1a8ba29577094dc868bef1f43e63c0e31e" prot="public" virt="non-virtual"><scope>Object_Tier::Client</scope><name>ToString</name></member>
+      <member refid="class_object___tier_1_1_client_1a0e6f7352adf89e5687ed301babfcceed" prot="private" virt="non-virtual"><scope>Object_Tier::Client</scope><name>~Client</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

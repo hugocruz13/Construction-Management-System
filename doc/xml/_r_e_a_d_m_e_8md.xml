@@ -7,10 +7,10 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">&lt;center&gt;</highlight></codeline>
-<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>![Imagem<sp/>do<sp/>Projeto](C:/Users/hugoc/Desktop/2024_2025/Programação<sp/>Orientada<sp/>a<sp/>Objetos/trabalhoPOO_23010_Fase1/doc/uml/diagramclass.jpg)</highlight></codeline>
+<codeline><highlight class="normal">&lt;center&gt;<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;img<sp/>src=&quot;C:/Users/hugoc/Desktop/2024_2025/Programação<sp/>Orientada<sp/>a<sp/>Objetos/trabalhoPOO_23010_Fase2/doc/uml/diagramclass.jpg&quot;<sp/>alt=&quot;Imagem<sp/>do<sp/>Projeto&quot;<sp/>width=&quot;1850&quot;&gt;</highlight></codeline>
 <codeline><highlight class="normal">&lt;/center&gt;</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/README.md"/>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/README.md"/>
   </compounddef>
 </doxygen>

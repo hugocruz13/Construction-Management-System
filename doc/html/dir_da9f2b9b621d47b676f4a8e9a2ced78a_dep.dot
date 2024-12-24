@@ -1,0 +1,16 @@
+digraph "C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions/obj"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_a82198a8789d89d16e67941774687164 {
+    graph [ bgcolor="#dadada", pencolor="grey50", label="CustomExceptions", fontname=Helvetica,fontsize=12 style="filled,dashed", URL="dir_a82198a8789d89d16e67941774687164.html",tooltip=""]
+  subgraph clusterdir_da9f2b9b621d47b676f4a8e9a2ced78a {
+    graph [ bgcolor="#dadada", pencolor="grey25", label="", fontname=Helvetica,fontsize=12 style="filled,bold", URL="dir_da9f2b9b621d47b676f4a8e9a2ced78a.html",tooltip=""]
+    dir_da9f2b9b621d47b676f4a8e9a2ced78a [shape=plaintext, label="obj"];
+  dir_775f30960ff03f4195d5186e2b715e10 [label="Debug", fillcolor="#676767", color="grey25", style="filled", URL="dir_775f30960ff03f4195d5186e2b715e10.html",tooltip=""];
+  }
+  }
+}

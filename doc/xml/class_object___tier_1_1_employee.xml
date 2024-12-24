@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_object___tier_1_1_employee" kind="class" language="C#" prot="public">
+    <compoundname>Object_Tier::Employee</compoundname>
+    <basecompoundref refid="class_object___tier_1_1_person" prot="public" virt="non-virtual">Object_Tier.Person</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IComparable&lt; Employee &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_employee_1a0e59b92a54374915aaa995ff336428c3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Object_Tier.Employee.role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <qualifiedname>Object_Tier.Employee.role</qualifiedname>
+        <briefdescription>
+<para>Stores the role of the employee. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="24" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_employee_1a4267db22f33afbeb1bf9ae5d001cc938" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Object_Tier.Employee.hourlyRate</definition>
+        <argsstring></argsstring>
+        <name>hourlyRate</name>
+        <qualifiedname>Object_Tier.Employee.hourlyRate</qualifiedname>
+        <briefdescription>
+<para>Stores the hourly rate of the employee. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="29" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_employee_1a541ede40b627daf8976e077033c3541a" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Employee.employeeIdCounter</definition>
+        <argsstring></argsstring>
+        <name>employeeIdCounter</name>
+        <qualifiedname>Object_Tier.Employee.employeeIdCounter</qualifiedname>
+        <initializer>= 200</initializer>
+        <briefdescription>
+<para>Static counter to generate unique employee IDs. Starts at 200. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="36" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_object___tier_1_1_employee_1a98bbe928c06a33a3295c4a188beaf7e2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Object_Tier.Employee.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>Object_Tier.Employee.Role</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the employee’s role. Ensures the role is not empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="47" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_employee_1a264cf6be097ebb83a1a82aeec22b7bdb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Object_Tier.Employee.HourlyRate</definition>
+        <argsstring></argsstring>
+        <name>HourlyRate</name>
+        <qualifiedname>Object_Tier.Employee.HourlyRate</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the employee’s hourly rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="62" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="63" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1a5be01952d88b169bb45d064eb1babebe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Employee.Employee</definition>
+        <argsstring>(string name, string role, double hourlyrate)</argsstring>
+        <name>Employee</name>
+        <qualifiedname>Object_Tier.Employee.Employee</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hourlyrate</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref> class with the specified name, role, and hourly rate. Automatically assigns a unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The role of the employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hourlyrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hourly rate of the employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="85" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1a915ad3696d310052ea96a64a0c468a1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool Object_Tier.Employee.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>Object_Tier.Employee.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether the specified object is equal to the current employee. Employees are equal if their name, role, and hourly rate match. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare with the current employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the objects are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="100" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="100" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1abeefba84d88a32c7f3f06289777b980d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Object_Tier.Employee.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Object_Tier.Employee.ToString</qualifiedname>
+        <briefdescription>
+<para>Returns a string representation of the employee, including ID, name, role, and hourly rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A string representation of the employee.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="124" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1a219d977bc64eb2464d6294ea1473b2d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Object_Tier.Employee.CompareTo</definition>
+        <argsstring>(Employee employee)</argsstring>
+        <name>CompareTo</name>
+        <qualifiedname>Object_Tier.Employee.CompareTo</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee</declname>
+        </param>
+        <briefdescription>
+<para>Compares the current employee to another employee based on their name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The employee to compare to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value indicating the relative order of the employees.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="176" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="176" bodyend="179"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1a2a43d419a3f060ed135f9ecadaee14db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+        <definition>static Employee Object_Tier.Employee.CreateEmployee</definition>
+        <argsstring>(string name, string role, double hourlyRate)</argsstring>
+        <name>CreateEmployee</name>
+        <qualifiedname>Object_Tier.Employee.CreateEmployee</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hourlyRate</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The role of the employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hourlyRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hourly rate of the employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref> instance.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="139" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1a39e92f95320f6ccf392b348261a46e38" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Employee.operator-</definition>
+        <argsstring>(Employee employee1, Employee employee2)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>Object_Tier.Employee.operator-</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if two employees are equal using the &quot;-&quot; operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employee1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>employee2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employees are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="150" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="150" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1a3a24001f0c37e6007c28ca879135bba1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Employee.operator+</definition>
+        <argsstring>(Employee employee1, Employee employee2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Object_Tier.Employee.operator+</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if two employees are not equal using the &quot;+&quot; operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employee1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>employee2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employees are not equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="166" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1ab74263ccc537af2ee8f21ab3e161cf64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Employee.getNextEmployeeId</definition>
+        <argsstring>()</argsstring>
+        <name>getNextEmployeeId</name>
+        <qualifiedname>Object_Tier.Employee.getNextEmployeeId</qualifiedname>
+        <briefdescription>
+<para>Increments the static employee ID counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True after incrementing the counter.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="185" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="185" bodyend="189"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_object___tier_1_1_employee_1ad317d960640a26072a94628fba68a35d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Employee.~Employee</definition>
+        <argsstring>()</argsstring>
+        <name>~Employee</name>
+        <qualifiedname>Object_Tier.Employee.~Employee</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="196" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="196" bodyend="198"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents an employee in the system, inheriting from the <ref refid="class_object___tier_1_1_person" kindref="compound">Person</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IComparable&lt; Employee &gt;</label>
+      </node>
+      <node id="1">
+        <label>Object_Tier.Employee</label>
+        <link refid="class_object___tier_1_1_employee"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Person</label>
+        <link refid="class_object___tier_1_1_person"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IComparable&lt; Employee &gt;</label>
+      </node>
+      <node id="1">
+        <label>Object_Tier.Employee</label>
+        <link refid="class_object___tier_1_1_employee"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Person</label>
+        <link refid="class_object___tier_1_1_person"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" line="18" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Employee.cs" bodystart="19" bodyend="203"/>
+    <listofallmembers>
+      <member refid="class_object___tier_1_1_employee_1a219d977bc64eb2464d6294ea1473b2d6" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>CompareTo</name></member>
+      <member refid="class_object___tier_1_1_employee_1a2a43d419a3f060ed135f9ecadaee14db" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>CreateEmployee</name></member>
+      <member refid="class_object___tier_1_1_employee_1a5be01952d88b169bb45d064eb1babebe" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>Employee</name></member>
+      <member refid="class_object___tier_1_1_employee_1a541ede40b627daf8976e077033c3541a" prot="private" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>employeeIdCounter</name></member>
+      <member refid="class_object___tier_1_1_employee_1a915ad3696d310052ea96a64a0c468a1c" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>Equals</name></member>
+      <member refid="class_object___tier_1_1_employee_1ab74263ccc537af2ee8f21ab3e161cf64" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>getNextEmployeeId</name></member>
+      <member refid="class_object___tier_1_1_employee_1a264cf6be097ebb83a1a82aeec22b7bdb" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>HourlyRate</name></member>
+      <member refid="class_object___tier_1_1_employee_1a4267db22f33afbeb1bf9ae5d001cc938" prot="private" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>hourlyRate</name></member>
+      <member refid="class_object___tier_1_1_person_1ab0fb4e62e86c8c93d8e24ef1cf14185a" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>Id</name></member>
+      <member refid="class_object___tier_1_1_person_1aa130ca80fe53c450b6f780664a591707" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>Name</name></member>
+      <member refid="class_object___tier_1_1_employee_1a3a24001f0c37e6007c28ca879135bba1" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>operator+</name></member>
+      <member refid="class_object___tier_1_1_employee_1a39e92f95320f6ccf392b348261a46e38" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>operator-</name></member>
+      <member refid="class_object___tier_1_1_person_1abbc0ba08992f323e498a214ffdd2b636" prot="protected" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>Person</name></member>
+      <member refid="class_object___tier_1_1_employee_1a98bbe928c06a33a3295c4a188beaf7e2" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>Role</name></member>
+      <member refid="class_object___tier_1_1_employee_1a0e59b92a54374915aaa995ff336428c3" prot="private" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>role</name></member>
+      <member refid="class_object___tier_1_1_employee_1abeefba84d88a32c7f3f06289777b980d" prot="public" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>ToString</name></member>
+      <member refid="class_object___tier_1_1_employee_1ad317d960640a26072a94628fba68a35d" prot="private" virt="non-virtual"><scope>Object_Tier::Employee</scope><name>~Employee</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

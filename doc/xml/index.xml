@@ -1,187 +1,354 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.12.0" xml:lang="en-US">
-  <compound refid="classsrc_1_1_client" kind="class"><name>src::Client</name>
-    <member refid="classsrc_1_1_client_1a6c7c86c5f631796ae6d493b23ebf8e87" kind="variable"><name>contactInfo</name></member>
-    <member refid="classsrc_1_1_client_1ac9ce79349a8d648144109c9da7574aa5" kind="variable"><name>clientIdCounter</name></member>
-    <member refid="classsrc_1_1_client_1a8b5d084a7932129e49cedeb25afde709" kind="property"><name>ContactInfo</name></member>
-    <member refid="classsrc_1_1_client_1a1850298c38e04a719f293a3acee54e8f" kind="function"><name>Client</name></member>
-    <member refid="classsrc_1_1_client_1a5cd48223332f6374179e56fda8ee1575" kind="function"><name>Equals</name></member>
-    <member refid="classsrc_1_1_client_1ac803b1f595a3c170098186012136f833" kind="function"><name>~Client</name></member>
+  <compound refid="class_object___tier_1_1_client" kind="class"><name>Object_Tier::Client</name>
+    <member refid="class_object___tier_1_1_client_1a8259650dd78be32b0d1b4d274af61bae" kind="variable"><name>contactInfo</name></member>
+    <member refid="class_object___tier_1_1_client_1aa4f57f206fe50303be9a2c889d12c5e8" kind="variable"><name>clientIdCounter</name></member>
+    <member refid="class_object___tier_1_1_client_1ad6f8749b04a80fdbd60946c5914737aa" kind="property"><name>ContactInfo</name></member>
+    <member refid="class_object___tier_1_1_client_1ad7a8dfa7e089c67470145ed246a6563b" kind="function"><name>Client</name></member>
+    <member refid="class_object___tier_1_1_client_1a8a1f043753481dead8935d7c056d2765" kind="function"><name>Equals</name></member>
+    <member refid="class_object___tier_1_1_client_1a8ba29577094dc868bef1f43e63c0e31e" kind="function"><name>ToString</name></member>
+    <member refid="class_object___tier_1_1_client_1ac4bb529adbbac2aba6bc4177206138da" kind="function"><name>CompareTo</name></member>
+    <member refid="class_object___tier_1_1_client_1a68e5bed84ec1c472abce5a7ad590bc46" kind="function"><name>CreateClient</name></member>
+    <member refid="class_object___tier_1_1_client_1a89dfd534d7ff331264b7edf4b5486572" kind="function"><name>operator-</name></member>
+    <member refid="class_object___tier_1_1_client_1a79a0beefc8d0193cba236597b3a01c95" kind="function"><name>operator+</name></member>
+    <member refid="class_object___tier_1_1_client_1a0b8bca6189881e8d4667aa116fa8d265" kind="function"><name>getNextClientId</name></member>
+    <member refid="class_object___tier_1_1_client_1a0e6f7352adf89e5687ed301babfcceed" kind="function"><name>~Client</name></member>
   </compound>
-  <compound refid="classsrc_1_1_clients" kind="class"><name>src::Clients</name>
-    <member refid="classsrc_1_1_clients_1a488f41d7d470cf9ee36cf60dc4ac9ebf" kind="variable"><name>sizeArrays</name></member>
-    <member refid="classsrc_1_1_clients_1a1e5bb22460def1d62b33f632e837fdf2" kind="variable"><name>clients</name></member>
-    <member refid="classsrc_1_1_clients_1aaeef78fa2c7be6e99c158fb781eb6cd2" kind="function"><name>Clients</name></member>
-    <member refid="classsrc_1_1_clients_1a8f4a1fc16dc4836c735706ae186f18ed" kind="function"><name>VerifyClientExistence</name></member>
-    <member refid="classsrc_1_1_clients_1a3c3947827f7a6f5dc82df5fa2462502e" kind="function"><name>AddClient</name></member>
-    <member refid="classsrc_1_1_clients_1acfcdaff24581a106bf10e5f266b653bc" kind="function"><name>VerifyClientExistence</name></member>
-    <member refid="classsrc_1_1_clients_1abdd9f5c32995dd028228e1fa1b07365b" kind="function"><name>~Clients</name></member>
+  <compound refid="class_data___tier_1_1_clients" kind="class"><name>Data_Tier::Clients</name>
+    <member refid="class_data___tier_1_1_clients_1afcb27ec1074589ff491ebd361359ee65" kind="variable"><name>instance</name></member>
+    <member refid="class_data___tier_1_1_clients_1a2313fca5cbc1ebc18a6c861c15b26d33" kind="variable"><name>clients</name></member>
+    <member refid="class_data___tier_1_1_clients_1ae817e2f9ee3b9eeee270b13fd372df01" kind="property"><name>Instance</name></member>
+    <member refid="class_data___tier_1_1_clients_1ace8ab788954de3c55f0d40d80cef9e85" kind="property"><name>ClientsD</name></member>
+    <member refid="class_data___tier_1_1_clients_1afb15bf1ad51b910568b626df9639635d" kind="function"><name>Clients</name></member>
+    <member refid="class_data___tier_1_1_clients_1aaa8d5afbc8c7146137df4ea52e168e33" kind="function"><name>FindClient</name></member>
+    <member refid="class_data___tier_1_1_clients_1ad6612f1d908cd9d327b3b4fb504e46d1" kind="function"><name>~Clients</name></member>
+    <member refid="class_data___tier_1_1_clients_1a129abe2a08e4334ad683cf0533772e07" kind="function"><name>AddClient</name></member>
+    <member refid="class_data___tier_1_1_clients_1a499deb52f93f9b085e21f7589b50aad6" kind="function"><name>RemoveClient</name></member>
+    <member refid="class_data___tier_1_1_clients_1a896770ff1ba1bd334abc5ad716de24d6" kind="function"><name>ExistClient</name></member>
+    <member refid="class_data___tier_1_1_clients_1aa56bbc5ed5918094f5c08ff6f409fc46" kind="function"><name>ExistClient</name></member>
+    <member refid="class_data___tier_1_1_clients_1aebfc1f6f9a03b5fc68a3c0ccdf37ecb9" kind="function"><name>UpdateContact</name></member>
+    <member refid="class_data___tier_1_1_clients_1a9cdf3bd9ffb752f73b3c9d95933ad13f" kind="function"><name>GetClient</name></member>
+    <member refid="class_data___tier_1_1_clients_1a29cf7066deae854ce3205a8586a1d423" kind="function"><name>SetCounterEqualClient</name></member>
   </compound>
-  <compound refid="classsrc_1_1_company" kind="class"><name>src::Company</name>
-    <member refid="classsrc_1_1_company_1a0ff25e2726b31c384d64295181789dce" kind="variable"><name>clients</name></member>
-    <member refid="classsrc_1_1_company_1a0d05c5107a003a25393af8e2ea47f523" kind="variable"><name>inventory</name></member>
-    <member refid="classsrc_1_1_company_1a9f3078f4203f606f8bb5c2217b9dff01" kind="variable"><name>employees</name></member>
-    <member refid="classsrc_1_1_company_1a28a7337d02dbce36583a99e1e095266a" kind="variable"><name>projects</name></member>
-    <member refid="classsrc_1_1_company_1abea879f6df73d7861b61e15198541c08" kind="function"><name>ClientRegister</name></member>
-    <member refid="classsrc_1_1_company_1ad6648d1050cdab888f3eb71da715ae6f" kind="function"><name>ClientExist</name></member>
-    <member refid="classsrc_1_1_company_1a6df05e2e4cfdc5ef1769109e1fc214b1" kind="function"><name>MaterialRegister</name></member>
-    <member refid="classsrc_1_1_company_1a9e99844f70381ddbb7199da42d8fd5be" kind="function"><name>MaterialExist</name></member>
-    <member refid="classsrc_1_1_company_1a33c60a0616a5f4e9a203a5bd36723244" kind="function"><name>UpdateMaterialStock</name></member>
-    <member refid="classsrc_1_1_company_1adcaea13b36b4a93d8d6c72cf09f852d2" kind="function"><name>MaterialGetQuantity</name></member>
-    <member refid="classsrc_1_1_company_1ac2ea8f57fabc45e8b4719122352ff3d9" kind="function"><name>ProjectCreate</name></member>
-    <member refid="classsrc_1_1_company_1a91ff036baa08b8c8a277fcd9c9a98abd" kind="function"><name>ProjectAddEmployee</name></member>
-    <member refid="classsrc_1_1_company_1a98cd5a59d8870628b798f51f1cb293bb" kind="function"><name>ProjectUseMaterial</name></member>
-    <member refid="classsrc_1_1_company_1a298c0078b1e4a3867df2c059ac37e0eb" kind="function"><name>ProjectExist</name></member>
-    <member refid="classsrc_1_1_company_1a6d65596356689d106f22c45751e5efbb" kind="function"><name>ProjectClose</name></member>
-    <member refid="classsrc_1_1_company_1a7defa2a848a242abf175c03eb6bea366" kind="function"><name>EmployeeRegister</name></member>
-    <member refid="classsrc_1_1_company_1a6fcf75abe8417bb2f9313d45bda897bf" kind="function"><name>EmployeeExist</name></member>
-    <member refid="classsrc_1_1_company_1a348bb8c9aff4afec43410b0badd92e7f" kind="function"><name>~Company</name></member>
+  <compound refid="class_data___tier_1_1_clients_service" kind="class"><name>Data_Tier::ClientsService</name>
+    <member refid="class_data___tier_1_1_clients_service_1af4362f91085daeb52975f84ef6a70e23" kind="variable"><name>clients</name></member>
+    <member refid="class_data___tier_1_1_clients_service_1ada547804c61c16efd62842862bbb319e" kind="function"><name>ClientsService</name></member>
+    <member refid="class_data___tier_1_1_clients_service_1a49bfd00c188770e4575b5d6d0f8d6aa0" kind="function"><name>AddClient</name></member>
+    <member refid="class_data___tier_1_1_clients_service_1ad8996e35e71ad773d1a9e23a25fc3318" kind="function"><name>RemoveClient</name></member>
+    <member refid="class_data___tier_1_1_clients_service_1ae9afd924844b5e54aca687579caf6e5e" kind="function"><name>ExistClient</name></member>
+    <member refid="class_data___tier_1_1_clients_service_1aa32b972ef84bcdfb27886f4274680212" kind="function"><name>~ClientsService</name></member>
   </compound>
-  <compound refid="classsrc_1_1_employee" kind="class"><name>src::Employee</name>
-    <member refid="classsrc_1_1_employee_1aa78483d47f6f3e93b77748792919d6d1" kind="variable"><name>role</name></member>
-    <member refid="classsrc_1_1_employee_1a33bab873d14f983ea97a269fdcf0dfa0" kind="variable"><name>hourlyRate</name></member>
-    <member refid="classsrc_1_1_employee_1ac739e2092e89126443dcc7e2f69ec95e" kind="variable"><name>employeeIdCounter</name></member>
-    <member refid="classsrc_1_1_employee_1a69ea6a3bbe2aab088fabdd31d2dc63e8" kind="property"><name>Role</name></member>
-    <member refid="classsrc_1_1_employee_1ae7c10df22f17c2e0e8b760ea413e2a72" kind="property"><name>HourlyRate</name></member>
-    <member refid="classsrc_1_1_employee_1a45e6435ffe420e6b050f12258693ed12" kind="function"><name>Employee</name></member>
-    <member refid="classsrc_1_1_employee_1a6e8f23c20dc2c991b979d7c66d6716a1" kind="function"><name>Equals</name></member>
-    <member refid="classsrc_1_1_employee_1a7ef27327f30dd8e9cec52defcdbefe53" kind="function"><name>~Employee</name></member>
+  <compound refid="class_unit___test_1_1_clients_test" kind="class"><name>Unit_Test::ClientsTest</name>
+    <member refid="class_unit___test_1_1_clients_test_1ae8ac9648ac5bd15266fab60a825805f7" kind="function"><name>TestRegisterClient_ValidClient</name></member>
+    <member refid="class_unit___test_1_1_clients_test_1a756586d5bf3b56c7b499651a5ddb6549" kind="function"><name>TestRegisterClient_NullClient_ShouldThrowException</name></member>
   </compound>
-  <compound refid="classsrc_1_1_employees" kind="class"><name>src::Employees</name>
-    <member refid="classsrc_1_1_employees_1a1938084a3f7f5bab6be468f4441f13aa" kind="variable"><name>sizeArrays</name></member>
-    <member refid="classsrc_1_1_employees_1a388e9f2a8779cb28521b9a5adc149c58" kind="variable"><name>employees</name></member>
-    <member refid="classsrc_1_1_employees_1a3f4dbf68c8294bab042118305006bac1" kind="function"><name>Employees</name></member>
-    <member refid="classsrc_1_1_employees_1a931d9e739d08ee1ae06b01fb369e0d0f" kind="function"><name>VerifyEmployeeExistence</name></member>
-    <member refid="classsrc_1_1_employees_1adc4c5e2e36aa527239b312cbf00a5b82" kind="function"><name>AddEmployee</name></member>
-    <member refid="classsrc_1_1_employees_1a75746c33e90816b8bd00fa9537b59ca1" kind="function"><name>VerifyEmployeeExistence</name></member>
-    <member refid="classsrc_1_1_employees_1aab626ae8cbf0c123cf9616aea084ee1f" kind="function"><name>~Employees</name></member>
+  <compound refid="class_business___tier_1_1_company" kind="class"><name>Business_Tier::Company</name>
+    <member refid="class_business___tier_1_1_company_1a021f6ece08048a1f8b07a092e45dc333" kind="function"><name>SaveAllData</name></member>
+    <member refid="class_business___tier_1_1_company_1a2a9a477eb8dff2604d82a3599813a17b" kind="function"><name>LoadAllData</name></member>
+    <member refid="class_business___tier_1_1_company_1aff7dd145915b99b986c8e8a420599f3e" kind="function"><name>RegisterClient</name></member>
+    <member refid="class_business___tier_1_1_company_1a12f0a82cad4334bb30794b585a9bd307" kind="function"><name>DeleteClient</name></member>
+    <member refid="class_business___tier_1_1_company_1a68e765487af8bc16207a7f91db42d302" kind="function"><name>IsClientRegistered</name></member>
+    <member refid="class_business___tier_1_1_company_1a9c1dcf2e51189272b5f926bbde856e5b" kind="function"><name>UpdateClientContact</name></member>
+    <member refid="class_business___tier_1_1_company_1aea85e3cd72dd73576b6f9799bab8a9ea" kind="function"><name>GetClientById</name></member>
+    <member refid="class_business___tier_1_1_company_1ac80bba0ae5f40f2f3cdad1a5501bbd8f" kind="function"><name>RegistEmployee</name></member>
+    <member refid="class_business___tier_1_1_company_1a0303dd8bef6b688ef550017c923adac2" kind="function"><name>DeleteEmployee</name></member>
+    <member refid="class_business___tier_1_1_company_1af706655f649bd237b706bf20bb27ea74" kind="function"><name>IsEmployeeRegistered</name></member>
+    <member refid="class_business___tier_1_1_company_1aa4a2a738f2579fca775db72e215302ea" kind="function"><name>UpdateEmployeeRole</name></member>
+    <member refid="class_business___tier_1_1_company_1ab78bd94ff91d3d1b02a3d366eb9203b4" kind="function"><name>GetEmployeeById</name></member>
+    <member refid="class_business___tier_1_1_company_1a5d330e3a25c187b41709e377e63c1b7e" kind="function"><name>RegisterMaterial</name></member>
+    <member refid="class_business___tier_1_1_company_1a4a1547c286b5cf06fc670772773248e0" kind="function"><name>IsMaterialRegistered</name></member>
+    <member refid="class_business___tier_1_1_company_1ad2dd86343b1c4bda11c705f5252797c8" kind="function"><name>UpdateStock</name></member>
+    <member refid="class_business___tier_1_1_company_1a80eb1bb8aecbdc1f18edcac986d72ef1" kind="function"><name>UpdatePrice</name></member>
+    <member refid="class_business___tier_1_1_company_1af59b5ef16b5a68bbbb7d0b24781263e9" kind="function"><name>GetMaterial</name></member>
+    <member refid="class_business___tier_1_1_company_1abb22ccb74ea4d3d9d043abd26916b574" kind="function"><name>GetQuantityOfMaterial</name></member>
+    <member refid="class_business___tier_1_1_company_1aed087dbe776c0838ae0a4f284e5a0509" kind="function"><name>RegistProject</name></member>
+    <member refid="class_business___tier_1_1_company_1a177217e2dceff742c4a19271a52930eb" kind="function"><name>IsProjectRegistered</name></member>
+    <member refid="class_business___tier_1_1_company_1a2bcad47628f5980efca9a985b39e5297" kind="function"><name>UpdateStatusProject</name></member>
+    <member refid="class_business___tier_1_1_company_1a4524a8c1abae0801c82b163cd35c931e" kind="function"><name>CloseProject</name></member>
+    <member refid="class_business___tier_1_1_company_1a6ee40cd7af812c51e48720191daee382" kind="function"><name>AddClientToProject</name></member>
+    <member refid="class_business___tier_1_1_company_1a5f5519da4b913634255953f3c8b5c82a" kind="function"><name>DeleteClientToProject</name></member>
+    <member refid="class_business___tier_1_1_company_1a981c2b27333c89d5c2b1f3d0638dbd05" kind="function"><name>AddEmployeeToProject</name></member>
+    <member refid="class_business___tier_1_1_company_1aa4f9a9c60923c171a4c24429d40c027c" kind="function"><name>DeleteEmplyeeToProject</name></member>
+    <member refid="class_business___tier_1_1_company_1ac4f60ea02eb92eed7120320323e9af3c" kind="function"><name>UseMaterial</name></member>
+    <member refid="class_business___tier_1_1_company_1a0da4b3b7273fe781a08a478fe5435812" kind="function"><name>AddMaterialToCatalog</name></member>
+    <member refid="class_business___tier_1_1_company_1a8eb69816cd8ae65495f7f9a570a359a2" kind="function"><name>AddMaterialToInventory</name></member>
+    <member refid="class_business___tier_1_1_company_1aa705e97c3b994403acf37dacf58767a7" kind="function"><name>~Company</name></member>
   </compound>
-  <compound refid="classsrc_1_1_funcionario" kind="class"><name>src::Funcionario</name>
-    <member refid="classsrc_1_1_funcionario_1ae18bfe9f42f16eb4fe47126a70b3e31f" kind="variable"><name>seguro</name></member>
-    <member refid="classsrc_1_1_funcionario_1aac8c4cc2d82876c769acd0ce8df81d9b" kind="variable"><name>total</name></member>
-    <member refid="classsrc_1_1_funcionario_1a3e14ff1b4a722becabf26d9a400bbe3f" kind="property"><name>Seguro</name></member>
-    <member refid="classsrc_1_1_funcionario_1abbeae9385b8538ae8f602c1d04ba9fdf" kind="function"><name>Funcionario</name></member>
-    <member refid="classsrc_1_1_funcionario_1a2081d4cc76779168c8e9290287dfc9b1" kind="function"><name>Funcionario</name></member>
-    <member refid="classsrc_1_1_funcionario_1a2df6941b8c5bcd756d3d56c4f8e8c9b4" kind="function"><name>~Funcionario</name></member>
+  <compound refid="class_custom_exceptions_1_1_configuration_error_exception" kind="class"><name>CustomExceptions::ConfigurationErrorException</name>
+    <member refid="class_custom_exceptions_1_1_configuration_error_exception_1a699caec2e175ccb41183d4df331b4278" kind="function"><name>ConfigurationErrorException</name></member>
+    <member refid="class_custom_exceptions_1_1_configuration_error_exception_1a1d0dd8fa81bfcb33ce63f4d95eae41b4" kind="function"><name>ConfigurationErrorException</name></member>
+    <member refid="class_custom_exceptions_1_1_configuration_error_exception_1a96117937540c3c8996f7d76cea9ee73c" kind="function"><name>ConfigurationErrorException</name></member>
   </compound>
-  <compound refid="classsrc_1_1_material" kind="class"><name>src::Material</name>
-    <member refid="classsrc_1_1_material_1a417deb3768b157241eaa20b7ba334634" kind="variable"><name>id</name></member>
-    <member refid="classsrc_1_1_material_1afee6f7a25323e3d8a79c3afc6c47eae2" kind="variable"><name>name</name></member>
-    <member refid="classsrc_1_1_material_1a5af0fe752ef2368932fc30fa56dd0a48" kind="variable"><name>unitPrice</name></member>
-    <member refid="classsrc_1_1_material_1a9987730a778355e68d9fd47ffe2feab5" kind="variable"><name>materialIdCounter</name></member>
-    <member refid="classsrc_1_1_material_1ad6974d22f6e60dd9a5249902a3dc94de" kind="property"><name>Id</name></member>
-    <member refid="classsrc_1_1_material_1a3c0d81bc8943ee3fc467aa3e8a90c015" kind="property"><name>Name</name></member>
-    <member refid="classsrc_1_1_material_1afe6082088a28f76762cacc25f4ee3931" kind="property"><name>UnitPrice</name></member>
-    <member refid="classsrc_1_1_material_1a7e4a3e8dddd95434b8f9f30ca9bd1d5a" kind="function"><name>Material</name></member>
-    <member refid="classsrc_1_1_material_1af2e16efb28d48f7787dec1487c5dfa13" kind="function"><name>Equals</name></member>
-    <member refid="classsrc_1_1_material_1aca2a1eb6a6cba3dd938e96ac8cfd7072" kind="function"><name>~Material</name></member>
+  <compound refid="class_data___tier_1_1_data" kind="class"><name>Data_Tier::Data</name>
+    <member refid="class_data___tier_1_1_data_1a9d0beef5001665fed057a69883d0f5bf" kind="variable"><name>clients</name></member>
+    <member refid="class_data___tier_1_1_data_1a09207b695c2ac589ffa0b0ed77d1d1a4" kind="variable"><name>employees</name></member>
+    <member refid="class_data___tier_1_1_data_1ad167a1942d55e26573935766106049f0" kind="variable"><name>materials</name></member>
+    <member refid="class_data___tier_1_1_data_1ae4a531f130ac5f83ce54ef7618002956" kind="variable"><name>inventory</name></member>
+    <member refid="class_data___tier_1_1_data_1a6f2a0d9bdf88d819a5757a18e80ac81a" kind="variable"><name>projects</name></member>
+    <member refid="class_data___tier_1_1_data_1ab06d39156f683a619c6e3ce58b83e901" kind="function"><name>CollectData</name></member>
+    <member refid="class_data___tier_1_1_data_1a3c403f62c0adf6c8f5fdfc9f2e49db47" kind="function"><name>PutData</name></member>
+    <member refid="class_data___tier_1_1_data_1ab41c721e7e63ea0fd9cd466659987042" kind="function"><name>SetCounterEqual</name></member>
+    <member refid="class_data___tier_1_1_data_1a3ad2f8085eb5cb42a100649b415da393" kind="function"><name>~Data</name></member>
   </compound>
-  <compound refid="classsrc_1_1_material_inventory" kind="class"><name>src::MaterialInventory</name>
-    <member refid="classsrc_1_1_material_inventory_1afe56ebd7228fed643a6df40acbfec5a3" kind="variable"><name>sizeArrays</name></member>
-    <member refid="classsrc_1_1_material_inventory_1aa7efb547537a78c2b190dbc40b167d88" kind="variable"><name>inventory</name></member>
-    <member refid="classsrc_1_1_material_inventory_1afe4e1eb0640f30b5829df4a8cc220f0a" kind="function"><name>MaterialInventory</name></member>
-    <member refid="classsrc_1_1_material_inventory_1a23d92ecfb124c325c56c64eb11a53a58" kind="function"><name>VerifyMaterialExistence</name></member>
-    <member refid="classsrc_1_1_material_inventory_1ab31d5499cd944b6656ea8a25128c1611" kind="function"><name>FindMaterial</name></member>
-    <member refid="classsrc_1_1_material_inventory_1a695f5a8af7bc8b7920484cc9c6d7a0d4" kind="function"><name>AddMaterial</name></member>
-    <member refid="classsrc_1_1_material_inventory_1a47db21e59536039d6578b56ad60b5fba" kind="function"><name>VerifyMaterialExistence</name></member>
-    <member refid="classsrc_1_1_material_inventory_1a918cc0668cd4abb59bda6c15bf61c295" kind="function"><name>GetQuantity</name></member>
-    <member refid="classsrc_1_1_material_inventory_1acb37d810e8a4da3650033acb6d2c56da" kind="function"><name>UpdateStock</name></member>
-    <member refid="classsrc_1_1_material_inventory_1a33d65ee329c7c0a8481464f842246575" kind="function"><name>UseMaterial</name></member>
-    <member refid="classsrc_1_1_material_inventory_1ad6cf6264239a0d6791dde7ffaa24e303" kind="function"><name>~MaterialInventory</name></member>
+  <compound refid="class_object___tier_1_1_employee" kind="class"><name>Object_Tier::Employee</name>
+    <member refid="class_object___tier_1_1_employee_1a0e59b92a54374915aaa995ff336428c3" kind="variable"><name>role</name></member>
+    <member refid="class_object___tier_1_1_employee_1a4267db22f33afbeb1bf9ae5d001cc938" kind="variable"><name>hourlyRate</name></member>
+    <member refid="class_object___tier_1_1_employee_1a541ede40b627daf8976e077033c3541a" kind="variable"><name>employeeIdCounter</name></member>
+    <member refid="class_object___tier_1_1_employee_1a98bbe928c06a33a3295c4a188beaf7e2" kind="property"><name>Role</name></member>
+    <member refid="class_object___tier_1_1_employee_1a264cf6be097ebb83a1a82aeec22b7bdb" kind="property"><name>HourlyRate</name></member>
+    <member refid="class_object___tier_1_1_employee_1a5be01952d88b169bb45d064eb1babebe" kind="function"><name>Employee</name></member>
+    <member refid="class_object___tier_1_1_employee_1a915ad3696d310052ea96a64a0c468a1c" kind="function"><name>Equals</name></member>
+    <member refid="class_object___tier_1_1_employee_1abeefba84d88a32c7f3f06289777b980d" kind="function"><name>ToString</name></member>
+    <member refid="class_object___tier_1_1_employee_1a219d977bc64eb2464d6294ea1473b2d6" kind="function"><name>CompareTo</name></member>
+    <member refid="class_object___tier_1_1_employee_1a2a43d419a3f060ed135f9ecadaee14db" kind="function"><name>CreateEmployee</name></member>
+    <member refid="class_object___tier_1_1_employee_1a39e92f95320f6ccf392b348261a46e38" kind="function"><name>operator-</name></member>
+    <member refid="class_object___tier_1_1_employee_1a3a24001f0c37e6007c28ca879135bba1" kind="function"><name>operator+</name></member>
+    <member refid="class_object___tier_1_1_employee_1ab74263ccc537af2ee8f21ab3e161cf64" kind="function"><name>getNextEmployeeId</name></member>
+    <member refid="class_object___tier_1_1_employee_1ad317d960640a26072a94628fba68a35d" kind="function"><name>~Employee</name></member>
   </compound>
-  <compound refid="classsrc_1_1_material_quantity" kind="class"><name>src::MaterialQuantity</name>
-    <member refid="classsrc_1_1_material_quantity_1a7ae0399c36280267a196d54c40c25a1c" kind="variable"><name>material</name></member>
-    <member refid="classsrc_1_1_material_quantity_1ae47ae794fd6ffec426f58121e34bf81d" kind="variable"><name>quantity</name></member>
-    <member refid="classsrc_1_1_material_quantity_1a09d67c3506e7e74a233c32cd2fda3963" kind="variable"><name>date</name></member>
-    <member refid="classsrc_1_1_material_quantity_1acd8db9e9fec5fcf708764aedf41ab1f9" kind="property"><name>Material</name></member>
-    <member refid="classsrc_1_1_material_quantity_1ad68ecce1bee90af18400dbba860f05d0" kind="property"><name>Quantity</name></member>
-    <member refid="classsrc_1_1_material_quantity_1aa415dfd30a57616b1554ea0793f0af11" kind="property"><name>Date</name></member>
-    <member refid="classsrc_1_1_material_quantity_1a708aeaaf1df399677f244de8d2db9e95" kind="function"><name>MaterialQuantity</name></member>
-    <member refid="classsrc_1_1_material_quantity_1a0c09940f843585d32bd620e29c3dcb1c" kind="function"><name>Equals</name></member>
-    <member refid="classsrc_1_1_material_quantity_1a5a0e391e88b02746f40fae6e3be10dc0" kind="function"><name>~MaterialQuantity</name></member>
+  <compound refid="class_data___tier_1_1_employees" kind="class"><name>Data_Tier::Employees</name>
+    <member refid="class_data___tier_1_1_employees_1a0c0f250cf10ad1a8aa1794072cb6bbb0" kind="variable"><name>instance</name></member>
+    <member refid="class_data___tier_1_1_employees_1a9e6483122af4ee9ed55dd35a6149a6b1" kind="variable"><name>employees</name></member>
+    <member refid="class_data___tier_1_1_employees_1ad6c28788ae26d40c491037c8975a4f84" kind="property"><name>Instance</name></member>
+    <member refid="class_data___tier_1_1_employees_1a83a96eaa055aef4ef236544fdc52e304" kind="property"><name>EmployeesD</name></member>
+    <member refid="class_data___tier_1_1_employees_1aa0b39d5111c6757c6f75f4049d8154b5" kind="function"><name>Employees</name></member>
+    <member refid="class_data___tier_1_1_employees_1a372adeb5b1296162c86c6198478fec31" kind="function"><name>FindEmployee</name></member>
+    <member refid="class_data___tier_1_1_employees_1aa379cb55c6480cecc92a8cc96a05ad89" kind="function"><name>~Employees</name></member>
+    <member refid="class_data___tier_1_1_employees_1a743a177e79acc3ea503d02a8f7970b7f" kind="function"><name>AddEmployee</name></member>
+    <member refid="class_data___tier_1_1_employees_1aa38c1c75bb81177c3c29da2f7cda92aa" kind="function"><name>RemoveEmployee</name></member>
+    <member refid="class_data___tier_1_1_employees_1a0d5d08e18e75d1ddef7dae56492b15c5" kind="function"><name>EmployeeExist</name></member>
+    <member refid="class_data___tier_1_1_employees_1a15bad604543cb0105a6f258503806168" kind="function"><name>EmployeeExist</name></member>
+    <member refid="class_data___tier_1_1_employees_1aa69f887b9dfe918cd9c9dcf8128eb867" kind="function"><name>UpdateRole</name></member>
+    <member refid="class_data___tier_1_1_employees_1afc32d495bba546f78ab48454b726502b" kind="function"><name>GetEmployee</name></member>
+    <member refid="class_data___tier_1_1_employees_1ad2e69b471cb89568a9f56d59ae3c5f6c" kind="function"><name>SetCounterEqualEmployee</name></member>
   </compound>
-  <compound refid="classsrc_1_1_obras" kind="class"><name>src::Obras</name>
-    <member refid="classsrc_1_1_obras_1a7d3771985e476f1afb4309caa06bb61c" kind="variable"><name>funcionarios</name></member>
-    <member refid="classsrc_1_1_obras_1a35bf65079b53a362896ae8ffd27fb0a4" kind="function"><name>Obras</name></member>
-    <member refid="classsrc_1_1_obras_1a45e617dd331ba7aac8bc1c9e24cbe44e" kind="function"><name>Obras</name></member>
-    <member refid="classsrc_1_1_obras_1afef46fb2d45a0a11838f7fbb27387f03" kind="function"><name>AddFuncionario</name></member>
-    <member refid="classsrc_1_1_obras_1a78c3ba27be5637b66a5712fab7633bd8" kind="function"><name>~Obras</name></member>
+  <compound refid="class_data___tier_1_1_employees_service" kind="class"><name>Data_Tier::EmployeesService</name>
+    <member refid="class_data___tier_1_1_employees_service_1a027300e423b289b95fbb170cabc67692" kind="variable"><name>employees</name></member>
+    <member refid="class_data___tier_1_1_employees_service_1a8ca7f3dd325c3b75b619d3cfdf4b99c9" kind="function"><name>EmployeesService</name></member>
+    <member refid="class_data___tier_1_1_employees_service_1a480930290ecdf5a2376b6b6896979a15" kind="function"><name>ExistExistEmployee</name></member>
+    <member refid="class_data___tier_1_1_employees_service_1a600a6057d05842ab4dd72b4b89f5e0ca" kind="function"><name>AddEmployee</name></member>
+    <member refid="class_data___tier_1_1_employees_service_1a7156846d426e18c24aa4c9767407a388" kind="function"><name>RemoveEmployee</name></member>
+    <member refid="class_data___tier_1_1_employees_service_1af02eaf2be9a12e1075b4cd166791e35b" kind="function"><name>~EmployeesService</name></member>
   </compound>
-  <compound refid="classsrc_1_1_person" kind="class"><name>src::Person</name>
-    <member refid="classsrc_1_1_person_1adf3e1f4b86a26eefb5771ecb8b9e4512" kind="variable"><name>id</name></member>
-    <member refid="classsrc_1_1_person_1a356b1f17aef673ecfd0d923d0b404291" kind="variable"><name>name</name></member>
-    <member refid="classsrc_1_1_person_1a0154a36b0f417f6c30bcda0558d3f699" kind="property"><name>Id</name></member>
-    <member refid="classsrc_1_1_person_1abbd15999fa08da9ca6b5e54b9f89190a" kind="property"><name>Name</name></member>
-    <member refid="classsrc_1_1_person_1a2ce3ae2819d51edbfe805e86db2b00ec" kind="function"><name>Person</name></member>
-    <member refid="classsrc_1_1_person_1a0a13720c1559c78d6ef6835987f6cdc0" kind="function"><name>~Person</name></member>
+  <compound refid="interface_interface___tier_1_1_i_clients" kind="interface"><name>Interface_Tier::IClients</name>
+    <member refid="interface_interface___tier_1_1_i_clients_1a975f28cc717a22dfbce8ef3736232888" kind="function"><name>AddClient</name></member>
+    <member refid="interface_interface___tier_1_1_i_clients_1a982e6293c1c7b0ed1b194518a8b17f30" kind="function"><name>RemoveClient</name></member>
+    <member refid="interface_interface___tier_1_1_i_clients_1aef144f3dec424ba3cd138b1dd0dc5ef0" kind="function"><name>ExistClient</name></member>
+    <member refid="interface_interface___tier_1_1_i_clients_1a8a0d6df18ef00c655629b368745c912d" kind="function"><name>UpdateContact</name></member>
+    <member refid="interface_interface___tier_1_1_i_clients_1a2fc4095583682636ec50d4044e5b1abc" kind="function"><name>GetClient</name></member>
   </compound>
-  <compound refid="classsrc_1_1_pessoa" kind="class"><name>src::Pessoa</name>
-    <member refid="classsrc_1_1_pessoa_1add0ba79c631ec5ce52d3787e09c93acd" kind="variable"><name>id</name></member>
-    <member refid="classsrc_1_1_pessoa_1a09b894d9506a7401fd056fe2e88a2817" kind="variable"><name>nome</name></member>
-    <member refid="classsrc_1_1_pessoa_1ae4f75442cf07a01edfbce3034f0994d3" kind="variable"><name>idade</name></member>
-    <member refid="classsrc_1_1_pessoa_1acd21d22578b1729651f59ef30a8d0624" kind="property"><name>Id</name></member>
-    <member refid="classsrc_1_1_pessoa_1aea64f30d07cdc37c3c1d7cbf269c5c91" kind="property"><name>Nome</name></member>
-    <member refid="classsrc_1_1_pessoa_1a7c43affef9f05f412d6599fc94daa0e6" kind="property"><name>Idade</name></member>
-    <member refid="classsrc_1_1_pessoa_1a94e2fb0675dd8cd197459c7c6c4cddac" kind="function"><name>Pessoa</name></member>
-    <member refid="classsrc_1_1_pessoa_1a45aabb2156c61ee5c9904e71a3b00d66" kind="function"><name>~Pessoa</name></member>
+  <compound refid="interface_interface___tier_1_1_i_employees" kind="interface"><name>Interface_Tier::IEmployees</name>
+    <member refid="interface_interface___tier_1_1_i_employees_1a97d3b4ab3604cedcf2c7b2c0f72cb3a6" kind="function"><name>AddEmployee</name></member>
+    <member refid="interface_interface___tier_1_1_i_employees_1a8464bf608876bb24769806385cf114f9" kind="function"><name>RemoveEmployee</name></member>
+    <member refid="interface_interface___tier_1_1_i_employees_1aaf7ce6e964554c97ba0f68c56c7ae2c2" kind="function"><name>EmployeeExist</name></member>
+    <member refid="interface_interface___tier_1_1_i_employees_1a9af9e438dfa122d5bdfbc8a19b730425" kind="function"><name>UpdateRole</name></member>
+    <member refid="interface_interface___tier_1_1_i_employees_1a773d1d4284a4b9abdabf4f341e513524" kind="function"><name>GetEmployee</name></member>
   </compound>
-  <compound refid="classsrc_1_1_program" kind="class"><name>src::Program</name>
-    <member refid="classsrc_1_1_program_1ab9304ce1a6cbf821381593d46650120b" kind="function"><name>Main</name></member>
+  <compound refid="interface_interface___tier_1_1_i_material_inventory" kind="interface"><name>Interface_Tier::IMaterialInventory</name>
+    <member refid="interface_interface___tier_1_1_i_material_inventory_1a80ab8984d2712428917a593dbcc445a4" kind="function"><name>AddMaterial</name></member>
+    <member refid="interface_interface___tier_1_1_i_material_inventory_1ace16841dc7fa2387b44bb0d9b7aae463" kind="function"><name>VerifyMaterialExistence</name></member>
+    <member refid="interface_interface___tier_1_1_i_material_inventory_1ad85731825e0eb3d19fa2d90124efd5ce" kind="function"><name>VerifyMaterialQuantity</name></member>
+    <member refid="interface_interface___tier_1_1_i_material_inventory_1a25c62d5832de047d3918ed12a106c94b" kind="function"><name>UpdateQuantity</name></member>
+    <member refid="interface_interface___tier_1_1_i_material_inventory_1a1c16fcc291a090c865e33d9948630887" kind="function"><name>UseMaterial</name></member>
   </compound>
-  <compound refid="classsrc_1_1_project" kind="class"><name>src::Project</name>
-    <member refid="classsrc_1_1_project_1a4c26df69325c7c0480b3c1bb945a8693" kind="variable"><name>id</name></member>
-    <member refid="classsrc_1_1_project_1a10a9a2fa353fe98067db33473ed110b3" kind="variable"><name>status</name></member>
-    <member refid="classsrc_1_1_project_1ab8cd51f0ddc93d8d8a807c180225f8f0" kind="variable"><name>startDate</name></member>
-    <member refid="classsrc_1_1_project_1a23b0f6989673931ef8317d980132b51f" kind="variable"><name>endDate</name></member>
-    <member refid="classsrc_1_1_project_1a5897f67dfde6c136333465371dec4478" kind="variable"><name>idClient</name></member>
-    <member refid="classsrc_1_1_project_1ac55c8c010eebbc931886c07066c9a3ad" kind="variable"><name>team</name></member>
-    <member refid="classsrc_1_1_project_1aa1bd6cced82a31350ad34676097f55e2" kind="variable"><name>usedMaterials</name></member>
-    <member refid="classsrc_1_1_project_1a41b618fe5641393f150a9217d4cce8b1" kind="variable"><name>projectIdCounter</name></member>
-    <member refid="classsrc_1_1_project_1a9c25f6e67073543a1e8620bef383b4a1" kind="property"><name>Id</name></member>
-    <member refid="classsrc_1_1_project_1a62c3eacae9a0cf985c821a94f7d95cb1" kind="property"><name>Status</name></member>
-    <member refid="classsrc_1_1_project_1a7e52efc3fb95be5f1a3703a6fa0db04e" kind="property"><name>StartDate</name></member>
-    <member refid="classsrc_1_1_project_1a367ce3b855a5ca5db7048a2f7a47f1a0" kind="property"><name>EndDate</name></member>
-    <member refid="classsrc_1_1_project_1ae3d7bb6a9298d76ef855afbabfe15184" kind="property"><name>IdClient</name></member>
-    <member refid="classsrc_1_1_project_1aca75836bbaae0a4690cb2171650aabb3" kind="function"><name>Project</name></member>
-    <member refid="classsrc_1_1_project_1ae5f654e1fa096b98a031f8998c50f815" kind="function"><name>AddEmployeeToProject</name></member>
-    <member refid="classsrc_1_1_project_1aa87252e462bd904995c0f2f4f1763dc6" kind="function"><name>UseMaterial</name></member>
-    <member refid="classsrc_1_1_project_1abdec98cfb7949de8626323e1664e749d" kind="function"><name>~Project</name></member>
+  <compound refid="interface_interface___tier_1_1_i_materials" kind="interface"><name>Interface_Tier::IMaterials</name>
+    <member refid="interface_interface___tier_1_1_i_materials_1afa8bcaf3922890078cd4506819403aea" kind="function"><name>AddMaterial</name></member>
+    <member refid="interface_interface___tier_1_1_i_materials_1abf9743289093309c08fea23dbbf90891" kind="function"><name>MaterialExist</name></member>
+    <member refid="interface_interface___tier_1_1_i_materials_1ab771a5cf8260d49375ac33a8c1188f09" kind="function"><name>UpdatePrice</name></member>
   </compound>
-  <compound refid="classsrc_1_1_projects" kind="class"><name>src::Projects</name>
-    <member refid="classsrc_1_1_projects_1a7d9ccdde8e8a2e19e5f57d382069191c" kind="variable"><name>sizeArrays</name></member>
-    <member refid="classsrc_1_1_projects_1ac8a095054236d244416a790fa7f6016e" kind="variable"><name>projects</name></member>
-    <member refid="classsrc_1_1_projects_1ab0a234645c525c3655b7a97389471595" kind="function"><name>Projects</name></member>
-    <member refid="classsrc_1_1_projects_1aaa9573f9955c956ee8677e18ae2cb7fd" kind="function"><name>FindProject</name></member>
-    <member refid="classsrc_1_1_projects_1a17318ee5f6073f83ff0b7df092220881" kind="function"><name>AddProject</name></member>
-    <member refid="classsrc_1_1_projects_1a12787283caad39959a6a941ae470e14e" kind="function"><name>AddEmployee</name></member>
-    <member refid="classsrc_1_1_projects_1a9b5c74a7bbf558fe61eab56a5586290f" kind="function"><name>UseMaterial</name></member>
-    <member refid="classsrc_1_1_projects_1a9f226b21ffbc820484b0b42ff79dd48f" kind="function"><name>VerifyProjectExistence</name></member>
-    <member refid="classsrc_1_1_projects_1a9d54150f41f79a9b67b8300cf9871fb2" kind="function"><name>CloseProject</name></member>
-    <member refid="classsrc_1_1_projects_1ab2792463b5fb7c851bb333bfc7bddfc8" kind="function"><name>~Projects</name></member>
+  <compound refid="interface_interface___tier_1_1_i_projects" kind="interface"><name>Interface_Tier::IProjects</name>
+    <member refid="interface_interface___tier_1_1_i_projects_1a050cd933392a240f89f2c01d7b733a08" kind="function"><name>RemoveProject</name></member>
+    <member refid="interface_interface___tier_1_1_i_projects_1a813383762e567dc5d5a139d95f8969c4" kind="function"><name>ProjectExists</name></member>
+    <member refid="interface_interface___tier_1_1_i_projects_1a70b05531b83754841335fac43bf7f8e0" kind="function"><name>CloseProject</name></member>
+    <member refid="interface_interface___tier_1_1_i_projects_1acddd379d00567185c639d1a405a5199f" kind="function"><name>AddClient</name></member>
+    <member refid="interface_interface___tier_1_1_i_projects_1a4b0b83e0d7d4352b5df25222f0e69259" kind="function"><name>RemoveClient</name></member>
+    <member refid="interface_interface___tier_1_1_i_projects_1a58fa6a8fb33cdc54c1e03f11c396688a" kind="function"><name>AddEmployee</name></member>
+    <member refid="interface_interface___tier_1_1_i_projects_1a36a00f1dad13442da1e6505bf32e5769" kind="function"><name>RemoveEmployee</name></member>
+    <member refid="interface_interface___tier_1_1_i_projects_1ab98c34cf5140d99a7bba3c029ab1ac05" kind="function"><name>UseMaterial</name></member>
   </compound>
-  <compound refid="classsrc_1_1_team" kind="class"><name>src::Team</name>
-    <member refid="classsrc_1_1_team_1a28fb5efdc4479251d4b402a96e297bb0" kind="variable"><name>sizeArrays</name></member>
-    <member refid="classsrc_1_1_team_1a24e40761098a4aa10f5b9550ec6e0c70" kind="variable"><name>team</name></member>
-    <member refid="classsrc_1_1_team_1a4bfcf648a0ad13abe210aa2aef3172b6" kind="function"><name>Team</name></member>
-    <member refid="classsrc_1_1_team_1a4c91764a71a3384db2b2b5dba4bc1104" kind="function"><name>AddEmployee</name></member>
-    <member refid="classsrc_1_1_team_1a26d7757918654a4f3b49cd7eef0e5710" kind="function"><name>~Team</name></member>
+  <compound refid="class_object___tier_1_1_material" kind="class"><name>Object_Tier::Material</name>
+    <member refid="class_object___tier_1_1_material_1a094f8f2b91fab1ad863bc4305d91846f" kind="variable"><name>id</name></member>
+    <member refid="class_object___tier_1_1_material_1a69056ec2c138e53af018877340023158" kind="variable"><name>name</name></member>
+    <member refid="class_object___tier_1_1_material_1ad274d615bddaed0c8935c132e576e8a0" kind="variable"><name>unitPrice</name></member>
+    <member refid="class_object___tier_1_1_material_1a0dd644fc41fc9c595b8c5c88925c760c" kind="variable"><name>lastRegiste</name></member>
+    <member refid="class_object___tier_1_1_material_1a995d1a6f3af89edb5366bccf4711f08e" kind="variable"><name>materialIdCounter</name></member>
+    <member refid="class_object___tier_1_1_material_1ad01b17716ded41d1cf0ff1fdf37c1cd7" kind="property"><name>Id</name></member>
+    <member refid="class_object___tier_1_1_material_1ab45d1fcfc21da59294983c2ed4b8bd0d" kind="property"><name>Name</name></member>
+    <member refid="class_object___tier_1_1_material_1a9a149aa2f608df2299441d2db3b7e5b8" kind="property"><name>UnitPrice</name></member>
+    <member refid="class_object___tier_1_1_material_1a91101e2d675adc4b6dddc132a26aaafb" kind="property"><name>LastRegiste</name></member>
+    <member refid="class_object___tier_1_1_material_1ab124aefbd361db83bcfb577070913fe7" kind="function"><name>Material</name></member>
+    <member refid="class_object___tier_1_1_material_1a5cd49d5e3ddda0c7135ac876336da1fa" kind="function"><name>Equals</name></member>
+    <member refid="class_object___tier_1_1_material_1a8c107955d2aaa00ab6d453c65e9c7a3a" kind="function"><name>ToString</name></member>
+    <member refid="class_object___tier_1_1_material_1ad0f93bc00f89c2dbaef441fee34dc707" kind="function"><name>CompareTo</name></member>
+    <member refid="class_object___tier_1_1_material_1a64caa0a7f747888b483824d87cfed394" kind="function"><name>CreateMaterial</name></member>
+    <member refid="class_object___tier_1_1_material_1ac347c1c7bc52bfa67796ae1924a90d90" kind="function"><name>operator-</name></member>
+    <member refid="class_object___tier_1_1_material_1a10edccf3fe84f57ea813e1d31ce7fa29" kind="function"><name>operator+</name></member>
+    <member refid="class_object___tier_1_1_material_1ad1109779ef042c08f618a5833da28bae" kind="function"><name>getNextMaterialId</name></member>
+    <member refid="class_object___tier_1_1_material_1a2ced27c0ee79ba3da72e77e9940e6a65" kind="function"><name>~Material</name></member>
   </compound>
-  <compound refid="namespacesrc" kind="namespace"><name>src</name>
-    <member refid="namespacesrc_1af7f0a9d891a5c63215e50974323f4095" kind="enum"><name>Status</name></member>
-    <member refid="namespacesrc_1af7f0a9d891a5c63215e50974323f4095a724c608fc97cda23198d8e7419133da6" kind="enumvalue"><name>NotStart</name></member>
-    <member refid="namespacesrc_1af7f0a9d891a5c63215e50974323f4095a12d868c18cb29bf58f02b504be9033fd" kind="enumvalue"><name>InProgress</name></member>
-    <member refid="namespacesrc_1af7f0a9d891a5c63215e50974323f4095ab0c20989fc4692ffdcb556dde07c855d" kind="enumvalue"><name>OnHold</name></member>
-    <member refid="namespacesrc_1af7f0a9d891a5c63215e50974323f4095a07ca5050e697392c9ed47e6453f1453f" kind="enumvalue"><name>Completed</name></member>
+  <compound refid="class_data___tier_1_1_material_inventory" kind="class"><name>Data_Tier::MaterialInventory</name>
+    <member refid="class_data___tier_1_1_material_inventory_1a938deae93212dcc1609d95e10125fad6" kind="variable"><name>instance</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1a81a8c1fd6704a411f0ffe4b3ef7f3a06" kind="variable"><name>inventory</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1af75102dd2f1d48e0242d49c827b4228b" kind="property"><name>Instance</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1a2a22c5375224e928df4f3c7095904d87" kind="property"><name>InventoryD</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1a62b598747ca2821f1614d7e94d69010c" kind="function"><name>MaterialInventory</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1a33b2cee28b5ed82a272f1c85830022cd" kind="function"><name>FindMaterial</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1a9d2a3ea2c6ce5caac8d6a716214dcfa8" kind="function"><name>~MaterialInventory</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1aa1e2a8c410200411cfb9c36c77c7106b" kind="function"><name>AddMaterial</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1aa07d2628caebc320b65db94ec768ac1e" kind="function"><name>VerifyMaterialExistence</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1a36deed3d8216bf013a48f70a41ffcad7" kind="function"><name>VerifyMaterialQuantity</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1a3d349ce4896a0d3a9b46de1000b82cc6" kind="function"><name>UpdateQuantity</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1af9ff7521af7288f477b6946558dd610b" kind="function"><name>UseMaterial</name></member>
+    <member refid="class_data___tier_1_1_material_inventory_1a8750a652f46590b9846c3b8508dbd328" kind="function"><name>GetMaterialQuantity</name></member>
   </compound>
-  <compound refid="namespacestatic" kind="namespace"><name>static</name>
+  <compound refid="class_object___tier_1_1_material_quantity" kind="class"><name>Object_Tier::MaterialQuantity</name>
+    <member refid="class_object___tier_1_1_material_quantity_1a628653b250e298aa70d88448c62656ab" kind="variable"><name>idMaterial</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1a36ff4f9702c32089b753f782470029db" kind="variable"><name>quantity</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1af739486ae39b0baf9dae80ac3ecc1007" kind="variable"><name>date</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1a647015cfcff2ffae0a3b03a2fb1823c8" kind="property"><name>IdMaterial</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1a55dd2effe93e56e2f48ba2df7d0caab2" kind="property"><name>Quantity</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1ad66330b4591a2342432840c71e3826cc" kind="property"><name>Date</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1a610237b3bff8ba362e11aa8a01fb6d1d" kind="function"><name>MaterialQuantity</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1abe11fad3867f018b96bd1af15fa188ba" kind="function"><name>Equals</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1aaa33d10f67c88378e27135c2a433deb4" kind="function"><name>ToString</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1a04b8619c50b5a30aa9d509a9417a2fcd" kind="function"><name>CompareTo</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1a4ca6af0de296472bf7f053c2fa235e88" kind="function"><name>CreateMaterialQuantity</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1ab3d8537ce9db67769a0ed117168513f3" kind="function"><name>operator-</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1a366a01b4e772d5b38893a0c177111ea7" kind="function"><name>operator+</name></member>
+    <member refid="class_object___tier_1_1_material_quantity_1a383349e55445afbac70378409944fa6b" kind="function"><name>~MaterialQuantity</name></member>
+  </compound>
+  <compound refid="class_data___tier_1_1_materials" kind="class"><name>Data_Tier::Materials</name>
+    <member refid="class_data___tier_1_1_materials_1a016dae31fddabd335d9a1553e02faa8c" kind="variable"><name>instance</name></member>
+    <member refid="class_data___tier_1_1_materials_1a9ca78d0cf200452aae8bb21f374de574" kind="variable"><name>materials</name></member>
+    <member refid="class_data___tier_1_1_materials_1a56c75e67eb7cb8250d400c7361afa72b" kind="property"><name>Instance</name></member>
+    <member refid="class_data___tier_1_1_materials_1a3a0fde95b2d26c2a368d6ad7ee09a682" kind="property"><name>MaterialD</name></member>
+    <member refid="class_data___tier_1_1_materials_1af3a454717f666196b48c534b7942923e" kind="function"><name>Materials</name></member>
+    <member refid="class_data___tier_1_1_materials_1af2de32f00a626799f23dc476eac01827" kind="function"><name>FindMaterial</name></member>
+    <member refid="class_data___tier_1_1_materials_1a1873c2e824c5217555baca8ed89edf63" kind="function"><name>~Materials</name></member>
+    <member refid="class_data___tier_1_1_materials_1a1026add42fcea848b41ad751d2597165" kind="function"><name>AddMaterial</name></member>
+    <member refid="class_data___tier_1_1_materials_1a2ae7a1c4e0049180cd2692986c0cc801" kind="function"><name>MaterialExist</name></member>
+    <member refid="class_data___tier_1_1_materials_1ab88f6ef135939f18f53b0f8b69a1897f" kind="function"><name>MaterialExist</name></member>
+    <member refid="class_data___tier_1_1_materials_1a988296d288dd70a6b81d30b3e958f42f" kind="function"><name>UpdatePrice</name></member>
+    <member refid="class_data___tier_1_1_materials_1a6f65b6a4fec15ac528a85ad7d0bdee52" kind="function"><name>GetMaterial</name></member>
+    <member refid="class_data___tier_1_1_materials_1ad62960c6f364d9b640f7eea6b798f0a5" kind="function"><name>SetCounterEqualMaterial</name></member>
+  </compound>
+  <compound refid="class_data___layer_1_1_material_service" kind="class"><name>Data_Layer::MaterialService</name>
+    <member refid="class_data___layer_1_1_material_service_1a918983f64950fbc289717d0743f59fb9" kind="variable"><name>use</name></member>
+    <member refid="class_data___layer_1_1_material_service_1ae5d88e10d2c77632b148e4102d6b912a" kind="function"><name>MaterialService</name></member>
+    <member refid="class_data___layer_1_1_material_service_1a94530943fb9ee894e0281846c540fc76" kind="function"><name>ExistExistEmployee</name></member>
+    <member refid="class_data___layer_1_1_material_service_1ac4a9fc5aaf8b120e9ae402aa9ed7c483" kind="function"><name>AddMaterial</name></member>
+    <member refid="class_data___layer_1_1_material_service_1a0491472da8f06880a42a211057023a4e" kind="function"><name>FindMaterial</name></member>
+    <member refid="class_data___layer_1_1_material_service_1a7cd152bab4d08dad67da598bb7ce87f2" kind="function"><name>~MaterialService</name></member>
+  </compound>
+  <compound refid="class_object___tier_1_1_person" kind="class"><name>Object_Tier::Person</name>
+    <member refid="class_object___tier_1_1_person_1a500c7dc354663816f9bb79b9d75386db" kind="variable"><name>id</name></member>
+    <member refid="class_object___tier_1_1_person_1a7a36530b7926e89794df2f7850c181a2" kind="variable"><name>name</name></member>
+    <member refid="class_object___tier_1_1_person_1ab0fb4e62e86c8c93d8e24ef1cf14185a" kind="property"><name>Id</name></member>
+    <member refid="class_object___tier_1_1_person_1aa130ca80fe53c450b6f780664a591707" kind="property"><name>Name</name></member>
+    <member refid="class_object___tier_1_1_person_1abbc0ba08992f323e498a214ffdd2b636" kind="function"><name>Person</name></member>
+    <member refid="class_object___tier_1_1_person_1acf1ae83dc8160d5df38c9c6d4a1ea99f" kind="function"><name>stringFormatada</name></member>
+    <member refid="class_object___tier_1_1_person_1afde4038e71436906831136366dee6a0d" kind="function"><name>~Person</name></member>
+  </compound>
+  <compound refid="class_presentation___tier_1_1_program" kind="class"><name>Presentation_Tier::Program</name>
+    <member refid="class_presentation___tier_1_1_program_1a410bc37f9077351ecbafc1a4f5b4cc06" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_object___tier_1_1_project" kind="class"><name>Object_Tier::Project</name>
+    <member refid="class_object___tier_1_1_project_1a230560a0ed534f117cbab085d7b72265" kind="variable"><name>idProject</name></member>
+    <member refid="class_object___tier_1_1_project_1af9cab15437f9887fd4422f64aaf3280c" kind="variable"><name>status</name></member>
+    <member refid="class_object___tier_1_1_project_1a51e73a5aa07ba9296abbd5c83da83560" kind="variable"><name>startDate</name></member>
+    <member refid="class_object___tier_1_1_project_1afda8db7a5e4bba8d7da287409ecff8bf" kind="variable"><name>endDate</name></member>
+    <member refid="class_object___tier_1_1_project_1a4305f3a559817873dc9bde8b2e3674d0" kind="variable"><name>projectIdCounter</name></member>
+    <member refid="class_object___tier_1_1_project_1a038b776d7de96a4b42f2e47cbad02b5d" kind="property"><name>Id</name></member>
+    <member refid="class_object___tier_1_1_project_1ae9b40f19d84e72af87d734619462614f" kind="property"><name>Status</name></member>
+    <member refid="class_object___tier_1_1_project_1ae3f7b89dae69e77661676c9861252944" kind="property"><name>StartDate</name></member>
+    <member refid="class_object___tier_1_1_project_1a48bf429fc850d6c334a17e444eebd411" kind="property"><name>EndDate</name></member>
+    <member refid="class_object___tier_1_1_project_1a7cb354f80977bd3e2e793ef4e28bbfc6" kind="function"><name>Project</name></member>
+    <member refid="class_object___tier_1_1_project_1a3df4a9fe75ef04957130fd02bcb9ac55" kind="function"><name>Equals</name></member>
+    <member refid="class_object___tier_1_1_project_1a0c76ca2fae4366077a3f4ffdd0501179" kind="function"><name>ToString</name></member>
+    <member refid="class_object___tier_1_1_project_1a8351044e6f505816789d63f1fc7364f8" kind="function"><name>CreateProject</name></member>
+    <member refid="class_object___tier_1_1_project_1a3ce946f67b692f0ae24ff4c2e9b34463" kind="function"><name>operator-</name></member>
+    <member refid="class_object___tier_1_1_project_1a27f3404f7482fc6cfb962be6402bc999" kind="function"><name>operator+</name></member>
+    <member refid="class_object___tier_1_1_project_1af94c5812a8877f436a7253dfd629e626" kind="function"><name>getNextProjectId</name></member>
+    <member refid="class_object___tier_1_1_project_1ac5af5226876f7fb81fdcc4674606cb04" kind="function"><name>~Project</name></member>
+  </compound>
+  <compound refid="class_data___tier_1_1_project_data" kind="class"><name>Data_Tier::ProjectData</name>
+    <member refid="class_data___tier_1_1_project_data_1ab21c26da2a976c16e821dd13f7ccbea9" kind="variable"><name>project</name></member>
+    <member refid="class_data___tier_1_1_project_data_1ac617152f86ca8c3f12c55da8dc10955b" kind="variable"><name>clientsService</name></member>
+    <member refid="class_data___tier_1_1_project_data_1abf504e2b0330d74d16ac5ce975f7e313" kind="variable"><name>employeesService</name></member>
+    <member refid="class_data___tier_1_1_project_data_1ab0b2793a46040afc67f3dd036f59f40b" kind="variable"><name>materialService</name></member>
+    <member refid="class_data___tier_1_1_project_data_1a5a110aff75b0d6177f8fbc506c51aa42" kind="property"><name>Project</name></member>
+    <member refid="class_data___tier_1_1_project_data_1a0ce19f08b917075058de28751d61b108" kind="function"><name>ProjectData</name></member>
+    <member refid="class_data___tier_1_1_project_data_1abff5ca7e9c367a0cf4c833a660e63f81" kind="function"><name>CompareTo</name></member>
+    <member refid="class_data___tier_1_1_project_data_1a9229513531d895d4fbf47efd03904c82" kind="function"><name>AddClient</name></member>
+    <member refid="class_data___tier_1_1_project_data_1aea8c8a3f8adcf4763e437a5eb6f2b365" kind="function"><name>RemoveClient</name></member>
+    <member refid="class_data___tier_1_1_project_data_1a050cc370a430c58978bf8000a1e2e0f0" kind="function"><name>AddEmployee</name></member>
+    <member refid="class_data___tier_1_1_project_data_1a652a8881b00dfc820b5697f1a653a3f1" kind="function"><name>RemoveEmployee</name></member>
+    <member refid="class_data___tier_1_1_project_data_1aa0cefc86fcda3667bd95acf651dd5e0c" kind="function"><name>UseMaterial</name></member>
+    <member refid="class_data___tier_1_1_project_data_1a59b671ec43a1dde0039fb0637ac55d9e" kind="function"><name>CreateProjectData</name></member>
+    <member refid="class_data___tier_1_1_project_data_1a1ac4694b28f78dfcf30bbe207e467e9b" kind="function"><name>~ProjectData</name></member>
+  </compound>
+  <compound refid="class_data___tier_1_1_projects" kind="class"><name>Data_Tier::Projects</name>
+    <member refid="class_data___tier_1_1_projects_1a095d90a138d2809db306d46dd148626f" kind="variable"><name>instance</name></member>
+    <member refid="class_data___tier_1_1_projects_1a7f7518eff687b1f50eab947fc8c1a82a" kind="variable"><name>projects</name></member>
+    <member refid="class_data___tier_1_1_projects_1a4101fcebbf5230744c80dbaf7bead449" kind="property"><name>Instance</name></member>
+    <member refid="class_data___tier_1_1_projects_1a0d8072c941d6ea5a1e339e3c4f627a39" kind="property"><name>ProjectsD</name></member>
+    <member refid="class_data___tier_1_1_projects_1a176e968f3ca4e9ec1d89280c786e604d" kind="function"><name>Projects</name></member>
+    <member refid="class_data___tier_1_1_projects_1a47806809b3adce3d1c5dec18f01fd686" kind="function"><name>FindProject</name></member>
+    <member refid="class_data___tier_1_1_projects_1ada9822e3cc232769a3e3da972a7fc6e5" kind="function"><name>ProjectExist</name></member>
+    <member refid="class_data___tier_1_1_projects_1addcde90e3b77344925256718a4b2a243" kind="function"><name>SetCounterEqualProjects</name></member>
+    <member refid="class_data___tier_1_1_projects_1a7281f5130267894eee04b40df3e46cd7" kind="function"><name>AddProject</name></member>
+    <member refid="class_data___tier_1_1_projects_1a02f3f7cbf70eb3aaae10985b3fdb15d5" kind="function"><name>RemoveProject</name></member>
+    <member refid="class_data___tier_1_1_projects_1a0964b2eafd2ef9f57f8d3d7511d044fc" kind="function"><name>ProjectExists</name></member>
+    <member refid="class_data___tier_1_1_projects_1a0ed230edd97b7193077d8d6bac3000d3" kind="function"><name>ProjectExists</name></member>
+    <member refid="class_data___tier_1_1_projects_1aeb5348393eacdf16545abeb17c8af23f" kind="function"><name>UpdateStatus</name></member>
+    <member refid="class_data___tier_1_1_projects_1abb62bd02e4e20d0db63eab6c177551f5" kind="function"><name>CloseProject</name></member>
+    <member refid="class_data___tier_1_1_projects_1a819d23aeba0aac360051ace79463756b" kind="function"><name>AddClient</name></member>
+    <member refid="class_data___tier_1_1_projects_1ac6c8a231895cd7f4933304f726ff4960" kind="function"><name>RemoveClient</name></member>
+    <member refid="class_data___tier_1_1_projects_1a5ef19eed2efe61fcdff7ae225c69bed7" kind="function"><name>AddEmployee</name></member>
+    <member refid="class_data___tier_1_1_projects_1a1ee69b69a7fe3a510ed514c2dfed190a" kind="function"><name>RemoveEmployee</name></member>
+    <member refid="class_data___tier_1_1_projects_1a926bd6ab57e9451d82c1d095bd598e08" kind="function"><name>UseMaterial</name></member>
+    <member refid="class_data___tier_1_1_projects_1a906161f6675a65a9bb1172d81a8d8471" kind="function"><name>~Projects</name></member>
+  </compound>
+  <compound refid="namespace_business___tier" kind="namespace"><name>Business_Tier</name>
+  </compound>
+  <compound refid="namespace_custom_exceptions" kind="namespace"><name>CustomExceptions</name>
+  </compound>
+  <compound refid="namespace_data___layer" kind="namespace"><name>Data_Layer</name>
+  </compound>
+  <compound refid="namespace_data___tier" kind="namespace"><name>Data_Tier</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_visual_studio_1_1_test_tools_1_1_unit_testing" kind="namespace"><name>global::Microsoft::VisualStudio::TestTools::UnitTesting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_interface___tier" kind="namespace"><name>Interface_Tier</name>
+  </compound>
+  <compound refid="namespace_object___tier" kind="namespace"><name>Object_Tier</name>
+    <member refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550" kind="enum"><name>Status</name></member>
+    <member refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550a724c608fc97cda23198d8e7419133da6" kind="enumvalue"><name>NotStart</name></member>
+    <member refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550a12d868c18cb29bf58f02b504be9033fd" kind="enumvalue"><name>InProgress</name></member>
+    <member refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550ab0c20989fc4692ffdcb556dde07c855d" kind="enumvalue"><name>OnHold</name></member>
+    <member refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550a07ca5050e697392c9ed47e6453f1453f" kind="enumvalue"><name>Completed</name></member>
+  </compound>
+  <compound refid="namespace_presentation___tier" kind="namespace"><name>Presentation_Tier</name>
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
   </compound>
   <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
   </compound>
-  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
-  </compound>
-  <compound refid="namespace_system_1_1_net_1_1_mime_1_1_media_type_names" kind="namespace"><name>System::Net::Mime::MediaTypeNames</name>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
   </compound>
   <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
   </compound>
@@ -189,35 +356,127 @@
   </compound>
   <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
   </compound>
-  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization" kind="namespace"><name>System::Runtime::Serialization</name>
   </compound>
-  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization_1_1_formatters_1_1_binary" kind="namespace"><name>System::Runtime::Serialization::Formatters::Binary</name>
   </compound>
   <compound refid="namespace_system_1_1_xml_1_1_linq" kind="namespace"><name>System::Xml::Linq</name>
   </compound>
-  <compound refid="classsrc__1__1__client____coll____graph_8png" kind="file"><name>classsrc_1_1_client__coll__graph.png</name>
+  <compound refid="namespace_unit___test" kind="namespace"><name>Unit_Test</name>
   </compound>
-  <compound refid="classsrc__1__1__client____inherit____graph_8png" kind="file"><name>classsrc_1_1_client__inherit__graph.png</name>
+  <compound refid="class__custom__exceptions__1__1__configuration__error__exception____coll____graph_8png" kind="file"><name>class_custom_exceptions_1_1_configuration_error_exception__coll__graph.png</name>
   </compound>
-  <compound refid="classsrc__1__1__employee____coll____graph_8png" kind="file"><name>classsrc_1_1_employee__coll__graph.png</name>
+  <compound refid="class__custom__exceptions__1__1__configuration__error__exception____inherit____graph_8png" kind="file"><name>class_custom_exceptions_1_1_configuration_error_exception__inherit__graph.png</name>
   </compound>
-  <compound refid="classsrc__1__1__employee____inherit____graph_8png" kind="file"><name>classsrc_1_1_employee__inherit__graph.png</name>
+  <compound refid="class__data______tier__1__1__clients____coll____graph_8png" kind="file"><name>class_data___tier_1_1_clients__coll__graph.png</name>
   </compound>
-  <compound refid="classsrc__1__1__person____inherit____graph_8png" kind="file"><name>classsrc_1_1_person__inherit__graph.png</name>
+  <compound refid="class__data______tier__1__1__clients____inherit____graph_8png" kind="file"><name>class_data___tier_1_1_clients__inherit__graph.png</name>
   </compound>
-  <compound refid="dir__3bc03cc55d4aa6566f37b02a8017003e__dep_8png" kind="file"><name>dir_3bc03cc55d4aa6566f37b02a8017003e_dep.png</name>
+  <compound refid="class__data______tier__1__1__employees____coll____graph_8png" kind="file"><name>class_data___tier_1_1_employees__coll__graph.png</name>
   </compound>
-  <compound refid="dir__4082bf0afc35d37c30162a4e48a20e9e__dep_8png" kind="file"><name>dir_4082bf0afc35d37c30162a4e48a20e9e_dep.png</name>
+  <compound refid="class__data______tier__1__1__employees____inherit____graph_8png" kind="file"><name>class_data___tier_1_1_employees__inherit__graph.png</name>
   </compound>
-  <compound refid="dir__a6283325e2b58ba58d4c0c1ad7b1bf70__dep_8png" kind="file"><name>dir_a6283325e2b58ba58d4c0c1ad7b1bf70_dep.png</name>
+  <compound refid="class__data______tier__1__1__material__inventory____coll____graph_8png" kind="file"><name>class_data___tier_1_1_material_inventory__coll__graph.png</name>
   </compound>
-  <compound refid="dir__fde2e7bac110681567e7dc6808f601de__dep_8png" kind="file"><name>dir_fde2e7bac110681567e7dc6808f601de_dep.png</name>
+  <compound refid="class__data______tier__1__1__material__inventory____inherit____graph_8png" kind="file"><name>class_data___tier_1_1_material_inventory__inherit__graph.png</name>
+  </compound>
+  <compound refid="class__data______tier__1__1__materials____coll____graph_8png" kind="file"><name>class_data___tier_1_1_materials__coll__graph.png</name>
+  </compound>
+  <compound refid="class__data______tier__1__1__materials____inherit____graph_8png" kind="file"><name>class_data___tier_1_1_materials__inherit__graph.png</name>
+  </compound>
+  <compound refid="class__data______tier__1__1__project__data____coll____graph_8png" kind="file"><name>class_data___tier_1_1_project_data__coll__graph.png</name>
+  </compound>
+  <compound refid="class__data______tier__1__1__project__data____inherit____graph_8png" kind="file"><name>class_data___tier_1_1_project_data__inherit__graph.png</name>
+  </compound>
+  <compound refid="class__data______tier__1__1__projects____coll____graph_8png" kind="file"><name>class_data___tier_1_1_projects__coll__graph.png</name>
+  </compound>
+  <compound refid="class__data______tier__1__1__projects____inherit____graph_8png" kind="file"><name>class_data___tier_1_1_projects__inherit__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__client____coll____graph_8png" kind="file"><name>class_object___tier_1_1_client__coll__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__client____inherit____graph_8png" kind="file"><name>class_object___tier_1_1_client__inherit__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__employee____coll____graph_8png" kind="file"><name>class_object___tier_1_1_employee__coll__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__employee____inherit____graph_8png" kind="file"><name>class_object___tier_1_1_employee__inherit__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__material____coll____graph_8png" kind="file"><name>class_object___tier_1_1_material__coll__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__material____inherit____graph_8png" kind="file"><name>class_object___tier_1_1_material__inherit__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__material__quantity____coll____graph_8png" kind="file"><name>class_object___tier_1_1_material_quantity__coll__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__material__quantity____inherit____graph_8png" kind="file"><name>class_object___tier_1_1_material_quantity__inherit__graph.png</name>
+  </compound>
+  <compound refid="class__object______tier__1__1__person____inherit____graph_8png" kind="file"><name>class_object___tier_1_1_person__inherit__graph.png</name>
+  </compound>
+  <compound refid="dir__0ba78c33d72b2f5ca6c982869973492c__dep_8png" kind="file"><name>dir_0ba78c33d72b2f5ca6c982869973492c_dep.png</name>
+  </compound>
+  <compound refid="dir__0f48ddc284faa539eced53b1ff832572__dep_8png" kind="file"><name>dir_0f48ddc284faa539eced53b1ff832572_dep.png</name>
+  </compound>
+  <compound refid="dir__105271d38a1766e50f42b694e3cabfd3__dep_8png" kind="file"><name>dir_105271d38a1766e50f42b694e3cabfd3_dep.png</name>
+  </compound>
+  <compound refid="dir__2349affdaf244cb775286dacac81ee00__dep_8png" kind="file"><name>dir_2349affdaf244cb775286dacac81ee00_dep.png</name>
+  </compound>
+  <compound refid="dir__2790ca5591784e3abc0b2a221922c11e__dep_8png" kind="file"><name>dir_2790ca5591784e3abc0b2a221922c11e_dep.png</name>
+  </compound>
+  <compound refid="dir__3dc8c5122205d1408330c9c51a473141__dep_8png" kind="file"><name>dir_3dc8c5122205d1408330c9c51a473141_dep.png</name>
+  </compound>
+  <compound refid="dir__49a800a066b57831e3db9b787196b657__dep_8png" kind="file"><name>dir_49a800a066b57831e3db9b787196b657_dep.png</name>
+  </compound>
+  <compound refid="dir__4c3bd60403db5b2b97c2575d79e5ec4c__dep_8png" kind="file"><name>dir_4c3bd60403db5b2b97c2575d79e5ec4c_dep.png</name>
+  </compound>
+  <compound refid="dir__4cfac0c771886dc5be169737559d43f6__dep_8png" kind="file"><name>dir_4cfac0c771886dc5be169737559d43f6_dep.png</name>
+  </compound>
+  <compound refid="dir__4e31fca962e522163c45786b99e4b27e__dep_8png" kind="file"><name>dir_4e31fca962e522163c45786b99e4b27e_dep.png</name>
+  </compound>
+  <compound refid="dir__501637ec05ec90fb9f4c4e3b595e6409__dep_8png" kind="file"><name>dir_501637ec05ec90fb9f4c4e3b595e6409_dep.png</name>
+  </compound>
+  <compound refid="dir__587f66b1acc962ecdf0f82f7b6cb43c8__dep_8png" kind="file"><name>dir_587f66b1acc962ecdf0f82f7b6cb43c8_dep.png</name>
+  </compound>
+  <compound refid="dir__5888170a4c48d66099b59f45778f0746__dep_8png" kind="file"><name>dir_5888170a4c48d66099b59f45778f0746_dep.png</name>
+  </compound>
+  <compound refid="dir__5d0d0a3789b9d4f494ab9ee0ba0c8145__dep_8png" kind="file"><name>dir_5d0d0a3789b9d4f494ab9ee0ba0c8145_dep.png</name>
+  </compound>
+  <compound refid="dir__5e218f0ba0ec7f939ce4d6a621359c47__dep_8png" kind="file"><name>dir_5e218f0ba0ec7f939ce4d6a621359c47_dep.png</name>
+  </compound>
+  <compound refid="dir__68201224a235c89e62b30f9f9d2808fe__dep_8png" kind="file"><name>dir_68201224a235c89e62b30f9f9d2808fe_dep.png</name>
+  </compound>
+  <compound refid="dir__775f30960ff03f4195d5186e2b715e10__dep_8png" kind="file"><name>dir_775f30960ff03f4195d5186e2b715e10_dep.png</name>
+  </compound>
+  <compound refid="dir__80f7df2fc36ca021f00779de8743372b__dep_8png" kind="file"><name>dir_80f7df2fc36ca021f00779de8743372b_dep.png</name>
+  </compound>
+  <compound refid="dir__81431811b2ab5f6dccd6078406b568a7__dep_8png" kind="file"><name>dir_81431811b2ab5f6dccd6078406b568a7_dep.png</name>
+  </compound>
+  <compound refid="dir__9d6fa6ba6f20be9cae43e921f92f8a11__dep_8png" kind="file"><name>dir_9d6fa6ba6f20be9cae43e921f92f8a11_dep.png</name>
+  </compound>
+  <compound refid="dir__a55bc328c6fa3aa548ce9f4f98544bd1__dep_8png" kind="file"><name>dir_a55bc328c6fa3aa548ce9f4f98544bd1_dep.png</name>
+  </compound>
+  <compound refid="dir__a82198a8789d89d16e67941774687164__dep_8png" kind="file"><name>dir_a82198a8789d89d16e67941774687164_dep.png</name>
+  </compound>
+  <compound refid="dir__ce8c6241b55c650581b04f14dd4fd6e5__dep_8png" kind="file"><name>dir_ce8c6241b55c650581b04f14dd4fd6e5_dep.png</name>
+  </compound>
+  <compound refid="dir__d00dd85dc31b1d6b53afe5bbcc834a91__dep_8png" kind="file"><name>dir_d00dd85dc31b1d6b53afe5bbcc834a91_dep.png</name>
+  </compound>
+  <compound refid="dir__da9f2b9b621d47b676f4a8e9a2ced78a__dep_8png" kind="file"><name>dir_da9f2b9b621d47b676f4a8e9a2ced78a_dep.png</name>
+  </compound>
+  <compound refid="dir__ddba60733113d7b1fb6a42572bb678a6__dep_8png" kind="file"><name>dir_ddba60733113d7b1fb6a42572bb678a6_dep.png</name>
+  </compound>
+  <compound refid="dir__e8cff7b021010ad7e229d7aceaec5a06__dep_8png" kind="file"><name>dir_e8cff7b021010ad7e229d7aceaec5a06_dep.png</name>
+  </compound>
+  <compound refid="dir__fe1571214348338b29ecf6def45d025d__dep_8png" kind="file"><name>dir_fe1571214348338b29ecf6def45d025d_dep.png</name>
   </compound>
   <compound refid="graph__legend_8png" kind="file"><name>graph_legend.png</name>
   </compound>
   <compound refid="inherit__graph__0_8png" kind="file"><name>inherit_graph_0.png</name>
   </compound>
   <compound refid="inherit__graph__1_8png" kind="file"><name>inherit_graph_1.png</name>
+  </compound>
+  <compound refid="inherit__graph__10_8png" kind="file"><name>inherit_graph_10.png</name>
+  </compound>
+  <compound refid="inherit__graph__11_8png" kind="file"><name>inherit_graph_11.png</name>
+  </compound>
+  <compound refid="inherit__graph__12_8png" kind="file"><name>inherit_graph_12.png</name>
   </compound>
   <compound refid="inherit__graph__2_8png" kind="file"><name>inherit_graph_2.png</name>
   </compound>
@@ -235,63 +494,165 @@
   </compound>
   <compound refid="inherit__graph__9_8png" kind="file"><name>inherit_graph_9.png</name>
   </compound>
+  <compound refid="interface__interface______tier__1__1__i__clients____inherit____graph_8png" kind="file"><name>interface_interface___tier_1_1_i_clients__inherit__graph.png</name>
+  </compound>
+  <compound refid="interface__interface______tier__1__1__i__employees____inherit____graph_8png" kind="file"><name>interface_interface___tier_1_1_i_employees__inherit__graph.png</name>
+  </compound>
+  <compound refid="interface__interface______tier__1__1__i__material__inventory____inherit____graph_8png" kind="file"><name>interface_interface___tier_1_1_i_material_inventory__inherit__graph.png</name>
+  </compound>
+  <compound refid="interface__interface______tier__1__1__i__materials____inherit____graph_8png" kind="file"><name>interface_interface___tier_1_1_i_materials__inherit__graph.png</name>
+  </compound>
+  <compound refid="interface__interface______tier__1__1__i__projects____inherit____graph_8png" kind="file"><name>interface_interface___tier_1_1_i_projects__inherit__graph.png</name>
+  </compound>
   <compound refid="nav__g_8png" kind="file"><name>nav_g.png</name>
   </compound>
   <compound refid="diagramclass_8jpg" kind="file"><name>diagramclass.jpg</name>
   </compound>
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
-  <compound refid="_client_8cs" kind="file"><name>Client.cs</name>
+  <compound refid="_company_8cs" kind="file"><name>Company.cs</name>
+  </compound>
+  <compound refid="_business_01_tier_2obj_2_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_custom_exceptions_2obj_2_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_data_01_tier_2obj_2_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_interface_01_tier_2obj_2_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_object_01_tier_2obj_2_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_presentation_01_tier_2obj_2_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_business_01_tier_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_custom_exceptions_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_data_01_tier_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_interface_01_tier_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_object_01_tier_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_presentation_01_tier_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_execeptions_8cs" kind="file"><name>Execeptions.cs</name>
   </compound>
   <compound refid="_clients_8cs" kind="file"><name>Clients.cs</name>
   </compound>
-  <compound refid="_company_8cs" kind="file"><name>Company.cs</name>
+  <compound refid="_clients_service_8cs" kind="file"><name>ClientsService.cs</name>
   </compound>
-  <compound refid="_employee_8cs" kind="file"><name>Employee.cs</name>
+  <compound refid="_data_8cs" kind="file"><name>Data.cs</name>
   </compound>
   <compound refid="_employees_8cs" kind="file"><name>Employees.cs</name>
   </compound>
-  <compound refid="_funcionario_8cs" kind="file"><name>Funcionario.cs</name>
-  </compound>
-  <compound refid="_material_8cs" kind="file"><name>Material.cs</name>
+  <compound refid="_employees_service_8cs" kind="file"><name>EmployeesService.cs</name>
   </compound>
   <compound refid="_material_inventory_8cs" kind="file"><name>MaterialInventory.cs</name>
   </compound>
-  <compound refid="_material_quantity_8cs" kind="file"><name>MaterialQuantity.cs</name>
+  <compound refid="_materials_8cs" kind="file"><name>Materials.cs</name>
   </compound>
-  <compound refid="_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  <compound refid="_material_service_8cs" kind="file"><name>MaterialService.cs</name>
   </compound>
-  <compound refid="_release_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
-  </compound>
-  <compound refid="_obras_8cs" kind="file"><name>Obras.cs</name>
-  </compound>
-  <compound refid="_person_8cs" kind="file"><name>Person.cs</name>
-  </compound>
-  <compound refid="_pessoa_8cs" kind="file"><name>Pessoa.cs</name>
-  </compound>
-  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
-  </compound>
-  <compound refid="_project_8cs" kind="file"><name>Project.cs</name>
+  <compound refid="_project_data_8cs" kind="file"><name>ProjectData.cs</name>
   </compound>
   <compound refid="_projects_8cs" kind="file"><name>Projects.cs</name>
   </compound>
-  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  <compound refid="_i_clients_8cs" kind="file"><name>IClients.cs</name>
   </compound>
-  <compound refid="_team_8cs" kind="file"><name>Team.cs</name>
+  <compound refid="_i_employees_8cs" kind="file"><name>IEmployees.cs</name>
   </compound>
-  <compound refid="dir_4082bf0afc35d37c30162a4e48a20e9e" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/obj/Debug</name>
+  <compound refid="_i_material_inventory_8cs" kind="file"><name>IMaterialInventory.cs</name>
+  </compound>
+  <compound refid="_i_materials_8cs" kind="file"><name>IMaterials.cs</name>
+  </compound>
+  <compound refid="_i_projects_8cs" kind="file"><name>IProjects.cs</name>
+  </compound>
+  <compound refid="_client_8cs" kind="file"><name>Client.cs</name>
+  </compound>
+  <compound refid="_employee_8cs" kind="file"><name>Employee.cs</name>
+  </compound>
+  <compound refid="_material_8cs" kind="file"><name>Material.cs</name>
+  </compound>
+  <compound refid="_material_quantity_8cs" kind="file"><name>MaterialQuantity.cs</name>
+  </compound>
+  <compound refid="_person_8cs" kind="file"><name>Person.cs</name>
+  </compound>
+  <compound refid="_project_8cs" kind="file"><name>Project.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_clients_test_8cs" kind="file"><name>ClientsTest.cs</name>
+  </compound>
+  <compound refid="_m_s_test_settings_8cs" kind="file"><name>MSTestSettings.cs</name>
+  </compound>
+  <compound refid="_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_unit_01_test_8_assembly_info_8cs" kind="file"><name>Unit Test.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_unit_01_test_8_global_usings_8g_8cs" kind="file"><name>Unit Test.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="dir_105271d38a1766e50f42b694e3cabfd3" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier</name>
+  </compound>
+  <compound refid="dir_a82198a8789d89d16e67941774687164" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions</name>
+  </compound>
+  <compound refid="dir_2790ca5591784e3abc0b2a221922c11e" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier</name>
+  </compound>
+  <compound refid="dir_0ba78c33d72b2f5ca6c982869973492c" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/obj/Debug</name>
+  </compound>
+  <compound refid="dir_775f30960ff03f4195d5186e2b715e10" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions/obj/Debug</name>
+  </compound>
+  <compound refid="dir_68201224a235c89e62b30f9f9d2808fe" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/obj/Debug</name>
+  </compound>
+  <compound refid="dir_4cfac0c771886dc5be169737559d43f6" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/obj/Debug</name>
+  </compound>
+  <compound refid="dir_4e31fca962e522163c45786b99e4b27e" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/obj/Debug</name>
+  </compound>
+  <compound refid="dir_4c3bd60403db5b2b97c2575d79e5ec4c" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Presentation Tier/obj/Debug</name>
+  </compound>
+  <compound refid="dir_5e218f0ba0ec7f939ce4d6a621359c47" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/obj/Debug</name>
   </compound>
   <compound refid="dir_ca96b112edf0a196872e1ec0b84dd303" kind="dir"><name>html</name>
   </compound>
-  <compound refid="dir_3bc03cc55d4aa6566f37b02a8017003e" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/obj</name>
+  <compound refid="dir_ce8c6241b55c650581b04f14dd4fd6e5" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier</name>
   </compound>
-  <compound refid="dir_a6283325e2b58ba58d4c0c1ad7b1bf70" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/Properties</name>
+  <compound refid="dir_9d6fa6ba6f20be9cae43e921f92f8a11" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/obj/Debug/net8.0</name>
   </compound>
-  <compound refid="dir_fde2e7bac110681567e7dc6808f601de" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src/obj/Release</name>
+  <compound refid="dir_80f7df2fc36ca021f00779de8743372b" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/obj</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase1/src</name>
+  <compound refid="dir_da9f2b9b621d47b676f4a8e9a2ced78a" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions/obj</name>
+  </compound>
+  <compound refid="dir_5d0d0a3789b9d4f494ab9ee0ba0c8145" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/obj</name>
+  </compound>
+  <compound refid="dir_2349affdaf244cb775286dacac81ee00" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/obj</name>
+  </compound>
+  <compound refid="dir_3dc8c5122205d1408330c9c51a473141" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/obj</name>
+  </compound>
+  <compound refid="dir_ddba60733113d7b1fb6a42572bb678a6" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Presentation Tier/obj</name>
+  </compound>
+  <compound refid="dir_5888170a4c48d66099b59f45778f0746" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/obj</name>
+  </compound>
+  <compound refid="dir_501637ec05ec90fb9f4c4e3b595e6409" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier</name>
+  </compound>
+  <compound refid="dir_e8cff7b021010ad7e229d7aceaec5a06" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Presentation Tier</name>
+  </compound>
+  <compound refid="dir_0f48ddc284faa539eced53b1ff832572" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Properties</name>
+  </compound>
+  <compound refid="dir_81431811b2ab5f6dccd6078406b568a7" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions/Properties</name>
+  </compound>
+  <compound refid="dir_587f66b1acc962ecdf0f82f7b6cb43c8" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Properties</name>
+  </compound>
+  <compound refid="dir_49a800a066b57831e3db9b787196b657" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/Properties</name>
+  </compound>
+  <compound refid="dir_a55bc328c6fa3aa548ce9f4f98544bd1" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Properties</name>
+  </compound>
+  <compound refid="dir_d00dd85dc31b1d6b53afe5bbcc834a91" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Presentation Tier/Properties</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src</name>
   </compound>
   <compound refid="dir_ff69035fa1ccc83ff74410a99a8c1b81" kind="dir"><name>uml</name>
+  </compound>
+  <compound refid="dir_fe1571214348338b29ecf6def45d025d" kind="dir"><name>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test</name>
   </compound>
   <compound refid="indexpage" kind="page"><name>index</name>
   </compound>

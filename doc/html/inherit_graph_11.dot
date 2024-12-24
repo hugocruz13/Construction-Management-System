@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="src.Team",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_team.html",tooltip="Represents a team of employees."];
+  Node0 [id="Node000000",label="Object_Tier.Project",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_object___tier_1_1_project.html",tooltip="Represents a project with information about its status, start date, end date, and ID management."];
 }

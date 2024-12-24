@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_data___tier_1_1_material_inventory" kind="class" language="C#" prot="public">
+    <compoundname>Data_Tier::MaterialInventory</compoundname>
+    <basecompoundref refid="interface_interface___tier_1_1_i_material_inventory" prot="public" virt="non-virtual">Interface_Tier.IMaterialInventory</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_data___tier_1_1_material_inventory_1a938deae93212dcc1609d95e10125fad6" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_data___tier_1_1_material_inventory" kindref="compound">MaterialInventory</ref></type>
+        <definition>MaterialInventory Data_Tier.MaterialInventory.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>Data_Tier.MaterialInventory.instance</qualifiedname>
+        <briefdescription>
+<para>Singleton instance of the <ref refid="class_data___tier_1_1_material_inventory" kindref="compound">MaterialInventory</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="28" column="34" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data___tier_1_1_material_inventory_1a81a8c1fd6704a411f0ffe4b3ef7f3a06" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> &gt;</type>
+        <definition>List&lt;MaterialQuantity&gt; Data_Tier.MaterialInventory.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <qualifiedname>Data_Tier.MaterialInventory.inventory</qualifiedname>
+        <briefdescription>
+<para>List of materials stored in inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="33" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data___tier_1_1_material_inventory_1af75102dd2f1d48e0242d49c827b4228b" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data___tier_1_1_material_inventory" kindref="compound">MaterialInventory</ref></type>
+        <definition>MaterialInventory Data_Tier.MaterialInventory.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>Data_Tier.MaterialInventory.Instance</qualifiedname>
+        <briefdescription>
+<para>Gets the singleton instance of the <ref refid="class_data___tier_1_1_material_inventory" kindref="compound">MaterialInventory</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="42" column="41" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data___tier_1_1_material_inventory_1a2a22c5375224e928df4f3c7095904d87" prot="package" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> &gt;</type>
+        <definition>List&lt;MaterialQuantity&gt; Data_Tier.MaterialInventory.InventoryD</definition>
+        <argsstring></argsstring>
+        <name>InventoryD</name>
+        <qualifiedname>Data_Tier.MaterialInventory.InventoryD</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the list of materials in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="58" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="59" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1a62b598747ca2821f1614d7e94d69010c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data_Tier.MaterialInventory.MaterialInventory</definition>
+        <argsstring>()</argsstring>
+        <name>MaterialInventory</name>
+        <qualifiedname>Data_Tier.MaterialInventory.MaterialInventory</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_data___tier_1_1_material_inventory" kindref="compound">MaterialInventory</ref> class with an empty inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="69" column="19" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="69" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1a33b2cee28b5ed82a272f1c85830022cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+        <definition>MaterialQuantity Data_Tier.MaterialInventory.FindMaterial</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>FindMaterial</name>
+        <qualifiedname>Data_Tier.MaterialInventory.FindMaterial</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Finds a material in the inventory based on the material ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to find.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The material if found, otherwise null.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="83" column="26" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="83" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1a9d2a3ea2c6ce5caac8d6a716214dcfa8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data_Tier.MaterialInventory.~MaterialInventory</definition>
+        <argsstring>()</argsstring>
+        <name>~MaterialInventory</name>
+        <qualifiedname>Data_Tier.MaterialInventory.~MaterialInventory</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="class_data___tier_1_1_material_inventory" kindref="compound">MaterialInventory</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="260" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="260" bodyend="262"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1aa1e2a8c410200411cfb9c36c77c7106b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Data_Tier.MaterialInventory.AddMaterial</definition>
+        <argsstring>(MaterialQuantity inventoryQuantity)</argsstring>
+        <name>AddMaterial</name>
+        <qualifiedname>Data_Tier.MaterialInventory.AddMaterial</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_material_inventory_1a80ab8984d2712428917a593dbcc445a4">AddMaterial</reimplements>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>inventoryQuantity</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new material to the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inventoryQuantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material quantity to add to the inventory.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the added material.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the material is null or if any error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="104" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="104" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1aa07d2628caebc320b65db94ec768ac1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.MaterialInventory.VerifyMaterialExistence</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>VerifyMaterialExistence</name>
+        <qualifiedname>Data_Tier.MaterialInventory.VerifyMaterialExistence</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_material_inventory_1ace16841dc7fa2387b44bb0d9b7aae463">VerifyMaterialExistence</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Verifies if a material exists in the inventory based on the material ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to verify.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the material exists, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the verification process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="129" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="129" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1a36deed3d8216bf013a48f70a41ffcad7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.MaterialInventory.VerifyMaterialQuantity</definition>
+        <argsstring>(int idMaterial, int quantity)</argsstring>
+        <name>VerifyMaterialQuantity</name>
+        <qualifiedname>Data_Tier.MaterialInventory.VerifyMaterialQuantity</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_material_inventory_1ad85731825e0eb3d19fa2d90124efd5ce">VerifyMaterialQuantity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Verifies if there is enough quantity of a material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to check.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of material to check for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if there is enough quantity, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="154" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="154" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1a3d349ce4896a0d3a9b46de1000b82cc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.MaterialInventory.UpdateQuantity</definition>
+        <argsstring>(int idMaterial, int quantityUpdate)</argsstring>
+        <name>UpdateQuantity</name>
+        <qualifiedname>Data_Tier.MaterialInventory.UpdateQuantity</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_material_inventory_1a25c62d5832de047d3918ed12a106c94b">UpdateQuantity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantityUpdate</declname>
+        </param>
+        <briefdescription>
+<para>Updates the quantity of a material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantityUpdate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new quantity of the material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the quantity was updated successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the update process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="178" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="178" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1af9ff7521af7288f477b6946558dd610b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.MaterialInventory.UseMaterial</definition>
+        <argsstring>(int idMaterial, int quantity)</argsstring>
+        <name>UseMaterial</name>
+        <qualifiedname>Data_Tier.MaterialInventory.UseMaterial</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_material_inventory_1a1c16fcc291a090c865e33d9948630887">UseMaterial</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Decreases the quantity of a material in the inventory when it is used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of material to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the material quantity was successfully decreased, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the use process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="207" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="207" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_material_inventory_1a8750a652f46590b9846c3b8508dbd328" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+        <definition>MaterialQuantity Data_Tier.MaterialInventory.GetMaterialQuantity</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>GetMaterialQuantity</name>
+        <qualifiedname>Data_Tier.MaterialInventory.GetMaterialQuantity</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the material and its quantity from the inventory based on the material ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the material quantity object if found, otherwise null.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during retrieval. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="235" column="33" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="235" bodyend="252"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Singleton class that manages the material inventory. Allows adding, removing, updating, and retrieving materials. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data_Tier.MaterialInventory</label>
+        <link refid="class_data___tier_1_1_material_inventory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMaterialInventory</label>
+        <link refid="interface_interface___tier_1_1_i_material_inventory"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data_Tier.MaterialInventory</label>
+        <link refid="class_data___tier_1_1_material_inventory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMaterialInventory</label>
+        <link refid="interface_interface___tier_1_1_i_material_inventory"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" line="21" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialInventory.cs" bodystart="22" bodyend="267"/>
+    <listofallmembers>
+      <member refid="class_data___tier_1_1_material_inventory_1aa1e2a8c410200411cfb9c36c77c7106b" prot="public" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>AddMaterial</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a33b2cee28b5ed82a272f1c85830022cd" prot="private" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>FindMaterial</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a8750a652f46590b9846c3b8508dbd328" prot="public" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>GetMaterialQuantity</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1af75102dd2f1d48e0242d49c827b4228b" prot="public" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>Instance</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a938deae93212dcc1609d95e10125fad6" prot="private" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>instance</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a81a8c1fd6704a411f0ffe4b3ef7f3a06" prot="private" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>inventory</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a2a22c5375224e928df4f3c7095904d87" prot="package" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>InventoryD</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a62b598747ca2821f1614d7e94d69010c" prot="protected" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>MaterialInventory</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a3d349ce4896a0d3a9b46de1000b82cc6" prot="public" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>UpdateQuantity</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1af9ff7521af7288f477b6946558dd610b" prot="public" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>UseMaterial</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1aa07d2628caebc320b65db94ec768ac1e" prot="public" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>VerifyMaterialExistence</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a36deed3d8216bf013a48f70a41ffcad7" prot="public" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>VerifyMaterialQuantity</name></member>
+      <member refid="class_data___tier_1_1_material_inventory_1a9d2a3ea2c6ce5caac8d6a716214dcfa8" prot="private" virt="non-virtual"><scope>Data_Tier::MaterialInventory</scope><name>~MaterialInventory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

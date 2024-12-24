@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_i_projects_8cs" kind="file" language="C#">
+    <compoundname>IProjects.cs</compoundname>
+    <innerclass refid="interface_interface___tier_1_1_i_projects" prot="public">Interface_Tier::IProjects</innerclass>
+    <innernamespace refid="namespace_interface___tier">Interface_Tier</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_interface___tier" kindref="compound">Interface_Tier</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="interface_interface___tier_1_1_i_projects" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_interface___tier_1_1_i_projects" kindref="compound">IProjects</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_projects_1a050cd933392a240f89f2c01d7b733a08" kindref="member">RemoveProject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idProject);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_projects_1a813383762e567dc5d5a139d95f8969c4" kindref="member">ProjectExists</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idProject);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_projects_1a70b05531b83754841335fac43bf7f8e0" kindref="member">CloseProject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idProject);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_projects_1acddd379d00567185c639d1a405a5199f" kindref="member">AddClient</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idProject,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idClient);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_projects_1a4b0b83e0d7d4352b5df25222f0e69259" kindref="member">RemoveClient</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idProject,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idClient);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_projects_1a58fa6a8fb33cdc54c1e03f11c396688a" kindref="member">AddEmployee</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idProject,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idEmployee);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_projects_1a36a00f1dad13442da1e6505bf32e5769" kindref="member">RemoveEmployee</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idProject,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idEmployee);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_projects_1ab98c34cf5140d99a7bba3c029ab1ac05" kindref="member">UseMaterial</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idProject,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idMaterial,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>quantity);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs"/>
+  </compounddef>
+</doxygen>

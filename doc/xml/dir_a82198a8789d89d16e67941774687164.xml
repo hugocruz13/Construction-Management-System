@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_a82198a8789d89d16e67941774687164" kind="dir">
+    <compoundname>C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions</compoundname>
+    <innerdir refid="dir_da9f2b9b621d47b676f4a8e9a2ced78a">C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions/obj</innerdir>
+    <innerdir refid="dir_81431811b2ab5f6dccd6078406b568a7">C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions/Properties</innerdir>
+    <innerfile refid="_execeptions_8cs">Execeptions.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/CustomExceptions/"/>
+  </compounddef>
+</doxygen>

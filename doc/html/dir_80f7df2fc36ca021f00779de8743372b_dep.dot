@@ -1,0 +1,16 @@
+digraph "C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/obj"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_105271d38a1766e50f42b694e3cabfd3 {
+    graph [ bgcolor="#dadada", pencolor="grey50", label="Business Tier", fontname=Helvetica,fontsize=12 style="filled,dashed", URL="dir_105271d38a1766e50f42b694e3cabfd3.html",tooltip=""]
+  subgraph clusterdir_80f7df2fc36ca021f00779de8743372b {
+    graph [ bgcolor="#dadada", pencolor="grey25", label="", fontname=Helvetica,fontsize=12 style="filled,bold", URL="dir_80f7df2fc36ca021f00779de8743372b.html",tooltip=""]
+    dir_80f7df2fc36ca021f00779de8743372b [shape=plaintext, label="obj"];
+  dir_0ba78c33d72b2f5ca6c982869973492c [label="Debug", fillcolor="#676767", color="grey25", style="filled", URL="dir_0ba78c33d72b2f5ca6c982869973492c.html",tooltip=""];
+  }
+  }
+}

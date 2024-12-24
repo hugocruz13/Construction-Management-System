@@ -1,0 +1,5 @@
+<map id="Data_Tier.MaterialInventory" name="Data_Tier.MaterialInventory">
+<area shape="rect" id="Node000001" title="Singleton class that manages the material inventory. Allows adding, removing, updating,..." alt="" coords="5,83,222,113"/>
+<area shape="rect" id="Node000002" href="$interface_interface___tier_1_1_i_material_inventory.html" title="Methods to implement in the inventory class." alt="" coords="40,5,187,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,51,116,82,111,82,111,51"/>
+</map>

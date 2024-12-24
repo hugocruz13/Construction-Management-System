@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['src_0',['src',['../namespacesrc.html',1,'']]],
-  ['startdate_1',['StartDate',['../classsrc_1_1_project.html#a7e52efc3fb95be5f1a3703a6fa0db04e',1,'src::Project']]],
-  ['status_2',['Status',['../classsrc_1_1_project.html#a62c3eacae9a0cf985c821a94f7d95cb1',1,'src.Project.Status'],['../namespacesrc.html#af7f0a9d891a5c63215e50974323f4095',1,'src.Status']]]
+  ['registemployee_0',['RegistEmployee',['../class_business___tier_1_1_company.html#ac80bba0ae5f40f2f3cdad1a5501bbd8f',1,'Business_Tier::Company']]],
+  ['registerclient_1',['RegisterClient',['../class_business___tier_1_1_company.html#aff7dd145915b99b986c8e8a420599f3e',1,'Business_Tier::Company']]],
+  ['registermaterial_2',['RegisterMaterial',['../class_business___tier_1_1_company.html#a5d330e3a25c187b41709e377e63c1b7e',1,'Business_Tier::Company']]],
+  ['registproject_3',['RegistProject',['../class_business___tier_1_1_company.html#aed087dbe776c0838ae0a4f284e5a0509',1,'Business_Tier::Company']]],
+  ['removeclient_4',['RemoveClient',['../class_data___tier_1_1_clients.html#a499deb52f93f9b085e21f7589b50aad6',1,'Data_Tier.Clients.RemoveClient()'],['../class_data___tier_1_1_project_data.html#aea8c8a3f8adcf4763e437a5eb6f2b365',1,'Data_Tier.ProjectData.RemoveClient()'],['../class_data___tier_1_1_projects.html#ac6c8a231895cd7f4933304f726ff4960',1,'Data_Tier.Projects.RemoveClient()'],['../interface_interface___tier_1_1_i_clients.html#a982e6293c1c7b0ed1b194518a8b17f30',1,'Interface_Tier.IClients.RemoveClient()'],['../interface_interface___tier_1_1_i_projects.html#a4b0b83e0d7d4352b5df25222f0e69259',1,'Interface_Tier.IProjects.RemoveClient()']]],
+  ['removeemployee_5',['RemoveEmployee',['../class_data___tier_1_1_employees.html#aa38c1c75bb81177c3c29da2f7cda92aa',1,'Data_Tier.Employees.RemoveEmployee()'],['../class_data___tier_1_1_employees_service.html#a7156846d426e18c24aa4c9767407a388',1,'Data_Tier.EmployeesService.RemoveEmployee()'],['../class_data___tier_1_1_project_data.html#a652a8881b00dfc820b5697f1a653a3f1',1,'Data_Tier.ProjectData.RemoveEmployee()'],['../class_data___tier_1_1_projects.html#a1ee69b69a7fe3a510ed514c2dfed190a',1,'Data_Tier.Projects.RemoveEmployee()'],['../interface_interface___tier_1_1_i_employees.html#a8464bf608876bb24769806385cf114f9',1,'Interface_Tier.IEmployees.RemoveEmployee()'],['../interface_interface___tier_1_1_i_projects.html#a36a00f1dad13442da1e6505bf32e5769',1,'Interface_Tier.IProjects.RemoveEmployee()']]],
+  ['removeproject_6',['RemoveProject',['../class_data___tier_1_1_projects.html#a02f3f7cbf70eb3aaae10985b3fdb15d5',1,'Data_Tier.Projects.RemoveProject()'],['../interface_interface___tier_1_1_i_projects.html#a050cd933392a240f89f2c01d7b733a08',1,'Interface_Tier.IProjects.RemoveProject()']]],
+  ['role_7',['Role',['../class_object___tier_1_1_employee.html#a98bbe928c06a33a3295c4a188beaf7e2',1,'Object_Tier::Employee']]]
 ];

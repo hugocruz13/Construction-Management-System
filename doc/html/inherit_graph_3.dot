@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="src.Material",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_material.html",tooltip="The class Material represents a material used in processes, with attributes such as ID,..."];
+  Node0 [id="Node000000",label="Data_Tier.Data",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___tier_1_1_data.html",tooltip="The Data class serves as a centralized data manager for the application. It collects data from variou..."];
 }

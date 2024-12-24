@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_data___tier_1_1_clients" kind="class" language="C#" prot="public">
+    <compoundname>Data_Tier::Clients</compoundname>
+    <basecompoundref refid="interface_interface___tier_1_1_i_clients" prot="public" virt="non-virtual">Interface_Tier.IClients</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_data___tier_1_1_clients_1afcb27ec1074589ff491ebd361359ee65" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_data___tier_1_1_clients" kindref="compound">Clients</ref></type>
+        <definition>Clients Data_Tier.Clients.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>Data_Tier.Clients.instance</qualifiedname>
+        <briefdescription>
+<para>Singleton instance of the <ref refid="class_data___tier_1_1_clients" kindref="compound">Clients</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="29" column="24" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data___tier_1_1_clients_1a2313fca5cbc1ebc18a6c861c15b26d33" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref> &gt;</type>
+        <definition>List&lt;Client&gt; Data_Tier.Clients.clients</definition>
+        <argsstring></argsstring>
+        <name>clients</name>
+        <qualifiedname>Data_Tier.Clients.clients</qualifiedname>
+        <briefdescription>
+<para>List of clients stored in memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="34" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data___tier_1_1_clients_1ae817e2f9ee3b9eeee270b13fd372df01" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data___tier_1_1_clients" kindref="compound">Clients</ref></type>
+        <definition>Clients Data_Tier.Clients.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>Data_Tier.Clients.Instance</qualifiedname>
+        <briefdescription>
+<para>Gets the singleton instance of the <ref refid="class_data___tier_1_1_clients" kindref="compound">Clients</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="44" column="31" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="45" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data___tier_1_1_clients_1ace8ab788954de3c55f0d40d80cef9e85" prot="package" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref> &gt;</type>
+        <definition>List&lt;Client&gt; Data_Tier.Clients.ClientsD</definition>
+        <argsstring></argsstring>
+        <name>ClientsD</name>
+        <qualifiedname>Data_Tier.Clients.ClientsD</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the list of clients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="60" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="61" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1afb15bf1ad51b910568b626df9639635d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data_Tier.Clients.Clients</definition>
+        <argsstring>()</argsstring>
+        <name>Clients</name>
+        <qualifiedname>Data_Tier.Clients.Clients</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_data___tier_1_1_clients" kindref="compound">Clients</ref> class, with an empty list of clients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="71" column="19" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="71" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1aaa8d5afbc8c7146137df4ea52e168e33" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+        <definition>Client Data_Tier.Clients.FindClient</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>FindClient</name>
+        <qualifiedname>Data_Tier.Clients.FindClient</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Finds a client in the list based on the client ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to find.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the client if found, otherwise null.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="84" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="84" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1ad6612f1d908cd9d327b3b4fb504e46d1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data_Tier.Clients.~Clients</definition>
+        <argsstring>()</argsstring>
+        <name>~Clients</name>
+        <qualifiedname>Data_Tier.Clients.~Clients</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="class_data___tier_1_1_clients" kindref="compound">Clients</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="268" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="268" bodyend="270"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1a129abe2a08e4334ad683cf0533772e07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Data_Tier.Clients.AddClient</definition>
+        <argsstring>(Client client)</argsstring>
+        <name>AddClient</name>
+        <qualifiedname>Data_Tier.Clients.AddClient</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_clients_1a975f28cc717a22dfbce8ef3736232888">AddClient</reimplements>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new client to the list of clients and sorts the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>he client to add to the list.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the added client.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the client is null or if any error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="105" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="105" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1a499deb52f93f9b085e21f7589b50aad6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Clients.RemoveClient</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>RemoveClient</name>
+        <qualifiedname>Data_Tier.Clients.RemoveClient</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_clients_1a982e6293c1c7b0ed1b194518a8b17f30">RemoveClient</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Removes a client from the list based on the client ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the client is successfully removed, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the removal of the client. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="132" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="132" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1a896770ff1ba1bd334abc5ad716de24d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Clients.ExistClient</definition>
+        <argsstring>(Client client)</argsstring>
+        <name>ExistClient</name>
+        <qualifiedname>Data_Tier.Clients.ExistClient</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a specific client exists in the list by comparing with another client object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client to check for existence in the list.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the client exists, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="158" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="158" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1aa56bbc5ed5918094f5c08ff6f409fc46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Clients.ExistClient</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>ExistClient</name>
+        <qualifiedname>Data_Tier.Clients.ExistClient</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_clients_1aef144f3dec424ba3cd138b1dd0dc5ef0">ExistClient</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a client exists in the list based on the client ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to check for existence.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the client exists, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs while checking for existence. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="179" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="179" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1aebfc1f6f9a03b5fc68a3c0ccdf37ecb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Clients.UpdateContact</definition>
+        <argsstring>(int idClient, int contacto)</argsstring>
+        <name>UpdateContact</name>
+        <qualifiedname>Data_Tier.Clients.UpdateContact</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_clients_1a8a0d6df18ef00c655629b368745c912d">UpdateContact</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>contacto</declname>
+        </param>
+        <briefdescription>
+<para>Updates the contact information of a client based on the client ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contacto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new contact information to set for the client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the contact information was updated successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the update process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="208" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="208" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1a9cdf3bd9ffb752f73b3c9d95933ad13f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+        <definition>Client Data_Tier.Clients.GetClient</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>GetClient</name>
+        <qualifiedname>Data_Tier.Clients.GetClient</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_clients_1a2fc4095583682636ec50d4044e5b1abc">GetClient</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves a client from the list based on the client ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the client object with the specified ID, or null if the client is not found.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs while retrieving the client. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="236" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="236" bodyend="246"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_data___tier_1_1_clients_1a29cf7066deae854ce3205a8586a1d423" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Clients.SetCounterEqualClient</definition>
+        <argsstring>()</argsstring>
+        <name>SetCounterEqualClient</name>
+        <qualifiedname>Data_Tier.Clients.SetCounterEqualClient</qualifiedname>
+        <briefdescription>
+<para>Resets the client ID counter to ensure all clients have unique IDs by calling the <computeroutput>getNextClientId()</computeroutput> method for each client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns true if the client ID counter was successfully updated for all clients.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="252" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="252" bodyend="260"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Singleton class that manages the list of clients. Allows adding, removing, updating and retrieving clients. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data_Tier.Clients</label>
+        <link refid="class_data___tier_1_1_clients"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IClients</label>
+        <link refid="interface_interface___tier_1_1_i_clients"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data_Tier.Clients</label>
+        <link refid="class_data___tier_1_1_clients"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IClients</label>
+        <link refid="interface_interface___tier_1_1_i_clients"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="22" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" bodystart="23" bodyend="275"/>
+    <listofallmembers>
+      <member refid="class_data___tier_1_1_clients_1a129abe2a08e4334ad683cf0533772e07" prot="public" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>AddClient</name></member>
+      <member refid="class_data___tier_1_1_clients_1afb15bf1ad51b910568b626df9639635d" prot="protected" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>Clients</name></member>
+      <member refid="class_data___tier_1_1_clients_1a2313fca5cbc1ebc18a6c861c15b26d33" prot="private" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>clients</name></member>
+      <member refid="class_data___tier_1_1_clients_1ace8ab788954de3c55f0d40d80cef9e85" prot="package" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>ClientsD</name></member>
+      <member refid="class_data___tier_1_1_clients_1a896770ff1ba1bd334abc5ad716de24d6" prot="public" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>ExistClient</name></member>
+      <member refid="class_data___tier_1_1_clients_1aa56bbc5ed5918094f5c08ff6f409fc46" prot="public" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>ExistClient</name></member>
+      <member refid="class_data___tier_1_1_clients_1aaa8d5afbc8c7146137df4ea52e168e33" prot="private" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>FindClient</name></member>
+      <member refid="class_data___tier_1_1_clients_1a9cdf3bd9ffb752f73b3c9d95933ad13f" prot="public" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>GetClient</name></member>
+      <member refid="class_data___tier_1_1_clients_1ae817e2f9ee3b9eeee270b13fd372df01" prot="public" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>Instance</name></member>
+      <member refid="class_data___tier_1_1_clients_1afcb27ec1074589ff491ebd361359ee65" prot="private" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>instance</name></member>
+      <member refid="class_data___tier_1_1_clients_1a499deb52f93f9b085e21f7589b50aad6" prot="public" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>RemoveClient</name></member>
+      <member refid="class_data___tier_1_1_clients_1a29cf7066deae854ce3205a8586a1d423" prot="package" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>SetCounterEqualClient</name></member>
+      <member refid="class_data___tier_1_1_clients_1aebfc1f6f9a03b5fc68a3c0ccdf37ecb9" prot="public" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>UpdateContact</name></member>
+      <member refid="class_data___tier_1_1_clients_1ad6612f1d908cd9d327b3b4fb504e46d1" prot="private" virt="non-virtual"><scope>Data_Tier::Clients</scope><name>~Clients</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

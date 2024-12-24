@@ -1,0 +1,760 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_data___tier_1_1_projects" kind="class" language="C#" prot="public">
+    <compoundname>Data_Tier::Projects</compoundname>
+    <basecompoundref refid="interface_interface___tier_1_1_i_projects" prot="public" virt="non-virtual">Interface_Tier.IProjects</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_data___tier_1_1_projects_1a095d90a138d2809db306d46dd148626f" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_data___tier_1_1_projects" kindref="compound">Projects</ref></type>
+        <definition>Projects Data_Tier.Projects.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>Data_Tier.Projects.instance</qualifiedname>
+        <briefdescription>
+<para>Singleton instance of the <ref refid="class_data___tier_1_1_projects" kindref="compound">Projects</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="28" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data___tier_1_1_projects_1a7f7518eff687b1f50eab947fc8c1a82a" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_data___tier_1_1_project_data" kindref="compound">ProjectData</ref> &gt;</type>
+        <definition>List&lt;ProjectData&gt; Data_Tier.Projects.projects</definition>
+        <argsstring></argsstring>
+        <name>projects</name>
+        <qualifiedname>Data_Tier.Projects.projects</qualifiedname>
+        <briefdescription>
+<para>List of projects managed by the <ref refid="class_data___tier_1_1_projects" kindref="compound">Projects</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="33" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data___tier_1_1_projects_1a4101fcebbf5230744c80dbaf7bead449" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data___tier_1_1_projects" kindref="compound">Projects</ref></type>
+        <definition>Projects Data_Tier.Projects.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>Data_Tier.Projects.Instance</qualifiedname>
+        <briefdescription>
+<para>Gets the singleton instance of the <ref refid="class_data___tier_1_1_projects" kindref="compound">Projects</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="43" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="44" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data___tier_1_1_projects_1a0d8072c941d6ea5a1e339e3c4f627a39" prot="package" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_data___tier_1_1_project_data" kindref="compound">ProjectData</ref> &gt;</type>
+        <definition>List&lt;ProjectData&gt; Data_Tier.Projects.ProjectsD</definition>
+        <argsstring></argsstring>
+        <name>ProjectsD</name>
+        <qualifiedname>Data_Tier.Projects.ProjectsD</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the list of projects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="59" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="60" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a176e968f3ca4e9ec1d89280c786e604d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data_Tier.Projects.Projects</definition>
+        <argsstring>()</argsstring>
+        <name>Projects</name>
+        <qualifiedname>Data_Tier.Projects.Projects</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_data___tier_1_1_projects" kindref="compound">Projects</ref> class with an empty list of projects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="71" column="19" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="71" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a47806809b3adce3d1c5dec18f01fd686" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_data___tier_1_1_project_data" kindref="compound">ProjectData</ref></type>
+        <definition>ProjectData Data_Tier.Projects.FindProject</definition>
+        <argsstring>(int projectId)</argsstring>
+        <name>FindProject</name>
+        <qualifiedname>Data_Tier.Projects.FindProject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>projectId</declname>
+        </param>
+        <briefdescription>
+<para>Finds a project by its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projectId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to find.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The project if found, otherwise null.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="85" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1ada9822e3cc232769a3e3da972a7fc6e5" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.ProjectExist</definition>
+        <argsstring>(int projectId)</argsstring>
+        <name>ProjectExist</name>
+        <qualifiedname>Data_Tier.Projects.ProjectExist</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>projectId</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a project exists by its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projectId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project exists, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="103" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="103" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1addcde90e3b77344925256718a4b2a243" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.SetCounterEqualProjects</definition>
+        <argsstring>()</argsstring>
+        <name>SetCounterEqualProjects</name>
+        <qualifiedname>Data_Tier.Projects.SetCounterEqualProjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="387" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="387" bodyend="395"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a7281f5130267894eee04b40df3e46cd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Data_Tier.Projects.AddProject</definition>
+        <argsstring>(ProjectData project)</argsstring>
+        <name>AddProject</name>
+        <qualifiedname>Data_Tier.Projects.AddProject</qualifiedname>
+        <param>
+          <type><ref refid="class_data___tier_1_1_project_data" kindref="compound">ProjectData</ref></type>
+          <declname>project</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new project to the projects list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>project</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The project to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the added project.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the project is null or any error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="125" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="125" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a02f3f7cbf70eb3aaae10985b3fdb15d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.RemoveProject</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>RemoveProject</name>
+        <qualifiedname>Data_Tier.Projects.RemoveProject</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_projects_1a050cd933392a240f89f2c01d7b733a08">RemoveProject</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Removes a project from the projects list by its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project was successfully removed, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="152" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="152" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a0964b2eafd2ef9f57f8d3d7511d044fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.ProjectExists</definition>
+        <argsstring>(Project project2)</argsstring>
+        <name>ProjectExists</name>
+        <qualifiedname>Data_Tier.Projects.ProjectExists</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref></type>
+          <declname>project2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a project exists by its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projectId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project exists, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="177" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="177" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a0ed230edd97b7193077d8d6bac3000d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.ProjectExists</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>ProjectExists</name>
+        <qualifiedname>Data_Tier.Projects.ProjectExists</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_projects_1a813383762e567dc5d5a139d95f8969c4">ProjectExists</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a project already exists based on its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project exists, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="198" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="198" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1aeb5348393eacdf16545abeb17c8af23f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.UpdateStatus</definition>
+        <argsstring>(int idProject, Status status)</argsstring>
+        <name>UpdateStatus</name>
+        <qualifiedname>Data_Tier.Projects.UpdateStatus</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550" kindref="member">Status</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Updates the status of a project by its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new status of the project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the status was updated successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the update. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="219" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="219" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1abb62bd02e4e20d0db63eab6c177551f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.CloseProject</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>CloseProject</name>
+        <qualifiedname>Data_Tier.Projects.CloseProject</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_projects_1a70b05531b83754841335fac43bf7f8e0">CloseProject</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Closes a project by setting its end date and status to completed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to close.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project was successfully closed, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the closure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="247" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="247" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a819d23aeba0aac360051ace79463756b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.AddClient</definition>
+        <argsstring>(int idProject, int idClient)</argsstring>
+        <name>AddClient</name>
+        <qualifiedname>Data_Tier.Projects.AddClient</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_projects_1acddd379d00567185c639d1a405a5199f">AddClient</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Adds a client to a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to add the client to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the client was added successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="278" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="278" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1ac6c8a231895cd7f4933304f726ff4960" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.RemoveClient</definition>
+        <argsstring>(int idProject, int idClient)</argsstring>
+        <name>RemoveClient</name>
+        <qualifiedname>Data_Tier.Projects.RemoveClient</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_projects_1a4b0b83e0d7d4352b5df25222f0e69259">RemoveClient</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Removes a client from a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to remove the client from.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the client was removed successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="300" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="300" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a5ef19eed2efe61fcdff7ae225c69bed7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.AddEmployee</definition>
+        <argsstring>(int idProject, int idEmployee)</argsstring>
+        <name>AddEmployee</name>
+        <qualifiedname>Data_Tier.Projects.AddEmployee</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_projects_1a58fa6a8fb33cdc54c1e03f11c396688a">AddEmployee</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Adds an employee to a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to add the employee to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employee was added successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="326" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="326" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a1ee69b69a7fe3a510ed514c2dfed190a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.RemoveEmployee</definition>
+        <argsstring>(int idProject, int idEmployee)</argsstring>
+        <name>RemoveEmployee</name>
+        <qualifiedname>Data_Tier.Projects.RemoveEmployee</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_projects_1a36a00f1dad13442da1e6505bf32e5769">RemoveEmployee</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Removes an employee from a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to remove the employee from.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employee was removed successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="348" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="348" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a926bd6ab57e9451d82c1d095bd598e08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Projects.UseMaterial</definition>
+        <argsstring>(int idProject, int idMaterial, int quantity)</argsstring>
+        <name>UseMaterial</name>
+        <qualifiedname>Data_Tier.Projects.UseMaterial</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_projects_1ab98c34cf5140d99a7bba3c029ab1ac05">UseMaterial</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Uses material in a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to use material in.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the material was used successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the material use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="374" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="374" bodyend="385"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_data___tier_1_1_projects_1a906161f6675a65a9bb1172d81a8d8471" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data_Tier.Projects.~Projects</definition>
+        <argsstring>()</argsstring>
+        <name>~Projects</name>
+        <qualifiedname>Data_Tier.Projects.~Projects</qualifiedname>
+        <briefdescription>
+<para>The destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="404" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="404" bodyend="406"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Singleton class that manages the projects in the system. Allows adding, removing, updating, and retrieving projects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data_Tier.Projects</label>
+        <link refid="class_data___tier_1_1_projects"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IProjects</label>
+        <link refid="interface_interface___tier_1_1_i_projects"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data_Tier.Projects</label>
+        <link refid="class_data___tier_1_1_projects"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IProjects</label>
+        <link refid="interface_interface___tier_1_1_i_projects"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" line="21" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Projects.cs" bodystart="22" bodyend="411"/>
+    <listofallmembers>
+      <member refid="class_data___tier_1_1_projects_1a819d23aeba0aac360051ace79463756b" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>AddClient</name></member>
+      <member refid="class_data___tier_1_1_projects_1a5ef19eed2efe61fcdff7ae225c69bed7" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>AddEmployee</name></member>
+      <member refid="class_data___tier_1_1_projects_1a7281f5130267894eee04b40df3e46cd7" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>AddProject</name></member>
+      <member refid="class_data___tier_1_1_projects_1abb62bd02e4e20d0db63eab6c177551f5" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>CloseProject</name></member>
+      <member refid="class_data___tier_1_1_projects_1a47806809b3adce3d1c5dec18f01fd686" prot="package" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>FindProject</name></member>
+      <member refid="class_data___tier_1_1_projects_1a4101fcebbf5230744c80dbaf7bead449" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>Instance</name></member>
+      <member refid="class_data___tier_1_1_projects_1a095d90a138d2809db306d46dd148626f" prot="private" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>instance</name></member>
+      <member refid="class_data___tier_1_1_projects_1ada9822e3cc232769a3e3da972a7fc6e5" prot="package" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>ProjectExist</name></member>
+      <member refid="class_data___tier_1_1_projects_1a0964b2eafd2ef9f57f8d3d7511d044fc" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>ProjectExists</name></member>
+      <member refid="class_data___tier_1_1_projects_1a0ed230edd97b7193077d8d6bac3000d3" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>ProjectExists</name></member>
+      <member refid="class_data___tier_1_1_projects_1a176e968f3ca4e9ec1d89280c786e604d" prot="protected" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>Projects</name></member>
+      <member refid="class_data___tier_1_1_projects_1a7f7518eff687b1f50eab947fc8c1a82a" prot="private" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>projects</name></member>
+      <member refid="class_data___tier_1_1_projects_1a0d8072c941d6ea5a1e339e3c4f627a39" prot="package" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>ProjectsD</name></member>
+      <member refid="class_data___tier_1_1_projects_1ac6c8a231895cd7f4933304f726ff4960" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>RemoveClient</name></member>
+      <member refid="class_data___tier_1_1_projects_1a1ee69b69a7fe3a510ed514c2dfed190a" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>RemoveEmployee</name></member>
+      <member refid="class_data___tier_1_1_projects_1a02f3f7cbf70eb3aaae10985b3fdb15d5" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>RemoveProject</name></member>
+      <member refid="class_data___tier_1_1_projects_1addcde90e3b77344925256718a4b2a243" prot="package" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>SetCounterEqualProjects</name></member>
+      <member refid="class_data___tier_1_1_projects_1aeb5348393eacdf16545abeb17c8af23f" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>UpdateStatus</name></member>
+      <member refid="class_data___tier_1_1_projects_1a926bd6ab57e9451d82c1d095bd598e08" prot="public" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>UseMaterial</name></member>
+      <member refid="class_data___tier_1_1_projects_1a906161f6675a65a9bb1172d81a8d8471" prot="private" virt="non-virtual"><scope>Data_Tier::Projects</scope><name>~Projects</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

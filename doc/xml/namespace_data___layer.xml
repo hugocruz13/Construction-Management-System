@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_data___layer" kind="namespace" language="C#">
+    <compoundname>Data_Layer</compoundname>
+    <innerclass refid="class_data___layer_1_1_material_service" prot="public">Data_Layer::MaterialService</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/MaterialService.cs" line="14" column="1"/>
+  </compounddef>
+</doxygen>

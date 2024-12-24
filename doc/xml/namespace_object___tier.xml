@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_object___tier" kind="namespace" language="C#">
+    <compoundname>Object_Tier</compoundname>
+    <innerclass refid="class_object___tier_1_1_client" prot="public">Object_Tier::Client</innerclass>
+    <innerclass refid="class_object___tier_1_1_employee" prot="public">Object_Tier::Employee</innerclass>
+    <innerclass refid="class_object___tier_1_1_material" prot="public">Object_Tier::Material</innerclass>
+    <innerclass refid="class_object___tier_1_1_material_quantity" prot="public">Object_Tier::MaterialQuantity</innerclass>
+    <innerclass refid="class_object___tier_1_1_person" prot="public">Object_Tier::Person</innerclass>
+    <innerclass refid="class_object___tier_1_1_project" prot="public">Object_Tier::Project</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Status</name>
+        <qualifiedname>Object_Tier.Status</qualifiedname>
+        <enumvalue id="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550a724c608fc97cda23198d8e7419133da6" prot="public">
+          <name>NotStart</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550a12d868c18cb29bf58f02b504be9033fd" prot="public">
+          <name>InProgress</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550ab0c20989fc4692ffdcb556dde07c855d" prot="public">
+          <name>OnHold</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550a07ca5050e697392c9ed47e6453f1453f" prot="public">
+          <name>Completed</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum that defines the possible status of a project. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="21" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="22" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Client.cs" line="11" column="1"/>
+  </compounddef>
+</doxygen>

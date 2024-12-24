@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="interface_interface___tier_1_1_i_projects" kind="interface" language="C#" prot="public">
+    <compoundname>Interface_Tier::IProjects</compoundname>
+    <derivedcompoundref refid="class_data___tier_1_1_projects" prot="public" virt="non-virtual">Data_Tier.Projects</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_projects_1a050cd933392a240f89f2c01d7b733a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IProjects.RemoveProject</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>RemoveProject</name>
+        <qualifiedname>Interface_Tier.IProjects.RemoveProject</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_projects_1a02f3f7cbf70eb3aaae10985b3fdb15d5">RemoveProject</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Removes a project from the projects list by its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project was successfully removed, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="16" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_projects_1a813383762e567dc5d5a139d95f8969c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IProjects.ProjectExists</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>ProjectExists</name>
+        <qualifiedname>Interface_Tier.IProjects.ProjectExists</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_projects_1a0ed230edd97b7193077d8d6bac3000d3">ProjectExists</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a project exists by its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>projectId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project exists, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="23" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_projects_1a70b05531b83754841335fac43bf7f8e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IProjects.CloseProject</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>CloseProject</name>
+        <qualifiedname>Interface_Tier.IProjects.CloseProject</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_projects_1abb62bd02e4e20d0db63eab6c177551f5">CloseProject</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Closes a project by setting its end date and status to completed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to close.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project was successfully closed, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the closure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="33" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_projects_1acddd379d00567185c639d1a405a5199f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IProjects.AddClient</definition>
+        <argsstring>(int idProject, int idClient)</argsstring>
+        <name>AddClient</name>
+        <qualifiedname>Interface_Tier.IProjects.AddClient</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_projects_1a819d23aeba0aac360051ace79463756b">AddClient</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Adds a client to a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to add the client to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the client was added successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_projects_1a4b0b83e0d7d4352b5df25222f0e69259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IProjects.RemoveClient</definition>
+        <argsstring>(int idProject, int idClient)</argsstring>
+        <name>RemoveClient</name>
+        <qualifiedname>Interface_Tier.IProjects.RemoveClient</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_projects_1ac6c8a231895cd7f4933304f726ff4960">RemoveClient</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Removes a client from a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to remove the client from.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the client was removed successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="55" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_projects_1a58fa6a8fb33cdc54c1e03f11c396688a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IProjects.AddEmployee</definition>
+        <argsstring>(int idProject, int idEmployee)</argsstring>
+        <name>AddEmployee</name>
+        <qualifiedname>Interface_Tier.IProjects.AddEmployee</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_projects_1a5ef19eed2efe61fcdff7ae225c69bed7">AddEmployee</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Adds an employee to a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to add the employee to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employee was added successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="66" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_projects_1a36a00f1dad13442da1e6505bf32e5769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IProjects.RemoveEmployee</definition>
+        <argsstring>(int idProject, int idEmployee)</argsstring>
+        <name>RemoveEmployee</name>
+        <qualifiedname>Interface_Tier.IProjects.RemoveEmployee</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_projects_1a1ee69b69a7fe3a510ed514c2dfed190a">RemoveEmployee</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Removes an employee from a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to remove the employee from.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employee was removed successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="77" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_projects_1ab98c34cf5140d99a7bba3c029ab1ac05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IProjects.UseMaterial</definition>
+        <argsstring>(int idProject, int idMaterial, int quantity)</argsstring>
+        <name>UseMaterial</name>
+        <qualifiedname>Interface_Tier.IProjects.UseMaterial</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_projects_1a926bd6ab57e9451d82c1d095bd598e08">UseMaterial</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Uses material in a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the project to use material in.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the material was used successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the material use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="89" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Methods to implement in the projects class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Data_Tier.Projects</label>
+        <link refid="class_data___tier_1_1_projects"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Interface_Tier.IProjects</label>
+        <link refid="interface_interface___tier_1_1_i_projects"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" line="6" column="22" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IProjects.cs" bodystart="7" bodyend="90"/>
+    <listofallmembers>
+      <member refid="interface_interface___tier_1_1_i_projects_1acddd379d00567185c639d1a405a5199f" prot="public" virt="non-virtual"><scope>Interface_Tier::IProjects</scope><name>AddClient</name></member>
+      <member refid="interface_interface___tier_1_1_i_projects_1a58fa6a8fb33cdc54c1e03f11c396688a" prot="public" virt="non-virtual"><scope>Interface_Tier::IProjects</scope><name>AddEmployee</name></member>
+      <member refid="interface_interface___tier_1_1_i_projects_1a70b05531b83754841335fac43bf7f8e0" prot="public" virt="non-virtual"><scope>Interface_Tier::IProjects</scope><name>CloseProject</name></member>
+      <member refid="interface_interface___tier_1_1_i_projects_1a813383762e567dc5d5a139d95f8969c4" prot="public" virt="non-virtual"><scope>Interface_Tier::IProjects</scope><name>ProjectExists</name></member>
+      <member refid="interface_interface___tier_1_1_i_projects_1a4b0b83e0d7d4352b5df25222f0e69259" prot="public" virt="non-virtual"><scope>Interface_Tier::IProjects</scope><name>RemoveClient</name></member>
+      <member refid="interface_interface___tier_1_1_i_projects_1a36a00f1dad13442da1e6505bf32e5769" prot="public" virt="non-virtual"><scope>Interface_Tier::IProjects</scope><name>RemoveEmployee</name></member>
+      <member refid="interface_interface___tier_1_1_i_projects_1a050cd933392a240f89f2c01d7b733a08" prot="public" virt="non-virtual"><scope>Interface_Tier::IProjects</scope><name>RemoveProject</name></member>
+      <member refid="interface_interface___tier_1_1_i_projects_1ab98c34cf5140d99a7bba3c029ab1ac05" prot="public" virt="non-virtual"><scope>Interface_Tier::IProjects</scope><name>UseMaterial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

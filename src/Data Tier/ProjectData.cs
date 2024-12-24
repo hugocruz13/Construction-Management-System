@@ -108,7 +108,7 @@ namespace Data_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("" + ex);
+                throw new ConfigurationErrorException("830" + ex);
             }
         }
 
@@ -126,7 +126,7 @@ namespace Data_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("" + ex);
+                throw new ConfigurationErrorException("831" + ex);
             }
         }
 
@@ -144,7 +144,7 @@ namespace Data_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("" + ex);
+                throw new ConfigurationErrorException("832" + ex);
             }
         }
 
@@ -162,7 +162,7 @@ namespace Data_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("" + ex);
+                throw new ConfigurationErrorException("833" + ex);
             }
         }
 
@@ -180,7 +180,7 @@ namespace Data_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("" + ex);
+                throw new ConfigurationErrorException("834" + ex);
             }
         }
         #endregion

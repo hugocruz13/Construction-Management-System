@@ -1,0 +1,5 @@
+<map id="CustomExceptions.ConfigurationErrorException" name="CustomExceptions.ConfigurationErrorException">
+<area shape="rect" id="Node000001" title="Custom exception used for handling configuration&#45;related errors in the application." alt="" coords="5,83,261,132"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="47,5,219,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,50,136,82,130,82,130,50"/>
+</map>

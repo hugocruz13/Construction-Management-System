@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="src.MaterialInventory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_material_inventory.html",tooltip="Represents a inventory with a fixed maximum capacity."];
+  Node0 [id="Node000000",label="Data_Tier.EmployeesService",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___tier_1_1_employees_service.html",tooltip="Class that manages employees associated with projects."];
 }

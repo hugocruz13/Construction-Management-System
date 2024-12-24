@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_object___tier_1_1_project" kind="class" language="C#" prot="public">
+    <compoundname>Object_Tier::Project</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_project_1a230560a0ed534f117cbab085d7b72265" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Project.idProject</definition>
+        <argsstring></argsstring>
+        <name>idProject</name>
+        <qualifiedname>Object_Tier.Project.idProject</qualifiedname>
+        <briefdescription>
+<para><ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref> ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="40" column="13" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_project_1af9cab15437f9887fd4422f64aaf3280c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550" kindref="member">Status</ref></type>
+        <definition>Status Object_Tier.Project.status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <qualifiedname>Object_Tier.Project.status</qualifiedname>
+        <briefdescription>
+<para>Current status of the project. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="45" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_project_1a51e73a5aa07ba9296abbd5c83da83560" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime Object_Tier.Project.startDate</definition>
+        <argsstring></argsstring>
+        <name>startDate</name>
+        <qualifiedname>Object_Tier.Project.startDate</qualifiedname>
+        <briefdescription>
+<para>Start date of the project. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="50" column="18" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_project_1afda8db7a5e4bba8d7da287409ecff8bf" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime Object_Tier.Project.endDate</definition>
+        <argsstring></argsstring>
+        <name>endDate</name>
+        <qualifiedname>Object_Tier.Project.endDate</qualifiedname>
+        <briefdescription>
+<para>End date of the project. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="55" column="18" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_project_1a4305f3a559817873dc9bde8b2e3674d0" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Project.projectIdCounter</definition>
+        <argsstring></argsstring>
+        <name>projectIdCounter</name>
+        <qualifiedname>Object_Tier.Project.projectIdCounter</qualifiedname>
+        <initializer>= 300</initializer>
+        <briefdescription>
+<para>Static counter for generating unique project IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="61" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_object___tier_1_1_project_1a038b776d7de96a4b42f2e47cbad02b5d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Project.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Object_Tier.Project.Id</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the project ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="71" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_project_1ae9b40f19d84e72af87d734619462614f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550" kindref="member">Status</ref></type>
+        <definition>Status Object_Tier.Project.Status</definition>
+        <argsstring></argsstring>
+        <name>Status</name>
+        <qualifiedname>Object_Tier.Project.Status</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the project status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="80" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_project_1ae3f7b89dae69e77661676c9861252944" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Object_Tier.Project.StartDate</definition>
+        <argsstring></argsstring>
+        <name>StartDate</name>
+        <qualifiedname>Object_Tier.Project.StartDate</qualifiedname>
+        <briefdescription>
+<para>Gets the start date of the project. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="89" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_project_1a48bf429fc850d6c334a17e444eebd411" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Object_Tier.Project.EndDate</definition>
+        <argsstring></argsstring>
+        <name>EndDate</name>
+        <qualifiedname>Object_Tier.Project.EndDate</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the end date of the project. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="97" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="98" bodyend="101"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_object___tier_1_1_project_1a7cb354f80977bd3e2e793ef4e28bbfc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Project.Project</definition>
+        <argsstring>(Status status)</argsstring>
+        <name>Project</name>
+        <qualifiedname>Object_Tier.Project.Project</qualifiedname>
+        <param>
+          <type><ref refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550" kindref="member">Status</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref> class with a specified status. The start date is set to the current date, and the end date is initialized to the default value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial status of the project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="112" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_project_1a3df4a9fe75ef04957130fd02bcb9ac55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool Object_Tier.Project.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>Object_Tier.Project.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether the specified object is equal to the current project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare with the current project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the objects are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="129" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="129" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_project_1a0c76ca2fae4366077a3f4ffdd0501179" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Object_Tier.Project.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Object_Tier.Project.ToString</qualifiedname>
+        <briefdescription>
+<para>Returns a string representation of the project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A string containing the project ID, status, start date, and end date.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="153" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="153" bodyend="156"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_object___tier_1_1_project_1a8351044e6f505816789d63f1fc7364f8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref></type>
+        <definition>static Project Object_Tier.Project.CreateProject</definition>
+        <argsstring>(Status status)</argsstring>
+        <name>CreateProject</name>
+        <qualifiedname>Object_Tier.Project.CreateProject</qualifiedname>
+        <param>
+          <type><ref refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550" kindref="member">Status</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new project with the specified status. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status of the new project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref> instance.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="166" column="31" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_project_1a3ce946f67b692f0ae24ff4c2e9b34463" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Project.operator-</definition>
+        <argsstring>(Project project1, Project project2)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>Object_Tier.Project.operator-</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref></type>
+          <declname>project1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref></type>
+          <declname>project2</declname>
+        </param>
+        <briefdescription>
+<para>Compares two projects for equality based on their properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>project1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>project2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the projects are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="178" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="178" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_project_1a27f3404f7482fc6cfb962be6402bc999" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Project.operator+</definition>
+        <argsstring>(Project project1, Project project2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Object_Tier.Project.operator+</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref></type>
+          <declname>project1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref></type>
+          <declname>project2</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether two projects are not equal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>project1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>project2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the projects are not equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="194" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="194" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_project_1af94c5812a8877f436a7253dfd629e626" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Project.getNextProjectId</definition>
+        <argsstring>()</argsstring>
+        <name>getNextProjectId</name>
+        <qualifiedname>Object_Tier.Project.getNextProjectId</qualifiedname>
+        <briefdescription>
+<para>Increments the static project ID counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True after incrementing the counter.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="203" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="203" bodyend="207"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_object___tier_1_1_project_1ac5af5226876f7fb81fdcc4674606cb04" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Project.~Project</definition>
+        <argsstring>()</argsstring>
+        <name>~Project</name>
+        <qualifiedname>Object_Tier.Project.~Project</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="215" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="215" bodyend="217"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a project with information about its status, start date, end date, and ID management. <linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" line="33" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Project.cs" bodystart="34" bodyend="222"/>
+    <listofallmembers>
+      <member refid="class_object___tier_1_1_project_1a8351044e6f505816789d63f1fc7364f8" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>CreateProject</name></member>
+      <member refid="class_object___tier_1_1_project_1a48bf429fc850d6c334a17e444eebd411" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>EndDate</name></member>
+      <member refid="class_object___tier_1_1_project_1afda8db7a5e4bba8d7da287409ecff8bf" prot="private" virt="non-virtual"><scope>Object_Tier::Project</scope><name>endDate</name></member>
+      <member refid="class_object___tier_1_1_project_1a3df4a9fe75ef04957130fd02bcb9ac55" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>Equals</name></member>
+      <member refid="class_object___tier_1_1_project_1af94c5812a8877f436a7253dfd629e626" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>getNextProjectId</name></member>
+      <member refid="class_object___tier_1_1_project_1a038b776d7de96a4b42f2e47cbad02b5d" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>Id</name></member>
+      <member refid="class_object___tier_1_1_project_1a230560a0ed534f117cbab085d7b72265" prot="private" virt="non-virtual"><scope>Object_Tier::Project</scope><name>idProject</name></member>
+      <member refid="class_object___tier_1_1_project_1a27f3404f7482fc6cfb962be6402bc999" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>operator+</name></member>
+      <member refid="class_object___tier_1_1_project_1a3ce946f67b692f0ae24ff4c2e9b34463" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>operator-</name></member>
+      <member refid="class_object___tier_1_1_project_1a7cb354f80977bd3e2e793ef4e28bbfc6" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>Project</name></member>
+      <member refid="class_object___tier_1_1_project_1a4305f3a559817873dc9bde8b2e3674d0" prot="private" virt="non-virtual"><scope>Object_Tier::Project</scope><name>projectIdCounter</name></member>
+      <member refid="class_object___tier_1_1_project_1ae3f7b89dae69e77661676c9861252944" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>StartDate</name></member>
+      <member refid="class_object___tier_1_1_project_1a51e73a5aa07ba9296abbd5c83da83560" prot="private" virt="non-virtual"><scope>Object_Tier::Project</scope><name>startDate</name></member>
+      <member refid="class_object___tier_1_1_project_1ae9b40f19d84e72af87d734619462614f" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>Status</name></member>
+      <member refid="class_object___tier_1_1_project_1af9cab15437f9887fd4422f64aaf3280c" prot="private" virt="non-virtual"><scope>Object_Tier::Project</scope><name>status</name></member>
+      <member refid="class_object___tier_1_1_project_1a0c76ca2fae4366077a3f4ffdd0501179" prot="public" virt="non-virtual"><scope>Object_Tier::Project</scope><name>ToString</name></member>
+      <member refid="class_object___tier_1_1_project_1ac5af5226876f7fb81fdcc4674606cb04" prot="private" virt="non-virtual"><scope>Object_Tier::Project</scope><name>~Project</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

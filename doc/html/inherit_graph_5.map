@@ -1,3 +1,16 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classsrc_1_1_material_quantity.html" title="The class MaterialQuantity represents the quantity of a given material, together with the date of its..." alt="" coords="5,5,168,35"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="27,112,141,142"/>
+<area shape="rect" id="Node000001" href="$class_data___tier_1_1_project_data.html" title="Class that represents project data, including operations related to clients, employees,..." alt="" coords="233,112,411,142"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="156,124,232,124,232,130,156,130"/>
+<area shape="rect" id="Node000002" href="$class_object___tier_1_1_client.html" title="Represents a client in the system, inheriting from the Person class." alt="" coords="248,59,396,88"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="155,108,252,86,253,92,156,113"/>
+<area shape="rect" id="Node000004" href="$class_object___tier_1_1_employee.html" title="Represents an employee in the system, inheriting from the Person class." alt="" coords="233,5,411,35"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="118,101,168,68,210,44,242,33,244,38,212,49,171,72,121,105"/>
+<area shape="rect" id="Node000005" href="$class_object___tier_1_1_material.html" title="Represents a material with ID, name, unit price, and registration date." alt="" coords="240,165,404,195"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="156,140,253,162,252,167,155,145"/>
+<area shape="rect" id="Node000006" href="$class_object___tier_1_1_material_quantity.html" title="Represents the quantity of a material and the date it was added." alt="" coords="211,219,433,248"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="118,149,161,178,212,204,244,216,242,221,210,209,159,182,115,153"/>
+<area shape="rect" id="Node000003" href="$class_object___tier_1_1_person.html" title="Represents a person with an ID and a name." alt="" coords="5,32,163,62"/>
+<area shape="poly" id="edge7_Node000003_Node000002" title=" " alt="" coords="178,55,248,63,247,68,178,60"/>
+<area shape="poly" id="edge8_Node000003_Node000004" title=" " alt="" coords="178,34,232,28,233,33,178,39"/>
 </map>

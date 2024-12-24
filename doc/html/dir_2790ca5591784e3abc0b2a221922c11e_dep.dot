@@ -1,0 +1,17 @@
+digraph "C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_68267d1309a1af8e8297ef4c3efbcdba {
+    graph [ bgcolor="#dadada", pencolor="grey25", label="src", fontname=Helvetica,fontsize=12 style="filled,dashed", URL="dir_68267d1309a1af8e8297ef4c3efbcdba.html",tooltip=""]
+  subgraph clusterdir_2790ca5591784e3abc0b2a221922c11e {
+    graph [ bgcolor="#dadada", pencolor="grey25", label="", fontname=Helvetica,fontsize=12 style="filled,bold", URL="dir_2790ca5591784e3abc0b2a221922c11e.html",tooltip=""]
+    dir_2790ca5591784e3abc0b2a221922c11e [shape=plaintext, label="Data Tier"];
+  dir_5d0d0a3789b9d4f494ab9ee0ba0c8145 [label="obj", fillcolor="#676767", color="grey25", style="filled", URL="dir_5d0d0a3789b9d4f494ab9ee0ba0c8145.html",tooltip=""];
+  dir_587f66b1acc962ecdf0f82f7b6cb43c8 [label="Properties", fillcolor="#676767", color="grey25", style="filled", URL="dir_587f66b1acc962ecdf0f82f7b6cb43c8.html",tooltip=""];
+  }
+  }
+}

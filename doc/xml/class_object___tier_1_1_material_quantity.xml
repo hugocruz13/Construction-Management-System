@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_object___tier_1_1_material_quantity" kind="class" language="C#" prot="public">
+    <compoundname>Object_Tier::MaterialQuantity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IComparable&lt; MaterialQuantity &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_material_quantity_1a628653b250e298aa70d88448c62656ab" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.MaterialQuantity.idMaterial</definition>
+        <argsstring></argsstring>
+        <name>idMaterial</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.idMaterial</qualifiedname>
+        <briefdescription>
+<para>The ID of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="24" column="13" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_material_quantity_1a36ff4f9702c32089b753f782470029db" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.MaterialQuantity.quantity</definition>
+        <argsstring></argsstring>
+        <name>quantity</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.quantity</qualifiedname>
+        <briefdescription>
+<para>The quantity of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="29" column="13" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_material_quantity_1af739486ae39b0baf9dae80ac3ecc1007" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime Object_Tier.MaterialQuantity.date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.date</qualifiedname>
+        <briefdescription>
+<para>The date the material was added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="34" column="18" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_object___tier_1_1_material_quantity_1a647015cfcff2ffae0a3b03a2fb1823c8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Object_Tier.MaterialQuantity.IdMaterial</definition>
+        <argsstring></argsstring>
+        <name>IdMaterial</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.IdMaterial</qualifiedname>
+        <briefdescription>
+<para>Gets the ID of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="45" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_material_quantity_1a55dd2effe93e56e2f48ba2df7d0caab2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Object_Tier.MaterialQuantity.Quantity</definition>
+        <argsstring></argsstring>
+        <name>Quantity</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.Quantity</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the quantity of the material. The value must be zero or greater. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="54" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="55" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_material_quantity_1ad66330b4591a2342432840c71e3826cc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Object_Tier.MaterialQuantity.Date</definition>
+        <argsstring></argsstring>
+        <name>Date</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.Date</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the date the material was added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="69" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="70" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_object___tier_1_1_material_quantity_1a610237b3bff8ba362e11aa8a01fb6d1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.MaterialQuantity.MaterialQuantity</definition>
+        <argsstring>(int id, int quantity)</argsstring>
+        <name>MaterialQuantity</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.MaterialQuantity</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> class with an ID and quantity. The date is set to the current date and time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="84" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="84" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_quantity_1abe11fad3867f018b96bd1af15fa188ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool Object_Tier.MaterialQuantity.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the current <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> is equal to another object. Two <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> objects are equal if their material IDs are the same. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the objects are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="101" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="101" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_quantity_1aaa33d10f67c88378e27135c2a433deb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Object_Tier.MaterialQuantity.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.ToString</qualifiedname>
+        <briefdescription>
+<para>Returns a string representation of the <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref>. Includes the material ID, date, and quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A string representing the <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="126" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_quantity_1a04b8619c50b5a30aa9d509a9417a2fcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Object_Tier.MaterialQuantity.CompareTo</definition>
+        <argsstring>(MaterialQuantity material)</argsstring>
+        <name>CompareTo</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.CompareTo</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+<para>Compares the current <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> to another based on their material IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> to compare to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value indicating the relative order of the objects.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="136" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="136" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_object___tier_1_1_material_quantity_1a4ca6af0de296472bf7f053c2fa235e88" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+        <definition>static MaterialQuantity Object_Tier.MaterialQuantity.CreateMaterialQuantity</definition>
+        <argsstring>(int id, int quantity)</argsstring>
+        <name>CreateMaterialQuantity</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.CreateMaterialQuantity</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of the material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> object.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="150" column="40" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_quantity_1ab3d8537ce9db67769a0ed117168513f3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.MaterialQuantity.operator-</definition>
+        <argsstring>(MaterialQuantity material1, MaterialQuantity material2)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.operator-</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>material1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>material2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if two <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> objects are equal using the &quot;-&quot; operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>material2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the objects are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="161" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="161" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_quantity_1a366a01b4e772d5b38893a0c177111ea7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.MaterialQuantity.operator+</definition>
+        <argsstring>(MaterialQuantity material1, MaterialQuantity material2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.operator+</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>material1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+          <declname>material2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if two <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> objects are not equal using the &quot;+&quot; operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>material2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the objects are not equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="177" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="177" bodyend="180"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_object___tier_1_1_material_quantity_1a383349e55445afbac70378409944fa6b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.MaterialQuantity.~MaterialQuantity</definition>
+        <argsstring>()</argsstring>
+        <name>~MaterialQuantity</name>
+        <qualifiedname>Object_Tier.MaterialQuantity.~MaterialQuantity</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="187" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="187" bodyend="189"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents the quantity of a material and the date it was added. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IComparable&lt; MaterialQuantity &gt;</label>
+      </node>
+      <node id="1">
+        <label>Object_Tier.MaterialQuantity</label>
+        <link refid="class_object___tier_1_1_material_quantity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IComparable&lt; MaterialQuantity &gt;</label>
+      </node>
+      <node id="1">
+        <label>Object_Tier.MaterialQuantity</label>
+        <link refid="class_object___tier_1_1_material_quantity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" line="17" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/MaterialQuantity.cs" bodystart="18" bodyend="194"/>
+    <listofallmembers>
+      <member refid="class_object___tier_1_1_material_quantity_1a04b8619c50b5a30aa9d509a9417a2fcd" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>CompareTo</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1a4ca6af0de296472bf7f053c2fa235e88" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>CreateMaterialQuantity</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1ad66330b4591a2342432840c71e3826cc" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>Date</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1af739486ae39b0baf9dae80ac3ecc1007" prot="private" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>date</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1abe11fad3867f018b96bd1af15fa188ba" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>Equals</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1a647015cfcff2ffae0a3b03a2fb1823c8" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>IdMaterial</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1a628653b250e298aa70d88448c62656ab" prot="private" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>idMaterial</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1a610237b3bff8ba362e11aa8a01fb6d1d" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>MaterialQuantity</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1a366a01b4e772d5b38893a0c177111ea7" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>operator+</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1ab3d8537ce9db67769a0ed117168513f3" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>operator-</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1a55dd2effe93e56e2f48ba2df7d0caab2" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>Quantity</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1a36ff4f9702c32089b753f782470029db" prot="private" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>quantity</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1aaa33d10f67c88378e27135c2a433deb4" prot="public" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>ToString</name></member>
+      <member refid="class_object___tier_1_1_material_quantity_1a383349e55445afbac70378409944fa6b" prot="private" virt="non-virtual"><scope>Object_Tier::MaterialQuantity</scope><name>~MaterialQuantity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

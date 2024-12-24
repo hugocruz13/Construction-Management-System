@@ -5,9 +5,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="src.Person",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_person.html",tooltip="Represents a person with basic attributes like Id and Name. This class provides access and modificati..."];
-  Node0 -> Node1 [id="edge1_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 [id="Node000001",label="src.Client",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_client.html",tooltip="The Client class allows you to create a client object with basic information such as id,..."];
-  Node0 -> Node2 [id="edge2_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="src.Employee",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_employee.html",tooltip="Class Employee allows to create an employee object with basic information such as their Id,..."];
+  Node0 [id="Node000000",label="Interface_Tier.IEmployees",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface_interface___tier_1_1_i_employees.html",tooltip="Methods to implement in the employees class."];
+  Node0 -> Node1 [id="edge10_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="Data_Tier.Employees",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___tier_1_1_employees.html",tooltip="Singleton class that manages a list of employees. Allows adding, removing, updating and retrieving em..."];
 }

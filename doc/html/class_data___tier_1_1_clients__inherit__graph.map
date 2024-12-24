@@ -1,0 +1,5 @@
+<map id="Data_Tier.Clients" name="Data_Tier.Clients">
+<area shape="rect" id="Node000001" title="Singleton class that manages the list of clients. Allows adding, removing, updating and retrieving cl..." alt="" coords="5,83,150,113"/>
+<area shape="rect" id="Node000002" href="$interface_interface___tier_1_1_i_clients.html" title="Methods to implement in the clients class." alt="" coords="40,5,115,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,51,80,82,75,82,75,51"/>
+</map>

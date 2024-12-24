@@ -5,7 +5,7 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="src.Pessoa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_pessoa.html",tooltip="Purpose: Created by: hugoc Created on: 10/28/2024 1:25:44 PM."];
-  Node0 -> Node1 [id="edge3_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 [id="Node000001",label="src.Funcionario",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_funcionario.html",tooltip="Purpose: Created by: hugoc Created on: 10/28/2024 1:27:34 PM."];
+  Node0 [id="Node000000",label="Interface_Tier.IMaterial\lInventory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface_interface___tier_1_1_i_material_inventory.html",tooltip="Methods to implement in the inventory class."];
+  Node0 -> Node1 [id="edge11_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="Data_Tier.MaterialInventory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___tier_1_1_material_inventory.html",tooltip="Singleton class that manages the material inventory. Allows adding, removing, updating,..."];
 }

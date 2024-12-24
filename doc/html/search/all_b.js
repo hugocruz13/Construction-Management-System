@@ -1,12 +1,6 @@
 var searchData=
 [
-  ['person_0',['Person',['../classsrc_1_1_person.html',1,'src.Person'],['../classsrc_1_1_person.html#a2ce3ae2819d51edbfe805e86db2b00ec',1,'src.Person.Person()']]],
-  ['pessoa_1',['Pessoa',['../classsrc_1_1_pessoa.html',1,'src.Pessoa'],['../classsrc_1_1_pessoa.html#a94e2fb0675dd8cd197459c7c6c4cddac',1,'src.Pessoa.Pessoa()']]],
-  ['project_2',['Project',['../classsrc_1_1_project.html',1,'src.Project'],['../classsrc_1_1_project.html#aca75836bbaae0a4690cb2171650aabb3',1,'src.Project.Project()']]],
-  ['projectaddemployee_3',['ProjectAddEmployee',['../classsrc_1_1_company.html#a91ff036baa08b8c8a277fcd9c9a98abd',1,'src::Company']]],
-  ['projectclose_4',['ProjectClose',['../classsrc_1_1_company.html#a6d65596356689d106f22c45751e5efbb',1,'src::Company']]],
-  ['projectcreate_5',['ProjectCreate',['../classsrc_1_1_company.html#ac2ea8f57fabc45e8b4719122352ff3d9',1,'src::Company']]],
-  ['projectexist_6',['ProjectExist',['../classsrc_1_1_company.html#a298c0078b1e4a3867df2c059ac37e0eb',1,'src::Company']]],
-  ['projects_7',['Projects',['../classsrc_1_1_projects.html',1,'src']]],
-  ['projectusematerial_8',['ProjectUseMaterial',['../classsrc_1_1_company.html#a98cd5a59d8870628b798f51f1cb293bb',1,'src::Company']]]
+  ['object_5ftier_0',['Object_Tier',['../namespace_object___tier.html',1,'']]],
+  ['operator_2b_1',['operator+',['../class_object___tier_1_1_client.html#a79a0beefc8d0193cba236597b3a01c95',1,'Object_Tier.Client.operator+()'],['../class_object___tier_1_1_employee.html#a3a24001f0c37e6007c28ca879135bba1',1,'Object_Tier.Employee.operator+()'],['../class_object___tier_1_1_material.html#a10edccf3fe84f57ea813e1d31ce7fa29',1,'Object_Tier.Material.operator+()'],['../class_object___tier_1_1_material_quantity.html#a366a01b4e772d5b38893a0c177111ea7',1,'Object_Tier.MaterialQuantity.operator+()'],['../class_object___tier_1_1_project.html#a27f3404f7482fc6cfb962be6402bc999',1,'Object_Tier.Project.operator+()']]],
+  ['operator_2d_2',['operator-',['../class_object___tier_1_1_client.html#a89dfd534d7ff331264b7edf4b5486572',1,'Object_Tier.Client.operator-()'],['../class_object___tier_1_1_employee.html#a39e92f95320f6ccf392b348261a46e38',1,'Object_Tier.Employee.operator-()'],['../class_object___tier_1_1_material.html#ac347c1c7bc52bfa67796ae1924a90d90',1,'Object_Tier.Material.operator-()'],['../class_object___tier_1_1_material_quantity.html#ab3d8537ce9db67769a0ed117168513f3',1,'Object_Tier.MaterialQuantity.operator-()'],['../class_object___tier_1_1_project.html#a3ce946f67b692f0ae24ff4c2e9b34463',1,'Object_Tier.Project.operator-()']]]
 ];

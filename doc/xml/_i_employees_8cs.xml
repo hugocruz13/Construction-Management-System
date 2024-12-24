@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_i_employees_8cs" kind="file" language="C#">
+    <compoundname>IEmployees.cs</compoundname>
+    <innerclass refid="interface_interface___tier_1_1_i_employees" prot="public">Interface_Tier::IEmployees</innerclass>
+    <innernamespace refid="namespace_interface___tier">Interface_Tier</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_object___tier" kindref="compound">Object_Tier</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_interface___tier" kindref="compound">Interface_Tier</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="interface_interface___tier_1_1_i_employees" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_interface___tier_1_1_i_employees" kindref="compound">IEmployees</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_employees_1a97d3b4ab3604cedcf2c7b2c0f72cb3a6" kindref="member">AddEmployee</ref>(<ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref><sp/>employee);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_employees_1a8464bf608876bb24769806385cf114f9" kindref="member">RemoveEmployee</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idEmployee);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_employees_1aaf7ce6e964554c97ba0f68c56c7ae2c2" kindref="member">EmployeeExist</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idEmployee);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="interface_interface___tier_1_1_i_employees_1a9af9e438dfa122d5bdfbc8a19b730425" kindref="member">UpdateRole</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idEmployee,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>role,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hourly);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref><sp/><ref refid="interface_interface___tier_1_1_i_employees_1a773d1d4284a4b9abdabf4f341e513524" kindref="member">GetEmployee</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idEmployee);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IEmployees.cs"/>
+  </compounddef>
+</doxygen>

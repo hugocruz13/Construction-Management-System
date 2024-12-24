@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="interface_interface___tier_1_1_i_clients" kind="interface" language="C#" prot="public">
+    <compoundname>Interface_Tier::IClients</compoundname>
+    <derivedcompoundref refid="class_data___tier_1_1_clients" prot="public" virt="non-virtual">Data_Tier.Clients</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_clients_1a975f28cc717a22dfbce8ef3736232888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Interface_Tier.IClients.AddClient</definition>
+        <argsstring>(Client client)</argsstring>
+        <name>AddClient</name>
+        <qualifiedname>Interface_Tier.IClients.AddClient</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_clients_1a129abe2a08e4334ad683cf0533772e07">AddClient</reimplementedby>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+<para>Adds a client to the client list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client object to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the added client.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IClients.cs" line="15" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_clients_1a982e6293c1c7b0ed1b194518a8b17f30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IClients.RemoveClient</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>RemoveClient</name>
+        <qualifiedname>Interface_Tier.IClients.RemoveClient</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_clients_1a499deb52f93f9b085e21f7589b50aad6">RemoveClient</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Removes a client from the client list based on their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the client was successfully removed, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IClients.cs" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_clients_1aef144f3dec424ba3cd138b1dd0dc5ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IClients.ExistClient</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>ExistClient</name>
+        <qualifiedname>Interface_Tier.IClients.ExistClient</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_clients_1aa56bbc5ed5918094f5c08ff6f409fc46">ExistClient</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a client exists in the client list based on their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to check for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the client exists, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IClients.cs" line="29" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_clients_1a8a0d6df18ef00c655629b368745c912d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IClients.UpdateContact</definition>
+        <argsstring>(int idClient, int contacto)</argsstring>
+        <name>UpdateContact</name>
+        <qualifiedname>Interface_Tier.IClients.UpdateContact</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_clients_1aebfc1f6f9a03b5fc68a3c0ccdf37ecb9">UpdateContact</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>contacto</declname>
+        </param>
+        <briefdescription>
+<para>Updates the contact information of a client based on their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contacto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new contact information to set.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the contact information was successfully updated, otherwise false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IClients.cs" line="37" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_clients_1a2fc4095583682636ec50d4044e5b1abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+        <definition>Client Interface_Tier.IClients.GetClient</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>GetClient</name>
+        <qualifiedname>Interface_Tier.IClients.GetClient</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_clients_1a9cdf3bd9ffb752f73b3c9d95933ad13f">GetClient</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves a client from the client list based on their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The client object with the specified ID, or null if not found.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IClients.cs" line="44" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Methods to implement in the clients class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Data_Tier.Clients</label>
+        <link refid="class_data___tier_1_1_clients"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Interface_Tier.IClients</label>
+        <link refid="interface_interface___tier_1_1_i_clients"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IClients.cs" line="8" column="22" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IClients.cs" bodystart="9" bodyend="46"/>
+    <listofallmembers>
+      <member refid="interface_interface___tier_1_1_i_clients_1a975f28cc717a22dfbce8ef3736232888" prot="public" virt="non-virtual"><scope>Interface_Tier::IClients</scope><name>AddClient</name></member>
+      <member refid="interface_interface___tier_1_1_i_clients_1aef144f3dec424ba3cd138b1dd0dc5ef0" prot="public" virt="non-virtual"><scope>Interface_Tier::IClients</scope><name>ExistClient</name></member>
+      <member refid="interface_interface___tier_1_1_i_clients_1a2fc4095583682636ec50d4044e5b1abc" prot="public" virt="non-virtual"><scope>Interface_Tier::IClients</scope><name>GetClient</name></member>
+      <member refid="interface_interface___tier_1_1_i_clients_1a982e6293c1c7b0ed1b194518a8b17f30" prot="public" virt="non-virtual"><scope>Interface_Tier::IClients</scope><name>RemoveClient</name></member>
+      <member refid="interface_interface___tier_1_1_i_clients_1a8a0d6df18ef00c655629b368745c912d" prot="public" virt="non-virtual"><scope>Interface_Tier::IClients</scope><name>UpdateContact</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

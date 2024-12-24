@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="interface_interface___tier_1_1_i_employees" kind="interface" language="C#" prot="public">
+    <compoundname>Interface_Tier::IEmployees</compoundname>
+    <derivedcompoundref refid="class_data___tier_1_1_employees" prot="public" virt="non-virtual">Data_Tier.Employees</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_employees_1a97d3b4ab3604cedcf2c7b2c0f72cb3a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Interface_Tier.IEmployees.AddEmployee</definition>
+        <argsstring>(Employee employee)</argsstring>
+        <name>AddEmployee</name>
+        <qualifiedname>Interface_Tier.IEmployees.AddEmployee</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_employees_1a743a177e79acc3ea503d02a8f7970b7f">AddEmployee</reimplementedby>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new employee to the list and sorts the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The employee to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the added employee.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if the employee is null or if an error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IEmployees.cs" line="18" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_employees_1a8464bf608876bb24769806385cf114f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IEmployees.RemoveEmployee</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>RemoveEmployee</name>
+        <qualifiedname>Interface_Tier.IEmployees.RemoveEmployee</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_employees_1aa38c1c75bb81177c3c29da2f7cda92aa">RemoveEmployee</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Removes an employee by their ID from the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the employee was removed, otherwise <computeroutput>false</computeroutput>.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if an error occurs during the removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IEmployees.cs" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_employees_1aaf7ce6e964554c97ba0f68c56c7ae2c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IEmployees.EmployeeExist</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>EmployeeExist</name>
+        <qualifiedname>Interface_Tier.IEmployees.EmployeeExist</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_employees_1a15bad604543cb0105a6f258503806168">EmployeeExist</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Checks if an employee exists in the list based on their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the employee exists, otherwise <computeroutput>false</computeroutput>.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if an error occurs during the existence check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IEmployees.cs" line="38" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_employees_1a9af9e438dfa122d5bdfbc8a19b730425" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IEmployees.UpdateRole</definition>
+        <argsstring>(int idEmployee, string role, double hourly)</argsstring>
+        <name>UpdateRole</name>
+        <qualifiedname>Interface_Tier.IEmployees.UpdateRole</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_employees_1aa69f887b9dfe918cd9c9dcf8128eb867">UpdateRole</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hourly</declname>
+        </param>
+        <briefdescription>
+<para>Updates an employee&apos;s role and hourly rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new role of the employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hourly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new hourly rate of the employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the update was successful, otherwise <computeroutput>false</computeroutput>.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if the update fails.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IEmployees.cs" line="48" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_employees_1a773d1d4284a4b9abdabf4f341e513524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+        <definition>Employee Interface_Tier.IEmployees.GetEmployee</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>GetEmployee</name>
+        <qualifiedname>Interface_Tier.IEmployees.GetEmployee</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_employees_1afc32d495bba546f78ab48454b726502b">GetEmployee</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves an employee based on their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The employee object if found, otherwise <computeroutput>null</computeroutput>.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if the retrieval fails. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IEmployees.cs" line="58" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Methods to implement in the employees class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Data_Tier.Employees</label>
+        <link refid="class_data___tier_1_1_employees"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Interface_Tier.IEmployees</label>
+        <link refid="interface_interface___tier_1_1_i_employees"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IEmployees.cs" line="8" column="22" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IEmployees.cs" bodystart="9" bodyend="60"/>
+    <listofallmembers>
+      <member refid="interface_interface___tier_1_1_i_employees_1a97d3b4ab3604cedcf2c7b2c0f72cb3a6" prot="public" virt="non-virtual"><scope>Interface_Tier::IEmployees</scope><name>AddEmployee</name></member>
+      <member refid="interface_interface___tier_1_1_i_employees_1aaf7ce6e964554c97ba0f68c56c7ae2c2" prot="public" virt="non-virtual"><scope>Interface_Tier::IEmployees</scope><name>EmployeeExist</name></member>
+      <member refid="interface_interface___tier_1_1_i_employees_1a773d1d4284a4b9abdabf4f341e513524" prot="public" virt="non-virtual"><scope>Interface_Tier::IEmployees</scope><name>GetEmployee</name></member>
+      <member refid="interface_interface___tier_1_1_i_employees_1a8464bf608876bb24769806385cf114f9" prot="public" virt="non-virtual"><scope>Interface_Tier::IEmployees</scope><name>RemoveEmployee</name></member>
+      <member refid="interface_interface___tier_1_1_i_employees_1a9af9e438dfa122d5bdfbc8a19b730425" prot="public" virt="non-virtual"><scope>Interface_Tier::IEmployees</scope><name>UpdateRole</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -14,7 +14,7 @@ namespace Object_Tier
     /// Represents a client in the system, inheriting from the Person class.
     /// </summary>
     [Serializable]
-    public class Client : Person
+    public class Client : Person, IComparable<Client>
     {
         #region Attributes
 
@@ -140,6 +140,16 @@ namespace Object_Tier
         public static bool operator +(Client client1, Client client2)
         {
             return !(client1 - client2);
+        }
+
+        /// <summary>
+        /// Compares the current client to another client based on their name.
+        /// </summary>
+        /// <param name="client">The client to compare to.</param>
+        /// <returns>A value indicating the relative order of the clients.</returns>
+        public int CompareTo(Client client)
+        {
+            return Name.CompareTo(client.Name);
         }
 
         /// <summary>

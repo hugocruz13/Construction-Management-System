@@ -1,5 +1,0 @@
-<map id="src.Employee" name="src.Employee">
-<area shape="rect" id="Node000001" title="Class Employee allows to create an employee object with basic information such as their Id,..." alt="" coords="5,83,124,113"/>
-<area shape="rect" id="Node000002" href="$classsrc_1_1_person.html" title="Represents a person with basic attributes like Id and Name. This class provides access and modificati..." alt="" coords="28,5,101,35"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,51,67,82,62,82,62,51"/>
-</map>

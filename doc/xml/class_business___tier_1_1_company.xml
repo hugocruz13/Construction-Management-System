@@ -1,0 +1,1384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_business___tier_1_1_company" kind="class" language="C#" prot="public">
+    <compoundname>Business_Tier::Company</compoundname>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a021f6ece08048a1f8b07a092e45dc333" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.SaveAllData</definition>
+        <argsstring>(string path)</argsstring>
+        <name>SaveAllData</name>
+        <qualifiedname>Business_Tier.Company.SaveAllData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Saves all application data to the specified file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file path where the data will be saved.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns <computeroutput>true</computeroutput> if the data is saved successfully.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown if the data cannot be collected or the file operation fails. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="35" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="35" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a2a9a477eb8dff2604d82a3599813a17b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.LoadAllData</definition>
+        <argsstring>(string path)</argsstring>
+        <name>LoadAllData</name>
+        <qualifiedname>Business_Tier.Company.LoadAllData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Loads all application data from the specified file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file path from which the data will be loaded.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns <computeroutput>true</computeroutput> if the data is loaded successfully.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown if the file does not exist, data deserialization fails, or data cannot be updated in the system. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="73" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="73" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1aff7dd145915b99b986c8e8a420599f3e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Business_Tier.Company.RegisterClient</definition>
+        <argsstring>(Client client)</argsstring>
+        <name>RegisterClient</name>
+        <qualifiedname>Business_Tier.Company.RegisterClient</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new client in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>client</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The client object to be registered.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The unique ID of the newly registered client.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;106&quot; if the client object is null. Throws &quot;107&quot; if the client already exists in the system. Throws &quot;108&quot; for any unexpected error during registration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="114" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="114" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a12f0a82cad4334bb30794b585a9bd307" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.DeleteClient</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>DeleteClient</name>
+        <qualifiedname>Business_Tier.Company.DeleteClient</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Deletes an existing client based on their unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to be removed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the client was successfully deleted.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;112&quot; if the client does not exist. Throws &quot;109&quot; for any unexpected error during deletion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="146" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="146" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a68e765487af8bc16207a7f91db42d302" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.IsClientRegistered</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>IsClientRegistered</name>
+        <qualifiedname>Business_Tier.Company.IsClientRegistered</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether a client is registered in the system using their unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the client is registered, false otherwise.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;109&quot; for any unexpected error during the operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="171" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="171" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a9c1dcf2e51189272b5f926bbde856e5b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.UpdateClientContact</definition>
+        <argsstring>(int idClient, int contact)</argsstring>
+        <name>UpdateClientContact</name>
+        <qualifiedname>Business_Tier.Company.UpdateClientContact</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>contact</declname>
+        </param>
+        <briefdescription>
+<para>Updates the contact information of an existing client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client whose contact information needs updating.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new contact number.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the update was successful.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;111&quot; if the contact number is invalid Throws &quot;112&quot; if the client does not exist. Throws &quot;113&quot; for any unexpected error during the update. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="194" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="194" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1aea85e3cd72dd73576b6f9799bab8a9ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_client" kindref="compound">Client</ref></type>
+        <definition>static Client Business_Tier.Company.GetClientById</definition>
+        <argsstring>(int idClient)</argsstring>
+        <name>GetClientById</name>
+        <qualifiedname>Business_Tier.Company.GetClientById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the details of a specific client using their unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the client to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Client object containing the client’s details.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;112&quot; if the client does not exist. Throws &quot;114&quot; for any unexpected error during retrieval. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="225" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="225" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1ac80bba0ae5f40f2f3cdad1a5501bbd8f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Business_Tier.Company.RegistEmployee</definition>
+        <argsstring>(Employee employee)</argsstring>
+        <name>RegistEmployee</name>
+        <qualifiedname>Business_Tier.Company.RegistEmployee</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new employee in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The employee object to be registered.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The unique ID of the newly registered employee.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;405&quot; if the employee object is null. Throws &quot;407&quot; if the employee already exists in the system. Throws &quot;408&quot; for any unexpected error during registration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="253" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="253" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a0303dd8bef6b688ef550017c923adac2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.DeleteEmployee</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>DeleteEmployee</name>
+        <qualifiedname>Business_Tier.Company.DeleteEmployee</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Deletes an existing employee based on their unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to be removed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employee was successfully deleted.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;412&quot; if the employee does not exist. Throws &quot;409&quot; for any unexpected error during deletion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="284" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="284" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1af706655f649bd237b706bf20bb27ea74" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.IsEmployeeRegistered</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>IsEmployeeRegistered</name>
+        <qualifiedname>Business_Tier.Company.IsEmployeeRegistered</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether an employee is registered in the system using their unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employee is registered, false otherwise.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;410&quot; for any unexpected error during the operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="309" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="309" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1aa4a2a738f2579fca775db72e215302ea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.UpdateEmployeeRole</definition>
+        <argsstring>(int idEmployee, string role, double priceHourly)</argsstring>
+        <name>UpdateEmployeeRole</name>
+        <qualifiedname>Business_Tier.Company.UpdateEmployeeRole</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>priceHourly</declname>
+        </param>
+        <briefdescription>
+<para>Updates the role and hourly price of an existing employee. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee whose role and price need updating.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new role of the employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priceHourly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new hourly price for the employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the update was successful.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;412&quot; if the employee does not exist. Throws &quot;411&quot; if the role is empty. Throws &quot;413&quot; if the hourly price is less than or equal to zero. Throws &quot;414&quot; for any unexpected error during the update. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="335" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="335" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1ab78bd94ff91d3d1b02a3d366eb9203b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+        <definition>static Employee Business_Tier.Company.GetEmployeeById</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>GetEmployeeById</name>
+        <qualifiedname>Business_Tier.Company.GetEmployeeById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the details of a specific employee using their unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An Employee object containing the employee’s details.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;412&quot; if the employee does not exist. Throws &quot;415&quot; for any unexpected error during retrieval. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="372" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="372" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a5d330e3a25c187b41709e377e63c1b7e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Business_Tier.Company.RegisterMaterial</definition>
+        <argsstring>(Material material, int quantity)</argsstring>
+        <name>RegisterMaterial</name>
+        <qualifiedname>Business_Tier.Company.RegisterMaterial</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Registers a material by adding it to the catalog and inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material to be registered.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial quantity of the material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The unique ID of the material in the inventory.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="398" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="398" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a4a1547c286b5cf06fc670772773248e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.IsMaterialRegistered</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>IsMaterialRegistered</name>
+        <qualifiedname>Business_Tier.Company.IsMaterialRegistered</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a material is registered in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the material is registered, false otherwise.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;612&quot; for any unexpected error during the verification process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="475" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="475" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1ad2dd86343b1c4bda11c705f5252797c8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.UpdateStock</definition>
+        <argsstring>(int idMaterial, int quantity)</argsstring>
+        <name>UpdateStock</name>
+        <qualifiedname>Business_Tier.Company.UpdateStock</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Updates the stock quantity of a material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new quantity to be set.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the stock update was successful.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;613&quot; if the quantity is less than zero. Throws &quot;610&quot; if the material does not exist in the inventory. Throws &quot;614&quot; for any unexpected error during the update process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="504" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="504" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a80eb1bb8aecbdc1f18edcac986d72ef1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.UpdatePrice</definition>
+        <argsstring>(int idMaterial, double price)</argsstring>
+        <name>UpdatePrice</name>
+        <qualifiedname>Business_Tier.Company.UpdatePrice</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+<para>Updates the price of a material in the catalog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new price to be set.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the price update was successful.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;615&quot; if the price is less than zero. Throws &quot;610&quot; if the material does not exist in the catalog. Throws &quot;616&quot; for any unexpected error during the update process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="539" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="539" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1af59b5ef16b5a68bbbb7d0b24781263e9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+        <definition>static Material Business_Tier.Company.GetMaterial</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>GetMaterial</name>
+        <qualifiedname>Business_Tier.Company.GetMaterial</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the details of a material from the catalog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Material object containing the material&apos;s details.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;616&quot; for any unexpected error during the retrieval process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="572" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="572" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1abb22ccb74ea4d3d9d043abd26916b574" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref></type>
+        <definition>static MaterialQuantity Business_Tier.Company.GetQuantityOfMaterial</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>GetQuantityOfMaterial</name>
+        <qualifiedname>Business_Tier.Company.GetQuantityOfMaterial</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the quantity details of a material in the inventory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A MaterialQuantity object containing the material&apos;s inventory details.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;616&quot; for any unexpected error during the retrieval process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="592" column="40" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="592" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1aed087dbe776c0838ae0a4f284e5a0509" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Business_Tier.Company.RegistProject</definition>
+        <argsstring>(Project project)</argsstring>
+        <name>RegistProject</name>
+        <qualifiedname>Business_Tier.Company.RegistProject</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_project" kindref="compound">Project</ref></type>
+          <declname>project</declname>
+        </param>
+        <briefdescription>
+<para>Registers a new project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>project</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The project to be registered.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The unique ID of the registered project.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;815&quot; if the project is null. Throws &quot;820&quot; if the project already exists. Throws &quot;817&quot; for any unexpected error during the registration process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="618" column="27" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="618" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a177217e2dceff742c4a19271a52930eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.IsProjectRegistered</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>IsProjectRegistered</name>
+        <qualifiedname>Business_Tier.Company.IsProjectRegistered</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a project is registered in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project is registered, false otherwise.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;818&quot; for any unexpected error during the check process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="650" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="650" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a2bcad47628f5980efca9a985b39e5297" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.UpdateStatusProject</definition>
+        <argsstring>(int idProject, Status status)</argsstring>
+        <name>UpdateStatusProject</name>
+        <qualifiedname>Business_Tier.Company.UpdateStatusProject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_object___tier_1a69271cced1c49f459fa625dbf6762550" kindref="member">Status</ref></type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Updates the status of a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new status of the project.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the status update was successful.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;819&quot; for any unexpected error during the update process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="671" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="671" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a4524a8c1abae0801c82b163cd35c931e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.CloseProject</definition>
+        <argsstring>(int idProject)</argsstring>
+        <name>CloseProject</name>
+        <qualifiedname>Business_Tier.Company.CloseProject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <briefdescription>
+<para>Closes a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project to close.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the project was successfully closed.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;819&quot; for any unexpected error during the closing process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="692" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="692" bodyend="702"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a6ee40cd7af812c51e48720191daee382" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.AddClientToProject</definition>
+        <argsstring>(int idProject, int idClient)</argsstring>
+        <name>AddClientToProject</name>
+        <qualifiedname>Business_Tier.Company.AddClientToProject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Adds a client to a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the client to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the client was successfully added to the project.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;820&quot; if the project does not exist. Throws &quot;821&quot; if the client does not exist. Throws &quot;822&quot; for any unexpected error during the addition process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="717" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="717" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a5f5519da4b913634255953f3c8b5c82a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.DeleteClientToProject</definition>
+        <argsstring>(int idProject, int idClient)</argsstring>
+        <name>DeleteClientToProject</name>
+        <qualifiedname>Business_Tier.Company.DeleteClientToProject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idClient</declname>
+        </param>
+        <briefdescription>
+<para>Removes a client from a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the client to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the client was successfully removed from the project.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;820&quot; if the project does not exist. Throws &quot;821&quot; if the client does not exist. Throws &quot;823&quot; for any unexpected error during the removal process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="752" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="752" bodyend="773"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a981c2b27333c89d5c2b1f3d0638dbd05" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.AddEmployeeToProject</definition>
+        <argsstring>(int idProject, int idEmployee)</argsstring>
+        <name>AddEmployeeToProject</name>
+        <qualifiedname>Business_Tier.Company.AddEmployeeToProject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Adds an employee to a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the employee to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employee was successfully added to the project.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;820&quot; if the project does not exist. Throws &quot;824&quot; if the employee does not exist. Throws &quot;825&quot; for any unexpected error during the addition process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="789" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="789" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1aa4f9a9c60923c171a4c24429d40c027c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.DeleteEmplyeeToProject</definition>
+        <argsstring>(int idProject, int idEmployee)</argsstring>
+        <name>DeleteEmplyeeToProject</name>
+        <qualifiedname>Business_Tier.Company.DeleteEmplyeeToProject</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Removes an employee from a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the employee to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the employee was successfully removed from the project.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;820&quot; if the project does not exist. Throws &quot;824&quot; if the employee does not exist. Throws &quot;826&quot; for any unexpected error during the removal process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="825" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="825" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1ac4f60ea02eb92eed7120320323e9af3c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Business_Tier.Company.UseMaterial</definition>
+        <argsstring>(int idProject, int idMaterial, int quantity)</argsstring>
+        <name>UseMaterial</name>
+        <qualifiedname>Business_Tier.Company.UseMaterial</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idProject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Uses a specified quantity of a material for a project. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idProject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the project.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of the material to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the material was successfully used.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;820&quot; if the project does not exist. Throws &quot;827&quot; if the material does not exist. Throws &quot;828&quot; if the quantity is insufficient. Throws &quot;829&quot; for any unexpected error during the process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="864" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="864" bodyend="893"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a0da4b3b7273fe781a08a478fe5435812" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Business_Tier.Company.AddMaterialToCatalog</definition>
+        <argsstring>(Material material)</argsstring>
+        <name>AddMaterialToCatalog</name>
+        <qualifiedname>Business_Tier.Company.AddMaterialToCatalog</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+<para>Adds a material to the catalog. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material to be added.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The unique ID of the material in the catalog.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;609&quot; if the material is null. Throws &quot;610&quot; if the material already exists in the catalog. Throws &quot;611&quot; for any unexpected error during the addition process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="415" column="29" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="415" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="class_business___tier_1_1_company_1a8eb69816cd8ae65495f7f9a570a359a2" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Business_Tier.Company.AddMaterialToInventory</definition>
+        <argsstring>(int idMaterial, int quantity)</argsstring>
+        <name>AddMaterialToInventory</name>
+        <qualifiedname>Business_Tier.Company.AddMaterialToInventory</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+<para>Adds a material to the inventory with a specified quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique ID of the material to be added.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The quantity of the material to be added.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The unique ID of the material in the inventory.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws &quot;610&quot; if the material already exists in the inventory. Throws &quot;611&quot; for any unexpected error during the addition process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="449" column="29" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="449" bodyend="465"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_business___tier_1_1_company_1aa705e97c3b994403acf37dacf58767a7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Business_Tier.Company.~Company</definition>
+        <argsstring>()</argsstring>
+        <name>~Company</name>
+        <qualifiedname>Business_Tier.Company.~Company</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="class_business___tier_1_1_company" kindref="compound">Company</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="902" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="902" bodyend="904"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The Enterprise class manages operations related to customers employees, materials and projects.It handles tasks such as registration, update and removal, manages project states and resource usage.Ensures proper validation and exception handling for each action. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" line="23" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Business Tier/Company.cs" bodystart="24" bodyend="908"/>
+    <listofallmembers>
+      <member refid="class_business___tier_1_1_company_1a6ee40cd7af812c51e48720191daee382" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>AddClientToProject</name></member>
+      <member refid="class_business___tier_1_1_company_1a981c2b27333c89d5c2b1f3d0638dbd05" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>AddEmployeeToProject</name></member>
+      <member refid="class_business___tier_1_1_company_1a0da4b3b7273fe781a08a478fe5435812" prot="package" virt="non-virtual"><scope>Business_Tier::Company</scope><name>AddMaterialToCatalog</name></member>
+      <member refid="class_business___tier_1_1_company_1a8eb69816cd8ae65495f7f9a570a359a2" prot="package" virt="non-virtual"><scope>Business_Tier::Company</scope><name>AddMaterialToInventory</name></member>
+      <member refid="class_business___tier_1_1_company_1a4524a8c1abae0801c82b163cd35c931e" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>CloseProject</name></member>
+      <member refid="class_business___tier_1_1_company_1a12f0a82cad4334bb30794b585a9bd307" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>DeleteClient</name></member>
+      <member refid="class_business___tier_1_1_company_1a5f5519da4b913634255953f3c8b5c82a" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>DeleteClientToProject</name></member>
+      <member refid="class_business___tier_1_1_company_1a0303dd8bef6b688ef550017c923adac2" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>DeleteEmployee</name></member>
+      <member refid="class_business___tier_1_1_company_1aa4f9a9c60923c171a4c24429d40c027c" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>DeleteEmplyeeToProject</name></member>
+      <member refid="class_business___tier_1_1_company_1aea85e3cd72dd73576b6f9799bab8a9ea" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>GetClientById</name></member>
+      <member refid="class_business___tier_1_1_company_1ab78bd94ff91d3d1b02a3d366eb9203b4" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>GetEmployeeById</name></member>
+      <member refid="class_business___tier_1_1_company_1af59b5ef16b5a68bbbb7d0b24781263e9" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>GetMaterial</name></member>
+      <member refid="class_business___tier_1_1_company_1abb22ccb74ea4d3d9d043abd26916b574" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>GetQuantityOfMaterial</name></member>
+      <member refid="class_business___tier_1_1_company_1a68e765487af8bc16207a7f91db42d302" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>IsClientRegistered</name></member>
+      <member refid="class_business___tier_1_1_company_1af706655f649bd237b706bf20bb27ea74" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>IsEmployeeRegistered</name></member>
+      <member refid="class_business___tier_1_1_company_1a4a1547c286b5cf06fc670772773248e0" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>IsMaterialRegistered</name></member>
+      <member refid="class_business___tier_1_1_company_1a177217e2dceff742c4a19271a52930eb" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>IsProjectRegistered</name></member>
+      <member refid="class_business___tier_1_1_company_1a2a9a477eb8dff2604d82a3599813a17b" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>LoadAllData</name></member>
+      <member refid="class_business___tier_1_1_company_1ac80bba0ae5f40f2f3cdad1a5501bbd8f" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>RegistEmployee</name></member>
+      <member refid="class_business___tier_1_1_company_1aff7dd145915b99b986c8e8a420599f3e" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>RegisterClient</name></member>
+      <member refid="class_business___tier_1_1_company_1a5d330e3a25c187b41709e377e63c1b7e" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>RegisterMaterial</name></member>
+      <member refid="class_business___tier_1_1_company_1aed087dbe776c0838ae0a4f284e5a0509" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>RegistProject</name></member>
+      <member refid="class_business___tier_1_1_company_1a021f6ece08048a1f8b07a092e45dc333" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>SaveAllData</name></member>
+      <member refid="class_business___tier_1_1_company_1a9c1dcf2e51189272b5f926bbde856e5b" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>UpdateClientContact</name></member>
+      <member refid="class_business___tier_1_1_company_1aa4a2a738f2579fca775db72e215302ea" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>UpdateEmployeeRole</name></member>
+      <member refid="class_business___tier_1_1_company_1a80eb1bb8aecbdc1f18edcac986d72ef1" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>UpdatePrice</name></member>
+      <member refid="class_business___tier_1_1_company_1a2bcad47628f5980efca9a985b39e5297" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>UpdateStatusProject</name></member>
+      <member refid="class_business___tier_1_1_company_1ad2dd86343b1c4bda11c705f5252797c8" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>UpdateStock</name></member>
+      <member refid="class_business___tier_1_1_company_1ac4f60ea02eb92eed7120320323e9af3c" prot="public" virt="non-virtual"><scope>Business_Tier::Company</scope><name>UseMaterial</name></member>
+      <member refid="class_business___tier_1_1_company_1aa705e97c3b994403acf37dacf58767a7" prot="private" virt="non-virtual"><scope>Business_Tier::Company</scope><name>~Company</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,7 +1,0 @@
-<map id="src.Person" name="src.Person">
-<area shape="rect" id="Node000001" title="Represents a person with basic attributes like Id and Name. This class provides access and modificati..." alt="" coords="65,5,162,35"/>
-<area shape="rect" id="Node000002" href="$classsrc_1_1_client.html" title="The Client class allows you to create a client object with basic information such as id,..." alt="" coords="5,83,94,113"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,49,64,84,59,81,90,45"/>
-<area shape="rect" id="Node000003" href="$classsrc_1_1_employee.html" title="Class Employee allows to create an employee object with basic information such as their Id,..." alt="" coords="118,83,237,113"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,45,168,81,163,84,133,49"/>
-</map>

@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_object___tier_1_1_material" kind="class" language="C#" prot="public">
+    <compoundname>Object_Tier::Material</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IComparable&lt; Material &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_material_1a094f8f2b91fab1ad863bc4305d91846f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Material.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Object_Tier.Material.id</qualifiedname>
+        <briefdescription>
+<para>Stores the ID of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="24" column="13" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_material_1a69056ec2c138e53af018877340023158" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Object_Tier.Material.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Object_Tier.Material.name</qualifiedname>
+        <briefdescription>
+<para>Stores the name of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="29" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_material_1ad274d615bddaed0c8935c132e576e8a0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Object_Tier.Material.unitPrice</definition>
+        <argsstring></argsstring>
+        <name>unitPrice</name>
+        <qualifiedname>Object_Tier.Material.unitPrice</qualifiedname>
+        <briefdescription>
+<para>Stores the unit price of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="34" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_object___tier_1_1_material_1a0dd644fc41fc9c595b8c5c88925c760c" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime Object_Tier.Material.lastRegiste</definition>
+        <argsstring></argsstring>
+        <name>lastRegiste</name>
+        <qualifiedname>Object_Tier.Material.lastRegiste</qualifiedname>
+        <briefdescription>
+<para>Stores the last registration date of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="39" column="18" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_object___tier_1_1_material_1a995d1a6f3af89edb5366bccf4711f08e" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Material.materialIdCounter</definition>
+        <argsstring></argsstring>
+        <name>materialIdCounter</name>
+        <qualifiedname>Object_Tier.Material.materialIdCounter</qualifiedname>
+        <initializer>= 900</initializer>
+        <briefdescription>
+<para>Static counter to generate unique material IDs. Starts at 900. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="45" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_object___tier_1_1_material_1ad01b17716ded41d1cf0ff1fdf37c1cd7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Object_Tier.Material.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Object_Tier.Material.Id</qualifiedname>
+        <briefdescription>
+<para>Gets the ID of the material. Read-only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="54" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_material_1ab45d1fcfc21da59294983c2ed4b8bd0d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Object_Tier.Material.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Object_Tier.Material.Name</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the name of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="62" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_material_1a9a149aa2f608df2299441d2db3b7e5b8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Object_Tier.Material.UnitPrice</definition>
+        <argsstring></argsstring>
+        <name>UnitPrice</name>
+        <qualifiedname>Object_Tier.Material.UnitPrice</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the unit price of the material. The value must be greater than zero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="72" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="73" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="property" id="class_object___tier_1_1_material_1a91101e2d675adc4b6dddc132a26aaafb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Object_Tier.Material.LastRegiste</definition>
+        <argsstring></argsstring>
+        <name>LastRegiste</name>
+        <qualifiedname>Object_Tier.Material.LastRegiste</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the last registration date of the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="87" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="88" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_object___tier_1_1_material_1ab124aefbd361db83bcfb577070913fe7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Material.Material</definition>
+        <argsstring>(string name, double price)</argsstring>
+        <name>Material</name>
+        <qualifiedname>Object_Tier.Material.Material</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref> class with a name and unit price. Automatically assigns a unique ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the material.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unit price of the material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="102" column="16" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="102" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_1a5cd49d5e3ddda0c7135ac876336da1fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool Object_Tier.Material.Equals</definition>
+        <argsstring>(object obj)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>Object_Tier.Material.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Determines whether the specified object is equal to the current material. Materials are equal if their name and unit price match. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compare with the current material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the objects are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="120" column="30" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="120" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_1a8c107955d2aaa00ab6d453c65e9c7a3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Object_Tier.Material.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Object_Tier.Material.ToString</qualifiedname>
+        <briefdescription>
+<para>Returns a string representation of the material, including ID, name, and unit price. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A string representation of the material.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="144" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_1ad0f93bc00f89c2dbaef441fee34dc707" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Object_Tier.Material.CompareTo</definition>
+        <argsstring>(Material material)</argsstring>
+        <name>CompareTo</name>
+        <qualifiedname>Object_Tier.Material.CompareTo</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+<para>Compares the current material to another material based on their name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material to compare to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A value indicating the relative order of the materials.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="195" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="195" bodyend="198"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_object___tier_1_1_material_1a64caa0a7f747888b483824d87cfed394" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+        <definition>static Material Object_Tier.Material.CreateMaterial</definition>
+        <argsstring>(string name, double price)</argsstring>
+        <name>CreateMaterial</name>
+        <qualifiedname>Object_Tier.Material.CreateMaterial</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the material.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unit price of the material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref> object.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="158" column="32" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_1ac347c1c7bc52bfa67796ae1924a90d90" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Material.operator-</definition>
+        <argsstring>(Material material1, Material material2)</argsstring>
+        <name>operator-</name>
+        <qualifiedname>Object_Tier.Material.operator-</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if two materials are equal using the &quot;-&quot; operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first material.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>material2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the materials are equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="169" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="169" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_1a10edccf3fe84f57ea813e1d31ce7fa29" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Material.operator+</definition>
+        <argsstring>(Material material1, Material material2)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Object_Tier.Material.operator+</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material2</declname>
+        </param>
+        <briefdescription>
+<para>Checks if two materials are not equal using the &quot;+&quot; operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first material.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>material2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second material.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the materials are not equal; otherwise, false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="185" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object___tier_1_1_material_1ad1109779ef042c08f618a5833da28bae" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Object_Tier.Material.getNextMaterialId</definition>
+        <argsstring>()</argsstring>
+        <name>getNextMaterialId</name>
+        <qualifiedname>Object_Tier.Material.getNextMaterialId</qualifiedname>
+        <briefdescription>
+<para>Increments the static material ID counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True after incrementing the counter.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="204" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="204" bodyend="208"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_object___tier_1_1_material_1a2ced27c0ee79ba3da72e77e9940e6a65" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Object_Tier.Material.~Material</definition>
+        <argsstring>()</argsstring>
+        <name>~Material</name>
+        <qualifiedname>Object_Tier.Material.~Material</qualifiedname>
+        <briefdescription>
+<para>The destroyer of the <ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="215" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="215" bodyend="217"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Represents a material with ID, name, unit price, and registration date. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IComparable&lt; Material &gt;</label>
+      </node>
+      <node id="1">
+        <label>Object_Tier.Material</label>
+        <link refid="class_object___tier_1_1_material"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IComparable&lt; Material &gt;</label>
+      </node>
+      <node id="1">
+        <label>Object_Tier.Material</label>
+        <link refid="class_object___tier_1_1_material"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" line="17" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Object Tier/Material.cs" bodystart="18" bodyend="222"/>
+    <listofallmembers>
+      <member refid="class_object___tier_1_1_material_1ad0f93bc00f89c2dbaef441fee34dc707" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>CompareTo</name></member>
+      <member refid="class_object___tier_1_1_material_1a64caa0a7f747888b483824d87cfed394" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>CreateMaterial</name></member>
+      <member refid="class_object___tier_1_1_material_1a5cd49d5e3ddda0c7135ac876336da1fa" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>Equals</name></member>
+      <member refid="class_object___tier_1_1_material_1ad1109779ef042c08f618a5833da28bae" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>getNextMaterialId</name></member>
+      <member refid="class_object___tier_1_1_material_1ad01b17716ded41d1cf0ff1fdf37c1cd7" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>Id</name></member>
+      <member refid="class_object___tier_1_1_material_1a094f8f2b91fab1ad863bc4305d91846f" prot="private" virt="non-virtual"><scope>Object_Tier::Material</scope><name>id</name></member>
+      <member refid="class_object___tier_1_1_material_1a91101e2d675adc4b6dddc132a26aaafb" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>LastRegiste</name></member>
+      <member refid="class_object___tier_1_1_material_1a0dd644fc41fc9c595b8c5c88925c760c" prot="private" virt="non-virtual"><scope>Object_Tier::Material</scope><name>lastRegiste</name></member>
+      <member refid="class_object___tier_1_1_material_1ab124aefbd361db83bcfb577070913fe7" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>Material</name></member>
+      <member refid="class_object___tier_1_1_material_1a995d1a6f3af89edb5366bccf4711f08e" prot="private" virt="non-virtual"><scope>Object_Tier::Material</scope><name>materialIdCounter</name></member>
+      <member refid="class_object___tier_1_1_material_1ab45d1fcfc21da59294983c2ed4b8bd0d" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>Name</name></member>
+      <member refid="class_object___tier_1_1_material_1a69056ec2c138e53af018877340023158" prot="private" virt="non-virtual"><scope>Object_Tier::Material</scope><name>name</name></member>
+      <member refid="class_object___tier_1_1_material_1a10edccf3fe84f57ea813e1d31ce7fa29" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>operator+</name></member>
+      <member refid="class_object___tier_1_1_material_1ac347c1c7bc52bfa67796ae1924a90d90" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>operator-</name></member>
+      <member refid="class_object___tier_1_1_material_1a8c107955d2aaa00ab6d453c65e9c7a3a" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>ToString</name></member>
+      <member refid="class_object___tier_1_1_material_1a9a149aa2f608df2299441d2db3b7e5b8" prot="public" virt="non-virtual"><scope>Object_Tier::Material</scope><name>UnitPrice</name></member>
+      <member refid="class_object___tier_1_1_material_1ad274d615bddaed0c8935c132e576e8a0" prot="private" virt="non-virtual"><scope>Object_Tier::Material</scope><name>unitPrice</name></member>
+      <member refid="class_object___tier_1_1_material_1a2ced27c0ee79ba3da72e77e9940e6a65" prot="private" virt="non-virtual"><scope>Object_Tier::Material</scope><name>~Material</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="interface_interface___tier_1_1_i_materials" kind="interface" language="C#" prot="public">
+    <compoundname>Interface_Tier::IMaterials</compoundname>
+    <derivedcompoundref refid="class_data___tier_1_1_materials" prot="public" virt="non-virtual">Data_Tier.Materials</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_materials_1afa8bcaf3922890078cd4506819403aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Interface_Tier.IMaterials.AddMaterial</definition>
+        <argsstring>(Material material)</argsstring>
+        <name>AddMaterial</name>
+        <qualifiedname>Interface_Tier.IMaterials.AddMaterial</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_materials_1a1026add42fcea848b41ad751d2597165">AddMaterial</reimplementedby>
+        <param>
+          <type><ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref></type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new material to the materials list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The material to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the added material.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the material is null or any error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterials.cs" line="19" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_materials_1abf9743289093309c08fea23dbbf90891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IMaterials.MaterialExist</definition>
+        <argsstring>(int idMaterial)</argsstring>
+        <name>MaterialExist</name>
+        <qualifiedname>Interface_Tier.IMaterials.MaterialExist</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_materials_1ab88f6ef135939f18f53b0f8b69a1897f">MaterialExist</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a material exists in the list based on its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the material exists, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterials.cs" line="30" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_interface___tier_1_1_i_materials_1ab771a5cf8260d49375ac33a8c1188f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Interface_Tier.IMaterials.UpdatePrice</definition>
+        <argsstring>(int idMaterial, double price)</argsstring>
+        <name>UpdatePrice</name>
+        <qualifiedname>Interface_Tier.IMaterials.UpdatePrice</qualifiedname>
+        <reimplementedby refid="class_data___tier_1_1_materials_1a988296d288dd70a6b81d30b3e958f42f">UpdatePrice</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idMaterial</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+<para>Updates the price of a material in the list based on its ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idMaterial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the material to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new price to set.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the price was updated successfully, otherwise false.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an error occurs during the update. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterials.cs" line="42" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Methods to implement in the materials class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Data_Tier.Materials</label>
+        <link refid="class_data___tier_1_1_materials"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Interface_Tier.IMaterials</label>
+        <link refid="interface_interface___tier_1_1_i_materials"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterials.cs" line="8" column="22" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Interface Tier/IMaterials.cs" bodystart="9" bodyend="44"/>
+    <listofallmembers>
+      <member refid="interface_interface___tier_1_1_i_materials_1afa8bcaf3922890078cd4506819403aea" prot="public" virt="non-virtual"><scope>Interface_Tier::IMaterials</scope><name>AddMaterial</name></member>
+      <member refid="interface_interface___tier_1_1_i_materials_1abf9743289093309c08fea23dbbf90891" prot="public" virt="non-virtual"><scope>Interface_Tier::IMaterials</scope><name>MaterialExist</name></member>
+      <member refid="interface_interface___tier_1_1_i_materials_1ab771a5cf8260d49375ac33a8c1188f09" prot="public" virt="non-virtual"><scope>Interface_Tier::IMaterials</scope><name>UpdatePrice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

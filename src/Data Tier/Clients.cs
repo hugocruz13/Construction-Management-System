@@ -241,7 +241,7 @@ namespace Data_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("103", ex);
+                throw new ConfigurationErrorException("115", ex);
             }
         }
 

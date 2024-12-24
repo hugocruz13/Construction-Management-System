@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="namespace_data___tier" kind="namespace" language="C#">
+    <compoundname>Data_Tier</compoundname>
+    <innerclass refid="class_data___tier_1_1_clients" prot="public">Data_Tier::Clients</innerclass>
+    <innerclass refid="class_data___tier_1_1_clients_service" prot="package">Data_Tier::ClientsService</innerclass>
+    <innerclass refid="class_data___tier_1_1_data" prot="public">Data_Tier::Data</innerclass>
+    <innerclass refid="class_data___tier_1_1_employees" prot="public">Data_Tier::Employees</innerclass>
+    <innerclass refid="class_data___tier_1_1_employees_service" prot="public">Data_Tier::EmployeesService</innerclass>
+    <innerclass refid="class_data___tier_1_1_material_inventory" prot="public">Data_Tier::MaterialInventory</innerclass>
+    <innerclass refid="class_data___tier_1_1_materials" prot="public">Data_Tier::Materials</innerclass>
+    <innerclass refid="class_data___tier_1_1_project_data" prot="public">Data_Tier::ProjectData</innerclass>
+    <innerclass refid="class_data___tier_1_1_projects" prot="public">Data_Tier::Projects</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Clients.cs" line="16" column="1"/>
+  </compounddef>
+</doxygen>

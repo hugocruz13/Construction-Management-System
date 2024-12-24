@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['team_0',['Team',['../classsrc_1_1_team.html#a4bfcf648a0ad13abe210aa2aef3172b6',1,'src::Team']]]
+  ['operator_2b_0',['operator+',['../class_object___tier_1_1_client.html#a79a0beefc8d0193cba236597b3a01c95',1,'Object_Tier.Client.operator+()'],['../class_object___tier_1_1_employee.html#a3a24001f0c37e6007c28ca879135bba1',1,'Object_Tier.Employee.operator+()'],['../class_object___tier_1_1_material.html#a10edccf3fe84f57ea813e1d31ce7fa29',1,'Object_Tier.Material.operator+()'],['../class_object___tier_1_1_material_quantity.html#a366a01b4e772d5b38893a0c177111ea7',1,'Object_Tier.MaterialQuantity.operator+()'],['../class_object___tier_1_1_project.html#a27f3404f7482fc6cfb962be6402bc999',1,'Object_Tier.Project.operator+()']]],
+  ['operator_2d_1',['operator-',['../class_object___tier_1_1_client.html#a89dfd534d7ff331264b7edf4b5486572',1,'Object_Tier.Client.operator-()'],['../class_object___tier_1_1_employee.html#a39e92f95320f6ccf392b348261a46e38',1,'Object_Tier.Employee.operator-()'],['../class_object___tier_1_1_material.html#ac347c1c7bc52bfa67796ae1924a90d90',1,'Object_Tier.Material.operator-()'],['../class_object___tier_1_1_material_quantity.html#ab3d8537ce9db67769a0ed117168513f3',1,'Object_Tier.MaterialQuantity.operator-()'],['../class_object___tier_1_1_project.html#a3ce946f67b692f0ae24ff4c2e9b34463',1,'Object_Tier.Project.operator-()']]]
 ];

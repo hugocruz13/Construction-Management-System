@@ -5,5 +5,18 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=12,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=12,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="src.MaterialQuantity",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsrc_1_1_material_quantity.html",tooltip="The class MaterialQuantity represents the quantity of a given material, together with the date of its..."];
+  Node0 [id="Node000000",label="IComparable",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node0 -> Node1 [id="edge2_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="Data_Tier.ProjectData",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___tier_1_1_project_data.html",tooltip="Class that represents project data, including operations related to clients, employees,..."];
+  Node0 -> Node2 [id="edge3_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Object_Tier.Client",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_object___tier_1_1_client.html",tooltip="Represents a client in the system, inheriting from the Person class."];
+  Node0 -> Node4 [id="edge4_Node000000_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Object_Tier.Employee",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_object___tier_1_1_employee.html",tooltip="Represents an employee in the system, inheriting from the Person class."];
+  Node0 -> Node5 [id="edge5_Node000000_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Object_Tier.Material",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_object___tier_1_1_material.html",tooltip="Represents a material with ID, name, unit price, and registration date."];
+  Node0 -> Node6 [id="edge6_Node000000_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Object_Tier.MaterialQuantity",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_object___tier_1_1_material_quantity.html",tooltip="Represents the quantity of a material and the date it was added."];
+  Node3 [id="Node000003",label="Object_Tier.Person",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_object___tier_1_1_person.html",tooltip="Represents a person with an ID and a name."];
+  Node3 -> Node2 [id="edge7_Node000003_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node4 [id="edge8_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

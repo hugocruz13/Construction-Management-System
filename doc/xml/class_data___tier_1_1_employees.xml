@@ -1,0 +1,464 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_data___tier_1_1_employees" kind="class" language="C#" prot="public">
+    <compoundname>Data_Tier::Employees</compoundname>
+    <basecompoundref refid="interface_interface___tier_1_1_i_employees" prot="public" virt="non-virtual">Interface_Tier.IEmployees</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_data___tier_1_1_employees_1a0c0f250cf10ad1a8aa1794072cb6bbb0" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_data___tier_1_1_employees" kindref="compound">Employees</ref></type>
+        <definition>Employees Data_Tier.Employees.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>Data_Tier.Employees.instance</qualifiedname>
+        <briefdescription>
+<para>Singleton instance of the <computeroutput><ref refid="class_data___tier_1_1_employees" kindref="compound">Employees</ref></computeroutput> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="27" column="26" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data___tier_1_1_employees_1a9e6483122af4ee9ed55dd35a6149a6b1" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref> &gt;</type>
+        <definition>List&lt;Employee&gt; Data_Tier.Employees.employees</definition>
+        <argsstring></argsstring>
+        <name>employees</name>
+        <qualifiedname>Data_Tier.Employees.employees</qualifiedname>
+        <briefdescription>
+<para>List of employees stored in memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="32" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data___tier_1_1_employees_1ad6c28788ae26d40c491037c8975a4f84" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data___tier_1_1_employees" kindref="compound">Employees</ref></type>
+        <definition>Employees Data_Tier.Employees.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>Data_Tier.Employees.Instance</qualifiedname>
+        <briefdescription>
+<para>Gets the singleton instance of the <computeroutput><ref refid="class_data___tier_1_1_employees" kindref="compound">Employees</ref></computeroutput> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="42" column="33" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data___tier_1_1_employees_1a83a96eaa055aef4ef236544fdc52e304" prot="package" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref> &gt;</type>
+        <definition>List&lt;Employee&gt; Data_Tier.Employees.EmployeesD</definition>
+        <argsstring></argsstring>
+        <name>EmployeesD</name>
+        <qualifiedname>Data_Tier.Employees.EmployeesD</qualifiedname>
+        <briefdescription>
+<para>Gets or sets the list of employees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="58" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="59" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1aa0b39d5111c6757c6f75f4049d8154b5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data_Tier.Employees.Employees</definition>
+        <argsstring>()</argsstring>
+        <name>Employees</name>
+        <qualifiedname>Data_Tier.Employees.Employees</qualifiedname>
+        <briefdescription>
+<para>Initializes a new instance of the <computeroutput><ref refid="class_data___tier_1_1_employees" kindref="compound">Employees</ref></computeroutput> class, with an empty list of employees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="70" column="19" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="70" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1a372adeb5b1296162c86c6198478fec31" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+        <definition>Employee Data_Tier.Employees.FindEmployee</definition>
+        <argsstring>(int employeeId)</argsstring>
+        <name>FindEmployee</name>
+        <qualifiedname>Data_Tier.Employees.FindEmployee</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>employeeId</declname>
+        </param>
+        <briefdescription>
+<para>Finds an employee by their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employeeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to find.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The employee object if found, otherwise <computeroutput>null</computeroutput>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="84" column="18" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="84" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1aa379cb55c6480cecc92a8cc96a05ad89" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data_Tier.Employees.~Employees</definition>
+        <argsstring>()</argsstring>
+        <name>~Employees</name>
+        <qualifiedname>Data_Tier.Employees.~Employees</qualifiedname>
+        <briefdescription>
+<para>The destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="268" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="268" bodyend="270"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1a743a177e79acc3ea503d02a8f7970b7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Data_Tier.Employees.AddEmployee</definition>
+        <argsstring>(Employee employee)</argsstring>
+        <name>AddEmployee</name>
+        <qualifiedname>Data_Tier.Employees.AddEmployee</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_employees_1a97d3b4ab3604cedcf2c7b2c0f72cb3a6">AddEmployee</reimplements>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee</declname>
+        </param>
+        <briefdescription>
+<para>Adds a new employee to the list and sorts the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The employee to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the added employee.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if the employee is null or if an error occurs during the addition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="105" column="20" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="105" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1aa38c1c75bb81177c3c29da2f7cda92aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Employees.RemoveEmployee</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>RemoveEmployee</name>
+        <qualifiedname>Data_Tier.Employees.RemoveEmployee</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_employees_1a8464bf608876bb24769806385cf114f9">RemoveEmployee</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Removes an employee by their ID from the list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the employee was removed, otherwise <computeroutput>false</computeroutput>.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if an error occurs during the removal. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="132" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="132" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1a0d5d08e18e75d1ddef7dae56492b15c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Employees.EmployeeExist</definition>
+        <argsstring>(Employee employee)</argsstring>
+        <name>EmployeeExist</name>
+        <qualifiedname>Data_Tier.Employees.EmployeeExist</qualifiedname>
+        <param>
+          <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+          <declname>employee</declname>
+        </param>
+        <briefdescription>
+<para>Checks if a specific employee exists in the list based on the employee object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>employee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The employee to check for existence.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the employee exists, otherwise <computeroutput>false</computeroutput>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="157" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="157" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1a15bad604543cb0105a6f258503806168" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Employees.EmployeeExist</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>EmployeeExist</name>
+        <qualifiedname>Data_Tier.Employees.EmployeeExist</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_employees_1aaf7ce6e964554c97ba0f68c56c7ae2c2">EmployeeExist</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Checks if an employee exists in the list based on their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to check.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the employee exists, otherwise <computeroutput>false</computeroutput>.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if an error occurs during the existence check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="178" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="178" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1aa69f887b9dfe918cd9c9dcf8128eb867" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Employees.UpdateRole</definition>
+        <argsstring>(int idEmployee, string role, double hourly)</argsstring>
+        <name>UpdateRole</name>
+        <qualifiedname>Data_Tier.Employees.UpdateRole</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_employees_1a9af9e438dfa122d5bdfbc8a19b730425">UpdateRole</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>role</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hourly</declname>
+        </param>
+        <briefdescription>
+<para>Updates an employee&apos;s role and hourly rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to update.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>role</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new role of the employee.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hourly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new hourly rate of the employee.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the update was successful, otherwise <computeroutput>false</computeroutput>.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if the update fails.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="207" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="207" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1afc32d495bba546f78ab48454b726502b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref></type>
+        <definition>Employee Data_Tier.Employees.GetEmployee</definition>
+        <argsstring>(int idEmployee)</argsstring>
+        <name>GetEmployee</name>
+        <qualifiedname>Data_Tier.Employees.GetEmployee</qualifiedname>
+        <reimplements refid="interface_interface___tier_1_1_i_employees_1a773d1d4284a4b9abdabf4f341e513524">GetEmployee</reimplements>
+        <param>
+          <type>int</type>
+          <declname>idEmployee</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves an employee based on their ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idEmployee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the employee to retrieve.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The employee object if found, otherwise <computeroutput>null</computeroutput>.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws if the retrieval fails. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="236" column="25" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="236" bodyend="246"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_data___tier_1_1_employees_1ad2e69b471cb89568a9f56d59ae3c5f6c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Data_Tier.Employees.SetCounterEqualEmployee</definition>
+        <argsstring>()</argsstring>
+        <name>SetCounterEqualEmployee</name>
+        <qualifiedname>Data_Tier.Employees.SetCounterEqualEmployee</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Synchronizes the employee counter with the number of employees in the list.</para>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if synchronization was successful, otherwise <computeroutput>false</computeroutput>.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="252" column="23" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="252" bodyend="260"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Singleton class that manages a list of employees. Allows adding, removing, updating and retrieving employees. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data_Tier.Employees</label>
+        <link refid="class_data___tier_1_1_employees"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IEmployees</label>
+        <link refid="interface_interface___tier_1_1_i_employees"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data_Tier.Employees</label>
+        <link refid="class_data___tier_1_1_employees"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IEmployees</label>
+        <link refid="interface_interface___tier_1_1_i_employees"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" line="21" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Employees.cs" bodystart="22" bodyend="275"/>
+    <listofallmembers>
+      <member refid="class_data___tier_1_1_employees_1a743a177e79acc3ea503d02a8f7970b7f" prot="public" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>AddEmployee</name></member>
+      <member refid="class_data___tier_1_1_employees_1a0d5d08e18e75d1ddef7dae56492b15c5" prot="public" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>EmployeeExist</name></member>
+      <member refid="class_data___tier_1_1_employees_1a15bad604543cb0105a6f258503806168" prot="public" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>EmployeeExist</name></member>
+      <member refid="class_data___tier_1_1_employees_1aa0b39d5111c6757c6f75f4049d8154b5" prot="protected" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>Employees</name></member>
+      <member refid="class_data___tier_1_1_employees_1a9e6483122af4ee9ed55dd35a6149a6b1" prot="private" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>employees</name></member>
+      <member refid="class_data___tier_1_1_employees_1a83a96eaa055aef4ef236544fdc52e304" prot="package" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>EmployeesD</name></member>
+      <member refid="class_data___tier_1_1_employees_1a372adeb5b1296162c86c6198478fec31" prot="private" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>FindEmployee</name></member>
+      <member refid="class_data___tier_1_1_employees_1afc32d495bba546f78ab48454b726502b" prot="public" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>GetEmployee</name></member>
+      <member refid="class_data___tier_1_1_employees_1ad6c28788ae26d40c491037c8975a4f84" prot="public" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>Instance</name></member>
+      <member refid="class_data___tier_1_1_employees_1a0c0f250cf10ad1a8aa1794072cb6bbb0" prot="private" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>instance</name></member>
+      <member refid="class_data___tier_1_1_employees_1aa38c1c75bb81177c3c29da2f7cda92aa" prot="public" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>RemoveEmployee</name></member>
+      <member refid="class_data___tier_1_1_employees_1ad2e69b471cb89568a9f56d59ae3c5f6c" prot="package" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>SetCounterEqualEmployee</name></member>
+      <member refid="class_data___tier_1_1_employees_1aa69f887b9dfe918cd9c9dcf8128eb867" prot="public" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>UpdateRole</name></member>
+      <member refid="class_data___tier_1_1_employees_1aa379cb55c6480cecc92a8cc96a05ad89" prot="private" virt="non-virtual"><scope>Data_Tier::Employees</scope><name>~Employees</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

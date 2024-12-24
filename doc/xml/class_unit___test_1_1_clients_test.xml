@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_unit___test_1_1_clients_test" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>Unit_Test::ClientsTest</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unit___test_1_1_clients_test_1ae8ac9648ac5bd15266fab60a825805f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unit_Test.ClientsTest.TestRegisterClient_ValidClient</definition>
+        <argsstring>()</argsstring>
+        <name>TestRegisterClient_ValidClient</name>
+        <qualifiedname>Unit_Test.ClientsTest.TestRegisterClient_ValidClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/ClientsTest.cs" line="12" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/ClientsTest.cs" bodystart="12" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unit___test_1_1_clients_test_1a756586d5bf3b56c7b499651a5ddb6549" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unit_Test.ClientsTest.TestRegisterClient_NullClient_ShouldThrowException</definition>
+        <argsstring>()</argsstring>
+        <name>TestRegisterClient_NullClient_ShouldThrowException</name>
+        <qualifiedname>Unit_Test.ClientsTest.TestRegisterClient_NullClient_ShouldThrowException</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/ClientsTest.cs" line="25" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/ClientsTest.cs" bodystart="25" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/ClientsTest.cs" line="9" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/ClientsTest.cs" bodystart="10" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_unit___test_1_1_clients_test_1a756586d5bf3b56c7b499651a5ddb6549" prot="public" virt="non-virtual"><scope>Unit_Test::ClientsTest</scope><name>TestRegisterClient_NullClient_ShouldThrowException</name></member>
+      <member refid="class_unit___test_1_1_clients_test_1ae8ac9648ac5bd15266fab60a825805f7" prot="public" virt="non-virtual"><scope>Unit_Test::ClientsTest</scope><name>TestRegisterClient_ValidClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
