@@ -69,8 +69,7 @@ namespace Presentation_Tier
                 //int e3 = Company.RegistEmployee(Employee.CreateEmployee("Tiago Souza", "Mestre de Obras", 6.4));//202
                 //int e4 = Company.RegistEmployee(Employee.CreateEmployee("Cláudia Lima", "Técnica de Segurança", 6.4));//203
                 //int e5 = Company.RegistEmployee(Employee.CreateEmployee("Luís Mendes", "Carpinteiro", 6.4));//204
-
-                int e1 = Company.RegistEmployee(Employee.CreateEmployee("Pedro Martins", "Eletricista", 6.4));//205
+                //int e1 = Company.RegistEmployee(Employee.CreateEmployee("Pedro Martins", "Eletricista", 6.4));//205
                 int e2 = Company.RegistEmployee(Employee.CreateEmployee("Rita Silva", "Arquiteta", 6.4));//206
                 int e3 = Company.RegistEmployee(Employee.CreateEmployee("Bruno Costa", "Pintor", 6.4));//207
                 int e4 = Company.RegistEmployee(Employee.CreateEmployee("Carla Ferreira", "Encanadora", 6.4));//208
