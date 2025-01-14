@@ -40,7 +40,7 @@
   </compound>
   <compound refid="class_unit___test_1_1_clients_test" kind="class"><name>Unit_Test::ClientsTest</name>
     <member refid="class_unit___test_1_1_clients_test_1ae8ac9648ac5bd15266fab60a825805f7" kind="function"><name>TestRegisterClient_ValidClient</name></member>
-    <member refid="class_unit___test_1_1_clients_test_1a756586d5bf3b56c7b499651a5ddb6549" kind="function"><name>TestRegisterClient_NullClient_ShouldThrowException</name></member>
+    <member refid="class_unit___test_1_1_clients_test_1ab50bea69aad37838e9ad33a96b5a5f8c" kind="function"><name>TestGetClientById</name></member>
   </compound>
   <compound refid="class_business___tier_1_1_company" kind="class"><name>Business_Tier::Company</name>
     <member refid="class_business___tier_1_1_company_1a021f6ece08048a1f8b07a092e45dc333" kind="function"><name>SaveAllData</name></member>
@@ -89,6 +89,8 @@
     <member refid="class_data___tier_1_1_data_1a3c403f62c0adf6c8f5fdfc9f2e49db47" kind="function"><name>PutData</name></member>
     <member refid="class_data___tier_1_1_data_1ab41c721e7e63ea0fd9cd466659987042" kind="function"><name>SetCounterEqual</name></member>
     <member refid="class_data___tier_1_1_data_1a3ad2f8085eb5cb42a100649b415da393" kind="function"><name>~Data</name></member>
+    <member refid="class_data___tier_1_1_data_1a6d515bd0a2a3ff796d88ad647a8d974c" kind="function"><name>SaveData</name></member>
+    <member refid="class_data___tier_1_1_data_1a8027e0d5f608e977f26ac1b1f7586113" kind="function"><name>LoadData</name></member>
   </compound>
   <compound refid="class_object___tier_1_1_employee" kind="class"><name>Object_Tier::Employee</name>
     <member refid="class_object___tier_1_1_employee_1a0e59b92a54374915aaa995ff336428c3" kind="variable"><name>role</name></member>
@@ -129,6 +131,9 @@
     <member refid="class_data___tier_1_1_employees_service_1a600a6057d05842ab4dd72b4b89f5e0ca" kind="function"><name>AddEmployee</name></member>
     <member refid="class_data___tier_1_1_employees_service_1a7156846d426e18c24aa4c9767407a388" kind="function"><name>RemoveEmployee</name></member>
     <member refid="class_data___tier_1_1_employees_service_1af02eaf2be9a12e1075b4cd166791e35b" kind="function"><name>~EmployeesService</name></member>
+  </compound>
+  <compound refid="class_unit___test_1_1_employee_test" kind="class"><name>Unit_Test::EmployeeTest</name>
+    <member refid="class_unit___test_1_1_employee_test_1aaef9f5a4ece6bb53c4dbfae41fffed9f" kind="function"><name>TestDeleteEmployee</name></member>
   </compound>
   <compound refid="interface_interface___tier_1_1_i_clients" kind="interface"><name>Interface_Tier::IClients</name>
     <member refid="interface_interface___tier_1_1_i_clients_1a975f28cc717a22dfbce8ef3736232888" kind="function"><name>AddClient</name></member>
@@ -356,11 +361,7 @@
   </compound>
   <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
   </compound>
-  <compound refid="namespace_system_1_1_runtime_1_1_serialization" kind="namespace"><name>System::Runtime::Serialization</name>
-  </compound>
   <compound refid="namespace_system_1_1_runtime_1_1_serialization_1_1_formatters_1_1_binary" kind="namespace"><name>System::Runtime::Serialization::Formatters::Binary</name>
-  </compound>
-  <compound refid="namespace_system_1_1_xml_1_1_linq" kind="namespace"><name>System::Xml::Linq</name>
   </compound>
   <compound refid="namespace_unit___test" kind="namespace"><name>Unit_Test</name>
   </compound>
@@ -478,6 +479,8 @@
   </compound>
   <compound refid="inherit__graph__12_8png" kind="file"><name>inherit_graph_12.png</name>
   </compound>
+  <compound refid="inherit__graph__13_8png" kind="file"><name>inherit_graph_13.png</name>
+  </compound>
   <compound refid="inherit__graph__2_8png" kind="file"><name>inherit_graph_2.png</name>
   </compound>
   <compound refid="inherit__graph__3_8png" kind="file"><name>inherit_graph_3.png</name>
@@ -583,6 +586,8 @@
   <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
   </compound>
   <compound refid="_clients_test_8cs" kind="file"><name>ClientsTest.cs</name>
+  </compound>
+  <compound refid="_employee_test_8cs" kind="file"><name>EmployeeTest.cs</name>
   </compound>
   <compound refid="_m_s_test_settings_8cs" kind="file"><name>MSTestSettings.cs</name>
   </compound>

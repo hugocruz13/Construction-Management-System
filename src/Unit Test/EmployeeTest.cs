@@ -14,9 +14,9 @@ public class EmployeeTest
         Employee e1 = Employee.CreateEmployee("Luis","Eng",12.2);
 
         // Act
-        Company;
+        Company.RegistEmployee(e1);
 
         // Assert
-        Assert.IsTrue(Clients.Instance.ExistClient(c1));
+        Assert.IsTrue(Employees.Instance.EmployeeExist(e1));
     }
 }

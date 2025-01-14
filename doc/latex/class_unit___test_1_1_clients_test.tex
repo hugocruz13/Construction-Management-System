@@ -1,0 +1,59 @@
+\doxysection{Unit\+\_\+\+Test.\+Clients\+Test Class Reference}
+\hypertarget{class_unit___test_1_1_clients_test}{}\label{class_unit___test_1_1_clients_test}\index{Unit\_Test.ClientsTest@{Unit\_Test.ClientsTest}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_unit___test_1_1_clients_test_ae8ac9648ac5bd15266fab60a825805f7}{Test\+Register\+Client\+\_\+\+Valid\+Client}} ()
+\item 
+void \mbox{\hyperlink{class_unit___test_1_1_clients_test_ab50bea69aad37838e9ad33a96b5a5f8c}{Test\+Get\+Client\+By\+Id}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unit___test_1_1_clients_test_ab50bea69aad37838e9ad33a96b5a5f8c}\index{Unit\_Test.ClientsTest@{Unit\_Test.ClientsTest}!TestGetClientById@{TestGetClientById}}
+\index{TestGetClientById@{TestGetClientById}!Unit\_Test.ClientsTest@{Unit\_Test.ClientsTest}}
+\doxysubsubsection{\texorpdfstring{TestGetClientById()}{TestGetClientById()}}
+{\footnotesize\ttfamily \label{class_unit___test_1_1_clients_test_ab50bea69aad37838e9ad33a96b5a5f8c} 
+void Unit\+\_\+\+Test.\+Clients\+Test.\+Test\+Get\+Client\+By\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_client}{Client}}\ client\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_object___tier_1_1_client}{Client}}(\textcolor{stringliteral}{"{}Teste"{}},\ 827234234);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_business___tier_1_1_company}{Company}}.\mbox{\hyperlink{class_business___tier_1_1_company_aff7dd145915b99b986c8e8a420599f3e}{RegisterClient}}(client);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act\ }}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_client}{Client}}\ resultado\ =\ \mbox{\hyperlink{class_business___tier_1_1_company}{Company}}.\mbox{\hyperlink{class_business___tier_1_1_company_aea85e3cd72dd73576b6f9799bab8a9ea}{GetClientById}}(client.\mbox{\hyperlink{class_object___tier_1_1_person_ab0fb4e62e86c8c93d8e24ef1cf14185a}{Id}});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Assert}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ Assert.AreEqual(client,\ resultado);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_unit___test_1_1_clients_test_ae8ac9648ac5bd15266fab60a825805f7}\index{Unit\_Test.ClientsTest@{Unit\_Test.ClientsTest}!TestRegisterClient\_ValidClient@{TestRegisterClient\_ValidClient}}
+\index{TestRegisterClient\_ValidClient@{TestRegisterClient\_ValidClient}!Unit\_Test.ClientsTest@{Unit\_Test.ClientsTest}}
+\doxysubsubsection{\texorpdfstring{TestRegisterClient\_ValidClient()}{TestRegisterClient\_ValidClient()}}
+{\footnotesize\ttfamily \label{class_unit___test_1_1_clients_test_ae8ac9648ac5bd15266fab60a825805f7} 
+void Unit\+\_\+\+Test.\+Clients\+Test.\+Test\+Register\+Client\+\_\+\+Valid\+Client (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_client}{Client}}\ c1\ =\ \mbox{\hyperlink{class_object___tier_1_1_client}{Client}}.\mbox{\hyperlink{class_object___tier_1_1_client_a68e5bed84ec1c472abce5a7ad590bc46}{CreateClient}}(\textcolor{stringliteral}{"{}Test"{}},\ 33232432);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_business___tier_1_1_company}{Company}}.\mbox{\hyperlink{class_business___tier_1_1_company_aff7dd145915b99b986c8e8a420599f3e}{RegisterClient}}(c1);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ Assert.IsTrue(\mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{ExistClient}}(c1));}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Unit Test/Clients\+Test.\+cs\end{DoxyCompactItemize}

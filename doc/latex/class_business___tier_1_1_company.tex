@@ -1,0 +1,1281 @@
+\doxysection{Business\+\_\+\+Tier.\+Company Class Reference}
+\hypertarget{class_business___tier_1_1_company}{}\label{class_business___tier_1_1_company}\index{Business\_Tier.Company@{Business\_Tier.Company}}
+
+
+The Enterprise class manages operations related to customers employees, materials and projects.\+It handles tasks such as registration, update and removal, manages project states and resource usage.\+Ensures proper validation and exception handling for each action.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a021f6ece08048a1f8b07a092e45dc333}{Save\+All\+Data}} (string path)
+\begin{DoxyCompactList}\small\item\em Saves all application data to the specified file path. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a2a9a477eb8dff2604d82a3599813a17b}{Load\+All\+Data}} (string path)
+\begin{DoxyCompactList}\small\item\em Loads all application data from the specified file path. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_business___tier_1_1_company_aff7dd145915b99b986c8e8a420599f3e}{Register\+Client}} (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client)
+\begin{DoxyCompactList}\small\item\em Registers a new client in the system. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a12f0a82cad4334bb30794b585a9bd307}{Delete\+Client}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Deletes an existing client based on their unique ID. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a68e765487af8bc16207a7f91db42d302}{Is\+Client\+Registered}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Checks whether a client is registered in the system using their unique ID. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a9c1dcf2e51189272b5f926bbde856e5b}{Update\+Client\+Contact}} (int id\+Client, int contact)
+\begin{DoxyCompactList}\small\item\em Updates the contact information of an existing client. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_object___tier_1_1_client}{Client}} \mbox{\hyperlink{class_business___tier_1_1_company_aea85e3cd72dd73576b6f9799bab8a9ea}{Get\+Client\+By\+Id}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Retrieves the details of a specific client using their unique ID. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_business___tier_1_1_company_ac80bba0ae5f40f2f3cdad1a5501bbd8f}{Regist\+Employee}} (\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} employee)
+\begin{DoxyCompactList}\small\item\em Registers a new employee in the system. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a0303dd8bef6b688ef550017c923adac2}{Delete\+Employee}} (int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Deletes an existing employee based on their unique ID. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_af706655f649bd237b706bf20bb27ea74}{Is\+Employee\+Registered}} (int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Checks whether an employee is registered in the system using their unique ID. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_aa4a2a738f2579fca775db72e215302ea}{Update\+Employee\+Role}} (int id\+Employee, string role, double price\+Hourly)
+\begin{DoxyCompactList}\small\item\em Updates the role and hourly price of an existing employee. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} \mbox{\hyperlink{class_business___tier_1_1_company_ab78bd94ff91d3d1b02a3d366eb9203b4}{Get\+Employee\+By\+Id}} (int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Retrieves the details of a specific employee using their unique ID. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_business___tier_1_1_company_a5d330e3a25c187b41709e377e63c1b7e}{Register\+Material}} (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material, int quantity)
+\begin{DoxyCompactList}\small\item\em Registers a material by adding it to the catalog and inventory. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a4a1547c286b5cf06fc670772773248e0}{Is\+Material\+Registered}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Checks if a material is registered in the system. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_ad2dd86343b1c4bda11c705f5252797c8}{Update\+Stock}} (int id\+Material, int quantity)
+\begin{DoxyCompactList}\small\item\em Updates the stock quantity of a material in the inventory. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a80eb1bb8aecbdc1f18edcac986d72ef1}{Update\+Price}} (int id\+Material, double price)
+\begin{DoxyCompactList}\small\item\em Updates the price of a material in the catalog. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_object___tier_1_1_material}{Material}} \mbox{\hyperlink{class_business___tier_1_1_company_af59b5ef16b5a68bbbb7d0b24781263e9}{Get\+Material}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Retrieves the details of a material from the catalog. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} \mbox{\hyperlink{class_business___tier_1_1_company_abb22ccb74ea4d3d9d043abd26916b574}{Get\+Quantity\+Of\+Material}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Retrieves the quantity details of a material in the inventory. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_business___tier_1_1_company_aed087dbe776c0838ae0a4f284e5a0509}{Regist\+Project}} (\mbox{\hyperlink{class_object___tier_1_1_project}{Project}} project)
+\begin{DoxyCompactList}\small\item\em Registers a new project. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a177217e2dceff742c4a19271a52930eb}{Is\+Project\+Registered}} (int id\+Project)
+\begin{DoxyCompactList}\small\item\em Checks if a project is registered in the system. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a2bcad47628f5980efca9a985b39e5297}{Update\+Status\+Project}} (int id\+Project, \mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}} status)
+\begin{DoxyCompactList}\small\item\em Updates the status of a project. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a4524a8c1abae0801c82b163cd35c931e}{Close\+Project}} (int id\+Project)
+\begin{DoxyCompactList}\small\item\em Closes a project. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a6ee40cd7af812c51e48720191daee382}{Add\+Client\+To\+Project}} (int id\+Project, int id\+Client)
+\begin{DoxyCompactList}\small\item\em Adds a client to a project. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a5f5519da4b913634255953f3c8b5c82a}{Delete\+Client\+To\+Project}} (int id\+Project, int id\+Client)
+\begin{DoxyCompactList}\small\item\em Removes a client from a project. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_a981c2b27333c89d5c2b1f3d0638dbd05}{Add\+Employee\+To\+Project}} (int id\+Project, int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Adds an employee to a project. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_aa4f9a9c60923c171a4c24429d40c027c}{Delete\+Emplyee\+To\+Project}} (int id\+Project, int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Removes an employee from a project. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_business___tier_1_1_company_ac4f60ea02eb92eed7120320323e9af3c}{Use\+Material}} (int id\+Project, int id\+Material, int quantity)
+\begin{DoxyCompactList}\small\item\em Uses a specified quantity of a material for a project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Enterprise class manages operations related to customers employees, materials and projects.\+It handles tasks such as registration, update and removal, manages project states and resource usage.\+Ensures proper validation and exception handling for each action. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_business___tier_1_1_company_a6ee40cd7af812c51e48720191daee382}\index{Business\_Tier.Company@{Business\_Tier.Company}!AddClientToProject@{AddClientToProject}}
+\index{AddClientToProject@{AddClientToProject}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{AddClientToProject()}{AddClientToProject()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a6ee40cd7af812c51e48720191daee382} 
+static bool Business\+\_\+\+Tier.\+Company.\+Add\+Client\+To\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a client to a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The unique ID of the project.\\
+\hline
+{\em id\+Client} & The unique ID of the client to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the client was successfully added to the project.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}820"{} if the project does not exist. Throws "{}821"{} if the client does not exist. Throws "{}822"{} for any unexpected error during the addition process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00698\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00699\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}{ProjectExists}}(idProject))}
+\DoxyCodeLine{00700\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00701\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}820"{}});}
+\DoxyCodeLine{00702\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00703\ }
+\DoxyCodeLine{00704\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{ExistClient}}(idClient))}
+\DoxyCodeLine{00705\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00706\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}821"{}});}
+\DoxyCodeLine{00707\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00708\ }
+\DoxyCodeLine{00709\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00710\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00711\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a819d23aeba0aac360051ace79463756b}{AddClient}}(idProject,\ idClient);}
+\DoxyCodeLine{00712\ }
+\DoxyCodeLine{00713\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00714\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00715\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00716\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}822."{}}\ +\ ex);}
+\DoxyCodeLine{00717\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00718\ }
+\DoxyCodeLine{00719\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a981c2b27333c89d5c2b1f3d0638dbd05}\index{Business\_Tier.Company@{Business\_Tier.Company}!AddEmployeeToProject@{AddEmployeeToProject}}
+\index{AddEmployeeToProject@{AddEmployeeToProject}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{AddEmployeeToProject()}{AddEmployeeToProject()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a981c2b27333c89d5c2b1f3d0638dbd05} 
+static bool Business\+\_\+\+Tier.\+Company.\+Add\+Employee\+To\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds an employee to a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The unique ID of the project.\\
+\hline
+{\em id\+Employee} & The unique ID of the employee to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was successfully added to the project.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}820"{} if the project does not exist. Throws "{}824"{} if the employee does not exist. Throws "{}825"{} for any unexpected error during the addition process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00770\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00771\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}{ProjectExists}}(idProject))}
+\DoxyCodeLine{00772\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00773\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}820"{}});}
+\DoxyCodeLine{00774\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00775\ }
+\DoxyCodeLine{00776\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a0d5d08e18e75d1ddef7dae56492b15c5}{EmployeeExist}}(idEmployee))}
+\DoxyCodeLine{00777\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00778\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}824"{}});}
+\DoxyCodeLine{00779\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00780\ }
+\DoxyCodeLine{00781\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00782\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00783\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ result\ =\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a5ef19eed2efe61fcdff7ae225c69bed7}{AddEmployee}}(idProject,\ idEmployee);}
+\DoxyCodeLine{00784\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result;}
+\DoxyCodeLine{00785\ }
+\DoxyCodeLine{00786\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00787\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00788\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00789\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}825"{}}\ +\ ex);}
+\DoxyCodeLine{00790\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00791\ }
+\DoxyCodeLine{00792\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a4524a8c1abae0801c82b163cd35c931e}\index{Business\_Tier.Company@{Business\_Tier.Company}!CloseProject@{CloseProject}}
+\index{CloseProject@{CloseProject}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{CloseProject()}{CloseProject()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a4524a8c1abae0801c82b163cd35c931e} 
+static bool Business\+\_\+\+Tier.\+Company.\+Close\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Closes a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The unique ID of the project to close.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project was successfully closed.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}819"{} for any unexpected error during the closing process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00673\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00674\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00675\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00676\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_abb62bd02e4e20d0db63eab6c177551f5}{CloseProject}}(idProject);}
+\DoxyCodeLine{00677\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00678\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00679\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00680\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}819"{}}\ +\ ex);}
+\DoxyCodeLine{00681\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00682\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a12f0a82cad4334bb30794b585a9bd307}\index{Business\_Tier.Company@{Business\_Tier.Company}!DeleteClient@{DeleteClient}}
+\index{DeleteClient@{DeleteClient}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{DeleteClient()}{DeleteClient()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a12f0a82cad4334bb30794b585a9bd307} 
+static bool Business\+\_\+\+Tier.\+Company.\+Delete\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deletes an existing client based on their unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the client was successfully deleted.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}112"{} if the client does not exist. Throws "{}109"{} for any unexpected error during deletion. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{ExistClient}}(idClient))}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}112"{}});}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a499deb52f93f9b085e21f7589b50aad6}{RemoveClient}}(idClient);}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}109"{}}\ +\ ex);}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a5f5519da4b913634255953f3c8b5c82a}\index{Business\_Tier.Company@{Business\_Tier.Company}!DeleteClientToProject@{DeleteClientToProject}}
+\index{DeleteClientToProject@{DeleteClientToProject}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{DeleteClientToProject()}{DeleteClientToProject()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a5f5519da4b913634255953f3c8b5c82a} 
+static bool Business\+\_\+\+Tier.\+Company.\+Delete\+Client\+To\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes a client from a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The unique ID of the project.\\
+\hline
+{\em id\+Client} & The unique ID of the client to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the client was successfully removed from the project.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}820"{} if the project does not exist. Throws "{}821"{} if the client does not exist. Throws "{}823"{} for any unexpected error during the removal process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00733\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00734\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}{ProjectExists}}(idProject))}
+\DoxyCodeLine{00735\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00736\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}820"{}});}
+\DoxyCodeLine{00737\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00738\ }
+\DoxyCodeLine{00739\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{ExistClient}}(idClient))}
+\DoxyCodeLine{00740\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00741\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}821"{}});}
+\DoxyCodeLine{00742\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00743\ }
+\DoxyCodeLine{00744\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00745\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00746\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ r\ =\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_ac6c8a231895cd7f4933304f726ff4960}{RemoveClient}}(idProject,\ idClient);}
+\DoxyCodeLine{00747\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ r;}
+\DoxyCodeLine{00748\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00749\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00750\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00751\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}823"{}}\ +\ ex);}
+\DoxyCodeLine{00752\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00753\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a0303dd8bef6b688ef550017c923adac2}\index{Business\_Tier.Company@{Business\_Tier.Company}!DeleteEmployee@{DeleteEmployee}}
+\index{DeleteEmployee@{DeleteEmployee}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{DeleteEmployee()}{DeleteEmployee()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a0303dd8bef6b688ef550017c923adac2} 
+static bool Business\+\_\+\+Tier.\+Company.\+Delete\+Employee (\begin{DoxyParamCaption}\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deletes an existing employee based on their unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Employee} & The ID of the employee to be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was successfully deleted.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}412"{} if the employee does not exist. Throws "{}409"{} for any unexpected error during deletion. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a0d5d08e18e75d1ddef7dae56492b15c5}{EmployeeExist}}(idEmployee))}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}412"{}});}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_aa38c1c75bb81177c3c29da2f7cda92aa}{RemoveEmployee}}(idEmployee);}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}409"{}}\ +\ ex);}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_aa4f9a9c60923c171a4c24429d40c027c}\index{Business\_Tier.Company@{Business\_Tier.Company}!DeleteEmplyeeToProject@{DeleteEmplyeeToProject}}
+\index{DeleteEmplyeeToProject@{DeleteEmplyeeToProject}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{DeleteEmplyeeToProject()}{DeleteEmplyeeToProject()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_aa4f9a9c60923c171a4c24429d40c027c} 
+static bool Business\+\_\+\+Tier.\+Company.\+Delete\+Emplyee\+To\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes an employee from a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The unique ID of the project.\\
+\hline
+{\em id\+Employee} & The unique ID of the employee to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was successfully removed from the project.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}820"{} if the project does not exist. Throws "{}824"{} if the employee does not exist. Throws "{}826"{} for any unexpected error during the removal process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00806\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00807\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}{ProjectExists}}(idProject))}
+\DoxyCodeLine{00808\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00809\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}820"{}});}
+\DoxyCodeLine{00810\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00811\ }
+\DoxyCodeLine{00812\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a0d5d08e18e75d1ddef7dae56492b15c5}{EmployeeExist}}(idEmployee))}
+\DoxyCodeLine{00813\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00814\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}824"{}});}
+\DoxyCodeLine{00815\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00816\ }
+\DoxyCodeLine{00817\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00818\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00819\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ r\ =\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a1ee69b69a7fe3a510ed514c2dfed190a}{RemoveEmployee}}(idProject,\ idEmployee);}
+\DoxyCodeLine{00820\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ r;}
+\DoxyCodeLine{00821\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00822\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00823\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00824\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}826"{}}\ +\ ex);}
+\DoxyCodeLine{00825\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00826\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_aea85e3cd72dd73576b6f9799bab8a9ea}\index{Business\_Tier.Company@{Business\_Tier.Company}!GetClientById@{GetClientById}}
+\index{GetClientById@{GetClientById}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{GetClientById()}{GetClientById()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_aea85e3cd72dd73576b6f9799bab8a9ea} 
+static \mbox{\hyperlink{class_object___tier_1_1_client}{Client}} Business\+\_\+\+Tier.\+Company.\+Get\+Client\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves the details of a specific client using their unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Client object containing the client’s details.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}112"{} if the client does not exist. Throws "{}114"{} for any unexpected error during retrieval. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{ExistClient}}(idClient))}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}112"{}});}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a9cdf3bd9ffb752f73b3c9d95933ad13f}{GetClient}}(idClient);}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}114"{}}\ +\ ex);}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_ab78bd94ff91d3d1b02a3d366eb9203b4}\index{Business\_Tier.Company@{Business\_Tier.Company}!GetEmployeeById@{GetEmployeeById}}
+\index{GetEmployeeById@{GetEmployeeById}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{GetEmployeeById()}{GetEmployeeById()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_ab78bd94ff91d3d1b02a3d366eb9203b4} 
+static \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} Business\+\_\+\+Tier.\+Company.\+Get\+Employee\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves the details of a specific employee using their unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Employee} & The ID of the employee to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Employee object containing the employee’s details.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}412"{} if the employee does not exist. Throws "{}415"{} for any unexpected error during retrieval. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a0d5d08e18e75d1ddef7dae56492b15c5}{EmployeeExist}}(idEmployee))}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}412"{}});}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00358\ }
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00361\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_afc32d495bba546f78ab48454b726502b}{GetEmployee}}(idEmployee);}
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}415"{}},\ ex);}
+\DoxyCodeLine{00366\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00367\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_af59b5ef16b5a68bbbb7d0b24781263e9}\index{Business\_Tier.Company@{Business\_Tier.Company}!GetMaterial@{GetMaterial}}
+\index{GetMaterial@{GetMaterial}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{GetMaterial()}{GetMaterial()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_af59b5ef16b5a68bbbb7d0b24781263e9} 
+static \mbox{\hyperlink{class_object___tier_1_1_material}{Material}} Business\+\_\+\+Tier.\+Company.\+Get\+Material (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves the details of a material from the catalog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The unique ID of the material to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Material object containing the material\textquotesingle{}s details.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}616"{} for any unexpected error during the retrieval process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00553\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00554\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00555\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00556\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_materials}{Materials}}.\mbox{\hyperlink{class_data___tier_1_1_materials_a56c75e67eb7cb8250d400c7361afa72b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_materials_a6f65b6a4fec15ac528a85ad7d0bdee52}{GetMaterial}}(idMaterial);}
+\DoxyCodeLine{00557\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00558\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00559\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00560\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}616"{}}\ +\ ex);}
+\DoxyCodeLine{00561\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00562\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_abb22ccb74ea4d3d9d043abd26916b574}\index{Business\_Tier.Company@{Business\_Tier.Company}!GetQuantityOfMaterial@{GetQuantityOfMaterial}}
+\index{GetQuantityOfMaterial@{GetQuantityOfMaterial}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{GetQuantityOfMaterial()}{GetQuantityOfMaterial()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_abb22ccb74ea4d3d9d043abd26916b574} 
+static \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} Business\+\_\+\+Tier.\+Company.\+Get\+Quantity\+Of\+Material (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Retrieves the quantity details of a material in the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The unique ID of the material to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Material\+Quantity object containing the material\textquotesingle{}s inventory details.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}616"{} for any unexpected error during the retrieval process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00573\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00574\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00575\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00576\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_material_inventory}{MaterialInventory}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_a8750a652f46590b9846c3b8508dbd328}{GetMaterialQuantity}}(idMaterial);}
+\DoxyCodeLine{00577\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00578\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00579\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00580\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}616"{}}\ +\ ex);}
+\DoxyCodeLine{00581\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00582\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a68e765487af8bc16207a7f91db42d302}\index{Business\_Tier.Company@{Business\_Tier.Company}!IsClientRegistered@{IsClientRegistered}}
+\index{IsClientRegistered@{IsClientRegistered}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{IsClientRegistered()}{IsClientRegistered()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a68e765487af8bc16207a7f91db42d302} 
+static bool Business\+\_\+\+Tier.\+Company.\+Is\+Client\+Registered (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks whether a client is registered in the system using their unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the client is registered, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}109"{} for any unexpected error during the operation. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{ExistClient}}(idClient);}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}110"{}}\ +\ ex);}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_af706655f649bd237b706bf20bb27ea74}\index{Business\_Tier.Company@{Business\_Tier.Company}!IsEmployeeRegistered@{IsEmployeeRegistered}}
+\index{IsEmployeeRegistered@{IsEmployeeRegistered}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{IsEmployeeRegistered()}{IsEmployeeRegistered()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_af706655f649bd237b706bf20bb27ea74} 
+static bool Business\+\_\+\+Tier.\+Company.\+Is\+Employee\+Registered (\begin{DoxyParamCaption}\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks whether an employee is registered in the system using their unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Employee} & The ID of the employee to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee is registered, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}410"{} for any unexpected error during the operation. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a0d5d08e18e75d1ddef7dae56492b15c5}{EmployeeExist}}(idEmployee);}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}410"{}}\ +\ ex);}
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00299\ }
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a4a1547c286b5cf06fc670772773248e0}\index{Business\_Tier.Company@{Business\_Tier.Company}!IsMaterialRegistered@{IsMaterialRegistered}}
+\index{IsMaterialRegistered@{IsMaterialRegistered}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{IsMaterialRegistered()}{IsMaterialRegistered()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a4a1547c286b5cf06fc670772773248e0} 
+static bool Business\+\_\+\+Tier.\+Company.\+Is\+Material\+Registered (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if a material is registered in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The unique ID of the material to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material is registered, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}612"{} for any unexpected error during the verification process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00456\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00458\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_data___tier_1_1_materials}{Materials}}.\mbox{\hyperlink{class_data___tier_1_1_materials_a56c75e67eb7cb8250d400c7361afa72b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_materials_a2ae7a1c4e0049180cd2692986c0cc801}{MaterialExist}}(idMaterial))}
+\DoxyCodeLine{00460\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00461\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ r\ =\ \mbox{\hyperlink{class_data___tier_1_1_material_inventory}{MaterialInventory}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_aa07d2628caebc320b65db94ec768ac1e}{VerifyMaterialExistence}}(idMaterial);}
+\DoxyCodeLine{00462\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ r;}
+\DoxyCodeLine{00463\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00464\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00465\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00466\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00467\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}612"{}}\ +\ ex);}
+\DoxyCodeLine{00468\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00469\ }
+\DoxyCodeLine{00470\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00471\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a177217e2dceff742c4a19271a52930eb}\index{Business\_Tier.Company@{Business\_Tier.Company}!IsProjectRegistered@{IsProjectRegistered}}
+\index{IsProjectRegistered@{IsProjectRegistered}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{IsProjectRegistered()}{IsProjectRegistered()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a177217e2dceff742c4a19271a52930eb} 
+static bool Business\+\_\+\+Tier.\+Company.\+Is\+Project\+Registered (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if a project is registered in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The unique ID of the project.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project is registered, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}818"{} for any unexpected error during the check process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00631\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00632\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00633\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00634\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}{ProjectExists}}(idProject);}
+\DoxyCodeLine{00635\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00636\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00637\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00638\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}818"{}}\ +\ ex);}
+\DoxyCodeLine{00639\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00640\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a2a9a477eb8dff2604d82a3599813a17b}\index{Business\_Tier.Company@{Business\_Tier.Company}!LoadAllData@{LoadAllData}}
+\index{LoadAllData@{LoadAllData}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{LoadAllData()}{LoadAllData()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a2a9a477eb8dff2604d82a3599813a17b} 
+static bool Business\+\_\+\+Tier.\+Company.\+Load\+All\+Data (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all application data from the specified file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path from which the data will be loaded.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily true} if the data is loaded successfully.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Thrown if the file does not exist, data deserialization fails, or data cannot be updated in the system. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!File.Exists(path))}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}703"{}});}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_data}{Data}}.\mbox{\hyperlink{class_data___tier_1_1_data_a8027e0d5f608e977f26ac1b1f7586113}{LoadData}}(path);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}701\ "{}}\ +\ ex);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_ac80bba0ae5f40f2f3cdad1a5501bbd8f}\index{Business\_Tier.Company@{Business\_Tier.Company}!RegistEmployee@{RegistEmployee}}
+\index{RegistEmployee@{RegistEmployee}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{RegistEmployee()}{RegistEmployee()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_ac80bba0ae5f40f2f3cdad1a5501bbd8f} 
+static int Business\+\_\+\+Tier.\+Company.\+Regist\+Employee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}}]{employee}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers a new employee in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee} & The employee object to be registered.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The unique ID of the newly registered employee.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}405"{} if the employee object is null. Throws "{}407"{} if the employee already exists in the system. Throws "{}408"{} for any unexpected error during registration. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (employee\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}405"{}});}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a0d5d08e18e75d1ddef7dae56492b15c5}{EmployeeExist}}(employee))}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}407"{}});}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a743a177e79acc3ea503d02a8f7970b7f}{AddEmployee}}(employee);}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}408"{}}\ +\ ex);}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_aff7dd145915b99b986c8e8a420599f3e}\index{Business\_Tier.Company@{Business\_Tier.Company}!RegisterClient@{RegisterClient}}
+\index{RegisterClient@{RegisterClient}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{RegisterClient()}{RegisterClient()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_aff7dd145915b99b986c8e8a420599f3e} 
+static int Business\+\_\+\+Tier.\+Company.\+Register\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers a new client in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client object to be registered.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The unique ID of the newly registered client.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}106"{} if the client object is null. Throws "{}107"{} if the client already exists in the system. Throws "{}108"{} for any unexpected error during registration. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (client.\mbox{\hyperlink{class_object___tier_1_1_person_aa130ca80fe53c450b6f780664a591707}{Name}}\ ==\ \textcolor{keywordtype}{string}.Empty)}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}116"{}});}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (client\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}106"{}});}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{ExistClient}}(client))}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}107"{}});}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a129abe2a08e4334ad683cf0533772e07}{AddClient}}(client);}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}108"{}}\ +\ ex);}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a5d330e3a25c187b41709e377e63c1b7e}\index{Business\_Tier.Company@{Business\_Tier.Company}!RegisterMaterial@{RegisterMaterial}}
+\index{RegisterMaterial@{RegisterMaterial}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{RegisterMaterial()}{RegisterMaterial()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a5d330e3a25c187b41709e377e63c1b7e} 
+static int Business\+\_\+\+Tier.\+Company.\+Register\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers a material by adding it to the catalog and inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & The material to be registered.\\
+\hline
+{\em quantity} & The initial quantity of the material.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The unique ID of the material in the inventory.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ idM\ =\ AddMaterialToCatalog(material);}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ idMI\ =\ AddMaterialToInventory(idM,\ quantity);}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ idMI;}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_aed087dbe776c0838ae0a4f284e5a0509}\index{Business\_Tier.Company@{Business\_Tier.Company}!RegistProject@{RegistProject}}
+\index{RegistProject@{RegistProject}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{RegistProject()}{RegistProject()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_aed087dbe776c0838ae0a4f284e5a0509} 
+static int Business\+\_\+\+Tier.\+Company.\+Regist\+Project (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_project}{Project}}}]{project}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Registers a new project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project} & The project to be registered.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The unique ID of the registered project.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}815"{} if the project is null. Throws "{}820"{} if the project already exists. Throws "{}817"{} for any unexpected error during the registration process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00599\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00600\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (project\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00601\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00602\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}815"{}});}
+\DoxyCodeLine{00603\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00604\ }
+\DoxyCodeLine{00605\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}{ProjectExists}}(project))}
+\DoxyCodeLine{00606\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00607\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}816"{}});}
+\DoxyCodeLine{00608\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00609\ }
+\DoxyCodeLine{00610\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00611\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00612\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ System.Threading.Thread.Sleep(500);}
+\DoxyCodeLine{00613\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ idProject\ =\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a7281f5130267894eee04b40df3e46cd7}{AddProject}}(\mbox{\hyperlink{class_data___tier_1_1_project_data}{ProjectData}}.\mbox{\hyperlink{class_data___tier_1_1_project_data_a59b671ec43a1dde0039fb0637ac55d9e}{CreateProjectData}}(project));}
+\DoxyCodeLine{00614\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ idProject;}
+\DoxyCodeLine{00615\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00616\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00617\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00618\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}817"{}}\ +\ ex);}
+\DoxyCodeLine{00619\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00620\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a021f6ece08048a1f8b07a092e45dc333}\index{Business\_Tier.Company@{Business\_Tier.Company}!SaveAllData@{SaveAllData}}
+\index{SaveAllData@{SaveAllData}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{SaveAllData()}{SaveAllData()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a021f6ece08048a1f8b07a092e45dc333} 
+static bool Business\+\_\+\+Tier.\+Company.\+Save\+All\+Data (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Saves all application data to the specified file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path where the data will be saved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily true} if the data is saved successfully.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Thrown if the data cannot be collected or the file operation fails. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!File.Exists(path))}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ FileNotFoundException(\textcolor{stringliteral}{"{}703"{}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_data}{Data}}.\mbox{\hyperlink{class_data___tier_1_1_data_a6d515bd0a2a3ff796d88ad647a8d974c}{SaveData}}(path);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}700"{}}\ +\ ex);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a9c1dcf2e51189272b5f926bbde856e5b}\index{Business\_Tier.Company@{Business\_Tier.Company}!UpdateClientContact@{UpdateClientContact}}
+\index{UpdateClientContact@{UpdateClientContact}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{UpdateClientContact()}{UpdateClientContact()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a9c1dcf2e51189272b5f926bbde856e5b} 
+static bool Business\+\_\+\+Tier.\+Company.\+Update\+Client\+Contact (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{, }\item[{int}]{contact}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the contact information of an existing client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client whose contact information needs updating.\\
+\hline
+{\em contact} & The new contact number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the update was successful.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}111"{} if the contact number is invalid Throws "{}112"{} if the client does not exist. Throws "{}113"{} for any unexpected error during the update. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (contact\ <\ 9)}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}111"{}});}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{ExistClient}}(idClient))}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}112"{}});}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}}.\mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_clients_aebfc1f6f9a03b5fc68a3c0ccdf37ecb9}{UpdateContact}}(idClient,\ contact);}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}113"{}}\ +\ ex);}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_aa4a2a738f2579fca775db72e215302ea}\index{Business\_Tier.Company@{Business\_Tier.Company}!UpdateEmployeeRole@{UpdateEmployeeRole}}
+\index{UpdateEmployeeRole@{UpdateEmployeeRole}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{UpdateEmployeeRole()}{UpdateEmployeeRole()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_aa4a2a738f2579fca775db72e215302ea} 
+static bool Business\+\_\+\+Tier.\+Company.\+Update\+Employee\+Role (\begin{DoxyParamCaption}\item[{int}]{id\+Employee}{, }\item[{string}]{role}{, }\item[{double}]{price\+Hourly}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the role and hourly price of an existing employee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Employee} & The ID of the employee whose role and price need updating.\\
+\hline
+{\em role} & The new role of the employee.\\
+\hline
+{\em price\+Hourly} & The new hourly price for the employee.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the update was successful.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}412"{} if the employee does not exist. Throws "{}411"{} if the role is empty. Throws "{}413"{} if the hourly price is less than or equal to zero. Throws "{}414"{} for any unexpected error during the update. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a0d5d08e18e75d1ddef7dae56492b15c5}{EmployeeExist}}(idEmployee))}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}412"{}});}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00321\ }
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (role\ ==\ \textcolor{keywordtype}{string}.Empty)}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}411"{}});}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (priceHourly\ <=\ 0)}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}413"{}});}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_aa69f887b9dfe918cd9c9dcf8128eb867}{UpdateRole}}(idEmployee,\ role,\ priceHourly);}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00336\ }
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}414"{}}\ +\ ex);}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a80eb1bb8aecbdc1f18edcac986d72ef1}\index{Business\_Tier.Company@{Business\_Tier.Company}!UpdatePrice@{UpdatePrice}}
+\index{UpdatePrice@{UpdatePrice}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{UpdatePrice()}{UpdatePrice()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a80eb1bb8aecbdc1f18edcac986d72ef1} 
+static bool Business\+\_\+\+Tier.\+Company.\+Update\+Price (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{double}]{price}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the price of a material in the catalog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The unique ID of the material to update.\\
+\hline
+{\em price} & The new price to be set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the price update was successful.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}615"{} if the price is less than zero. Throws "{}610"{} if the material does not exist in the catalog. Throws "{}616"{} for any unexpected error during the update process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00520\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00521\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (price\ <\ 0)}
+\DoxyCodeLine{00522\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00523\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}615"{}});}
+\DoxyCodeLine{00524\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00525\ }
+\DoxyCodeLine{00526\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_materials}{Materials}}.\mbox{\hyperlink{class_data___tier_1_1_materials_a56c75e67eb7cb8250d400c7361afa72b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_materials_a2ae7a1c4e0049180cd2692986c0cc801}{MaterialExist}}(idMaterial))}
+\DoxyCodeLine{00527\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00528\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}610"{}});}
+\DoxyCodeLine{00529\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00530\ }
+\DoxyCodeLine{00531\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00532\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00533\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ update\ =\ \mbox{\hyperlink{class_data___tier_1_1_materials}{Materials}}.\mbox{\hyperlink{class_data___tier_1_1_materials_a56c75e67eb7cb8250d400c7361afa72b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_materials_a988296d288dd70a6b81d30b3e958f42f}{UpdatePrice}}(idMaterial,\ price);}
+\DoxyCodeLine{00534\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ update;}
+\DoxyCodeLine{00535\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00536\ }
+\DoxyCodeLine{00537\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00538\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00539\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}614."{}}\ +\ ex);}
+\DoxyCodeLine{00540\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00541\ }
+\DoxyCodeLine{00542\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_a2bcad47628f5980efca9a985b39e5297}\index{Business\_Tier.Company@{Business\_Tier.Company}!UpdateStatusProject@{UpdateStatusProject}}
+\index{UpdateStatusProject@{UpdateStatusProject}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{UpdateStatusProject()}{UpdateStatusProject()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_a2bcad47628f5980efca9a985b39e5297} 
+static bool Business\+\_\+\+Tier.\+Company.\+Update\+Status\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{\mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}}}]{status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the status of a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The unique ID of the project.\\
+\hline
+{\em status} & The new status of the project.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the status update was successful.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}819"{} for any unexpected error during the update process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00652\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00653\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00654\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00655\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_aeb5348393eacdf16545abeb17c8af23f}{UpdateStatus}}(idProject,\ status);}
+\DoxyCodeLine{00656\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00657\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00658\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00659\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}819"{}}\ +\ ex);}
+\DoxyCodeLine{00660\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00661\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_ad2dd86343b1c4bda11c705f5252797c8}\index{Business\_Tier.Company@{Business\_Tier.Company}!UpdateStock@{UpdateStock}}
+\index{UpdateStock@{UpdateStock}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{UpdateStock()}{UpdateStock()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_ad2dd86343b1c4bda11c705f5252797c8} 
+static bool Business\+\_\+\+Tier.\+Company.\+Update\+Stock (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Updates the stock quantity of a material in the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The unique ID of the material to update.\\
+\hline
+{\em quantity} & The new quantity to be set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the stock update was successful.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}613"{} if the quantity is less than zero. Throws "{}610"{} if the material does not exist in the inventory. Throws "{}614"{} for any unexpected error during the update process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00485\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00486\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (quantity\ <\ 0)}
+\DoxyCodeLine{00487\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00488\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}613"{}});}
+\DoxyCodeLine{00489\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00490\ }
+\DoxyCodeLine{00491\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_material_inventory}{MaterialInventory}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_aa07d2628caebc320b65db94ec768ac1e}{VerifyMaterialExistence}}(idMaterial))}
+\DoxyCodeLine{00492\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00493\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}610"{}});}
+\DoxyCodeLine{00494\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00495\ }
+\DoxyCodeLine{00496\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00498\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ update\ =\ \mbox{\hyperlink{class_data___tier_1_1_material_inventory}{MaterialInventory}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_a3d349ce4896a0d3a9b46de1000b82cc6}{UpdateQuantity}}(idMaterial,\ quantity);}
+\DoxyCodeLine{00499\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ update;}
+\DoxyCodeLine{00500\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00501\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00502\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00503\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}618"{}}\ +\ ex);}
+\DoxyCodeLine{00504\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00505\ }
+\DoxyCodeLine{00506\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_business___tier_1_1_company_ac4f60ea02eb92eed7120320323e9af3c}\index{Business\_Tier.Company@{Business\_Tier.Company}!UseMaterial@{UseMaterial}}
+\index{UseMaterial@{UseMaterial}!Business\_Tier.Company@{Business\_Tier.Company}}
+\doxysubsubsection{\texorpdfstring{UseMaterial()}{UseMaterial()}}
+{\footnotesize\ttfamily \label{class_business___tier_1_1_company_ac4f60ea02eb92eed7120320323e9af3c} 
+static bool Business\+\_\+\+Tier.\+Company.\+Use\+Material (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Uses a specified quantity of a material for a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The unique ID of the project.\\
+\hline
+{\em id\+Material} & The unique ID of the material to use.\\
+\hline
+{\em quantity} & The quantity of the material to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material was successfully used.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws "{}820"{} if the project does not exist. Throws "{}827"{} if the material does not exist. Throws "{}828"{} if the quantity is insufficient. Throws "{}829"{} for any unexpected error during the process. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00845\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00846\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}{ProjectExists}}(idProject))}
+\DoxyCodeLine{00847\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00848\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}820"{}});}
+\DoxyCodeLine{00849\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00850\ }
+\DoxyCodeLine{00851\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_material_inventory}{MaterialInventory}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_aa07d2628caebc320b65db94ec768ac1e}{VerifyMaterialExistence}}(idMaterial))}
+\DoxyCodeLine{00852\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00853\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}827"{}});}
+\DoxyCodeLine{00854\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00855\ }
+\DoxyCodeLine{00856\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_material_inventory}{MaterialInventory}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_a36deed3d8216bf013a48f70a41ffcad7}{VerifyMaterialQuantity}}(idMaterial,\ quantity))}
+\DoxyCodeLine{00857\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00858\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}828"{}});}
+\DoxyCodeLine{00859\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00860\ }
+\DoxyCodeLine{00861\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00862\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00863\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ result\ =\ \mbox{\hyperlink{class_data___tier_1_1_material_inventory}{MaterialInventory}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_material_inventory_af9ff7521af7288f477b6946558dd610b}{UseMaterial}}(idMaterial,\ quantity);}
+\DoxyCodeLine{00864\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ result1\ =\ \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_projects_a926bd6ab57e9451d82c1d095bd598e08}{UseMaterial}}(idProject,\ idMaterial,\ quantity);}
+\DoxyCodeLine{00865\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result1;}
+\DoxyCodeLine{00866\ }
+\DoxyCodeLine{00867\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00868\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00869\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00870\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}829"{}}\ +\ ex);}
+\DoxyCodeLine{00871\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00872\ }
+\DoxyCodeLine{00873\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Business Tier/Company.\+cs\end{DoxyCompactItemize}

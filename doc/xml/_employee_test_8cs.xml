@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_employee_test_8cs" kind="file" language="C#">
+    <compoundname>EmployeeTest.cs</compoundname>
+    <innerclass refid="class_unit___test_1_1_employee_test" prot="public">Unit_Test::EmployeeTest</innerclass>
+    <innernamespace refid="namespace_unit___test">Unit_Test</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_data___tier" kindref="compound">Data_Tier</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_object___tier" kindref="compound">Object_Tier</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_business___tier" kindref="compound">Business_Tier</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_unit___test" kindref="compound">Unit_Test</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">[TestClass]</highlight></codeline>
+<codeline lineno="8" refid="class_unit___test_1_1_employee_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unit___test_1_1_employee_test" kindref="compound">EmployeeTest</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>[TestMethod]</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TestDeleteEmployee()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Arrange</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref><sp/>e1<sp/>=<sp/><ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref>.<ref refid="class_object___tier_1_1_employee_1a2a43d419a3f060ed135f9ecadaee14db" kindref="member">CreateEmployee</ref>(</highlight><highlight class="stringliteral">&quot;Luis&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Eng&quot;</highlight><highlight class="normal">,12.2);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Act</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_business___tier_1_1_company" kindref="compound">Company</ref>.<ref refid="class_business___tier_1_1_company_1ac80bba0ae5f40f2f3cdad1a5501bbd8f" kindref="member">RegistEmployee</ref>(e1);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.IsTrue(<ref refid="class_data___tier_1_1_employees" kindref="compound">Employees</ref>.<ref refid="class_data___tier_1_1_employees_1ad6c28788ae26d40c491037c8975a4f84" kindref="member">Instance</ref>.<ref refid="class_data___tier_1_1_employees_1a0d5d08e18e75d1ddef7dae56492b15c5" kindref="member">EmployeeExist</ref>(e1));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/EmployeeTest.cs"/>
+  </compounddef>
+</doxygen>

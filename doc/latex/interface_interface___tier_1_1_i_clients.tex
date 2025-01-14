@@ -1,0 +1,152 @@
+\doxysection{Interface\+\_\+\+Tier.\+IClients Interface Reference}
+\hypertarget{interface_interface___tier_1_1_i_clients}{}\label{interface_interface___tier_1_1_i_clients}\index{Interface\_Tier.IClients@{Interface\_Tier.IClients}}
+
+
+Methods to implement in the clients class.  
+
+
+
+
+Inheritance diagram for Interface\+\_\+\+Tier.\+IClients\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{interface_interface___tier_1_1_i_clients__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_a975f28cc717a22dfbce8ef3736232888}{Add\+Client}} (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client)
+\begin{DoxyCompactList}\small\item\em Adds a client to the client list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_a982e6293c1c7b0ed1b194518a8b17f30}{Remove\+Client}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Removes a client from the client list based on their ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_aef144f3dec424ba3cd138b1dd0dc5ef0}{Exist\+Client}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Checks if a client exists in the client list based on their ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_a8a0d6df18ef00c655629b368745c912d}{Update\+Contact}} (int id\+Client, int contacto)
+\begin{DoxyCompactList}\small\item\em Updates the contact information of a client based on their ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_a2fc4095583682636ec50d4044e5b1abc}{Get\+Client}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Retrieves a client from the client list based on their ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Methods to implement in the clients class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_interface___tier_1_1_i_clients_a975f28cc717a22dfbce8ef3736232888}\index{Interface\_Tier.IClients@{Interface\_Tier.IClients}!AddClient@{AddClient}}
+\index{AddClient@{AddClient}!Interface\_Tier.IClients@{Interface\_Tier.IClients}}
+\doxysubsubsection{\texorpdfstring{AddClient()}{AddClient()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_clients_a975f28cc717a22dfbce8ef3736232888} 
+int Interface\+\_\+\+Tier.\+IClients.\+Add\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client}{}\end{DoxyParamCaption})}
+
+
+
+Adds a client to the client list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client object to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the added client.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_clients_a129abe2a08e4334ad683cf0533772e07}{Data\+\_\+\+Tier.\+Clients}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_clients_aef144f3dec424ba3cd138b1dd0dc5ef0}\index{Interface\_Tier.IClients@{Interface\_Tier.IClients}!ExistClient@{ExistClient}}
+\index{ExistClient@{ExistClient}!Interface\_Tier.IClients@{Interface\_Tier.IClients}}
+\doxysubsubsection{\texorpdfstring{ExistClient()}{ExistClient()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_clients_aef144f3dec424ba3cd138b1dd0dc5ef0} 
+bool Interface\+\_\+\+Tier.\+IClients.\+Exist\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a client exists in the client list based on their ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to check for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the client exists, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_clients_aa56bbc5ed5918094f5c08ff6f409fc46}{Data\+\_\+\+Tier.\+Clients}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_clients_a2fc4095583682636ec50d4044e5b1abc}\index{Interface\_Tier.IClients@{Interface\_Tier.IClients}!GetClient@{GetClient}}
+\index{GetClient@{GetClient}!Interface\_Tier.IClients@{Interface\_Tier.IClients}}
+\doxysubsubsection{\texorpdfstring{GetClient()}{GetClient()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_clients_a2fc4095583682636ec50d4044e5b1abc} 
+\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} Interface\+\_\+\+Tier.\+IClients.\+Get\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves a client from the client list based on their ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The client object with the specified ID, or null if not found.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_clients_a9cdf3bd9ffb752f73b3c9d95933ad13f}{Data\+\_\+\+Tier.\+Clients}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_clients_a982e6293c1c7b0ed1b194518a8b17f30}\index{Interface\_Tier.IClients@{Interface\_Tier.IClients}!RemoveClient@{RemoveClient}}
+\index{RemoveClient@{RemoveClient}!Interface\_Tier.IClients@{Interface\_Tier.IClients}}
+\doxysubsubsection{\texorpdfstring{RemoveClient()}{RemoveClient()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_clients_a982e6293c1c7b0ed1b194518a8b17f30} 
+bool Interface\+\_\+\+Tier.\+IClients.\+Remove\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Removes a client from the client list based on their ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the client was successfully removed, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_clients_a499deb52f93f9b085e21f7589b50aad6}{Data\+\_\+\+Tier.\+Clients}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_clients_a8a0d6df18ef00c655629b368745c912d}\index{Interface\_Tier.IClients@{Interface\_Tier.IClients}!UpdateContact@{UpdateContact}}
+\index{UpdateContact@{UpdateContact}!Interface\_Tier.IClients@{Interface\_Tier.IClients}}
+\doxysubsubsection{\texorpdfstring{UpdateContact()}{UpdateContact()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_clients_a8a0d6df18ef00c655629b368745c912d} 
+bool Interface\+\_\+\+Tier.\+IClients.\+Update\+Contact (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{, }\item[{int}]{contacto}{}\end{DoxyParamCaption})}
+
+
+
+Updates the contact information of a client based on their ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to update.\\
+\hline
+{\em contacto} & The new contact information to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the contact information was successfully updated, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_clients_aebfc1f6f9a03b5fc68a3c0ccdf37ecb9}{Data\+\_\+\+Tier.\+Clients}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Interface Tier/IClients.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,606 @@
+\doxysection{Data\+\_\+\+Tier.\+Projects Class Reference}
+\hypertarget{class_data___tier_1_1_projects}{}\label{class_data___tier_1_1_projects}\index{Data\_Tier.Projects@{Data\_Tier.Projects}}
+
+
+Singleton class that manages the projects in the system. Allows adding, removing, updating, and retrieving projects.  
+
+
+
+
+Inheritance diagram for Data\+\_\+\+Tier.\+Projects\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_data___tier_1_1_projects__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Data\+\_\+\+Tier.\+Projects\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_data___tier_1_1_projects__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_data___tier_1_1_projects_a7281f5130267894eee04b40df3e46cd7}{Add\+Project}} (\mbox{\hyperlink{class_data___tier_1_1_project_data}{Project\+Data}} project)
+\begin{DoxyCompactList}\small\item\em Adds a new project to the projects list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_a02f3f7cbf70eb3aaae10985b3fdb15d5}{Remove\+Project}} (int id\+Project)
+\begin{DoxyCompactList}\small\item\em Removes a project from the projects list by its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}{Project\+Exists}} (\mbox{\hyperlink{class_object___tier_1_1_project}{Project}} project2)
+\begin{DoxyCompactList}\small\item\em Checks if a project exists by its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_a0ed230edd97b7193077d8d6bac3000d3}{Project\+Exists}} (int id\+Project)
+\begin{DoxyCompactList}\small\item\em Checks if a project already exists based on its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_aeb5348393eacdf16545abeb17c8af23f}{Update\+Status}} (int id\+Project, \mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}} status)
+\begin{DoxyCompactList}\small\item\em Updates the status of a project by its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_abb62bd02e4e20d0db63eab6c177551f5}{Close\+Project}} (int id\+Project)
+\begin{DoxyCompactList}\small\item\em Closes a project by setting its end date and status to completed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_a819d23aeba0aac360051ace79463756b}{Add\+Client}} (int id\+Project, int id\+Client)
+\begin{DoxyCompactList}\small\item\em Adds a client to a project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_ac6c8a231895cd7f4933304f726ff4960}{Remove\+Client}} (int id\+Project, int id\+Client)
+\begin{DoxyCompactList}\small\item\em Removes a client from a project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_a5ef19eed2efe61fcdff7ae225c69bed7}{Add\+Employee}} (int id\+Project, int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Adds an employee to a project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_a1ee69b69a7fe3a510ed514c2dfed190a}{Remove\+Employee}} (int id\+Project, int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Removes an employee from a project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_projects_a926bd6ab57e9451d82c1d095bd598e08}{Use\+Material}} (int id\+Project, int id\+Material, int quantity)
+\begin{DoxyCompactList}\small\item\em Uses material in a project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_interface___tier_1_1_i_projects}{Interface\+\_\+\+Tier.\+IProjects}}}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___tier_1_1_projects_a176e968f3ca4e9ec1d89280c786e604d}{Projects}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_data___tier_1_1_projects}{Projects} class with an empty list of projects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}} \mbox{\hyperlink{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of the \doxylink{class_data___tier_1_1_projects}{Projects} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class that manages the projects in the system. Allows adding, removing, updating, and retrieving projects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___tier_1_1_projects_a176e968f3ca4e9ec1d89280c786e604d}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!Projects@{Projects}}
+\index{Projects@{Projects}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{Projects()}{Projects()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a176e968f3ca4e9ec1d89280c786e604d} 
+Data\+\_\+\+Tier.\+Projects.\+Projects (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \doxylink{class_data___tier_1_1_projects}{Projects} class with an empty list of projects. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ projects\ =\ \textcolor{keyword}{new}\ List<ProjectData>(5);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___tier_1_1_projects_a819d23aeba0aac360051ace79463756b}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!AddClient@{AddClient}}
+\index{AddClient@{AddClient}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{AddClient()}{AddClient()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a819d23aeba0aac360051ace79463756b} 
+bool Data\+\_\+\+Tier.\+Projects.\+Add\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Adds a client to a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to add the client to.\\
+\hline
+{\em id\+Client} & The ID of the client to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the client was added successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_acddd379d00567185c639d1a405a5199f}{Interface\+\_\+\+Tier.\+IProjects}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProjectData\ project\ =\ FindProject(idProject);}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ project.AddClient(idClient);}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}808"{}}\ +\ ex);}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_a5ef19eed2efe61fcdff7ae225c69bed7}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!AddEmployee@{AddEmployee}}
+\index{AddEmployee@{AddEmployee}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{AddEmployee()}{AddEmployee()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a5ef19eed2efe61fcdff7ae225c69bed7} 
+bool Data\+\_\+\+Tier.\+Projects.\+Add\+Employee (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})}
+
+
+
+Adds an employee to a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to add the employee to.\\
+\hline
+{\em id\+Employee} & The ID of the employee to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was added successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a58fa6a8fb33cdc54c1e03f11c396688a}{Interface\+\_\+\+Tier.\+IProjects}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProjectData\ project\ =\ FindProject(idProject);}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ project.AddEmployee(idEmployee);}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}812"{}}\ +\ ex);}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_a7281f5130267894eee04b40df3e46cd7}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!AddProject@{AddProject}}
+\index{AddProject@{AddProject}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{AddProject()}{AddProject()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a7281f5130267894eee04b40df3e46cd7} 
+int Data\+\_\+\+Tier.\+Projects.\+Add\+Project (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___tier_1_1_project_data}{Project\+Data}}}]{project}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new project to the projects list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project} & The project to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the added project.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if the project is null or any error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (project\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}800"{}});}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ projects.Add(project);}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ projects.Sort();}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ project.Project.Id;}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}801"{}}\ +\ ex);}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_abb62bd02e4e20d0db63eab6c177551f5}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!CloseProject@{CloseProject}}
+\index{CloseProject@{CloseProject}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{CloseProject()}{CloseProject()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_abb62bd02e4e20d0db63eab6c177551f5} 
+bool Data\+\_\+\+Tier.\+Projects.\+Close\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{}\end{DoxyParamCaption})}
+
+
+
+Closes a project by setting its end date and status to completed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to close.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project was successfully closed, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the closure. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a70b05531b83754841335fac43bf7f8e0}{Interface\+\_\+\+Tier.\+IProjects}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProjectData\ project\ =\ FindProject(idProject);}
+\DoxyCodeLine{00252\ }
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (project\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ project.Project.EndDate\ =\ DateTime.Now;}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ project.Project.Status\ =\ \mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}}.Completed;}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}805"{}}\ +\ ex);}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_a0ed230edd97b7193077d8d6bac3000d3}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!ProjectExists@{ProjectExists}}
+\index{ProjectExists@{ProjectExists}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{ProjectExists()}{ProjectExists()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a0ed230edd97b7193077d8d6bac3000d3} 
+bool Data\+\_\+\+Tier.\+Projects.\+Project\+Exists (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a project already exists based on its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the check. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a813383762e567dc5d5a139d95f8969c4}{Interface\+\_\+\+Tier.\+IProjects}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ProjectExist(idProject);}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}803"{}}\ +\ ex);}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!ProjectExists@{ProjectExists}}
+\index{ProjectExists@{ProjectExists}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{ProjectExists()}{ProjectExists()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a0964b2eafd2ef9f57f8d3d7511d044fc} 
+bool Data\+\_\+\+Tier.\+Projects.\+Project\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_project}{Project}}}]{project2}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a project exists by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & The ID of the project to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (ProjectData\ project1\ \textcolor{keywordflow}{in}\ projects)}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (project1.Project\ -\/\ project2)}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_ac6c8a231895cd7f4933304f726ff4960}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!RemoveClient@{RemoveClient}}
+\index{RemoveClient@{RemoveClient}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{RemoveClient()}{RemoveClient()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_ac6c8a231895cd7f4933304f726ff4960} 
+bool Data\+\_\+\+Tier.\+Projects.\+Remove\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Removes a client from a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to remove the client from.\\
+\hline
+{\em id\+Client} & The ID of the client to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the client was removed successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the removal. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a4b0b83e0d7d4352b5df25222f0e69259}{Interface\+\_\+\+Tier.\+IProjects}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProjectData\ project\ =\ FindProject(idProject);}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ project.RemoveClient(idClient);}
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}809"{}}\ +\ ex);}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_a1ee69b69a7fe3a510ed514c2dfed190a}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!RemoveEmployee@{RemoveEmployee}}
+\index{RemoveEmployee@{RemoveEmployee}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{RemoveEmployee()}{RemoveEmployee()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a1ee69b69a7fe3a510ed514c2dfed190a} 
+bool Data\+\_\+\+Tier.\+Projects.\+Remove\+Employee (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})}
+
+
+
+Removes an employee from a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to remove the employee from.\\
+\hline
+{\em id\+Employee} & The ID of the employee to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was removed successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the removal. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a36a00f1dad13442da1e6505bf32e5769}{Interface\+\_\+\+Tier.\+IProjects}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00351\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProjectData\ project\ =\ FindProject(idProject);}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ project.RemoveEmployee(idEmployee);}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}813"{}}\ +\ ex);}
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_a02f3f7cbf70eb3aaae10985b3fdb15d5}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!RemoveProject@{RemoveProject}}
+\index{RemoveProject@{RemoveProject}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{RemoveProject()}{RemoveProject()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a02f3f7cbf70eb3aaae10985b3fdb15d5} 
+bool Data\+\_\+\+Tier.\+Projects.\+Remove\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{}\end{DoxyParamCaption})}
+
+
+
+Removes a project from the projects list by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project was successfully removed, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the removal. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a050cd933392a240f89f2c01d7b733a08}{Interface\+\_\+\+Tier.\+IProjects}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProjectData\ project\ =\ FindProject(idProject);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (project\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ projects.Remove(project);}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}802"{}}\ +\ ex);}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_aeb5348393eacdf16545abeb17c8af23f}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!UpdateStatus@{UpdateStatus}}
+\index{UpdateStatus@{UpdateStatus}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{UpdateStatus()}{UpdateStatus()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_aeb5348393eacdf16545abeb17c8af23f} 
+bool Data\+\_\+\+Tier.\+Projects.\+Update\+Status (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{\mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}}}]{status}{}\end{DoxyParamCaption})}
+
+
+
+Updates the status of a project by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to update.\\
+\hline
+{\em status} & The new status of the project.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the status was updated successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the update. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProjectData\ project\ =\ FindProject(idProject);}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (project\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ project.Project.Status\ =\ status;}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}804"{}}\ +\ ex);}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_projects_a926bd6ab57e9451d82c1d095bd598e08}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!UseMaterial@{UseMaterial}}
+\index{UseMaterial@{UseMaterial}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{UseMaterial()}{UseMaterial()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a926bd6ab57e9451d82c1d095bd598e08} 
+bool Data\+\_\+\+Tier.\+Projects.\+Use\+Material (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})}
+
+
+
+Uses material in a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to use material in.\\
+\hline
+{\em id\+Material} & The ID of the material to use.\\
+\hline
+{\em quantity} & The quantity of the material to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material was used successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the material use. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_ab98c34cf5140d99a7bba3c029ab1ac05}{Interface\+\_\+\+Tier.\+IProjects}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00378\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ProjectData\ project\ =\ FindProject(idProject);}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ project.UseMaterial(\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{MaterialQuantity}}.\mbox{\hyperlink{class_object___tier_1_1_material_quantity_a4ca6af0de296472bf7f053c2fa235e88}{CreateMaterialQuantity}}(idMaterial,\ quantity));}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}805"{}}\ +\ ex);}
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449}\index{Data\_Tier.Projects@{Data\_Tier.Projects}!Instance@{Instance}}
+\index{Instance@{Instance}!Data\_Tier.Projects@{Data\_Tier.Projects}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_projects_a4101fcebbf5230744c80dbaf7bead449} 
+\mbox{\hyperlink{class_data___tier_1_1_projects}{Projects}} Data\+\_\+\+Tier.\+Projects.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the singleton instance of the \doxylink{class_data___tier_1_1_projects}{Projects} class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (instance\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___tier_1_1_projects_a176e968f3ca4e9ec1d89280c786e604d}{Projects}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Data Tier/Projects.\+cs\end{DoxyCompactItemize}

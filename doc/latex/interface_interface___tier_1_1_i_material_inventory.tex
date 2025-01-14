@@ -1,0 +1,176 @@
+\doxysection{Interface\+\_\+\+Tier.\+IMaterial\+Inventory Interface Reference}
+\hypertarget{interface_interface___tier_1_1_i_material_inventory}{}\label{interface_interface___tier_1_1_i_material_inventory}\index{Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}}
+
+
+Methods to implement in the inventory class.  
+
+
+
+
+Inheritance diagram for Interface\+\_\+\+Tier.\+IMaterial\+Inventory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{interface_interface___tier_1_1_i_material_inventory__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_a80ab8984d2712428917a593dbcc445a4}{Add\+Material}} (\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} inventory\+Quantity)
+\begin{DoxyCompactList}\small\item\em Adds a new material to the inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_ace16841dc7fa2387b44bb0d9b7aae463}{Verify\+Material\+Existence}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Verifies if a material exists in the inventory based on the material ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_ad85731825e0eb3d19fa2d90124efd5ce}{Verify\+Material\+Quantity}} (int id\+Material, int quantity)
+\begin{DoxyCompactList}\small\item\em Verifies if there is enough quantity of a material in the inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_a25c62d5832de047d3918ed12a106c94b}{Update\+Quantity}} (int id\+Material, int quantity\+Update)
+\begin{DoxyCompactList}\small\item\em Updates the quantity of a material in the inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_a1c16fcc291a090c865e33d9948630887}{Use\+Material}} (int id\+Material, int quantity)
+\begin{DoxyCompactList}\small\item\em Decreases the quantity of a material in the inventory when it is used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Methods to implement in the inventory class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_interface___tier_1_1_i_material_inventory_a80ab8984d2712428917a593dbcc445a4}\index{Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}!AddMaterial@{AddMaterial}}
+\index{AddMaterial@{AddMaterial}!Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}}
+\doxysubsubsection{\texorpdfstring{AddMaterial()}{AddMaterial()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_material_inventory_a80ab8984d2712428917a593dbcc445a4} 
+int Interface\+\_\+\+Tier.\+IMaterial\+Inventory.\+Add\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{inventory\+Quantity}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new material to the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inventory\+Quantity} & The material quantity to add to the inventory.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the added material.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if the material is null or if any error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_material_inventory_aa1e2a8c410200411cfb9c36c77c7106b}{Data\+\_\+\+Tier.\+Material\+Inventory}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_material_inventory_a25c62d5832de047d3918ed12a106c94b}\index{Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}!UpdateQuantity@{UpdateQuantity}}
+\index{UpdateQuantity@{UpdateQuantity}!Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}}
+\doxysubsubsection{\texorpdfstring{UpdateQuantity()}{UpdateQuantity()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_material_inventory_a25c62d5832de047d3918ed12a106c94b} 
+bool Interface\+\_\+\+Tier.\+IMaterial\+Inventory.\+Update\+Quantity (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{int}]{quantity\+Update}{}\end{DoxyParamCaption})}
+
+
+
+Updates the quantity of a material in the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to update.\\
+\hline
+{\em quantity\+Update} & The new quantity of the material.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the quantity was updated successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the update process. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_material_inventory_a3d349ce4896a0d3a9b46de1000b82cc6}{Data\+\_\+\+Tier.\+Material\+Inventory}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_material_inventory_a1c16fcc291a090c865e33d9948630887}\index{Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}!UseMaterial@{UseMaterial}}
+\index{UseMaterial@{UseMaterial}!Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}}
+\doxysubsubsection{\texorpdfstring{UseMaterial()}{UseMaterial()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_material_inventory_a1c16fcc291a090c865e33d9948630887} 
+bool Interface\+\_\+\+Tier.\+IMaterial\+Inventory.\+Use\+Material (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})}
+
+
+
+Decreases the quantity of a material in the inventory when it is used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to use.\\
+\hline
+{\em quantity} & The quantity of material to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the material quantity was successfully decreased, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the use process. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_material_inventory_af9ff7521af7288f477b6946558dd610b}{Data\+\_\+\+Tier.\+Material\+Inventory}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_material_inventory_ace16841dc7fa2387b44bb0d9b7aae463}\index{Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}!VerifyMaterialExistence@{VerifyMaterialExistence}}
+\index{VerifyMaterialExistence@{VerifyMaterialExistence}!Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}}
+\doxysubsubsection{\texorpdfstring{VerifyMaterialExistence()}{VerifyMaterialExistence()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_material_inventory_ace16841dc7fa2387b44bb0d9b7aae463} 
+bool Interface\+\_\+\+Tier.\+IMaterial\+Inventory.\+Verify\+Material\+Existence (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})}
+
+
+
+Verifies if a material exists in the inventory based on the material ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to verify.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the material exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the verification process. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_material_inventory_aa07d2628caebc320b65db94ec768ac1e}{Data\+\_\+\+Tier.\+Material\+Inventory}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_material_inventory_ad85731825e0eb3d19fa2d90124efd5ce}\index{Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}!VerifyMaterialQuantity@{VerifyMaterialQuantity}}
+\index{VerifyMaterialQuantity@{VerifyMaterialQuantity}!Interface\_Tier.IMaterialInventory@{Interface\_Tier.IMaterialInventory}}
+\doxysubsubsection{\texorpdfstring{VerifyMaterialQuantity()}{VerifyMaterialQuantity()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_material_inventory_ad85731825e0eb3d19fa2d90124efd5ce} 
+bool Interface\+\_\+\+Tier.\+IMaterial\+Inventory.\+Verify\+Material\+Quantity (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})}
+
+
+
+Verifies if there is enough quantity of a material in the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to check.\\
+\hline
+{\em quantity} & The quantity of material to check for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if there is enough quantity, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_material_inventory_a36deed3d8216bf013a48f70a41ffcad7}{Data\+\_\+\+Tier.\+Material\+Inventory}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Interface Tier/IMaterial\+Inventory.\+cs\end{DoxyCompactItemize}

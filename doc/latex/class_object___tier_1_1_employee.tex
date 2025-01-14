@@ -1,0 +1,354 @@
+\doxysection{Object\+\_\+\+Tier.\+Employee Class Reference}
+\hypertarget{class_object___tier_1_1_employee}{}\label{class_object___tier_1_1_employee}\index{Object\_Tier.Employee@{Object\_Tier.Employee}}
+
+
+Represents an employee in the system, inheriting from the \doxylink{class_object___tier_1_1_person}{Person} class.  
+
+
+
+
+Inheritance diagram for Object\+\_\+\+Tier.\+Employee\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_object___tier_1_1_employee__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Object\+\_\+\+Tier.\+Employee\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_object___tier_1_1_employee__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object___tier_1_1_employee_a5be01952d88b169bb45d064eb1babebe}{Employee}} (string name, string role, double hourlyrate)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_object___tier_1_1_employee}{Employee} class with the specified name, role, and hourly rate. Automatically assigns a unique ID. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_object___tier_1_1_employee_a915ad3696d310052ea96a64a0c468a1c}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object is equal to the current employee. Employees are equal if their name, role, and hourly rate match. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_object___tier_1_1_employee_abeefba84d88a32c7f3f06289777b980d}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the employee, including ID, name, role, and hourly rate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object___tier_1_1_employee_a219d977bc64eb2464d6294ea1473b2d6}{Compare\+To}} (\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} employee)
+\begin{DoxyCompactList}\small\item\em Compares the current employee to another employee based on their name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} \mbox{\hyperlink{class_object___tier_1_1_employee_a2a43d419a3f060ed135f9ecadaee14db}{Create\+Employee}} (string name, string role, double hourly\+Rate)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_object___tier_1_1_employee}{Employee} instance. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_employee_a39e92f95320f6ccf392b348261a46e38}{operator-\/}} (\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} employee1, \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} employee2)
+\begin{DoxyCompactList}\small\item\em Checks if two employees are equal using the "{}-\/"{} operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_employee_a3a24001f0c37e6007c28ca879135bba1}{operator+}} (\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} employee1, \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} employee2)
+\begin{DoxyCompactList}\small\item\em Checks if two employees are not equal using the "{}+"{} operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_employee_ab74263ccc537af2ee8f21ab3e161cf64}{get\+Next\+Employee\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Increments the static employee ID counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_object___tier_1_1_employee_a98bbe928c06a33a3295c4a188beaf7e2}{Role}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the employee’s role. Ensures the role is not empty. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_object___tier_1_1_employee_a264cf6be097ebb83a1a82aeec22b7bdb}{Hourly\+Rate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the employee’s hourly rate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_object___tier_1_1_person}{Object\+\_\+\+Tier.\+Person}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_object___tier_1_1_person_ab0fb4e62e86c8c93d8e24ef1cf14185a}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the ID of the person. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_object___tier_1_1_person_aa130ca80fe53c450b6f780664a591707}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name of the person. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_object___tier_1_1_person}{Object\+\_\+\+Tier.\+Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object___tier_1_1_person_abbc0ba08992f323e498a214ffdd2b636}{Person}} (int id, string name)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_object___tier_1_1_person}{Person} class with an ID and a name. The name is automatically formatted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an employee in the system, inheriting from the \doxylink{class_object___tier_1_1_person}{Person} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_object___tier_1_1_employee_a5be01952d88b169bb45d064eb1babebe}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!Employee@{Employee}}
+\index{Employee@{Employee}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{Employee()}{Employee()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_a5be01952d88b169bb45d064eb1babebe} 
+Object\+\_\+\+Tier.\+Employee.\+Employee (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{role}{, }\item[{double}]{hourlyrate}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_object___tier_1_1_employee}{Employee} class with the specified name, role, and hourly rate. Automatically assigns a unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the employee.\\
+\hline
+{\em role} & The role of the employee.\\
+\hline
+{\em hourlyrate} & The hourly rate of the employee.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ base(employeeIdCounter++,\ name)\ \textcolor{comment}{//\ Send\ for\ constructor\ Person}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_employee_a98bbe928c06a33a3295c4a188beaf7e2}{Role}}\ =\ role.ToUpper().Trim();}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_employee_a264cf6be097ebb83a1a82aeec22b7bdb}{HourlyRate}}\ =\ hourlyrate;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_object___tier_1_1_employee_a219d977bc64eb2464d6294ea1473b2d6}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_a219d977bc64eb2464d6294ea1473b2d6} 
+int Object\+\_\+\+Tier.\+Employee.\+Compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}}]{employee}{}\end{DoxyParamCaption})}
+
+
+
+Compares the current employee to another employee based on their name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee} & The employee to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value indicating the relative order of the employees.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_object___tier_1_1_person_aa130ca80fe53c450b6f780664a591707}{Name}}.CompareTo(employee.Name);}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_employee_a2a43d419a3f060ed135f9ecadaee14db}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!CreateEmployee@{CreateEmployee}}
+\index{CreateEmployee@{CreateEmployee}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{CreateEmployee()}{CreateEmployee()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_a2a43d419a3f060ed135f9ecadaee14db} 
+static \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} Object\+\_\+\+Tier.\+Employee.\+Create\+Employee (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{role}{, }\item[{double}]{hourly\+Rate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \doxylink{class_object___tier_1_1_employee}{Employee} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the employee.\\
+\hline
+{\em role} & The role of the employee.\\
+\hline
+{\em hourly\+Rate} & The hourly rate of the employee.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_object___tier_1_1_employee}{Employee} instance.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_object___tier_1_1_employee_a5be01952d88b169bb45d064eb1babebe}{Employee}}(name,\ role,\ hourlyRate);}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_employee_a915ad3696d310052ea96a64a0c468a1c}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!Equals@{Equals}}
+\index{Equals@{Equals}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_a915ad3696d310052ea96a64a0c468a1c} 
+override bool Object\+\_\+\+Tier.\+Employee.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Determines whether the specified object is equal to the current employee. Employees are equal if their name, role, and hourly rate match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare with the current employee.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{class_object___tier_1_1_employee_a5be01952d88b169bb45d064eb1babebe}{Employee}})}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_employee_a5be01952d88b169bb45d064eb1babebe}{Employee}}\ otherEmp\ =\ obj\ as\ \mbox{\hyperlink{class_object___tier_1_1_employee_a5be01952d88b169bb45d064eb1babebe}{Employee}};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_object___tier_1_1_person_aa130ca80fe53c450b6f780664a591707}{Name}}\ ==\ otherEmp.Name\ \&\&\ \mbox{\hyperlink{class_object___tier_1_1_employee_a98bbe928c06a33a3295c4a188beaf7e2}{Role}}\ ==\ otherEmp.Role\ \&\&\ \mbox{\hyperlink{class_object___tier_1_1_employee_a264cf6be097ebb83a1a82aeec22b7bdb}{HourlyRate}}\ ==\ otherEmp.HourlyRate)}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_employee_ab74263ccc537af2ee8f21ab3e161cf64}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!getNextEmployeeId@{getNextEmployeeId}}
+\index{getNextEmployeeId@{getNextEmployeeId}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{getNextEmployeeId()}{getNextEmployeeId()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_ab74263ccc537af2ee8f21ab3e161cf64} 
+static bool Object\+\_\+\+Tier.\+Employee.\+get\+Next\+Employee\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Increments the static employee ID counter. 
+
+\begin{DoxyReturn}{Returns}
+True after incrementing the counter.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ employeeIdCounter++;}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_employee_a3a24001f0c37e6007c28ca879135bba1}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!operator+@{operator+}}
+\index{operator+@{operator+}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_a3a24001f0c37e6007c28ca879135bba1} 
+static bool Object\+\_\+\+Tier.\+Employee.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}}]{employee1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}}]{employee2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if two employees are not equal using the "{}+"{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee1} & The first employee.\\
+\hline
+{\em employee2} & The second employee.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employees are not equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(employee1\ -\/\ employee2);}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_employee_a39e92f95320f6ccf392b348261a46e38}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_a39e92f95320f6ccf392b348261a46e38} 
+static bool Object\+\_\+\+Tier.\+Employee.\+operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}}]{employee1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}}]{employee2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if two employees are equal using the "{}-\/"{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee1} & The first employee.\\
+\hline
+{\em employee2} & The second employee.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employees are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (employee1.Equals(employee2))}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_employee_abeefba84d88a32c7f3f06289777b980d}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!ToString@{ToString}}
+\index{ToString@{ToString}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_abeefba84d88a32c7f3f06289777b980d} 
+override string Object\+\_\+\+Tier.\+Employee.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the employee, including ID, name, role, and hourly rate. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the employee.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_object___tier_1_1_person_ab0fb4e62e86c8c93d8e24ef1cf14185a}{Id}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_person_aa130ca80fe53c450b6f780664a591707}{Name}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_employee_a98bbe928c06a33a3295c4a188beaf7e2}{Role}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_employee_a264cf6be097ebb83a1a82aeec22b7bdb}{HourlyRate}};}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_object___tier_1_1_employee_a264cf6be097ebb83a1a82aeec22b7bdb}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!HourlyRate@{HourlyRate}}
+\index{HourlyRate@{HourlyRate}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{HourlyRate}{HourlyRate}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_a264cf6be097ebb83a1a82aeec22b7bdb} 
+double Object\+\_\+\+Tier.\+Employee.\+Hourly\+Rate\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the employee’s hourly rate. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ >\ hourlyRate)}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ hourlyRate\ =\ value;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ hourlyRate;\ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_employee_a98bbe928c06a33a3295c4a188beaf7e2}\index{Object\_Tier.Employee@{Object\_Tier.Employee}!Role@{Role}}
+\index{Role@{Role}!Object\_Tier.Employee@{Object\_Tier.Employee}}
+\doxysubsubsection{\texorpdfstring{Role}{Role}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_employee_a98bbe928c06a33a3295c4a188beaf7e2} 
+string Object\+\_\+\+Tier.\+Employee.\+Role\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the employee’s role. Ensures the role is not empty. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (role\ !=\ \textcolor{keywordtype}{string}.Empty)}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ role\ =\ value;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ role;\ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Object Tier/Employee.\+cs\end{DoxyCompactItemize}

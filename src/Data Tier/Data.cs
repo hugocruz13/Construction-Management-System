@@ -8,9 +8,10 @@
 **/
 using System;
 using System.Collections.Generic;
-
 using Object_Tier;
 using CustomExceptions;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Data_Tier
 {
@@ -108,6 +109,67 @@ namespace Data_Tier
 
             return true;
         }
+
+        /// <summary>
+        /// Saves the current data to a binary file at the specified path.
+        /// </summary>
+        /// <param name="path">The file path where the data will be saved.</param>
+        /// <returns>Returns `true` if the data is successfully saved.</returns>
+        /// <exception cref="ConfigurationErrorException">Thrown if an error occurs during data saving.</exception>
+        public static bool SaveData(string path)
+        {
+            try
+            {
+                Data data = new Data();
+
+                if (!data.CollectData())
+                {
+                    throw new ConfigurationErrorException("702");
+                }
+
+                Stream fs = new FileStream(path, FileMode.Create);
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                binaryFormatter.Serialize(fs, data);
+                fs.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new ConfigurationErrorException("705" + ex.Message);
+            }
+
+        }
+
+        /// <summary>
+        /// Loads data from a binary file and updates the system with the loaded data.
+        /// </summary>
+        /// <param name="path">The file path from where the data will be loaded.</param>
+        /// <returns>Returns `true` if the data is successfully loaded and updated.</returns>
+        /// <exception cref="ConfigurationErrorException">Thrown if an error occurs during data loading.</exception>
+        public static bool LoadData(string path)
+        {
+            try
+            {
+                Data data = new Data();
+                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
+                BinaryFormatter b = new BinaryFormatter();
+                data = (Data)b.Deserialize(s);
+                s.Close();
+
+                if (!data.PutData())
+                {
+                    throw new Exception("700");
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new ConfigurationErrorException("706" + ex.Message);
+            }
+
+        }
+
 
         #region Destructor
         /// <summary>

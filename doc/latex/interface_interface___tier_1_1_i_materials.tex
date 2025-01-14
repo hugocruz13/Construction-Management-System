@@ -1,0 +1,119 @@
+\doxysection{Interface\+\_\+\+Tier.\+IMaterials Interface Reference}
+\hypertarget{interface_interface___tier_1_1_i_materials}{}\label{interface_interface___tier_1_1_i_materials}\index{Interface\_Tier.IMaterials@{Interface\_Tier.IMaterials}}
+
+
+Methods to implement in the materials class.  
+
+
+
+
+Inheritance diagram for Interface\+\_\+\+Tier.\+IMaterials\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{interface_interface___tier_1_1_i_materials__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_interface___tier_1_1_i_materials_afa8bcaf3922890078cd4506819403aea}{Add\+Material}} (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material)
+\begin{DoxyCompactList}\small\item\em Adds a new material to the materials list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_materials_abf9743289093309c08fea23dbbf90891}{Material\+Exist}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Checks if a material exists in the list based on its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_materials_ab771a5cf8260d49375ac33a8c1188f09}{Update\+Price}} (int id\+Material, double price)
+\begin{DoxyCompactList}\small\item\em Updates the price of a material in the list based on its ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Methods to implement in the materials class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_interface___tier_1_1_i_materials_afa8bcaf3922890078cd4506819403aea}\index{Interface\_Tier.IMaterials@{Interface\_Tier.IMaterials}!AddMaterial@{AddMaterial}}
+\index{AddMaterial@{AddMaterial}!Interface\_Tier.IMaterials@{Interface\_Tier.IMaterials}}
+\doxysubsubsection{\texorpdfstring{AddMaterial()}{AddMaterial()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_materials_afa8bcaf3922890078cd4506819403aea} 
+int Interface\+\_\+\+Tier.\+IMaterials.\+Add\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new material to the materials list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & The material to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the added material.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if the material is null or any error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_materials_a1026add42fcea848b41ad751d2597165}{Data\+\_\+\+Tier.\+Materials}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_materials_abf9743289093309c08fea23dbbf90891}\index{Interface\_Tier.IMaterials@{Interface\_Tier.IMaterials}!MaterialExist@{MaterialExist}}
+\index{MaterialExist@{MaterialExist}!Interface\_Tier.IMaterials@{Interface\_Tier.IMaterials}}
+\doxysubsubsection{\texorpdfstring{MaterialExist()}{MaterialExist()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_materials_abf9743289093309c08fea23dbbf90891} 
+bool Interface\+\_\+\+Tier.\+IMaterials.\+Material\+Exist (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a material exists in the list based on its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the check. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_materials_ab88f6ef135939f18f53b0f8b69a1897f}{Data\+\_\+\+Tier.\+Materials}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_materials_ab771a5cf8260d49375ac33a8c1188f09}\index{Interface\_Tier.IMaterials@{Interface\_Tier.IMaterials}!UpdatePrice@{UpdatePrice}}
+\index{UpdatePrice@{UpdatePrice}!Interface\_Tier.IMaterials@{Interface\_Tier.IMaterials}}
+\doxysubsubsection{\texorpdfstring{UpdatePrice()}{UpdatePrice()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_materials_ab771a5cf8260d49375ac33a8c1188f09} 
+bool Interface\+\_\+\+Tier.\+IMaterials.\+Update\+Price (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{double}]{price}{}\end{DoxyParamCaption})}
+
+
+
+Updates the price of a material in the list based on its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to update.\\
+\hline
+{\em price} & The new price to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the price was updated successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the update. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_materials_a988296d288dd70a6b81d30b3e958f42f}{Data\+\_\+\+Tier.\+Materials}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Interface Tier/IMaterials.\+cs\end{DoxyCompactItemize}

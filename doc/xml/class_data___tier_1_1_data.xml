@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="28" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="29" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_data___tier_1_1_data_1a09207b695c2ac589ffa0b0ed77d1d1a4" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_object___tier_1_1_employee" kindref="compound">Employee</ref> &gt;</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="33" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="33" bodyend="-1"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="34" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_data___tier_1_1_data_1ad167a1942d55e26573935766106049f0" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_object___tier_1_1_material" kindref="compound">Material</ref> &gt;</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="38" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="38" bodyend="-1"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="39" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_data___tier_1_1_data_1ae4a531f130ac5f83ce54ef7618002956" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_object___tier_1_1_material_quantity" kindref="compound">MaterialQuantity</ref> &gt;</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="43" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="43" bodyend="-1"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="44" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_data___tier_1_1_data_1a6f2a0d9bdf88d819a5757a18e80ac81a" prot="private" static="no" mutable="no">
         <type>List&lt; <ref refid="class_data___tier_1_1_project_data" kindref="compound">ProjectData</ref> &gt;</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="49" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="49" bodyend="-1"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="50" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="50" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -109,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="56" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="56" bodyend="71"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="57" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="57" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_data___tier_1_1_data_1a3c403f62c0adf6c8f5fdfc9f2e49db47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="78" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="78" bodyend="96"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="79" column="21" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="79" bodyend="97"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="102" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="102" bodyend="110"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="103" column="14" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="103" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="class_data___tier_1_1_data_1a3ad2f8085eb5cb42a100649b415da393" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -171,7 +171,89 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="116" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="116" bodyend="118"/>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="178" column="9" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="178" bodyend="180"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_data___tier_1_1_data_1a6d515bd0a2a3ff796d88ad647a8d974c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Data_Tier.Data.SaveData</definition>
+        <argsstring>(string path)</argsstring>
+        <name>SaveData</name>
+        <qualifiedname>Data_Tier.Data.SaveData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Saves the current data to a binary file at the specified path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file path where the data will be saved.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns <computeroutput>true</computeroutput> if the data is successfully saved.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown if an error occurs during data saving.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="119" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="119" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data___tier_1_1_data_1a8027e0d5f608e977f26ac1b1f7586113" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Data_Tier.Data.LoadData</definition>
+        <argsstring>(string path)</argsstring>
+        <name>LoadData</name>
+        <qualifiedname>Data_Tier.Data.LoadData</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Loads data from a binary file and updates the system with the loaded data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file path from where the data will be loaded.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns <computeroutput>true</computeroutput> if the data is successfully loaded and updated.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationErrorException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown if an error occurs during data loading.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="149" column="28" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="149" bodyend="171"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -179,15 +261,17 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="23" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="24" bodyend="120"/>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" line="24" column="11" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Data Tier/Data.cs" bodystart="25" bodyend="182"/>
     <listofallmembers>
       <member refid="class_data___tier_1_1_data_1a9d0beef5001665fed057a69883d0f5bf" prot="private" virt="non-virtual"><scope>Data_Tier::Data</scope><name>clients</name></member>
       <member refid="class_data___tier_1_1_data_1ab06d39156f683a619c6e3ce58b83e901" prot="public" virt="non-virtual"><scope>Data_Tier::Data</scope><name>CollectData</name></member>
       <member refid="class_data___tier_1_1_data_1a09207b695c2ac589ffa0b0ed77d1d1a4" prot="private" virt="non-virtual"><scope>Data_Tier::Data</scope><name>employees</name></member>
       <member refid="class_data___tier_1_1_data_1ae4a531f130ac5f83ce54ef7618002956" prot="private" virt="non-virtual"><scope>Data_Tier::Data</scope><name>inventory</name></member>
+      <member refid="class_data___tier_1_1_data_1a8027e0d5f608e977f26ac1b1f7586113" prot="public" virt="non-virtual"><scope>Data_Tier::Data</scope><name>LoadData</name></member>
       <member refid="class_data___tier_1_1_data_1ad167a1942d55e26573935766106049f0" prot="private" virt="non-virtual"><scope>Data_Tier::Data</scope><name>materials</name></member>
       <member refid="class_data___tier_1_1_data_1a6f2a0d9bdf88d819a5757a18e80ac81a" prot="private" virt="non-virtual"><scope>Data_Tier::Data</scope><name>projects</name></member>
       <member refid="class_data___tier_1_1_data_1a3c403f62c0adf6c8f5fdfc9f2e49db47" prot="public" virt="non-virtual"><scope>Data_Tier::Data</scope><name>PutData</name></member>
+      <member refid="class_data___tier_1_1_data_1a6d515bd0a2a3ff796d88ad647a8d974c" prot="public" virt="non-virtual"><scope>Data_Tier::Data</scope><name>SaveData</name></member>
       <member refid="class_data___tier_1_1_data_1ab41c721e7e63ea0fd9cd466659987042" prot="private" virt="non-virtual"><scope>Data_Tier::Data</scope><name>SetCounterEqual</name></member>
       <member refid="class_data___tier_1_1_data_1a3ad2f8085eb5cb42a100649b415da393" prot="private" virt="non-virtual"><scope>Data_Tier::Data</scope><name>~Data</name></member>
     </listofallmembers>

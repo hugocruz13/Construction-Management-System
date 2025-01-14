@@ -1,0 +1,382 @@
+\doxysection{Data\+\_\+\+Tier.\+Clients Class Reference}
+\hypertarget{class_data___tier_1_1_clients}{}\label{class_data___tier_1_1_clients}\index{Data\_Tier.Clients@{Data\_Tier.Clients}}
+
+
+Singleton class that manages the list of clients. Allows adding, removing, updating and retrieving clients.  
+
+
+
+
+Inheritance diagram for Data\+\_\+\+Tier.\+Clients\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_data___tier_1_1_clients__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Data\+\_\+\+Tier.\+Clients\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_data___tier_1_1_clients__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_data___tier_1_1_clients_a129abe2a08e4334ad683cf0533772e07}{Add\+Client}} (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client)
+\begin{DoxyCompactList}\small\item\em Adds a new client to the list of clients and sorts the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_clients_a499deb52f93f9b085e21f7589b50aad6}{Remove\+Client}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Removes a client from the list based on the client ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}{Exist\+Client}} (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client)
+\begin{DoxyCompactList}\small\item\em Checks if a specific client exists in the list by comparing with another client object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_clients_aa56bbc5ed5918094f5c08ff6f409fc46}{Exist\+Client}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Checks if a client exists in the list based on the client ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_clients_aebfc1f6f9a03b5fc68a3c0ccdf37ecb9}{Update\+Contact}} (int id\+Client, int contacto)
+\begin{DoxyCompactList}\small\item\em Updates the contact information of a client based on the client ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} \mbox{\hyperlink{class_data___tier_1_1_clients_a9cdf3bd9ffb752f73b3c9d95933ad13f}{Get\+Client}} (int id\+Client)
+\begin{DoxyCompactList}\small\item\em Retrieves a client from the list based on the client ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_interface___tier_1_1_i_clients}{Interface\+\_\+\+Tier.\+IClients}}}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___tier_1_1_clients_afb15bf1ad51b910568b626df9639635d}{Clients}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_data___tier_1_1_clients}{Clients} class, with an empty list of clients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}} \mbox{\hyperlink{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of the \doxylink{class_data___tier_1_1_clients}{Clients} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class that manages the list of clients. Allows adding, removing, updating and retrieving clients. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___tier_1_1_clients_afb15bf1ad51b910568b626df9639635d}\index{Data\_Tier.Clients@{Data\_Tier.Clients}!Clients@{Clients}}
+\index{Clients@{Clients}!Data\_Tier.Clients@{Data\_Tier.Clients}}
+\doxysubsubsection{\texorpdfstring{Clients()}{Clients()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_clients_afb15bf1ad51b910568b626df9639635d} 
+Data\+\_\+\+Tier.\+Clients.\+Clients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \doxylink{class_data___tier_1_1_clients}{Clients} class, with an empty list of clients. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ clients\ =\ \textcolor{keyword}{new}\ List<Client>(5);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___tier_1_1_clients_a129abe2a08e4334ad683cf0533772e07}\index{Data\_Tier.Clients@{Data\_Tier.Clients}!AddClient@{AddClient}}
+\index{AddClient@{AddClient}!Data\_Tier.Clients@{Data\_Tier.Clients}}
+\doxysubsubsection{\texorpdfstring{AddClient()}{AddClient()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_clients_a129abe2a08e4334ad683cf0533772e07} 
+int Data\+\_\+\+Tier.\+Clients.\+Add\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new client to the list of clients and sorts the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & he client to add to the list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the added client.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if the client is null or if any error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_a975f28cc717a22dfbce8ef3736232888}{Interface\+\_\+\+Tier.\+IClients}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (client\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}100"{}});}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ clients.Add(client);}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ clients.Sort();}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ client.\mbox{\hyperlink{class_object___tier_1_1_person_ab0fb4e62e86c8c93d8e24ef1cf14185a}{Id}};}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}101"{}},\ ex);}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6}\index{Data\_Tier.Clients@{Data\_Tier.Clients}!ExistClient@{ExistClient}}
+\index{ExistClient@{ExistClient}!Data\_Tier.Clients@{Data\_Tier.Clients}}
+\doxysubsubsection{\texorpdfstring{ExistClient()}{ExistClient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_clients_a896770ff1ba1bd334abc5ad716de24d6} 
+bool Data\+\_\+\+Tier.\+Clients.\+Exist\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a specific client exists in the list by comparing with another client object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client to check for existence in the list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the client exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}\ existingClient\ \textcolor{keywordflow}{in}\ clients)}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (existingClient\ -\/\ client)}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_clients_aa56bbc5ed5918094f5c08ff6f409fc46}\index{Data\_Tier.Clients@{Data\_Tier.Clients}!ExistClient@{ExistClient}}
+\index{ExistClient@{ExistClient}!Data\_Tier.Clients@{Data\_Tier.Clients}}
+\doxysubsubsection{\texorpdfstring{ExistClient()}{ExistClient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_clients_aa56bbc5ed5918094f5c08ff6f409fc46} 
+bool Data\+\_\+\+Tier.\+Clients.\+Exist\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a client exists in the list based on the client ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to check for existence.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the client exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs while checking for existence. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_aef144f3dec424ba3cd138b1dd0dc5ef0}{Interface\+\_\+\+Tier.\+IClients}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}\ client\ \textcolor{keywordflow}{in}\ clients)}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (client.\mbox{\hyperlink{class_object___tier_1_1_person_ab0fb4e62e86c8c93d8e24ef1cf14185a}{Id}}\ ==\ idClient)}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}103"{}},\ ex);}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_clients_a9cdf3bd9ffb752f73b3c9d95933ad13f}\index{Data\_Tier.Clients@{Data\_Tier.Clients}!GetClient@{GetClient}}
+\index{GetClient@{GetClient}!Data\_Tier.Clients@{Data\_Tier.Clients}}
+\doxysubsubsection{\texorpdfstring{GetClient()}{GetClient()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_clients_a9cdf3bd9ffb752f73b3c9d95933ad13f} 
+\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} Data\+\_\+\+Tier.\+Clients.\+Get\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves a client from the list based on the client ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the client object with the specified ID, or null if the client is not found.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs while retrieving the client. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_a2fc4095583682636ec50d4044e5b1abc}{Interface\+\_\+\+Tier.\+IClients}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ FindClient(idClient);}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}115"{}},\ ex);}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_clients_a499deb52f93f9b085e21f7589b50aad6}\index{Data\_Tier.Clients@{Data\_Tier.Clients}!RemoveClient@{RemoveClient}}
+\index{RemoveClient@{RemoveClient}!Data\_Tier.Clients@{Data\_Tier.Clients}}
+\doxysubsubsection{\texorpdfstring{RemoveClient()}{RemoveClient()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_clients_a499deb52f93f9b085e21f7589b50aad6} 
+bool Data\+\_\+\+Tier.\+Clients.\+Remove\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Removes a client from the list based on the client ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the client is successfully removed, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the removal of the client. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_a982e6293c1c7b0ed1b194518a8b17f30}{Interface\+\_\+\+Tier.\+IClients}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_client}{Client}}\ client\ =\ FindClient(idClient);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (client\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ clients.Remove(client);}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ clients.Sort();}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}102"{}},\ ex);}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_clients_aebfc1f6f9a03b5fc68a3c0ccdf37ecb9}\index{Data\_Tier.Clients@{Data\_Tier.Clients}!UpdateContact@{UpdateContact}}
+\index{UpdateContact@{UpdateContact}!Data\_Tier.Clients@{Data\_Tier.Clients}}
+\doxysubsubsection{\texorpdfstring{UpdateContact()}{UpdateContact()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_clients_aebfc1f6f9a03b5fc68a3c0ccdf37ecb9} 
+bool Data\+\_\+\+Tier.\+Clients.\+Update\+Contact (\begin{DoxyParamCaption}\item[{int}]{id\+Client}{, }\item[{int}]{contacto}{}\end{DoxyParamCaption})}
+
+
+
+Updates the contact information of a client based on the client ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Client} & The ID of the client to update.\\
+\hline
+{\em contacto} & The new contact information to set for the client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the contact information was updated successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the update process. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_clients_a8a0d6df18ef00c655629b368745c912d}{Interface\+\_\+\+Tier.\+IClients}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_client}{Client}}\ client\ =\ FindClient(idClient);}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (client\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ client.ContactInfo\ =\ contacto;}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}105"{}},\ ex);}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01}\index{Data\_Tier.Clients@{Data\_Tier.Clients}!Instance@{Instance}}
+\index{Instance@{Instance}!Data\_Tier.Clients@{Data\_Tier.Clients}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_clients_ae817e2f9ee3b9eeee270b13fd372df01} 
+\mbox{\hyperlink{class_data___tier_1_1_clients}{Clients}} Data\+\_\+\+Tier.\+Clients.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the singleton instance of the \doxylink{class_data___tier_1_1_clients}{Clients} class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (instance\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___tier_1_1_clients_afb15bf1ad51b910568b626df9639635d}{Clients}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Data Tier/Clients.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,160 @@
+\doxysection{Data\+\_\+\+Tier.\+Employees\+Service Class Reference}
+\hypertarget{class_data___tier_1_1_employees_service}{}\label{class_data___tier_1_1_employees_service}\index{Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}}
+
+
+Class that manages employees associated with projects.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___tier_1_1_employees_service_a8ca7f3dd325c3b75b619d3cfdf4b99c9}{Employees\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_data___tier_1_1_employees_service}{Employees\+Service} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_employees_service_a480930290ecdf5a2376b6b6896979a15}{Exist\+Exist\+Employee}} (int employee\+Id)
+\begin{DoxyCompactList}\small\item\em Checks if an employee exists in the list of employees for the project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_employees_service_a600a6057d05842ab4dd72b4b89f5e0ca}{Add\+Employee}} (int employee\+Id)
+\begin{DoxyCompactList}\small\item\em Adds an employee to the list of employees for the project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_employees_service_a7156846d426e18c24aa4c9767407a388}{Remove\+Employee}} (int employee\+Id)
+\begin{DoxyCompactList}\small\item\em Removes an employee from the list of employees for the project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that manages employees associated with projects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___tier_1_1_employees_service_a8ca7f3dd325c3b75b619d3cfdf4b99c9}\index{Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}!EmployeesService@{EmployeesService}}
+\index{EmployeesService@{EmployeesService}!Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}}
+\doxysubsubsection{\texorpdfstring{EmployeesService()}{EmployeesService()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_employees_service_a8ca7f3dd325c3b75b619d3cfdf4b99c9} 
+Data\+\_\+\+Tier.\+Employees\+Service.\+Employees\+Service (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_data___tier_1_1_employees_service}{Employees\+Service} class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ employees\ =\ \textcolor{keyword}{new}\ List<int>(5);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___tier_1_1_employees_service_a600a6057d05842ab4dd72b4b89f5e0ca}\index{Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}!AddEmployee@{AddEmployee}}
+\index{AddEmployee@{AddEmployee}!Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}}
+\doxysubsubsection{\texorpdfstring{AddEmployee()}{AddEmployee()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_employees_service_a600a6057d05842ab4dd72b4b89f5e0ca} 
+bool Data\+\_\+\+Tier.\+Employees\+Service.\+Add\+Employee (\begin{DoxyParamCaption}\item[{int}]{employee\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Adds an employee to the list of employees for the project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was added successfully; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Thrown if an error occurs during the addition of the employee.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___tier_1_1_employees_service_a480930290ecdf5a2376b6b6896979a15}{ExistExistEmployee}}(employeeId))}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ employees.Add(employeeId);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}810"{}},\ ex);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_employees_service_a480930290ecdf5a2376b6b6896979a15}\index{Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}!ExistExistEmployee@{ExistExistEmployee}}
+\index{ExistExistEmployee@{ExistExistEmployee}!Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}}
+\doxysubsubsection{\texorpdfstring{ExistExistEmployee()}{ExistExistEmployee()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_employees_service_a480930290ecdf5a2376b6b6896979a15} 
+bool Data\+\_\+\+Tier.\+Employees\+Service.\+Exist\+Exist\+Employee (\begin{DoxyParamCaption}\item[{int}]{employee\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Checks if an employee exists in the list of employees for the project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee exists in the list; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ employees.Contains(employeeId);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_employees_service_a7156846d426e18c24aa4c9767407a388}\index{Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}!RemoveEmployee@{RemoveEmployee}}
+\index{RemoveEmployee@{RemoveEmployee}!Data\_Tier.EmployeesService@{Data\_Tier.EmployeesService}}
+\doxysubsubsection{\texorpdfstring{RemoveEmployee()}{RemoveEmployee()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_employees_service_a7156846d426e18c24aa4c9767407a388} 
+bool Data\+\_\+\+Tier.\+Employees\+Service.\+Remove\+Employee (\begin{DoxyParamCaption}\item[{int}]{employee\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Removes an employee from the list of employees for the project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee\+Id} & The ID of the employee to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was removed successfully; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Thrown if an error occurs during the removal of the employee.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_data___tier_1_1_employees_service_a480930290ecdf5a2376b6b6896979a15}{ExistExistEmployee}}(employeeId))}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ employees.Remove(employeeId);}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}811"{}},\ ex);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Data Tier/Employees\+Service.\+cs\end{DoxyCompactItemize}

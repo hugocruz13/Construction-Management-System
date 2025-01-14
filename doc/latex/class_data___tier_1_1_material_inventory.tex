@@ -1,0 +1,391 @@
+\doxysection{Data\+\_\+\+Tier.\+Material\+Inventory Class Reference}
+\hypertarget{class_data___tier_1_1_material_inventory}{}\label{class_data___tier_1_1_material_inventory}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+
+
+Singleton class that manages the material inventory. Allows adding, removing, updating, and retrieving materials.  
+
+
+
+
+Inheritance diagram for Data\+\_\+\+Tier.\+Material\+Inventory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_data___tier_1_1_material_inventory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Data\+\_\+\+Tier.\+Material\+Inventory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_data___tier_1_1_material_inventory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_data___tier_1_1_material_inventory_aa1e2a8c410200411cfb9c36c77c7106b}{Add\+Material}} (\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} inventory\+Quantity)
+\begin{DoxyCompactList}\small\item\em Adds a new material to the inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_material_inventory_aa07d2628caebc320b65db94ec768ac1e}{Verify\+Material\+Existence}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Verifies if a material exists in the inventory based on the material ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_material_inventory_a36deed3d8216bf013a48f70a41ffcad7}{Verify\+Material\+Quantity}} (int id\+Material, int quantity)
+\begin{DoxyCompactList}\small\item\em Verifies if there is enough quantity of a material in the inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_material_inventory_a3d349ce4896a0d3a9b46de1000b82cc6}{Update\+Quantity}} (int id\+Material, int quantity\+Update)
+\begin{DoxyCompactList}\small\item\em Updates the quantity of a material in the inventory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_material_inventory_af9ff7521af7288f477b6946558dd610b}{Use\+Material}} (int id\+Material, int quantity)
+\begin{DoxyCompactList}\small\item\em Decreases the quantity of a material in the inventory when it is used. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} \mbox{\hyperlink{class_data___tier_1_1_material_inventory_a8750a652f46590b9846c3b8508dbd328}{Get\+Material\+Quantity}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Retrieves the material and its quantity from the inventory based on the material ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory}{Interface\+\_\+\+Tier.\+IMaterial\+Inventory}}}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___tier_1_1_material_inventory_a62b598747ca2821f1614d7e94d69010c}{Material\+Inventory}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_data___tier_1_1_material_inventory}{Material\+Inventory} class with an empty inventory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_data___tier_1_1_material_inventory}{Material\+Inventory}} \mbox{\hyperlink{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of the \doxylink{class_data___tier_1_1_material_inventory}{Material\+Inventory} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class that manages the material inventory. Allows adding, removing, updating, and retrieving materials. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___tier_1_1_material_inventory_a62b598747ca2821f1614d7e94d69010c}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}!MaterialInventory@{MaterialInventory}}
+\index{MaterialInventory@{MaterialInventory}!Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+\doxysubsubsection{\texorpdfstring{MaterialInventory()}{MaterialInventory()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_material_inventory_a62b598747ca2821f1614d7e94d69010c} 
+Data\+\_\+\+Tier.\+Material\+Inventory.\+Material\+Inventory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \doxylink{class_data___tier_1_1_material_inventory}{Material\+Inventory} class with an empty inventory. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ inventory\ =\ \textcolor{keyword}{new}\ List<MaterialQuantity>(5);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___tier_1_1_material_inventory_aa1e2a8c410200411cfb9c36c77c7106b}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}!AddMaterial@{AddMaterial}}
+\index{AddMaterial@{AddMaterial}!Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+\doxysubsubsection{\texorpdfstring{AddMaterial()}{AddMaterial()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_material_inventory_aa1e2a8c410200411cfb9c36c77c7106b} 
+int Data\+\_\+\+Tier.\+Material\+Inventory.\+Add\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{inventory\+Quantity}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new material to the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inventory\+Quantity} & The material quantity to add to the inventory.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the added material.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if the material is null or if any error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_a80ab8984d2712428917a593dbcc445a4}{Interface\+\_\+\+Tier.\+IMaterial\+Inventory}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (inventoryQuantity\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}601"{}});}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inventory.Add(inventoryQuantity);}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ inventoryQuantity.\mbox{\hyperlink{class_object___tier_1_1_material_quantity_a647015cfcff2ffae0a3b03a2fb1823c8}{IdMaterial}};}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}603"{}},\ ex);}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_material_inventory_a8750a652f46590b9846c3b8508dbd328}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}!GetMaterialQuantity@{GetMaterialQuantity}}
+\index{GetMaterialQuantity@{GetMaterialQuantity}!Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+\doxysubsubsection{\texorpdfstring{GetMaterialQuantity()}{GetMaterialQuantity()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_material_inventory_a8750a652f46590b9846c3b8508dbd328} 
+\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} Data\+\_\+\+Tier.\+Material\+Inventory.\+Get\+Material\+Quantity (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the material and its quantity from the inventory based on the material ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the material quantity object if found, otherwise null.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during retrieval. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{MaterialQuantity}}\ material\ =\ FindMaterial(idMaterial);}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ material;}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}617"{}},\ ex);}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_material_inventory_a3d349ce4896a0d3a9b46de1000b82cc6}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}!UpdateQuantity@{UpdateQuantity}}
+\index{UpdateQuantity@{UpdateQuantity}!Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+\doxysubsubsection{\texorpdfstring{UpdateQuantity()}{UpdateQuantity()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_material_inventory_a3d349ce4896a0d3a9b46de1000b82cc6} 
+bool Data\+\_\+\+Tier.\+Material\+Inventory.\+Update\+Quantity (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{int}]{quantity\+Update}{}\end{DoxyParamCaption})}
+
+
+
+Updates the quantity of a material in the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to update.\\
+\hline
+{\em quantity\+Update} & The new quantity of the material.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the quantity was updated successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the update process. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_a25c62d5832de047d3918ed12a106c94b}{Interface\+\_\+\+Tier.\+IMaterial\+Inventory}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{MaterialQuantity}}\ material\ =\ FindMaterial(idMaterial);}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ material.Quantity\ =\ quantityUpdate;}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}607"{}},\ ex);}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_material_inventory_af9ff7521af7288f477b6946558dd610b}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}!UseMaterial@{UseMaterial}}
+\index{UseMaterial@{UseMaterial}!Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+\doxysubsubsection{\texorpdfstring{UseMaterial()}{UseMaterial()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_material_inventory_af9ff7521af7288f477b6946558dd610b} 
+bool Data\+\_\+\+Tier.\+Material\+Inventory.\+Use\+Material (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})}
+
+
+
+Decreases the quantity of a material in the inventory when it is used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to use.\\
+\hline
+{\em quantity} & The quantity of material to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the material quantity was successfully decreased, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the use process. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_a1c16fcc291a090c865e33d9948630887}{Interface\+\_\+\+Tier.\+IMaterial\+Inventory}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{MaterialQuantity}}\ material\ =\ FindMaterial(idMaterial);}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ material.Quantity\ -\/=\ quantity;}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}608"{}},\ ex);}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_material_inventory_aa07d2628caebc320b65db94ec768ac1e}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}!VerifyMaterialExistence@{VerifyMaterialExistence}}
+\index{VerifyMaterialExistence@{VerifyMaterialExistence}!Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+\doxysubsubsection{\texorpdfstring{VerifyMaterialExistence()}{VerifyMaterialExistence()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_material_inventory_aa07d2628caebc320b65db94ec768ac1e} 
+bool Data\+\_\+\+Tier.\+Material\+Inventory.\+Verify\+Material\+Existence (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})}
+
+
+
+Verifies if a material exists in the inventory based on the material ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to verify.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the material exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the verification process. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_ace16841dc7fa2387b44bb0d9b7aae463}{Interface\+\_\+\+Tier.\+IMaterial\+Inventory}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{MaterialQuantity}}\ material\ \textcolor{keywordflow}{in}\ inventory)}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material.\mbox{\hyperlink{class_object___tier_1_1_material_quantity_a647015cfcff2ffae0a3b03a2fb1823c8}{IdMaterial}}\ ==\ idMaterial)}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}605"{}},\ ex);}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_material_inventory_a36deed3d8216bf013a48f70a41ffcad7}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}!VerifyMaterialQuantity@{VerifyMaterialQuantity}}
+\index{VerifyMaterialQuantity@{VerifyMaterialQuantity}!Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+\doxysubsubsection{\texorpdfstring{VerifyMaterialQuantity()}{VerifyMaterialQuantity()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_material_inventory_a36deed3d8216bf013a48f70a41ffcad7} 
+bool Data\+\_\+\+Tier.\+Material\+Inventory.\+Verify\+Material\+Quantity (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})}
+
+
+
+Verifies if there is enough quantity of a material in the inventory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to check.\\
+\hline
+{\em quantity} & The quantity of material to check for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if there is enough quantity, otherwise false.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_material_inventory_ad85731825e0eb3d19fa2d90124efd5ce}{Interface\+\_\+\+Tier.\+IMaterial\+Inventory}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{MaterialQuantity}}\ material\ =\ FindMaterial(idMaterial);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material.\mbox{\hyperlink{class_object___tier_1_1_material_quantity_a55dd2effe93e56e2f48ba2df7d0caab2}{Quantity}}\ >=\ quantity)}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b}\index{Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}!Instance@{Instance}}
+\index{Instance@{Instance}!Data\_Tier.MaterialInventory@{Data\_Tier.MaterialInventory}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_material_inventory_af75102dd2f1d48e0242d49c827b4228b} 
+\mbox{\hyperlink{class_data___tier_1_1_material_inventory}{Material\+Inventory}} Data\+\_\+\+Tier.\+Material\+Inventory.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the singleton instance of the \doxylink{class_data___tier_1_1_material_inventory}{Material\+Inventory} class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (instance\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___tier_1_1_material_inventory_a62b598747ca2821f1614d7e94d69010c}{MaterialInventory}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Data Tier/Material\+Inventory.\+cs\end{DoxyCompactItemize}

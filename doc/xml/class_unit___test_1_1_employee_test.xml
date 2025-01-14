@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="class_unit___test_1_1_employee_test" kind="class" language="C#" prot="public">
+    <compoundname>Unit_Test::EmployeeTest</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unit___test_1_1_employee_test_1aaef9f5a4ece6bb53c4dbfae41fffed9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unit_Test.EmployeeTest.TestDeleteEmployee</definition>
+        <argsstring>()</argsstring>
+        <name>TestDeleteEmployee</name>
+        <qualifiedname>Unit_Test.EmployeeTest.TestDeleteEmployee</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/EmployeeTest.cs" line="11" column="17" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/EmployeeTest.cs" bodystart="11" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/EmployeeTest.cs" line="8" column="7" bodyfile="C:/Users/hugoc/Desktop/2024_2025/Programação Orientada a Objetos/trabalhoPOO_23010_Fase2/src/Unit Test/EmployeeTest.cs" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_unit___test_1_1_employee_test_1aaef9f5a4ece6bb53c4dbfae41fffed9f" prot="public" virt="non-virtual"><scope>Unit_Test::EmployeeTest</scope><name>TestDeleteEmployee</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

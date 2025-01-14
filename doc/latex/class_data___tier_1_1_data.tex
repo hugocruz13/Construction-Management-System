@@ -1,0 +1,207 @@
+\doxysection{Data\+\_\+\+Tier.\+Data Class Reference}
+\hypertarget{class_data___tier_1_1_data}{}\label{class_data___tier_1_1_data}\index{Data\_Tier.Data@{Data\_Tier.Data}}
+
+
+The {\ttfamily \doxylink{class_data___tier_1_1_data}{Data}} class serves as a centralized data manager for the application. It collects data from various parts of the system, organizes it into lists, and provides methods for saving to and loading from a binary file.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_data_ab06d39156f683a619c6e3ce58b83e901}{Collect\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Collects data from various system modules and stores it in the class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_data_a3c403f62c0adf6c8f5fdfc9f2e49db47}{Put\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Updates the system modules with the data stored in the class\textquotesingle{}s lists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_data___tier_1_1_data_a6d515bd0a2a3ff796d88ad647a8d974c}{Save\+Data}} (string path)
+\begin{DoxyCompactList}\small\item\em Saves the current data to a binary file at the specified path. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_data___tier_1_1_data_a8027e0d5f608e977f26ac1b1f7586113}{Load\+Data}} (string path)
+\begin{DoxyCompactList}\small\item\em Loads data from a binary file and updates the system with the loaded data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \doxylink{class_data___tier_1_1_data}{Data}} class serves as a centralized data manager for the application. It collects data from various parts of the system, organizes it into lists, and provides methods for saving to and loading from a binary file. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___tier_1_1_data_ab06d39156f683a619c6e3ce58b83e901}\index{Data\_Tier.Data@{Data\_Tier.Data}!CollectData@{CollectData}}
+\index{CollectData@{CollectData}!Data\_Tier.Data@{Data\_Tier.Data}}
+\doxysubsubsection{\texorpdfstring{CollectData()}{CollectData()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_data_ab06d39156f683a619c6e3ce58b83e901} 
+bool Data\+\_\+\+Tier.\+Data.\+Collect\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Collects data from various system modules and stores it in the class. 
+
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily true} if the data is collected successfully.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Thrown if data collection fails.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ clients\ =\ Clients.Instance.ClientsD;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ employees\ =\ Employees.Instance.EmployeesD;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ materials\ =\ Materials.Instance.MaterialD;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inventory\ =\ MaterialInventory.Instance.InventoryD;}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ projects\ =\ Projects.Instance.ProjectsD;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception)}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}700"{}});}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_data_a8027e0d5f608e977f26ac1b1f7586113}\index{Data\_Tier.Data@{Data\_Tier.Data}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!Data\_Tier.Data@{Data\_Tier.Data}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_data_a8027e0d5f608e977f26ac1b1f7586113} 
+static bool Data\+\_\+\+Tier.\+Data.\+Load\+Data (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads data from a binary file and updates the system with the loaded data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path from where the data will be loaded.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily true} if the data is successfully loaded and updated.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Thrown if an error occurs during data loading.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Data\ data\ =\ \textcolor{keyword}{new}\ Data();}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Stream\ s\ =\ File.Open(path,\ FileMode.Open,\ FileAccess.Read);}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BinaryFormatter\ b\ =\ \textcolor{keyword}{new}\ BinaryFormatter();}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ data\ =\ (Data)b.Deserialize(s);}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ s.Close();}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!data.PutData())}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Exception(\textcolor{stringliteral}{"{}700"{}});}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}706"{}}\ +\ ex.Message);}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_data_a3c403f62c0adf6c8f5fdfc9f2e49db47}\index{Data\_Tier.Data@{Data\_Tier.Data}!PutData@{PutData}}
+\index{PutData@{PutData}!Data\_Tier.Data@{Data\_Tier.Data}}
+\doxysubsubsection{\texorpdfstring{PutData()}{PutData()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_data_a3c403f62c0adf6c8f5fdfc9f2e49db47} 
+bool Data\+\_\+\+Tier.\+Data.\+Put\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Updates the system modules with the data stored in the class\textquotesingle{}s lists. 
+
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily true} if the data is successfully updated.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Thrown if updating data fails.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Clients.Instance.ClientsD\ =\ clients;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Employees.Instance.EmployeesD\ =\ employees;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MaterialInventory.Instance.InventoryD\ =\ inventory;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Materials.Instance.MaterialD\ =\ materials;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Projects.Instance.ProjectsD\ =\ projects;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SetCounterEqual();}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception)}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Exception(\textcolor{stringliteral}{"{}701"{}});}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_data_a6d515bd0a2a3ff796d88ad647a8d974c}\index{Data\_Tier.Data@{Data\_Tier.Data}!SaveData@{SaveData}}
+\index{SaveData@{SaveData}!Data\_Tier.Data@{Data\_Tier.Data}}
+\doxysubsubsection{\texorpdfstring{SaveData()}{SaveData()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_data_a6d515bd0a2a3ff796d88ad647a8d974c} 
+static bool Data\+\_\+\+Tier.\+Data.\+Save\+Data (\begin{DoxyParamCaption}\item[{string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Saves the current data to a binary file at the specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path where the data will be saved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns {\ttfamily true} if the data is successfully saved.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Thrown if an error occurs during data saving.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Data\ data\ =\ \textcolor{keyword}{new}\ Data();}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!data.CollectData())}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}702"{}});}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Stream\ fs\ =\ \textcolor{keyword}{new}\ FileStream(path,\ FileMode.Create);}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BinaryFormatter\ binaryFormatter\ =\ \textcolor{keyword}{new}\ BinaryFormatter();}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ binaryFormatter.Serialize(fs,\ data);}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ fs.Close();}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}705"{}}\ +\ ex.Message);}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Data Tier/Data.\+cs\end{DoxyCompactItemize}

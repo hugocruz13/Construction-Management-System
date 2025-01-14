@@ -1,0 +1,318 @@
+\doxysection{Object\+\_\+\+Tier.\+Project Class Reference}
+\hypertarget{class_object___tier_1_1_project}{}\label{class_object___tier_1_1_project}\index{Object\_Tier.Project@{Object\_Tier.Project}}
+
+
+Represents a project with information about its status, start date, end date, and ID management. ~\newline
+  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object___tier_1_1_project_a7cb354f80977bd3e2e793ef4e28bbfc6}{Project}} (\mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}} status)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_object___tier_1_1_project}{Project} class with a specified status. The start date is set to the current date, and the end date is initialized to the default value. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_object___tier_1_1_project_a3df4a9fe75ef04957130fd02bcb9ac55}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object is equal to the current project. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_object___tier_1_1_project_a0c76ca2fae4366077a3f4ffdd0501179}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_object___tier_1_1_project}{Project}} \mbox{\hyperlink{class_object___tier_1_1_project_a8351044e6f505816789d63f1fc7364f8}{Create\+Project}} (\mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}} status)
+\begin{DoxyCompactList}\small\item\em Creates a new project with the specified status. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_project_a3ce946f67b692f0ae24ff4c2e9b34463}{operator-\/}} (\mbox{\hyperlink{class_object___tier_1_1_project}{Project}} project1, \mbox{\hyperlink{class_object___tier_1_1_project}{Project}} project2)
+\begin{DoxyCompactList}\small\item\em Compares two projects for equality based on their properties. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_project_a27f3404f7482fc6cfb962be6402bc999}{operator+}} (\mbox{\hyperlink{class_object___tier_1_1_project}{Project}} project1, \mbox{\hyperlink{class_object___tier_1_1_project}{Project}} project2)
+\begin{DoxyCompactList}\small\item\em Determines whether two projects are not equal. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_project_af94c5812a8877f436a7253dfd629e626}{get\+Next\+Project\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Increments the static project ID counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_object___tier_1_1_project_a038b776d7de96a4b42f2e47cbad02b5d}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the project ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}} \mbox{\hyperlink{class_object___tier_1_1_project_ae9b40f19d84e72af87d734619462614f}{Status}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the project status. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_object___tier_1_1_project_ae3f7b89dae69e77661676c9861252944}{Start\+Date}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the start date of the project. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_object___tier_1_1_project_a48bf429fc850d6c334a17e444eebd411}{End\+Date}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the end date of the project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a project with information about its status, start date, end date, and ID management. ~\newline
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_object___tier_1_1_project_a7cb354f80977bd3e2e793ef4e28bbfc6}\index{Object\_Tier.Project@{Object\_Tier.Project}!Project@{Project}}
+\index{Project@{Project}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{Project()}{Project()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_a7cb354f80977bd3e2e793ef4e28bbfc6} 
+Object\+\_\+\+Tier.\+Project.\+Project (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}}}]{status}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_object___tier_1_1_project}{Project} class with a specified status. The start date is set to the current date, and the end date is initialized to the default value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The initial status of the project.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_project_a038b776d7de96a4b42f2e47cbad02b5d}{Id}}\ =\ projectIdCounter++;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_project_ae9b40f19d84e72af87d734619462614f}{Status}}\ =\ status;}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ startDate\ =\ DateTime.Now;}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_project_a48bf429fc850d6c334a17e444eebd411}{EndDate}}\ =\ \textcolor{keyword}{new}\ DateTime();}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_object___tier_1_1_project_a8351044e6f505816789d63f1fc7364f8}\index{Object\_Tier.Project@{Object\_Tier.Project}!CreateProject@{CreateProject}}
+\index{CreateProject@{CreateProject}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{CreateProject()}{CreateProject()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_a8351044e6f505816789d63f1fc7364f8} 
+static \mbox{\hyperlink{class_object___tier_1_1_project}{Project}} Object\+\_\+\+Tier.\+Project.\+Create\+Project (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}}}]{status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new project with the specified status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The status of the new project.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_object___tier_1_1_project}{Project} instance.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_object___tier_1_1_project_a7cb354f80977bd3e2e793ef4e28bbfc6}{Project}}(status);}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_project_a3df4a9fe75ef04957130fd02bcb9ac55}\index{Object\_Tier.Project@{Object\_Tier.Project}!Equals@{Equals}}
+\index{Equals@{Equals}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_a3df4a9fe75ef04957130fd02bcb9ac55} 
+override bool Object\+\_\+\+Tier.\+Project.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Determines whether the specified object is equal to the current project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare with the current project.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{class_object___tier_1_1_project_a7cb354f80977bd3e2e793ef4e28bbfc6}{Project}})}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_project_a7cb354f80977bd3e2e793ef4e28bbfc6}{Project}}\ otherproject\ =\ obj\ as\ \mbox{\hyperlink{class_object___tier_1_1_project_a7cb354f80977bd3e2e793ef4e28bbfc6}{Project}};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_object___tier_1_1_project_ae3f7b89dae69e77661676c9861252944}{StartDate}}\ ==\ otherproject.StartDate)}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_project_af94c5812a8877f436a7253dfd629e626}\index{Object\_Tier.Project@{Object\_Tier.Project}!getNextProjectId@{getNextProjectId}}
+\index{getNextProjectId@{getNextProjectId}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{getNextProjectId()}{getNextProjectId()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_af94c5812a8877f436a7253dfd629e626} 
+static bool Object\+\_\+\+Tier.\+Project.\+get\+Next\+Project\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Increments the static project ID counter. 
+
+\begin{DoxyReturn}{Returns}
+True after incrementing the counter.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ projectIdCounter++;}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_project_a27f3404f7482fc6cfb962be6402bc999}\index{Object\_Tier.Project@{Object\_Tier.Project}!operator+@{operator+}}
+\index{operator+@{operator+}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_a27f3404f7482fc6cfb962be6402bc999} 
+static bool Object\+\_\+\+Tier.\+Project.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_project}{Project}}}]{project1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_project}{Project}}}]{project2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determines whether two projects are not equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project1} & The first project.\\
+\hline
+{\em project2} & The second project.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the projects are not equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(project1\ -\/\ project2);}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_project_a3ce946f67b692f0ae24ff4c2e9b34463}\index{Object\_Tier.Project@{Object\_Tier.Project}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_a3ce946f67b692f0ae24ff4c2e9b34463} 
+static bool Object\+\_\+\+Tier.\+Project.\+operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_project}{Project}}}]{project1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_project}{Project}}}]{project2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compares two projects for equality based on their properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project1} & The first project.\\
+\hline
+{\em project2} & The second project.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the projects are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (project1.Equals(project2))}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_project_a0c76ca2fae4366077a3f4ffdd0501179}\index{Object\_Tier.Project@{Object\_Tier.Project}!ToString@{ToString}}
+\index{ToString@{ToString}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_a0c76ca2fae4366077a3f4ffdd0501179} 
+override string Object\+\_\+\+Tier.\+Project.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the project. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the project ID, status, start date, and end date.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_object___tier_1_1_project_a038b776d7de96a4b42f2e47cbad02b5d}{Id}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_project_ae9b40f19d84e72af87d734619462614f}{Status}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\mbox{\hyperlink{class_object___tier_1_1_project_ae3f7b89dae69e77661676c9861252944}{StartDate}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_project_a48bf429fc850d6c334a17e444eebd411}{EndDate}};}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_object___tier_1_1_project_a48bf429fc850d6c334a17e444eebd411}\index{Object\_Tier.Project@{Object\_Tier.Project}!EndDate@{EndDate}}
+\index{EndDate@{EndDate}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{EndDate}{EndDate}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_a48bf429fc850d6c334a17e444eebd411} 
+Date\+Time Object\+\_\+\+Tier.\+Project.\+End\+Date\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the end date of the project. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ endDate\ =\ value;\ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ endDate;\ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_project_a038b776d7de96a4b42f2e47cbad02b5d}\index{Object\_Tier.Project@{Object\_Tier.Project}!Id@{Id}}
+\index{Id@{Id}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_a038b776d7de96a4b42f2e47cbad02b5d} 
+int Object\+\_\+\+Tier.\+Project.\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the project ID. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ idProject\ =\ value;\ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ idProject;\ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_project_ae3f7b89dae69e77661676c9861252944}\index{Object\_Tier.Project@{Object\_Tier.Project}!StartDate@{StartDate}}
+\index{StartDate@{StartDate}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{StartDate}{StartDate}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_ae3f7b89dae69e77661676c9861252944} 
+Date\+Time Object\+\_\+\+Tier.\+Project.\+Start\+Date\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the start date of the project. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ startDate;\ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_project_ae9b40f19d84e72af87d734619462614f}\index{Object\_Tier.Project@{Object\_Tier.Project}!Status@{Status}}
+\index{Status@{Status}!Object\_Tier.Project@{Object\_Tier.Project}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_project_ae9b40f19d84e72af87d734619462614f} 
+\mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}} Object\+\_\+\+Tier.\+Project.\+Status\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the project status. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ status\ =\ value;\ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ status;\ \}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Object Tier/Project.\+cs\end{DoxyCompactItemize}

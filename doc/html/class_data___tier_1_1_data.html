@@ -90,6 +90,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_data___tier_1_1_data-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Data_Tier.Data Class Reference</div></div>
 </div><!--header-->
@@ -106,6 +107,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c403f62c0adf6c8f5fdfc9f2e49db47" id="r_a3c403f62c0adf6c8f5fdfc9f2e49db47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c403f62c0adf6c8f5fdfc9f2e49db47">PutData</a> ()</td></tr>
 <tr class="memdesc:a3c403f62c0adf6c8f5fdfc9f2e49db47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the system modules with the data stored in the class's lists.  <br /></td></tr>
 <tr class="separator:a3c403f62c0adf6c8f5fdfc9f2e49db47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6d515bd0a2a3ff796d88ad647a8d974c" id="r_a6d515bd0a2a3ff796d88ad647a8d974c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d515bd0a2a3ff796d88ad647a8d974c">SaveData</a> (string path)</td></tr>
+<tr class="memdesc:a6d515bd0a2a3ff796d88ad647a8d974c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current data to a binary file at the specified path.  <br /></td></tr>
+<tr class="separator:a6d515bd0a2a3ff796d88ad647a8d974c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8027e0d5f608e977f26ac1b1f7586113" id="r_a8027e0d5f608e977f26ac1b1f7586113"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8027e0d5f608e977f26ac1b1f7586113">LoadData</a> (string path)</td></tr>
+<tr class="memdesc:a8027e0d5f608e977f26ac1b1f7586113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads data from a binary file and updates the system with the loaded data.  <br /></td></tr>
+<tr class="separator:a8027e0d5f608e977f26ac1b1f7586113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <code><a class="el" href="class_data___tier_1_1_data.html" title="The Data class serves as a centralized data manager for the application. It collects data from variou...">Data</a></code> class serves as a centralized data manager for the application. It collects data from various parts of the system, organizes it into lists, and provides methods for saving to and loading from a binary file. </p>
@@ -133,22 +143,84 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>        {</div>
-<div class="line"><span class="lineno">   58</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   59</span>            {</div>
-<div class="line"><span class="lineno">   60</span>                clients = Clients.Instance.ClientsD;</div>
-<div class="line"><span class="lineno">   61</span>                employees = Employees.Instance.EmployeesD;</div>
-<div class="line"><span class="lineno">   62</span>                materials = Materials.Instance.MaterialD;</div>
-<div class="line"><span class="lineno">   63</span>                inventory = MaterialInventory.Instance.InventoryD;</div>
-<div class="line"><span class="lineno">   64</span>                projects = Projects.Instance.ProjectsD;</div>
-<div class="line"><span class="lineno">   65</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   66</span>            }</div>
-<div class="line"><span class="lineno">   67</span>            <span class="keywordflow">catch</span> (Exception)</div>
-<div class="line"><span class="lineno">   68</span>            {</div>
-<div class="line"><span class="lineno">   69</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;700&quot;</span>);</div>
-<div class="line"><span class="lineno">   70</span>            }</div>
-<div class="line"><span class="lineno">   71</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>        {</div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   60</span>            {</div>
+<div class="line"><span class="lineno">   61</span>                clients = Clients.Instance.ClientsD;</div>
+<div class="line"><span class="lineno">   62</span>                employees = Employees.Instance.EmployeesD;</div>
+<div class="line"><span class="lineno">   63</span>                materials = Materials.Instance.MaterialD;</div>
+<div class="line"><span class="lineno">   64</span>                inventory = MaterialInventory.Instance.InventoryD;</div>
+<div class="line"><span class="lineno">   65</span>                projects = Projects.Instance.ProjectsD;</div>
+<div class="line"><span class="lineno">   66</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   67</span>            }</div>
+<div class="line"><span class="lineno">   68</span>            <span class="keywordflow">catch</span> (Exception)</div>
+<div class="line"><span class="lineno">   69</span>            {</div>
+<div class="line"><span class="lineno">   70</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;700&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span>            }</div>
+<div class="line"><span class="lineno">   72</span>        }</div>
 <div class="ttc" id="aclass_custom_exceptions_1_1_configuration_error_exception_html"><div class="ttname"><a href="class_custom_exceptions_1_1_configuration_error_exception.html">CustomExceptions.ConfigurationErrorException</a></div><div class="ttdoc">Custom exception used for handling configuration-related errors in the application.</div><div class="ttdef"><b>Definition</b> Execeptions.cs:17</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8027e0d5f608e977f26ac1b1f7586113" name="a8027e0d5f608e977f26ac1b1f7586113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8027e0d5f608e977f26ac1b1f7586113">&#9670;&#160;</a></span>LoadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Data_Tier.Data.LoadData </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads data from a binary file and updates the system with the loaded data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file path from where the data will be loaded.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns <code>true</code> if the data is successfully loaded and updated.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ConfigurationErrorException</td><td>Thrown if an error occurs during data loading.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  150</span>        {</div>
+<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  152</span>            {</div>
+<div class="line"><span class="lineno">  153</span>                Data data = <span class="keyword">new</span> Data();</div>
+<div class="line"><span class="lineno">  154</span>                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);</div>
+<div class="line"><span class="lineno">  155</span>                BinaryFormatter b = <span class="keyword">new</span> BinaryFormatter();</div>
+<div class="line"><span class="lineno">  156</span>                data = (Data)b.Deserialize(s);</div>
+<div class="line"><span class="lineno">  157</span>                s.Close();</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>                <span class="keywordflow">if</span> (!data.PutData())</div>
+<div class="line"><span class="lineno">  160</span>                {</div>
+<div class="line"><span class="lineno">  161</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;700&quot;</span>);</div>
+<div class="line"><span class="lineno">  162</span>                }</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  165</span>            }</div>
+<div class="line"><span class="lineno">  166</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  167</span>            {</div>
+<div class="line"><span class="lineno">  168</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;706&quot;</span> + ex.Message);</div>
+<div class="line"><span class="lineno">  169</span>            }</div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  171</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,24 +247,86 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>        {</div>
-<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   81</span>            {</div>
-<div class="line"><span class="lineno">   82</span>                Clients.Instance.ClientsD = clients;</div>
-<div class="line"><span class="lineno">   83</span>                Employees.Instance.EmployeesD = employees;</div>
-<div class="line"><span class="lineno">   84</span>                MaterialInventory.Instance.InventoryD = inventory;</div>
-<div class="line"><span class="lineno">   85</span>                Materials.Instance.MaterialD = materials;</div>
-<div class="line"><span class="lineno">   86</span>                Projects.Instance.ProjectsD = projects;</div>
-<div class="line"><span class="lineno">   87</span>                SetCounterEqual();</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   90</span>            }</div>
-<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">catch</span> (Exception)</div>
-<div class="line"><span class="lineno">   92</span>            {</div>
-<div class="line"><span class="lineno">   93</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;701&quot;</span>);</div>
-<div class="line"><span class="lineno">   94</span>            }</div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>        {</div>
+<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   82</span>            {</div>
+<div class="line"><span class="lineno">   83</span>                Clients.Instance.ClientsD = clients;</div>
+<div class="line"><span class="lineno">   84</span>                Employees.Instance.EmployeesD = employees;</div>
+<div class="line"><span class="lineno">   85</span>                MaterialInventory.Instance.InventoryD = inventory;</div>
+<div class="line"><span class="lineno">   86</span>                Materials.Instance.MaterialD = materials;</div>
+<div class="line"><span class="lineno">   87</span>                Projects.Instance.ProjectsD = projects;</div>
+<div class="line"><span class="lineno">   88</span>                SetCounterEqual();</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   91</span>            }</div>
+<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">catch</span> (Exception)</div>
+<div class="line"><span class="lineno">   93</span>            {</div>
+<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;701&quot;</span>);</div>
+<div class="line"><span class="lineno">   95</span>            }</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6d515bd0a2a3ff796d88ad647a8d974c" name="a6d515bd0a2a3ff796d88ad647a8d974c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d515bd0a2a3ff796d88ad647a8d974c">&#9670;&#160;</a></span>SaveData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Data_Tier.Data.SaveData </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves the current data to a binary file at the specified path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The file path where the data will be saved.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns <code>true</code> if the data is successfully saved.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ConfigurationErrorException</td><td>Thrown if an error occurs during data saving.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>        {</div>
+<div class="line"><span class="lineno">  121</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  122</span>            {</div>
+<div class="line"><span class="lineno">  123</span>                Data data = <span class="keyword">new</span> Data();</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>                <span class="keywordflow">if</span> (!data.CollectData())</div>
+<div class="line"><span class="lineno">  126</span>                {</div>
+<div class="line"><span class="lineno">  127</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;702&quot;</span>);</div>
+<div class="line"><span class="lineno">  128</span>                }</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>                Stream fs = <span class="keyword">new</span> FileStream(path, FileMode.Create);</div>
+<div class="line"><span class="lineno">  131</span>                BinaryFormatter binaryFormatter = <span class="keyword">new</span> BinaryFormatter();</div>
+<div class="line"><span class="lineno">  132</span>                binaryFormatter.Serialize(fs, data);</div>
+<div class="line"><span class="lineno">  133</span>                fs.Close();</div>
+<div class="line"><span class="lineno">  134</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  135</span>            }</div>
+<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  137</span>            {</div>
+<div class="line"><span class="lineno">  138</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;705&quot;</span> + ex.Message);</div>
+<div class="line"><span class="lineno">  139</span>            }</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>

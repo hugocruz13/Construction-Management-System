@@ -1,0 +1,328 @@
+\doxysection{Data\+\_\+\+Tier.\+Materials Class Reference}
+\hypertarget{class_data___tier_1_1_materials}{}\label{class_data___tier_1_1_materials}\index{Data\_Tier.Materials@{Data\_Tier.Materials}}
+
+
+Singleton class that manages the materials in the system. Allows adding, checking, updating, and retrieving materials.  
+
+
+
+
+Inheritance diagram for Data\+\_\+\+Tier.\+Materials\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_data___tier_1_1_materials__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Data\+\_\+\+Tier.\+Materials\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_data___tier_1_1_materials__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_data___tier_1_1_materials_a1026add42fcea848b41ad751d2597165}{Add\+Material}} (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material)
+\begin{DoxyCompactList}\small\item\em Adds a new material to the materials list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_materials_a2ae7a1c4e0049180cd2692986c0cc801}{Material\+Exist}} (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material)
+\begin{DoxyCompactList}\small\item\em Checks if a material already exists in the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_materials_ab88f6ef135939f18f53b0f8b69a1897f}{Material\+Exist}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Checks if a material exists in the list based on its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___tier_1_1_materials_a988296d288dd70a6b81d30b3e958f42f}{Update\+Price}} (int id\+Material, double price)
+\begin{DoxyCompactList}\small\item\em Updates the price of a material in the list based on its ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} \mbox{\hyperlink{class_data___tier_1_1_materials_a6f65b6a4fec15ac528a85ad7d0bdee52}{Get\+Material}} (int id\+Material)
+\begin{DoxyCompactList}\small\item\em Retrieves a material by its ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_interface___tier_1_1_i_materials}{Interface\+\_\+\+Tier.\+IMaterials}}}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___tier_1_1_materials_af3a454717f666196b48c534b7942923e}{Materials}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_data___tier_1_1_materials}{Materials} class with an empty list of materials. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_data___tier_1_1_materials}{Materials}} \mbox{\hyperlink{class_data___tier_1_1_materials_a56c75e67eb7cb8250d400c7361afa72b}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of the \doxylink{class_data___tier_1_1_materials}{Materials} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class that manages the materials in the system. Allows adding, checking, updating, and retrieving materials. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___tier_1_1_materials_af3a454717f666196b48c534b7942923e}\index{Data\_Tier.Materials@{Data\_Tier.Materials}!Materials@{Materials}}
+\index{Materials@{Materials}!Data\_Tier.Materials@{Data\_Tier.Materials}}
+\doxysubsubsection{\texorpdfstring{Materials()}{Materials()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_materials_af3a454717f666196b48c534b7942923e} 
+Data\+\_\+\+Tier.\+Materials.\+Materials (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializes a new instance of the \doxylink{class_data___tier_1_1_materials}{Materials} class with an empty list of materials. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ materials\ =\ \textcolor{keyword}{new}\ List<Material>(5);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___tier_1_1_materials_a1026add42fcea848b41ad751d2597165}\index{Data\_Tier.Materials@{Data\_Tier.Materials}!AddMaterial@{AddMaterial}}
+\index{AddMaterial@{AddMaterial}!Data\_Tier.Materials@{Data\_Tier.Materials}}
+\doxysubsubsection{\texorpdfstring{AddMaterial()}{AddMaterial()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_materials_a1026add42fcea848b41ad751d2597165} 
+int Data\+\_\+\+Tier.\+Materials.\+Add\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new material to the materials list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & The material to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the added material.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if the material is null or any error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_materials_afa8bcaf3922890078cd4506819403aea}{Interface\+\_\+\+Tier.\+IMaterials}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}600"{}});}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ materials.Add(material);}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ material.\mbox{\hyperlink{class_object___tier_1_1_material_ad01b17716ded41d1cf0ff1fdf37c1cd7}{Id}};}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}602"{}},\ ex);}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_materials_a6f65b6a4fec15ac528a85ad7d0bdee52}\index{Data\_Tier.Materials@{Data\_Tier.Materials}!GetMaterial@{GetMaterial}}
+\index{GetMaterial@{GetMaterial}!Data\_Tier.Materials@{Data\_Tier.Materials}}
+\doxysubsubsection{\texorpdfstring{GetMaterial()}{GetMaterial()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_materials_a6f65b6a4fec15ac528a85ad7d0bdee52} 
+\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} Data\+\_\+\+Tier.\+Materials.\+Get\+Material (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves a material by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The material if found, otherwise null.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the retrieval. \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material}{Material}}\ material\ =\ FindMaterial(idMaterial);}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ material;}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}619"{}},\ ex);}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_materials_ab88f6ef135939f18f53b0f8b69a1897f}\index{Data\_Tier.Materials@{Data\_Tier.Materials}!MaterialExist@{MaterialExist}}
+\index{MaterialExist@{MaterialExist}!Data\_Tier.Materials@{Data\_Tier.Materials}}
+\doxysubsubsection{\texorpdfstring{MaterialExist()}{MaterialExist()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_materials_ab88f6ef135939f18f53b0f8b69a1897f} 
+bool Data\+\_\+\+Tier.\+Materials.\+Material\+Exist (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a material exists in the list based on its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the check. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_materials_abf9743289093309c08fea23dbbf90891}{Interface\+\_\+\+Tier.\+IMaterials}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}\ material\ \textcolor{keywordflow}{in}\ materials)}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material.\mbox{\hyperlink{class_object___tier_1_1_material_ad01b17716ded41d1cf0ff1fdf37c1cd7}{Id}}\ ==\ idMaterial)}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}604"{}},\ ex);}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_materials_a2ae7a1c4e0049180cd2692986c0cc801}\index{Data\_Tier.Materials@{Data\_Tier.Materials}!MaterialExist@{MaterialExist}}
+\index{MaterialExist@{MaterialExist}!Data\_Tier.Materials@{Data\_Tier.Materials}}
+\doxysubsubsection{\texorpdfstring{MaterialExist()}{MaterialExist()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_materials_a2ae7a1c4e0049180cd2692986c0cc801} 
+bool Data\+\_\+\+Tier.\+Materials.\+Material\+Exist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a material already exists in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & The material to check for existence.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material exists, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}\ existingMaterial\ \textcolor{keywordflow}{in}\ materials)}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (existingMaterial\ -\/\ material)}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___tier_1_1_materials_a988296d288dd70a6b81d30b3e958f42f}\index{Data\_Tier.Materials@{Data\_Tier.Materials}!UpdatePrice@{UpdatePrice}}
+\index{UpdatePrice@{UpdatePrice}!Data\_Tier.Materials@{Data\_Tier.Materials}}
+\doxysubsubsection{\texorpdfstring{UpdatePrice()}{UpdatePrice()}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_materials_a988296d288dd70a6b81d30b3e958f42f} 
+bool Data\+\_\+\+Tier.\+Materials.\+Update\+Price (\begin{DoxyParamCaption}\item[{int}]{id\+Material}{, }\item[{double}]{price}{}\end{DoxyParamCaption})}
+
+
+
+Updates the price of a material in the list based on its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Material} & The ID of the material to update.\\
+\hline
+{\em price} & The new price to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the price was updated successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the update. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_interface___tier_1_1_i_materials_ab771a5cf8260d49375ac33a8c1188f09}{Interface\+\_\+\+Tier.\+IMaterials}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material}{Material}}\ material\ =\ FindMaterial(idMaterial);}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material\ !=\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ material.UnitPrice\ =\ price;}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}606"{}},\ ex);}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_data___tier_1_1_materials_a56c75e67eb7cb8250d400c7361afa72b}\index{Data\_Tier.Materials@{Data\_Tier.Materials}!Instance@{Instance}}
+\index{Instance@{Instance}!Data\_Tier.Materials@{Data\_Tier.Materials}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \label{class_data___tier_1_1_materials_a56c75e67eb7cb8250d400c7361afa72b} 
+\mbox{\hyperlink{class_data___tier_1_1_materials}{Materials}} Data\+\_\+\+Tier.\+Materials.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the singleton instance of the \doxylink{class_data___tier_1_1_materials}{Materials} class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (instance\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___tier_1_1_materials_af3a454717f666196b48c534b7942923e}{Materials}}();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Data Tier/Materials.\+cs\end{DoxyCompactItemize}

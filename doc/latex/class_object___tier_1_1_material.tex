@@ -1,0 +1,371 @@
+\doxysection{Object\+\_\+\+Tier.\+Material Class Reference}
+\hypertarget{class_object___tier_1_1_material}{}\label{class_object___tier_1_1_material}\index{Object\_Tier.Material@{Object\_Tier.Material}}
+
+
+Represents a material with ID, name, unit price, and registration date.  
+
+
+
+
+Inheritance diagram for Object\+\_\+\+Tier.\+Material\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_object___tier_1_1_material__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Object\+\_\+\+Tier.\+Material\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_object___tier_1_1_material__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object___tier_1_1_material_ab124aefbd361db83bcfb577070913fe7}{Material}} (string name, double price)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_object___tier_1_1_material}{Material} class with a name and unit price. Automatically assigns a unique ID. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_object___tier_1_1_material_a5cd49d5e3ddda0c7135ac876336da1fa}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object is equal to the current material. Materials are equal if their name and unit price match. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_object___tier_1_1_material_a8c107955d2aaa00ab6d453c65e9c7a3a}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the material, including ID, name, and unit price. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object___tier_1_1_material_ad0f93bc00f89c2dbaef441fee34dc707}{Compare\+To}} (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material)
+\begin{DoxyCompactList}\small\item\em Compares the current material to another material based on their name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_object___tier_1_1_material}{Material}} \mbox{\hyperlink{class_object___tier_1_1_material_a64caa0a7f747888b483824d87cfed394}{Create\+Material}} (string name, double price)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_object___tier_1_1_material}{Material} instance. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_material_ac347c1c7bc52bfa67796ae1924a90d90}{operator-\/}} (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material1, \mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material2)
+\begin{DoxyCompactList}\small\item\em Checks if two materials are equal using the "{}-\/"{} operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_material_a10edccf3fe84f57ea813e1d31ce7fa29}{operator+}} (\mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material1, \mbox{\hyperlink{class_object___tier_1_1_material}{Material}} material2)
+\begin{DoxyCompactList}\small\item\em Checks if two materials are not equal using the "{}+"{} operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_material_ad1109779ef042c08f618a5833da28bae}{get\+Next\+Material\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Increments the static material ID counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_object___tier_1_1_material_ad01b17716ded41d1cf0ff1fdf37c1cd7}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the ID of the material. Read-\/only. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_object___tier_1_1_material_ab45d1fcfc21da59294983c2ed4b8bd0d}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name of the material. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_object___tier_1_1_material_a9a149aa2f608df2299441d2db3b7e5b8}{Unit\+Price}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the unit price of the material. The value must be greater than zero. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_object___tier_1_1_material_a91101e2d675adc4b6dddc132a26aaafb}{Last\+Registe}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the last registration date of the material. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a material with ID, name, unit price, and registration date. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_object___tier_1_1_material_ab124aefbd361db83bcfb577070913fe7}\index{Object\_Tier.Material@{Object\_Tier.Material}!Material@{Material}}
+\index{Material@{Material}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{Material()}{Material()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_ab124aefbd361db83bcfb577070913fe7} 
+Object\+\_\+\+Tier.\+Material.\+Material (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{double}]{price}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_object___tier_1_1_material}{Material} class with a name and unit price. Automatically assigns a unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the material.\\
+\hline
+{\em price} & The unit price of the material.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{id}\ =\ materialIdCounter++;}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_ab45d1fcfc21da59294983c2ed4b8bd0d}{Name}}\ =\ name.ToUpper().Trim();}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_a9a149aa2f608df2299441d2db3b7e5b8}{UnitPrice}}\ =\ price;}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_a91101e2d675adc4b6dddc132a26aaafb}{LastRegiste}}\ =\ DateTime.Now;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_object___tier_1_1_material_ad0f93bc00f89c2dbaef441fee34dc707}\index{Object\_Tier.Material@{Object\_Tier.Material}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_ad0f93bc00f89c2dbaef441fee34dc707} 
+int Object\+\_\+\+Tier.\+Material.\+Compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material}{}\end{DoxyParamCaption})}
+
+
+
+Compares the current material to another material based on their name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & The material to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value indicating the relative order of the materials.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_object___tier_1_1_material_ab45d1fcfc21da59294983c2ed4b8bd0d}{Name}}.CompareTo(material.Name);}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_a64caa0a7f747888b483824d87cfed394}\index{Object\_Tier.Material@{Object\_Tier.Material}!CreateMaterial@{CreateMaterial}}
+\index{CreateMaterial@{CreateMaterial}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{CreateMaterial()}{CreateMaterial()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_a64caa0a7f747888b483824d87cfed394} 
+static \mbox{\hyperlink{class_object___tier_1_1_material}{Material}} Object\+\_\+\+Tier.\+Material.\+Create\+Material (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{double}]{price}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \doxylink{class_object___tier_1_1_material}{Material} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the material.\\
+\hline
+{\em price} & The unit price of the material.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_object___tier_1_1_material}{Material} object.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_object___tier_1_1_material_ab124aefbd361db83bcfb577070913fe7}{Material}}(name,\ price);}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_a5cd49d5e3ddda0c7135ac876336da1fa}\index{Object\_Tier.Material@{Object\_Tier.Material}!Equals@{Equals}}
+\index{Equals@{Equals}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_a5cd49d5e3ddda0c7135ac876336da1fa} 
+override bool Object\+\_\+\+Tier.\+Material.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Determines whether the specified object is equal to the current material. Materials are equal if their name and unit price match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare with the current material.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{class_object___tier_1_1_material_ab124aefbd361db83bcfb577070913fe7}{Material}})}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_ab124aefbd361db83bcfb577070913fe7}{Material}}\ otherMaterial\ =\ obj\ as\ \mbox{\hyperlink{class_object___tier_1_1_material_ab124aefbd361db83bcfb577070913fe7}{Material}};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (name\ ==\ otherMaterial.Name\ \&\&\ unitPrice\ ==\ otherMaterial.UnitPrice)}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_ad1109779ef042c08f618a5833da28bae}\index{Object\_Tier.Material@{Object\_Tier.Material}!getNextMaterialId@{getNextMaterialId}}
+\index{getNextMaterialId@{getNextMaterialId}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{getNextMaterialId()}{getNextMaterialId()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_ad1109779ef042c08f618a5833da28bae} 
+static bool Object\+\_\+\+Tier.\+Material.\+get\+Next\+Material\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Increments the static material ID counter. 
+
+\begin{DoxyReturn}{Returns}
+True after incrementing the counter.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ materialIdCounter++;}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_a10edccf3fe84f57ea813e1d31ce7fa29}\index{Object\_Tier.Material@{Object\_Tier.Material}!operator+@{operator+}}
+\index{operator+@{operator+}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_a10edccf3fe84f57ea813e1d31ce7fa29} 
+static bool Object\+\_\+\+Tier.\+Material.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if two materials are not equal using the "{}+"{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material1} & The first material.\\
+\hline
+{\em material2} & The second material.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the materials are not equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(material1\ -\/\ material2);}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_ac347c1c7bc52bfa67796ae1924a90d90}\index{Object\_Tier.Material@{Object\_Tier.Material}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_ac347c1c7bc52bfa67796ae1924a90d90} 
+static bool Object\+\_\+\+Tier.\+Material.\+operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_material}{Material}}}]{material2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if two materials are equal using the "{}-\/"{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material1} & The first material.\\
+\hline
+{\em material2} & The second material.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the materials are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material1.Equals(material2))}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_a8c107955d2aaa00ab6d453c65e9c7a3a}\index{Object\_Tier.Material@{Object\_Tier.Material}!ToString@{ToString}}
+\index{ToString@{ToString}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_a8c107955d2aaa00ab6d453c65e9c7a3a} 
+override string Object\+\_\+\+Tier.\+Material.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the material, including ID, name, and unit price. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the material.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_object___tier_1_1_material_ad01b17716ded41d1cf0ff1fdf37c1cd7}{Id}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_material_ab45d1fcfc21da59294983c2ed4b8bd0d}{Name}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_material_a9a149aa2f608df2299441d2db3b7e5b8}{UnitPrice}};}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_object___tier_1_1_material_ad01b17716ded41d1cf0ff1fdf37c1cd7}\index{Object\_Tier.Material@{Object\_Tier.Material}!Id@{Id}}
+\index{Id@{Id}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_ad01b17716ded41d1cf0ff1fdf37c1cd7} 
+int Object\+\_\+\+Tier.\+Material.\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the ID of the material. Read-\/only. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ id;\ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_a91101e2d675adc4b6dddc132a26aaafb}\index{Object\_Tier.Material@{Object\_Tier.Material}!LastRegiste@{LastRegiste}}
+\index{LastRegiste@{LastRegiste}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{LastRegiste}{LastRegiste}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_a91101e2d675adc4b6dddc132a26aaafb} 
+Date\+Time Object\+\_\+\+Tier.\+Material.\+Last\+Registe\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the last registration date of the material. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ lastRegiste\ =\ value;\ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ lastRegiste;\ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_ab45d1fcfc21da59294983c2ed4b8bd0d}\index{Object\_Tier.Material@{Object\_Tier.Material}!Name@{Name}}
+\index{Name@{Name}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_ab45d1fcfc21da59294983c2ed4b8bd0d} 
+string Object\+\_\+\+Tier.\+Material.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the name of the material. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ name\ =\ value;\ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ name;\ \}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_a9a149aa2f608df2299441d2db3b7e5b8}\index{Object\_Tier.Material@{Object\_Tier.Material}!UnitPrice@{UnitPrice}}
+\index{UnitPrice@{UnitPrice}!Object\_Tier.Material@{Object\_Tier.Material}}
+\doxysubsubsection{\texorpdfstring{UnitPrice}{UnitPrice}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_a9a149aa2f608df2299441d2db3b7e5b8} 
+double Object\+\_\+\+Tier.\+Material.\+Unit\+Price\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the unit price of the material. The value must be greater than zero. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ >\ 0)}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ unitPrice\ =\ value;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ unitPrice;\ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Object Tier/Material.\+cs\end{DoxyCompactItemize}

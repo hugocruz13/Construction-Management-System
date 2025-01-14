@@ -227,32 +227,32 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  718</span>        {</div>
-<div class="line"><span class="lineno">  719</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
-<div class="line"><span class="lineno">  720</span>            {</div>
-<div class="line"><span class="lineno">  721</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
-<div class="line"><span class="lineno">  722</span>            }</div>
-<div class="line"><span class="lineno">  723</span> </div>
-<div class="line"><span class="lineno">  724</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
-<div class="line"><span class="lineno">  725</span>            {</div>
-<div class="line"><span class="lineno">  726</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;821&quot;</span>);</div>
-<div class="line"><span class="lineno">  727</span>            }</div>
-<div class="line"><span class="lineno">  728</span> </div>
-<div class="line"><span class="lineno">  729</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  730</span>            {</div>
-<div class="line"><span class="lineno">  731</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a819d23aeba0aac360051ace79463756b">AddClient</a>(idProject, idClient);</div>
-<div class="line"><span class="lineno">  732</span> </div>
-<div class="line"><span class="lineno">  733</span>            }</div>
-<div class="line"><span class="lineno">  734</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  735</span>            {</div>
-<div class="line"><span class="lineno">  736</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;822.&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  737</span>            }</div>
-<div class="line"><span class="lineno">  738</span> </div>
-<div class="line"><span class="lineno">  739</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  698</span>        {</div>
+<div class="line"><span class="lineno">  699</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
+<div class="line"><span class="lineno">  700</span>            {</div>
+<div class="line"><span class="lineno">  701</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
+<div class="line"><span class="lineno">  702</span>            }</div>
+<div class="line"><span class="lineno">  703</span> </div>
+<div class="line"><span class="lineno">  704</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
+<div class="line"><span class="lineno">  705</span>            {</div>
+<div class="line"><span class="lineno">  706</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;821&quot;</span>);</div>
+<div class="line"><span class="lineno">  707</span>            }</div>
+<div class="line"><span class="lineno">  708</span> </div>
+<div class="line"><span class="lineno">  709</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  710</span>            {</div>
+<div class="line"><span class="lineno">  711</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a819d23aeba0aac360051ace79463756b">AddClient</a>(idProject, idClient);</div>
+<div class="line"><span class="lineno">  712</span> </div>
+<div class="line"><span class="lineno">  713</span>            }</div>
+<div class="line"><span class="lineno">  714</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  715</span>            {</div>
+<div class="line"><span class="lineno">  716</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;822.&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  717</span>            }</div>
+<div class="line"><span class="lineno">  718</span> </div>
+<div class="line"><span class="lineno">  719</span>        }</div>
 <div class="ttc" id="aclass_custom_exceptions_1_1_configuration_error_exception_html"><div class="ttname"><a href="class_custom_exceptions_1_1_configuration_error_exception.html">CustomExceptions.ConfigurationErrorException</a></div><div class="ttdoc">Custom exception used for handling configuration-related errors in the application.</div><div class="ttdef"><b>Definition</b> Execeptions.cs:17</div></div>
-<div class="ttc" id="aclass_data___tier_1_1_clients_html"><div class="ttname"><a href="class_data___tier_1_1_clients.html">Data_Tier.Clients</a></div><div class="ttdoc">Singleton class that manages the list of clients. Allows adding, removing, updating and retrieving cl...</div><div class="ttdef"><b>Definition</b> Clients.cs:23</div></div>
-<div class="ttc" id="aclass_data___tier_1_1_clients_html_a896770ff1ba1bd334abc5ad716de24d6"><div class="ttname"><a href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">Data_Tier.Clients.ExistClient</a></div><div class="ttdeci">bool ExistClient(Client client)</div><div class="ttdoc">Checks if a specific client exists in the list by comparing with another client object.</div><div class="ttdef"><b>Definition</b> Clients.cs:158</div></div>
-<div class="ttc" id="aclass_data___tier_1_1_clients_html_ae817e2f9ee3b9eeee270b13fd372df01"><div class="ttname"><a href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Data_Tier.Clients.Instance</a></div><div class="ttdeci">static Clients Instance</div><div class="ttdoc">Gets the singleton instance of the Clients class.</div><div class="ttdef"><b>Definition</b> Clients.cs:45</div></div>
+<div class="ttc" id="aclass_data___tier_1_1_clients_html"><div class="ttname"><a href="class_data___tier_1_1_clients.html">Data_Tier.Clients</a></div><div class="ttdoc">Singleton class that manages the list of clients. Allows adding, removing, updating and retrieving cl...</div><div class="ttdef"><b>Definition</b> Clients.cs:22</div></div>
+<div class="ttc" id="aclass_data___tier_1_1_clients_html_a896770ff1ba1bd334abc5ad716de24d6"><div class="ttname"><a href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">Data_Tier.Clients.ExistClient</a></div><div class="ttdeci">bool ExistClient(Client client)</div><div class="ttdoc">Checks if a specific client exists in the list by comparing with another client object.</div><div class="ttdef"><b>Definition</b> Clients.cs:157</div></div>
+<div class="ttc" id="aclass_data___tier_1_1_clients_html_ae817e2f9ee3b9eeee270b13fd372df01"><div class="ttname"><a href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Data_Tier.Clients.Instance</a></div><div class="ttdeci">static Clients Instance</div><div class="ttdoc">Gets the singleton instance of the Clients class.</div><div class="ttdef"><b>Definition</b> Clients.cs:44</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html"><div class="ttname"><a href="class_data___tier_1_1_projects.html">Data_Tier.Projects</a></div><div class="ttdoc">Singleton class that manages the projects in the system. Allows adding, removing, updating,...</div><div class="ttdef"><b>Definition</b> Projects.cs:22</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html_a0964b2eafd2ef9f57f8d3d7511d044fc"><div class="ttname"><a href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">Data_Tier.Projects.ProjectExists</a></div><div class="ttdeci">bool ProjectExists(Project project2)</div><div class="ttdoc">Checks if a project exists by its ID.</div><div class="ttdef"><b>Definition</b> Projects.cs:177</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html_a4101fcebbf5230744c80dbaf7bead449"><div class="ttname"><a href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Data_Tier.Projects.Instance</a></div><div class="ttdeci">static Projects Instance</div><div class="ttdoc">Gets the singleton instance of the Projects class.</div><div class="ttdef"><b>Definition</b> Projects.cs:44</div></div>
@@ -302,29 +302,29 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  790</span>        {</div>
-<div class="line"><span class="lineno">  791</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
-<div class="line"><span class="lineno">  792</span>            {</div>
-<div class="line"><span class="lineno">  793</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
-<div class="line"><span class="lineno">  794</span>            }</div>
-<div class="line"><span class="lineno">  795</span> </div>
-<div class="line"><span class="lineno">  796</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
-<div class="line"><span class="lineno">  797</span>            {</div>
-<div class="line"><span class="lineno">  798</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;824&quot;</span>);</div>
-<div class="line"><span class="lineno">  799</span>            }</div>
-<div class="line"><span class="lineno">  800</span> </div>
-<div class="line"><span class="lineno">  801</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  802</span>            {</div>
-<div class="line"><span class="lineno">  803</span>                <span class="keywordtype">bool</span> result = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a5ef19eed2efe61fcdff7ae225c69bed7">AddEmployee</a>(idProject, idEmployee);</div>
-<div class="line"><span class="lineno">  804</span>                <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  805</span> </div>
-<div class="line"><span class="lineno">  806</span>            }</div>
-<div class="line"><span class="lineno">  807</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  808</span>            {</div>
-<div class="line"><span class="lineno">  809</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;825&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  810</span>            }</div>
-<div class="line"><span class="lineno">  811</span> </div>
-<div class="line"><span class="lineno">  812</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  770</span>        {</div>
+<div class="line"><span class="lineno">  771</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
+<div class="line"><span class="lineno">  772</span>            {</div>
+<div class="line"><span class="lineno">  773</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
+<div class="line"><span class="lineno">  774</span>            }</div>
+<div class="line"><span class="lineno">  775</span> </div>
+<div class="line"><span class="lineno">  776</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
+<div class="line"><span class="lineno">  777</span>            {</div>
+<div class="line"><span class="lineno">  778</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;824&quot;</span>);</div>
+<div class="line"><span class="lineno">  779</span>            }</div>
+<div class="line"><span class="lineno">  780</span> </div>
+<div class="line"><span class="lineno">  781</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  782</span>            {</div>
+<div class="line"><span class="lineno">  783</span>                <span class="keywordtype">bool</span> result = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a5ef19eed2efe61fcdff7ae225c69bed7">AddEmployee</a>(idProject, idEmployee);</div>
+<div class="line"><span class="lineno">  784</span>                <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  785</span> </div>
+<div class="line"><span class="lineno">  786</span>            }</div>
+<div class="line"><span class="lineno">  787</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  788</span>            {</div>
+<div class="line"><span class="lineno">  789</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;825&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  790</span>            }</div>
+<div class="line"><span class="lineno">  791</span> </div>
+<div class="line"><span class="lineno">  792</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_employees_html"><div class="ttname"><a href="class_data___tier_1_1_employees.html">Data_Tier.Employees</a></div><div class="ttdoc">Singleton class that manages a list of employees. Allows adding, removing, updating and retrieving em...</div><div class="ttdef"><b>Definition</b> Employees.cs:22</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_employees_html_a0d5d08e18e75d1ddef7dae56492b15c5"><div class="ttname"><a href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">Data_Tier.Employees.EmployeeExist</a></div><div class="ttdeci">bool EmployeeExist(Employee employee)</div><div class="ttdoc">Checks if a specific employee exists in the list based on the employee object.</div><div class="ttdef"><b>Definition</b> Employees.cs:157</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_employees_html_ad6c28788ae26d40c491037c8975a4f84"><div class="ttname"><a href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Data_Tier.Employees.Instance</a></div><div class="ttdeci">static Employees Instance</div><div class="ttdoc">Gets the singleton instance of the Employees class.</div><div class="ttdef"><b>Definition</b> Employees.cs:43</div></div>
@@ -369,16 +369,16 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  693</span>        {</div>
-<div class="line"><span class="lineno">  694</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  695</span>            {</div>
-<div class="line"><span class="lineno">  696</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#abb62bd02e4e20d0db63eab6c177551f5">CloseProject</a>(idProject);</div>
-<div class="line"><span class="lineno">  697</span>            }</div>
-<div class="line"><span class="lineno">  698</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  699</span>            {</div>
-<div class="line"><span class="lineno">  700</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;819&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  701</span>            }</div>
-<div class="line"><span class="lineno">  702</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  673</span>        {</div>
+<div class="line"><span class="lineno">  674</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  675</span>            {</div>
+<div class="line"><span class="lineno">  676</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#abb62bd02e4e20d0db63eab6c177551f5">CloseProject</a>(idProject);</div>
+<div class="line"><span class="lineno">  677</span>            }</div>
+<div class="line"><span class="lineno">  678</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  679</span>            {</div>
+<div class="line"><span class="lineno">  680</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;819&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  681</span>            }</div>
+<div class="line"><span class="lineno">  682</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html_abb62bd02e4e20d0db63eab6c177551f5"><div class="ttname"><a href="class_data___tier_1_1_projects.html#abb62bd02e4e20d0db63eab6c177551f5">Data_Tier.Projects.CloseProject</a></div><div class="ttdeci">bool CloseProject(int idProject)</div><div class="ttdoc">Closes a project by setting its end date and status to completed.</div><div class="ttdef"><b>Definition</b> Projects.cs:247</div></div>
 </div><!-- fragment -->
 </div>
@@ -420,22 +420,22 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  147</span>        {</div>
-<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
-<div class="line"><span class="lineno">  149</span>            {</div>
-<div class="line"><span class="lineno">  150</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;112&quot;</span>);</div>
-<div class="line"><span class="lineno">  151</span>            }</div>
-<div class="line"><span class="lineno">  152</span> </div>
-<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  154</span>            {</div>
-<div class="line"><span class="lineno">  155</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a499deb52f93f9b085e21f7589b50aad6">RemoveClient</a>(idClient);</div>
-<div class="line"><span class="lineno">  156</span>            }</div>
-<div class="line"><span class="lineno">  157</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  158</span>            {</div>
-<div class="line"><span class="lineno">  159</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;109&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  160</span>            }</div>
-<div class="line"><span class="lineno">  161</span>        }</div>
-<div class="ttc" id="aclass_data___tier_1_1_clients_html_a499deb52f93f9b085e21f7589b50aad6"><div class="ttname"><a href="class_data___tier_1_1_clients.html#a499deb52f93f9b085e21f7589b50aad6">Data_Tier.Clients.RemoveClient</a></div><div class="ttdeci">bool RemoveClient(int idClient)</div><div class="ttdoc">Removes a client from the list based on the client ID.</div><div class="ttdef"><b>Definition</b> Clients.cs:132</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>        {</div>
+<div class="line"><span class="lineno">  128</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
+<div class="line"><span class="lineno">  129</span>            {</div>
+<div class="line"><span class="lineno">  130</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;112&quot;</span>);</div>
+<div class="line"><span class="lineno">  131</span>            }</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  134</span>            {</div>
+<div class="line"><span class="lineno">  135</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a499deb52f93f9b085e21f7589b50aad6">RemoveClient</a>(idClient);</div>
+<div class="line"><span class="lineno">  136</span>            }</div>
+<div class="line"><span class="lineno">  137</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  138</span>            {</div>
+<div class="line"><span class="lineno">  139</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;109&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  140</span>            }</div>
+<div class="line"><span class="lineno">  141</span>        }</div>
+<div class="ttc" id="aclass_data___tier_1_1_clients_html_a499deb52f93f9b085e21f7589b50aad6"><div class="ttname"><a href="class_data___tier_1_1_clients.html#a499deb52f93f9b085e21f7589b50aad6">Data_Tier.Clients.RemoveClient</a></div><div class="ttdeci">bool RemoveClient(int idClient)</div><div class="ttdoc">Removes a client from the list based on the client ID.</div><div class="ttdef"><b>Definition</b> Clients.cs:131</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -481,27 +481,27 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  753</span>        {</div>
-<div class="line"><span class="lineno">  754</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
-<div class="line"><span class="lineno">  755</span>            {</div>
-<div class="line"><span class="lineno">  756</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
-<div class="line"><span class="lineno">  757</span>            }</div>
-<div class="line"><span class="lineno">  758</span> </div>
-<div class="line"><span class="lineno">  759</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
-<div class="line"><span class="lineno">  760</span>            {</div>
-<div class="line"><span class="lineno">  761</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;821&quot;</span>);</div>
-<div class="line"><span class="lineno">  762</span>            }</div>
-<div class="line"><span class="lineno">  763</span> </div>
-<div class="line"><span class="lineno">  764</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  765</span>            {</div>
-<div class="line"><span class="lineno">  766</span>                <span class="keywordtype">bool</span> r = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#ac6c8a231895cd7f4933304f726ff4960">RemoveClient</a>(idProject, idClient);</div>
-<div class="line"><span class="lineno">  767</span>                <span class="keywordflow">return</span> r;</div>
-<div class="line"><span class="lineno">  768</span>            }</div>
-<div class="line"><span class="lineno">  769</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  770</span>            {</div>
-<div class="line"><span class="lineno">  771</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;823&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  772</span>            }</div>
-<div class="line"><span class="lineno">  773</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  733</span>        {</div>
+<div class="line"><span class="lineno">  734</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
+<div class="line"><span class="lineno">  735</span>            {</div>
+<div class="line"><span class="lineno">  736</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
+<div class="line"><span class="lineno">  737</span>            }</div>
+<div class="line"><span class="lineno">  738</span> </div>
+<div class="line"><span class="lineno">  739</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
+<div class="line"><span class="lineno">  740</span>            {</div>
+<div class="line"><span class="lineno">  741</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;821&quot;</span>);</div>
+<div class="line"><span class="lineno">  742</span>            }</div>
+<div class="line"><span class="lineno">  743</span> </div>
+<div class="line"><span class="lineno">  744</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  745</span>            {</div>
+<div class="line"><span class="lineno">  746</span>                <span class="keywordtype">bool</span> r = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#ac6c8a231895cd7f4933304f726ff4960">RemoveClient</a>(idProject, idClient);</div>
+<div class="line"><span class="lineno">  747</span>                <span class="keywordflow">return</span> r;</div>
+<div class="line"><span class="lineno">  748</span>            }</div>
+<div class="line"><span class="lineno">  749</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  750</span>            {</div>
+<div class="line"><span class="lineno">  751</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;823&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  752</span>            }</div>
+<div class="line"><span class="lineno">  753</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html_ac6c8a231895cd7f4933304f726ff4960"><div class="ttname"><a href="class_data___tier_1_1_projects.html#ac6c8a231895cd7f4933304f726ff4960">Data_Tier.Projects.RemoveClient</a></div><div class="ttdeci">bool RemoveClient(int idProject, int idClient)</div><div class="ttdoc">Removes a client from a project.</div><div class="ttdef"><b>Definition</b> Projects.cs:300</div></div>
 </div><!-- fragment -->
 </div>
@@ -543,21 +543,21 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  285</span>        {</div>
-<div class="line"><span class="lineno">  286</span> </div>
-<div class="line"><span class="lineno">  287</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
-<div class="line"><span class="lineno">  288</span>            {</div>
-<div class="line"><span class="lineno">  289</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;412&quot;</span>);</div>
-<div class="line"><span class="lineno">  290</span>            }</div>
-<div class="line"><span class="lineno">  291</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  292</span>            {</div>
-<div class="line"><span class="lineno">  293</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#aa38c1c75bb81177c3c29da2f7cda92aa">RemoveEmployee</a>(idEmployee);</div>
-<div class="line"><span class="lineno">  294</span>            }</div>
-<div class="line"><span class="lineno">  295</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  296</span>            {</div>
-<div class="line"><span class="lineno">  297</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;409&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  298</span>            }</div>
-<div class="line"><span class="lineno">  299</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  265</span>        {</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
+<div class="line"><span class="lineno">  268</span>            {</div>
+<div class="line"><span class="lineno">  269</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;412&quot;</span>);</div>
+<div class="line"><span class="lineno">  270</span>            }</div>
+<div class="line"><span class="lineno">  271</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  272</span>            {</div>
+<div class="line"><span class="lineno">  273</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#aa38c1c75bb81177c3c29da2f7cda92aa">RemoveEmployee</a>(idEmployee);</div>
+<div class="line"><span class="lineno">  274</span>            }</div>
+<div class="line"><span class="lineno">  275</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  276</span>            {</div>
+<div class="line"><span class="lineno">  277</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;409&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  278</span>            }</div>
+<div class="line"><span class="lineno">  279</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_employees_html_aa38c1c75bb81177c3c29da2f7cda92aa"><div class="ttname"><a href="class_data___tier_1_1_employees.html#aa38c1c75bb81177c3c29da2f7cda92aa">Data_Tier.Employees.RemoveEmployee</a></div><div class="ttdeci">bool RemoveEmployee(int idEmployee)</div><div class="ttdoc">Removes an employee by their ID from the list.</div><div class="ttdef"><b>Definition</b> Employees.cs:132</div></div>
 </div><!-- fragment -->
 </div>
@@ -604,27 +604,27 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  826</span>        {</div>
-<div class="line"><span class="lineno">  827</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
-<div class="line"><span class="lineno">  828</span>            {</div>
-<div class="line"><span class="lineno">  829</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
-<div class="line"><span class="lineno">  830</span>            }</div>
-<div class="line"><span class="lineno">  831</span> </div>
-<div class="line"><span class="lineno">  832</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
-<div class="line"><span class="lineno">  833</span>            {</div>
-<div class="line"><span class="lineno">  834</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;824&quot;</span>);</div>
-<div class="line"><span class="lineno">  835</span>            }</div>
-<div class="line"><span class="lineno">  836</span> </div>
-<div class="line"><span class="lineno">  837</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  838</span>            {</div>
-<div class="line"><span class="lineno">  839</span>                <span class="keywordtype">bool</span> r = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a1ee69b69a7fe3a510ed514c2dfed190a">RemoveEmployee</a>(idProject, idEmployee);</div>
-<div class="line"><span class="lineno">  840</span>                <span class="keywordflow">return</span> r;</div>
-<div class="line"><span class="lineno">  841</span>            }</div>
-<div class="line"><span class="lineno">  842</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  843</span>            {</div>
-<div class="line"><span class="lineno">  844</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;826&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  845</span>            }</div>
-<div class="line"><span class="lineno">  846</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  806</span>        {</div>
+<div class="line"><span class="lineno">  807</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
+<div class="line"><span class="lineno">  808</span>            {</div>
+<div class="line"><span class="lineno">  809</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
+<div class="line"><span class="lineno">  810</span>            }</div>
+<div class="line"><span class="lineno">  811</span> </div>
+<div class="line"><span class="lineno">  812</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
+<div class="line"><span class="lineno">  813</span>            {</div>
+<div class="line"><span class="lineno">  814</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;824&quot;</span>);</div>
+<div class="line"><span class="lineno">  815</span>            }</div>
+<div class="line"><span class="lineno">  816</span> </div>
+<div class="line"><span class="lineno">  817</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  818</span>            {</div>
+<div class="line"><span class="lineno">  819</span>                <span class="keywordtype">bool</span> r = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a1ee69b69a7fe3a510ed514c2dfed190a">RemoveEmployee</a>(idProject, idEmployee);</div>
+<div class="line"><span class="lineno">  820</span>                <span class="keywordflow">return</span> r;</div>
+<div class="line"><span class="lineno">  821</span>            }</div>
+<div class="line"><span class="lineno">  822</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  823</span>            {</div>
+<div class="line"><span class="lineno">  824</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;826&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  825</span>            }</div>
+<div class="line"><span class="lineno">  826</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html_a1ee69b69a7fe3a510ed514c2dfed190a"><div class="ttname"><a href="class_data___tier_1_1_projects.html#a1ee69b69a7fe3a510ed514c2dfed190a">Data_Tier.Projects.RemoveEmployee</a></div><div class="ttdeci">bool RemoveEmployee(int idProject, int idEmployee)</div><div class="ttdoc">Removes an employee from a project.</div><div class="ttdef"><b>Definition</b> Projects.cs:348</div></div>
 </div><!-- fragment -->
 </div>
@@ -666,21 +666,21 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  226</span>        {</div>
-<div class="line"><span class="lineno">  227</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
-<div class="line"><span class="lineno">  228</span>            {</div>
-<div class="line"><span class="lineno">  229</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;112&quot;</span>);</div>
-<div class="line"><span class="lineno">  230</span>            }</div>
-<div class="line"><span class="lineno">  231</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  232</span>            {</div>
-<div class="line"><span class="lineno">  233</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a9cdf3bd9ffb752f73b3c9d95933ad13f">GetClient</a>(idClient);</div>
-<div class="line"><span class="lineno">  234</span>            }</div>
-<div class="line"><span class="lineno">  235</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  236</span>            {</div>
-<div class="line"><span class="lineno">  237</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;114&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  238</span>            }</div>
-<div class="line"><span class="lineno">  239</span>        }</div>
-<div class="ttc" id="aclass_data___tier_1_1_clients_html_a9cdf3bd9ffb752f73b3c9d95933ad13f"><div class="ttname"><a href="class_data___tier_1_1_clients.html#a9cdf3bd9ffb752f73b3c9d95933ad13f">Data_Tier.Clients.GetClient</a></div><div class="ttdeci">Client GetClient(int idClient)</div><div class="ttdoc">Retrieves a client from the list based on the client ID.</div><div class="ttdef"><b>Definition</b> Clients.cs:236</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  206</span>        {</div>
+<div class="line"><span class="lineno">  207</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
+<div class="line"><span class="lineno">  208</span>            {</div>
+<div class="line"><span class="lineno">  209</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;112&quot;</span>);</div>
+<div class="line"><span class="lineno">  210</span>            }</div>
+<div class="line"><span class="lineno">  211</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  212</span>            {</div>
+<div class="line"><span class="lineno">  213</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a9cdf3bd9ffb752f73b3c9d95933ad13f">GetClient</a>(idClient);</div>
+<div class="line"><span class="lineno">  214</span>            }</div>
+<div class="line"><span class="lineno">  215</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  216</span>            {</div>
+<div class="line"><span class="lineno">  217</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;114&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  218</span>            }</div>
+<div class="line"><span class="lineno">  219</span>        }</div>
+<div class="ttc" id="aclass_data___tier_1_1_clients_html_a9cdf3bd9ffb752f73b3c9d95933ad13f"><div class="ttname"><a href="class_data___tier_1_1_clients.html#a9cdf3bd9ffb752f73b3c9d95933ad13f">Data_Tier.Clients.GetClient</a></div><div class="ttdeci">Client GetClient(int idClient)</div><div class="ttdoc">Retrieves a client from the list based on the client ID.</div><div class="ttdef"><b>Definition</b> Clients.cs:235</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -721,21 +721,21 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  373</span>        {</div>
-<div class="line"><span class="lineno">  374</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
-<div class="line"><span class="lineno">  375</span>            {</div>
-<div class="line"><span class="lineno">  376</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;412&quot;</span>);</div>
-<div class="line"><span class="lineno">  377</span>            }</div>
-<div class="line"><span class="lineno">  378</span> </div>
-<div class="line"><span class="lineno">  379</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  380</span>            {</div>
-<div class="line"><span class="lineno">  381</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#afc32d495bba546f78ab48454b726502b">GetEmployee</a>(idEmployee);</div>
-<div class="line"><span class="lineno">  382</span>            }</div>
-<div class="line"><span class="lineno">  383</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  384</span>            {</div>
-<div class="line"><span class="lineno">  385</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;415&quot;</span>, ex);</div>
-<div class="line"><span class="lineno">  386</span>            }</div>
-<div class="line"><span class="lineno">  387</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  353</span>        {</div>
+<div class="line"><span class="lineno">  354</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
+<div class="line"><span class="lineno">  355</span>            {</div>
+<div class="line"><span class="lineno">  356</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;412&quot;</span>);</div>
+<div class="line"><span class="lineno">  357</span>            }</div>
+<div class="line"><span class="lineno">  358</span> </div>
+<div class="line"><span class="lineno">  359</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  360</span>            {</div>
+<div class="line"><span class="lineno">  361</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#afc32d495bba546f78ab48454b726502b">GetEmployee</a>(idEmployee);</div>
+<div class="line"><span class="lineno">  362</span>            }</div>
+<div class="line"><span class="lineno">  363</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  364</span>            {</div>
+<div class="line"><span class="lineno">  365</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;415&quot;</span>, ex);</div>
+<div class="line"><span class="lineno">  366</span>            }</div>
+<div class="line"><span class="lineno">  367</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_employees_html_afc32d495bba546f78ab48454b726502b"><div class="ttname"><a href="class_data___tier_1_1_employees.html#afc32d495bba546f78ab48454b726502b">Data_Tier.Employees.GetEmployee</a></div><div class="ttdeci">Employee GetEmployee(int idEmployee)</div><div class="ttdoc">Retrieves an employee based on their ID.</div><div class="ttdef"><b>Definition</b> Employees.cs:236</div></div>
 </div><!-- fragment -->
 </div>
@@ -777,16 +777,16 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  573</span>        {</div>
-<div class="line"><span class="lineno">  574</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  575</span>            {</div>
-<div class="line"><span class="lineno">  576</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_materials.html">Materials</a>.<a class="code hl_property" href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_materials.html#a6f65b6a4fec15ac528a85ad7d0bdee52">GetMaterial</a>(idMaterial);</div>
-<div class="line"><span class="lineno">  577</span>            }</div>
-<div class="line"><span class="lineno">  578</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  579</span>            {</div>
-<div class="line"><span class="lineno">  580</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;616&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  581</span>            }</div>
-<div class="line"><span class="lineno">  582</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  553</span>        {</div>
+<div class="line"><span class="lineno">  554</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  555</span>            {</div>
+<div class="line"><span class="lineno">  556</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_materials.html">Materials</a>.<a class="code hl_property" href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_materials.html#a6f65b6a4fec15ac528a85ad7d0bdee52">GetMaterial</a>(idMaterial);</div>
+<div class="line"><span class="lineno">  557</span>            }</div>
+<div class="line"><span class="lineno">  558</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  559</span>            {</div>
+<div class="line"><span class="lineno">  560</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;616&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  561</span>            }</div>
+<div class="line"><span class="lineno">  562</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_materials_html"><div class="ttname"><a href="class_data___tier_1_1_materials.html">Data_Tier.Materials</a></div><div class="ttdoc">Singleton class that manages the materials in the system. Allows adding, checking,...</div><div class="ttdef"><b>Definition</b> Materials.cs:22</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_materials_html_a56c75e67eb7cb8250d400c7361afa72b"><div class="ttname"><a href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Data_Tier.Materials.Instance</a></div><div class="ttdeci">static Materials Instance</div><div class="ttdoc">Gets the singleton instance of the Materials class.</div><div class="ttdef"><b>Definition</b> Materials.cs:44</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_materials_html_a6f65b6a4fec15ac528a85ad7d0bdee52"><div class="ttname"><a href="class_data___tier_1_1_materials.html#a6f65b6a4fec15ac528a85ad7d0bdee52">Data_Tier.Materials.GetMaterial</a></div><div class="ttdeci">Material GetMaterial(int idMaterial)</div><div class="ttdoc">Retrieves a material by its ID.</div><div class="ttdef"><b>Definition</b> Materials.cs:204</div></div>
@@ -830,16 +830,16 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  593</span>        {</div>
-<div class="line"><span class="lineno">  594</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  595</span>            {</div>
-<div class="line"><span class="lineno">  596</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#a8750a652f46590b9846c3b8508dbd328">GetMaterialQuantity</a>(idMaterial);</div>
-<div class="line"><span class="lineno">  597</span>            }</div>
-<div class="line"><span class="lineno">  598</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  599</span>            {</div>
-<div class="line"><span class="lineno">  600</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;616&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  601</span>            }</div>
-<div class="line"><span class="lineno">  602</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  573</span>        {</div>
+<div class="line"><span class="lineno">  574</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  575</span>            {</div>
+<div class="line"><span class="lineno">  576</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#a8750a652f46590b9846c3b8508dbd328">GetMaterialQuantity</a>(idMaterial);</div>
+<div class="line"><span class="lineno">  577</span>            }</div>
+<div class="line"><span class="lineno">  578</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  579</span>            {</div>
+<div class="line"><span class="lineno">  580</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;616&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  581</span>            }</div>
+<div class="line"><span class="lineno">  582</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_material_inventory_html"><div class="ttname"><a href="class_data___tier_1_1_material_inventory.html">Data_Tier.MaterialInventory</a></div><div class="ttdoc">Singleton class that manages the material inventory. Allows adding, removing, updating,...</div><div class="ttdef"><b>Definition</b> MaterialInventory.cs:22</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_material_inventory_html_a8750a652f46590b9846c3b8508dbd328"><div class="ttname"><a href="class_data___tier_1_1_material_inventory.html#a8750a652f46590b9846c3b8508dbd328">Data_Tier.MaterialInventory.GetMaterialQuantity</a></div><div class="ttdeci">MaterialQuantity GetMaterialQuantity(int idMaterial)</div><div class="ttdoc">Retrieves the material and its quantity from the inventory based on the material ID.</div><div class="ttdef"><b>Definition</b> MaterialInventory.cs:235</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_material_inventory_html_af75102dd2f1d48e0242d49c827b4228b"><div class="ttname"><a href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Data_Tier.MaterialInventory.Instance</a></div><div class="ttdeci">static MaterialInventory Instance</div><div class="ttdoc">Gets the singleton instance of the MaterialInventory class.</div><div class="ttdef"><b>Definition</b> MaterialInventory.cs:43</div></div>
@@ -883,16 +883,16 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  172</span>        {</div>
-<div class="line"><span class="lineno">  173</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  174</span>            {</div>
-<div class="line"><span class="lineno">  175</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient);</div>
-<div class="line"><span class="lineno">  176</span>            }</div>
-<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  178</span>            {</div>
-<div class="line"><span class="lineno">  179</span>                 <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;110&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  180</span>            }</div>
-<div class="line"><span class="lineno">  181</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  152</span>        {</div>
+<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  154</span>            {</div>
+<div class="line"><span class="lineno">  155</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient);</div>
+<div class="line"><span class="lineno">  156</span>            }</div>
+<div class="line"><span class="lineno">  157</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  158</span>            {</div>
+<div class="line"><span class="lineno">  159</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;110&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  160</span>            }</div>
+<div class="line"><span class="lineno">  161</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -933,17 +933,17 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  310</span>        {</div>
-<div class="line"><span class="lineno">  311</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  312</span>            {</div>
-<div class="line"><span class="lineno">  313</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee);</div>
-<div class="line"><span class="lineno">  314</span>            }</div>
-<div class="line"><span class="lineno">  315</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  316</span>            {</div>
-<div class="line"><span class="lineno">  317</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;410&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  318</span>            }</div>
-<div class="line"><span class="lineno">  319</span> </div>
-<div class="line"><span class="lineno">  320</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  290</span>        {</div>
+<div class="line"><span class="lineno">  291</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  292</span>            {</div>
+<div class="line"><span class="lineno">  293</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee);</div>
+<div class="line"><span class="lineno">  294</span>            }</div>
+<div class="line"><span class="lineno">  295</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  296</span>            {</div>
+<div class="line"><span class="lineno">  297</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;410&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  298</span>            }</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -984,22 +984,22 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  476</span>        {</div>
-<div class="line"><span class="lineno">  477</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  478</span>            {</div>
-<div class="line"><span class="lineno">  479</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="class_data___tier_1_1_materials.html">Materials</a>.<a class="code hl_property" href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_materials.html#a2ae7a1c4e0049180cd2692986c0cc801">MaterialExist</a>(idMaterial))</div>
-<div class="line"><span class="lineno">  480</span>                {</div>
-<div class="line"><span class="lineno">  481</span>                    <span class="keywordtype">bool</span> r = <a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#aa07d2628caebc320b65db94ec768ac1e">VerifyMaterialExistence</a>(idMaterial);</div>
-<div class="line"><span class="lineno">  482</span>                    <span class="keywordflow">return</span> r;</div>
-<div class="line"><span class="lineno">  483</span>                }</div>
-<div class="line"><span class="lineno">  484</span>            }</div>
-<div class="line"><span class="lineno">  485</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  486</span>            {</div>
-<div class="line"><span class="lineno">  487</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;612&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  488</span>            }</div>
-<div class="line"><span class="lineno">  489</span> </div>
-<div class="line"><span class="lineno">  490</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  491</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  456</span>        {</div>
+<div class="line"><span class="lineno">  457</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  458</span>            {</div>
+<div class="line"><span class="lineno">  459</span>                <span class="keywordflow">if</span> (<a class="code hl_class" href="class_data___tier_1_1_materials.html">Materials</a>.<a class="code hl_property" href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_materials.html#a2ae7a1c4e0049180cd2692986c0cc801">MaterialExist</a>(idMaterial))</div>
+<div class="line"><span class="lineno">  460</span>                {</div>
+<div class="line"><span class="lineno">  461</span>                    <span class="keywordtype">bool</span> r = <a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#aa07d2628caebc320b65db94ec768ac1e">VerifyMaterialExistence</a>(idMaterial);</div>
+<div class="line"><span class="lineno">  462</span>                    <span class="keywordflow">return</span> r;</div>
+<div class="line"><span class="lineno">  463</span>                }</div>
+<div class="line"><span class="lineno">  464</span>            }</div>
+<div class="line"><span class="lineno">  465</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  466</span>            {</div>
+<div class="line"><span class="lineno">  467</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;612&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  468</span>            }</div>
+<div class="line"><span class="lineno">  469</span> </div>
+<div class="line"><span class="lineno">  470</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  471</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_material_inventory_html_aa07d2628caebc320b65db94ec768ac1e"><div class="ttname"><a href="class_data___tier_1_1_material_inventory.html#aa07d2628caebc320b65db94ec768ac1e">Data_Tier.MaterialInventory.VerifyMaterialExistence</a></div><div class="ttdeci">bool VerifyMaterialExistence(int idMaterial)</div><div class="ttdoc">Verifies if a material exists in the inventory based on the material ID.</div><div class="ttdef"><b>Definition</b> MaterialInventory.cs:129</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_materials_html_a2ae7a1c4e0049180cd2692986c0cc801"><div class="ttname"><a href="class_data___tier_1_1_materials.html#a2ae7a1c4e0049180cd2692986c0cc801">Data_Tier.Materials.MaterialExist</a></div><div class="ttdeci">bool MaterialExist(Material material)</div><div class="ttdoc">Checks if a material already exists in the list.</div><div class="ttdef"><b>Definition</b> Materials.cs:128</div></div>
 </div><!-- fragment -->
@@ -1042,16 +1042,16 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  651</span>        {</div>
-<div class="line"><span class="lineno">  652</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  653</span>            {</div>
-<div class="line"><span class="lineno">  654</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject);</div>
-<div class="line"><span class="lineno">  655</span>            }</div>
-<div class="line"><span class="lineno">  656</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  657</span>            {</div>
-<div class="line"><span class="lineno">  658</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;818&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  659</span>            }</div>
-<div class="line"><span class="lineno">  660</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  631</span>        {</div>
+<div class="line"><span class="lineno">  632</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  633</span>            {</div>
+<div class="line"><span class="lineno">  634</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject);</div>
+<div class="line"><span class="lineno">  635</span>            }</div>
+<div class="line"><span class="lineno">  636</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  637</span>            {</div>
+<div class="line"><span class="lineno">  638</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;818&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  639</span>            }</div>
+<div class="line"><span class="lineno">  640</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1092,34 +1092,23 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>        {</div>
-<div class="line"><span class="lineno">   75</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   76</span>            {</div>
-<div class="line"><span class="lineno">   77</span>                <span class="keywordflow">if</span> (!File.Exists(path))</div>
-<div class="line"><span class="lineno">   78</span>                {</div>
-<div class="line"><span class="lineno">   79</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;703&quot;</span>);</div>
-<div class="line"><span class="lineno">   80</span>                }</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>                <a class="code hl_class" href="class_data___tier_1_1_data.html">Data</a> data = <span class="keyword">new</span> <a class="code hl_class" href="class_data___tier_1_1_data.html">Data</a>();</div>
-<div class="line"><span class="lineno">   83</span>                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);</div>
-<div class="line"><span class="lineno">   84</span>                BinaryFormatter b = <span class="keyword">new</span> BinaryFormatter();</div>
-<div class="line"><span class="lineno">   85</span>                data = (<a class="code hl_class" href="class_data___tier_1_1_data.html">Data</a>)b.Deserialize(s);</div>
-<div class="line"><span class="lineno">   86</span>                s.Close();</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>                <span class="keywordflow">if</span> (!data.<a class="code hl_function" href="class_data___tier_1_1_data.html#a3c403f62c0adf6c8f5fdfc9f2e49db47">PutData</a>())</div>
-<div class="line"><span class="lineno">   89</span>                {</div>
-<div class="line"><span class="lineno">   90</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;700&quot;</span>);</div>
-<div class="line"><span class="lineno">   91</span>                }</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   94</span>            }</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">   96</span>            {</div>
-<div class="line"><span class="lineno">   97</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;701 &quot;</span> + ex);</div>
-<div class="line"><span class="lineno">   98</span>            }</div>
-<div class="line"><span class="lineno">   99</span>        }</div>
-<div class="ttc" id="aclass_data___tier_1_1_data_html"><div class="ttname"><a href="class_data___tier_1_1_data.html">Data_Tier.Data</a></div><div class="ttdoc">The Data class serves as a centralized data manager for the application. It collects data from variou...</div><div class="ttdef"><b>Definition</b> Data.cs:24</div></div>
-<div class="ttc" id="aclass_data___tier_1_1_data_html_a3c403f62c0adf6c8f5fdfc9f2e49db47"><div class="ttname"><a href="class_data___tier_1_1_data.html#a3c403f62c0adf6c8f5fdfc9f2e49db47">Data_Tier.Data.PutData</a></div><div class="ttdeci">bool PutData()</div><div class="ttdoc">Updates the system modules with the data stored in the class's lists.</div><div class="ttdef"><b>Definition</b> Data.cs:78</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>        {</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   62</span>            {</div>
+<div class="line"><span class="lineno">   63</span>                <span class="keywordflow">if</span> (!File.Exists(path))</div>
+<div class="line"><span class="lineno">   64</span>                {</div>
+<div class="line"><span class="lineno">   65</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;703&quot;</span>);</div>
+<div class="line"><span class="lineno">   66</span>                }</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_data.html">Data</a>.<a class="code hl_function" href="class_data___tier_1_1_data.html#a8027e0d5f608e977f26ac1b1f7586113">LoadData</a>(path);</div>
+<div class="line"><span class="lineno">   69</span>            }</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">   71</span>            {</div>
+<div class="line"><span class="lineno">   72</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;701 &quot;</span> + ex);</div>
+<div class="line"><span class="lineno">   73</span>            }</div>
+<div class="line"><span class="lineno">   74</span>        }</div>
+<div class="ttc" id="aclass_data___tier_1_1_data_html"><div class="ttname"><a href="class_data___tier_1_1_data.html">Data_Tier.Data</a></div><div class="ttdoc">The Data class serves as a centralized data manager for the application. It collects data from variou...</div><div class="ttdef"><b>Definition</b> Data.cs:25</div></div>
+<div class="ttc" id="aclass_data___tier_1_1_data_html_a8027e0d5f608e977f26ac1b1f7586113"><div class="ttname"><a href="class_data___tier_1_1_data.html#a8027e0d5f608e977f26ac1b1f7586113">Data_Tier.Data.LoadData</a></div><div class="ttdeci">static bool LoadData(string path)</div><div class="ttdoc">Loads data from a binary file and updates the system with the loaded data.</div><div class="ttdef"><b>Definition</b> Data.cs:149</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1160,26 +1149,26 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  254</span>        {</div>
-<div class="line"><span class="lineno">  255</span>            <span class="keywordflow">if</span> (employee == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  256</span>            {</div>
-<div class="line"><span class="lineno">  257</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;405&quot;</span>);</div>
-<div class="line"><span class="lineno">  258</span>            }</div>
-<div class="line"><span class="lineno">  259</span> </div>
-<div class="line"><span class="lineno">  260</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(employee))</div>
-<div class="line"><span class="lineno">  261</span>            {</div>
-<div class="line"><span class="lineno">  262</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;407&quot;</span>);</div>
-<div class="line"><span class="lineno">  263</span>            }</div>
-<div class="line"><span class="lineno">  264</span> </div>
-<div class="line"><span class="lineno">  265</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  266</span>            {</div>
-<div class="line"><span class="lineno">  267</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a743a177e79acc3ea503d02a8f7970b7f">AddEmployee</a>(employee);</div>
-<div class="line"><span class="lineno">  268</span>            }</div>
-<div class="line"><span class="lineno">  269</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  270</span>            {</div>
-<div class="line"><span class="lineno">  271</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;408&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  272</span>            }</div>
-<div class="line"><span class="lineno">  273</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  234</span>        {</div>
+<div class="line"><span class="lineno">  235</span>            <span class="keywordflow">if</span> (employee == <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  236</span>            {</div>
+<div class="line"><span class="lineno">  237</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;405&quot;</span>);</div>
+<div class="line"><span class="lineno">  238</span>            }</div>
+<div class="line"><span class="lineno">  239</span> </div>
+<div class="line"><span class="lineno">  240</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(employee))</div>
+<div class="line"><span class="lineno">  241</span>            {</div>
+<div class="line"><span class="lineno">  242</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;407&quot;</span>);</div>
+<div class="line"><span class="lineno">  243</span>            }</div>
+<div class="line"><span class="lineno">  244</span> </div>
+<div class="line"><span class="lineno">  245</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  246</span>            {</div>
+<div class="line"><span class="lineno">  247</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a743a177e79acc3ea503d02a8f7970b7f">AddEmployee</a>(employee);</div>
+<div class="line"><span class="lineno">  248</span>            }</div>
+<div class="line"><span class="lineno">  249</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  250</span>            {</div>
+<div class="line"><span class="lineno">  251</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;408&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  252</span>            }</div>
+<div class="line"><span class="lineno">  253</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_employees_html_a743a177e79acc3ea503d02a8f7970b7f"><div class="ttname"><a href="class_data___tier_1_1_employees.html#a743a177e79acc3ea503d02a8f7970b7f">Data_Tier.Employees.AddEmployee</a></div><div class="ttdeci">int AddEmployee(Employee employee)</div><div class="ttdoc">Adds a new employee to the list and sorts the list.</div><div class="ttdef"><b>Definition</b> Employees.cs:105</div></div>
 </div><!-- fragment -->
 </div>
@@ -1221,28 +1210,34 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  115</span>        {</div>
-<div class="line"><span class="lineno">  116</span>            <span class="keywordflow">if</span> (client == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  117</span>            {</div>
-<div class="line"><span class="lineno">  118</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;106&quot;</span>);</div>
-<div class="line"><span class="lineno">  119</span>            }</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(client))</div>
-<div class="line"><span class="lineno">  122</span>            {</div>
-<div class="line"><span class="lineno">  123</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;107&quot;</span>);</div>
-<div class="line"><span class="lineno">  124</span>            }</div>
-<div class="line"><span class="lineno">  125</span> </div>
-<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  127</span>            {</div>
-<div class="line"><span class="lineno">  128</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a129abe2a08e4334ad683cf0533772e07">AddClient</a>(client);</div>
-<div class="line"><span class="lineno">  129</span>            }</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  132</span>            {</div>
-<div class="line"><span class="lineno">  133</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;108&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  134</span>            }</div>
-<div class="line"><span class="lineno">  135</span>        }</div>
-<div class="ttc" id="aclass_data___tier_1_1_clients_html_a129abe2a08e4334ad683cf0533772e07"><div class="ttname"><a href="class_data___tier_1_1_clients.html#a129abe2a08e4334ad683cf0533772e07">Data_Tier.Clients.AddClient</a></div><div class="ttdeci">int AddClient(Client client)</div><div class="ttdoc">Adds a new client to the list of clients and sorts the list.</div><div class="ttdef"><b>Definition</b> Clients.cs:105</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>        {</div>
+<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">if</span> (client.<a class="code hl_property" href="class_object___tier_1_1_person.html#aa130ca80fe53c450b6f780664a591707">Name</a> == <span class="keywordtype">string</span>.Empty)</div>
+<div class="line"><span class="lineno">   92</span>            {</div>
+<div class="line"><span class="lineno">   93</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;116&quot;</span>);</div>
+<div class="line"><span class="lineno">   94</span>            }</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">if</span> (client == <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">   97</span>            {</div>
+<div class="line"><span class="lineno">   98</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;106&quot;</span>);</div>
+<div class="line"><span class="lineno">   99</span>            }</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(client))</div>
+<div class="line"><span class="lineno">  102</span>            {</div>
+<div class="line"><span class="lineno">  103</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;107&quot;</span>);</div>
+<div class="line"><span class="lineno">  104</span>            }</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  107</span>            {</div>
+<div class="line"><span class="lineno">  108</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a129abe2a08e4334ad683cf0533772e07">AddClient</a>(client);</div>
+<div class="line"><span class="lineno">  109</span>            }</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  112</span>            {</div>
+<div class="line"><span class="lineno">  113</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;108&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  114</span>            }</div>
+<div class="line"><span class="lineno">  115</span>        }</div>
+<div class="ttc" id="aclass_data___tier_1_1_clients_html_a129abe2a08e4334ad683cf0533772e07"><div class="ttname"><a href="class_data___tier_1_1_clients.html#a129abe2a08e4334ad683cf0533772e07">Data_Tier.Clients.AddClient</a></div><div class="ttdeci">int AddClient(Client client)</div><div class="ttdoc">Adds a new client to the list of clients and sorts the list.</div><div class="ttdef"><b>Definition</b> Clients.cs:104</div></div>
+<div class="ttc" id="aclass_object___tier_1_1_person_html_aa130ca80fe53c450b6f780664a591707"><div class="ttname"><a href="class_object___tier_1_1_person.html#aa130ca80fe53c450b6f780664a591707">Object_Tier.Person.Name</a></div><div class="ttdeci">string Name</div><div class="ttdoc">Gets or sets the name of the person.</div><div class="ttdef"><b>Definition</b> Person.cs:47</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1282,11 +1277,11 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The unique ID of the material in the inventory.</dd></dl>
-<div class="fragment"><div class="line"><span class="lineno">  399</span>        {</div>
-<div class="line"><span class="lineno">  400</span>            <span class="keywordtype">int</span> idM = AddMaterialToCatalog(material);</div>
-<div class="line"><span class="lineno">  401</span>            <span class="keywordtype">int</span> idMI = AddMaterialToInventory(idM, quantity);</div>
-<div class="line"><span class="lineno">  402</span>            <span class="keywordflow">return</span> idMI;</div>
-<div class="line"><span class="lineno">  403</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  379</span>        {</div>
+<div class="line"><span class="lineno">  380</span>            <span class="keywordtype">int</span> idM = AddMaterialToCatalog(material);</div>
+<div class="line"><span class="lineno">  381</span>            <span class="keywordtype">int</span> idMI = AddMaterialToInventory(idM, quantity);</div>
+<div class="line"><span class="lineno">  382</span>            <span class="keywordflow">return</span> idMI;</div>
+<div class="line"><span class="lineno">  383</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1327,28 +1322,28 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  619</span>        {</div>
-<div class="line"><span class="lineno">  620</span>            <span class="keywordflow">if</span> (project == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  621</span>            {</div>
-<div class="line"><span class="lineno">  622</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;815&quot;</span>);</div>
-<div class="line"><span class="lineno">  623</span>            }</div>
-<div class="line"><span class="lineno">  624</span> </div>
-<div class="line"><span class="lineno">  625</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(project))</div>
-<div class="line"><span class="lineno">  626</span>            {</div>
-<div class="line"><span class="lineno">  627</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;816&quot;</span>);</div>
-<div class="line"><span class="lineno">  628</span>            }</div>
-<div class="line"><span class="lineno">  629</span> </div>
-<div class="line"><span class="lineno">  630</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  631</span>            {</div>
-<div class="line"><span class="lineno">  632</span>                System.Threading.Thread.Sleep(500);</div>
-<div class="line"><span class="lineno">  633</span>                <span class="keywordtype">int</span> idProject = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a7281f5130267894eee04b40df3e46cd7">AddProject</a>(<a class="code hl_class" href="class_data___tier_1_1_project_data.html">ProjectData</a>.<a class="code hl_function" href="class_data___tier_1_1_project_data.html#a59b671ec43a1dde0039fb0637ac55d9e">CreateProjectData</a>(project));</div>
-<div class="line"><span class="lineno">  634</span>                <span class="keywordflow">return</span> idProject;</div>
-<div class="line"><span class="lineno">  635</span>            }</div>
-<div class="line"><span class="lineno">  636</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  637</span>            {</div>
-<div class="line"><span class="lineno">  638</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;817&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  639</span>            }</div>
-<div class="line"><span class="lineno">  640</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  599</span>        {</div>
+<div class="line"><span class="lineno">  600</span>            <span class="keywordflow">if</span> (project == <span class="keyword">null</span>)</div>
+<div class="line"><span class="lineno">  601</span>            {</div>
+<div class="line"><span class="lineno">  602</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;815&quot;</span>);</div>
+<div class="line"><span class="lineno">  603</span>            }</div>
+<div class="line"><span class="lineno">  604</span> </div>
+<div class="line"><span class="lineno">  605</span>            <span class="keywordflow">if</span> (<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(project))</div>
+<div class="line"><span class="lineno">  606</span>            {</div>
+<div class="line"><span class="lineno">  607</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;816&quot;</span>);</div>
+<div class="line"><span class="lineno">  608</span>            }</div>
+<div class="line"><span class="lineno">  609</span> </div>
+<div class="line"><span class="lineno">  610</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  611</span>            {</div>
+<div class="line"><span class="lineno">  612</span>                System.Threading.Thread.Sleep(500);</div>
+<div class="line"><span class="lineno">  613</span>                <span class="keywordtype">int</span> idProject = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a7281f5130267894eee04b40df3e46cd7">AddProject</a>(<a class="code hl_class" href="class_data___tier_1_1_project_data.html">ProjectData</a>.<a class="code hl_function" href="class_data___tier_1_1_project_data.html#a59b671ec43a1dde0039fb0637ac55d9e">CreateProjectData</a>(project));</div>
+<div class="line"><span class="lineno">  614</span>                <span class="keywordflow">return</span> idProject;</div>
+<div class="line"><span class="lineno">  615</span>            }</div>
+<div class="line"><span class="lineno">  616</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  617</span>            {</div>
+<div class="line"><span class="lineno">  618</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;817&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  619</span>            }</div>
+<div class="line"><span class="lineno">  620</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_project_data_html"><div class="ttname"><a href="class_data___tier_1_1_project_data.html">Data_Tier.ProjectData</a></div><div class="ttdoc">Class that represents project data, including operations related to clients, employees,...</div><div class="ttdef"><b>Definition</b> ProjectData.cs:21</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_project_data_html_a59b671ec43a1dde0039fb0637ac55d9e"><div class="ttname"><a href="class_data___tier_1_1_project_data.html#a59b671ec43a1dde0039fb0637ac55d9e">Data_Tier.ProjectData.CreateProjectData</a></div><div class="ttdeci">static ProjectData CreateProjectData(Project project)</div><div class="ttdoc">Factory method to create a new ProjectData instance for a given project.</div><div class="ttdef"><b>Definition</b> ProjectData.cs:82</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html_a7281f5130267894eee04b40df3e46cd7"><div class="ttname"><a href="class_data___tier_1_1_projects.html#a7281f5130267894eee04b40df3e46cd7">Data_Tier.Projects.AddProject</a></div><div class="ttdeci">int AddProject(ProjectData project)</div><div class="ttdoc">Adds a new project to the projects list.</div><div class="ttdef"><b>Definition</b> Projects.cs:125</div></div>
@@ -1392,35 +1387,22 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>        {</div>
-<div class="line"><span class="lineno">   37</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   38</span>            {</div>
-<div class="line"><span class="lineno">   39</span>                <a class="code hl_class" href="class_data___tier_1_1_data.html">Data</a> data = <span class="keyword">new</span> <a class="code hl_class" href="class_data___tier_1_1_data.html">Data</a>();</div>
-<div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>                <span class="keywordflow">if</span> (!File.Exists(path))</div>
-<div class="line"><span class="lineno">   42</span>                {</div>
-<div class="line"><span class="lineno">   43</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> FileNotFoundException(<span class="stringliteral">&quot;703&quot;</span>);</div>
-<div class="line"><span class="lineno">   44</span>                }</div>
-<div class="line"><span class="lineno">   45</span> </div>
-<div class="line"><span class="lineno">   46</span>                <span class="keywordflow">if</span> (!data.<a class="code hl_function" href="class_data___tier_1_1_data.html#ab06d39156f683a619c6e3ce58b83e901">CollectData</a>())</div>
-<div class="line"><span class="lineno">   47</span>                {</div>
-<div class="line"><span class="lineno">   48</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;702&quot;</span>);</div>
-<div class="line"><span class="lineno">   49</span>                }</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>                Stream fs = <span class="keyword">new</span> FileStream(path, FileMode.Create);</div>
-<div class="line"><span class="lineno">   52</span>                BinaryFormatter binaryFormatter = <span class="keyword">new</span> BinaryFormatter();</div>
-<div class="line"><span class="lineno">   53</span>                binaryFormatter.Serialize(fs, data);</div>
-<div class="line"><span class="lineno">   54</span>                fs.Close();</div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   58</span>            }</div>
-<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">   60</span>            {</div>
-<div class="line"><span class="lineno">   61</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;700&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">   62</span>            }</div>
-<div class="line"><span class="lineno">   63</span>        }</div>
-<div class="ttc" id="aclass_data___tier_1_1_data_html_ab06d39156f683a619c6e3ce58b83e901"><div class="ttname"><a href="class_data___tier_1_1_data.html#ab06d39156f683a619c6e3ce58b83e901">Data_Tier.Data.CollectData</a></div><div class="ttdeci">bool CollectData()</div><div class="ttdoc">Collects data from various system modules and stores it in the class.</div><div class="ttdef"><b>Definition</b> Data.cs:56</div></div>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>        {</div>
+<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   37</span>            {</div>
+<div class="line"><span class="lineno">   38</span>                <span class="keywordflow">if</span> (!File.Exists(path))</div>
+<div class="line"><span class="lineno">   39</span>                {</div>
+<div class="line"><span class="lineno">   40</span>                    <span class="keywordflow">throw</span> <span class="keyword">new</span> FileNotFoundException(<span class="stringliteral">&quot;703&quot;</span>);</div>
+<div class="line"><span class="lineno">   41</span>                }</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_data.html">Data</a>.<a class="code hl_function" href="class_data___tier_1_1_data.html#a6d515bd0a2a3ff796d88ad647a8d974c">SaveData</a>(path);</div>
+<div class="line"><span class="lineno">   44</span>            }</div>
+<div class="line"><span class="lineno">   45</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">   46</span>            {</div>
+<div class="line"><span class="lineno">   47</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;700&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">   48</span>            }</div>
+<div class="line"><span class="lineno">   49</span>        }</div>
+<div class="ttc" id="aclass_data___tier_1_1_data_html_a6d515bd0a2a3ff796d88ad647a8d974c"><div class="ttname"><a href="class_data___tier_1_1_data.html#a6d515bd0a2a3ff796d88ad647a8d974c">Data_Tier.Data.SaveData</a></div><div class="ttdeci">static bool SaveData(string path)</div><div class="ttdoc">Saves the current data to a binary file at the specified path.</div><div class="ttdef"><b>Definition</b> Data.cs:119</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1466,27 +1448,27 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  195</span>        {</div>
-<div class="line"><span class="lineno">  196</span>            <span class="keywordflow">if</span> (contact &lt; 9)</div>
-<div class="line"><span class="lineno">  197</span>            {</div>
-<div class="line"><span class="lineno">  198</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;111&quot;</span>);</div>
-<div class="line"><span class="lineno">  199</span>            }</div>
-<div class="line"><span class="lineno">  200</span> </div>
-<div class="line"><span class="lineno">  201</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
-<div class="line"><span class="lineno">  202</span>            {</div>
-<div class="line"><span class="lineno">  203</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;112&quot;</span>);</div>
-<div class="line"><span class="lineno">  204</span>            }</div>
-<div class="line"><span class="lineno">  205</span> </div>
-<div class="line"><span class="lineno">  206</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  207</span>            {</div>
-<div class="line"><span class="lineno">  208</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#aebfc1f6f9a03b5fc68a3c0ccdf37ecb9">UpdateContact</a>(idClient, contact);</div>
-<div class="line"><span class="lineno">  209</span>            }</div>
-<div class="line"><span class="lineno">  210</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  211</span>            {</div>
-<div class="line"><span class="lineno">  212</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;113&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  213</span>            }</div>
-<div class="line"><span class="lineno">  214</span>        }</div>
-<div class="ttc" id="aclass_data___tier_1_1_clients_html_aebfc1f6f9a03b5fc68a3c0ccdf37ecb9"><div class="ttname"><a href="class_data___tier_1_1_clients.html#aebfc1f6f9a03b5fc68a3c0ccdf37ecb9">Data_Tier.Clients.UpdateContact</a></div><div class="ttdeci">bool UpdateContact(int idClient, int contacto)</div><div class="ttdoc">Updates the contact information of a client based on the client ID.</div><div class="ttdef"><b>Definition</b> Clients.cs:208</div></div>
+<div class="fragment"><div class="line"><span class="lineno">  175</span>        {</div>
+<div class="line"><span class="lineno">  176</span>            <span class="keywordflow">if</span> (contact &lt; 9)</div>
+<div class="line"><span class="lineno">  177</span>            {</div>
+<div class="line"><span class="lineno">  178</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;111&quot;</span>);</div>
+<div class="line"><span class="lineno">  179</span>            }</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#a896770ff1ba1bd334abc5ad716de24d6">ExistClient</a>(idClient))</div>
+<div class="line"><span class="lineno">  182</span>            {</div>
+<div class="line"><span class="lineno">  183</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;112&quot;</span>);</div>
+<div class="line"><span class="lineno">  184</span>            }</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  187</span>            {</div>
+<div class="line"><span class="lineno">  188</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_clients.html">Clients</a>.<a class="code hl_property" href="class_data___tier_1_1_clients.html#ae817e2f9ee3b9eeee270b13fd372df01">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_clients.html#aebfc1f6f9a03b5fc68a3c0ccdf37ecb9">UpdateContact</a>(idClient, contact);</div>
+<div class="line"><span class="lineno">  189</span>            }</div>
+<div class="line"><span class="lineno">  190</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  191</span>            {</div>
+<div class="line"><span class="lineno">  192</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;113&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  193</span>            }</div>
+<div class="line"><span class="lineno">  194</span>        }</div>
+<div class="ttc" id="aclass_data___tier_1_1_clients_html_aebfc1f6f9a03b5fc68a3c0ccdf37ecb9"><div class="ttname"><a href="class_data___tier_1_1_clients.html#aebfc1f6f9a03b5fc68a3c0ccdf37ecb9">Data_Tier.Clients.UpdateContact</a></div><div class="ttdeci">bool UpdateContact(int idClient, int contacto)</div><div class="ttdoc">Updates the contact information of a client based on the client ID.</div><div class="ttdef"><b>Definition</b> Clients.cs:207</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1538,32 +1520,32 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  336</span>        {</div>
-<div class="line"><span class="lineno">  337</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
+<div class="fragment"><div class="line"><span class="lineno">  316</span>        {</div>
+<div class="line"><span class="lineno">  317</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#a0d5d08e18e75d1ddef7dae56492b15c5">EmployeeExist</a>(idEmployee))</div>
+<div class="line"><span class="lineno">  318</span>            {</div>
+<div class="line"><span class="lineno">  319</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;412&quot;</span>);</div>
+<div class="line"><span class="lineno">  320</span>            }</div>
+<div class="line"><span class="lineno">  321</span> </div>
+<div class="line"><span class="lineno">  322</span>            <span class="keywordflow">if</span> (role == <span class="keywordtype">string</span>.Empty)</div>
+<div class="line"><span class="lineno">  323</span>            {</div>
+<div class="line"><span class="lineno">  324</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;411&quot;</span>);</div>
+<div class="line"><span class="lineno">  325</span>            }</div>
+<div class="line"><span class="lineno">  326</span> </div>
+<div class="line"><span class="lineno">  327</span>            <span class="keywordflow">if</span> (priceHourly &lt;= 0)</div>
+<div class="line"><span class="lineno">  328</span>            {</div>
+<div class="line"><span class="lineno">  329</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;413&quot;</span>);</div>
+<div class="line"><span class="lineno">  330</span>            }</div>
+<div class="line"><span class="lineno">  331</span> </div>
+<div class="line"><span class="lineno">  332</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  333</span>            {</div>
+<div class="line"><span class="lineno">  334</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#aa69f887b9dfe918cd9c9dcf8128eb867">UpdateRole</a>(idEmployee, role, priceHourly);</div>
+<div class="line"><span class="lineno">  335</span>            }</div>
+<div class="line"><span class="lineno">  336</span> </div>
+<div class="line"><span class="lineno">  337</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
 <div class="line"><span class="lineno">  338</span>            {</div>
-<div class="line"><span class="lineno">  339</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;412&quot;</span>);</div>
+<div class="line"><span class="lineno">  339</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;414&quot;</span> + ex);</div>
 <div class="line"><span class="lineno">  340</span>            }</div>
-<div class="line"><span class="lineno">  341</span> </div>
-<div class="line"><span class="lineno">  342</span>            <span class="keywordflow">if</span> (role == <span class="keywordtype">string</span>.Empty)</div>
-<div class="line"><span class="lineno">  343</span>            {</div>
-<div class="line"><span class="lineno">  344</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;411&quot;</span>);</div>
-<div class="line"><span class="lineno">  345</span>            }</div>
-<div class="line"><span class="lineno">  346</span> </div>
-<div class="line"><span class="lineno">  347</span>            <span class="keywordflow">if</span> (priceHourly &lt;= 0)</div>
-<div class="line"><span class="lineno">  348</span>            {</div>
-<div class="line"><span class="lineno">  349</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;413&quot;</span>);</div>
-<div class="line"><span class="lineno">  350</span>            }</div>
-<div class="line"><span class="lineno">  351</span> </div>
-<div class="line"><span class="lineno">  352</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  353</span>            {</div>
-<div class="line"><span class="lineno">  354</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_employees.html">Employees</a>.<a class="code hl_property" href="class_data___tier_1_1_employees.html#ad6c28788ae26d40c491037c8975a4f84">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_employees.html#aa69f887b9dfe918cd9c9dcf8128eb867">UpdateRole</a>(idEmployee, role, priceHourly);</div>
-<div class="line"><span class="lineno">  355</span>            }</div>
-<div class="line"><span class="lineno">  356</span> </div>
-<div class="line"><span class="lineno">  357</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  358</span>            {</div>
-<div class="line"><span class="lineno">  359</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;414&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  360</span>            }</div>
-<div class="line"><span class="lineno">  361</span>        }</div>
+<div class="line"><span class="lineno">  341</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_employees_html_aa69f887b9dfe918cd9c9dcf8128eb867"><div class="ttname"><a href="class_data___tier_1_1_employees.html#aa69f887b9dfe918cd9c9dcf8128eb867">Data_Tier.Employees.UpdateRole</a></div><div class="ttdeci">bool UpdateRole(int idEmployee, string role, double hourly)</div><div class="ttdoc">Updates an employee's role and hourly rate.</div><div class="ttdef"><b>Definition</b> Employees.cs:207</div></div>
 </div><!-- fragment -->
 </div>
@@ -1610,29 +1592,29 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  540</span>        {</div>
-<div class="line"><span class="lineno">  541</span>            <span class="keywordflow">if</span> (price &lt; 0)</div>
-<div class="line"><span class="lineno">  542</span>            {</div>
-<div class="line"><span class="lineno">  543</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;615&quot;</span>);</div>
-<div class="line"><span class="lineno">  544</span>            }</div>
-<div class="line"><span class="lineno">  545</span> </div>
-<div class="line"><span class="lineno">  546</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_materials.html">Materials</a>.<a class="code hl_property" href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_materials.html#a2ae7a1c4e0049180cd2692986c0cc801">MaterialExist</a>(idMaterial))</div>
-<div class="line"><span class="lineno">  547</span>            {</div>
-<div class="line"><span class="lineno">  548</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;610&quot;</span>);</div>
-<div class="line"><span class="lineno">  549</span>            }</div>
-<div class="line"><span class="lineno">  550</span> </div>
-<div class="line"><span class="lineno">  551</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  552</span>            {</div>
-<div class="line"><span class="lineno">  553</span>                <span class="keywordtype">bool</span> update = <a class="code hl_class" href="class_data___tier_1_1_materials.html">Materials</a>.<a class="code hl_property" href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_materials.html#a988296d288dd70a6b81d30b3e958f42f">UpdatePrice</a>(idMaterial, price);</div>
-<div class="line"><span class="lineno">  554</span>                <span class="keywordflow">return</span> update;</div>
-<div class="line"><span class="lineno">  555</span>            }</div>
-<div class="line"><span class="lineno">  556</span> </div>
-<div class="line"><span class="lineno">  557</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  558</span>            {</div>
-<div class="line"><span class="lineno">  559</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;614.&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  560</span>            }</div>
-<div class="line"><span class="lineno">  561</span> </div>
-<div class="line"><span class="lineno">  562</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  520</span>        {</div>
+<div class="line"><span class="lineno">  521</span>            <span class="keywordflow">if</span> (price &lt; 0)</div>
+<div class="line"><span class="lineno">  522</span>            {</div>
+<div class="line"><span class="lineno">  523</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;615&quot;</span>);</div>
+<div class="line"><span class="lineno">  524</span>            }</div>
+<div class="line"><span class="lineno">  525</span> </div>
+<div class="line"><span class="lineno">  526</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_materials.html">Materials</a>.<a class="code hl_property" href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_materials.html#a2ae7a1c4e0049180cd2692986c0cc801">MaterialExist</a>(idMaterial))</div>
+<div class="line"><span class="lineno">  527</span>            {</div>
+<div class="line"><span class="lineno">  528</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;610&quot;</span>);</div>
+<div class="line"><span class="lineno">  529</span>            }</div>
+<div class="line"><span class="lineno">  530</span> </div>
+<div class="line"><span class="lineno">  531</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  532</span>            {</div>
+<div class="line"><span class="lineno">  533</span>                <span class="keywordtype">bool</span> update = <a class="code hl_class" href="class_data___tier_1_1_materials.html">Materials</a>.<a class="code hl_property" href="class_data___tier_1_1_materials.html#a56c75e67eb7cb8250d400c7361afa72b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_materials.html#a988296d288dd70a6b81d30b3e958f42f">UpdatePrice</a>(idMaterial, price);</div>
+<div class="line"><span class="lineno">  534</span>                <span class="keywordflow">return</span> update;</div>
+<div class="line"><span class="lineno">  535</span>            }</div>
+<div class="line"><span class="lineno">  536</span> </div>
+<div class="line"><span class="lineno">  537</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  538</span>            {</div>
+<div class="line"><span class="lineno">  539</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;614.&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  540</span>            }</div>
+<div class="line"><span class="lineno">  541</span> </div>
+<div class="line"><span class="lineno">  542</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_materials_html_a988296d288dd70a6b81d30b3e958f42f"><div class="ttname"><a href="class_data___tier_1_1_materials.html#a988296d288dd70a6b81d30b3e958f42f">Data_Tier.Materials.UpdatePrice</a></div><div class="ttdeci">bool UpdatePrice(int idMaterial, double price)</div><div class="ttdoc">Updates the price of a material in the list based on its ID.</div><div class="ttdef"><b>Definition</b> Materials.cs:176</div></div>
 </div><!-- fragment -->
 </div>
@@ -1679,16 +1661,16 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  672</span>        {</div>
-<div class="line"><span class="lineno">  673</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  674</span>            {</div>
-<div class="line"><span class="lineno">  675</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#aeb5348393eacdf16545abeb17c8af23f">UpdateStatus</a>(idProject, status);</div>
-<div class="line"><span class="lineno">  676</span>            }</div>
-<div class="line"><span class="lineno">  677</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  678</span>            {</div>
-<div class="line"><span class="lineno">  679</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;819&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  680</span>            }</div>
-<div class="line"><span class="lineno">  681</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  652</span>        {</div>
+<div class="line"><span class="lineno">  653</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  654</span>            {</div>
+<div class="line"><span class="lineno">  655</span>                <span class="keywordflow">return</span> <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#aeb5348393eacdf16545abeb17c8af23f">UpdateStatus</a>(idProject, status);</div>
+<div class="line"><span class="lineno">  656</span>            }</div>
+<div class="line"><span class="lineno">  657</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  658</span>            {</div>
+<div class="line"><span class="lineno">  659</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;819&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  660</span>            }</div>
+<div class="line"><span class="lineno">  661</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html_aeb5348393eacdf16545abeb17c8af23f"><div class="ttname"><a href="class_data___tier_1_1_projects.html#aeb5348393eacdf16545abeb17c8af23f">Data_Tier.Projects.UpdateStatus</a></div><div class="ttdeci">bool UpdateStatus(int idProject, Status status)</div><div class="ttdoc">Updates the status of a project by its ID.</div><div class="ttdef"><b>Definition</b> Projects.cs:219</div></div>
 </div><!-- fragment -->
 </div>
@@ -1735,28 +1717,28 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  505</span>        {</div>
-<div class="line"><span class="lineno">  506</span>            <span class="keywordflow">if</span> (quantity &lt; 0)</div>
-<div class="line"><span class="lineno">  507</span>            {</div>
-<div class="line"><span class="lineno">  508</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;613&quot;</span>);</div>
-<div class="line"><span class="lineno">  509</span>            }</div>
-<div class="line"><span class="lineno">  510</span> </div>
-<div class="line"><span class="lineno">  511</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#aa07d2628caebc320b65db94ec768ac1e">VerifyMaterialExistence</a>(idMaterial))</div>
-<div class="line"><span class="lineno">  512</span>            {</div>
-<div class="line"><span class="lineno">  513</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;610&quot;</span>);</div>
-<div class="line"><span class="lineno">  514</span>            }</div>
-<div class="line"><span class="lineno">  515</span> </div>
-<div class="line"><span class="lineno">  516</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  517</span>            {</div>
-<div class="line"><span class="lineno">  518</span>                <span class="keywordtype">bool</span> update = <a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#a3d349ce4896a0d3a9b46de1000b82cc6">UpdateQuantity</a>(idMaterial, quantity);</div>
-<div class="line"><span class="lineno">  519</span>                <span class="keywordflow">return</span> update;</div>
-<div class="line"><span class="lineno">  520</span>            }</div>
-<div class="line"><span class="lineno">  521</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  522</span>            {</div>
-<div class="line"><span class="lineno">  523</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;618&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  524</span>            }</div>
-<div class="line"><span class="lineno">  525</span> </div>
-<div class="line"><span class="lineno">  526</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  485</span>        {</div>
+<div class="line"><span class="lineno">  486</span>            <span class="keywordflow">if</span> (quantity &lt; 0)</div>
+<div class="line"><span class="lineno">  487</span>            {</div>
+<div class="line"><span class="lineno">  488</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;613&quot;</span>);</div>
+<div class="line"><span class="lineno">  489</span>            }</div>
+<div class="line"><span class="lineno">  490</span> </div>
+<div class="line"><span class="lineno">  491</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#aa07d2628caebc320b65db94ec768ac1e">VerifyMaterialExistence</a>(idMaterial))</div>
+<div class="line"><span class="lineno">  492</span>            {</div>
+<div class="line"><span class="lineno">  493</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;610&quot;</span>);</div>
+<div class="line"><span class="lineno">  494</span>            }</div>
+<div class="line"><span class="lineno">  495</span> </div>
+<div class="line"><span class="lineno">  496</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  497</span>            {</div>
+<div class="line"><span class="lineno">  498</span>                <span class="keywordtype">bool</span> update = <a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#a3d349ce4896a0d3a9b46de1000b82cc6">UpdateQuantity</a>(idMaterial, quantity);</div>
+<div class="line"><span class="lineno">  499</span>                <span class="keywordflow">return</span> update;</div>
+<div class="line"><span class="lineno">  500</span>            }</div>
+<div class="line"><span class="lineno">  501</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  502</span>            {</div>
+<div class="line"><span class="lineno">  503</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;618&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  504</span>            }</div>
+<div class="line"><span class="lineno">  505</span> </div>
+<div class="line"><span class="lineno">  506</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_material_inventory_html_a3d349ce4896a0d3a9b46de1000b82cc6"><div class="ttname"><a href="class_data___tier_1_1_material_inventory.html#a3d349ce4896a0d3a9b46de1000b82cc6">Data_Tier.MaterialInventory.UpdateQuantity</a></div><div class="ttdeci">bool UpdateQuantity(int idMaterial, int quantityUpdate)</div><div class="ttdoc">Updates the quantity of a material in the inventory.</div><div class="ttdef"><b>Definition</b> MaterialInventory.cs:178</div></div>
 </div><!-- fragment -->
 </div>
@@ -1809,35 +1791,35 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  865</span>        {</div>
-<div class="line"><span class="lineno">  866</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
-<div class="line"><span class="lineno">  867</span>            {</div>
-<div class="line"><span class="lineno">  868</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
-<div class="line"><span class="lineno">  869</span>            }</div>
-<div class="line"><span class="lineno">  870</span> </div>
-<div class="line"><span class="lineno">  871</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#aa07d2628caebc320b65db94ec768ac1e">VerifyMaterialExistence</a>(idMaterial))</div>
-<div class="line"><span class="lineno">  872</span>            {</div>
-<div class="line"><span class="lineno">  873</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;827&quot;</span>);</div>
-<div class="line"><span class="lineno">  874</span>            }</div>
-<div class="line"><span class="lineno">  875</span> </div>
-<div class="line"><span class="lineno">  876</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#a36deed3d8216bf013a48f70a41ffcad7">VerifyMaterialQuantity</a>(idMaterial, quantity))</div>
-<div class="line"><span class="lineno">  877</span>            {</div>
-<div class="line"><span class="lineno">  878</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;828&quot;</span>);</div>
-<div class="line"><span class="lineno">  879</span>            }</div>
-<div class="line"><span class="lineno">  880</span> </div>
-<div class="line"><span class="lineno">  881</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  882</span>            {</div>
-<div class="line"><span class="lineno">  883</span>                <span class="keywordtype">bool</span> result = <a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#af9ff7521af7288f477b6946558dd610b">UseMaterial</a>(idMaterial, quantity);</div>
-<div class="line"><span class="lineno">  884</span>                <span class="keywordtype">bool</span> result1 = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a926bd6ab57e9451d82c1d095bd598e08">UseMaterial</a>(idProject, idMaterial, quantity);</div>
-<div class="line"><span class="lineno">  885</span>                <span class="keywordflow">return</span> result1;</div>
-<div class="line"><span class="lineno">  886</span> </div>
-<div class="line"><span class="lineno">  887</span>            }</div>
-<div class="line"><span class="lineno">  888</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  889</span>            {</div>
-<div class="line"><span class="lineno">  890</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;829&quot;</span> + ex);</div>
-<div class="line"><span class="lineno">  891</span>            }</div>
-<div class="line"><span class="lineno">  892</span> </div>
-<div class="line"><span class="lineno">  893</span>        }</div>
+<div class="fragment"><div class="line"><span class="lineno">  845</span>        {</div>
+<div class="line"><span class="lineno">  846</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a0964b2eafd2ef9f57f8d3d7511d044fc">ProjectExists</a>(idProject))</div>
+<div class="line"><span class="lineno">  847</span>            {</div>
+<div class="line"><span class="lineno">  848</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;820&quot;</span>);</div>
+<div class="line"><span class="lineno">  849</span>            }</div>
+<div class="line"><span class="lineno">  850</span> </div>
+<div class="line"><span class="lineno">  851</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#aa07d2628caebc320b65db94ec768ac1e">VerifyMaterialExistence</a>(idMaterial))</div>
+<div class="line"><span class="lineno">  852</span>            {</div>
+<div class="line"><span class="lineno">  853</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;827&quot;</span>);</div>
+<div class="line"><span class="lineno">  854</span>            }</div>
+<div class="line"><span class="lineno">  855</span> </div>
+<div class="line"><span class="lineno">  856</span>            <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#a36deed3d8216bf013a48f70a41ffcad7">VerifyMaterialQuantity</a>(idMaterial, quantity))</div>
+<div class="line"><span class="lineno">  857</span>            {</div>
+<div class="line"><span class="lineno">  858</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;828&quot;</span>);</div>
+<div class="line"><span class="lineno">  859</span>            }</div>
+<div class="line"><span class="lineno">  860</span> </div>
+<div class="line"><span class="lineno">  861</span>            <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">  862</span>            {</div>
+<div class="line"><span class="lineno">  863</span>                <span class="keywordtype">bool</span> result = <a class="code hl_class" href="class_data___tier_1_1_material_inventory.html">MaterialInventory</a>.<a class="code hl_property" href="class_data___tier_1_1_material_inventory.html#af75102dd2f1d48e0242d49c827b4228b">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_material_inventory.html#af9ff7521af7288f477b6946558dd610b">UseMaterial</a>(idMaterial, quantity);</div>
+<div class="line"><span class="lineno">  864</span>                <span class="keywordtype">bool</span> result1 = <a class="code hl_class" href="class_data___tier_1_1_projects.html">Projects</a>.<a class="code hl_property" href="class_data___tier_1_1_projects.html#a4101fcebbf5230744c80dbaf7bead449">Instance</a>.<a class="code hl_function" href="class_data___tier_1_1_projects.html#a926bd6ab57e9451d82c1d095bd598e08">UseMaterial</a>(idProject, idMaterial, quantity);</div>
+<div class="line"><span class="lineno">  865</span>                <span class="keywordflow">return</span> result1;</div>
+<div class="line"><span class="lineno">  866</span> </div>
+<div class="line"><span class="lineno">  867</span>            }</div>
+<div class="line"><span class="lineno">  868</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
+<div class="line"><span class="lineno">  869</span>            {</div>
+<div class="line"><span class="lineno">  870</span>                <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code hl_class" href="class_custom_exceptions_1_1_configuration_error_exception.html">ConfigurationErrorException</a>(<span class="stringliteral">&quot;829&quot;</span> + ex);</div>
+<div class="line"><span class="lineno">  871</span>            }</div>
+<div class="line"><span class="lineno">  872</span> </div>
+<div class="line"><span class="lineno">  873</span>        }</div>
 <div class="ttc" id="aclass_data___tier_1_1_material_inventory_html_a36deed3d8216bf013a48f70a41ffcad7"><div class="ttname"><a href="class_data___tier_1_1_material_inventory.html#a36deed3d8216bf013a48f70a41ffcad7">Data_Tier.MaterialInventory.VerifyMaterialQuantity</a></div><div class="ttdeci">bool VerifyMaterialQuantity(int idMaterial, int quantity)</div><div class="ttdoc">Verifies if there is enough quantity of a material in the inventory.</div><div class="ttdef"><b>Definition</b> MaterialInventory.cs:154</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_material_inventory_html_af9ff7521af7288f477b6946558dd610b"><div class="ttname"><a href="class_data___tier_1_1_material_inventory.html#af9ff7521af7288f477b6946558dd610b">Data_Tier.MaterialInventory.UseMaterial</a></div><div class="ttdeci">bool UseMaterial(int idMaterial, int quantity)</div><div class="ttdoc">Decreases the quantity of a material in the inventory when it is used.</div><div class="ttdef"><b>Definition</b> MaterialInventory.cs:207</div></div>
 <div class="ttc" id="aclass_data___tier_1_1_projects_html_a926bd6ab57e9451d82c1d095bd598e08"><div class="ttname"><a href="class_data___tier_1_1_projects.html#a926bd6ab57e9451d82c1d095bd598e08">Data_Tier.Projects.UseMaterial</a></div><div class="ttdeci">bool UseMaterial(int idProject, int idMaterial, int quantity)</div><div class="ttdoc">Uses material in a project.</div><div class="ttdef"><b>Definition</b> Projects.cs:374</div></div>

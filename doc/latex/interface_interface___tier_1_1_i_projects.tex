@@ -1,0 +1,269 @@
+\doxysection{Interface\+\_\+\+Tier.\+IProjects Interface Reference}
+\hypertarget{interface_interface___tier_1_1_i_projects}{}\label{interface_interface___tier_1_1_i_projects}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+
+
+Methods to implement in the projects class.  
+
+
+
+
+Inheritance diagram for Interface\+\_\+\+Tier.\+IProjects\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{interface_interface___tier_1_1_i_projects__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a050cd933392a240f89f2c01d7b733a08}{Remove\+Project}} (int id\+Project)
+\begin{DoxyCompactList}\small\item\em Removes a project from the projects list by its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a813383762e567dc5d5a139d95f8969c4}{Project\+Exists}} (int id\+Project)
+\begin{DoxyCompactList}\small\item\em Checks if a project exists by its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a70b05531b83754841335fac43bf7f8e0}{Close\+Project}} (int id\+Project)
+\begin{DoxyCompactList}\small\item\em Closes a project by setting its end date and status to completed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_acddd379d00567185c639d1a405a5199f}{Add\+Client}} (int id\+Project, int id\+Client)
+\begin{DoxyCompactList}\small\item\em Adds a client to a project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a4b0b83e0d7d4352b5df25222f0e69259}{Remove\+Client}} (int id\+Project, int id\+Client)
+\begin{DoxyCompactList}\small\item\em Removes a client from a project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a58fa6a8fb33cdc54c1e03f11c396688a}{Add\+Employee}} (int id\+Project, int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Adds an employee to a project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_a36a00f1dad13442da1e6505bf32e5769}{Remove\+Employee}} (int id\+Project, int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Removes an employee from a project. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_projects_ab98c34cf5140d99a7bba3c029ab1ac05}{Use\+Material}} (int id\+Project, int id\+Material, int quantity)
+\begin{DoxyCompactList}\small\item\em Uses material in a project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Methods to implement in the projects class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_interface___tier_1_1_i_projects_acddd379d00567185c639d1a405a5199f}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}!AddClient@{AddClient}}
+\index{AddClient@{AddClient}!Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+\doxysubsubsection{\texorpdfstring{AddClient()}{AddClient()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_projects_acddd379d00567185c639d1a405a5199f} 
+bool Interface\+\_\+\+Tier.\+IProjects.\+Add\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Adds a client to a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to add the client to.\\
+\hline
+{\em id\+Client} & The ID of the client to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the client was added successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_projects_a819d23aeba0aac360051ace79463756b}{Data\+\_\+\+Tier.\+Projects}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_projects_a58fa6a8fb33cdc54c1e03f11c396688a}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}!AddEmployee@{AddEmployee}}
+\index{AddEmployee@{AddEmployee}!Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+\doxysubsubsection{\texorpdfstring{AddEmployee()}{AddEmployee()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_projects_a58fa6a8fb33cdc54c1e03f11c396688a} 
+bool Interface\+\_\+\+Tier.\+IProjects.\+Add\+Employee (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})}
+
+
+
+Adds an employee to a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to add the employee to.\\
+\hline
+{\em id\+Employee} & The ID of the employee to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was added successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_projects_a5ef19eed2efe61fcdff7ae225c69bed7}{Data\+\_\+\+Tier.\+Projects}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_projects_a70b05531b83754841335fac43bf7f8e0}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}!CloseProject@{CloseProject}}
+\index{CloseProject@{CloseProject}!Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+\doxysubsubsection{\texorpdfstring{CloseProject()}{CloseProject()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_projects_a70b05531b83754841335fac43bf7f8e0} 
+bool Interface\+\_\+\+Tier.\+IProjects.\+Close\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{}\end{DoxyParamCaption})}
+
+
+
+Closes a project by setting its end date and status to completed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to close.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project was successfully closed, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the closure. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_projects_abb62bd02e4e20d0db63eab6c177551f5}{Data\+\_\+\+Tier.\+Projects}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_projects_a813383762e567dc5d5a139d95f8969c4}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}!ProjectExists@{ProjectExists}}
+\index{ProjectExists@{ProjectExists}!Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+\doxysubsubsection{\texorpdfstring{ProjectExists()}{ProjectExists()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_projects_a813383762e567dc5d5a139d95f8969c4} 
+bool Interface\+\_\+\+Tier.\+IProjects.\+Project\+Exists (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a project exists by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Id} & The ID of the project to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project exists, otherwise false.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_projects_a0ed230edd97b7193077d8d6bac3000d3}{Data\+\_\+\+Tier.\+Projects}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_projects_a4b0b83e0d7d4352b5df25222f0e69259}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}!RemoveClient@{RemoveClient}}
+\index{RemoveClient@{RemoveClient}!Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+\doxysubsubsection{\texorpdfstring{RemoveClient()}{RemoveClient()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_projects_a4b0b83e0d7d4352b5df25222f0e69259} 
+bool Interface\+\_\+\+Tier.\+IProjects.\+Remove\+Client (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Client}{}\end{DoxyParamCaption})}
+
+
+
+Removes a client from a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to remove the client from.\\
+\hline
+{\em id\+Client} & The ID of the client to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the client was removed successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the removal. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_projects_ac6c8a231895cd7f4933304f726ff4960}{Data\+\_\+\+Tier.\+Projects}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_projects_a36a00f1dad13442da1e6505bf32e5769}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}!RemoveEmployee@{RemoveEmployee}}
+\index{RemoveEmployee@{RemoveEmployee}!Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+\doxysubsubsection{\texorpdfstring{RemoveEmployee()}{RemoveEmployee()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_projects_a36a00f1dad13442da1e6505bf32e5769} 
+bool Interface\+\_\+\+Tier.\+IProjects.\+Remove\+Employee (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})}
+
+
+
+Removes an employee from a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to remove the employee from.\\
+\hline
+{\em id\+Employee} & The ID of the employee to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the employee was removed successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the removal. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_projects_a1ee69b69a7fe3a510ed514c2dfed190a}{Data\+\_\+\+Tier.\+Projects}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_projects_a050cd933392a240f89f2c01d7b733a08}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}!RemoveProject@{RemoveProject}}
+\index{RemoveProject@{RemoveProject}!Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+\doxysubsubsection{\texorpdfstring{RemoveProject()}{RemoveProject()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_projects_a050cd933392a240f89f2c01d7b733a08} 
+bool Interface\+\_\+\+Tier.\+IProjects.\+Remove\+Project (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{}\end{DoxyParamCaption})}
+
+
+
+Removes a project from the projects list by its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the project was successfully removed, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the removal. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_projects_a02f3f7cbf70eb3aaae10985b3fdb15d5}{Data\+\_\+\+Tier.\+Projects}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_projects_ab98c34cf5140d99a7bba3c029ab1ac05}\index{Interface\_Tier.IProjects@{Interface\_Tier.IProjects}!UseMaterial@{UseMaterial}}
+\index{UseMaterial@{UseMaterial}!Interface\_Tier.IProjects@{Interface\_Tier.IProjects}}
+\doxysubsubsection{\texorpdfstring{UseMaterial()}{UseMaterial()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_projects_ab98c34cf5140d99a7bba3c029ab1ac05} 
+bool Interface\+\_\+\+Tier.\+IProjects.\+Use\+Material (\begin{DoxyParamCaption}\item[{int}]{id\+Project}{, }\item[{int}]{id\+Material}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})}
+
+
+
+Uses material in a project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Project} & The ID of the project to use material in.\\
+\hline
+{\em id\+Material} & The ID of the material to use.\\
+\hline
+{\em quantity} & The quantity of the material to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material was used successfully, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws an exception if an error occurs during the material use. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_projects_a926bd6ab57e9451d82c1d095bd598e08}{Data\+\_\+\+Tier.\+Projects}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Interface Tier/IProjects.\+cs\end{DoxyCompactItemize}

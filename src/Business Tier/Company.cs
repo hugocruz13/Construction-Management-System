@@ -11,7 +11,6 @@ using CustomExceptions;
 using Object_Tier;
 using Data_Tier;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Business_Tier
 {
@@ -36,25 +35,12 @@ namespace Business_Tier
         {
             try
             {
-                Data data = new Data();
-
                 if (!File.Exists(path))
                 {
                     throw new FileNotFoundException("703");
                 }
 
-                if (!data.CollectData())
-                {
-                    throw new ConfigurationErrorException("702");
-                }
-
-                Stream fs = new FileStream(path, FileMode.Create);
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                binaryFormatter.Serialize(fs, data);
-                fs.Close();
-
-
-                return true;
+                return Data.SaveData(path);
             }
             catch (Exception ex)
             {
@@ -79,18 +65,7 @@ namespace Business_Tier
                     throw new ConfigurationErrorException("703");
                 }
 
-                Data data = new Data();
-                Stream s = File.Open(path, FileMode.Open, FileAccess.Read);
-                BinaryFormatter b = new BinaryFormatter();
-                data = (Data)b.Deserialize(s);
-                s.Close();
-
-                if (!data.PutData())
-                {
-                    throw new Exception("700");
-                }
-
-                return true;
+                return Data.LoadData(path);
             }
             catch (Exception ex)
             {
@@ -181,7 +156,7 @@ namespace Business_Tier
             }
             catch (Exception ex)
             {
-                 throw new ConfigurationErrorException("110" + ex);
+                throw new ConfigurationErrorException("110" + ex);
             }
         }
 
@@ -908,8 +883,6 @@ namespace Business_Tier
         {
         }
         #endregion
-
-
     }
 
 }

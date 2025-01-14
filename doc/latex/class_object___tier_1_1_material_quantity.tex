@@ -1,0 +1,327 @@
+\doxysection{Object\+\_\+\+Tier.\+Material\+Quantity Class Reference}
+\hypertarget{class_object___tier_1_1_material_quantity}{}\label{class_object___tier_1_1_material_quantity}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+
+
+Represents the quantity of a material and the date it was added.  
+
+
+
+
+Inheritance diagram for Object\+\_\+\+Tier.\+Material\+Quantity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_object___tier_1_1_material_quantity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Object\+\_\+\+Tier.\+Material\+Quantity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_object___tier_1_1_material_quantity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object___tier_1_1_material_quantity_a610237b3bff8ba362e11aa8a01fb6d1d}{Material\+Quantity}} (int id, int quantity)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} class with an ID and quantity. The date is set to the current date and time. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_object___tier_1_1_material_quantity_abe11fad3867f018b96bd1af15fa188ba}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Checks if the current \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} is equal to another object. Two \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} objects are equal if their material IDs are the same. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_object___tier_1_1_material_quantity_aaa33d10f67c88378e27135c2a433deb4}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity}. Includes the material ID, date, and quantity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a04b8619c50b5a30aa9d509a9417a2fcd}{Compare\+To}} (\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} material)
+\begin{DoxyCompactList}\small\item\em Compares the current \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} to another based on their material IDs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a4ca6af0de296472bf7f053c2fa235e88}{Create\+Material\+Quantity}} (int id, int quantity)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} instance. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_material_quantity_ab3d8537ce9db67769a0ed117168513f3}{operator-\/}} (\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} material1, \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} material2)
+\begin{DoxyCompactList}\small\item\em Checks if two \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} objects are equal using the "{}-\/"{} operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a366a01b4e772d5b38893a0c177111ea7}{operator+}} (\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} material1, \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} material2)
+\begin{DoxyCompactList}\small\item\em Checks if two \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} objects are not equal using the "{}+"{} operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a647015cfcff2ffae0a3b03a2fb1823c8}{Id\+Material}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the ID of the material. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a55dd2effe93e56e2f48ba2df7d0caab2}{Quantity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the quantity of the material. The value must be zero or greater. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_object___tier_1_1_material_quantity_ad66330b4591a2342432840c71e3826cc}{Date}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the date the material was added. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the quantity of a material and the date it was added. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_object___tier_1_1_material_quantity_a610237b3bff8ba362e11aa8a01fb6d1d}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!MaterialQuantity@{MaterialQuantity}}
+\index{MaterialQuantity@{MaterialQuantity}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{MaterialQuantity()}{MaterialQuantity()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_a610237b3bff8ba362e11aa8a01fb6d1d} 
+Object\+\_\+\+Tier.\+Material\+Quantity.\+Material\+Quantity (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} class with an ID and quantity. The date is set to the current date and time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em quantity} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ this.idMaterial\ =\ id;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a55dd2effe93e56e2f48ba2df7d0caab2}{Quantity}}\ =\ quantity;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ date\ =\ DateTime.Now;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_object___tier_1_1_material_quantity_a04b8619c50b5a30aa9d509a9417a2fcd}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_a04b8619c50b5a30aa9d509a9417a2fcd} 
+int Object\+\_\+\+Tier.\+Material\+Quantity.\+Compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{material}{}\end{DoxyParamCaption})}
+
+
+
+Compares the current \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} to another based on their material IDs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & The \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value indicating the relative order of the objects.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a647015cfcff2ffae0a3b03a2fb1823c8}{IdMaterial}}.CompareTo(material.IdMaterial);}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_quantity_a4ca6af0de296472bf7f053c2fa235e88}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!CreateMaterialQuantity@{CreateMaterialQuantity}}
+\index{CreateMaterialQuantity@{CreateMaterialQuantity}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{CreateMaterialQuantity()}{CreateMaterialQuantity()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_a4ca6af0de296472bf7f053c2fa235e88} 
+static \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} Object\+\_\+\+Tier.\+Material\+Quantity.\+Create\+Material\+Quantity (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{int}]{quantity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the material.\\
+\hline
+{\em quantity} & The quantity of the material.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} object.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a610237b3bff8ba362e11aa8a01fb6d1d}{MaterialQuantity}}(\textcolor{keywordtype}{id},\ quantity);}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_quantity_abe11fad3867f018b96bd1af15fa188ba}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!Equals@{Equals}}
+\index{Equals@{Equals}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_abe11fad3867f018b96bd1af15fa188ba} 
+override bool Object\+\_\+\+Tier.\+Material\+Quantity.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the current \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} is equal to another object. Two \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} objects are equal if their material IDs are the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a610237b3bff8ba362e11aa8a01fb6d1d}{MaterialQuantity}})}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a610237b3bff8ba362e11aa8a01fb6d1d}{MaterialQuantity}}\ othermaterial\ =\ obj\ as\ \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a610237b3bff8ba362e11aa8a01fb6d1d}{MaterialQuantity}};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (idMaterial\ ==\ othermaterial.idMaterial)}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_quantity_a366a01b4e772d5b38893a0c177111ea7}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!operator+@{operator+}}
+\index{operator+@{operator+}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_a366a01b4e772d5b38893a0c177111ea7} 
+static bool Object\+\_\+\+Tier.\+Material\+Quantity.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{material1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{material2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if two \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} objects are not equal using the "{}+"{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material1} & The first \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity}.\\
+\hline
+{\em material2} & The second \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are not equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(material1\ -\/\ material2);}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_quantity_ab3d8537ce9db67769a0ed117168513f3}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_ab3d8537ce9db67769a0ed117168513f3} 
+static bool Object\+\_\+\+Tier.\+Material\+Quantity.\+operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{material1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{material2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if two \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity} objects are equal using the "{}-\/"{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material1} & The first \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity}.\\
+\hline
+{\em material2} & The second \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (material1.Equals(material2))}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_quantity_aaa33d10f67c88378e27135c2a433deb4}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!ToString@{ToString}}
+\index{ToString@{ToString}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_aaa33d10f67c88378e27135c2a433deb4} 
+override string Object\+\_\+\+Tier.\+Material\+Quantity.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity}. Includes the material ID, date, and quantity. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the \doxylink{class_object___tier_1_1_material_quantity}{Material\+Quantity}.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ idMaterial\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_material_quantity_ad66330b4591a2342432840c71e3826cc}{Date}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_material_quantity_a55dd2effe93e56e2f48ba2df7d0caab2}{Quantity}};}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_object___tier_1_1_material_quantity_ad66330b4591a2342432840c71e3826cc}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!Date@{Date}}
+\index{Date@{Date}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{Date}{Date}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_ad66330b4591a2342432840c71e3826cc} 
+Date\+Time Object\+\_\+\+Tier.\+Material\+Quantity.\+Date\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the date the material was added. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ date\ =\ value;\ \}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ date;\ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_quantity_a647015cfcff2ffae0a3b03a2fb1823c8}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!IdMaterial@{IdMaterial}}
+\index{IdMaterial@{IdMaterial}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{IdMaterial}{IdMaterial}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_a647015cfcff2ffae0a3b03a2fb1823c8} 
+int Object\+\_\+\+Tier.\+Material\+Quantity.\+Id\+Material\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the ID of the material. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ idMaterial;\ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_material_quantity_a55dd2effe93e56e2f48ba2df7d0caab2}\index{Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Object\_Tier.MaterialQuantity@{Object\_Tier.MaterialQuantity}}
+\doxysubsubsection{\texorpdfstring{Quantity}{Quantity}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_material_quantity_a55dd2effe93e56e2f48ba2df7d0caab2} 
+int Object\+\_\+\+Tier.\+Material\+Quantity.\+Quantity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the quantity of the material. The value must be zero or greater. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ >=\ 0)}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ quantity\ =\ value;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ quantity;\ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Object Tier/Material\+Quantity.\+cs\end{DoxyCompactItemize}

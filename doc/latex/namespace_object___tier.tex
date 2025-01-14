@@ -1,0 +1,50 @@
+\doxysection{Object\+\_\+\+Tier Namespace Reference}
+\hypertarget{namespace_object___tier}{}\label{namespace_object___tier}\index{Object\_Tier@{Object\_Tier}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_object___tier_1_1_client}{Client}}
+\begin{DoxyCompactList}\small\item\em Represents a client in the system, inheriting from the \doxylink{class_object___tier_1_1_person}{Person} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}
+\begin{DoxyCompactList}\small\item\em Represents an employee in the system, inheriting from the \doxylink{class_object___tier_1_1_person}{Person} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_object___tier_1_1_material}{Material}}
+\begin{DoxyCompactList}\small\item\em Represents a material with ID, name, unit price, and registration date. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}
+\begin{DoxyCompactList}\small\item\em Represents the quantity of a material and the date it was added. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_object___tier_1_1_person}{Person}}
+\begin{DoxyCompactList}\small\item\em Represents a person with an ID and a name. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_object___tier_1_1_project}{Project}}
+\begin{DoxyCompactList}\small\item\em Represents a project with information about its status, start date, end date, and ID management. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Status}} \{ {\bfseries Not\+Start} = 1
+, {\bfseries In\+Progress} = 2
+, {\bfseries On\+Hold} = 3
+, {\bfseries Completed} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Enum that defines the possible status of a project. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}\index{Object\_Tier@{Object\_Tier}!Status@{Status}}
+\index{Status@{Status}!Object\_Tier@{Object\_Tier}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily \label{namespace_object___tier_a69271cced1c49f459fa625dbf6762550} 
+enum \mbox{\hyperlink{namespace_object___tier_a69271cced1c49f459fa625dbf6762550}{Object\+\_\+\+Tier.\+Status}}}
+
+
+
+Enum that defines the possible status of a project. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ NotStart\ =\ 1,\ \textcolor{comment}{//In\ wait\ list\ }}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ InProgress\ =\ 2,\ \textcolor{comment}{//In\ Progress}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ OnHold\ =\ 3,\ \textcolor{comment}{//Stopped\ for\ a\ while\ }}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ Completed\ =\ 4\ \ \textcolor{comment}{//Complet}}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+
+\end{DoxyCode}

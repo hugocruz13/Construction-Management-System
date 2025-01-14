@@ -1,0 +1,35 @@
+\doxysection{Unit\+\_\+\+Test.\+Employee\+Test Class Reference}
+\hypertarget{class_unit___test_1_1_employee_test}{}\label{class_unit___test_1_1_employee_test}\index{Unit\_Test.EmployeeTest@{Unit\_Test.EmployeeTest}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_unit___test_1_1_employee_test_aaef9f5a4ece6bb53c4dbfae41fffed9f}{Test\+Delete\+Employee}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unit___test_1_1_employee_test_aaef9f5a4ece6bb53c4dbfae41fffed9f}\index{Unit\_Test.EmployeeTest@{Unit\_Test.EmployeeTest}!TestDeleteEmployee@{TestDeleteEmployee}}
+\index{TestDeleteEmployee@{TestDeleteEmployee}!Unit\_Test.EmployeeTest@{Unit\_Test.EmployeeTest}}
+\doxysubsubsection{\texorpdfstring{TestDeleteEmployee()}{TestDeleteEmployee()}}
+{\footnotesize\ttfamily \label{class_unit___test_1_1_employee_test_aaef9f5a4ece6bb53c4dbfae41fffed9f} 
+void Unit\+\_\+\+Test.\+Employee\+Test.\+Test\+Delete\+Employee (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012\ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Arrange}}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}\ e1\ =\ \mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}.\mbox{\hyperlink{class_object___tier_1_1_employee_a2a43d419a3f060ed135f9ecadaee14db}{CreateEmployee}}(\textcolor{stringliteral}{"{}Luis"{}},\textcolor{stringliteral}{"{}Eng"{}},12.2);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Act}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_business___tier_1_1_company}{Company}}.\mbox{\hyperlink{class_business___tier_1_1_company_ac80bba0ae5f40f2f3cdad1a5501bbd8f}{RegistEmployee}}(e1);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assert}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ Assert.IsTrue(\mbox{\hyperlink{class_data___tier_1_1_employees}{Employees}}.\mbox{\hyperlink{class_data___tier_1_1_employees_ad6c28788ae26d40c491037c8975a4f84}{Instance}}.\mbox{\hyperlink{class_data___tier_1_1_employees_a0d5d08e18e75d1ddef7dae56492b15c5}{EmployeeExist}}(e1));}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Unit Test/Employee\+Test.\+cs\end{DoxyCompactItemize}

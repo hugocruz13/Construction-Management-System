@@ -180,7 +180,7 @@ namespace Data_Tier
             }
             catch (Exception ex)
             {
-                throw new ConfigurationErrorException("834" + ex);
+                throw new ConfigurationErrorException("834" + ex.Message);
             }
         }
         #endregion

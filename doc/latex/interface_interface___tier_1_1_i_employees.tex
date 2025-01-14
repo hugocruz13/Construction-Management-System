@@ -1,0 +1,179 @@
+\doxysection{Interface\+\_\+\+Tier.\+IEmployees Interface Reference}
+\hypertarget{interface_interface___tier_1_1_i_employees}{}\label{interface_interface___tier_1_1_i_employees}\index{Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}}
+
+
+Methods to implement in the employees class.  
+
+
+
+
+Inheritance diagram for Interface\+\_\+\+Tier.\+IEmployees\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{interface_interface___tier_1_1_i_employees__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_interface___tier_1_1_i_employees_a97d3b4ab3604cedcf2c7b2c0f72cb3a6}{Add\+Employee}} (\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} employee)
+\begin{DoxyCompactList}\small\item\em Adds a new employee to the list and sorts the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_employees_a8464bf608876bb24769806385cf114f9}{Remove\+Employee}} (int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Removes an employee by their ID from the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_employees_aaf7ce6e964554c97ba0f68c56c7ae2c2}{Employee\+Exist}} (int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Checks if an employee exists in the list based on their ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_interface___tier_1_1_i_employees_a9af9e438dfa122d5bdfbc8a19b730425}{Update\+Role}} (int id\+Employee, string role, double hourly)
+\begin{DoxyCompactList}\small\item\em Updates an employee\textquotesingle{}s role and hourly rate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} \mbox{\hyperlink{interface_interface___tier_1_1_i_employees_a773d1d4284a4b9abdabf4f341e513524}{Get\+Employee}} (int id\+Employee)
+\begin{DoxyCompactList}\small\item\em Retrieves an employee based on their ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Methods to implement in the employees class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_interface___tier_1_1_i_employees_a97d3b4ab3604cedcf2c7b2c0f72cb3a6}\index{Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}!AddEmployee@{AddEmployee}}
+\index{AddEmployee@{AddEmployee}!Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}}
+\doxysubsubsection{\texorpdfstring{AddEmployee()}{AddEmployee()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_employees_a97d3b4ab3604cedcf2c7b2c0f72cb3a6} 
+int Interface\+\_\+\+Tier.\+IEmployees.\+Add\+Employee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}}}]{employee}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new employee to the list and sorts the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee} & The employee to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of the added employee.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws if the employee is null or if an error occurs during the addition. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_employees_a743a177e79acc3ea503d02a8f7970b7f}{Data\+\_\+\+Tier.\+Employees}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_employees_aaf7ce6e964554c97ba0f68c56c7ae2c2}\index{Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}!EmployeeExist@{EmployeeExist}}
+\index{EmployeeExist@{EmployeeExist}!Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}}
+\doxysubsubsection{\texorpdfstring{EmployeeExist()}{EmployeeExist()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_employees_aaf7ce6e964554c97ba0f68c56c7ae2c2} 
+bool Interface\+\_\+\+Tier.\+IEmployees.\+Employee\+Exist (\begin{DoxyParamCaption}\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})}
+
+
+
+Checks if an employee exists in the list based on their ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Employee} & The ID of the employee to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the employee exists, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws if an error occurs during the existence check. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_employees_a15bad604543cb0105a6f258503806168}{Data\+\_\+\+Tier.\+Employees}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_employees_a773d1d4284a4b9abdabf4f341e513524}\index{Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}!GetEmployee@{GetEmployee}}
+\index{GetEmployee@{GetEmployee}!Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}}
+\doxysubsubsection{\texorpdfstring{GetEmployee()}{GetEmployee()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_employees_a773d1d4284a4b9abdabf4f341e513524} 
+\mbox{\hyperlink{class_object___tier_1_1_employee}{Employee}} Interface\+\_\+\+Tier.\+IEmployees.\+Get\+Employee (\begin{DoxyParamCaption}\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves an employee based on their ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Employee} & The ID of the employee to retrieve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The employee object if found, otherwise {\ttfamily null}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws if the retrieval fails. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_employees_afc32d495bba546f78ab48454b726502b}{Data\+\_\+\+Tier.\+Employees}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_employees_a8464bf608876bb24769806385cf114f9}\index{Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}!RemoveEmployee@{RemoveEmployee}}
+\index{RemoveEmployee@{RemoveEmployee}!Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}}
+\doxysubsubsection{\texorpdfstring{RemoveEmployee()}{RemoveEmployee()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_employees_a8464bf608876bb24769806385cf114f9} 
+bool Interface\+\_\+\+Tier.\+IEmployees.\+Remove\+Employee (\begin{DoxyParamCaption}\item[{int}]{id\+Employee}{}\end{DoxyParamCaption})}
+
+
+
+Removes an employee by their ID from the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Employee} & The ID of the employee to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the employee was removed, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws if an error occurs during the removal. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_employees_aa38c1c75bb81177c3c29da2f7cda92aa}{Data\+\_\+\+Tier.\+Employees}}.
+
+\Hypertarget{interface_interface___tier_1_1_i_employees_a9af9e438dfa122d5bdfbc8a19b730425}\index{Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}!UpdateRole@{UpdateRole}}
+\index{UpdateRole@{UpdateRole}!Interface\_Tier.IEmployees@{Interface\_Tier.IEmployees}}
+\doxysubsubsection{\texorpdfstring{UpdateRole()}{UpdateRole()}}
+{\footnotesize\ttfamily \label{interface_interface___tier_1_1_i_employees_a9af9e438dfa122d5bdfbc8a19b730425} 
+bool Interface\+\_\+\+Tier.\+IEmployees.\+Update\+Role (\begin{DoxyParamCaption}\item[{int}]{id\+Employee}{, }\item[{string}]{role}{, }\item[{double}]{hourly}{}\end{DoxyParamCaption})}
+
+
+
+Updates an employee\textquotesingle{}s role and hourly rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Employee} & The ID of the employee to update.\\
+\hline
+{\em role} & The new role of the employee.\\
+\hline
+{\em hourly} & The new hourly rate of the employee.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the update was successful, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Throws if the update fails.\\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_data___tier_1_1_employees_aa69f887b9dfe918cd9c9dcf8128eb867}{Data\+\_\+\+Tier.\+Employees}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Interface Tier/IEmployees.\+cs\end{DoxyCompactItemize}

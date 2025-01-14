@@ -1,0 +1,320 @@
+\doxysection{Object\+\_\+\+Tier.\+Client Class Reference}
+\hypertarget{class_object___tier_1_1_client}{}\label{class_object___tier_1_1_client}\index{Object\_Tier.Client@{Object\_Tier.Client}}
+
+
+Represents a client in the system, inheriting from the \doxylink{class_object___tier_1_1_person}{Person} class.  
+
+
+
+
+Inheritance diagram for Object\+\_\+\+Tier.\+Client\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_object___tier_1_1_client__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Object\+\_\+\+Tier.\+Client\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_object___tier_1_1_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object___tier_1_1_client_ad7a8dfa7e089c67470145ed246a6563b}{Client}} (string name, int contact)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_object___tier_1_1_client}{Client} class with the specified name and contact. Automatically assigns a unique ID. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_object___tier_1_1_client_a8a1f043753481dead8935d7c056d2765}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified object is equal to the current client. Clients are considered equal if their contact information matches. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_object___tier_1_1_client_a8ba29577094dc868bef1f43e63c0e31e}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the client, including ID, name, and contact. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_object___tier_1_1_client_ac4bb529adbbac2aba6bc4177206138da}{Compare\+To}} (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client)
+\begin{DoxyCompactList}\small\item\em Compares the current client to another client based on their name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_object___tier_1_1_client}{Client}} \mbox{\hyperlink{class_object___tier_1_1_client_a68e5bed84ec1c472abce5a7ad590bc46}{Create\+Client}} (string name, int contact)
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_object___tier_1_1_client}{Client} instance. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_client_a89dfd534d7ff331264b7edf4b5486572}{operator-\/}} (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client1, \mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client2)
+\begin{DoxyCompactList}\small\item\em Checks if two clients are equal using the "{}-\/"{} operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_client_a79a0beefc8d0193cba236597b3a01c95}{operator+}} (\mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client1, \mbox{\hyperlink{class_object___tier_1_1_client}{Client}} client2)
+\begin{DoxyCompactList}\small\item\em Checks if two clients are not equal using the "{}+"{} operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_object___tier_1_1_client_a0b8bca6189881e8d4667aa116fa8d265}{get\+Next\+Client\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Increments the static client ID counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_object___tier_1_1_client_ad6f8749b04a80fdbd60946c5914737aa}{Contact\+Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the client’s contact information. One contact can only have 9 numbers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_object___tier_1_1_person}{Object\+\_\+\+Tier.\+Person}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_object___tier_1_1_person_ab0fb4e62e86c8c93d8e24ef1cf14185a}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the ID of the person. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_object___tier_1_1_person_aa130ca80fe53c450b6f780664a591707}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name of the person. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_object___tier_1_1_person}{Object\+\_\+\+Tier.\+Person}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object___tier_1_1_person_abbc0ba08992f323e498a214ffdd2b636}{Person}} (int id, string name)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_object___tier_1_1_person}{Person} class with an ID and a name. The name is automatically formatted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a client in the system, inheriting from the \doxylink{class_object___tier_1_1_person}{Person} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_object___tier_1_1_client_ad7a8dfa7e089c67470145ed246a6563b}\index{Object\_Tier.Client@{Object\_Tier.Client}!Client@{Client}}
+\index{Client@{Client}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_ad7a8dfa7e089c67470145ed246a6563b} 
+Object\+\_\+\+Tier.\+Client.\+Client (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{int}]{contact}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_object___tier_1_1_client}{Client} class with the specified name and contact. Automatically assigns a unique ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the client.\\
+\hline
+{\em contact} & The contact information of the client.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ base(clientIdCounter++,\ name)\ \textcolor{comment}{//Send\ to\ the\ construct\ person.}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_client_ad6f8749b04a80fdbd60946c5914737aa}{ContactInfo}}\ =\ contact;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_object___tier_1_1_client_ac4bb529adbbac2aba6bc4177206138da}\index{Object\_Tier.Client@{Object\_Tier.Client}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_ac4bb529adbbac2aba6bc4177206138da} 
+int Object\+\_\+\+Tier.\+Client.\+Compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client}{}\end{DoxyParamCaption})}
+
+
+
+Compares the current client to another client based on their name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client to compare to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A value indicating the relative order of the clients.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_object___tier_1_1_person_aa130ca80fe53c450b6f780664a591707}{Name}}.CompareTo(client.Name);}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_client_a68e5bed84ec1c472abce5a7ad590bc46}\index{Object\_Tier.Client@{Object\_Tier.Client}!CreateClient@{CreateClient}}
+\index{CreateClient@{CreateClient}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{CreateClient()}{CreateClient()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_a68e5bed84ec1c472abce5a7ad590bc46} 
+static \mbox{\hyperlink{class_object___tier_1_1_client}{Client}} Object\+\_\+\+Tier.\+Client.\+Create\+Client (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{int}]{contact}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \doxylink{class_object___tier_1_1_client}{Client} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the client.\\
+\hline
+{\em contact} & The contact information of the client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_object___tier_1_1_client}{Client} instance.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_object___tier_1_1_client_ad7a8dfa7e089c67470145ed246a6563b}{Client}}(name,\ contact);}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_client_a8a1f043753481dead8935d7c056d2765}\index{Object\_Tier.Client@{Object\_Tier.Client}!Equals@{Equals}}
+\index{Equals@{Equals}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_a8a1f043753481dead8935d7c056d2765} 
+override bool Object\+\_\+\+Tier.\+Client.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Determines whether the specified object is equal to the current client. Clients are considered equal if their contact information matches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object to compare with the current client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{class_object___tier_1_1_client_ad7a8dfa7e089c67470145ed246a6563b}{Client}})}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_client_ad7a8dfa7e089c67470145ed246a6563b}{Client}}\ otherClient\ =\ obj\ as\ \mbox{\hyperlink{class_object___tier_1_1_client_ad7a8dfa7e089c67470145ed246a6563b}{Client}};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (contactInfo\ ==\ otherClient.contactInfo)}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_client_a0b8bca6189881e8d4667aa116fa8d265}\index{Object\_Tier.Client@{Object\_Tier.Client}!getNextClientId@{getNextClientId}}
+\index{getNextClientId@{getNextClientId}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{getNextClientId()}{getNextClientId()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_a0b8bca6189881e8d4667aa116fa8d265} 
+static bool Object\+\_\+\+Tier.\+Client.\+get\+Next\+Client\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Increments the static client ID counter. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ clientIdCounter++;}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_client_a79a0beefc8d0193cba236597b3a01c95}\index{Object\_Tier.Client@{Object\_Tier.Client}!operator+@{operator+}}
+\index{operator+@{operator+}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_a79a0beefc8d0193cba236597b3a01c95} 
+static bool Object\+\_\+\+Tier.\+Client.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if two clients are not equal using the "{}+"{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client1} & The first client.\\
+\hline
+{\em client2} & The second client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the clients are not equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(client1\ -\/\ client2);}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_client_a89dfd534d7ff331264b7edf4b5486572}\index{Object\_Tier.Client@{Object\_Tier.Client}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_a89dfd534d7ff331264b7edf4b5486572} 
+static bool Object\+\_\+\+Tier.\+Client.\+operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client1}{, }\item[{\mbox{\hyperlink{class_object___tier_1_1_client}{Client}}}]{client2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if two clients are equal using the "{}-\/"{} operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client1} & The first client.\\
+\hline
+{\em client2} & The second client.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the clients are equal; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (client1.Equals(client2))}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_object___tier_1_1_client_a8ba29577094dc868bef1f43e63c0e31e}\index{Object\_Tier.Client@{Object\_Tier.Client}!ToString@{ToString}}
+\index{ToString@{ToString}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_a8ba29577094dc868bef1f43e63c0e31e} 
+override string Object\+\_\+\+Tier.\+Client.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the client, including ID, name, and contact. 
+
+\begin{DoxyReturn}{Returns}
+A string representation of the client.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_object___tier_1_1_person_ab0fb4e62e86c8c93d8e24ef1cf14185a}{Id}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_person_aa130ca80fe53c450b6f780664a591707}{Name}}\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ \mbox{\hyperlink{class_object___tier_1_1_client_ad6f8749b04a80fdbd60946c5914737aa}{ContactInfo}};}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_object___tier_1_1_client_ad6f8749b04a80fdbd60946c5914737aa}\index{Object\_Tier.Client@{Object\_Tier.Client}!ContactInfo@{ContactInfo}}
+\index{ContactInfo@{ContactInfo}!Object\_Tier.Client@{Object\_Tier.Client}}
+\doxysubsubsection{\texorpdfstring{ContactInfo}{ContactInfo}}
+{\footnotesize\ttfamily \label{class_object___tier_1_1_client_ad6f8749b04a80fdbd60946c5914737aa} 
+int Object\+\_\+\+Tier.\+Client.\+Contact\+Info\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the client’s contact information. One contact can only have 9 numbers. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (value\ >=\ 9)}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ contactInfo\ =\ value;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ contactInfo;\ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Object Tier/Client.\+cs\end{DoxyCompactItemize}

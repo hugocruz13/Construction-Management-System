@@ -7,9 +7,6 @@
 *	<description>Class representing a Project with its status, client, team and materials used</description>
 **/
 using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using System.Xml.Linq;
 
 
 namespace Object_Tier

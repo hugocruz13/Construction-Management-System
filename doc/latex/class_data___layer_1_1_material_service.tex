@@ -1,0 +1,120 @@
+\doxysection{Data\+\_\+\+Layer.\+Material\+Service Class Reference}
+\hypertarget{class_data___layer_1_1_material_service}{}\label{class_data___layer_1_1_material_service}\index{Data\_Layer.MaterialService@{Data\_Layer.MaterialService}}
+
+
+Class for managing materials used in a project.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___layer_1_1_material_service_ae5d88e10d2c77632b148e4102d6b912a}{Material\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \doxylink{class_data___layer_1_1_material_service}{Material\+Service} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___layer_1_1_material_service_a94530943fb9ee894e0281846c540fc76}{Exist\+Exist\+Employee}} (\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} material)
+\begin{DoxyCompactList}\small\item\em Checks if the specified material exists in the list of used materials. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___layer_1_1_material_service_ac4a9fc5aaf8b120e9ae402aa9ed7c483}{Add\+Material}} (\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}} material)
+\begin{DoxyCompactList}\small\item\em Adds a material to the list of used materials. If the material already exists, its quantity is updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for managing materials used in a project. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___layer_1_1_material_service_ae5d88e10d2c77632b148e4102d6b912a}\index{Data\_Layer.MaterialService@{Data\_Layer.MaterialService}!MaterialService@{MaterialService}}
+\index{MaterialService@{MaterialService}!Data\_Layer.MaterialService@{Data\_Layer.MaterialService}}
+\doxysubsubsection{\texorpdfstring{MaterialService()}{MaterialService()}}
+{\footnotesize\ttfamily \label{class_data___layer_1_1_material_service_ae5d88e10d2c77632b148e4102d6b912a} 
+Data\+\_\+\+Layer.\+Material\+Service.\+Material\+Service (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \doxylink{class_data___layer_1_1_material_service}{Material\+Service} class. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ use\ =\ \textcolor{keyword}{new}\ List<MaterialQuantity>(5);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___layer_1_1_material_service_ac4a9fc5aaf8b120e9ae402aa9ed7c483}\index{Data\_Layer.MaterialService@{Data\_Layer.MaterialService}!AddMaterial@{AddMaterial}}
+\index{AddMaterial@{AddMaterial}!Data\_Layer.MaterialService@{Data\_Layer.MaterialService}}
+\doxysubsubsection{\texorpdfstring{AddMaterial()}{AddMaterial()}}
+{\footnotesize\ttfamily \label{class_data___layer_1_1_material_service_ac4a9fc5aaf8b120e9ae402aa9ed7c483} 
+bool Data\+\_\+\+Layer.\+Material\+Service.\+Add\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{material}{}\end{DoxyParamCaption})}
+
+
+
+Adds a material to the list of used materials. If the material already exists, its quantity is updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & The material to add or update.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material was added or updated successfully; otherwise, false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Configuration\+Error\+Exception} & Thrown if an error occurs during material addition.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_data___layer_1_1_material_service_a94530943fb9ee894e0281846c540fc76}{ExistExistEmployee}}(material))}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ use.Add(material);}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_object___tier_1_1_material_quantity}{MaterialQuantity}}\ materialQuantity\ =\ FindMaterial(material);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ materialQuantity.Quantity\ +=\ material.\mbox{\hyperlink{class_object___tier_1_1_material_quantity_a55dd2effe93e56e2f48ba2df7d0caab2}{Quantity}};}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ materialQuantity.Date\ =\ DateTime.Now;}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ ex)}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_custom_exceptions_1_1_configuration_error_exception}{ConfigurationErrorException}}(\textcolor{stringliteral}{"{}814"{}},\ ex);}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_data___layer_1_1_material_service_a94530943fb9ee894e0281846c540fc76}\index{Data\_Layer.MaterialService@{Data\_Layer.MaterialService}!ExistExistEmployee@{ExistExistEmployee}}
+\index{ExistExistEmployee@{ExistExistEmployee}!Data\_Layer.MaterialService@{Data\_Layer.MaterialService}}
+\doxysubsubsection{\texorpdfstring{ExistExistEmployee()}{ExistExistEmployee()}}
+{\footnotesize\ttfamily \label{class_data___layer_1_1_material_service_a94530943fb9ee894e0281846c540fc76} 
+bool Data\+\_\+\+Layer.\+Material\+Service.\+Exist\+Exist\+Employee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_object___tier_1_1_material_quantity}{Material\+Quantity}}}]{material}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the specified material exists in the list of used materials. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & The material to check for existence.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the material exists in the list, otherwise false.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ use.Contains(material);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hugoc/\+Desktop/2024\+\_\+2025/\+Programação Orientada a Objetos/trabalho\+POO\+\_\+23010\+\_\+\+Fase2/src/\+Data Tier/Material\+Service.\+cs\end{DoxyCompactItemize}
